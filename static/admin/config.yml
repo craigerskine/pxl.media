@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+
+media_folder: "static/assets/img/games"
+public_folder: "/assets/img/games"
+
+collections:
+  - name: "_platforms"
+    label: "Platform"
+    folder: "content/_platform"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "text"}
+      - {label: "Disc", name: "disc", widget: "boolean"}
+      - {label: "Cartridge", name: "cartridge", widget: "boolean"}
+      - {label: "Color", name: "color", widget: "string"}
+      - {label: "Order", name: "order", widget: "number"}
+  - name: "_genres"
+    label: "Genre"
+    folder: "content/_genre"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+  - name: "games"
+    label: "Game"
+    folder: "content/games"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Note", name: "note", widget: "string"}
+      - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
+      - {label: "Genre", name: "genre", widget: "relation", collection: "_genres", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
+      - {label: "Physical", name: "physical", widget: "boolean"}
+      - {label: "Digital", name: "digital", widget: "boolean"}
+      - {label: "Guide", name: "guide", widget: "boolean"}
+      - {label: "Pending", name: "pending", widget: "boolean"}
+      - {label: "Posted", name: "date", widget: "date"}
+  - name: "systems"
+    label: "System"
+    folder: "content/systems"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
+      - {label: "System Type", name: "system_type", widget: "select", options: [{label: "Console", value: "console"}, {label: "Handheld", value: "handheld"}, {label: "Hybrid", value: "hybrid"}, {label: "Mini", value: "mini"}]}
+      - {label: "Variation", name: "variation", widget: "string"}
+  - name: "controllers"
+    label: "Controller"
+    folder: "content/controllers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Variation", name: "variation", widget: "list"}
+      - {label: "Connection", name: "connection", widget: "list"}
+      - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
+      - {label: "Company", name: "company", widget: "select", options: ["8Bitdo", "Bandai", "HORI", "Junkfood Custom Arcades", "Logitech", "Polymega", "Retro Fighters", "Retro-Bit", "Sammy", "Wind Spirit", "Wish Technologies"]}
