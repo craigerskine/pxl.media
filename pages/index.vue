@@ -1,13 +1,21 @@
 <template>
-  <h1>Hello!</h1>
+  <div>
+    <heading url="#">Recently Added</heading>
+    <ul>
+      <li v-for="game of pending" :key="game.slug">
+        {{ game.title }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-  head() {
+  name: 'index',
+  async asyncData({ $content }) {
+    const pending = await $content("games").where({ pending: { $eq: true } }).fetch();
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      pending,
     };
   },
 }

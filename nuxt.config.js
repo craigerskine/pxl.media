@@ -7,7 +7,11 @@ export default {
   head: {
     title: 'pxl.media',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      class: 'bg-gray-900'
+    },
+    bodyAttrs: {
+      class: 'text-gray-400 font-sans text-sm'
     },
     meta: [
       { charset: 'utf-8' },
