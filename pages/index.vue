@@ -1,16 +1,36 @@
 <template>
   <div>
     <heading>Recently Added</heading>
-    <ul>
-      <li v-for="game of recently" :key="game.slug">
-        {{ game.title }}
-      </li>
+    <ul class="list-game pb-4 flex flex-wrap">
+      <game v-for="game of recently"
+        :key="game.slug"
+        :title="game.title"
+        :slug="game.slug"
+        :note="game.note"
+        :platform="game.platform"
+        :genre="game.genre"
+        :physical="game.physical"
+        :digital="game.digital"
+        :guide="game.guide"
+        :pending="game.pending"
+        :posted="game.posted"
+      />
     </ul>
     <heading :subtext="pending.length">Pending</heading>
-    <ul>
-      <li v-for="game of pending" :key="game.slug">
-        {{ game.title }}
-      </li>
+    <ul class="list-game pb-4 flex flex-wrap">
+      <game v-for="game of pending"
+        :key="game.slug"
+        :title="game.title"
+        :slug="game.slug"
+        :note="game.note"
+        :platform="game.platform"
+        :genre="game.genre"
+        :physical="game.physical"
+        :digital="game.digital"
+        :guide="game.guide"
+        :pending="game.pending"
+        :posted="game.posted"
+      />
     </ul>
   </div>
 </template>

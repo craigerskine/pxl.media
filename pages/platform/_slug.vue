@@ -1,10 +1,20 @@
 <template>
   <div>
-    <heading>{{ $route.params.slug }}</heading>
-    <ul>
-      <li v-for="game of games" :key="game.slug">
-        {{ game.title }} - {{ game.platform }}
-      </li>
+    <heading>SLUG GOES HERE</heading>
+    <ul class="list-game pb-4 flex flex-wrap">
+      <game v-for="game of games"
+        :key="game.slug"
+        :title="game.title"
+        :slug="game.slug"
+        :note="game.note"
+        :platform="game.platform"
+        :genre="game.genre"
+        :physical="game.physical"
+        :digital="game.digital"
+        :guide="game.guide"
+        :pending="game.pending"
+        :posted="game.posted"
+      />
     </ul>
   </div>
 </template>
