@@ -16,8 +16,8 @@ collections:
       - {label: "Logo", name: "logo", widget: "text"}
       - {label: "Disc", name: "disc", widget: "boolean"}
       - {label: "Cartridge", name: "cartridge", widget: "boolean"}
-      - {label: "Color", name: "color", widget: "string"}
-      - {label: "Order", name: "order", widget: "number"}
+      - {label: "Color", name: "color", required: false, widget: "string"}
+      - {label: "Order", name: "order", required: false, widget: "number"}
   - name: "_genres"
     label: "Genre"
     folder: "content/_genre"
@@ -33,7 +33,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Note", name: "note", widget: "string"}
+      - {label: "Note", name: "note", required: false, widget: "string"}
       - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
       - {label: "Genre", name: "genre", widget: "relation", collection: "_genres", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
       - {label: "Physical", name: "physical", widget: "boolean"}
@@ -50,7 +50,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
       - {label: "System Type", name: "system_type", widget: "select", options: [{label: "Console", value: "console"}, {label: "Handheld", value: "handheld"}, {label: "Hybrid", value: "hybrid"}, {label: "Mini", value: "mini"}]}
-      - {label: "Variation", name: "variation", widget: "string"}
+      - {label: "Variation", name: "variation", required: false, widget: "string"}
   - name: "controllers"
     label: "Controller"
     folder: "content/controllers"
@@ -58,7 +58,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Variation", name: "variation", widget: "list"}
-      - {label: "Connection", name: "connection", widget: "list"}
+      - {label: "Variation", name: "variation", required: false, widget: "list"}
+      - {label: "Connection", name: "connection", required: false, widget: "list"}
       - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
       - {label: "Company", name: "company", widget: "select", options: ["8Bitdo", "Bandai", "HORI", "Junkfood Custom Arcades", "Logitech", "Polymega", "Retro Fighters", "Retro-Bit", "Sammy", "Wind Spirit", "Wish Technologies"]}
