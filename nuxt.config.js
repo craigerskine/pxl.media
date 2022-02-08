@@ -19,7 +19,12 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/6d6156d427.js', body: true }
     ]
   },
 
@@ -44,7 +49,7 @@ export default {
   ],
 
   content: {
-    // Options
+    nestedProperties: ['genre.slug']
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -5,7 +5,7 @@
         <nav>
           <ul class="nav-menu flex items-center">
             <li class="nav-home">
-              <NuxtLink to="/" aria-label="Home" class="p-4 block text-white opacity-30 hover:(opacity-100) focus:(opacity-100) transition">
+              <nuxt-link to="/" aria-label="Home" class="p-4 block text-white opacity-30 hover:(opacity-100) focus:(opacity-100) transition" active-class="" exact-active-class="opacity-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current">
                   <title>pxl.media</title>
                   <g fill-rule="evenodd">
@@ -15,12 +15,12 @@
                     <rect width="8" height="8" />
                   </g>
                 </svg>
-              </NuxtLink>
+              </nuxt-link>
             </li>
             <li class="nav-item" v-for="(i, index) in 2">
-              <NuxtLink :to="index === 0 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 hover:(opacity-100) focus:(opacity-100) transition">
+              <nuxt-link :to="index === 0 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 hover:(opacity-100) focus:(opacity-100) transition" active-class="opacity-100" exact-active-class="">
                 <i :class="['fad fa-fw', index === 0 ? 'fa-layer-group' : 'fa-filter']" :title="index === 0 ? 'Platform' : 'Genre'"></i>
-              </NuxtLink>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
@@ -56,7 +56,7 @@
   export default {
     head() {
       return {
-        script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+        //script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
       };
     },
   }
