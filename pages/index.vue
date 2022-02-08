@@ -1,6 +1,6 @@
 <template>
   <div>
-    <heading url="#">Recently Added</heading>
+    <heading>Recently Added</heading>
     <ul>
       <li v-for="game of pending" :key="game.slug">
         {{ game.title }}
