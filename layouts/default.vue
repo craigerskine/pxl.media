@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex(& col)">
     <header>
-      <div class="mx-auto container flex items-center">
+      <div class="mx-auto container flex items-center relative">
         <nav>
           <ul class="nav-menu flex items-center">
             <li class="nav-home">
@@ -24,11 +24,16 @@
             </li>
           </ul>
         </nav>
-        <form action="/search/" method="get" class="mr-4 ml-auto w-64 flex justify-end items-center relative">
+        <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative">
           <label for="site-search" class="sr-only">Search</label>
-          <input type="text" id="site-search" name="keywords" placeholder="Search..." class="input-search border border-transparent p-2 w-8 focus:w-full text-sm bg-transparent focus:bg-gray-700 text-transparent focus:text-white cursor-pointer outline-none relative z-10 opacity-0 focus:opacity-100 transition-all" title="Search" />
+          <input type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border border-transparent p-2 w-8 focus:w-full text-sm bg-transparent focus:bg-gray-700 text-transparent focus:text-white cursor-pointer outline-none relative z-10 opacity-0 focus:opacity-100 transition-all" title="Search" v-model="query" autocomplete="off" />
           <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
-        </form>
+        </fieldset>
+        <ul v-if="results.length" class="p-5 w-full bg(black) absolute inset-x-0 top-full z-50">
+          <li v-for="result of results" :key="result.slug">
+            {{ result.title }}
+          </li>
+        </ul>
       </div>
     </header>
     <main class="pt-8 flex-1">
@@ -56,8 +61,28 @@
   export default {
     head() {
       return {
-        //script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+
       };
     },
+    data() {
+      return {
+        query: '',
+        results: []
+      }
+    },
+    watch: {
+      async query(query) {
+        if(!query) {
+          this.results = []
+          return
+        }
+        this.results = await this.$content('games')
+          .only(['title', 'slug'])
+          .sortBy('title', 'asc')
+          .limit(20)
+          .search('title', query)
+          .fetch();
+      }
+    }
   }
 </script>
