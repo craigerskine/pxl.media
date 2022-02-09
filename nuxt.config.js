@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'pxl.media',
+    title: 'pxl.media - qrayg\'s game room',
     htmlAttrs: {
       lang: 'en',
       class: 'bg-gray-900'
