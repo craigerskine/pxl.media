@@ -29,7 +29,7 @@
           <input v-model="query" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
           <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
         </fieldset>
-        <ul v-if="results.length" class="mx-4 py-2 px-4 bg(black) divide(y dashed gray-500 opacity-30) absolute inset-x-0 top-full z-50">
+        <ul v-if="results.length" class="mx-4 py-2 px-4 w-full bg(black) divide(y dashed gray-500 opacity-30) absolute right-0 top-full z-50 md:(w-1/2)">
           <li v-for="result of results" :key="result.slug" class="py-1">
             {{ result.title }}
           </li>
@@ -80,6 +80,7 @@
           return
         }
         this.results = await this.$content('games')
+          .limit(50)
           .only(['title', 'slug'])
           .sortBy('title', 'asc')
           .search(query)
