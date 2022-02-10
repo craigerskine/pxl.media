@@ -1,14 +1,14 @@
 <template>
   <div>
-    <!-- :data_1="genreSlugGames.length",
-    data_1_label="Games",
-    :data_2="genreSlugPlatforms.length",
-    data_2_label="Platforms", -->
-    <!-- <mast v-for="item of genreSlugCurrentFilter(this.$route.params.slug)"
+    <mast v-for="item of genreSlugCurrentFilter(this.$route.params.slug)"
       :key="item.slug"
-      :ico="item.icon",
-      :label="item.title",
-    /> -->
+      :ico="item.icon"
+      :label="item.title"
+      :data_1="genreSlugGames.length"
+      data_1_label="Games"
+      :data_2="genreSlugPlatforms.length"
+      data_2_label="Platforms"
+    />
     <heading>Games owned</heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="game of genreSlugGames"

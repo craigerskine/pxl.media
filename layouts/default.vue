@@ -29,9 +29,15 @@
           <input v-model="query" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
           <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
         </fieldset>
-        <ul v-if="results.length" class="mx-4 py-2 px-4 w-full bg(black) divide(y dashed gray-500 opacity-30) absolute right-0 top-full z-50 md:(w-1/2)">
-          <li v-for="result of results" :key="result.slug" class="py-1">
-            {{ result.title }}
+        <ul v-if="searchResults.length" class="w-full bg(black) absolute right-0 top-full z-50 lg:(mx-4 w-1/2)">
+          <li class="py-3 px-4 bg(gray-600 opacity-10) flex items-center justify-center">
+            <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
+            <b v-text="''+ (searchResults.length === 50 ? '50+' : searchResults.length) +' Games'" class="px-4 uppercase flex-none"></b>
+            <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
+          </li>
+          <li v-for="result of searchResults" :key="result.slug" class="py-1 px-4 leading-loose flex items-center space-x-3">
+            <i class="fad fa-fw fa-gamepad text-red-500"></i>
+            <b v-text="result.title" class="min-w-0 truncate"></b>
           </li>
         </ul>
       </div>
@@ -70,16 +76,16 @@
     data() {
       return {
         query: '',
-        results: []
+        searchResults: []
       }
     },
     watch: {
       async query(query) {
         if(!query) {
-          this.results = []
+          this.searchResults = []
           return
         }
-        this.results = await this.$content('games')
+        this.searchResults = await this.$content('games')
           .limit(50)
           .only(['title', 'slug'])
           .sortBy('title', 'asc')

@@ -2,7 +2,13 @@
   <div>
     <heading>Game by genre</heading>
     <ul class="container mx-auto flex flex-wrap justify-center">
-      <category v-for="genre of genreIndex" :key="genre.slug" :title="genre.title" :url="genre.slug" :fg_ico="'text-5xl fad fa-fw fa-'+ genre.icon" :subtext="genreGamesFilter(genre.slug).length +' <b class=\'font-normal uppercase\'>Games</b>'" />
+      <category v-for="genre of genreIndex"
+        :key="genre.slug"
+        :title="genre.title"
+        :url="genre.slug"
+        :fg_ico="'text-5xl fad fa-fw fa-'+ genre.icon"
+        :subtext="genreGamesFilter(genre.slug).length +' <b class=\'font-normal uppercase\'>Games</b>'"
+      />
     </ul>
   </div>
 </template>
