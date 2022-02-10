@@ -1,9 +1,8 @@
 <template>
   <div>
-    <mast v-for="item of genreSlugCurrentFilter(this.$route.params.slug)"
-      :key="item.slug"
-      :ico="item.icon"
-      :label="item.title"
+    <mast
+      :ico="genreSlugCurrentFilter(this.$route.params.slug)[0].icon"
+      :label="genreSlugCurrentFilter(this.$route.params.slug)[0].title"
       :data_1="genreSlugGames.length"
       data_1_label="Games"
       :data_2="genreSlugPlatforms.length"
@@ -30,6 +29,11 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: this.genreSlugCurrentFilter(this.$route.params.slug)[0].title,
+      };
+    },
     data:() => ({
       genreSlugCurrent: [],
     }),

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <heading>Game by platform</heading>
+    <heading>Games by platform</heading>
     <ul class="container mx-auto flex flex-wrap justify-center">
       <category v-for="platform of platformIndex"
         :key="platform.slug"
@@ -18,6 +18,11 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: 'Platforms'
+      };
+    },
     data:() => ({
       platformGames: [],
       platformSystems: [],

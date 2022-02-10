@@ -65,14 +65,6 @@
 
 <script>
   export default {
-    head() {
-      return {
-
-      };
-    },
-    transition: {
-      mode: 'out-in'
-    },
     data() {
       return {
         query: '',

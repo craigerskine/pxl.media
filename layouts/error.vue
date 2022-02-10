@@ -8,6 +8,11 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: '404',  
+      };
+    },
     props: ['error'],
     layout: 'error' // you can set a custom layout for the error page
   }

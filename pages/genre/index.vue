@@ -1,6 +1,6 @@
 <template>
   <div>
-    <heading>Game by genre</heading>
+    <heading>Games by genre</heading>
     <ul class="container mx-auto flex flex-wrap justify-center">
       <category v-for="genre of genreIndex"
         :key="genre.slug"
@@ -15,6 +15,11 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: 'Genres'
+      };
+    },
     data:() => ({
       genreGames: [],
     }),
