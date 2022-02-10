@@ -15,11 +15,6 @@
 
 <script>
   export default {
-    head() {
-      return {
-        title: 'Genres'
-      };
-    },
     data:() => ({
       genreGames: [],
     }),
@@ -34,6 +29,11 @@
       return {
         genreGames,
         genreIndex
+      };
+    },
+    head() {
+      return {
+        title: 'Genres'
       };
     },
   }

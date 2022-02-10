@@ -1,8 +1,9 @@
 <template>
   <div>
-    <mast
-      :title="platformSlugCurrentFilter(this.$route.params.slug)[0].title"
-      :logo="platformSlugCurrentFilter(this.$route.params.slug)[0].logo"
+    <mast v-for="item of platformSlugCurrentFilter(this.$route.params.slug)"
+      :key="item.slug"
+      :title="item.title"
+      :logo="item.logo"
       :data_1="platformSlugGames.length"
       data_1_label="Games"
       :data_2="platformSlugSystems.length"
@@ -29,11 +30,6 @@
 
 <script>
   export default {
-    head() {
-      return {
-        title: this.platformSlugCurrentFilter(this.$route.params.slug)[0].title,
-      };
-    },
     data:() => ({
       platformSlugCurrent: [],
     }),
@@ -56,6 +52,11 @@
         platformSlugGames,
         platformSlugSystems,
         platformSlugCurrent
+      };
+    },
+    head() {
+      return {
+        title: this.platformSlugCurrentFilter(this.$route.params.slug)[0].title,
       };
     },
   }

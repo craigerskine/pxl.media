@@ -26,8 +26,6 @@ export default {
     ],
     script: [
       { src: 'https://kit.fontawesome.com/6d6156d427.js', body: true },
-      { src: '/assets/js/twind.config.js', body: true },
-      { src: '/assets/js/site.js', body: true },
     ]
   },
 

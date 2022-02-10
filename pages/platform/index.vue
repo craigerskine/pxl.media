@@ -18,11 +18,6 @@
 
 <script>
   export default {
-    head() {
-      return {
-        title: 'Platforms'
-      };
-    },
     data:() => ({
       platformGames: [],
       platformSystems: [],
@@ -45,6 +40,11 @@
         platformSystems,
         platformMinis,
         platformIndex
+      };
+    },
+    head() {
+      return {
+        title: 'Platforms'
       };
     },
   }
