@@ -1,17 +1,17 @@
 <template>
   <div>
-    <mast v-for="item of currentPlatform(this.$route.params.slug)"
+    <!-- :data_1="platformSlugGames.length",
+    data_1_label="Games",
+    :data_2="platformSlugSystems.length",
+    data_2_label="Systems", -->
+    <!-- <mast v-for="item of platformSlugCurrentFilter(this.$route.params.slug)"
       :key="item.slug"
       :title="item.title"
       :logo="item.logo",
-      :data_1="games.length",
-      data_1_label="Games",
-      :data_2="systems.length",
-      data_2_label="Systems",
-    />
+    /> -->
     <heading>Games owned</heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of games"
+      <game v-for="game of platformSlugGames"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"
@@ -31,27 +31,27 @@
 <script>
   export default {
     data:() => ({
-      pagePlatforms: [],
+      platformSlugCurrent: [],
     }),
     methods: {
-      currentPlatform: function(platform) {
-        return this.pagePlatforms.filter((item) => item.slug === platform)
+      platformSlugCurrentFilter: function(platform) {
+        return this.platformSlugCurrent.filter((item) => item.slug === platform)
       },
     },
     async asyncData({ $content, params }) {
-      const games = await $content("games")
+      const platformSlugGames = await $content("games")
         .where({ 'platform': { $eq: params.slug } })
         .sortBy('title')
         .fetch();
-      const systems = await $content("systems")
+      const platformSlugSystems = await $content("systems")
         .where({ 'platform': { $eq: params.slug } })
         .only(['title'])
         .fetch();
-      const pagePlatforms = await $content("_platform").only(['title','slug','logo']).fetch();
+      const platformSlugCurrent = await $content("_platform").only(['title','slug','logo']).fetch();
       return {
-        games,
-        systems,
-        pagePlatforms
+        platformSlugGames,
+        platformSlugSystems,
+        platformSlugCurrent
       };
     },
   }

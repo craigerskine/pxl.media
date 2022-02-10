@@ -1,17 +1,17 @@
 <template>
   <div>
-    <mast v-for="item of currentGenre(this.$route.params.slug)"
+    <!-- :data_1="genreSlugGames.length",
+    data_1_label="Games",
+    :data_2="genreSlugPlatforms.length",
+    data_2_label="Platforms", -->
+    <!-- <mast v-for="item of genreSlugCurrentFilter(this.$route.params.slug)"
       :key="item.slug"
       :ico="item.icon",
       :label="item.title",
-      :data_1="games.length",
-      data_1_label="Games",
-      :data_2="platforms.length",
-      data_2_label="Platforms",
-    />
+    /> -->
     <heading>Games owned</heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of games"
+      <game v-for="game of genreSlugGames"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"
@@ -31,26 +31,26 @@
 <script>
   export default {
     data:() => ({
-      pageGenres: [],
+      genreSlugCurrent: [],
     }),
     methods: {
-      currentGenre: function(genre) {
-        return this.pageGenres.filter((item) => item.slug === genre)
+      genreSlugCurrentFilter: function(genre) {
+        return this.genreSlugCurrent.filter((item) => item.slug === genre)
       },
     },
     async asyncData({ $content, params }) {
-      const games = await $content("games")
+      const genreSlugGames = await $content("games")
         .where({ 'genre': { $contains: params.slug } })
         .sortBy('title')
         .fetch();
-      const platforms = await $content("_platform")
+      const genreSlugPlatforms = await $content("_platform")
         .where({ 'platform': { $eq: params.slug } })
         .fetch();
-      const pageGenres = await $content("_genre").only(['title','slug','icon']).fetch();
+      const genreSlugCurrent = await $content("_genre").only(['title','slug','icon']).fetch();
       return {
-        games,
-        platforms,
-        pageGenres
+        genreSlugGames,
+        genreSlugPlatforms,
+        genreSlugCurrent
       };
     },
   }

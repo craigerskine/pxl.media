@@ -28,7 +28,7 @@
             <li class="flex-1">
               <ul class="tags flex space-x-4">
                 <li v-for="item in genre" :key="item.slug">
-                  <a v-for="g of gameGenre(item)" :href="'/genre/'+ item +'/'" class="group relative transition hover:text-white focus:text-white">
+                  <a v-for="g of gameGenre(item)" :key="g.slug" :href="'/genre/'+ item +'/'" class="group relative transition hover:text-white focus:text-white">
                     <i :class="['fad fa-fw', 'fa-'+ g.icon]" :title="g.title"></i>
                     <b class="p-1 bg-black text-gray-400 text-xs absolute bottom-full left-1/2 invisible opacity-[.0001] transform translate-y-1 -translate-x-1/2 transition-all group-hover:visible group-hover:opacity-100 group-hover:-translate-y-1 group-focus:visible group-focus:opacity-100 group-focus:-translate-y-1">
                       {{ g.title }}
