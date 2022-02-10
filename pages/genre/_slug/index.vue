@@ -1,6 +1,14 @@
 <template>
   <div>
-    <heading v-for="item of currentGenre(this.$route.params.slug)" :key="item.slug">{{ item.title }}</heading>
+    <mast v-for="item of currentGenre(this.$route.params.slug)"
+      :key="item.slug"
+      :ico="item.icon",
+      :label="item.title",
+      :data_1="games.length",
+      data_1_label="Games",
+      :data_2="platforms.length",
+      data_2_label="Platforms",
+    />
     <heading>Games owned</heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="game of games"
@@ -23,7 +31,6 @@
 <script>
   export default {
     data:() => ({
-      platforms: [],
       pageGenres: [],
     }),
     methods: {
@@ -36,9 +43,13 @@
         .where({ 'genre': { $contains: params.slug } })
         .sortBy('title')
         .fetch();
-      const pageGenres = await $content("_genre").only(['slug','title']).fetch();
+      const platforms = await $content("_platform")
+        .where({ 'platform': { $eq: params.slug } })
+        .fetch();
+      const pageGenres = await $content("_genre").only(['title','slug','icon']).fetch();
       return {
         games,
+        platforms,
         pageGenres
       };
     },

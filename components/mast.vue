@@ -1,10 +1,17 @@
 <template>
-  <a :href="url" :class="['container mx-auto flex items-center', url ? 'transition hover:(text-white) focus:(text-white)' : 'pointer-events-none']">
-    <div class="py-1 pr-4 text-7xl leading-none tracking-tight flex-1">
-      <span class="flex items-center"><slot /></span>
+  <a :href="url" :class="['container mx-auto px-4 flex items-center', url ? 'transition hover:(text-white) focus:(text-white)' : 'pointer-events-none']">
+    <div :class="['py-1 pr-4 text-7xl leading-none tracking-tight flex-1', { 'flex items-center space-x-5': ico}]">
+      <span class="flex items-center">
+        <svg v-if="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-16 fill-current">
+          <title>{{ title }}</title>
+          <g v-html="logo"></g>
+        </svg>
+        <slot />
+        <i v-if="ico" :class="['fad fa-fw text-5xl', 'fa-'+ ico]" :title="label"></i>
+      </span>
       <b v-if="label" :class="[
         'py-1 tracking-normal uppercase opacity-75',
-        home ? 'text-sm block md:text-xl' : 'text-xl hidden sm:block'
+        home ? 'text-sm block md:(text-xl)' : 'text-xl hidden sm:(block)'
       ]">
         {{ label }}
       </b>
@@ -21,7 +28,10 @@
 <script>
   export default {
     props: [
+      'title',
       'label',
+      'logo',
+      'ico',
       'url',
       'data_1',
       'data_1_label',
