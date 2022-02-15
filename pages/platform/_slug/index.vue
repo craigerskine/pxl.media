@@ -4,7 +4,7 @@
       :key="item.slug"
       :title="item.title"
       :logo="item.logo"
-      :data_1="platformSlugGames.length"
+      :data_1="platformTotalGames"
       data_1_label="Games"
       :data_2="platformSlugSystems.length"
       data_2_label="Systems"
@@ -25,6 +25,7 @@
         :posted="game.posted"
       />
     </ul>
+    <pagination v-if="platformTotalGames > 24" :pagePath="'/platform/'+ this.$route.params.slug" :pageTotal="platformTotalGames" />
   </div>
 </template>
 
@@ -32,6 +33,7 @@
   export default {
     data:() => ({
       platformSlugCurrent: [],
+      platformSlugGames: '',
     }),
     methods: {
       platformSlugCurrentFilter: function(platform) {
@@ -39,9 +41,22 @@
       },
     },
     async asyncData({ $content, params }) {
+      const platformPageCurrent = parseInt(params.page);
+      const platformPagePer = 24;
+      const platformAllGames = await $content("games").where({ 'platform': { $eq: params.slug } }).only(['title']).fetch();
+      const platformTotalGames = platformAllGames.length;
+      const platformLastPage = Math.ceil(platformTotalGames / platformPagePer);
+      const platformLastPageCount = platformTotalGames % platformPagePer === 0 ? platformPagePer : platformTotalGames % platformPagePer;
+      const platformSkip = () => {
+        if (platformPageCurrent === 1) {return 0;}
+        if (platformPageCurrent === platformLastPage) {return platformTotalGames - platformLastPageCount;}
+        return (platformPageCurrent - 1) * platformPagePer;
+      };
       const platformSlugGames = await $content("games")
         .where({ 'platform': { $eq: params.slug } })
         .sortBy('title')
+        .limit(platformPagePer)
+        .skip(platformSkip())
         .fetch();
       const platformSlugSystems = await $content("systems")
         .where({ 'platform': { $eq: params.slug } })
@@ -49,6 +64,8 @@
         .fetch();
       const platformSlugCurrent = await $content("_platform").only(['title','slug','logo']).fetch();
       return {
+        platformAllGames,
+        platformTotalGames,
         platformSlugGames,
         platformSlugSystems,
         platformSlugCurrent
