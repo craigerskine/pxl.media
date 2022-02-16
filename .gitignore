@@ -91,3 +91,7 @@ sw.*
 
 # code
 *.code-workspace
+
+# design
+_archive
+_design
