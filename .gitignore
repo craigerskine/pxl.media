@@ -93,5 +93,5 @@ sw.*
 *.code-workspace
 
 # design
-_archive
-_design
+/_archive
+/_design
