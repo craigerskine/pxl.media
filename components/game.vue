@@ -1,18 +1,18 @@
 <template>
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div :class="['box w-full flex flex-wrap relative shadow-xl', { 'ring-2 ring-red-500': pending }]">
-      <a v-if="pending" href="/games/pending/" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute -top-1 -right-1 z-20" title="Pending: Pre-Ordered">
+      <nuxt-link v-if="pending" to="/games/pending/" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute -top-1 -right-1 z-20" title="Pending: Pre-Ordered">
         <i class="ring-2 ring-current absolute inset-0 z-10 animate-ping"></i>
-      </a>
+      </nuxt-link>
       <figure class="cover w-full h-16 bg-black bg-opacity-80 flex relative">
         <figcaption class="border-t border-white border-opacity-30 w-full bg-cover bg-center backdrop-filter backdrop-opacity-50" :style="'background-image: url(\'/assets/img/games/'+ slug +'.jpg\')'"></figcaption>
         <figure class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
-          <a :href="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative z-20 transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+          <nuxt-link :to="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative z-20 transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
             <svg v-for="item of gamePlatform(platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
               <title>{{ item.title }}</title>
               <g v-html="item.logo"></g>
             </svg>
-          </a>
+          </nuxt-link>
           <figcaption class="bg-gradient-to-l from-[#111] via-gray-900 to-transparent block absolute inset-0 z-10"></figcaption>
         </figure>
       </figure>
@@ -28,12 +28,12 @@
             <li class="flex-1">
               <ul class="tags flex space-x-4">
                 <li v-for="item in genre" :key="item.slug">
-                  <a v-for="g of gameGenre(item)" :key="g.slug" :href="'/genre/'+ item +'/'" class="group relative transition hover:text-white focus:text-white">
+                  <nuxt-link v-for="g of gameGenre(item)" :key="g.slug" :to="'/genre/'+ item +'/'" class="group relative transition hover:text-white focus:text-white">
                     <i :class="['fad fa-fw', 'fa-'+ g.icon]" :title="g.title"></i>
                     <b class="p-1 bg-black text-gray-400 text-xs absolute bottom-full left-1/2 invisible opacity-[.0001] transform translate-y-1 -translate-x-1/2 transition-all group-hover:visible group-hover:opacity-100 group-hover:-translate-y-1 group-focus:visible group-focus:opacity-100 group-focus:-translate-y-1">
                       {{ g.title }}
                     </b>
-                  </a>
+                  </nuxt-link>
                 </li>
               </ul>
             </li>
