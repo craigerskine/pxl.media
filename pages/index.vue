@@ -41,7 +41,7 @@
         :posted="game.posted"
       />
     </ul>
-    <heading :subtext="indexGamesPending.length">Pending</heading>
+    <heading :subtext="indexGamesPending.length"><nuxt-link to="/games/pending/">Pending</nuxt-link></heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="game of indexGamesPending"
         :key="game.slug"
@@ -73,6 +73,7 @@ export default {
     const indexSystemsMiniCount = await $content("systems").only(['title']).where({system_type: { $eq: 'mini'}}).fetch();
     const indexGamesPending = await $content("games")
       .where({ pending: { $eq: true } })
+      .limit(6)
       .fetch();
     const indexGamesRecently = await $content("games")
       .sortBy('posted', 'desc')
