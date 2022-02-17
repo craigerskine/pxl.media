@@ -33,7 +33,7 @@
     },
     head() {
       return {
-        title: 'Pending / Pre-Ordered',
+        title: 'Pending / Pre-Ordered Games',
       };
     },
   }

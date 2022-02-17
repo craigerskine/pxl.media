@@ -73,7 +73,7 @@
     },
     head() {
       return {
-        title: this.platformSlugCurrentFilter(this.$route.params.slug)[0].title,
+        title: this.platformSlugCurrentFilter(this.$route.params.slug)[0].title +' Games',
       };
     },
   }
