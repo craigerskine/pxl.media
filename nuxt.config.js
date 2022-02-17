@@ -50,6 +50,7 @@ export default {
   ],
 
   content: {
+    fullTextSearchFields: ['title', 'note', 'slug'],
     nestedProperties: ['genre.slug']
   },
 
