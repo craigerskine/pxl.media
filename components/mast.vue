@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 flex items-center">
+  <nuxt-link :to="url || '#'" :class="['container mx-auto px-4 flex items-center', url ? '' : 'pointer-events-none']">
     <div :class="['py-1 pr-4 text-7xl leading-none tracking-tight flex-1', { 'flex items-center space-x-5': ico}]">
       <span class="flex items-center">
         <svg v-if="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-16 fill-current">
@@ -22,12 +22,13 @@
         <small class="opacity-75" v-text="i === 1 ? data_1_label : (i === 2) ? data_2_label : data_3_label"></small>
       </li>
     </ul>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
   export default {
     props: [
+      'url',
       'title',
       'label',
       'logo',

@@ -14,6 +14,7 @@
       </div>
       <div class="stat mx-auto px-4 py-1 border-b border-gray-500 border-opacity-30 w-full sm:(max-w-md) lg:(mx-0 my-10)">
         <mast
+          url="/systems/"
           label="Systems"
           :data_1="indexSystemsConsoleCount.length"
           data_1_label="Consoles"
