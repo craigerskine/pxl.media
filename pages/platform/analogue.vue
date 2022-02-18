@@ -26,7 +26,7 @@
       const systemsAnaloguePage = await $content("systems").where({ platform: { $eq: 'analogue' } }).fetch();
       return {
         platformAnalogueMast,
-        systemsAnaloguePage
+        systemsAnaloguePage,
       };
     },
     head() {

@@ -24,7 +24,7 @@
     async asyncData({ $content }) {
       const systemsMinisPage = await $content("systems").where({ system_type: { $eq: 'mini' } }).fetch();
       return {
-        systemsMinisPage
+        systemsMinisPage,
       };
     },
     head() {

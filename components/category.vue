@@ -1,6 +1,6 @@
 <template>
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
-    <nuxt-link :to="url" :class="['category group mb-12 px-4 pb-1 w-full flex flex-col relative transition', { 'hover:text-white focus:text-white' : url }]">
+    <nuxt-link :to="url || '#'" :class="['category group mb-12 px-4 pb-1 w-full flex flex-col relative transition', url ? 'hover:text-white focus:text-white' : 'pointer-events-none']">
       <div :class="['mast box mb-1 p-4 bg(center cover no-repeat) text-gray-400 flex items-center relative transition group-hover:(text-white) group-focus:(text-white)',
         bg_img ? 'h-32' : 'border(b-2 transparent) group-hover:(border-blue-400) group-focus:(border-blue-400)',
         bg_color

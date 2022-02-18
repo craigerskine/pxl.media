@@ -51,7 +51,7 @@ export default {
 
   content: {
     fullTextSearchFields: ['title', 'note', 'slug'],
-    nestedProperties: ['genre.slug']
+    nestedProperties: ['genre.slug'],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

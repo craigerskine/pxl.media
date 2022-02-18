@@ -26,7 +26,7 @@
       const systemsPolymegaPage = await $content("systems").where({ platform: { $eq: 'polymega' } }).fetch();
       return {
         platformPolymegaMast,
-        systemsPolymegaPage
+        systemsPolymegaPage,
       };
     },
     head() {

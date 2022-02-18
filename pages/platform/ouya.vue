@@ -26,7 +26,7 @@
       const systemsOuyaPage = await $content("systems").where({ platform: { $eq: 'ouya' } }).fetch();
       return {
         platformOuyaMast,
-        systemsOuyaPage
+        systemsOuyaPage,
       };
     },
     head() {

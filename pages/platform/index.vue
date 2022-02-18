@@ -41,7 +41,7 @@
         platformGames,
         platformSystems,
         platformMinis,
-        platformIndex
+        platformIndex,
       };
     },
     head() {
