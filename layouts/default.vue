@@ -30,7 +30,7 @@
           <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
         </fieldset>
         <transition name="page">
-          <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800 grid) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) divide(y dashed black opacity-50) shadow-2xl lg:(mx-4 w-1/2)">
+          <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800 grid) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) divide(y dashed black opacity-75) shadow-2xl lg:(mx-4 w-1/2)">
             <li class="py-3 px-4 bg(gray-800 grid) flex items-center justify-center sticky top-0 z-10 shadow-xl">
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
               <b v-text="searchResults.length +' Games'" class="px-4 uppercase flex-none"></b>
