@@ -47,7 +47,7 @@ twind.tw(() => ({
     '.input-search::-webkit-search-cancel-button': { '@apply': 'cursor-pointer appearance-none w-3 h-3 bg(close no-repeat center)', },
     '.box': { 'background-color': 'rgba(255,255,255,.05)', 'box-shadow': 'inset 0 1px 0 0 rgba(255,255,255,.075)', },
     '.page-enter-active,.page-leave-active': { '@apply': 'transition', },
-    '.page-enter,.page-leave-to': { '@apply': 'scale-105 opacity-0', },
+    '.page-enter,.page-leave-to': { '@apply': 'scale-[.98] opacity-0', },
   }
 }))
 twindObserve.observe(document.documentElement);
