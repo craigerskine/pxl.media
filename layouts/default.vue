@@ -30,13 +30,13 @@
           <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
         </fieldset>
         <transition name="page">
-          <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800 grid) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) divide(y dashed opacity-75) divide-black shadow-2xl lg:(mx-4 w-1/2)">
-            <li class="py-3 px-4 bg(gray-800 grid) flex items-center justify-center sticky top-0 z-10 shadow-xl">
+          <ul v-if="searchResults.length" class="px-3 pb-3 w-full max-h-[75vh] bg(gray-800) space-y-2 overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
+            <li class="py-3 px-4 bg(gray-800) flex items-center justify-center sticky top-0 z-10 shadow-xl">
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
               <b v-text="searchResults.length +' Games'" class="px-4 uppercase flex-none"></b>
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
             </li>
-            <li v-for="result of searchResults" :key="result.slug" class="py-1 px-4 leading-loose flex items-center">
+            <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-1 px-4 leading-loose flex items-center rounded-md', index % 2 === 0 ? 'bg-white bg-opacity-5' : '']">
               <b v-text="result.title" class="mr-2 min-w-0 truncate" :title="result.title"></b>
               <small v-text="result.note" class="ml-auto italic flex-none opacity-80"></small>
             </li>

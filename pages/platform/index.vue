@@ -5,7 +5,7 @@
       <category v-for="platform of platformIndex"
         :key="platform.slug"
         :svg_title="platform.title"
-        :url="platform.slug"
+        :url="platform.slug +'/'"
         :fg_img="platform.logo"
         :subtext="platformGamesFilter(platform.slug).length +' <b class=\'font-normal uppercase\'>Games</b> '+ platformSystemsFilter(platform.slug).length +' <b class=\'font-normal uppercase\'>Systems</b>'"
       />
