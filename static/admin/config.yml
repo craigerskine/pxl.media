@@ -6,7 +6,8 @@ public_folder: "/assets/img/games"
 
 collections:
   - name: "_platforms"
-    label: "Platform"
+    label: "Platforms"
+    label_singular: "Platform"
     folder: "content/_platform"
     create: true
     slug: "{{slug}}"
@@ -19,7 +20,8 @@ collections:
       - {label: "Color", name: "color", required: false, widget: "string"}
       - {label: "Order", name: "order", required: false, widget: "number"}
   - name: "_genres"
-    label: "Genre"
+    label: "Genres"
+    label_singular: "Genre"
     folder: "content/_genre"
     create: true
     slug: "{{slug}}"
@@ -27,7 +29,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "string"}
   - name: "games"
-    label: "Game"
+    label: "Games"
+    label_singular: "Game"
     folder: "content/games"
     create: true
     slug: "{{slug}}"
@@ -42,7 +45,8 @@ collections:
       - {label: "Pending", name: "pending", widget: "boolean"}
       - {label: "Posted", name: "date", widget: "date"}
   - name: "systems"
-    label: "System"
+    label: "Systems"
+    label_singular: "System"
     folder: "content/systems"
     create: true
     slug: "{{slug}}"
@@ -52,7 +56,8 @@ collections:
       - {label: "System Type", name: "system_type", widget: "select", options: [{label: "Console", value: "console"}, {label: "Handheld", value: "handheld"}, {label: "Hybrid", value: "hybrid"}, {label: "Mini", value: "mini"}]}
       - {label: "Variation", name: "variation", required: false, widget: "string"}
   - name: "controllers"
-    label: "Controller"
+    label: "Controllers"
+    label_singular: "Controller"
     folder: "content/controllers"
     create: true
     slug: "{{slug}}"
