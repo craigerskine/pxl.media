@@ -1,7 +1,5 @@
 ---
 title: 'SN30 Retro Set'
-platform:
-  - steam
 company: 8Bitdo
 variation: Transparent
 connection: Bluetooth

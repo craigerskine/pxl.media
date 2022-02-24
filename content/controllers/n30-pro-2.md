@@ -1,7 +1,5 @@
 ---
 title: 'N30 Pro 2'
-platform:
-  - steam
 company: 8Bitdo
 variation: 'C Edition'
 connection: Bluetooth
