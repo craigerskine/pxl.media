@@ -49,6 +49,10 @@ export default {
     '@nuxt/content'
   ],
 
+  generate: {
+    fallback: true
+  },
+
   content: {
     fullTextSearchFields: ['title', 'note', 'slug'],
     nestedProperties: ['genre.slug'],
