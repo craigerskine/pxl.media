@@ -9,7 +9,7 @@
             <g v-html="platform.logo"></g>
           </svg>
         </nuxt-link>
-        <ul class="mt-5 ml-5 pl-5 border(l dashed gray-500 opacity-30) divide(y dashed gray-500 opacity-30) md:(ml-12 pl-12)">
+        <ul class="ml-5 py-5 pl-5 border(l dashed gray-500 opacity-30) divide(y dashed gray-500 opacity-30) md:(ml-12 pl-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
             <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 flex(& wrap) items-center">
               <b>{{ system.title }}</b>

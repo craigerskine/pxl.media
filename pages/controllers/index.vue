@@ -10,7 +10,7 @@
           </svg>
           <figcaption class="sr-only">{{ company.title }}</figcaption>
         </figure>
-        <ul :class="['mt-5 ml-5 pl-5 border(l dashed gray-500 opacity-30) md:(ml-12 pl-12)', company.slug === '8bitdo' ? 'md:(grid(& flow-row cols-2) gap-x-12)' : '']">
+        <ul :class="['ml-5 py-5 pl-5 border(l dashed gray-500 opacity-30) md:(ml-12 pl-12)', company.slug === '8bitdo' ? 'md:(grid(& flow-row cols-2) gap-x-12)' : '']">
           <template v-if="controllersIndexFilter(company.title).length">
             <li v-for="controller of controllersIndexFilter(company.title)" class="py-2 border(b dashed gray-500 opacity-30) flex(& wrap) items-center">
               <b>{{ controller.title }}</b>
