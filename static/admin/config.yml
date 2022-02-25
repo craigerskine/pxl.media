@@ -39,10 +39,10 @@ collections:
       - {label: "Note", name: "note", required: false, widget: "string"}
       - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
       - {label: "Genre", name: "genre", widget: "relation", collection: "_genres", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
-      - {label: "Physical", name: "physical", required: false, widget: "boolean"}
-      - {label: "Digital", name: "digital", required: false, widget: "boolean"}
-      - {label: "Guide", name: "guide", required: false, widget: "boolean"}
-      - {label: "Pending", name: "pending", required: false, widget: "boolean"}
+      - {label: "Physical", name: "physical", required: false, default: false, widget: "boolean"}
+      - {label: "Digital", name: "digital", required: false, default: false, widget: "boolean"}
+      - {label: "Guide", name: "guide", required: false, default: false, widget: "boolean"}
+      - {label: "Pending", name: "pending", required: false, default: false, widget: "boolean"}
       - {label: "Posted", name: "posted", widget: "date", default: "YYYY-MM-DD", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
   - name: "systems"
     label: "Systems"
