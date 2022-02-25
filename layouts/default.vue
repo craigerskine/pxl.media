@@ -18,8 +18,8 @@
               </nuxt-link>
             </li>
             <li class="nav-item" v-for="i in 2">
-              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
-                <i :class="['fad fa-fw', i === 1 ? 'fa-layer-group' : 'fa-filter']" :title="i === 1 ? 'Platform' : 'Genre'"></i>
+              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="" :title="i === 1 ? 'Platform' : 'Genre'">
+                <i :class="['fad fa-fw', i === 1 ? 'fa-layer-group' : 'fa-filter']"></i>
               </nuxt-link>
             </li>
           </ul>
