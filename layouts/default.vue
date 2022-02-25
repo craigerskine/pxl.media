@@ -17,9 +17,9 @@
                 </svg>
               </nuxt-link>
             </li>
-            <li class="nav-item" v-for="i in 3">
-              <nuxt-link :to="i === 1 ? '/platform/' : (i === 2) ? '/genre/' : '/controllers/'" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
-                <i :class="['fad fa-fw', i === 1 ? 'fa-layer-group' : (i === 2) ? 'fa-filter' : 'fa-gamepad-alt']" :title="i === 1 ? 'Platform' : (i === 2) ? 'Genre' : 'Controllers'"></i>
+            <li class="nav-item" v-for="i in 2">
+              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
+                <i :class="['fad fa-fw', i === 1 ? 'fa-layer-group' : 'fa-filter']" :title="i === 1 ? 'Platform' : 'Genre'"></i>
               </nuxt-link>
             </li>
           </ul>

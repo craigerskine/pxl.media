@@ -43,7 +43,7 @@ collections:
       - {label: "Digital", name: "digital", required: false, widget: "boolean"}
       - {label: "Guide", name: "guide", required: false, widget: "boolean"}
       - {label: "Pending", name: "pending", required: false, widget: "boolean"}
-      - {label: "Posted", name: "posted", widget: "date"}
+      - {label: "Posted", name: "posted", widget: "date", format: "YYYY-MM-DD"}
   - name: "systems"
     label: "Systems"
     label_singular: "System"
