@@ -55,15 +55,15 @@ collections:
         widget: "select"
         options:
           - {label: "8Bitdo", value: "8bitdo"}
-          - {label: "Banda", value: "bandai"}
+          - {label: "Bandai", value: "bandai"}
           - {label: "HORI", value: "hori"}
-          - {label: "Junkfood Custom Arcade", value: "junkfood-custom-arcades"}
+          - {label: "Junkfood Custom Arcades", value: "junkfood-custom-arcades"}
           - {label: "Logitech", value: "logitech"}
-          - {label: "Polymeg", value: "polymega"}
+          - {label: "Polymega", value: "polymega"}
           - {label: "Retro-Bit", value: "retro-bit"}
-          - {label: "Retro Fighter", value: "retro-fighters"}
+          - {label: "Retro Fighters", value: "retro-fighters"}
           - {label: "Sammy", value: "sammy"}
-          - {label: "Wind Spiri", value: "wind-spirit"}
+          - {label: "Wind Spirit", value: "wind-spirit"}
           - {label: "Wish Technologies", value: "wish-technologies"}
   - name: "_platforms"
     label: "Platforms"
