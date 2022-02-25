@@ -39,10 +39,32 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Variation", name: "variation", required: false, widget: "list"}
-      - {label: "Connection", name: "connection", required: false, widget: "list"}
-      - {label: "Company", name: "company", widget: "relation", collection: "_controllers-company", value_field: "slug", display_fields: ["title"], search_fields: ["title"], options_length: 100}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Variation"
+        name: "variation"
+        required: false
+        widget: "list"
+      - label: "Connection"
+        name: "connection"
+        required: false
+        widget: "list"
+      - label: "Company"
+        name: "company"
+        widget: "select"
+        options:
+          - {label: "8Bitdo", value: "8bitdo"}
+          - {label: "Banda", value: "bandai"}
+          - {label: "HORI", value: "hori"}
+          - {label: "Junkfood Custom Arcade", value: "junkfood-custom-arcades"}
+          - {label: "Logitech", value: "logitech"}
+          - {label: "Polymeg", value: "polymega"}
+          - {label: "Retro-Bit", value: "retro-bit"}
+          - {label: "Retro Fighter", value: "retro-fighters"}
+          - {label: "Sammy", value: "sammy"}
+          - {label: "Wind Spiri", value: "wind-spirit"}
+          - {label: "Wish Technologies", value: "wish-technologies"}
   - name: "_platforms"
     label: "Platforms"
     label_singular: "Platform"
@@ -66,12 +88,3 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "string"}
-  - name: "_controllers-company"
-    label: "Compan"
-    label_singular: "Company"
-    folder: "content/_controllers-company"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Logo", name: "logo", widget: "text"}
