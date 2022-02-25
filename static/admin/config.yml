@@ -5,30 +5,7 @@ media_folder: "static/assets/img/games"
 public_folder: "/assets/img/games"
 
 collections:
-  - name: "_platforms"
-    label: "Platforms"
-    label_singular: "Platform"
-    folder: "content/_platform"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Company", name: "company", widget: "string"}
-      - {label: "Logo", name: "logo", widget: "text"}
-      - {label: "Disc", name: "disc", widget: "boolean"}
-      - {label: "Cartridge", name: "cartridge", widget: "boolean"}
-      - {label: "Color", name: "color", required: false, widget: "string"}
-      - {label: "Order", name: "order", required: false, widget: "number"}
-  - name: "_genres"
-    label: "Genres"
-    label_singular: "Genre"
-    folder: "content/_genre"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Icon", name: "icon", widget: "string"}
-  - name: "games"
+- name: "games"
     label: "Games"
     label_singular: "Game"
     folder: "content/games"
@@ -66,8 +43,31 @@ collections:
       - {label: "Variation", name: "variation", required: false, widget: "list"}
       - {label: "Connection", name: "connection", required: false, widget: "list"}
       - {label: "Company", name: "company", widget: "relation", collection: "_controllers-company", value_field: "slug", display_fields: ["title"], search_fields: ["title"], options_length: 100}
+  - name: "_platforms"
+    label: "Platforms"
+    label_singular: "Platform"
+    folder: "content/_platform"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "text"}
+      - {label: "Disc", name: "disc", widget: "boolean"}
+      - {label: "Cartridge", name: "cartridge", widget: "boolean"}
+      - {label: "Color", name: "color", required: false, widget: "string"}
+      - {label: "Order", name: "order", required: false, widget: "number"}
+  - name: "_genres"
+    label: "Genres"
+    label_singular: "Genre"
+    folder: "content/_genre"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
   - name: "_controllers-company"
-    label: "Company"
+    label: "Companies"
     label_singular: "Company"
     folder: "content/_controllers-company"
     create: true
