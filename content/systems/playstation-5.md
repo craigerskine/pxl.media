@@ -4,6 +4,6 @@ title: 'PlayStation 5'
 platform: playstation-5
 system_type: console
 variation: Disc
-accessories: ' Darkplates v2'
+accessories: ' + Darkplates v2'
 slug: playstation-5
 ---

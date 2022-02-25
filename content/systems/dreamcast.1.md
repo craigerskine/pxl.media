@@ -4,6 +4,6 @@ title: Dreamcast
 platform: dreamcast
 system_type: console
 variation: ''
-accessories: ''
+accessories: '+ Keyboard'
 slug: dreamcast
 ---

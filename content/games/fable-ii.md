@@ -1,6 +1,4 @@
 ---
-id: fc61cd01-dbf7-4976-82cd-6bc9212a23bd
-blueprint: games
 title: 'Fable II'
 platform: xbox-360
 genre:
@@ -10,6 +8,5 @@ digital: true
 physical: true
 guide: false
 pending: false
-posted: '2014-02-10'
-slug: fable-ii
+posted: 2014-02-10
 ---

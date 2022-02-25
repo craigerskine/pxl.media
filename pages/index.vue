@@ -28,11 +28,11 @@
         <mast
           url="/controllers/"
           label="Controllers"
-          :data_1="'###'"
+          :data_1="homeControllersWirelessCount.length"
           data_1_label="Wireless"
-          :data_2="'###'"
+          :data_2="homeControllersUsbCount.length"
           data_2_label="USB"
-          :data_3="'###'"
+          :data_3="homeControllersAdaptersCount.length"
           data_3_label="Adapters"
           home="true">{{ homeControllersCount.length }}</mast>
       </li>
@@ -84,6 +84,9 @@ export default {
     const homeSystemsHandheldCount = await $content("systems").only(['title']).where({system_type: { $in: ['handheld', 'hybrid']}}).fetch();
     const homeSystemsMiniCount = await $content("systems").only(['title']).where({system_type: { $eq: 'mini'}}).fetch();
     const homeControllersCount = await $content("controllers").only(['title']).fetch();
+    const homeControllersWirelessCount = await $content("controllers").only(['title']).where({connection: { $in: ['2.4Ghz', 'Bluetooth']}}).fetch();
+    const homeControllersUsbCount = await $content("controllers").only(['title']).where({connection: { $in: ['System', 'USB']}}).fetch();
+    const homeControllersAdaptersCount = await $content("controllers").only(['title']).search('title', 'adapter').fetch();
     const homeGamesPending = await $content("games")
       .where({ pending: { $eq: true } })
       .limit(6)
@@ -103,6 +106,9 @@ export default {
       homeSystemsHandheldCount,
       homeSystemsMiniCount,
       homeControllersCount,
+      homeControllersWirelessCount,
+      homeControllersUsbCount,
+      homeControllersAdaptersCount,
       homeGamesPending,
       homeGamesRecently,
     };
