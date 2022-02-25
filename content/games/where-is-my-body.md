@@ -1,4 +1,6 @@
 ---
+id: c5365447-1b72-48df-aa98-805ca287d787
+blueprint: games
 title: 'Where is my Body?'
 platform: game-boy
 genre:
@@ -8,5 +10,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2021-11-03
+posted: '2021-11-03'
+slug: where-is-my-body
 ---

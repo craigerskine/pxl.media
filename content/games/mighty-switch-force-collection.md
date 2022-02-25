@@ -1,4 +1,6 @@
 ---
+id: 3d546b8a-6683-49e6-baeb-036877a05689
+blueprint: games
 title: 'Mighty Switch Force! Collection'
 platform: switch
 genre:
@@ -9,5 +11,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2020-06-14
+posted: '2020-06-14'
+slug: mighty-switch-force-collection
 ---

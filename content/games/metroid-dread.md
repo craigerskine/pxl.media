@@ -1,4 +1,6 @@
 ---
+id: e5637e05-5051-4d9d-a83a-968dacf2e7ec
+blueprint: games
 title: 'Metroid Dread'
 platform: switch
 genre:
@@ -7,5 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2021-10-11
+posted: '2021-10-11'
+slug: metroid-dread
 ---

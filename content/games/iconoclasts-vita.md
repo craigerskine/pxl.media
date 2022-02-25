@@ -1,4 +1,6 @@
 ---
+id: 32bafa2f-adad-49dd-8418-933bd88f430f
+blueprint: games
 title: 'Iconoclasts [Vita]'
 platform: playstation-vita
 genre:
@@ -7,5 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: 2018-01-26
+posted: '2018-01-26'
+slug: iconoclasts-vita
 ---

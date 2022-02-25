@@ -1,4 +1,6 @@
 ---
+id: 78670552-8efe-45dc-a687-bd89ec00ddca
+blueprint: games
 title: 'Magical Chase (Reproduction)'
 platform: turbografx-16
 genre:
@@ -7,5 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2016-12-03
+posted: '2016-12-03'
+slug: magical-chase-reproduction
 ---

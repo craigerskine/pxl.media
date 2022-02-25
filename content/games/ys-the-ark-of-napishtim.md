@@ -1,4 +1,6 @@
 ---
+id: 42f6297c-f01f-4c7e-b24e-cff6a13a4553
+blueprint: games
 title: 'Ys: The Ark of Napishtim'
 platform: playstation-2
 genre:
@@ -8,5 +10,6 @@ digital: false
 physical: true
 guide: true
 pending: false
-posted: 2014-02-10
+posted: '2014-02-10'
+slug: ys-the-ark-of-napishtim
 ---

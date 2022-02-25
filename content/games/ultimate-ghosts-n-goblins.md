@@ -1,4 +1,6 @@
 ---
+id: 7b018ea4-b750-4a07-b781-b953a4a0040c
+blueprint: games
 title: 'Ultimate Ghosts ''N Goblins'
 platform: playstation-portable
 genre:
@@ -7,5 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: 2018-08-13
+posted: '2018-08-13'
+slug: ultimate-ghosts-n-goblins
 ---

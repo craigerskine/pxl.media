@@ -1,4 +1,6 @@
 ---
+id: 7e3add95-f5fd-4172-8c94-4048ebecb229
+blueprint: games
 title: 'Zanac x Zanac'
 platform: playstation
 genre:
@@ -7,5 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: 2014-02-13
+posted: '2014-02-13'
+slug: zanac-x-zanac
 ---

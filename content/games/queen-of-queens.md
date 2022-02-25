@@ -1,4 +1,6 @@
 ---
+id: a3c1ade4-2b18-49e4-bdc9-acac4d4a526d
+blueprint: games
 title: 'Queen of Queens'
 platform: pc-fx
 genre:
@@ -7,5 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2014-02-10
+posted: '2014-02-10'
+slug: queen-of-queens
 ---

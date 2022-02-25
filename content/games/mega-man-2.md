@@ -1,4 +1,6 @@
 ---
+id: 9849f21c-c364-4b56-a5ab-d7939c615bb0
+blueprint: games
 title: 'Mega Man 2'
 platform: nintendo-entertainment-system
 genre:
@@ -8,5 +10,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2014-02-10
+posted: '2014-02-10'
+slug: mega-man-2
 ---

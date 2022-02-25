@@ -1,4 +1,6 @@
 ---
+id: 8c18eea4-d59e-4716-a2e7-6a53d16c89cd
+blueprint: games
 title: 'Space Armada'
 platform: intellivision
 genre:
@@ -7,5 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2014-02-14
+posted: '2014-02-14'
+slug: space-armada
 ---

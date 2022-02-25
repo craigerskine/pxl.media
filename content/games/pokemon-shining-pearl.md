@@ -1,4 +1,6 @@
 ---
+id: d9b122ec-836b-40ca-b854-d7e3574b111d
+blueprint: games
 title: 'Pokémon: Shining Pearl'
 platform: switch
 genre:
@@ -7,5 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2021-12-05
+posted: '2021-12-05'
+slug: pokemon-shining-pearl
 ---

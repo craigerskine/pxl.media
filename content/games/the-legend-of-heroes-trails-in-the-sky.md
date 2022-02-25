@@ -1,4 +1,6 @@
 ---
+id: 6de0003c-e900-4d43-beea-de5d5f5a654c
+blueprint: games
 title: 'The Legend of Heroes: Trails in the Sky'
 platform: playstation-portable
 genre:
@@ -8,5 +10,6 @@ digital: true
 physical: true
 guide: false
 pending: false
-posted: 2014-02-11
+posted: '2014-02-11'
+slug: the-legend-of-heroes-trails-in-the-sky
 ---

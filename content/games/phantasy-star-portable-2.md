@@ -1,4 +1,6 @@
 ---
+id: 27cb9dad-bbe5-4676-a547-19a254957447
+blueprint: games
 title: 'Phantasy Star Portable 2'
 platform: playstation-portable
 genre:
@@ -7,5 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: 2014-02-11
+posted: '2014-02-11'
+slug: phantasy-star-portable-2
 ---
