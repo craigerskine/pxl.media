@@ -1,6 +1,5 @@
 ---
 id: 1058674e-39e0-463a-b796-2ad9a4ab24ba
-blueprint: games
 title: Hyperdimension Neptunia Re;Birth2: Sisters Generation
 platform: playstation-vita
 genre:

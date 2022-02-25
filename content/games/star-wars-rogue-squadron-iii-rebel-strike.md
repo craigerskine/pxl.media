@@ -1,6 +1,5 @@
 ---
 id: 78f4eac7-949c-41a4-981d-316b14bb5d8a
-blueprint: games
 title: Star Wars Rogue Squadron III: Rebel Strike
 platform: gamecube
 genre:

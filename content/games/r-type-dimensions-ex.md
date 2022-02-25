@@ -1,6 +1,5 @@
 ---
 id: 9babd0b3-e35a-478b-89a2-5f2dfb6b951a
-blueprint: games
 title: R-Type Dimensions EX
 platform: switch
 genre:

@@ -1,6 +1,5 @@
 ---
 id: cc2a38dd-7a4e-4325-bd0b-dfa5dc00466a
-blueprint: games
 title: Pokémon: Fire Red Version
 platform: game-boy-advance
 genre:

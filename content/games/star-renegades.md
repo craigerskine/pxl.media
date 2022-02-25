@@ -1,6 +1,5 @@
 ---
 id: 5ee58df9-1d26-4893-a057-2d20603a2183
-blueprint: games
 title: Star Renegades
 platform: switch
 genre:

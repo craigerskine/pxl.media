@@ -1,6 +1,5 @@
 ---
 id: e4984d87-9c1f-4ecc-838c-bab9135ab657
-blueprint: games
 title: Medal of Honor: Multiplayer
 platform: steam
 genre:

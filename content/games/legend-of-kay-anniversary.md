@@ -1,6 +1,5 @@
 ---
 id: 4fbe470e-0495-443e-9ae5-e545fc26da56
-blueprint: games
 title: Legend of Kay Anniversary
 platform: switch
 genre:

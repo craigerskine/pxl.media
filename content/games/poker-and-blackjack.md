@@ -1,6 +1,5 @@
 ---
 id: 11fbe0a6-61ac-4a3d-9a58-433486026534
-blueprint: games
 title: Poker & Blackjack
 platform: intellivision
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 096ff446-35cb-4bdc-8a65-6a0c5aa53630
-blueprint: games
 title: The Legend of Zelda: Phantom Hourglass
 platform: ds
 genre:

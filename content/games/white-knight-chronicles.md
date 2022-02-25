@@ -1,6 +1,5 @@
 ---
 id: dc38a79a-ddc3-4389-9dd8-37fd016c0808
-blueprint: games
 title: White Knight Chronicles
 platform: playstation-3
 genre:

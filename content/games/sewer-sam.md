@@ -1,6 +1,5 @@
 ---
 id: c91ba715-db8b-49ba-aadd-74a1e1f841e7
-blueprint: games
 title: Sewer Sam
 platform: intellivision
 genre:

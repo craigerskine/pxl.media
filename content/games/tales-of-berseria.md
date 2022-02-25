@@ -1,6 +1,5 @@
 ---
 id: f74e88ee-6e09-4674-81ce-08b00b642133
-blueprint: games
 title: Tales of Berseria
 platform: playstation-4
 genre:

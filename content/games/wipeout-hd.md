@@ -1,6 +1,5 @@
 ---
 id: 2d45e19f-7ce7-41c3-8a3f-5411015d1ddf
-blueprint: games
 title: WipEout HD
 platform: playstation-3
 genre:

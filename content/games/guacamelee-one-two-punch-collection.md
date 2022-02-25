@@ -1,6 +1,5 @@
 ---
 id: f3a36b07-c132-415b-b4a3-9c1c76913027
-blueprint: games
 title: Guacamelee! One-Two Punch Collection
 platform: switch
 genre:

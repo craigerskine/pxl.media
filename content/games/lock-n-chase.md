@@ -1,6 +1,5 @@
 ---
 id: 0a94ece0-aa2a-446b-8765-3f776ff7bfdd
-blueprint: games
 title: Lock N' Chase
 platform: intellivision
 genre:

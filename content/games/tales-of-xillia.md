@@ -1,6 +1,5 @@
 ---
 id: 47e0a800-4a26-4379-b8c9-c109170fbad4
-blueprint: games
 title: Tales of Xillia
 platform: playstation-3
 genre:

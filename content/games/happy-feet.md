@@ -1,6 +1,5 @@
 ---
 id: 771edcaf-137a-4c70-9ec1-00c508843ea6
-blueprint: games
 title: Happy Feet
 platform: playstation-2
 genre:

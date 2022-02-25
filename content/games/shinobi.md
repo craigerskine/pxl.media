@@ -1,6 +1,5 @@
 ---
 id: 0933163f-6fff-4590-b114-792a4e17a9a9
-blueprint: games
 title: Shinobi
 platform: master-system
 genre:

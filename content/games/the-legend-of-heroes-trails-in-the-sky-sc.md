@@ -1,6 +1,5 @@
 ---
 id: 196fceeb-3674-47df-856a-b04b833d66f1
-blueprint: games
 title: The Legend of Heroes: Trails in the Sky SC
 platform: playstation-portable
 genre:

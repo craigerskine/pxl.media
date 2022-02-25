@@ -1,6 +1,5 @@
 ---
 id: 8b073794-bf62-4b6c-8212-0d32d79c422c
-blueprint: games
 title: Night Trap
 platform: switch
 genre:

@@ -1,6 +1,5 @@
 ---
 id: a2d0c578-dd02-47df-83a6-6cdf08ce6b02
-blueprint: games
 title: Tomb Raider
 platform: playstation-3
 genre:

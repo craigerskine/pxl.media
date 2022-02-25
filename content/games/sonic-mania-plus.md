@@ -1,6 +1,5 @@
 ---
 id: c8907a4f-fe1a-4a16-9e7c-f3464a55998e
-blueprint: games
 title: Sonic Mania Plus
 platform: switch
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 0e318fdc-a15a-4806-8716-17fe1452cb9d
-blueprint: games
 title: Mega Man Legacy Collection
 platform: playstation-4
 genre:

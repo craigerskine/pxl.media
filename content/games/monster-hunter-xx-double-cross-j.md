@@ -1,6 +1,5 @@
 ---
 id: a55ff2ed-1483-4950-b737-0dd8fa28865b
-blueprint: games
 title: Monster Hunter XX Double Cross [J]
 platform: switch
 genre:

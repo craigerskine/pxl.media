@@ -1,6 +1,5 @@
 ---
 id: 3aa6dd93-96f9-41e1-9b7d-8742ab6dd8e1
-blueprint: games
 title: Tokyo Mirage Session #FE Encore
 platform: switch
 genre:

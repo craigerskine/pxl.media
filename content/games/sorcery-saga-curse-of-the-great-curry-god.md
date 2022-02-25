@@ -1,6 +1,5 @@
 ---
 id: ad1a0933-dc6b-43f4-91e7-ead214aeb3ee
-blueprint: games
 title: Sorcery Saga: Curse of the Great Curry God
 platform: playstation-vita
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 7b03dcbf-8e4d-4e3e-99f4-faadafd734b7
-blueprint: games
 title: The Hobbit
 platform: gamecube
 genre:

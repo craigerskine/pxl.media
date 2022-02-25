@@ -1,6 +1,5 @@
 ---
 id: a6db5976-6218-483c-946a-a06402221920
-blueprint: games
 title: The Wild at Heart
 platform: switch
 genre:

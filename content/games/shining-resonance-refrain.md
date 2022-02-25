@@ -1,6 +1,5 @@
 ---
 id: c7722346-b380-406d-808f-ce88050e51bb
-blueprint: games
 title: Shining Resonance Refrain
 platform: switch
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 553c3f49-8da2-4bb4-bf69-84dbefda5d2e
-blueprint: games
 title: Shantae: Half-Genie Hero - Ultimate Day One Edition
 platform: switch
 genre:

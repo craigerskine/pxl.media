@@ -1,6 +1,5 @@
 ---
 id: 574305f3-52ba-4755-9edf-9d6408cc2c27
-blueprint: games
 title: Super Skweek
 platform: lynx
 genre:

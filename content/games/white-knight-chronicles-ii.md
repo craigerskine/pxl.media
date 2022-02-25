@@ -1,6 +1,5 @@
 ---
 id: 417ac36b-fe5b-4d2d-a731-df5d52c2e762
-blueprint: games
 title: White Knight Chronicles II
 platform: playstation-3
 genre:

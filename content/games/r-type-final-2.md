@@ -1,6 +1,5 @@
 ---
 id: 2adff821-ee1d-4f5c-9d92-4e1148ffc1e8
-blueprint: games
 title: R-Type Final 2
 platform: switch
 genre:

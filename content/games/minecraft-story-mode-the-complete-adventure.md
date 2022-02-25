@@ -1,6 +1,5 @@
 ---
 id: e2fc0412-ea87-4ecb-a966-7db043b230fb
-blueprint: games
 title: Minecraft: Story Mode - The Complete Adventure
 platform: switch
 genre:

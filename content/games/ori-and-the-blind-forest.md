@@ -1,6 +1,5 @@
 ---
 id: ff50af92-fc45-408f-96b8-529b0a300752
-blueprint: games
 title: Ori and the Blind Forest
 platform: xbox-one
 genre:

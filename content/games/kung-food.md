@@ -1,6 +1,5 @@
 ---
 id: f5cfb43f-6421-4267-ba19-84711fff6cd4
-blueprint: games
 title: Kung Food
 platform: lynx
 genre:

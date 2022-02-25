@@ -1,6 +1,5 @@
 ---
 id: 90633546-97cf-484c-9723-ac36f9e111b5
-blueprint: games
 title: The Ninja Saviors - Return of The Warriors
 platform: switch
 genre:

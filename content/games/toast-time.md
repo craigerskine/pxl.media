@@ -1,6 +1,5 @@
 ---
 id: df1a9109-0cf7-43ee-aace-9f543e9660b0
-blueprint: games
 title: Toast Time
 platform: steam
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 53b1bc6d-8281-48eb-a9fe-6d3bf58006ab
-blueprint: games
 title: Rabi-Ribi [PS4]
 platform: playstation-4
 genre:

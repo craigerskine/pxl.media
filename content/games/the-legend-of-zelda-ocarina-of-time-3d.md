@@ -1,6 +1,5 @@
 ---
 id: 603a435f-9ffb-4caf-8d74-065118eb01bc
-blueprint: games
 title: The Legend of Zelda: Ocarina of Time 3D
 platform: 3ds
 genre:

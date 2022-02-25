@@ -1,6 +1,5 @@
 ---
 id: a57d1cbb-eb07-42ef-a963-688f93131459
-blueprint: games
 title: Persona 4 Arena
 platform: playstation-3
 genre:

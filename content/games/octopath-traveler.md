@@ -1,6 +1,5 @@
 ---
 id: 2806a9c8-167f-443c-bbae-711b45a92aa8
-blueprint: games
 title: Octopath Traveler
 platform: switch
 genre:

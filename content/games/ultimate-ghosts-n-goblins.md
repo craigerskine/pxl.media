@@ -1,6 +1,5 @@
 ---
 id: 7b018ea4-b750-4a07-b781-b953a4a0040c
-blueprint: games
 title: Ultimate Ghosts 'N Goblins
 platform: playstation-portable
 genre:

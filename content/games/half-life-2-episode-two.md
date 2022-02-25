@@ -1,6 +1,5 @@
 ---
 id: 91edd218-ce90-4b2f-87f8-8f03c9157495
-blueprint: games
 title: Half-Life 2: Episode Two
 platform: steam
 genre:

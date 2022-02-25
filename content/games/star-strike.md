@@ -1,6 +1,5 @@
 ---
 id: ac5086a6-9008-4a2c-a6f1-760bb9b50e20
-blueprint: games
 title: Star Strike
 platform: intellivision
 genre:

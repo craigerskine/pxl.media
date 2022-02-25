@@ -1,6 +1,5 @@
 ---
 id: e1259ccc-83fc-416c-b6a4-cbd05818b775
-blueprint: games
 title: Gungnir
 platform: playstation-portable
 genre:

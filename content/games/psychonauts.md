@@ -1,6 +1,5 @@
 ---
 id: d98d9d8b-9cdd-4778-a1e3-950108d9b57f
-blueprint: games
 title: Psychonauts
 platform: steam
 genre:

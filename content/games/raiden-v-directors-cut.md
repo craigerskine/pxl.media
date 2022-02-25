@@ -1,6 +1,5 @@
 ---
 id: 655951e4-ba61-4c85-ba7b-55f237f31e67
-blueprint: games
 title: Raiden V: Director's Cut
 platform: playstation-4
 genre:

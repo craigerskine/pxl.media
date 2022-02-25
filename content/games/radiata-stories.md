@@ -1,6 +1,5 @@
 ---
 id: 5ccc7dbd-5963-4e3e-8e21-9d462bd94019
-blueprint: games
 title: Radiata Stories
 platform: playstation-2
 genre:

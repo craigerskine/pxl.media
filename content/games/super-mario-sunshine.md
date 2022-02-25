@@ -1,6 +1,5 @@
 ---
 id: d3e6b74c-37e9-4a42-851f-3b936d7f59f2
-blueprint: games
 title: Super Mario Sunshine
 platform: gamecube
 genre:

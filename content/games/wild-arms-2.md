@@ -1,6 +1,5 @@
 ---
 id: 189573a6-454c-4a75-a583-f18e811bd2c2
-blueprint: games
 title: Wild Arms 2
 platform: playstation
 genre:

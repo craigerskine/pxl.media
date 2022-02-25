@@ -1,6 +1,5 @@
 ---
 id: f5ca55f7-335f-4736-bbd7-1488823a9afa
-blueprint: games
 title: The Legend of Zelda: A Link Between Worlds
 platform: 3ds
 genre:

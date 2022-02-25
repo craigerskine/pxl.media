@@ -1,6 +1,5 @@
 ---
 id: 27cb9dad-bbe5-4676-a547-19a254957447
-blueprint: games
 title: Phantasy Star Portable 2
 platform: playstation-portable
 genre:

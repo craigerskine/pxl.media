@@ -1,6 +1,5 @@
 ---
 id: b6442fa9-308e-492c-abfb-7e778095fd9e
-blueprint: games
 title: Utawarerumono: Mask of Truth
 platform: playstation-vita
 genre:

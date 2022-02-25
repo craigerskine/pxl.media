@@ -1,6 +1,5 @@
 ---
 id: bd21a0f7-339e-42aa-83d6-7bb3e56d0c37
-blueprint: games
 title: Neo Geo Pocket Color Selection Vol.1
 platform: switch
 genre:

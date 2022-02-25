@@ -1,6 +1,5 @@
 ---
 id: 100937da-c3d8-4880-a4e5-f706920b2aec
-blueprint: games
 title: Legend of Mana
 platform: playstation
 genre:

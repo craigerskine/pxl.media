@@ -1,6 +1,5 @@
 ---
 id: 4a7ef8ed-89e4-41b0-a2ae-bcd8543f1462
-blueprint: games
 title: Xybots
 platform: lynx
 genre:

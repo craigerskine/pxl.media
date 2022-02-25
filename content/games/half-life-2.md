@@ -1,6 +1,5 @@
 ---
 id: 7694512f-29a9-422a-86b7-da7c46bda67c
-blueprint: games
 title: Half-Life 2
 platform: steam
 genre:

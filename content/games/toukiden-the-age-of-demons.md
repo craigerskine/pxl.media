@@ -1,6 +1,5 @@
 ---
 id: 23e7c76c-e7d0-44b2-aba6-08673839ffbc
-blueprint: games
 title: Toukiden: The Age of Demons
 platform: playstation-vita
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 124a84e7-74ba-4be3-8d79-1e6e8b75b007
-blueprint: games
 title: Phantasy Star Online Version 2
 platform: dreamcast
 genre:

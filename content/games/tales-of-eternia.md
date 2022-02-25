@@ -1,6 +1,5 @@
 ---
 id: 2c55947b-7aae-413e-a57b-6d25d58918c4
-blueprint: games
 title: Tales of Eternia
 platform: playstation-portable
 genre:

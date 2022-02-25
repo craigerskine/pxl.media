@@ -1,6 +1,5 @@
 ---
 id: 80fd00e3-0568-4d12-8008-0eaa3dbf8cce
-blueprint: games
 title: Marvel’s Spider-Man
 platform: playstation-4
 genre:

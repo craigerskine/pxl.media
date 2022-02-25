@@ -1,6 +1,5 @@
 ---
 id: e61b76ff-08b4-40dc-807f-0e9a27276da0
-blueprint: games
 title: NieR Replicant
 platform: xbox-one
 genre:

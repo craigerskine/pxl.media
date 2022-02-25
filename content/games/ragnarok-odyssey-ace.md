@@ -1,6 +1,5 @@
 ---
 id: 0ee27707-b4ec-4e4b-aea6-6b00ec7bec3d
-blueprint: games
 title: Ragnarok Odyssey ACE
 platform: playstation-vita
 genre:

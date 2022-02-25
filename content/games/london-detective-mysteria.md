@@ -1,6 +1,5 @@
 ---
 id: b068fee5-74b9-4038-a337-37537ac1e83c
-blueprint: games
 title: London Detective Mysteria
 platform: playstation-vita
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 107e2ab2-fdfb-44cc-a0bd-748d537784f2
-blueprint: games
 title: The Legend of Zelda: The Wind Waker HD
 platform: wii-u
 genre:

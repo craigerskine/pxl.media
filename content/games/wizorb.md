@@ -1,6 +1,5 @@
 ---
 id: 1be2933b-a8be-4394-b005-b8d74ef7c6ac
-blueprint: games
 title: Wizorb
 platform: steam
 genre:

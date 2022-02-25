@@ -1,6 +1,5 @@
 ---
 id: e5c17195-1044-46d3-a301-675c53859967
-blueprint: games
 title: Mercenary Kings
 platform: switch
 genre:

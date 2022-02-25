@@ -1,6 +1,5 @@
 ---
 id: 9b237d36-4320-4822-8a2f-cf1b00691fa9
-blueprint: games
 title: Rochard
 platform: steam
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 0cbeefa9-c1ed-4c72-8e8b-1cf6d5af58b1
-blueprint: games
 title: Heroes of Mana
 platform: ds
 genre:

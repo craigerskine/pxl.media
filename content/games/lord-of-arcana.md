@@ -1,6 +1,5 @@
 ---
 id: 57774166-586c-4f7a-babc-ebd5968d5a00
-blueprint: games
 title: Lord of Arcana
 platform: playstation-portable
 genre:

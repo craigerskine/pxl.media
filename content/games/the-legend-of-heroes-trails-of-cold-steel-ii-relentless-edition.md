@@ -1,6 +1,5 @@
 ---
 id: 08214b3a-80d0-40e2-a66c-279b5397be0a
-blueprint: games
 title: The Legend of Heroes: Trails of Cold Steel II - Relentless Edition
 platform: playstation-4
 genre:

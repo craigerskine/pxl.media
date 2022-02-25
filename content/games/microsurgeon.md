@@ -1,6 +1,5 @@
 ---
 id: 333a78da-1975-4018-a0cd-ac7b948aea02
-blueprint: games
 title: Microsurgeon
 platform: intellivision
 genre:

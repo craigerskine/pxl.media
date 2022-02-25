@@ -1,6 +1,5 @@
 ---
 id: edecfeab-ce4b-44f6-bf01-545ee854766e
-blueprint: games
 title: Iconoclasts [Switch]
 platform: switch
 genre:

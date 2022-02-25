@@ -1,6 +1,5 @@
 ---
 id: 42d757ab-dedd-42ae-a8f7-08efc5299237
-blueprint: games
 title: Mighty Bomb Jack
 platform: nintendo-entertainment-system
 genre:

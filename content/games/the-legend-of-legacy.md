@@ -1,6 +1,5 @@
 ---
 id: 67b4fa8f-3ff4-488a-8274-e0865fc20535
-blueprint: games
 title: The Legend of Legacy
 platform: 3ds
 genre:

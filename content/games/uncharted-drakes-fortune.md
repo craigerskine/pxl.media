@@ -1,6 +1,5 @@
 ---
 id: 7b59a6a2-08ad-4357-b5a4-aea41fd7d5ce
-blueprint: games
 title: Uncharted: Drake's Fortune
 platform: playstation-3
 genre:

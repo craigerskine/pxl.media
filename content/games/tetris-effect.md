@@ -1,6 +1,5 @@
 ---
 id: d582eed1-e37b-4bb9-b4d4-50cdf8ac2b48
-blueprint: games
 title: Tetris Effect
 platform: playstation-4
 genre:

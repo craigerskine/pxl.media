@@ -1,6 +1,5 @@
 ---
 id: db6a354c-86e2-4631-bc1e-a5c0f1251f2d
-blueprint: games
 title: Medal of Honor: Single Player
 platform: steam
 genre:

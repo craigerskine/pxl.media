@@ -1,6 +1,5 @@
 ---
 id: e654776c-1ae4-463f-a265-5d7fc722a748
-blueprint: games
 title: Shin Megami Tensei: Persona 3 Portable
 platform: playstation-portable
 genre:

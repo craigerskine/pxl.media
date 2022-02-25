@@ -1,6 +1,5 @@
 ---
 id: bff88c42-565a-4b0b-9f38-b323544f056a
-blueprint: games
 title: Metal Arms: Glitch in the System
 platform: gamecube
 genre:

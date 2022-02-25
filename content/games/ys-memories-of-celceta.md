@@ -1,6 +1,5 @@
 ---
 id: 2e91b9e1-22a7-4750-b397-c136686a83f0
-blueprint: games
 title: Ys: Memories of Celceta
 platform: playstation-vita
 genre:

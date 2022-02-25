@@ -1,6 +1,5 @@
 ---
 id: 32bafa2f-adad-49dd-8418-933bd88f430f
-blueprint: games
 title: Iconoclasts [Vita]
 platform: playstation-vita
 genre:

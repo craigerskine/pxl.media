@@ -1,6 +1,5 @@
 ---
 id: e6fdedd4-ef17-497b-9d5e-a1e5d3bf2236
-blueprint: games
 title: The Elder Scrolls IV: Oblivion [PS3]
 platform: playstation-3
 genre:

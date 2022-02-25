@@ -1,6 +1,5 @@
 ---
 id: 45b15f11-5114-465b-a9a8-2c40c845d79c
-blueprint: games
 title: Lumines: Electronic Symphony
 platform: playstation-vita
 genre:

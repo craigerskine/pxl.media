@@ -1,6 +1,5 @@
 ---
 id: b95f8b4f-4def-4fa6-b882-646ebd6a84fa
-blueprint: games
 title: Tales of Graces f
 platform: playstation-3
 genre:

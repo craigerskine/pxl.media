@@ -1,6 +1,5 @@
 ---
 id: 7dc9501e-6962-4915-a99a-550755ef7bf9
-blueprint: games
 title: MegaTagmension Blanc + Neptune VS Zombies
 platform: playstation-vita
 genre:

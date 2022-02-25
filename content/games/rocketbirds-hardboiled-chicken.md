@@ -1,6 +1,5 @@
 ---
 id: afcde5da-49da-4b04-86b8-a531eb4109d6
-blueprint: games
 title: Rocketbirds: Hardboiled Chicken
 platform: steam
 genre:

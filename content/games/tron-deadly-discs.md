@@ -1,6 +1,5 @@
 ---
 id: 6386db3b-8403-4054-af66-400ad57b0752
-blueprint: games
 title: Tron Deadly Discs
 platform: intellivision
 genre:

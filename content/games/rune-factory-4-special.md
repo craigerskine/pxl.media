@@ -1,6 +1,5 @@
 ---
 id: 59678208-f28d-4b2c-be7f-3e5568c8b51f
-blueprint: games
 title: Rune Factory 4 Special
 platform: switch
 genre:

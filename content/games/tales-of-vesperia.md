@@ -1,6 +1,5 @@
 ---
 id: 4e4fdf2b-1ef9-4267-8484-1beae639cce2
-blueprint: games
 title: Tales of Vesperia
 platform: xbox-360
 genre:

@@ -1,6 +1,5 @@
 ---
 id: a2a4c764-850f-4c75-ab00-b8385ad475a2
-blueprint: games
 title: Space Battle
 platform: intellivision
 genre:

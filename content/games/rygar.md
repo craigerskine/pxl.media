@@ -1,6 +1,5 @@
 ---
 id: a729b219-e971-40bc-8ce2-e0e252e24d98
-blueprint: games
 title: Rygar
 platform: nintendo-entertainment-system
 genre:

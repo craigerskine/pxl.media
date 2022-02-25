@@ -1,6 +1,5 @@
 ---
 id: 2a96c6c5-d580-45ca-a0f2-fca6cf46fc74
-blueprint: games
 title: Ys: Book I & II
 platform: wii
 genre:

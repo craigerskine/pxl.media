@@ -1,6 +1,5 @@
 ---
 id: 2fbd6375-ed22-4a9d-a8de-4f7ea877cda8
-blueprint: games
 title: Super Bomberman R
 platform: switch
 genre:

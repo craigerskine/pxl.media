@@ -1,6 +1,5 @@
 ---
 id: d01af435-93c8-4ab7-9b9f-e278c68812be
-blueprint: games
 title: The Legend of Zelda
 platform: nintendo-entertainment-system
 genre:

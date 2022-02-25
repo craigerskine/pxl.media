@@ -1,6 +1,5 @@
 ---
 id: b59612f3-4812-4cb3-9ebb-906ef065efa7
-blueprint: games
 title: Tales of Xillia 2 [J]
 platform: playstation-3
 genre:

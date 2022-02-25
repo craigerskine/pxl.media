@@ -1,6 +1,5 @@
 ---
 id: 49227962-a36e-4c6b-934e-ec6bdf97b3ee
-blueprint: games
 title: Streets of Rage 4
 platform: switch
 genre:

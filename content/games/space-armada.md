@@ -1,6 +1,5 @@
 ---
 id: 8c18eea4-d59e-4716-a2e7-6a53d16c89cd
-blueprint: games
 title: Space Armada
 platform: intellivision
 genre:

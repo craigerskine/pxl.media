@@ -1,6 +1,5 @@
 ---
 id: 2973c5a9-9290-488d-a5aa-92980d15847b
-blueprint: games
 title: Xenoblade Chronicles 2
 platform: switch
 genre:

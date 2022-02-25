@@ -1,6 +1,5 @@
 ---
 id: 7a18a8f9-dbcd-4fdf-aff4-c79ed005f04a
-blueprint: games
 title: Xenogears
 platform: playstation
 genre:

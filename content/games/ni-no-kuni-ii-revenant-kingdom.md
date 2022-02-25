@@ -1,6 +1,5 @@
 ---
 id: 5d33d05a-e9d7-4204-8478-a815511fc392
-blueprint: games
 title: Ni No Kuni II: Revenant Kingdom
 platform: playstation-4
 genre:

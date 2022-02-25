@@ -1,6 +1,5 @@
 ---
 id: 214b2551-22af-423c-8962-58d32531d59f
-blueprint: games
 title: Phantasy Star Online III C.A.R.D. Revolution
 platform: gamecube
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 584679ec-861f-4ee6-9e54-9ef2fa84ed44
-blueprint: games
 title: Holy Diver
 platform: nintendo-entertainment-system
 genre:

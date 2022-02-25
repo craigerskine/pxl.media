@@ -1,6 +1,5 @@
 ---
 id: 6ed1163e-c159-4c4f-aa77-65bfa339fb24
-blueprint: games
 title: Pac-Man Championship Edition 2 Plus
 platform: switch
 genre:

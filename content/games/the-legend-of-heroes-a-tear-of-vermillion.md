@@ -1,6 +1,5 @@
 ---
 id: e553b1d5-5f2b-4802-91cf-ca51808106ea
-blueprint: games
 title: The Legend of Heroes: A Tear of Vermillion
 platform: playstation-portable
 genre:

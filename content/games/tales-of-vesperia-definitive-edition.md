@@ -1,6 +1,5 @@
 ---
 id: 1864e8ab-f7f9-4228-b1ac-6f1aef62600f
-blueprint: games
 title: Tales of Vesperia - Definitive Edition
 platform: switch
 genre:

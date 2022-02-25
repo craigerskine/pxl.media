@@ -1,6 +1,5 @@
 ---
 id: 4989dd3d-7a24-4b96-8867-fe5e448faec6
-blueprint: games
 title: Sky Force Anniversary
 platform: playstation-vita
 genre:

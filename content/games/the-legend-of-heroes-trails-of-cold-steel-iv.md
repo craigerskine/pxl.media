@@ -1,6 +1,5 @@
 ---
 id: b2dcf70a-e98e-4e8f-89f7-69b28f27cbf1
-blueprint: games
 title: The Legend of Heroes: Trails of Cold Steel IV
 platform: switch
 genre:

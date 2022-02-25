@@ -1,6 +1,5 @@
 ---
 id: 80afcc3a-1b04-4347-aff3-309c78d3efcb
-blueprint: games
 title: Monster Hunter Freedom
 platform: playstation-portable
 genre:

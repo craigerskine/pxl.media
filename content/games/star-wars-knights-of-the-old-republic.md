@@ -1,6 +1,5 @@
 ---
 id: 099f2329-17fb-4f6d-8237-56d52760bd94
-blueprint: games
 title: Star Wars Knights of the Old Republic
 platform: xbox
 genre:

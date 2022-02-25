@@ -1,6 +1,5 @@
 ---
 id: 6246ebbd-d440-4c20-b319-9f55605b44d0
-blueprint: games
 title: The Legend of Zelda: Skyward Sword
 platform: wii
 genre:

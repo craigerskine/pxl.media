@@ -1,6 +1,5 @@
 ---
 id: 791fb27e-59ba-4b62-aaa4-df6184f16a2a
-blueprint: games
 title: Phantasy Star Online 2 [Vita]
 platform: playstation-vita
 genre:

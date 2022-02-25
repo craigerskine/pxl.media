@@ -1,6 +1,5 @@
 ---
 id: 3565944c-5879-48a3-995e-c6bafd0fa9a8
-blueprint: games
 title: Ni No Kuni II: Revenant Kingdom [Switch]
 platform: switch
 genre:

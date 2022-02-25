@@ -1,6 +1,5 @@
 ---
 id: 41a33acb-0c50-4444-89e0-6fd02139a1d8
-blueprint: games
 title: Superbrothers: Sword & Sworcery EP
 platform: steam
 genre:

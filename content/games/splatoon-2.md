@@ -1,6 +1,5 @@
 ---
 id: e7cb704a-8b13-4412-aec4-763a2e9a6090
-blueprint: games
 title: Splatoon 2
 platform: switch
 genre:

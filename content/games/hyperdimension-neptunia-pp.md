@@ -1,6 +1,5 @@
 ---
 id: 3dd49d03-429b-48c0-8112-fe1a8153ac92
-blueprint: games
 title: Hyperdimension Neptunia PP
 platform: playstation-vita
 genre:

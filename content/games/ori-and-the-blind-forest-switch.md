@@ -1,6 +1,5 @@
 ---
 id: 42708005-b52a-4377-b03f-e9833d6dcf4d
-blueprint: games
 title: Ori and the Blind Forest [Switch]
 platform: switch
 genre:

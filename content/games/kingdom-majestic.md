@@ -1,6 +1,5 @@
 ---
 id: 7cec2ffa-fde4-46b2-9bf6-3190d7524bc7
-blueprint: games
 title: Kingdom Majestic
 platform: switch
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 747a36ba-0a34-49a1-81bf-cd9606479abf
-blueprint: games
 title: Keio Flying Squadron
 platform: sega-cd
 genre:

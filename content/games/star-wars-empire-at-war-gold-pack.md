@@ -1,6 +1,5 @@
 ---
 id: d6514a21-5d15-45f7-a353-85c2906dd958
-blueprint: games
 title: Star Wars Empire at War: Gold Pack
 platform: steam
 genre:

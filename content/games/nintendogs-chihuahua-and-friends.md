@@ -1,6 +1,5 @@
 ---
 id: 66e83e75-ec1b-476f-870b-887bb3ba64e9
-blueprint: games
 title: Nintendogs Chihuahua & Friends
 platform: ds
 genre:

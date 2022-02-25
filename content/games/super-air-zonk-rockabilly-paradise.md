@@ -1,6 +1,5 @@
 ---
 id: a2d5ea4b-9129-42dc-aa4f-8e421750bbf5
-blueprint: games
 title: Super Air Zonk: Rockabilly-Paradise
 platform: turbografx-cd
 genre:

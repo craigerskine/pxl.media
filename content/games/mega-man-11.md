@@ -1,6 +1,5 @@
 ---
 id: 2cb97f10-05c0-40d5-ad38-577537913717
-blueprint: games
 title: Mega Man 11
 platform: switch
 genre:

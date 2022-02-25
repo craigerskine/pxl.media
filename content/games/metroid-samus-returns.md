@@ -1,6 +1,5 @@
 ---
 id: 4ad2ba6a-9d44-40da-a2e6-b6ccdb5feb49
-blueprint: games
 title: Metroid: Samus Returns
 platform: 3ds
 genre:

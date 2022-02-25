@@ -1,6 +1,5 @@
 ---
 id: 7a17b17a-549d-464e-ae12-bbd3a3b3103f
-blueprint: games
 title: Monster Boy
 platform: switch
 genre:

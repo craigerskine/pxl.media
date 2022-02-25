@@ -1,6 +1,5 @@
 ---
 id: 9a76dc0e-56a1-42aa-beaa-7ae2c10359c1
-blueprint: games
 title: Patchwork Heroes
 platform: playstation-portable
 genre:

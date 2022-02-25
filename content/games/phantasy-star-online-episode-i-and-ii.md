@@ -1,6 +1,5 @@
 ---
 id: d0ba0c88-b9d8-4f83-8130-f65a6f8ac526
-blueprint: games
 title: Phantasy Star Online, Episode I & II
 platform: gamecube
 genre:

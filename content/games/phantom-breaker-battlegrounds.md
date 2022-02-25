@@ -1,6 +1,5 @@
 ---
 id: 85f240d9-b34b-4a27-80f5-4cac6385a214
-blueprint: games
 title: Phantom Breaker Battlegrounds
 platform: playstation-vita
 genre:

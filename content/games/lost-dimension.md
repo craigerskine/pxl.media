@@ -1,6 +1,5 @@
 ---
 id: 1582ef0a-2ebe-4e05-b095-864c3e9bb1fd
-blueprint: games
 title: Lost Dimension
 platform: playstation-vita
 genre:

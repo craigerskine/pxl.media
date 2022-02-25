@@ -1,6 +1,5 @@
 ---
 id: 9001699c-4d03-42e7-96cd-f219cd2aa258
-blueprint: games
 title: Star Wars (Classic Edition)
 platform: nintendo-entertainment-system
 genre:

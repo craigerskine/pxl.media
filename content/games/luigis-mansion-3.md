@@ -1,6 +1,5 @@
 ---
 id: 67bbc07b-27b3-4674-a0cd-f48d56a97c69
-blueprint: games
 title: Luigi's Mansion 3
 platform: switch
 genre:

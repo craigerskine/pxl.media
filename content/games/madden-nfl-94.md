@@ -1,6 +1,5 @@
 ---
 id: af93e0cd-ea1b-4526-877a-d6b5d660f482
-blueprint: games
 title: Madden NFL '94
 platform: genesis
 genre:

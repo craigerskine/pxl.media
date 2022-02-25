@@ -1,6 +1,5 @@
 ---
 id: a2f06c96-f35b-46c8-a6f2-97754eb44c33
-blueprint: games
 title: Wonder Boy: The Dragon's Trap
 platform: switch
 genre:

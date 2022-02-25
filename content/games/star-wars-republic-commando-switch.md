@@ -1,6 +1,5 @@
 ---
 id: 0238c91c-df3a-43d4-ae70-1ba5e2fd79dc
-blueprint: games
 title: Star Wars Republic Commando [Switch]
 platform: switch
 genre:

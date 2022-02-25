@@ -1,6 +1,5 @@
 ---
 id: 770edd1e-ecd8-4b7c-89b9-fdbf0e338591
-blueprint: games
 title: Valfaris
 platform: switch
 genre:

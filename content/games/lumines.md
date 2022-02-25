@@ -1,6 +1,5 @@
 ---
 id: 54318d79-d4cb-406c-b8e4-18c729d7b759
-blueprint: games
 title: Lumines
 platform: playstation-portable
 genre:

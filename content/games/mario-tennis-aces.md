@@ -1,6 +1,5 @@
 ---
 id: 03d2b610-7b26-4956-999e-c16be339dae4
-blueprint: games
 title: Mario Tennis Aces
 platform: switch
 genre:

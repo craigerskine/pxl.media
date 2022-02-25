@@ -1,6 +1,5 @@
 ---
 id: 128c2cee-82c2-4f02-8a29-c65ca4ed30ce
-blueprint: games
 title: LIMBO
 platform: steam
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 9a562151-0e97-4e7a-ba7c-127e82cd780b
-blueprint: games
 title: Sly Cooper: Thieves in Time
 platform: playstation-vita
 genre:

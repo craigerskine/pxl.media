@@ -1,6 +1,5 @@
 ---
 id: 4def88ed-85a1-484d-92ce-78a439c6d0d6
-blueprint: games
 title: Mercenaries Saga Chronicles
 platform: switch
 genre:

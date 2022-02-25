@@ -1,6 +1,5 @@
 ---
 id: 202c73a8-5f59-423e-a65a-75a8f987f9d1
-blueprint: games
 title: Persona 4 Golden
 platform: playstation-vita
 genre:

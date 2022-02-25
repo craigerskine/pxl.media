@@ -1,6 +1,5 @@
 ---
 id: 61de15b0-6847-4359-9152-38b8567d547b
-blueprint: games
 title: Ironclad Tactics
 platform: steam
 genre:

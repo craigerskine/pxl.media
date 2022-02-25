@@ -1,6 +1,5 @@
 ---
 id: e37c071a-9f1e-4954-b64d-f0d403ee2122
-blueprint: games
 title: The Friends of Ringo Ishikawa
 platform: switch
 genre:

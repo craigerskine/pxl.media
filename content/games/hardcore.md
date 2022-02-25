@@ -1,6 +1,5 @@
 ---
 id: df147baa-f66a-4417-b3b6-f6dac769ef7c
-blueprint: games
 title: Hardcore
 platform: genesis
 genre:

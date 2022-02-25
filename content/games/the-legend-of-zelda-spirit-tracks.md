@@ -1,6 +1,5 @@
 ---
 id: 8484b73b-1837-4531-b34e-2643abe5768c
-blueprint: games
 title: The Legend of Zelda: Spirit Tracks
 platform: ds
 genre:

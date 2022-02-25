@@ -1,6 +1,5 @@
 ---
 id: c7d8f15c-cffd-4ef7-b6b3-bb2e8c309b8b
-blueprint: games
 title: Ratchet and Clank: Size Matters
 platform: playstation-portable
 genre:

@@ -1,6 +1,5 @@
 ---
 id: e4abf25c-aff1-4edd-877d-e45491c63568
-blueprint: games
 title: Half-Life 2: Deathmatch
 platform: steam
 genre:

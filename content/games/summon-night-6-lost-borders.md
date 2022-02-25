@@ -1,6 +1,5 @@
 ---
 id: 24934715-12f7-41c2-b2ec-135b23d5c27a
-blueprint: games
 title: Summon Night 6: Lost Borders
 platform: playstation-vita
 genre:

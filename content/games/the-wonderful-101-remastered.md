@@ -1,6 +1,5 @@
 ---
 id: 362933ec-3a52-4b83-8406-20bbb728f5f2
-blueprint: games
 title: The Wonderful 101: Remastered
 platform: switch
 genre:

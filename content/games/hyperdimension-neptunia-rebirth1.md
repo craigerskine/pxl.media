@@ -1,6 +1,5 @@
 ---
 id: b9b18a59-4536-406d-b479-1bb130cbe397
-blueprint: games
 title: Hyperdimension Neptunia Re;Birth1
 platform: playstation-vita
 genre:

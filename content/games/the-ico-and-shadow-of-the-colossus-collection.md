@@ -1,6 +1,5 @@
 ---
 id: 2f63de6f-7c7c-420a-9090-e484c9458eea
-blueprint: games
 title: The Ico & Shadow of the Colossus Collection
 platform: playstation-3
 genre:

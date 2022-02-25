@@ -1,6 +1,5 @@
 ---
 id: 5217d94c-643a-46df-a4a2-adecc0a9a253
-blueprint: games
 title: Mario Kart Wii
 platform: wii
 genre:

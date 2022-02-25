@@ -1,6 +1,5 @@
 ---
 id: eda3ade7-5f99-49e0-be28-2c727d48845c
-blueprint: games
 title: Stampede
 platform: intellivision
 genre:

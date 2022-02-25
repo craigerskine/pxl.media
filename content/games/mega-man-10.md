@@ -1,6 +1,5 @@
 ---
 id: 97c8f315-1a12-4044-9ee3-3f2103c66feb
-blueprint: games
 title: Mega Man 10
 platform: playstation-3
 genre:

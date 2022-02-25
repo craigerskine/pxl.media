@@ -1,6 +1,5 @@
 ---
 id: 5be0f5da-d2fb-4ca4-b19b-c6f009ae89bb
-blueprint: games
 title: SD2SNES
 platform: super-nintendo
 genre:

@@ -6,7 +6,6 @@ genre:
 digital: false
 guide: false
 pending: false
-blueprint: games
 physical: true
 posted: 2018-02-14
 ---

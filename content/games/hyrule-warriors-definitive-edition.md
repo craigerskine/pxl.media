@@ -1,6 +1,5 @@
 ---
 id: eee9c9c0-3414-4806-afb9-915f9c2555d2
-blueprint: games
 title: Hyrule Warriors: Definitive Edition
 platform: switch
 genre:

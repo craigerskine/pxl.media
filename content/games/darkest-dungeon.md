@@ -5,7 +5,6 @@ platform: switch
 genre:
   - rpg
 digital: true
-blueprint: games
 physical: false
 pending: false
 guide: false

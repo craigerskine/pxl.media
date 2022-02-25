@@ -1,6 +1,5 @@
 ---
 id: 8992c0c4-88e2-405f-a827-07708271c008
-blueprint: games
 title: Metal Slug Anthology [PSP]
 platform: playstation-portable
 genre:

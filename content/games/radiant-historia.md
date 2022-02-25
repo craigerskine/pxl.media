@@ -1,6 +1,5 @@
 ---
 id: 01532ee6-e8d4-463a-bfaf-ba2867ff2b86
-blueprint: games
 title: Radiant Historia
 platform: ds
 genre:

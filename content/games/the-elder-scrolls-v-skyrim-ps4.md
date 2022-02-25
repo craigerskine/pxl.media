@@ -1,6 +1,5 @@
 ---
 id: 039c83c5-9523-44ef-bf69-8f1186906045
-blueprint: games
 title: The Elder Scrolls V: Skyrim [PS4]
 platform: playstation-4
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 82c23c34-0eb3-45a5-91d1-dae948274082
-blueprint: games
 title: Grandia HD Collection
 platform: switch
 genre:

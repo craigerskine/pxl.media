@@ -1,6 +1,5 @@
 ---
 id: a6447d45-27c2-4dcb-abc2-cc87dff99940
-blueprint: games
 title: Solar Flux
 platform: steam
 genre:

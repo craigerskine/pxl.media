@@ -1,6 +1,5 @@
 ---
 id: 4db43c27-583d-429d-ba46-94990be532f0
-blueprint: games
 title: Starlink Battle for Atlas
 platform: switch
 genre:

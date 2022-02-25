@@ -1,6 +1,5 @@
 ---
 id: 504cd82e-778b-46df-aa0b-e1445ce6c504
-blueprint: games
 title: Pokémon: Omega Ruby
 platform: 3ds
 genre:

@@ -1,6 +1,5 @@
 ---
 id: f4d04e91-1084-4ffd-8a7d-24d3723e31c9
-blueprint: games
 title: Metroid Prime 2: Echoes
 platform: gamecube
 genre:

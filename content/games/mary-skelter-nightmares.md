@@ -1,6 +1,5 @@
 ---
 id: b136860b-8920-4677-89da-1f0f88665bf6
-blueprint: games
 title: Mary Skelter: Nightmares
 platform: playstation-vita
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 79e7fe79-0804-4b8a-bed1-9792d22d23ca
-blueprint: games
 title: Witch Spring 3 [Re: Fine] The Story of Eirudy
 platform: switch
 genre:

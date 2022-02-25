@@ -1,6 +1,5 @@
 ---
 id: 826524a8-f82e-4bc1-9a7d-dca285a84266
-blueprint: games
 title: Sea of Stars
 platform: steam
 genre:

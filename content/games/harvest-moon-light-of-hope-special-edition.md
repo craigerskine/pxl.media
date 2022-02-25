@@ -1,6 +1,5 @@
 ---
 id: dc4c5dfb-ce9e-4266-8028-9ed3ed1f8ce8
-blueprint: games
 title: Harvest Moon: Light of Hope Special Edition
 platform: switch
 genre:

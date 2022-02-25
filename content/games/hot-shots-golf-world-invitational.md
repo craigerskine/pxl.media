@@ -1,6 +1,5 @@
 ---
 id: 70e80255-0378-4441-a6eb-d2126c9c83b1
-blueprint: games
 title: Hot Shots Golf: World Invitational
 platform: playstation-vita
 genre:

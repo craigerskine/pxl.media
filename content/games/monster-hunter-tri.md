@@ -1,6 +1,5 @@
 ---
 id: e755abd6-ee10-48d7-a691-623452ebde4c
-blueprint: games
 title: Monster Hunter Tri
 platform: wii
 genre:

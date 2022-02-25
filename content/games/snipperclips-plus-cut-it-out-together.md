@@ -1,6 +1,5 @@
 ---
 id: b34101e1-5eee-4933-bedc-ad55f99d43b6
-blueprint: games
 title: Snipperclips Plus: Cut it out, Together! 
 platform: switch
 genre:

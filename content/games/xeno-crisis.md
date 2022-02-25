@@ -1,6 +1,5 @@
 ---
 id: d0a04274-853e-46cc-a082-14f86d068381
-blueprint: games
 title: Xeno Crisis
 platform: genesis
 genre:

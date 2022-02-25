@@ -1,6 +1,5 @@
 ---
 id: 457e64e2-34d0-48c3-8b65-f86ccb6ded4e
-blueprint: games
 title: Super Monkey Ball: Banana Splitz
 platform: playstation-vita
 genre:

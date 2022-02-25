@@ -1,6 +1,5 @@
 ---
 id: 69ef6151-bb33-4e8a-b635-0560a55319b4
-blueprint: games
 title: Ys: IX Monstrum Nox
 platform: switch
 genre:

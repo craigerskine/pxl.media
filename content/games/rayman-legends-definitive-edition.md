@@ -1,6 +1,5 @@
 ---
 id: e974f54a-dbf3-4761-b024-ed19d34efbb4
-blueprint: games
 title: Rayman Legends: Definitive Edition
 platform: switch
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 34bfac24-51be-4300-b2aa-39a6484f28f5
-blueprint: games
 title: RemiLore: Lost Girl in the Lands of Lore
 platform: switch
 genre:

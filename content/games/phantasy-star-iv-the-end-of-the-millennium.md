@@ -1,6 +1,5 @@
 ---
 id: 25f6ebbf-bad6-4549-8bcd-b321c5eef0eb
-blueprint: games
 title: Phantasy Star IV: The End of the Millennium
 platform: genesis
 genre:

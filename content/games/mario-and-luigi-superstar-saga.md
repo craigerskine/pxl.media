@@ -1,6 +1,5 @@
 ---
 id: 5260daaf-92bb-44f6-a355-eaa985f8288a
-blueprint: games
 title: Mario & Luigi Superstar Saga
 platform: game-boy-advance
 genre:

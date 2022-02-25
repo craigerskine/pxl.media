@@ -1,6 +1,5 @@
 ---
 id: e936f4d4-b408-4e94-8636-76c894cfdcbb
-blueprint: games
 title: Space Hawk
 platform: intellivision
 genre:

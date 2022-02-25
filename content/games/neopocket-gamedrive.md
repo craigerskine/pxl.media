@@ -1,6 +1,5 @@
 ---
 id: c513b33c-eb14-4d3c-9021-210af79a8ab1
-blueprint: games
 title: NeoPocket GameDrive
 platform: neo-geo-pocket-color
 genre:

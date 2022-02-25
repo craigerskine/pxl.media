@@ -1,6 +1,5 @@
 ---
 id: 91066128-2a99-4dc5-a547-7dcdf2a111a2
-blueprint: games
 title: Malibu Beach Volleyball
 platform: game-boy
 genre:

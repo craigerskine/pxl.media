@@ -1,6 +1,5 @@
 ---
 id: 7074c657-6aac-4cc9-b852-831ff988952f
-blueprint: games
 title: Trials of Mana
 platform: switch
 genre:

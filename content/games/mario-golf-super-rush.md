@@ -1,6 +1,5 @@
 ---
 id: f22e0403-bfce-46cb-97bc-720ab3b5a3d9
-blueprint: games
 title: Mario Golf: Super Rush
 platform: switch
 genre:

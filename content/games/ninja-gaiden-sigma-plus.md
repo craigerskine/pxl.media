@@ -1,6 +1,5 @@
 ---
 id: 25c79494-50d4-4918-b6ae-8f1c9a89a63f
-blueprint: games
 title: Ninja Gaiden Sigma Plus
 platform: playstation-vita
 genre:

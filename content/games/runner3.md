@@ -1,6 +1,5 @@
 ---
 id: 417ba887-5a62-44ce-95ca-d2fb8cdb437e
-blueprint: games
 title: Runner3
 platform: switch
 genre:

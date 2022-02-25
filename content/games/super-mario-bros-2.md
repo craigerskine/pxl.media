@@ -1,6 +1,5 @@
 ---
 id: 58d0b0cd-2fd9-4953-a0c2-47473b3bef9f
-blueprint: games
 title: Super Mario Bros. 2
 platform: nintendo-entertainment-system
 genre:

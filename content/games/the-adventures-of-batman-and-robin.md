@@ -1,6 +1,5 @@
 ---
 id: da47c943-a1db-487d-a22c-396b9db3bcd8
-blueprint: games
 title: The Adventures of Batman & Robin
 platform: game-gear
 genre:

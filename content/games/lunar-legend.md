@@ -1,6 +1,5 @@
 ---
 id: a60ac049-5cad-44a7-9b97-fe387c9ce9d4
-blueprint: games
 title: Lunar Legend
 platform: game-boy-advance
 genre:

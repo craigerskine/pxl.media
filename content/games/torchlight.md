@@ -1,6 +1,5 @@
 ---
 id: 6514cf47-0db8-471d-89f6-1d59c4a61b4f
-blueprint: games
 title: Torchlight
 platform: steam
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 507cfd9b-6230-4235-af26-a5d4495deb64
-blueprint: games
 title: Tales of Legendia
 platform: playstation-2
 genre:

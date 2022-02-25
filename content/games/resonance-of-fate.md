@@ -1,6 +1,5 @@
 ---
 id: 6c65033a-d741-4cbc-976d-9c512688dfee
-blueprint: games
 title: Resonance of Fate
 platform: playstation-3
 genre:

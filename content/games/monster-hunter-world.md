@@ -1,6 +1,5 @@
 ---
 id: 75e7c188-b4a9-45f1-9ee0-5d0ea347d586
-blueprint: games
 title: Monster Hunter: World
 platform: playstation-4
 genre:

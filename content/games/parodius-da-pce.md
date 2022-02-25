@@ -1,6 +1,5 @@
 ---
 id: 20a37417-3918-4ebb-98eb-900387d1fb6e
-blueprint: games
 title: Parodius Da! PCE
 platform: turbografx-16
 genre:

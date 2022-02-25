@@ -1,6 +1,5 @@
 ---
 id: 3d546b8a-6683-49e6-baeb-036877a05689
-blueprint: games
 title: Mighty Switch Force! Collection
 platform: switch
 genre:

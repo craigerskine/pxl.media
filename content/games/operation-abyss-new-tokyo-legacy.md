@@ -1,6 +1,5 @@
 ---
 id: c2b5362c-f913-49c4-97a3-0341067d3412
-blueprint: games
 title: Operation Abyss: New Tokyo Legacy
 platform: playstation-vita
 genre:

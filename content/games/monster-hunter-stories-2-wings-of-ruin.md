@@ -1,6 +1,5 @@
 ---
 id: c91d0f6c-dac3-4ba2-aab6-1b34a3ff7efa
-blueprint: games
 title: Monster Hunter Stories 2: Wings of Ruin
 platform: switch
 genre:

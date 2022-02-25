@@ -1,6 +1,5 @@
 ---
 id: 3b2733b1-cfc2-4b8d-a4b5-9b85342bc84c
-blueprint: games
 title: The Legend of Zelda: Majora's Mask
 platform: nintendo-64
 genre:

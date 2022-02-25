@@ -1,6 +1,5 @@
 ---
 id: ba83881a-8787-470b-bb8c-25cb41e8ca99
-blueprint: games
 title: Spiritfarer
 platform: switch
 genre:

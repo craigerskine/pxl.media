@@ -1,6 +1,5 @@
 ---
 id: 165d587b-d377-4272-a103-5ffbed025343
-blueprint: games
 title: Ratchet & Clank Collection
 platform: playstation-3
 genre:

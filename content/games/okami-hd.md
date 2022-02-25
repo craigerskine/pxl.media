@@ -1,6 +1,5 @@
 ---
 id: b65e73bb-53cb-4012-87f1-eff869bfe3ac
-blueprint: games
 title: Okami HD
 platform: playstation-4
 genre:

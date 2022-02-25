@@ -1,6 +1,5 @@
 ---
 id: b8bc7348-db07-4f51-af58-278005b56015
-blueprint: games
 title: Rocksmith 2014 Edition - Remastered
 platform: steam
 genre:

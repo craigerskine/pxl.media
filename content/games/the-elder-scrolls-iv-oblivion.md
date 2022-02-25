@@ -1,6 +1,5 @@
 ---
 id: 02e901a2-2af9-4d04-8f5f-8e8dab52fc23
-blueprint: games
 title: The Elder Scrolls IV: Oblivion
 platform: xbox-360
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 944fae5c-51c1-4ab4-a125-1dec82dae389
-blueprint: games
 title: Muramasa: The Demon Blade
 platform: wii
 genre:

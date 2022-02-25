@@ -1,6 +1,5 @@
 ---
 id: 1127e504-37d0-4081-a126-8ebdb6791335
-blueprint: games
 title: Paper Mario: The Origami King
 platform: switch
 genre:

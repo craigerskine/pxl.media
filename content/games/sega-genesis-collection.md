@@ -1,6 +1,5 @@
 ---
 id: 6e8545f1-40ed-4c62-8742-9d170902cd40
-blueprint: games
 title: Sega Genesis Collection
 platform: playstation-portable
 genre:

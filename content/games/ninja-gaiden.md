@@ -1,6 +1,5 @@
 ---
 id: 7b3dbca8-5934-48b0-a43c-6fd8434ad58a
-blueprint: games
 title: Ninja Gaiden
 platform: nintendo-entertainment-system
 genre:

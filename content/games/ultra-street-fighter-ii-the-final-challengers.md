@@ -1,6 +1,5 @@
 ---
 id: 2f151097-7d30-4d6c-a8b9-4f67baee05af
-blueprint: games
 title: Ultra Street Fighter II: The Final Challengers
 platform: switch
 genre:

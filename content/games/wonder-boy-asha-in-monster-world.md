@@ -1,6 +1,5 @@
 ---
 id: 4a8c89bd-c3a0-450b-8c4e-8bc748bb7d34
-blueprint: games
 title: Wonder Boy - Asha in Monster World
 platform: switch
 genre:

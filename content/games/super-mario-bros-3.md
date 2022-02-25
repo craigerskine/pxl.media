@@ -1,6 +1,5 @@
 ---
 id: b2b589ea-06a8-402c-b88a-77e053b83e96
-blueprint: games
 title: Super Mario Bros. 3
 platform: nintendo-entertainment-system
 genre:

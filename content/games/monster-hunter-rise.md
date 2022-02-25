@@ -1,6 +1,5 @@
 ---
 id: a6115315-c848-45ed-a92e-95f362b530ee
-blueprint: games
 title: Monster Hunter Rise
 platform: switch
 genre:

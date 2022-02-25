@@ -1,6 +1,5 @@
 ---
 id: c52c57c4-cb03-4830-8576-faeec8a28b27
-blueprint: games
 title: Super Street Fighter II Turbo HD Remix
 platform: playstation-3
 genre:

@@ -1,6 +1,5 @@
 ---
 id: 55f332ab-6916-4fe4-a2ce-fd5cf8a43232
-blueprint: games
 title: Muramasa Rebirth
 platform: playstation-vita
 genre:

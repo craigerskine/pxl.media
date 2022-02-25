@@ -1,6 +1,5 @@
 ---
 id: 0e469892-c342-48ef-a084-56627be61bf0
-blueprint: games
 title: Period Cube
 platform: playstation-vita
 genre:

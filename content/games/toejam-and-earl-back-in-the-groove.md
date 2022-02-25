@@ -1,6 +1,5 @@
 ---
 id: 2ecd2e96-bee1-46ad-844d-10a8fca368b7
-blueprint: games
 title: Toejam & Earl: Back In The Groove
 platform: switch
 genre:

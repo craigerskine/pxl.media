@@ -1,6 +1,5 @@
 ---
 id: 997ea8e1-4ce6-44c6-828f-ff6cd155d8b0
-blueprint: games
 title: Street Fighter 30th Anniversary Collection
 platform: switch
 genre:

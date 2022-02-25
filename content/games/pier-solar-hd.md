@@ -1,6 +1,5 @@
 ---
 id: 6b99307e-ceb1-489d-ac57-9751f05a5ef6
-blueprint: games
 title: Pier Solar: HD
 platform: dreamcast
 genre:

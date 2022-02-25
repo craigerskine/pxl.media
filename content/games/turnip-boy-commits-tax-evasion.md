@@ -1,6 +1,5 @@
 ---
 id: 932a2521-f4d4-4a6c-a97f-8e812f903447
-blueprint: games
 title: Turnip Boy Commits Tax Evasion
 platform: switch
 genre:

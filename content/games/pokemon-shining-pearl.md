@@ -1,6 +1,5 @@
 ---
 id: d9b122ec-836b-40ca-b854-d7e3574b111d
-blueprint: games
 title: Pokémon: Shining Pearl
 platform: switch
 genre:

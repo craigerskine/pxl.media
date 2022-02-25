@@ -1,6 +1,5 @@
 ---
 id: 1d452720-f3a9-47cf-818b-fbc685e31c45
-blueprint: games
 title: ONE PIECE: World Seeker
 platform: playstation-4
 genre:

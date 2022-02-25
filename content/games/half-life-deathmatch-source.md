@@ -1,6 +1,5 @@
 ---
 id: d746cd9a-15a7-4749-9e32-2663a4629e7f
-blueprint: games
 title: Half-Life Deathmatch: Source
 platform: steam
 genre:

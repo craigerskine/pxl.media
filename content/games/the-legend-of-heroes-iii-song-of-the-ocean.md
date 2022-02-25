@@ -1,6 +1,5 @@
 ---
 id: 3f8bf312-40cd-4144-9b9c-43c7dfaf11e7
-blueprint: games
 title: The Legend of Heroes III: Song of the Ocean
 platform: playstation-portable
 genre:

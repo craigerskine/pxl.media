@@ -1,6 +1,5 @@
 ---
 id: c6d70df7-648a-48d4-9f1c-2506e6a77797
-blueprint: games
 title: Momodora: Reverie Under the Moonlight
 platform: switch
 genre:

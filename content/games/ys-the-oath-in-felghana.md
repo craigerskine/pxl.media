@@ -1,6 +1,5 @@
 ---
 id: a64b91bb-6769-499a-a875-97d5c06f3c32
-blueprint: games
 title: Ys: The Oath In Felghana
 platform: playstation-portable
 genre:

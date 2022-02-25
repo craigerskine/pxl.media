@@ -1,6 +1,5 @@
 ---
 id: 4e76c8f5-a49b-497d-9783-124cb5b4a347
-blueprint: games
 title: Team Fortress 2
 platform: steam
 genre:

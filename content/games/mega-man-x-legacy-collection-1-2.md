@@ -1,6 +1,5 @@
 ---
 id: ea9d1563-542f-401a-bae9-28f1d7443be9
-blueprint: games
 title: Mega Man X Legacy Collection 1 + 2
 platform: switch
 genre:
