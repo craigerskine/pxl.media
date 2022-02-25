@@ -25,7 +25,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/6d6156d427.js', body: true },
+      { src: 'https://kit.fontawesome.com/a2bf4ed495.js', body: true },
     ]
   },
 

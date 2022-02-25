@@ -100,6 +100,7 @@
           return
         }
         this.searchResults = await this.$content('games')
+          .only(['title', 'slug', 'platform', 'note'])
           .sortBy('title', 'asc')
           .search(query)
           .fetch();
