@@ -53,18 +53,7 @@ collections:
       - label: "Company"
         name: "company"
         widget: "select"
-        options:
-          - {label: "8Bitdo", value: "8bitdo"}
-          - {label: "Bandai", value: "bandai"}
-          - {label: "HORI", value: "hori"}
-          - {label: "Junkfood Custom Arcades", value: "junkfood-custom-arcades"}
-          - {label: "Logitech", value: "logitech"}
-          - {label: "Polymega", value: "polymega"}
-          - {label: "Retro-Bit", value: "retro-bit"}
-          - {label: "Retro Fighters", value: "retro-fighters"}
-          - {label: "Sammy", value: "sammy"}
-          - {label: "Wind Spirit", value: "wind-spirit"}
-          - {label: "Wish Technologies", value: "wish-technologies"}
+        options: ["8Bitdo", "Bandai", "HORI", "Junkfood Custom Arcades", "Logitech", "Polymega", "Retro-Bit", "Retro Fighters", "Sammy", "Wind Spirit", "Wish Technologies"]
   - name: "_platforms"
     label: "Platforms"
     label_singular: "Platform"
