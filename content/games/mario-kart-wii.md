@@ -1,5 +1,5 @@
 ---
-title: Mario Kart Wii
+title: 'Mario Kart Wii'
 platform: wii
 genre:
   - racing

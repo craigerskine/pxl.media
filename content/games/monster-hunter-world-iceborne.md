@@ -1,10 +1,10 @@
 ---
-title: Monster Hunter World: Iceborne
+title: 'Monster Hunter World: Iceborne'
 platform: playstation-4
 genre:
   - action-adventure
   - rpg
-note: Deluxe Edition
+note: 'Deluxe Edition'
 digital: true
 physical: true
 guide: false

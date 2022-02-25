@@ -1,5 +1,5 @@
 ---
-title: NEO: The World Ends with You
+title: 'NEO: The World Ends with You'
 platform: switch
 genre:
   - rpg

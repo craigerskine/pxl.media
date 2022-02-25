@@ -1,5 +1,5 @@
 ---
-title: Mega Man
+title: 'Mega Man'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

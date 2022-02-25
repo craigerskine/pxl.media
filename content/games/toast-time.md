@@ -1,5 +1,5 @@
 ---
-title: Toast Time
+title: 'Toast Time'
 platform: steam
 genre:
   - shmup

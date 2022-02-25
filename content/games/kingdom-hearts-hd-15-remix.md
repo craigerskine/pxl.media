@@ -1,5 +1,5 @@
 ---
-title: Kingdom Hearts - HD 1.5 Remix
+title: 'Kingdom Hearts - HD 1.5 Remix'
 platform: playstation-3
 genre:
   - action-adventure

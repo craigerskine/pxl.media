@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda Link's Awakening
+title: 'The Legend of Zelda Link''s Awakening'
 platform: switch
 genre:
   - action-adventure

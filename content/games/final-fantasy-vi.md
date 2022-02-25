@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy VI
+title: 'Final Fantasy VI'
 platform: playstation
 genre:
   - rpg

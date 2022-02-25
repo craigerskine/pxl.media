@@ -1,5 +1,5 @@
 ---
-title: Radiant Historia: Perfect Chronology
+title: 'Radiant Historia: Perfect Chronology'
 platform: 3ds
 genre:
   - rpg

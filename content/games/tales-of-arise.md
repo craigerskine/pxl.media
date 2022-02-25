@@ -1,5 +1,5 @@
 ---
-title: Tales of Arise
+title: 'Tales of Arise'
 platform: xbox-series-x-s
 genre:
   - rpg

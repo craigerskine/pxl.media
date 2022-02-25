@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Frontier G8
+title: 'Monster Hunter Frontier G8'
 platform: playstation-vita
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Hyperdimension Neptunia PP
+title: 'Hyperdimension Neptunia PP'
 platform: playstation-vita
 genre:
   - rpg

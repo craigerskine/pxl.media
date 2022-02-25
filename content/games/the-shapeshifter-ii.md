@@ -1,9 +1,9 @@
 ---
-title: The Shapeshifter II
+title: 'The Shapeshifter II'
 platform: game-boy
 genre:
   - action-adventure
-note: Greenboy Games
+note: 'Greenboy Games'
 digital: false
 physical: true
 guide: false

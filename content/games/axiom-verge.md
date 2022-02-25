@@ -1,5 +1,5 @@
 ---
-title: Axiom Verge
+title: 'Axiom Verge'
 platform: switch
 genre:
   - action-adventure

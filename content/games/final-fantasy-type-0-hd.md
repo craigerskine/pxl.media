@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy Type-0 HD
+title: 'Final Fantasy Type-0 HD'
 platform: playstation-4
 genre:
   - rpg

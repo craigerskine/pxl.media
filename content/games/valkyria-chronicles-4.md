@@ -1,5 +1,5 @@
 ---
-title: Valkyria Chronicles 4
+title: 'Valkyria Chronicles 4'
 platform: switch
 genre:
   - rpg

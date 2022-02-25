@@ -1,5 +1,5 @@
 ---
-title: Ys: The Ark of Napishtim
+title: 'Ys: The Ark of Napishtim'
 platform: playstation-2
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Rise
+title: 'Monster Hunter Rise'
 platform: switch
 genre:
   - action-adventure

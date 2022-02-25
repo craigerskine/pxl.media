@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Freedom Unite
+title: 'Monster Hunter Freedom Unite'
 platform: playstation-portable
 genre:
   - action-adventure

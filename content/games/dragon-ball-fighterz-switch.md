@@ -1,5 +1,5 @@
 ---
-title: Dragon Ball FighterZ [Switch]
+title: 'Dragon Ball FighterZ [Switch]'
 platform: switch
 genre:
   - fighting

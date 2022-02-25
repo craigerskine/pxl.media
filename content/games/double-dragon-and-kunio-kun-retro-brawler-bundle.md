@@ -1,10 +1,10 @@
 ---
-title: Double Dragon & Kunio-Kun Retro Brawler Bundle
+title: 'Double Dragon & Kunio-Kun Retro Brawler Bundle'
 platform: switch
 genre:
   - brawler
   - compilation
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

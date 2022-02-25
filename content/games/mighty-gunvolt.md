@@ -1,5 +1,5 @@
 ---
-title: Mighty Gunvolt
+title: 'Mighty Gunvolt'
 platform: steam
 genre:
   - action-adventure

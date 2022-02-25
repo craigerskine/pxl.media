@@ -1,5 +1,5 @@
 ---
-title: flOw [PSP]
+title: 'flOw [PSP]'
 platform: playstation-portable
 genre:
   - casual

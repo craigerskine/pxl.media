@@ -1,5 +1,5 @@
 ---
-title: God Wars: The Complete Legend
+title: 'God Wars: The Complete Legend'
 platform: switch
 genre:
   - rpg

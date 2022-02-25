@@ -1,5 +1,5 @@
 ---
-title: The World Ends with You: Final Remix
+title: 'The World Ends with You: Final Remix'
 platform: switch
 genre:
   - action-adventure

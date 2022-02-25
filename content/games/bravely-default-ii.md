@@ -1,5 +1,5 @@
 ---
-title: Bravely Default II
+title: 'Bravely Default II'
 platform: switch
 genre:
   - rpg

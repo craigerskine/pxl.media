@@ -1,5 +1,5 @@
 ---
-title: R-Type Dimensions EX
+title: 'R-Type Dimensions EX'
 platform: switch
 genre:
   - shmup

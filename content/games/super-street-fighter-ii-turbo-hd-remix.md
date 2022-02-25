@@ -1,5 +1,5 @@
 ---
-title: Super Street Fighter II Turbo HD Remix
+title: 'Super Street Fighter II Turbo HD Remix'
 platform: playstation-3
 genre:
   - fighting

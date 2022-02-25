@@ -1,5 +1,5 @@
 ---
-title: Parodius Da! PCE
+title: 'Parodius Da! PCE'
 platform: turbografx-16
 genre:
   - shmup

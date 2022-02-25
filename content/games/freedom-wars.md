@@ -1,5 +1,5 @@
 ---
-title: Freedom Wars
+title: 'Freedom Wars'
 platform: playstation-vita
 genre:
   - rpg

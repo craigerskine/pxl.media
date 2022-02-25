@@ -1,5 +1,5 @@
 ---
-title: Mega EverDrive
+title: 'Mega EverDrive'
 platform: genesis
 genre:
   - flash-cart

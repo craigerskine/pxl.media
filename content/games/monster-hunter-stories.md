@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Stories
+title: 'Monster Hunter Stories'
 platform: 3ds
 genre:
   - action-adventure

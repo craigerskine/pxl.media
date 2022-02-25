@@ -1,5 +1,5 @@
 ---
-title: Legend of Mana Remaster [Switch]
+title: 'Legend of Mana Remaster [Switch]'
 platform: switch
 genre:
   - rpg

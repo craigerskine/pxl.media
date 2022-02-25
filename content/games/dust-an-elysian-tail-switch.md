@@ -1,9 +1,9 @@
 ---
-title: Dust: An Elysian Tail [Switch]
+title: 'Dust: An Elysian Tail [Switch]'
 platform: switch
 genre:
   - action-adventure
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

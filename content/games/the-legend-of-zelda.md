@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda
+title: 'The Legend of Zelda'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

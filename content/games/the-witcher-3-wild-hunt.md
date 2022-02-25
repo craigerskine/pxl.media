@@ -1,5 +1,5 @@
 ---
-title: The Witcher 3: Wild Hunt
+title: 'The Witcher 3: Wild Hunt'
 platform: playstation-4
 genre:
   - rpg

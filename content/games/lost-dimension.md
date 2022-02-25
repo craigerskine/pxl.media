@@ -1,5 +1,5 @@
 ---
-title: Lost Dimension
+title: 'Lost Dimension'
 platform: playstation-vita
 genre:
   - rpg

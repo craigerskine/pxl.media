@@ -1,5 +1,5 @@
 ---
-title: Grand Kingdom
+title: 'Grand Kingdom'
 platform: playstation-vita
 genre:
   - rpg

@@ -1,9 +1,9 @@
 ---
-title: Alwa's Awakening
+title: 'Alwa''s Awakening'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure
-note: Castlemania Games
+note: 'Castlemania Games'
 digital: false
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Triple Action
+title: 'Triple Action'
 platform: intellivision
 genre:
   - action-adventure

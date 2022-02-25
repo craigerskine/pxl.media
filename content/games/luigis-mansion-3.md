@@ -1,5 +1,5 @@
 ---
-title: Luigi's Mansion 3
+title: 'Luigi''s Mansion 3'
 platform: switch
 genre:
   - action-adventure

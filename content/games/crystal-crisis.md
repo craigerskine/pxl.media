@@ -1,5 +1,5 @@
 ---
-title: Crystal Crisis
+title: 'Crystal Crisis'
 platform: switch
 genre:
   - puzzle

@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy V
+title: 'Final Fantasy V'
 platform: playstation
 genre:
   - rpg

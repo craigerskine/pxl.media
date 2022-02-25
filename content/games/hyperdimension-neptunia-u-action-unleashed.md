@@ -1,5 +1,5 @@
 ---
-title: Hyperdimension Neptunia U: Action Unleashed
+title: 'Hyperdimension Neptunia U: Action Unleashed'
 platform: playstation-vita
 genre:
   - rpg

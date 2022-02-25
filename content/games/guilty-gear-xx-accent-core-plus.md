@@ -1,5 +1,5 @@
 ---
-title: Guilty Gear XX Accent Core Plus
+title: 'Guilty Gear XX Accent Core Plus'
 platform: playstation-portable
 genre:
   - fighting

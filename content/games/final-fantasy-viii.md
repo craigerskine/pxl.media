@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy VIII
+title: 'Final Fantasy VIII'
 platform: playstation
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: World of Final Fantasy [Vita]
+title: 'World of Final Fantasy [Vita]'
 platform: playstation-vita
 genre:
   - rpg

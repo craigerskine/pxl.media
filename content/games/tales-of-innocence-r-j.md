@@ -1,5 +1,5 @@
 ---
-title: Tales of Innocence R [J]
+title: 'Tales of Innocence R [J]'
 platform: playstation-vita
 genre:
   - rpg

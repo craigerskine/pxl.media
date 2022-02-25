@@ -1,5 +1,5 @@
 ---
-title: Night Stalker
+title: 'Night Stalker'
 platform: intellivision
 genre:
   - action-adventure

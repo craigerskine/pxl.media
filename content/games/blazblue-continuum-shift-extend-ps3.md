@@ -1,9 +1,9 @@
 ---
-title: BlazBlue: Continuum Shift Extend [PS3]
+title: 'BlazBlue: Continuum Shift Extend [PS3]'
 platform: playstation-3
 genre:
   - fighting
-note: Limited Edition
+note: 'Limited Edition'
 digital: false
 physical: true
 guide: false

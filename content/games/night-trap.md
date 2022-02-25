@@ -1,9 +1,9 @@
 ---
-title: Night Trap
+title: 'Night Trap'
 platform: switch
 genre:
   - casual
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

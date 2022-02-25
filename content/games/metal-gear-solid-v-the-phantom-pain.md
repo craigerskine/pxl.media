@@ -1,5 +1,5 @@
 ---
-title: Metal Gear Solid V: The Phantom Pain
+title: 'Metal Gear Solid V: The Phantom Pain'
 platform: playstation-3
 genre:
   - action-adventure

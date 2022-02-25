@@ -1,5 +1,5 @@
 ---
-title: Legend of Mana
+title: 'Legend of Mana'
 platform: playstation
 genre:
   - rpg

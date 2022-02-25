@@ -1,5 +1,5 @@
 ---
-title: Tales of Zestiria
+title: 'Tales of Zestiria'
 platform: playstation-3
 genre:
   - rpg

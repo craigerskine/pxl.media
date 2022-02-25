@@ -1,5 +1,5 @@
 ---
-title: Spelunky [PS4]
+title: 'Spelunky [PS4]'
 platform: playstation-4
 genre:
   - action-adventure

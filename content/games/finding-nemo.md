@@ -1,5 +1,5 @@
 ---
-title: Finding Nemo
+title: 'Finding Nemo'
 platform: gamecube
 genre:
   - platformer

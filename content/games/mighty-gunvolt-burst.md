@@ -1,5 +1,5 @@
 ---
-title: Mighty Gunvolt Burst
+title: 'Mighty Gunvolt Burst'
 platform: switch
 genre:
   - action-adventure

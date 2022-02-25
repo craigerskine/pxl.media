@@ -1,5 +1,5 @@
 ---
-title: Toukiden 2
+title: 'Toukiden 2'
 platform: playstation-vita
 genre:
   - rpg

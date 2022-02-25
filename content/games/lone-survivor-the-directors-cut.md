@@ -1,5 +1,5 @@
 ---
-title: Lone Survivor: The Director's Cut
+title: 'Lone Survivor: The Director''s Cut'
 platform: steam
 genre:
   - action-adventure

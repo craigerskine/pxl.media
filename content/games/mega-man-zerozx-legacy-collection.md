@@ -1,5 +1,5 @@
 ---
-title: Mega Man Zero/ZX Legacy Collection
+title: 'Mega Man Zero/ZX Legacy Collection'
 platform: switch
 genre:
   - action-adventure

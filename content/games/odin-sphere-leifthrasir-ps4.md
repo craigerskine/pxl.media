@@ -1,5 +1,5 @@
 ---
-title: Odin Sphere Leifthrasir [PS4]
+title: 'Odin Sphere Leifthrasir [PS4]'
 platform: playstation-4
 genre:
   - action-adventure

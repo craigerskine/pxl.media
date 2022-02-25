@@ -1,5 +1,5 @@
 ---
-title: Crash Bandicoot N. Sane Trilogy [PS4]
+title: 'Crash Bandicoot N. Sane Trilogy [PS4]'
 platform: playstation-4
 genre:
   - platformer

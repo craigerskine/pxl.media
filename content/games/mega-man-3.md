@@ -1,5 +1,5 @@
 ---
-title: Mega Man 3
+title: 'Mega Man 3'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

@@ -1,9 +1,9 @@
 ---
-title: Blaster Master Zero 3
+title: 'Blaster Master Zero 3'
 platform: switch
 genre:
   - action-adventure
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

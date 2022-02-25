@@ -1,9 +1,9 @@
 ---
-title: Kingdom Hearts
+title: 'Kingdom Hearts'
 platform: playstation-2
 genre:
   - action-adventure
-note: Greatest Hits
+note: 'Greatest Hits'
 digital: false
 physical: true
 guide: false

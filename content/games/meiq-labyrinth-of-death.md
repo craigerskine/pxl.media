@@ -1,5 +1,5 @@
 ---
-title: MeiQ: Labyrinth of Death
+title: 'MeiQ: Labyrinth of Death'
 platform: playstation-vita
 genre:
   - rpg

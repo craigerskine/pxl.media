@@ -1,5 +1,5 @@
 ---
-title: Star Wars Republic Commando
+title: 'Star Wars Republic Commando'
 platform: steam
 genre:
   - shooter

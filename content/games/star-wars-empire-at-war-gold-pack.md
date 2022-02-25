@@ -1,5 +1,5 @@
 ---
-title: Star Wars Empire at War: Gold Pack
+title: 'Star Wars Empire at War: Gold Pack'
 platform: steam
 genre:
   - rpg

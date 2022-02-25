@@ -1,5 +1,5 @@
 ---
-title: Half-Life 2: Deathmatch
+title: 'Half-Life 2: Deathmatch'
 platform: steam
 genre:
   - shooter

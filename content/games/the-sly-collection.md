@@ -1,5 +1,5 @@
 ---
-title: The Sly Collection
+title: 'The Sly Collection'
 platform: playstation-vita
 genre:
   - compilation

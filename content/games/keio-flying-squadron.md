@@ -1,5 +1,5 @@
 ---
-title: Keio Flying Squadron
+title: 'Keio Flying Squadron'
 platform: sega-cd
 genre:
   - shmup

@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Ultra Sun
+title: 'Pokémon: Ultra Sun'
 platform: 3ds
 genre:
   - rpg

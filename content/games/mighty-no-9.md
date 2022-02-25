@@ -1,5 +1,5 @@
 ---
-title: Mighty No. 9
+title: 'Mighty No. 9'
 platform: playstation-4
 genre:
   - platformer

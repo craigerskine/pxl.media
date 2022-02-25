@@ -1,5 +1,5 @@
 ---
-title: Metroid Fusion
+title: 'Metroid Fusion'
 platform: game-boy-advance
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Bravely Second: End Layer
+title: 'Bravely Second: End Layer'
 platform: 3ds
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Omega Ruby
+title: 'Pokémon: Omega Ruby'
 platform: 3ds
 genre:
   - rpg

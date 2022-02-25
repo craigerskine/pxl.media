@@ -1,5 +1,5 @@
 ---
-title: CrossCode [Steam]
+title: 'CrossCode [Steam]'
 platform: steam
 genre:
   - action-adventure

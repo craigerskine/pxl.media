@@ -1,5 +1,5 @@
 ---
-title: Mega Man 9
+title: 'Mega Man 9'
 platform: playstation-3
 genre:
   - action-adventure

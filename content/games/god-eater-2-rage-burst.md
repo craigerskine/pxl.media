@@ -1,5 +1,5 @@
 ---
-title: God Eater 2: Rage Burst
+title: 'God Eater 2: Rage Burst'
 platform: playstation-4
 genre:
   - rpg

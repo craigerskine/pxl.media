@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Tri
+title: 'Monster Hunter Tri'
 platform: wii
 genre:
   - action-adventure

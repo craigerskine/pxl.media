@@ -1,5 +1,5 @@
 ---
-title: Lumines Live
+title: 'Lumines Live'
 platform: xbox-360
 genre:
   - puzzle

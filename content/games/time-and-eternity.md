@@ -1,5 +1,5 @@
 ---
-title: Time and Eternity
+title: 'Time and Eternity'
 platform: playstation-3
 genre:
   - rpg

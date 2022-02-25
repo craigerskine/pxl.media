@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Portable 3rd
+title: 'Monster Hunter Portable 3rd'
 platform: playstation-portable
 genre:
   - action-adventure

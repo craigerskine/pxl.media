@@ -1,5 +1,5 @@
 ---
-title: Tales of Legendia
+title: 'Tales of Legendia'
 platform: playstation-2
 genre:
   - rpg

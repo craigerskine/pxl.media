@@ -1,5 +1,5 @@
 ---
-title: SNK 40th Anniversary Collection
+title: 'SNK 40th Anniversary Collection'
 platform: switch
 genre:
   - compilation

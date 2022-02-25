@@ -1,5 +1,5 @@
 ---
-title: Wild Arms
+title: 'Wild Arms'
 platform: playstation
 genre:
   - rpg

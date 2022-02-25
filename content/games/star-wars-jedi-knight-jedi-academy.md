@@ -1,5 +1,5 @@
 ---
-title: Star Wars Jedi Knight: Jedi Academy
+title: 'Star Wars Jedi Knight: Jedi Academy'
 platform: steam
 genre:
   - shooter

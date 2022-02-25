@@ -1,5 +1,5 @@
 ---
-title: Mario Golf 64
+title: 'Mario Golf 64'
 platform: nintendo-64
 genre:
   - sports

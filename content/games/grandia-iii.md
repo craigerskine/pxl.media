@@ -1,5 +1,5 @@
 ---
-title: Grandia III
+title: 'Grandia III'
 platform: playstation-2
 genre:
   - rpg

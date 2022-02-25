@@ -1,5 +1,5 @@
 ---
-title: Shin Megami Tensei: Persona
+title: 'Shin Megami Tensei: Persona'
 platform: playstation-portable
 genre:
   - rpg

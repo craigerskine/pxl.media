@@ -1,5 +1,5 @@
 ---
-title: FTL: Faster Than Light
+title: 'FTL: Faster Than Light'
 platform: steam
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Star Ocean: The Last Hope International
+title: 'Star Ocean: The Last Hope International'
 platform: playstation-3
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Half-Life 2: Lost Coast
+title: 'Half-Life 2: Lost Coast'
 platform: steam
 genre:
   - shooter

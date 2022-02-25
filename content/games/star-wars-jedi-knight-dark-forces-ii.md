@@ -1,5 +1,5 @@
 ---
-title: Star Wars Jedi Knight: Dark Forces II
+title: 'Star Wars Jedi Knight: Dark Forces II'
 platform: steam
 genre:
   - shooter

@@ -1,5 +1,5 @@
 ---
-title: .hack//G.U. Last Recode
+title: '.hack//G.U. Last Recode'
 platform: playstation-4
 genre:
   - rpg

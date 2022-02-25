@@ -1,5 +1,5 @@
 ---
-title: Romancing SaGa 3
+title: 'Romancing SaGa 3'
 platform: switch
 genre:
   - rpg

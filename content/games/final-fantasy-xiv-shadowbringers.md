@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XIV: Shadowbringers
+title: 'Final Fantasy XIV: Shadowbringers'
 platform: playstation-4
 genre:
   - action-adventure

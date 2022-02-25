@@ -1,5 +1,5 @@
 ---
-title: Star Wars: The Force Unleashed II
+title: 'Star Wars: The Force Unleashed II'
 platform: steam
 genre:
   - action-adventure

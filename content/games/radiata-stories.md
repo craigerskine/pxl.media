@@ -1,5 +1,5 @@
 ---
-title: Radiata Stories
+title: 'Radiata Stories'
 platform: playstation-2
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Fate/EXTELLA: The Umbral Star [Switch]
+title: 'Fate/EXTELLA: The Umbral Star [Switch]'
 platform: switch
 genre:
   - rpg

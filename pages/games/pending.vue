@@ -1,7 +1,7 @@
 <template>
   <div>
     <heading :subtext="gamesPending.length">Pending</heading>
-    <ul class="container mx-auto flex flex-wrap">
+    <section class="container mx-auto flex flex-wrap">
       <ul class="list-game pb-4 flex flex-wrap">
         <game v-for="game of gamesPending"
           :key="game.slug"
@@ -17,7 +17,7 @@
           :posted="game.posted"
         />
       </ul>
-    </ul>
+    </section>
   </div>
 </template>
 
@@ -26,6 +26,7 @@
     async asyncData({ $content }) {
       const gamesPending = await $content("games")
         .where({pending: true,})
+        .sortBy('posted', 'desc')
         .fetch();
       return {
         gamesPending,

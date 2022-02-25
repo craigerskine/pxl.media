@@ -1,5 +1,5 @@
 ---
-title: Mirror's Edge
+title: 'Mirror''s Edge'
 platform: steam
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Bravely Default
+title: 'Bravely Default'
 platform: 3ds
 genre:
   - rpg

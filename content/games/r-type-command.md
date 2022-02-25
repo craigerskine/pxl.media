@@ -1,5 +1,5 @@
 ---
-title: R-Type Command
+title: 'R-Type Command'
 platform: playstation-portable
 genre:
   - shmup

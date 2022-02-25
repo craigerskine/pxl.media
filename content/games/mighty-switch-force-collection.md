@@ -1,10 +1,10 @@
 ---
-title: Mighty Switch Force! Collection
+title: 'Mighty Switch Force! Collection'
 platform: switch
 genre:
   - action-adventure
   - compilation
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

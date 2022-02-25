@@ -1,9 +1,9 @@
 ---
-title: The Legend of Heroes: Trails of Cold Steel IV
+title: 'The Legend of Heroes: Trails of Cold Steel IV'
 platform: switch
 genre:
   - rpg
-note: Frontline Edition
+note: 'Frontline Edition'
 digital: false
 physical: true
 guide: false

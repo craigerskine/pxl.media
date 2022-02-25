@@ -1,5 +1,5 @@
 ---
-title: Legend of Mana Remaster [PS4]
+title: 'Legend of Mana Remaster [PS4]'
 platform: playstation-4
 genre:
   - rpg

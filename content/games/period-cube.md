@@ -1,5 +1,5 @@
 ---
-title: Period Cube
+title: 'Period Cube'
 platform: playstation-vita
 genre:
   - rpg

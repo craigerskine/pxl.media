@@ -1,5 +1,5 @@
 ---
-title: Resonance of Fate
+title: 'Resonance of Fate'
 platform: playstation-3
 genre:
   - rpg

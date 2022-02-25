@@ -1,5 +1,5 @@
 ---
-title: Soldier Blade
+title: 'Soldier Blade'
 platform: turbografx-16
 genre:
   - shmup

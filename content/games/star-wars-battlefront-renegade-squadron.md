@@ -1,5 +1,5 @@
 ---
-title: Star Wars: Battlefront Renegade Squadron
+title: 'Star Wars: Battlefront Renegade Squadron'
 platform: playstation-portable
 genre:
   - action-adventure

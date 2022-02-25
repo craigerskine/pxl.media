@@ -1,5 +1,5 @@
 ---
-title: ONE PIECE: World Seeker
+title: 'ONE PIECE: World Seeker'
 platform: playstation-4
 genre:
   - action-adventure

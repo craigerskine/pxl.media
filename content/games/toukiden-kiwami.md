@@ -1,5 +1,5 @@
 ---
-title: Toukiden: Kiwami
+title: 'Toukiden: Kiwami'
 platform: playstation-vita
 genre:
   - rpg

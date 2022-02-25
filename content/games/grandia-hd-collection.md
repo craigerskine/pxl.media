@@ -1,10 +1,10 @@
 ---
-title: Grandia HD Collection
+title: 'Grandia HD Collection'
 platform: switch
 genre:
   - compilation
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

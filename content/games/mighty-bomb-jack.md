@@ -1,5 +1,5 @@
 ---
-title: Mighty Bomb Jack
+title: 'Mighty Bomb Jack'
 platform: nintendo-entertainment-system
 genre:
   - platformer

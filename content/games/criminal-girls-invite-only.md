@@ -1,5 +1,5 @@
 ---
-title: Criminal Girls: Invite Only
+title: 'Criminal Girls: Invite Only'
 platform: playstation-vita
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Ys: VIII Lacrimosa of DANA [Vita]
+title: 'Ys: VIII Lacrimosa of DANA [Vita]'
 platform: playstation-vita
 genre:
   - action-adventure

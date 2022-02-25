@@ -1,5 +1,5 @@
 ---
-title: Command and Conquer: Red Alert 3 - Uprising
+title: 'Command and Conquer: Red Alert 3 - Uprising'
 platform: steam
 genre:
   - rpg

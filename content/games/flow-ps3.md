@@ -1,5 +1,5 @@
 ---
-title: flOw [PS3]
+title: 'flOw [PS3]'
 platform: playstation-3
 genre:
   - casual

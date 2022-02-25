@@ -1,5 +1,5 @@
 ---
-title: Patchwork Heroes
+title: 'Patchwork Heroes'
 platform: playstation-portable
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Star Wars Knights of the Old Republic II: The Sith Lords
+title: 'Star Wars Knights of the Old Republic II: The Sith Lords'
 platform: steam
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XV Pocket Edition HD
+title: 'Final Fantasy XV Pocket Edition HD'
 platform: switch
 genre:
   - rpg

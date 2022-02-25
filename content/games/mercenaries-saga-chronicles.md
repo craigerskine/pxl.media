@@ -1,5 +1,5 @@
 ---
-title: Mercenaries Saga Chronicles
+title: 'Mercenaries Saga Chronicles'
 platform: switch
 genre:
   - rpg

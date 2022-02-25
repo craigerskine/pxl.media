@@ -1,5 +1,5 @@
 ---
-title: Fernz Gate [Vita]
+title: 'Fernz Gate [Vita]'
 platform: playstation-vita
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Resident Evil 0 HD
+title: 'Resident Evil 0 HD'
 platform: playstation-4
 genre:
   - action-adventure

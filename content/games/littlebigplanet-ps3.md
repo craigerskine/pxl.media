@@ -1,5 +1,5 @@
 ---
-title: LittleBigPlanet [PS3]
+title: 'LittleBigPlanet [PS3]'
 platform: playstation-3
 genre:
   - action-adventure

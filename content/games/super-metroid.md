@@ -1,5 +1,5 @@
 ---
-title: Super Metroid
+title: 'Super Metroid'
 platform: super-nintendo
 genre:
   - action-adventure

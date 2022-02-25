@@ -1,5 +1,5 @@
 ---
-title: Pokémon Mystery Dungeon: Rescue Team Dx
+title: 'Pokémon Mystery Dungeon: Rescue Team Dx'
 platform: switch
 genre:
   - rpg

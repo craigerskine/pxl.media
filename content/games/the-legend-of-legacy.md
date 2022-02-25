@@ -1,5 +1,5 @@
 ---
-title: The Legend of Legacy
+title: 'The Legend of Legacy'
 platform: 3ds
 genre:
   - rpg

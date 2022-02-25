@@ -1,5 +1,5 @@
 ---
-title: Peggle Nights
+title: 'Peggle Nights'
 platform: steam
 genre:
   - puzzle

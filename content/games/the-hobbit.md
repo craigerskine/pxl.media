@@ -1,5 +1,5 @@
 ---
-title: The Hobbit
+title: 'The Hobbit'
 platform: gamecube
 genre:
   - action-adventure

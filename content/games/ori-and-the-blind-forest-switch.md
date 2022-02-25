@@ -1,5 +1,5 @@
 ---
-title: Ori and the Blind Forest [Switch]
+title: 'Ori and the Blind Forest [Switch]'
 platform: switch
 genre:
   - action-adventure

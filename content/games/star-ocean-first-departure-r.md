@@ -1,5 +1,5 @@
 ---
-title: Star Ocean First Departure R
+title: 'Star Ocean First Departure R'
 platform: switch
 genre:
   - rpg

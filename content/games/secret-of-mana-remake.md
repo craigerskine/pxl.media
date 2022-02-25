@@ -1,5 +1,5 @@
 ---
-title: Secret of Mana Remake
+title: 'Secret of Mana Remake'
 platform: playstation-4
 genre:
   - action-adventure

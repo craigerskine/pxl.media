@@ -1,5 +1,5 @@
 ---
-title: The Wonderful 101: Remastered
+title: 'The Wonderful 101: Remastered'
 platform: switch
 genre:
   - action-adventure

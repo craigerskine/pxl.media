@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Ocarina of Time GCN
+title: 'The Legend of Zelda: Ocarina of Time GCN'
 platform: gamecube
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Lynx GameDrive
+title: 'Lynx GameDrive'
 platform: lynx
 genre:
   - flash-cart

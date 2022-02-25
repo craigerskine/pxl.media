@@ -1,5 +1,5 @@
 ---
-title: Star Wars X-Wing vs TIE Fighter: Balance of Power Campaigns
+title: 'Star Wars X-Wing vs TIE Fighter: Balance of Power Campaigns'
 platform: steam
 genre:
   - action-adventure

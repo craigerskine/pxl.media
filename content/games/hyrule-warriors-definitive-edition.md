@@ -1,5 +1,5 @@
 ---
-title: Hyrule Warriors: Definitive Edition
+title: 'Hyrule Warriors: Definitive Edition'
 platform: switch
 genre:
   - action-adventure

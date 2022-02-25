@@ -1,5 +1,5 @@
 ---
-title: Hang On/Safari Hunt
+title: 'Hang On/Safari Hunt'
 platform: master-system
 genre:
   - action-adventure

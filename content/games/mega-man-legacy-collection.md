@@ -1,5 +1,5 @@
 ---
-title: Mega Man Legacy Collection
+title: 'Mega Man Legacy Collection'
 platform: playstation-4
 genre:
   - action-adventure

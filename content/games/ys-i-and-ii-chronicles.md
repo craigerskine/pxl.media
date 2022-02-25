@@ -1,10 +1,10 @@
 ---
-title: Ys: I and II Chronicles
+title: 'Ys: I and II Chronicles'
 platform: playstation-portable
 genre:
   - action-adventure
   - rpg
-note: Premium Edition
+note: 'Premium Edition'
 digital: true
 physical: true
 guide: false

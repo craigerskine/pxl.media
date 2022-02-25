@@ -1,5 +1,5 @@
 ---
-title: Shantae: Half-Genie Hero - Risky Beats Edition
+title: 'Shantae: Half-Genie Hero - Risky Beats Edition'
 platform: playstation-vita
 genre:
   - platformer

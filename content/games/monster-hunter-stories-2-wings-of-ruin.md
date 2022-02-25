@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Stories 2: Wings of Ruin
+title: 'Monster Hunter Stories 2: Wings of Ruin'
 platform: switch
 genre:
   - action-adventure

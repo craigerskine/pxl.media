@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Online 2 [Xbox X/S]
+title: 'Phantasy Star Online 2 [Xbox X/S]'
 platform: xbox-series-x-s
 genre:
   - action-adventure

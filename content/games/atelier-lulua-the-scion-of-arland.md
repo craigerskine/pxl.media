@@ -1,5 +1,5 @@
 ---
-title: Atelier Lulua: The Scion of Arland
+title: 'Atelier Lulua: The Scion of Arland'
 platform: switch
 genre:
   - rpg

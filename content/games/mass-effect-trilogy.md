@@ -1,5 +1,5 @@
 ---
-title: Mass Effect Trilogy
+title: 'Mass Effect Trilogy'
 platform: playstation-3
 genre:
   - rpg

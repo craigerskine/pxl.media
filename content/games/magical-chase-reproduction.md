@@ -1,5 +1,5 @@
 ---
-title: Magical Chase (Reproduction)
+title: 'Magical Chase (Reproduction)'
 platform: turbografx-16
 genre:
   - shmup

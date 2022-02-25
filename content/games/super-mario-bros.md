@@ -1,5 +1,5 @@
 ---
-title: Super Mario Bros.
+title: 'Super Mario Bros.'
 platform: nintendo-entertainment-system
 genre:
   - platformer

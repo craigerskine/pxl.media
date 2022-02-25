@@ -1,9 +1,9 @@
 ---
-title: Starlink Battle for Atlas
+title: 'Starlink Battle for Atlas'
 platform: switch
 genre:
   - action-adventure
-note: Starter Edition
+note: 'Starter Edition'
 digital: false
 physical: true
 guide: false

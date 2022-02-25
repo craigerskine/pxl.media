@@ -1,5 +1,5 @@
 ---
-title: Uncharted: Drake's Fortune
+title: 'Uncharted: Drake''s Fortune'
 platform: playstation-3
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Shin Megami Tensei: Persona 2: Innocent Sin
+title: 'Shin Megami Tensei: Persona 2: Innocent Sin'
 platform: playstation-portable
 genre:
   - rpg

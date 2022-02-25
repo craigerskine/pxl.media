@@ -1,5 +1,5 @@
 ---
-title: Sea of Stars [Switch]
+title: 'Sea of Stars [Switch]'
 platform: switch
 genre:
   - action-adventure

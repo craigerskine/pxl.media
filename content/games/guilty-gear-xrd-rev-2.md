@@ -1,5 +1,5 @@
 ---
-title: Guilty Gear Xrd REV 2
+title: 'Guilty Gear Xrd REV 2'
 platform: playstation-4
 genre:
   - fighting

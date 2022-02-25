@@ -1,5 +1,5 @@
 ---
-title: Valhalla Knights 3
+title: 'Valhalla Knights 3'
 platform: playstation-vita
 genre:
   - rpg

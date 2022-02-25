@@ -1,5 +1,5 @@
 ---
-title: Tales of Xillia 2 [J]
+title: 'Tales of Xillia 2 [J]'
 platform: playstation-3
 genre:
   - rpg

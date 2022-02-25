@@ -1,5 +1,5 @@
 ---
-title: Tournament Cyberball
+title: 'Tournament Cyberball'
 platform: lynx
 genre:
   - sports

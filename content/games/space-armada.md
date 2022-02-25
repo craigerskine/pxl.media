@@ -1,5 +1,5 @@
 ---
-title: Space Armada
+title: 'Space Armada'
 platform: intellivision
 genre:
   - shmup

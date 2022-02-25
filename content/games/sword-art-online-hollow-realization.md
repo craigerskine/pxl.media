@@ -1,5 +1,5 @@
 ---
-title: Sword Art Online: Hollow Realization
+title: 'Sword Art Online: Hollow Realization'
 platform: playstation-4
 genre:
   - action-adventure

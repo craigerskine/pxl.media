@@ -1,5 +1,5 @@
 ---
-title: Madden NFL '94
+title: 'Madden NFL ''94'
 platform: genesis
 genre:
   - sports

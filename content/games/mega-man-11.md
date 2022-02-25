@@ -1,5 +1,5 @@
 ---
-title: Mega Man 11
+title: 'Mega Man 11'
 platform: switch
 genre:
   - action-adventure

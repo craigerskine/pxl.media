@@ -1,5 +1,5 @@
 ---
-title: Lords of Thunder
+title: 'Lords of Thunder'
 platform: wii
 genre:
   - shmup

@@ -1,5 +1,5 @@
 ---
-title: Metroid Prime 2: Echoes
+title: 'Metroid Prime 2: Echoes'
 platform: gamecube
 genre:
   - action-adventure

@@ -3,7 +3,7 @@ title: Shantae
 platform: switch
 genre:
   - platformer
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

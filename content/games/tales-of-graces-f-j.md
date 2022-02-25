@@ -1,5 +1,5 @@
 ---
-title: Tales of Graces f [J]
+title: 'Tales of Graces f [J]'
 platform: playstation-3
 genre:
   - rpg

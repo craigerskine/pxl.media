@@ -1,9 +1,9 @@
 ---
-title: Battle Princess Madelyn
+title: 'Battle Princess Madelyn'
 platform: switch
 genre:
   - platformer
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Twilight Princess
+title: 'The Legend of Zelda: Twilight Princess'
 platform: gamecube
 genre:
   - action-adventure

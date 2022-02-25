@@ -1,5 +1,5 @@
 ---
-title: Sega Genesis Collection
+title: 'Sega Genesis Collection'
 platform: playstation-portable
 genre:
   - compilation

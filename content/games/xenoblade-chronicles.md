@@ -1,5 +1,5 @@
 ---
-title: XenoBlade Chronicles
+title: 'XenoBlade Chronicles'
 platform: wii
 genre:
   - rpg

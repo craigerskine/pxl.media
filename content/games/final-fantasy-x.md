@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy X
+title: 'Final Fantasy X'
 platform: playstation-2
 genre:
   - rpg

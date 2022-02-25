@@ -1,5 +1,5 @@
 ---
-title: Iconoclasts [Vita]
+title: 'Iconoclasts [Vita]'
 platform: playstation-vita
 genre:
   - action-adventure

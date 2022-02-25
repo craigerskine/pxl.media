@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy III [DS]
+title: 'Final Fantasy III [DS]'
 platform: ds
 genre:
   - rpg

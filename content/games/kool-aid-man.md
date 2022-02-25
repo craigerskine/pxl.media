@@ -1,5 +1,5 @@
 ---
-title: Kool-Aid Man
+title: 'Kool-Aid Man'
 platform: intellivision
 genre:
   - platformer

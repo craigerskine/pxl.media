@@ -1,9 +1,9 @@
 ---
-title: The Legend of Heroes: Trails in the Sky
+title: 'The Legend of Heroes: Trails in the Sky'
 platform: playstation-portable
 genre:
   - rpg
-note: Limited Edition
+note: 'Limited Edition'
 digital: true
 physical: true
 guide: false

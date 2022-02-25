@@ -1,5 +1,5 @@
 ---
-title: Spelunky [Vita]
+title: 'Spelunky [Vita]'
 platform: playstation-vita
 genre:
   - action-adventure

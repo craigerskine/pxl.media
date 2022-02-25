@@ -1,5 +1,5 @@
 ---
-title: Kung Food
+title: 'Kung Food'
 platform: lynx
 genre:
   - brawler

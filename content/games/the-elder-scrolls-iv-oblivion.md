@@ -1,5 +1,5 @@
 ---
-title: The Elder Scrolls IV: Oblivion
+title: 'The Elder Scrolls IV: Oblivion'
 platform: xbox-360
 genre:
   - rpg

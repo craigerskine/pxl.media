@@ -1,5 +1,5 @@
 ---
-title: Steamworld Heist
+title: 'Steamworld Heist'
 platform: playstation-vita
 genre:
   - action-adventure

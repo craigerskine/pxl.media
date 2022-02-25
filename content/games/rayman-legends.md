@@ -1,5 +1,5 @@
 ---
-title: Rayman Legends
+title: 'Rayman Legends'
 platform: playstation-3
 genre:
   - platformer

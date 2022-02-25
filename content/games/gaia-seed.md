@@ -1,5 +1,5 @@
 ---
-title: Gaia Seed
+title: 'Gaia Seed'
 platform: playstation
 genre:
   - shmup

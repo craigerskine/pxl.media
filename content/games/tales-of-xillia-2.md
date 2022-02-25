@@ -1,9 +1,9 @@
 ---
-title: Tales of Xillia 2
+title: 'Tales of Xillia 2'
 platform: playstation-3
 genre:
   - rpg
-note: Collector's Edition
+note: 'Collector''s Edition'
 digital: true
 physical: true
 guide: true

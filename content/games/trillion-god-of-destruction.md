@@ -1,5 +1,5 @@
 ---
-title: Trillion: God of Destruction
+title: 'Trillion: God of Destruction'
 platform: playstation-vita
 genre:
   - rpg

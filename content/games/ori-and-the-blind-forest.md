@@ -1,9 +1,9 @@
 ---
-title: Ori and the Blind Forest
+title: 'Ori and the Blind Forest'
 platform: xbox-one
 genre:
   - action-adventure
-note: Definitive Edition
+note: 'Definitive Edition'
 digital: false
 physical: true
 guide: false

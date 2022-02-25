@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy II - Pixel Remaster
+title: 'Final Fantasy II - Pixel Remaster'
 platform: steam
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Bloodstained: Ritual of the Night
+title: 'Bloodstained: Ritual of the Night'
 platform: switch
 genre:
   - action-adventure

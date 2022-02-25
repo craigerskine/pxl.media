@@ -1,5 +1,5 @@
 ---
-title: Paper Mario: The Thousand-Year Door
+title: 'Paper Mario: The Thousand-Year Door'
 platform: gamecube
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Rayman Origins
+title: 'Rayman Origins'
 platform: playstation-3
 genre:
   - platformer

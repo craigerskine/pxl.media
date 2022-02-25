@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails of Cold Steel II - Relentless Edition
+title: 'The Legend of Heroes: Trails of Cold Steel II - Relentless Edition'
 platform: playstation-4
 genre:
   - rpg

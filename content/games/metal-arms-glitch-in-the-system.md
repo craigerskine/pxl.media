@@ -1,5 +1,5 @@
 ---
-title: Metal Arms: Glitch in the System
+title: 'Metal Arms: Glitch in the System'
 platform: gamecube
 genre:
   - action-adventure

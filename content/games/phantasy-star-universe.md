@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Universe
+title: 'Phantasy Star Universe'
 platform: xbox-360
 genre:
   - rpg

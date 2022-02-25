@@ -1,5 +1,5 @@
 ---
-title: Sekiro Shadows Die Twice
+title: 'Sekiro Shadows Die Twice'
 platform: playstation-4
 genre:
   - action-adventure

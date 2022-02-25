@@ -1,5 +1,5 @@
 ---
-title: Zanac x Zanac
+title: 'Zanac x Zanac'
 platform: playstation
 genre:
   - shmup

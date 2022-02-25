@@ -1,5 +1,5 @@
 ---
-title: Tales of Vesperia
+title: 'Tales of Vesperia'
 platform: xbox-360
 genre:
   - rpg

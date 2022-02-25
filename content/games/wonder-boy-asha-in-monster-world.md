@@ -1,5 +1,5 @@
 ---
-title: Wonder Boy - Asha in Monster World
+title: 'Wonder Boy - Asha in Monster World'
 platform: switch
 genre:
   - action-adventure

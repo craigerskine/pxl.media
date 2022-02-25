@@ -1,5 +1,5 @@
 ---
-title: Dawn of Mana
+title: 'Dawn of Mana'
 platform: playstation-2
 genre:
   - action-adventure

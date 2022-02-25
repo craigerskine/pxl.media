@@ -1,10 +1,10 @@
 ---
-title: Ys: Origin [PS4]
+title: 'Ys: Origin [PS4]'
 platform: playstation-4
 genre:
   - action-adventure
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

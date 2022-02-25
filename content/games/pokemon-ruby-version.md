@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Ruby Version
+title: 'Pokémon: Ruby Version'
 platform: game-boy-advance
 genre:
   - rpg

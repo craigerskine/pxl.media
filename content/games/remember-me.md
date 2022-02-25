@@ -1,5 +1,5 @@
 ---
-title: Remember Me
+title: 'Remember Me'
 platform: playstation-3
 genre:
   - action-adventure

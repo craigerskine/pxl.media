@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy III [PSP]
+title: 'Final Fantasy III [PSP]'
 platform: playstation-portable
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Mega Man 5
+title: 'Mega Man 5'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

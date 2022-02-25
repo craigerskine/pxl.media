@@ -1,9 +1,9 @@
 ---
-title: Xenoblade Chronicles 2
+title: 'Xenoblade Chronicles 2'
 platform: switch
 genre:
   - rpg
-note: Standard + Special Edition
+note: 'Standard + Special Edition'
 digital: true
 physical: true
 guide: false

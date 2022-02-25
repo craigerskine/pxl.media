@@ -1,5 +1,5 @@
 ---
-title: Golgo 13
+title: 'Golgo 13'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

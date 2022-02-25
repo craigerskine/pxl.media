@@ -1,10 +1,10 @@
 ---
-title: Ys: Seven
+title: 'Ys: Seven'
 platform: playstation-portable
 genre:
   - action-adventure
   - rpg
-note: Premium Edition
+note: 'Premium Edition'
 digital: true
 physical: true
 guide: false

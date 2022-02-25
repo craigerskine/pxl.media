@@ -1,5 +1,5 @@
 ---
-title: The Dark Crystal: Age of Resistance Tactics
+title: 'The Dark Crystal: Age of Resistance Tactics'
 platform: switch
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Toukiden: The Age of Demons
+title: 'Toukiden: The Age of Demons'
 platform: playstation-vita
 genre:
   - rpg

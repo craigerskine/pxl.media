@@ -1,5 +1,5 @@
 ---
-title: Major League Baseball
+title: 'Major League Baseball'
 platform: intellivision
 genre:
   - sports

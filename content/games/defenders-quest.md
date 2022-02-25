@@ -1,10 +1,10 @@
 ---
-title: Defender's Quest
+title: 'Defender''s Quest'
 platform: playstation-vita
 genre:
   - action-adventure
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

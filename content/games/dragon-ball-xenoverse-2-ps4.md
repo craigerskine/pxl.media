@@ -1,5 +1,5 @@
 ---
-title: Dragon Ball Xenoverse 2 [PS4]
+title: 'Dragon Ball Xenoverse 2 [PS4]'
 platform: playstation-4
 genre:
   - fighting

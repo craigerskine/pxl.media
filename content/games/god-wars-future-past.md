@@ -1,5 +1,5 @@
 ---
-title: God Wars: Future Past
+title: 'God Wars: Future Past'
 platform: playstation-vita
 genre:
   - rpg

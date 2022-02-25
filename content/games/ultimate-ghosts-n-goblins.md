@@ -1,5 +1,5 @@
 ---
-title: Ultimate Ghosts 'N Goblins
+title: 'Ultimate Ghosts ''N Goblins'
 platform: playstation-portable
 genre:
   - platformer

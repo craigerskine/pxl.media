@@ -1,5 +1,5 @@
 ---
-title: Fate/EXTELLA: The Umbral Star [Vita]
+title: 'Fate/EXTELLA: The Umbral Star [Vita]'
 platform: playstation-vita
 genre:
   - rpg

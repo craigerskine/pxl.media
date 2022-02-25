@@ -1,5 +1,5 @@
 ---
-title: Dragon Quest Builders [Vita]
+title: 'Dragon Quest Builders [Vita]'
 platform: playstation-vita
 genre:
   - rpg

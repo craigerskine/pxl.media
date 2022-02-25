@@ -1,5 +1,5 @@
 ---
-title: Steel Talons
+title: 'Steel Talons'
 platform: lynx
 genre:
   - action-adventure

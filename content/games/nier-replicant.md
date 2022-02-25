@@ -1,5 +1,5 @@
 ---
-title: NieR Replicant
+title: 'NieR Replicant'
 platform: xbox-one
 genre:
   - action-adventure

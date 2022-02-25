@@ -1,9 +1,9 @@
 ---
-title: Risk of Rain
+title: 'Risk of Rain'
 platform: playstation-vita
 genre:
   - action-adventure
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

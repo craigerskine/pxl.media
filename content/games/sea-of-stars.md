@@ -1,5 +1,5 @@
 ---
-title: Sea of Stars
+title: 'Sea of Stars'
 platform: steam
 genre:
   - action-adventure

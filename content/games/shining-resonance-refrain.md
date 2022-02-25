@@ -1,9 +1,9 @@
 ---
-title: Shining Resonance Refrain
+title: 'Shining Resonance Refrain'
 platform: switch
 genre:
   - rpg
-note: Draconic Launch Edition
+note: 'Draconic Launch Edition'
 digital: false
 physical: true
 guide: false

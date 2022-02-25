@@ -1,5 +1,5 @@
 ---
-title: Return to PopoloCrois: A STORY OF SEASONS
+title: 'Return to PopoloCrois: A STORY OF SEASONS'
 platform: 3ds
 genre:
   - rpg

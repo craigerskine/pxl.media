@@ -1,5 +1,5 @@
 ---
-title: Tetris Effect
+title: 'Tetris Effect'
 platform: playstation-4
 genre:
   - puzzle

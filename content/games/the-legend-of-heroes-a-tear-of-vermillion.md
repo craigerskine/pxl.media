@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: A Tear of Vermillion
+title: 'The Legend of Heroes: A Tear of Vermillion'
 platform: playstation-portable
 genre:
   - rpg

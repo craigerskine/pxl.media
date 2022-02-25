@@ -1,5 +1,5 @@
 ---
-title: Star Wars Knights of the Old Republic [Steam]
+title: 'Star Wars Knights of the Old Republic [Steam]'
 platform: steam
 genre:
   - rpg

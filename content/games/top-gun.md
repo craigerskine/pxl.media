@@ -1,5 +1,5 @@
 ---
-title: Top Gun
+title: 'Top Gun'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

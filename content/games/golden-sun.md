@@ -1,5 +1,5 @@
 ---
-title: Golden Sun
+title: 'Golden Sun'
 platform: game-boy-advance
 genre:
   - rpg

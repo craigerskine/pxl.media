@@ -1,5 +1,5 @@
 ---
-title: Piyotama [PS3]
+title: 'Piyotama [PS3]'
 platform: playstation-3
 genre:
   - puzzle

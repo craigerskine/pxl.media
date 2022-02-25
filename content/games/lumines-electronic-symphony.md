@@ -1,5 +1,5 @@
 ---
-title: Lumines: Electronic Symphony
+title: 'Lumines: Electronic Symphony'
 platform: playstation-vita
 genre:
   - puzzle

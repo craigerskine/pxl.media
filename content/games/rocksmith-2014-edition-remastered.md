@@ -1,5 +1,5 @@
 ---
-title: Rocksmith 2014 Edition - Remastered
+title: 'Rocksmith 2014 Edition - Remastered'
 platform: steam
 genre:
   - casual

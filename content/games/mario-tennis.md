@@ -1,5 +1,5 @@
 ---
-title: Mario Tennis
+title: 'Mario Tennis'
 platform: game-boy-color
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Mah-Jong FX
+title: 'Mah-Jong FX'
 platform: pc-fx
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Metroid Dread
+title: 'Metroid Dread'
 platform: switch
 genre:
   - action-adventure

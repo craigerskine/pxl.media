@@ -1,5 +1,5 @@
 ---
-title: Tomb Raider
+title: 'Tomb Raider'
 platform: playstation-3
 genre:
   - action-adventure

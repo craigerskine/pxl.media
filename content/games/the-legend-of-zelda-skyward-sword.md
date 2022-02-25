@@ -1,9 +1,9 @@
 ---
-title: The Legend of Zelda: Skyward Sword
+title: 'The Legend of Zelda: Skyward Sword'
 platform: wii
 genre:
   - action-adventure
-note: Music CD
+note: 'Music CD'
 digital: false
 physical: true
 guide: false

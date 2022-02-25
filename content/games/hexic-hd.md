@@ -1,5 +1,5 @@
 ---
-title: Hexic HD
+title: 'Hexic HD'
 platform: xbox-360
 genre:
   - puzzle

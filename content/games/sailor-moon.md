@@ -1,5 +1,5 @@
 ---
-title: Sailor Moon
+title: 'Sailor Moon'
 platform: turbografx-cd
 genre:
   - casual

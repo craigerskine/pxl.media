@@ -1,5 +1,5 @@
 ---
-title: Ratchet and Clank: Size Matters
+title: 'Ratchet and Clank: Size Matters'
 platform: playstation-portable
 genre:
   - platformer

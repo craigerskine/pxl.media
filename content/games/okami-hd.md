@@ -1,5 +1,5 @@
 ---
-title: Okami HD
+title: 'Okami HD'
 platform: playstation-4
 genre:
   - action-adventure

@@ -1,9 +1,9 @@
 ---
-title: Final Fantasy VII
+title: 'Final Fantasy VII'
 platform: playstation
 genre:
   - rpg
-note: Greatest Hits + PSN
+note: 'Greatest Hits + PSN'
 digital: true
 physical: true
 guide: false

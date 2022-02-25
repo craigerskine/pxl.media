@@ -1,5 +1,5 @@
 ---
-title: Mega Man Legacy Collection 1 + 2
+title: 'Mega Man Legacy Collection 1 + 2'
 platform: switch
 genre:
   - action-adventure

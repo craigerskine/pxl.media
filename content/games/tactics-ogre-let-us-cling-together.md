@@ -1,5 +1,5 @@
 ---
-title: Tactics Ogre: Let Us Cling Together
+title: 'Tactics Ogre: Let Us Cling Together'
 platform: playstation-portable
 genre:
   - rpg

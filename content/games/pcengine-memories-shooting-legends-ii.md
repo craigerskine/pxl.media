@@ -1,5 +1,5 @@
 ---
-title: PCEngine Memories - Shooting Legends II
+title: 'PCEngine Memories - Shooting Legends II'
 platform: turbografx-cd
 genre:
   - compilation

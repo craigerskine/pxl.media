@@ -1,10 +1,10 @@
 ---
-title: Ys: VIII Lacrimosa of DANA [Switch]
+title: 'Ys: VIII Lacrimosa of DANA [Switch]'
 platform: switch
 genre:
   - action-adventure
   - rpg
-note: Limited Edition
+note: 'Limited Edition'
 digital: true
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: 13 Sentinels: Aegis Rim
+title: '13 Sentinels: Aegis Rim'
 platform: playstation-4
 genre:
   - action-adventure

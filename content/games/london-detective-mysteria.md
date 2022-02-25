@@ -1,9 +1,9 @@
 ---
-title: London Detective Mysteria
+title: 'London Detective Mysteria'
 platform: playstation-vita
 genre:
   - casual
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

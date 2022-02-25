@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails in the Sky SC
+title: 'The Legend of Heroes: Trails in the Sky SC'
 platform: playstation-portable
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Portable 2
+title: 'Phantasy Star Portable 2'
 platform: playstation-portable
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: The Binding of Isaac
+title: 'The Binding of Isaac'
 platform: steam
 genre:
   - action-adventure

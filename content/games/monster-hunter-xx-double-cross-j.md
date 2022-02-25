@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter XX Double Cross [J]
+title: 'Monster Hunter XX Double Cross [J]'
 platform: switch
 genre:
   - action-adventure

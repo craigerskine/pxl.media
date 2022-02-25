@@ -1,9 +1,9 @@
 ---
-title: Lunar: Silver Star Harmony
+title: 'Lunar: Silver Star Harmony'
 platform: playstation-portable
 genre:
   - rpg
-note: Limited Edition
+note: 'Limited Edition'
 digital: true
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Ys: Origin [Switch]
+title: 'Ys: Origin [Switch]'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Solar Flux
+title: 'Solar Flux'
 platform: steam
 genre:
   - puzzle

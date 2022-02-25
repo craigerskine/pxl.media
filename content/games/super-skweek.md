@@ -1,5 +1,5 @@
 ---
-title: Super Skweek
+title: 'Super Skweek'
 platform: lynx
 genre:
   - puzzle

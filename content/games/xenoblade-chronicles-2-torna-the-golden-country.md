@@ -1,5 +1,5 @@
 ---
-title: Xenoblade Chronicles 2: Torna ~ The Golden Country
+title: 'Xenoblade Chronicles 2: Torna ~ The Golden Country'
 platform: switch
 genre:
   - rpg

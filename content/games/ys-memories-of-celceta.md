@@ -1,10 +1,10 @@
 ---
-title: Ys: Memories of Celceta
+title: 'Ys: Memories of Celceta'
 platform: playstation-vita
 genre:
   - action-adventure
   - rpg
-note: Silver Anniversary Edition
+note: 'Silver Anniversary Edition'
 digital: false
 physical: true
 guide: false

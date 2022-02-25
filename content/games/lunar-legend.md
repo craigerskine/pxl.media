@@ -1,5 +1,5 @@
 ---
-title: Lunar Legend
+title: 'Lunar Legend'
 platform: game-boy-advance
 genre:
   - rpg

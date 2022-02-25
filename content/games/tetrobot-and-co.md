@@ -1,5 +1,5 @@
 ---
-title: Tetrobot and Co.
+title: 'Tetrobot and Co.'
 platform: steam
 genre:
   - puzzle

@@ -1,5 +1,5 @@
 ---
-title: The Inner World
+title: 'The Inner World'
 platform: steam
 genre:
   - action-adventure

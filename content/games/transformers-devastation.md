@@ -1,5 +1,5 @@
 ---
-title: Transformers Devastation
+title: 'Transformers Devastation'
 platform: playstation-3
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Koihime Enbu RyoRaiRai
+title: 'Koihime Enbu RyoRaiRai'
 platform: playstation-4
 genre:
   - fighting

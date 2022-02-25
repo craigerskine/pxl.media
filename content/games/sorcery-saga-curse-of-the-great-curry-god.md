@@ -1,5 +1,5 @@
 ---
-title: Sorcery Saga: Curse of the Great Curry God
+title: 'Sorcery Saga: Curse of the Great Curry God'
 platform: playstation-vita
 genre:
   - rpg

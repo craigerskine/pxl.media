@@ -1,10 +1,10 @@
 ---
-title: Holy Diver
+title: 'Holy Diver'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure
   - platformer
-note: Collectors Set - Black Cartridge
+note: 'Collectors Set - Black Cartridge'
 digital: false
 physical: true
 guide: false

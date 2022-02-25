@@ -1,5 +1,5 @@
 ---
-title: Super Mario Advance
+title: 'Super Mario Advance'
 platform: game-boy-advance
 genre:
   - platformer

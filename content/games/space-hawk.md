@@ -1,5 +1,5 @@
 ---
-title: Space Hawk
+title: 'Space Hawk'
 platform: intellivision
 genre:
   - action-adventure

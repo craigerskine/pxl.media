@@ -1,5 +1,5 @@
 ---
-title: Rayman Origins [Vita]
+title: 'Rayman Origins [Vita]'
 platform: playstation-vita
 genre:
   - platformer

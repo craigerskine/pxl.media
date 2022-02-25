@@ -1,5 +1,5 @@
 ---
-title: Bullet Girls Phantasia
+title: 'Bullet Girls Phantasia'
 platform: playstation-vita
 genre:
   - action-adventure

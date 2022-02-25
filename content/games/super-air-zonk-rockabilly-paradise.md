@@ -1,5 +1,5 @@
 ---
-title: Super Air Zonk: Rockabilly-Paradise
+title: 'Super Air Zonk: Rockabilly-Paradise'
 platform: turbografx-cd
 genre:
   - shmup

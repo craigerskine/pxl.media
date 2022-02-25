@@ -1,5 +1,5 @@
 ---
-title: Assault Suit Leynos
+title: 'Assault Suit Leynos'
 platform: playstation-4
 genre:
   - action-adventure

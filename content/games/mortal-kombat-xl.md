@@ -1,5 +1,5 @@
 ---
-title: Mortal Kombat XL
+title: 'Mortal Kombat XL'
 platform: playstation-4
 genre:
   - fighting

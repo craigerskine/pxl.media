@@ -1,5 +1,5 @@
 ---
-title: Burger Time
+title: 'Burger Time'
 platform: intellivision
 genre:
   - action-adventure

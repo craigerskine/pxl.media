@@ -1,9 +1,9 @@
 ---
-title: Ray Gigant
+title: 'Ray Gigant'
 platform: playstation-vita
 genre:
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

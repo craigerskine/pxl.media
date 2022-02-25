@@ -1,5 +1,5 @@
 ---
-title: Chrono Cross
+title: 'Chrono Cross'
 platform: playstation
 genre:
   - rpg

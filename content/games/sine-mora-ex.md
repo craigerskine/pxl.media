@@ -1,5 +1,5 @@
 ---
-title: Sine Mora EX
+title: 'Sine Mora EX'
 platform: switch
 genre:
   - shmup

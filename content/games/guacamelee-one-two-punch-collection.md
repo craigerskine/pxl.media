@@ -1,5 +1,5 @@
 ---
-title: Guacamelee! One-Two Punch Collection
+title: 'Guacamelee! One-Two Punch Collection'
 platform: switch
 genre:
   - action-adventure

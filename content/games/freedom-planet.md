@@ -1,9 +1,9 @@
 ---
-title: Freedom Planet
+title: 'Freedom Planet'
 platform: switch
 genre:
   - platformer
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

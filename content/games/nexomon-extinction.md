@@ -1,5 +1,5 @@
 ---
-title: Nexomon: Extinction
+title: 'Nexomon: Extinction'
 platform: switch
 genre:
   - rpg

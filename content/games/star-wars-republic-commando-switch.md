@@ -1,9 +1,9 @@
 ---
-title: Star Wars Republic Commando [Switch]
+title: 'Star Wars Republic Commando [Switch]'
 platform: switch
 genre:
   - shooter
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

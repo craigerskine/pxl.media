@@ -1,5 +1,5 @@
 ---
-title: Middle-Earth: Shadow of Mordor
+title: 'Middle-Earth: Shadow of Mordor'
 platform: playstation-3
 genre:
   - action-adventure

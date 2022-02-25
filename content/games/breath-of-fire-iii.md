@@ -1,5 +1,5 @@
 ---
-title: Breath of Fire III
+title: 'Breath of Fire III'
 platform: playstation-portable
 genre:
   - rpg

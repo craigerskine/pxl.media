@@ -1,5 +1,5 @@
 ---
-title: Resident Evil Triple Pack
+title: 'Resident Evil Triple Pack'
 platform: switch
 genre:
   - action-adventure

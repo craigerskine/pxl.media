@@ -1,5 +1,5 @@
 ---
-title: Raiden V: Director's Cut
+title: 'Raiden V: Director''s Cut'
 platform: playstation-4
 genre:
   - shmup

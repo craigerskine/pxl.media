@@ -1,5 +1,5 @@
 ---
-title: Star Wars: X-Wing Special Edition
+title: 'Star Wars: X-Wing Special Edition'
 platform: steam
 genre:
   - action-adventure

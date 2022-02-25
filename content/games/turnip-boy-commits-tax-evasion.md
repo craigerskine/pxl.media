@@ -1,5 +1,5 @@
 ---
-title: Turnip Boy Commits Tax Evasion
+title: 'Turnip Boy Commits Tax Evasion'
 platform: switch
 genre:
   - casual

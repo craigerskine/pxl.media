@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: A Link Between Worlds
+title: 'The Legend of Zelda: A Link Between Worlds'
 platform: 3ds
 genre:
   - action-adventure

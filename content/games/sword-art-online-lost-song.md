@@ -1,5 +1,5 @@
 ---
-title: Sword Art Online: Lost Song
+title: 'Sword Art Online: Lost Song'
 platform: playstation-vita
 genre:
   - action-adventure

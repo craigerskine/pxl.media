@@ -1,5 +1,5 @@
 ---
-title: Bastion [Steam]
+title: 'Bastion [Steam]'
 platform: steam
 genre:
   - action-adventure

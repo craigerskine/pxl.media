@@ -1,9 +1,9 @@
 ---
-title: DARIUSBURST Chronicle Saviours
+title: 'DARIUSBURST Chronicle Saviours'
 platform: playstation-vita
 genre:
   - shmup
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

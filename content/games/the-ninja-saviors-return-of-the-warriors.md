@@ -1,5 +1,5 @@
 ---
-title: The Ninja Saviors - Return of The Warriors
+title: 'The Ninja Saviors - Return of The Warriors'
 platform: switch
 genre:
   - brawler

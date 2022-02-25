@@ -1,5 +1,5 @@
 ---
-title: Cursed Castilla (Maldita Castilla EX)
+title: 'Cursed Castilla (Maldita Castilla EX)'
 platform: playstation-vita
 genre:
   - action-adventure

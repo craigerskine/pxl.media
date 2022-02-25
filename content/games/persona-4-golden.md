@@ -1,5 +1,5 @@
 ---
-title: Persona 4 Golden
+title: 'Persona 4 Golden'
 platform: playstation-vita
 genre:
   - rpg

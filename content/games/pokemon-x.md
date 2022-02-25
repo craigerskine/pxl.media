@@ -1,5 +1,5 @@
 ---
-title: Pokémon: X
+title: 'Pokémon: X'
 platform: 3ds
 genre:
   - rpg

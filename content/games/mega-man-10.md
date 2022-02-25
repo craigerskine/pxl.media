@@ -1,5 +1,5 @@
 ---
-title: Mega Man 10
+title: 'Mega Man 10'
 platform: playstation-3
 genre:
   - action-adventure

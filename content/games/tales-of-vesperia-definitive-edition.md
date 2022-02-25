@@ -1,5 +1,5 @@
 ---
-title: Tales of Vesperia - Definitive Edition
+title: 'Tales of Vesperia - Definitive Edition'
 platform: switch
 genre:
   - rpg

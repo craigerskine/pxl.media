@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy II [WS]
+title: 'Final Fantasy II [WS]'
 platform: wonderswan
 genre:
   - rpg

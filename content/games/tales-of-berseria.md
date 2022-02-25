@@ -1,5 +1,5 @@
 ---
-title: Tales of Berseria
+title: 'Tales of Berseria'
 platform: playstation-4
 genre:
   - rpg

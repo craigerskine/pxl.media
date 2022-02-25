@@ -1,5 +1,5 @@
 ---
-title: Fester's Quest
+title: 'Fester''s Quest'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

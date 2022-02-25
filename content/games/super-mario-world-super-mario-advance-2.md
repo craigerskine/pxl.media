@@ -1,5 +1,5 @@
 ---
-title: Super Mario World: Super Mario Advance 2
+title: 'Super Mario World: Super Mario Advance 2'
 platform: game-boy-advance
 genre:
   - platformer

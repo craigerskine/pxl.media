@@ -1,5 +1,5 @@
 ---
-title: Pac-Man Championship Edition 2 Plus
+title: 'Pac-Man Championship Edition 2 Plus'
 platform: switch
 genre:
   - arcade

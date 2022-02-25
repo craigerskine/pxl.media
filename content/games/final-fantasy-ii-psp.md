@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy II [PSP]
+title: 'Final Fantasy II [PSP]'
 platform: playstation-portable
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Blaster Master
+title: 'Blaster Master'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

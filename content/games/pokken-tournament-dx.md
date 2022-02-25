@@ -1,5 +1,5 @@
 ---
-title: Pokkén Tournament DX
+title: 'Pokkén Tournament DX'
 platform: switch
 genre:
   - fighting

@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XV: Deluxe
+title: 'Final Fantasy XV: Deluxe'
 platform: playstation-4
 genre:
   - action-adventure

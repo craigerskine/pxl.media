@@ -1,5 +1,5 @@
 ---
-title: Labyrinth of Refrain: Coven of Dusk
+title: 'Labyrinth of Refrain: Coven of Dusk'
 platform: switch
 genre:
   - rpg

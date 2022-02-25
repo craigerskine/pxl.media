@@ -1,5 +1,5 @@
 ---
-title: Cross Edge
+title: 'Cross Edge'
 platform: playstation-3
 genre:
   - rpg

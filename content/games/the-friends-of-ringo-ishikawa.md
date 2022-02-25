@@ -1,9 +1,9 @@
 ---
-title: The Friends of Ringo Ishikawa
+title: 'The Friends of Ringo Ishikawa'
 platform: switch
 genre:
   - brawler
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

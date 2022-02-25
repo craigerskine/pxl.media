@@ -1,5 +1,5 @@
 ---
-title: Metroid Prime Trilogy Collector's Edition
+title: 'Metroid Prime Trilogy Collector''s Edition'
 platform: wii
 genre:
   - action-adventure

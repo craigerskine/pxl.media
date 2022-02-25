@@ -1,5 +1,5 @@
 ---
-title: Criminal Girls 2: Party Favors
+title: 'Criminal Girls 2: Party Favors'
 platform: playstation-vita
 genre:
   - rpg

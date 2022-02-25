@@ -1,5 +1,5 @@
 ---
-title: Mario Golf Advance Tour
+title: 'Mario Golf Advance Tour'
 platform: game-boy-advance
 genre:
   - rpg

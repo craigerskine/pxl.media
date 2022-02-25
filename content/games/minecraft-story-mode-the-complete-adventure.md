@@ -1,5 +1,5 @@
 ---
-title: Minecraft: Story Mode - The Complete Adventure
+title: 'Minecraft: Story Mode - The Complete Adventure'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Soul Sacrifice
+title: 'Soul Sacrifice'
 platform: playstation-vita
 genre:
   - rpg

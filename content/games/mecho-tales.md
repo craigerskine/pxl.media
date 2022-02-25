@@ -1,5 +1,5 @@
 ---
-title: Mecho Tales
+title: 'Mecho Tales'
 platform: playstation-vita
 genre:
   - platformer

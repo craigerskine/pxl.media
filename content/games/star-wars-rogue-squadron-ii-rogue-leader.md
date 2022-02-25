@@ -1,5 +1,5 @@
 ---
-title: Star Wars Rogue Squadron II: Rogue Leader
+title: 'Star Wars Rogue Squadron II: Rogue Leader'
 platform: gamecube
 genre:
   - action-adventure

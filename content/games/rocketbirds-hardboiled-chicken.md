@@ -1,5 +1,5 @@
 ---
-title: Rocketbirds: Hardboiled Chicken
+title: 'Rocketbirds: Hardboiled Chicken'
 platform: steam
 genre:
   - action-adventure

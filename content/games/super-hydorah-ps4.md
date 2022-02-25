@@ -1,5 +1,5 @@
 ---
-title: Super Hydorah [PS4]
+title: 'Super Hydorah [PS4]'
 platform: playstation-4
 genre:
   - shmup

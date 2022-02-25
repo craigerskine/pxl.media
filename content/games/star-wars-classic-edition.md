@@ -1,9 +1,9 @@
 ---
-title: Star Wars (Classic Edition)
+title: 'Star Wars (Classic Edition)'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Super Puzzle Fighter II Turbo HD Remix
+title: 'Super Puzzle Fighter II Turbo HD Remix'
 platform: playstation-3
 genre:
   - puzzle

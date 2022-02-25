@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XII
+title: 'Final Fantasy XII'
 platform: playstation-2
 genre:
   - rpg

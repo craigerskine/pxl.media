@@ -1,5 +1,5 @@
 ---
-title: Namco Museum Arcade Pac
+title: 'Namco Museum Arcade Pac'
 platform: switch
 genre:
   - arcade

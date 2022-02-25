@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes II: Prophecy of the Moonlight Witch
+title: 'The Legend of Heroes II: Prophecy of the Moonlight Witch'
 platform: playstation-portable
 genre:
   - rpg

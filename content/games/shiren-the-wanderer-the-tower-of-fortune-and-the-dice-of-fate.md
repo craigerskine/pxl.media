@@ -1,5 +1,5 @@
 ---
-title: Shiren The Wanderer: The Tower of Fortune and the Dice of Fate
+title: 'Shiren The Wanderer: The Tower of Fortune and the Dice of Fate'
 platform: playstation-vita
 genre:
   - rpg

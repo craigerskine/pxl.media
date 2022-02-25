@@ -1,5 +1,5 @@
 ---
-title: Star Wars: Squadrons
+title: 'Star Wars: Squadrons'
 platform: xbox-one
 genre:
   - action-adventure

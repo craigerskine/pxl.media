@@ -1,5 +1,5 @@
 ---
-title: The King of Fighters XIV
+title: 'The King of Fighters XIV'
 platform: playstation-4
 genre:
   - fighting

@@ -1,5 +1,5 @@
 ---
-title: Resistance: Burning Skies
+title: 'Resistance: Burning Skies'
 platform: playstation-vita
 genre:
   - shooter

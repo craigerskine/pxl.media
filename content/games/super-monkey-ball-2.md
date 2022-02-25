@@ -1,5 +1,5 @@
 ---
-title: Super Monkey Ball: 2
+title: 'Super Monkey Ball: 2'
 platform: gamecube
 genre:
   - casual

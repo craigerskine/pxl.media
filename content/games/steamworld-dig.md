@@ -1,5 +1,5 @@
 ---
-title: Steamworld Dig
+title: 'Steamworld Dig'
 platform: playstation-vita
 genre:
   - action-adventure

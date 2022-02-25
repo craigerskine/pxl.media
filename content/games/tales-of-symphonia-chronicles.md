@@ -1,5 +1,5 @@
 ---
-title: Tales of Symphonia Chronicles
+title: 'Tales of Symphonia Chronicles'
 platform: playstation-3
 genre:
   - rpg

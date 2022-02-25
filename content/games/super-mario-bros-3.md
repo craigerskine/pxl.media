@@ -1,5 +1,5 @@
 ---
-title: Super Mario Bros. 3
+title: 'Super Mario Bros. 3'
 platform: nintendo-entertainment-system
 genre:
   - platformer

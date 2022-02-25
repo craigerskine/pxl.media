@@ -1,5 +1,5 @@
 ---
-title: Golden Sun: Dark Dawn
+title: 'Golden Sun: Dark Dawn'
 platform: ds
 genre:
   - rpg

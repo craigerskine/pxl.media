@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy X/X-2 HD Remaster [Vita]
+title: 'Final Fantasy X/X-2 HD Remaster [Vita]'
 platform: playstation-vita
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Utawarerumono: Mask of Deception
+title: 'Utawarerumono: Mask of Deception'
 platform: playstation-vita
 genre:
   - rpg

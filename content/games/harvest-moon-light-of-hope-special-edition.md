@@ -1,5 +1,5 @@
 ---
-title: Harvest Moon: Light of Hope Special Edition
+title: 'Harvest Moon: Light of Hope Special Edition'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Sword Art Online: Alicization Lycoris
+title: 'Sword Art Online: Alicization Lycoris'
 platform: playstation-4
 genre:
   - action-adventure

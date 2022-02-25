@@ -1,5 +1,5 @@
 ---
-title: Star Ocean: Second Evolution
+title: 'Star Ocean: Second Evolution'
 platform: playstation-portable
 genre:
   - rpg

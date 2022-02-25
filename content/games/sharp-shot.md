@@ -1,5 +1,5 @@
 ---
-title: Sharp Shot
+title: 'Sharp Shot'
 platform: intellivision
 genre:
   - arcade

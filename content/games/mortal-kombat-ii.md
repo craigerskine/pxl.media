@@ -1,5 +1,5 @@
 ---
-title: Mortal Kombat II
+title: 'Mortal Kombat II'
 platform: playstation-3
 genre:
   - fighting

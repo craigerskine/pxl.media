@@ -1,5 +1,5 @@
 ---
-title: Tales of the World: Radiant Mythology
+title: 'Tales of the World: Radiant Mythology'
 platform: playstation-portable
 genre:
   - rpg

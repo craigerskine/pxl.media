@@ -1,5 +1,5 @@
 ---
-title: Trials of Mana
+title: 'Trials of Mana'
 platform: switch
 genre:
   - action-adventure

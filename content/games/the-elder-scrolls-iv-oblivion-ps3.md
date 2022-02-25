@@ -1,9 +1,9 @@
 ---
-title: The Elder Scrolls IV: Oblivion [PS3]
+title: 'The Elder Scrolls IV: Oblivion [PS3]'
 platform: playstation-3
 genre:
   - rpg
-note: Game of the Year Edition
+note: 'Game of the Year Edition'
 digital: false
 physical: true
 guide: false

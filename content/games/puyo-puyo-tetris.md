@@ -1,5 +1,5 @@
 ---
-title: Puyo Puyo Tetris
+title: 'Puyo Puyo Tetris'
 platform: switch
 genre:
   - puzzle

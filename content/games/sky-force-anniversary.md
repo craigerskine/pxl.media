@@ -1,9 +1,9 @@
 ---
-title: Sky Force Anniversary
+title: 'Sky Force Anniversary'
 platform: playstation-vita
 genre:
   - shmup
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

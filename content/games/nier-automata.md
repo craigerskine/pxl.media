@@ -1,5 +1,5 @@
 ---
-title: Nier: Automata
+title: 'Nier: Automata'
 platform: playstation-4
 genre:
   - action-adventure

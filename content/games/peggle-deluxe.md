@@ -1,5 +1,5 @@
 ---
-title: Peggle Deluxe
+title: 'Peggle Deluxe'
 platform: steam
 genre:
   - puzzle

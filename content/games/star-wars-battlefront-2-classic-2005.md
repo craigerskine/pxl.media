@@ -1,5 +1,5 @@
 ---
-title: Star Wars: Battlefront 2 (Classic, 2005)
+title: 'Star Wars: Battlefront 2 (Classic, 2005)'
 platform: steam
 genre:
   - shooter

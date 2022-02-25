@@ -1,9 +1,9 @@
 ---
-title: Mercenary Kings
+title: 'Mercenary Kings'
 platform: switch
 genre:
   - shmup
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

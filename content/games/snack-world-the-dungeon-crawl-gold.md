@@ -1,5 +1,5 @@
 ---
-title: Snack World: The Dungeon Crawl - Gold
+title: 'Snack World: The Dungeon Crawl - Gold'
 platform: switch
 genre:
   - action-adventure

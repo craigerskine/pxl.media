@@ -1,5 +1,5 @@
 ---
-title: Super Bomberman R
+title: 'Super Bomberman R'
 platform: switch
 genre:
   - action-adventure

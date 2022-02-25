@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Portable 2 Infinity
+title: 'Phantasy Star Portable 2 Infinity'
 platform: playstation-portable
 genre:
   - rpg

@@ -1,9 +1,9 @@
 ---
-title: Ni No Kuni II: Revenant Kingdom [Switch]
+title: 'Ni No Kuni II: Revenant Kingdom [Switch]'
 platform: switch
 genre:
   - rpg
-note: Prince's Edition
+note: 'Prince''s Edition'
 digital: false
 physical: true
 guide: false

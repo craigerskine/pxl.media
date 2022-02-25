@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XV: Royal
+title: 'Final Fantasy XV: Royal'
 platform: xbox-one
 genre:
   - action-adventure

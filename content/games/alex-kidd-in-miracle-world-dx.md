@@ -1,5 +1,5 @@
 ---
-title: Alex Kidd In Miracle World DX
+title: 'Alex Kidd In Miracle World DX'
 platform: switch
 genre:
   - action-adventure

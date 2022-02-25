@@ -1,5 +1,5 @@
 ---
-title: Batman: Arkham Origins Blackgate
+title: 'Batman: Arkham Origins Blackgate'
 platform: playstation-vita
 genre:
   - action-adventure

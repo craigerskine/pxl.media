@@ -1,5 +1,5 @@
 ---
-title: Dragon Quest VIII: Journey of the Cursed King
+title: 'Dragon Quest VIII: Journey of the Cursed King'
 platform: playstation-2
 genre:
   - rpg

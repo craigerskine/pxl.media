@@ -1,5 +1,5 @@
 ---
-title: Ragnarok Odyssey ACE
+title: 'Ragnarok Odyssey ACE'
 platform: playstation-vita
 genre:
   - action-adventure

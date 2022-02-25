@@ -1,5 +1,5 @@
 ---
-title: Fist of The North Star: Lost Paradise
+title: 'Fist of The North Star: Lost Paradise'
 platform: playstation-4
 genre:
   - action-adventure

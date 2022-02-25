@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Freedom 2 and Freedom Unite Dual Pack
+title: 'Monster Hunter Freedom 2 and Freedom Unite Dual Pack'
 platform: playstation-portable
 genre:
   - action-adventure

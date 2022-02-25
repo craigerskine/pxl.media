@@ -1,5 +1,5 @@
 ---
-title: Rag Doll Kung Fu
+title: 'Rag Doll Kung Fu'
 platform: playstation-3
 genre:
   - action-adventure

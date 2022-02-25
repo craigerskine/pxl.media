@@ -55,7 +55,7 @@
     </ul>
     <heading :subtext="homeGamesPending.length"><nuxt-link to="/games/pending/">Pending</nuxt-link></heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of homeGamesPending"
+      <game v-for="(game, index) of homeGamesPending" v-if="index <= 5"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"
@@ -88,8 +88,8 @@ export default {
     const homeControllersUsbCount = await $content("controllers").only(['title']).where({connection: { $in: ['System', 'USB']}}).fetch();
     const homeControllersAdaptersCount = await $content("controllers").only(['title']).search('title', 'adapter').fetch();
     const homeGamesPending = await $content("games")
+      .sortBy('posted', 'desc')
       .where({ pending: { $eq: true } })
-      .limit(6)
       .fetch();
     const homeGamesRecently = await $content("games")
       .sortBy('posted', 'desc')

@@ -1,5 +1,5 @@
 ---
-title: Sega Genesis Classics
+title: 'Sega Genesis Classics'
 platform: switch
 genre:
   - compilation

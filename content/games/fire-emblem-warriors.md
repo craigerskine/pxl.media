@@ -1,5 +1,5 @@
 ---
-title: Fire Emblem Warriors
+title: 'Fire Emblem Warriors'
 platform: switch
 genre:
   - action-adventure

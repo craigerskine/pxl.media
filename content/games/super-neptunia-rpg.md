@@ -1,5 +1,5 @@
 ---
-title: Super Neptunia RPG
+title: 'Super Neptunia RPG'
 platform: switch
 genre:
   - rpg

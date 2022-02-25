@@ -1,5 +1,5 @@
 ---
-title: Lord of Arcana
+title: 'Lord of Arcana'
 platform: playstation-portable
 genre:
   - action-adventure

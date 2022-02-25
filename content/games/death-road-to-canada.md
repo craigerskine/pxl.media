@@ -1,5 +1,5 @@
 ---
-title: Death Road to Canada
+title: 'Death Road to Canada'
 platform: switch
 genre:
   - action-adventure

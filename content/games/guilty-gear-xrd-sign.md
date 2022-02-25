@@ -1,5 +1,5 @@
 ---
-title: Guilty Gear Xrd - SIGN
+title: 'Guilty Gear Xrd - SIGN'
 platform: playstation-3
 genre:
   - fighting

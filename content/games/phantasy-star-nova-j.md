@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Nova [J]
+title: 'Phantasy Star Nova [J]'
 platform: playstation-vita
 genre:
   - rpg

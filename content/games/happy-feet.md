@@ -1,5 +1,5 @@
 ---
-title: Happy Feet
+title: 'Happy Feet'
 platform: playstation-2
 genre:
   - casual

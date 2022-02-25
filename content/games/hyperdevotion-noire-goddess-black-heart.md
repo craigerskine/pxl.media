@@ -1,5 +1,5 @@
 ---
-title: Hyperdevotion Noire: Goddess Black Heart
+title: 'Hyperdevotion Noire: Goddess Black Heart'
 platform: playstation-vita
 genre:
   - rpg

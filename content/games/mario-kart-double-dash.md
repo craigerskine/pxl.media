@@ -1,5 +1,5 @@
 ---
-title: Mario Kart Double Dash
+title: 'Mario Kart Double Dash'
 platform: gamecube
 genre:
   - racing

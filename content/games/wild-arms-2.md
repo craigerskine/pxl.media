@@ -1,5 +1,5 @@
 ---
-title: Wild Arms 2
+title: 'Wild Arms 2'
 platform: playstation
 genre:
   - rpg

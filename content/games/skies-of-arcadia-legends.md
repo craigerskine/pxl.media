@@ -1,5 +1,5 @@
 ---
-title: Skies of Arcadia: Legends
+title: 'Skies of Arcadia: Legends'
 platform: gamecube
 genre:
   - rpg

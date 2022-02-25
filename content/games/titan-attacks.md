@@ -1,5 +1,5 @@
 ---
-title: Titan Attacks
+title: 'Titan Attacks'
 platform: steam
 genre:
   - shmup

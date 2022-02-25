@@ -1,5 +1,5 @@
 ---
-title: Dragon Quest XI S: Echoes of an Elusive Age
+title: 'Dragon Quest XI S: Echoes of an Elusive Age'
 platform: switch
 genre:
   - rpg

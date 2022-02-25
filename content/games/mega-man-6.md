@@ -1,5 +1,5 @@
 ---
-title: Mega Man 6
+title: 'Mega Man 6'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

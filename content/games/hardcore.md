@@ -3,7 +3,7 @@ title: Hardcore
 platform: genesis
 genre:
   - action-adventure
-note: Analogue: Mega Sg
+note: 'Analogue: Mega Sg'
 digital: true
 physical: false
 guide: false

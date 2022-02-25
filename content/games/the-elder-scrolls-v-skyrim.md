@@ -1,5 +1,5 @@
 ---
-title: The Elder Scrolls V: Skyrim
+title: 'The Elder Scrolls V: Skyrim'
 platform: playstation-3
 genre:
   - rpg

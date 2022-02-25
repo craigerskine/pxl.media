@@ -1,5 +1,5 @@
 ---
-title: Turbo EverDrive
+title: 'Turbo EverDrive'
 platform: turbografx-16
 genre:
   - flash-cart

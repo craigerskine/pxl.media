@@ -1,5 +1,5 @@
 ---
-title: Super Smash Bros. Ultimate
+title: 'Super Smash Bros. Ultimate'
 platform: switch
 genre:
   - fighting

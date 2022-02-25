@@ -1,5 +1,5 @@
 ---
-title: Megadimension Neptunia VII
+title: 'Megadimension Neptunia VII'
 platform: switch
 genre:
   - rpg

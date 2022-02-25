@@ -1,5 +1,5 @@
 ---
-title: LittleBigPlanet [Vita]
+title: 'LittleBigPlanet [Vita]'
 platform: playstation-vita
 genre:
   - action-adventure

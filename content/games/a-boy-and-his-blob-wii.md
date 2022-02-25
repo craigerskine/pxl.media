@@ -1,5 +1,5 @@
 ---
-title: A Boy and His Blob [Wii]
+title: 'A Boy and His Blob [Wii]'
 platform: wii
 genre:
   - platformer

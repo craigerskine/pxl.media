@@ -1,5 +1,5 @@
 ---
-title: Dead Space
+title: 'Dead Space'
 platform: steam
 genre:
   - action-adventure

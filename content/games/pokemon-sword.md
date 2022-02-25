@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Sword
+title: 'Pokémon: Sword'
 platform: switch
 genre:
   - rpg

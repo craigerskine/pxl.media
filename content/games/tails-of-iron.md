@@ -1,5 +1,5 @@
 ---
-title: Tails of Iron
+title: 'Tails of Iron'
 platform: switch
 genre:
   - action-adventure

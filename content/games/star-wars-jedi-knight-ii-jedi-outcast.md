@@ -1,5 +1,5 @@
 ---
-title: Star Wars Jedi Knight II: Jedi Outcast
+title: 'Star Wars Jedi Knight II: Jedi Outcast'
 platform: steam
 genre:
   - shooter

@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Four Swords Adventures
+title: 'The Legend of Zelda: Four Swords Adventures'
 platform: gamecube
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: MegaTagmension Blanc + Neptune VS Zombies
+title: 'MegaTagmension Blanc + Neptune VS Zombies'
 platform: playstation-vita
 genre:
   - rpg

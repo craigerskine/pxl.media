@@ -1,9 +1,9 @@
 ---
-title: Star Ocean: Till the End of Time
+title: 'Star Ocean: Till the End of Time'
 platform: playstation-2
 genre:
   - rpg
-note: Greatest Hits
+note: 'Greatest Hits'
 digital: false
 physical: true
 guide: false

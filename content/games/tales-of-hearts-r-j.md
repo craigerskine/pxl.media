@@ -1,5 +1,5 @@
 ---
-title: Tales of Hearts R [J]
+title: 'Tales of Hearts R [J]'
 platform: playstation-vita
 genre:
   - rpg

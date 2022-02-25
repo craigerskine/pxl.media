@@ -1,5 +1,5 @@
 ---
-title: Mark of the Ninja
+title: 'Mark of the Ninja'
 platform: steam
 genre:
   - action-adventure

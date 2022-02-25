@@ -1,5 +1,5 @@
 ---
-title: Dragon: Marked for Death
+title: 'Dragon: Marked for Death'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy Tactics Advance
+title: 'Final Fantasy Tactics Advance'
 platform: game-boy-advance
 genre:
   - rpg

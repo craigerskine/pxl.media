@@ -1,5 +1,5 @@
 ---
-title: Mega Man 4
+title: 'Mega Man 4'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

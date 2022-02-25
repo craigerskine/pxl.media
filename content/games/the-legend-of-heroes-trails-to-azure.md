@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails to Azure
+title: 'The Legend of Heroes: Trails to Azure'
 platform: playstation-portable
 genre:
   - rpg

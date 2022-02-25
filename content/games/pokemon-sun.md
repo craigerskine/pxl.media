@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Sun
+title: 'Pokémon: Sun'
 platform: 3ds
 genre:
   - rpg

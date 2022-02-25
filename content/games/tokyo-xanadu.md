@@ -1,5 +1,5 @@
 ---
-title: Tokyo Xanadu
+title: 'Tokyo Xanadu'
 platform: playstation-vita
 genre:
   - rpg

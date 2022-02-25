@@ -1,5 +1,5 @@
 ---
-title: Wheel of Fortune
+title: 'Wheel of Fortune'
 platform: nintendo-entertainment-system
 genre:
   - casual

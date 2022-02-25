@@ -1,5 +1,5 @@
 ---
-title: Half-Life 2
+title: 'Half-Life 2'
 platform: steam
 genre:
   - shooter

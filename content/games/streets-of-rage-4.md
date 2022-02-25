@@ -1,9 +1,9 @@
 ---
-title: Streets of Rage 4
+title: 'Streets of Rage 4'
 platform: switch
 genre:
   - brawler
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

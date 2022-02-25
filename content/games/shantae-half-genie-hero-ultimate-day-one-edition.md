@@ -1,5 +1,5 @@
 ---
-title: Shantae: Half-Genie Hero - Ultimate Day One Edition
+title: 'Shantae: Half-Genie Hero - Ultimate Day One Edition'
 platform: switch
 genre:
   - platformer

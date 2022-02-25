@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter: World
+title: 'Monster Hunter: World'
 platform: playstation-4
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Fantasy Zone
+title: 'Fantasy Zone'
 platform: master-system
 genre:
   - action-adventure

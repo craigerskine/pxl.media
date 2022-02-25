@@ -1,5 +1,5 @@
 ---
-title: Animal Crossing
+title: 'Animal Crossing'
 platform: gamecube
 genre:
   - casual

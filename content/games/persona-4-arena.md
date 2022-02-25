@@ -1,5 +1,5 @@
 ---
-title: Persona 4 Arena
+title: 'Persona 4 Arena'
 platform: playstation-3
 genre:
   - fighting

@@ -1,9 +1,9 @@
 ---
-title: Panzer Dragoon: Remake
+title: 'Panzer Dragoon: Remake'
 platform: switch
 genre:
   - shmup
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

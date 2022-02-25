@@ -1,5 +1,5 @@
 ---
-title: BlazBlue: Continuum Shift Extend [Vita]
+title: 'BlazBlue: Continuum Shift Extend [Vita]'
 platform: playstation-vita
 genre:
   - fighting

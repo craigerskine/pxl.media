@@ -1,5 +1,5 @@
 ---
-title: Rogue Galaxy
+title: 'Rogue Galaxy'
 platform: playstation-2
 genre:
   - rpg

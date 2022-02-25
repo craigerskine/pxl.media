@@ -1,5 +1,5 @@
 ---
-title: Metroid Prime
+title: 'Metroid Prime'
 platform: gamecube
 genre:
   - action-adventure

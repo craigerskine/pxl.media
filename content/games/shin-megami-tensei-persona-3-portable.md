@@ -1,5 +1,5 @@
 ---
-title: Shin Megami Tensei: Persona 3 Portable
+title: 'Shin Megami Tensei: Persona 3 Portable'
 platform: playstation-portable
 genre:
   - rpg

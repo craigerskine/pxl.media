@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy [WS]
+title: 'Final Fantasy [WS]'
 platform: wonderswan
 genre:
   - rpg

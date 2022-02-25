@@ -1,5 +1,5 @@
 ---
-title: The Binding of Isaac: Afterbirth+
+title: 'The Binding of Isaac: Afterbirth+'
 platform: switch
 genre:
   - action-adventure

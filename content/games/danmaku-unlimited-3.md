@@ -1,9 +1,9 @@
 ---
-title: Danmaku Unlimited 3
+title: 'Danmaku Unlimited 3'
 platform: switch
 genre:
   - shmup
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Super Monkey Ball: Banana Blitz HD
+title: 'Super Monkey Ball: Banana Blitz HD'
 platform: switch
 genre:
   - casual

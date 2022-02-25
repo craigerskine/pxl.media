@@ -1,5 +1,5 @@
 ---
-title: Queen of Queens
+title: 'Queen of Queens'
 platform: pc-fx
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Monster Boy
+title: 'Monster Boy'
 platform: switch
 genre:
   - action-adventure

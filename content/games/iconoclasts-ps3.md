@@ -1,5 +1,5 @@
 ---
-title: Iconoclasts [PS3]
+title: 'Iconoclasts [PS3]'
 platform: playstation-3
 genre:
   - action-adventure

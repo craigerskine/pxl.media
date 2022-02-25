@@ -1,5 +1,5 @@
 ---
-title: Metroid: Samus Returns
+title: "Metroid: Samus Returns"
 platform: 3ds
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: The Elder Scrolls V: Skyrim [Switch]
+title: 'The Elder Scrolls V: Skyrim [Switch]'
 platform: switch
 genre:
   - rpg

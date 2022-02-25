@@ -1,5 +1,5 @@
 ---
-title: Final Fight Double Impact
+title: 'Final Fight Double Impact'
 platform: playstation-3
 genre:
   - fighting

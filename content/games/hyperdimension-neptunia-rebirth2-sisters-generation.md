@@ -1,5 +1,5 @@
 ---
-title: Hyperdimension Neptunia Re;Birth2: Sisters Generation
+title: 'Hyperdimension Neptunia Re;Birth2: Sisters Generation'
 platform: playstation-vita
 genre:
   - rpg

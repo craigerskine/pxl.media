@@ -1,5 +1,5 @@
 ---
-title: NeoPocket GameDrive
+title: 'NeoPocket GameDrive'
 platform: neo-geo-pocket-color
 genre:
   - flash-cart

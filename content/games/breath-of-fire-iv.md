@@ -1,5 +1,5 @@
 ---
-title: Breath of Fire IV
+title: 'Breath of Fire IV'
 platform: playstation
 genre:
   - rpg

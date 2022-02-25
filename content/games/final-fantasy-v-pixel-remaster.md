@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy V - Pixel Remaster
+title: 'Final Fantasy V - Pixel Remaster'
 platform: steam
 genre:
   - rpg

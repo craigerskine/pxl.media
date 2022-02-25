@@ -1,9 +1,9 @@
 ---
-title: Final Fantasy Origins Greatest Hits
+title: 'Final Fantasy Origins Greatest Hits'
 platform: playstation
 genre:
   - rpg
-note: Final Fantasy I, Final Fantasy II
+note: 'Final Fantasy I, Final Fantasy II'
 digital: false
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Resident Evil HD
+title: 'Resident Evil HD'
 platform: playstation-4
 genre:
   - action-adventure

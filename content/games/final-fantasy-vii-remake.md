@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy VII: Remake
+title: 'Final Fantasy VII: Remake'
 platform: playstation-4
 genre:
   - rpg

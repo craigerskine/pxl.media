@@ -1,5 +1,5 @@
 ---
-title: Far East of Heden Battle
+title: 'Far East of Heden Battle'
 platform: pc-fx
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Zero Time Dilemma
+title: 'Zero Time Dilemma'
 platform: playstation-vita
 genre:
   - puzzle

@@ -1,5 +1,5 @@
 ---
-title: Trine 2
+title: 'Trine 2'
 platform: steam
 genre:
   - platformer

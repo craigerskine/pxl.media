@@ -1,5 +1,5 @@
 ---
-title: Dead Cells
+title: 'Dead Cells'
 platform: switch
 genre:
   - action-adventure

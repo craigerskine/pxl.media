@@ -1,5 +1,5 @@
 ---
-title: Amnesia: The Dark Descent
+title: 'Amnesia: The Dark Descent'
 platform: steam
 genre:
   - action-adventure

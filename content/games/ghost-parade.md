@@ -1,5 +1,5 @@
 ---
-title: Ghost Parade
+title: 'Ghost Parade'
 platform: switch
 genre:
   - action-adventure

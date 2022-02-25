@@ -1,5 +1,5 @@
 ---
-title: Hyperdimension Neptunia Re;Birth1
+title: 'Hyperdimension Neptunia Re;Birth1'
 platform: playstation-vita
 genre:
   - rpg

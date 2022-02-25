@@ -1,5 +1,5 @@
 ---
-title: Tales of Phantasia X [J]
+title: 'Tales of Phantasia X [J]'
 platform: playstation-portable
 genre:
   - rpg

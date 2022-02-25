@@ -1,5 +1,5 @@
 ---
-title: Resident Evil Origins Collection
+title: 'Resident Evil Origins Collection'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Let's Go, Pikachu!
+title: 'Pokémon: Let''s Go, Pikachu!'
 platform: switch
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Kingdom Hearts III
+title: 'Kingdom Hearts III'
 platform: playstation-4
 genre:
   - action-adventure

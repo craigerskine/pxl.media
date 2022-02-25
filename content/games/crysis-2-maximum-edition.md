@@ -1,5 +1,5 @@
 ---
-title: Crysis 2 Maximum Edition
+title: 'Crysis 2 Maximum Edition'
 platform: steam
 genre:
   - shooter

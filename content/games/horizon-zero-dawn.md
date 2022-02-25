@@ -1,5 +1,5 @@
 ---
-title: Horizon Zero Dawn
+title: 'Horizon Zero Dawn'
 platform: playstation-4
 genre:
   - action-adventure

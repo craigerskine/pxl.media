@@ -1,5 +1,5 @@
 ---
-title: Raiden V: Director's Cut Limited Edition
+title: 'Raiden V: Director''s Cut Limited Edition'
 platform: switch
 genre:
   - shmup

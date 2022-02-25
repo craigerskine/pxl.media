@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star IV: The End of the Millennium
+title: 'Phantasy Star IV: The End of the Millennium'
 platform: genesis
 genre:
   - rpg

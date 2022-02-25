@@ -1,5 +1,5 @@
 ---
-title: God Eater: Resurrection
+title: 'God Eater: Resurrection'
 platform: playstation-vita
 genre:
   - rpg

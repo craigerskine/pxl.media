@@ -1,5 +1,5 @@
 ---
-title: Nights of Azure 2: Bride of The New Moon
+title: 'Nights of Azure 2: Bride of The New Moon'
 platform: switch
 genre:
   - rpg

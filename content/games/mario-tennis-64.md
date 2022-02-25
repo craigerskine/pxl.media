@@ -1,5 +1,5 @@
 ---
-title: Mario Tennis 64
+title: 'Mario Tennis 64'
 platform: nintendo-64
 genre:
   - sports

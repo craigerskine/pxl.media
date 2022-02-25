@@ -1,5 +1,5 @@
 ---
-title: Gate of Thunder
+title: 'Gate of Thunder'
 platform: wii
 genre:
   - shmup

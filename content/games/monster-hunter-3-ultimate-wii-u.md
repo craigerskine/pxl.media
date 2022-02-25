@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter 3 Ultimate [Wii-U]
+title: 'Monster Hunter 3 Ultimate [Wii-U]'
 platform: wii-u
 genre:
   - action-adventure

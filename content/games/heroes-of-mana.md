@@ -1,5 +1,5 @@
 ---
-title: Heroes of Mana
+title: 'Heroes of Mana'
 platform: ds
 genre:
   - rpg

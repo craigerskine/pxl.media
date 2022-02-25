@@ -1,5 +1,5 @@
 ---
-title: God of War Collection
+title: 'God of War Collection'
 platform: playstation-vita
 genre:
   - action-adventure

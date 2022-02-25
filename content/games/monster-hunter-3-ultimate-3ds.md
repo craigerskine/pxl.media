@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter 3 Ultimate [3DS]
+title: 'Monster Hunter 3 Ultimate [3DS]'
 platform: 3ds
 genre:
   - action-adventure

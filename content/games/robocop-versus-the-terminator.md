@@ -1,5 +1,5 @@
 ---
-title: RoboCop versus The Terminator
+title: 'RoboCop versus The Terminator'
 platform: game-gear
 genre:
   - action-adventure

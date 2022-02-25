@@ -1,5 +1,5 @@
 ---
-title: Blaster Master Zero 2
+title: 'Blaster Master Zero 2'
 platform: switch
 genre:
   - action-adventure

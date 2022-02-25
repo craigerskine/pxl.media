@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Generations
+title: 'Monster Hunter Generations'
 platform: 3ds
 genre:
   - action-adventure

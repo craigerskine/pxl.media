@@ -1,10 +1,10 @@
 ---
-title: Arc of Alchemist
+title: 'Arc of Alchemist'
 platform: switch
 genre:
   - action-adventure
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

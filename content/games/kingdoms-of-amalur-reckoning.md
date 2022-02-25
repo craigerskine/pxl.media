@@ -1,5 +1,5 @@
 ---
-title: Kingdoms of Amalur: Reckoning
+title: 'Kingdoms of Amalur: Reckoning'
 platform: playstation-3
 genre:
   - action-adventure

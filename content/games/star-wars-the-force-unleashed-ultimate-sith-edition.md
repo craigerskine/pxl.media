@@ -1,5 +1,5 @@
 ---
-title: Star Wars: The Force Unleashed Ultimate Sith Edition
+title: 'Star Wars: The Force Unleashed Ultimate Sith Edition'
 platform: steam
 genre:
   - action-adventure

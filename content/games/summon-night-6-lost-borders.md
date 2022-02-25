@@ -1,5 +1,5 @@
 ---
-title: Summon Night 6: Lost Borders
+title: 'Summon Night 6: Lost Borders'
 platform: playstation-vita
 genre:
   - rpg

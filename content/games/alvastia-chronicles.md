@@ -1,5 +1,5 @@
 ---
-title: Alvastia Chronicles
+title: 'Alvastia Chronicles'
 platform: playstation-4
 genre:
   - rpg

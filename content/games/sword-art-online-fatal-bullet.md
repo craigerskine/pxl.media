@@ -1,5 +1,5 @@
 ---
-title: Sword Art Online: Fatal Bullet
+title: 'Sword Art Online: Fatal Bullet'
 platform: playstation-4
 genre:
   - action-adventure

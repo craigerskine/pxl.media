@@ -1,5 +1,5 @@
 ---
-title: Auto Racing
+title: 'Auto Racing'
 platform: intellivision
 genre:
   - racing

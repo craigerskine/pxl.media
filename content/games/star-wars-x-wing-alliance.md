@@ -1,5 +1,5 @@
 ---
-title: Star Wars: X-Wing Alliance
+title: 'Star Wars: X-Wing Alliance'
 platform: steam
 genre:
   - action-adventure

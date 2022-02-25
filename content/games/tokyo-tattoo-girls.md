@@ -1,5 +1,5 @@
 ---
-title: Tokyo Tattoo Girls
+title: 'Tokyo Tattoo Girls'
 platform: playstation-vita
 genre:
   - rpg

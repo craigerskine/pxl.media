@@ -1,5 +1,5 @@
 ---
-title: Bionic Commando
+title: 'Bionic Commando'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

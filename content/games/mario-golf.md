@@ -1,5 +1,5 @@
 ---
-title: Mario Golf
+title: 'Mario Golf'
 platform: game-boy-color
 genre:
   - rpg

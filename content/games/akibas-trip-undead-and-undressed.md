@@ -1,5 +1,5 @@
 ---
-title: AKIBA'S TRIP: Undead & Undressed
+title: 'AKIBA''S TRIP: Undead & Undressed'
 platform: playstation-vita
 genre:
   - rpg

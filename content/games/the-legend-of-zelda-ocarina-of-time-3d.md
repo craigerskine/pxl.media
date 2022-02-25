@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Ocarina of Time 3D
+title: 'The Legend of Zelda: Ocarina of Time 3D'
 platform: 3ds
 genre:
   - action-adventure

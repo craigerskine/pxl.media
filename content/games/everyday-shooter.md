@@ -1,5 +1,5 @@
 ---
-title: Everyday Shooter
+title: 'Everyday Shooter'
 platform: playstation-3
 genre:
   - shmup

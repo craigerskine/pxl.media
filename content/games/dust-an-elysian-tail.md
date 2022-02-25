@@ -1,5 +1,5 @@
 ---
-title: Dust: An Elysian Tail
+title: 'Dust: An Elysian Tail'
 platform: steam
 genre:
   - action-adventure

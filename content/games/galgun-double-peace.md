@@ -1,5 +1,5 @@
 ---
-title: GalGun: Double Peace
+title: 'GalGun: Double Peace'
 platform: playstation-vita
 genre:
   - shooter

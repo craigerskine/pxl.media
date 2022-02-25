@@ -1,5 +1,5 @@
 ---
-title: A Boy and His Blob [Vita]
+title: 'A Boy and His Blob [Vita]'
 platform: playstation-vita
 genre:
   - platformer

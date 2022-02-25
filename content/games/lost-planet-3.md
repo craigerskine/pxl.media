@@ -1,5 +1,5 @@
 ---
-title: Lost Planet 3
+title: 'Lost Planet 3'
 platform: playstation-3
 genre:
   - action-adventure

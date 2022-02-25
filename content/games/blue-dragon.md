@@ -1,5 +1,5 @@
 ---
-title: Blue Dragon
+title: 'Blue Dragon'
 platform: xbox-360
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Blossom Tales: The Sleeping King
+title: 'Blossom Tales: The Sleeping King'
 platform: switch
 genre:
   - action-adventure

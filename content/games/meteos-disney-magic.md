@@ -1,5 +1,5 @@
 ---
-title: Meteos: Disney Magic
+title: 'Meteos: Disney Magic'
 platform: ds
 genre:
   - puzzle

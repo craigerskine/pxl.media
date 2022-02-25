@@ -1,5 +1,5 @@
 ---
-title: Lock N' Chase
+title: 'Lock N'' Chase'
 platform: intellivision
 genre:
   - arcade

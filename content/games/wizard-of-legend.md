@@ -1,5 +1,5 @@
 ---
-title: Wizard of Legend
+title: 'Wizard of Legend'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Spirit Tracks
+title: 'The Legend of Zelda: Spirit Tracks'
 platform: ds
 genre:
   - action-adventure

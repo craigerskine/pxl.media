@@ -1,5 +1,5 @@
 ---
-title: Space Pirates and Zombies
+title: 'Space Pirates and Zombies'
 platform: steam
 genre:
   - rpg

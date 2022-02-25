@@ -1,5 +1,5 @@
 ---
-title: Aragami: Shadow Edition
+title: 'Aragami: Shadow Edition'
 platform: switch
 genre:
   - action-adventure

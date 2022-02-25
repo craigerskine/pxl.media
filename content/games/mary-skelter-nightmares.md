@@ -1,5 +1,5 @@
 ---
-title: Mary Skelter: Nightmares
+title: 'Mary Skelter: Nightmares'
 platform: playstation-vita
 genre:
   - rpg

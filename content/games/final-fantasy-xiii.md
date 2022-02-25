@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XIII
+title: 'Final Fantasy XIII'
 platform: playstation-3
 genre:
   - rpg

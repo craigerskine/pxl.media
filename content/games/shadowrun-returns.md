@@ -1,5 +1,5 @@
 ---
-title: Shadowrun Returns
+title: 'Shadowrun Returns'
 platform: steam
 genre:
   - rpg

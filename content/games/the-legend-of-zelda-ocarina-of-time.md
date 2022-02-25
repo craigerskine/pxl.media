@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Ocarina of Time
+title: 'The Legend of Zelda: Ocarina of Time'
 platform: nintendo-64
 genre:
   - action-adventure

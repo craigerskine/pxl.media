@@ -1,5 +1,5 @@
 ---
-title: Mario Golf: Super Rush
+title: 'Mario Golf: Super Rush'
 platform: switch
 genre:
   - sports

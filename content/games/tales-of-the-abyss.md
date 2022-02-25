@@ -1,5 +1,5 @@
 ---
-title: Tales of the Abyss
+title: 'Tales of the Abyss'
 platform: playstation-2
 genre:
   - rpg

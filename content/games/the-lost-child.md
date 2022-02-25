@@ -1,5 +1,5 @@
 ---
-title: The Lost Child
+title: 'The Lost Child'
 platform: switch
 genre:
   - rpg

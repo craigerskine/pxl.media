@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Collection
+title: 'Phantasy Star Collection'
 platform: game-boy-advance
 genre:
   - compilation

@@ -1,5 +1,5 @@
 ---
-title: SOCOM: Fireteam Bravo 3
+title: 'SOCOM: Fireteam Bravo 3'
 platform: playstation-portable
 genre:
   - action-adventure

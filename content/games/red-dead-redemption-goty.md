@@ -1,5 +1,5 @@
 ---
-title: Red Dead Redemption GOTY
+title: 'Red Dead Redemption GOTY'
 platform: playstation-3
 genre:
   - action-adventure

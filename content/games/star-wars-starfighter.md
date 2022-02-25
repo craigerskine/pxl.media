@@ -1,5 +1,5 @@
 ---
-title: Star Wars Starfighter
+title: 'Star Wars Starfighter'
 platform: steam
 genre:
   - action-adventure

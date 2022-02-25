@@ -1,5 +1,5 @@
 ---
-title: Fallen Legion: Rise to Glory
+title: 'Fallen Legion: Rise to Glory'
 platform: switch
 genre:
   - rpg

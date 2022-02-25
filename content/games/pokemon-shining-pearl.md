@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Shining Pearl
+title: 'Pokémon: Shining Pearl'
 platform: switch
 genre:
   - rpg

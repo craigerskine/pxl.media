@@ -1,5 +1,5 @@
 ---
-title: Resident Evil 4
+title: 'Resident Evil 4'
 platform: gamecube
 genre:
   - action-adventure

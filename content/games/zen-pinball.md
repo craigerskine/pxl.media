@@ -1,5 +1,5 @@
 ---
-title: ZEN Pinball
+title: 'ZEN Pinball'
 platform: playstation-3
 genre:
   - arcade

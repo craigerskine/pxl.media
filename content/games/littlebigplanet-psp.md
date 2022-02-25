@@ -1,5 +1,5 @@
 ---
-title: LittleBigPlanet [PSP]
+title: 'LittleBigPlanet [PSP]'
 platform: playstation-portable
 genre:
   - action-adventure

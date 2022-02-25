@@ -1,5 +1,5 @@
 ---
-title: Medal of Honor: Single Player
+title: 'Medal of Honor: Single Player'
 platform: steam
 genre:
   - shooter

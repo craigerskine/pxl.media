@@ -1,5 +1,5 @@
 ---
-title: RemiLore: Lost Girl in the Lands of Lore
+title: 'RemiLore: Lost Girl in the Lands of Lore'
 platform: switch
 genre:
   - action-adventure

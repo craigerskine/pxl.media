@@ -1,5 +1,5 @@
 ---
-title: Secret of Mana
+title: 'Secret of Mana'
 platform: super-nintendo
 genre:
   - action-adventure

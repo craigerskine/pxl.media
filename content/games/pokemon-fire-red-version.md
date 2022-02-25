@@ -1,9 +1,9 @@
 ---
-title: Pokémon: Fire Red Version
+title: 'Pokémon: Fire Red Version'
 platform: game-boy-advance
 genre:
   - rpg
-note: Complete in box
+note: 'Complete in box'
 digital: false
 physical: true
 guide: false

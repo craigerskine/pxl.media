@@ -1,5 +1,5 @@
 ---
-title: Ninja Gaiden Sigma Plus
+title: 'Ninja Gaiden Sigma Plus'
 platform: playstation-vita
 genre:
   - action-adventure

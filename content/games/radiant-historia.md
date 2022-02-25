@@ -1,5 +1,5 @@
 ---
-title: Radiant Historia
+title: 'Radiant Historia'
 platform: ds
 genre:
   - rpg

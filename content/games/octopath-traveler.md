@@ -1,5 +1,5 @@
 ---
-title: Octopath Traveler
+title: 'Octopath Traveler'
 platform: switch
 genre:
   - rpg

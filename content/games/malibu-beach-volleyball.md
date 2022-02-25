@@ -1,5 +1,5 @@
 ---
-title: Malibu Beach Volleyball
+title: 'Malibu Beach Volleyball'
 platform: game-boy
 genre:
   - sports

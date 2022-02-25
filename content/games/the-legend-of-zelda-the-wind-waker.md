@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: The Wind Waker
+title: 'The Legend of Zelda: The Wind Waker'
 platform: gamecube
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: The Binding of Isaac Rebirth
+title: 'The Binding of Isaac Rebirth'
 platform: playstation-vita
 genre:
   - action-adventure

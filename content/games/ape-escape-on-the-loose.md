@@ -1,5 +1,5 @@
 ---
-title: Ape Escape: On the Loose
+title: 'Ape Escape: On the Loose'
 platform: playstation-portable
 genre:
   - action-adventure

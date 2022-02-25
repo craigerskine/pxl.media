@@ -1,5 +1,5 @@
 ---
-title: Tales of the Abyss 3DS
+title: 'Tales of the Abyss 3DS'
 platform: 3ds
 genre:
   - rpg

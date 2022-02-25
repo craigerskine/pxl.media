@@ -1,5 +1,5 @@
 ---
-title: Hyperdimension Neptunia Re;Birth3: V Generation
+title: 'Hyperdimension Neptunia Re;Birth3: V Generation'
 platform: playstation-vita
 genre:
   - rpg

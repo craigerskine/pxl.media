@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes III: Song of the Ocean
+title: 'The Legend of Heroes III: Song of the Ocean'
 platform: playstation-portable
 genre:
   - rpg

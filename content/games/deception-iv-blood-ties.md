@@ -1,5 +1,5 @@
 ---
-title: Deception IV: Blood Ties
+title: 'Deception IV: Blood Ties'
 platform: playstation-vita
 genre:
   - rpg

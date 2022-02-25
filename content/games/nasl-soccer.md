@@ -1,5 +1,5 @@
 ---
-title: NASL Soccer
+title: 'NASL Soccer'
 platform: intellivision
 genre:
   - sports

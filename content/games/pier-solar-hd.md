@@ -1,5 +1,5 @@
 ---
-title: Pier Solar: HD
+title: 'Pier Solar: HD'
 platform: dreamcast
 genre:
   - rpg

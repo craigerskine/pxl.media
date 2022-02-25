@@ -1,9 +1,9 @@
 ---
-title: Neo Geo Pocket Color Selection Vol.1
+title: 'Neo Geo Pocket Color Selection Vol.1'
 platform: switch
 genre:
   - compilation
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

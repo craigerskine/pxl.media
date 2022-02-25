@@ -1,5 +1,5 @@
 ---
-title: Dragon Fantasy Book I and II
+title: 'Dragon Fantasy Book I and II'
 platform: playstation-3
 genre:
   - rpg

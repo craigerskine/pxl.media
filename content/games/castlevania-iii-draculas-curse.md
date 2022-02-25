@@ -1,5 +1,5 @@
 ---
-title: Castlevania III: Dracula's Curse
+title: 'Castlevania III: Dracula''s Curse'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

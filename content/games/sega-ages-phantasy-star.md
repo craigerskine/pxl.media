@@ -1,5 +1,5 @@
 ---
-title: SEGA AGES Phantasy Star
+title: 'SEGA AGES Phantasy Star'
 platform: switch
 genre:
   - rpg

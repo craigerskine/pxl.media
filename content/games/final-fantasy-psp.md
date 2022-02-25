@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy [PSP]
+title: 'Final Fantasy [PSP]'
 platform: playstation-portable
 genre:
   - rpg

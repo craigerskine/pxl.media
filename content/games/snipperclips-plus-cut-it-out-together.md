@@ -1,5 +1,5 @@
 ---
-title: Snipperclips Plus: Cut it out, Together! 
+title: 'Snipperclips Plus: Cut it out, Together! '
 platform: switch
 genre:
   - casual

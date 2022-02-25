@@ -1,10 +1,10 @@
 ---
-title: Dragon's Crown Pro
+title: 'Dragon''s Crown Pro'
 platform: playstation-4
 genre:
   - brawler
   - rpg
-note: Royal Package Edition, Battle-Hardened Edition
+note: 'Royal Package Edition, Battle-Hardened Edition'
 digital: true
 physical: true
 guide: false

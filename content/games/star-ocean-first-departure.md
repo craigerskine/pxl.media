@@ -1,5 +1,5 @@
 ---
-title: Star Ocean: First Departure
+title: 'Star Ocean: First Departure'
 platform: playstation-portable
 genre:
   - rpg

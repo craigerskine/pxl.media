@@ -1,5 +1,5 @@
 ---
-title: Disney Adventures in the Magic Kingdom
+title: 'Disney Adventures in the Magic Kingdom'
 platform: nintendo-entertainment-system
 genre:
   - platformer

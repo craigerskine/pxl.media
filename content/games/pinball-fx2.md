@@ -1,5 +1,5 @@
 ---
-title: Pinball FX2
+title: 'Pinball FX2'
 platform: xbox-360
 genre:
   - arcade

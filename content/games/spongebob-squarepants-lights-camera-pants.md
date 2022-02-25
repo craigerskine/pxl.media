@@ -1,5 +1,5 @@
 ---
-title: Spongebob Squarepants Lights, Camera, Pants!
+title: 'Spongebob Squarepants Lights, Camera, Pants!'
 platform: playstation-2
 genre:
   - casual

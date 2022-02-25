@@ -1,10 +1,10 @@
 ---
-title: Stardew Valley
+title: 'Stardew Valley'
 platform: switch
 genre:
   - action-adventure
   - casual
-note: Fangamer - Standard Edition
+note: 'Fangamer - Standard Edition'
 digital: false
 physical: true
 guide: true

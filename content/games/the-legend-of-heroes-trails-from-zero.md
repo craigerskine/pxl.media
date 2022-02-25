@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails from Zero
+title: 'The Legend of Heroes: Trails from Zero'
 platform: playstation-portable
 genre:
   - rpg

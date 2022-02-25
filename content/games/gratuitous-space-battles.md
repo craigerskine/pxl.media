@@ -1,5 +1,5 @@
 ---
-title: Gratuitous Space Battles
+title: 'Gratuitous Space Battles'
 platform: steam
 genre:
   - shmup

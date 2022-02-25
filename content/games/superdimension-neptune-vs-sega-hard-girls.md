@@ -1,5 +1,5 @@
 ---
-title: Superdimension Neptune VS Sega Hard Girls
+title: 'Superdimension Neptune VS Sega Hard Girls'
 platform: playstation-vita
 genre:
   - rpg

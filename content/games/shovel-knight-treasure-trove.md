@@ -1,5 +1,5 @@
 ---
-title: Shovel Knight: Treasure Trove
+title: 'Shovel Knight: Treasure Trove'
 platform: switch
 genre:
   - action-adventure

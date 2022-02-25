@@ -1,5 +1,5 @@
 ---
-title: Mission X
+title: 'Mission X'
 platform: intellivision
 genre:
   - action-adventure

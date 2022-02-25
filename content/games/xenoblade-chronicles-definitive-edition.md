@@ -1,5 +1,5 @@
 ---
-title: Xenoblade Chronicles: Definitive Edition
+title: 'Xenoblade Chronicles: Definitive Edition'
 platform: switch
 genre:
   - action-adventure

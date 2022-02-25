@@ -1,5 +1,5 @@
 ---
-title: Sword Art Online: Hollow Fragment
+title: 'Sword Art Online: Hollow Fragment'
 platform: playstation-vita
 genre:
   - action-adventure

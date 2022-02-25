@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Online Version 2
+title: 'Phantasy Star Online Version 2'
 platform: dreamcast
 genre:
   - action-adventure

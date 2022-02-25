@@ -1,5 +1,5 @@
 ---
-title: Shovel Knight
+title: 'Shovel Knight'
 platform: playstation-vita
 genre:
   - action-adventure

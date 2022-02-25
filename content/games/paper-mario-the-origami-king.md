@@ -1,5 +1,5 @@
 ---
-title: Paper Mario: The Origami King
+title: 'Paper Mario: The Origami King'
 platform: switch
 genre:
   - action-adventure

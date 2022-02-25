@@ -1,5 +1,5 @@
 ---
-title: Greak: Memories of Azur
+title: 'Greak: Memories of Azur'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Army Corps of Hell
+title: 'Army Corps of Hell'
 platform: playstation-vita
 genre:
   - action-adventure

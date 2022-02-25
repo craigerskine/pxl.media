@@ -1,5 +1,5 @@
 ---
-title: Demon Gaze II
+title: 'Demon Gaze II'
 platform: playstation-vita
 genre:
   - rpg

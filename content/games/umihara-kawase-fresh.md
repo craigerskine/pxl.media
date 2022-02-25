@@ -1,5 +1,5 @@
 ---
-title: Umihara Kawase Fresh!
+title: 'Umihara Kawase Fresh!'
 platform: switch
 genre:
   - action-adventure

@@ -1,9 +1,9 @@
 ---
-title: Zero Wing
+title: 'Zero Wing'
 platform: genesis
 genre:
   - shmup
-note: Collectors Edition (CastleMania Games)
+note: 'Collectors Edition (CastleMania Games)'
 digital: false
 physical: true
 guide: false

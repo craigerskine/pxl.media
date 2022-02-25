@@ -1,5 +1,5 @@
 ---
-title: Operation Abyss: New Tokyo Legacy
+title: 'Operation Abyss: New Tokyo Legacy'
 platform: playstation-vita
 genre:
   - rpg

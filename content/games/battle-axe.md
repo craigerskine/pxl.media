@@ -1,5 +1,5 @@
 ---
-title: Battle Axe
+title: 'Battle Axe'
 platform: switch
 genre:
   - brawler

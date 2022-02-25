@@ -1,9 +1,9 @@
 ---
-title: Frane: Dragons' Odyssey
+title: 'Frane: Dragons'' Odyssey'
 platform: playstation-4
 genre:
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

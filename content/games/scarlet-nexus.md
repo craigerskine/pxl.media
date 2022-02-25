@@ -1,5 +1,5 @@
 ---
-title: Scarlet Nexus
+title: 'Scarlet Nexus'
 platform: xbox-series-x-s
 genre:
   - action-adventure

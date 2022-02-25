@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: The Wind Waker HD
+title: 'The Legend of Zelda: The Wind Waker HD'
 platform: wii-u
 genre:
   - action-adventure

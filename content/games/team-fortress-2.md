@@ -1,5 +1,5 @@
 ---
-title: Team Fortress 2
+title: 'Team Fortress 2'
 platform: steam
 genre:
   - shooter

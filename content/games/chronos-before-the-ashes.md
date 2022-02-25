@@ -1,5 +1,5 @@
 ---
-title: Chronos: Before the Ashes
+title: 'Chronos: Before the Ashes'
 platform: switch
 genre:
   - action-adventure

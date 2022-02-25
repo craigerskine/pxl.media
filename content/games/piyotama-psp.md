@@ -1,5 +1,5 @@
 ---
-title: Piyotama [PSP]
+title: 'Piyotama [PSP]'
 platform: playstation-portable
 genre:
   - puzzle

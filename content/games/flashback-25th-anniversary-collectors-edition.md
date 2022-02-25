@@ -1,5 +1,5 @@
 ---
-title: Flashback 25th Anniversary Collector's Edition
+title: 'Flashback 25th Anniversary Collector''s Edition'
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Jeanne d'Arc
+title: 'Jeanne d''Arc'
 platform: playstation-portable
 genre:
   - rpg

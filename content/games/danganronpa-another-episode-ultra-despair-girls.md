@@ -1,5 +1,5 @@
 ---
-title: Danganronpa Another Episode: Ultra Despair Girls
+title: 'Danganronpa Another Episode: Ultra Despair Girls'
 platform: playstation-vita
 genre:
   - rpg

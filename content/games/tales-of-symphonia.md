@@ -1,5 +1,5 @@
 ---
-title: Tales of Symphonia
+title: 'Tales of Symphonia'
 platform: gamecube
 genre:
   - rpg

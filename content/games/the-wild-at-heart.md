@@ -1,5 +1,5 @@
 ---
-title: The Wild at Heart
+title: 'The Wild at Heart'
 platform: switch
 genre:
   - action-adventure

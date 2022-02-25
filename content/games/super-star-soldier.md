@@ -1,9 +1,9 @@
 ---
-title: Super Star Soldier
+title: 'Super Star Soldier'
 platform: turbografx-16
 genre:
   - shmup
-note: Signed by Chris Bucci - Broken?
+note: 'Signed by Chris Bucci - Broken?'
 digital: true
 physical: true
 guide: false

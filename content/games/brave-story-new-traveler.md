@@ -1,5 +1,5 @@
 ---
-title: Brave Story: New Traveler
+title: 'Brave Story: New Traveler'
 platform: playstation-portable
 genre:
   - rpg

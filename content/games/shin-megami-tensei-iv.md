@@ -1,5 +1,5 @@
 ---
-title: Shin Megami Tensei IV
+title: 'Shin Megami Tensei IV'
 platform: 3ds
 genre:
   - rpg

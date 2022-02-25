@@ -1,5 +1,5 @@
 ---
-title: Utawarerumono: Mask of Truth
+title: 'Utawarerumono: Mask of Truth'
 platform: playstation-vita
 genre:
   - rpg

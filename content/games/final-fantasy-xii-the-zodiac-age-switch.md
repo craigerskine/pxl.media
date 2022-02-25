@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy XII: The Zodiac Age [Switch]
+title: 'Final Fantasy XII: The Zodiac Age [Switch]'
 platform: switch
 genre:
   - rpg

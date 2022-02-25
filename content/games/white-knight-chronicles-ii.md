@@ -1,5 +1,5 @@
 ---
-title: White Knight Chronicles II
+title: 'White Knight Chronicles II'
 platform: playstation-3
 genre:
   - rpg

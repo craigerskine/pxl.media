@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy III - Pixel Remaster
+title: 'Final Fantasy III - Pixel Remaster'
 platform: steam
 genre:
   - rpg

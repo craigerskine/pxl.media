@@ -1,5 +1,5 @@
 ---
-title: Cadence of Hyrule: Crypt of The Necrodancer
+title: 'Cadence of Hyrule: Crypt of The Necrodancer'
 platform: switch
 genre:
   - action-adventure

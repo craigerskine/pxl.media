@@ -1,5 +1,5 @@
 ---
-title: Odin Sphere Leifthrasir [Vita]
+title: 'Odin Sphere Leifthrasir [Vita]'
 platform: playstation-vita
 genre:
   - action-adventure

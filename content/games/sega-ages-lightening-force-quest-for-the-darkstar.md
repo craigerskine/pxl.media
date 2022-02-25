@@ -1,5 +1,5 @@
 ---
-title: SEGA AGES Lightening Force: Quest for the Darkstar
+title: 'SEGA AGES Lightening Force: Quest for the Darkstar'
 platform: switch
 genre:
   - shmup

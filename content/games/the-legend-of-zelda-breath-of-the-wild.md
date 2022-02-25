@@ -1,9 +1,9 @@
 ---
-title: The Legend of Zelda: Breath of the Wild
+title: 'The Legend of Zelda: Breath of the Wild'
 platform: switch
 genre:
   - action-adventure
-note: Expansion Pass
+note: 'Expansion Pass'
 digital: true
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Online III C.A.R.D. Revolution
+title: 'Phantasy Star Online III C.A.R.D. Revolution'
 platform: gamecube
 genre:
   - puzzle

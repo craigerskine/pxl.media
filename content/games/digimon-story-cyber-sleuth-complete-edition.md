@@ -1,5 +1,5 @@
 ---
-title: Digimon Story Cyber Sleuth: Complete Edition
+title: 'Digimon Story Cyber Sleuth: Complete Edition'
 platform: switch
 genre:
   - rpg

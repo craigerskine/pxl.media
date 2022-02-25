@@ -1,9 +1,9 @@
 ---
-title: Super Turrican: Directors Cut
+title: 'Super Turrican: Directors Cut'
 platform: super-nintendo
 genre:
   - action-adventure
-note: Analogue: Super Nt
+note: 'Analogue: Super Nt'
 digital: true
 physical: false
 guide: false

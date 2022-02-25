@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails of Cold Steel III
+title: 'The Legend of Heroes: Trails of Cold Steel III'
 platform: playstation-4
 genre:
   - rpg

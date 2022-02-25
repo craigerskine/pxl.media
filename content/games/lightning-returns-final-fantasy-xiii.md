@@ -1,5 +1,5 @@
 ---
-title: Lightning Returns: Final Fantasy XIII
+title: 'Lightning Returns: Final Fantasy XIII'
 platform: playstation-3
 genre:
   - rpg

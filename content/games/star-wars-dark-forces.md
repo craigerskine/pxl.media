@@ -1,5 +1,5 @@
 ---
-title: Star Wars: Dark Forces
+title: 'Star Wars: Dark Forces'
 platform: steam
 genre:
   - shooter

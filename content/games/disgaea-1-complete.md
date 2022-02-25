@@ -1,5 +1,5 @@
 ---
-title: Disgaea 1 Complete
+title: 'Disgaea 1 Complete'
 platform: switch
 genre:
   - rpg

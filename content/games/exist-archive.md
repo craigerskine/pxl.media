@@ -1,5 +1,5 @@
 ---
-title: Exist Archive
+title: 'Exist Archive'
 platform: playstation-vita
 genre:
   - rpg

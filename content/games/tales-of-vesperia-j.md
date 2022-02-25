@@ -1,5 +1,5 @@
 ---
-title: Tales of Vesperia [J]
+title: 'Tales of Vesperia [J]'
 platform: playstation-3
 genre:
   - rpg

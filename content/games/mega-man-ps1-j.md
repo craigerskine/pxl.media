@@ -1,5 +1,5 @@
 ---
-title: Mega Man [PS1] [J]
+title: 'Mega Man [PS1] [J]'
 platform: playstation
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Dragon Quest Builders [Switch]
+title: 'Dragon Quest Builders [Switch]'
 platform: switch
 genre:
   - rpg

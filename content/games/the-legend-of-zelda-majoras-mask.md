@@ -1,5 +1,5 @@
 ---
-title: The Legend of Zelda: Majora's Mask
+title: 'The Legend of Zelda: Majora''s Mask'
 platform: nintendo-64
 genre:
   - action-adventure

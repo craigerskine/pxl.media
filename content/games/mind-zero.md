@@ -1,5 +1,5 @@
 ---
-title: Mind Zero
+title: 'Mind Zero'
 platform: playstation-vita
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Claire: Extended Cut
+title: 'Claire: Extended Cut'
 platform: playstation-vita
 genre:
   - action-adventure

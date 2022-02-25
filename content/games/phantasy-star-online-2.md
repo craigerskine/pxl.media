@@ -1,5 +1,5 @@
 ---
-title: Phantasy Star Online 2
+title: 'Phantasy Star Online 2'
 platform: steam
 genre:
   - action-adventure

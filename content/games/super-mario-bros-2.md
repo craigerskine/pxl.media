@@ -1,5 +1,5 @@
 ---
-title: Super Mario Bros. 2
+title: 'Super Mario Bros. 2'
 platform: nintendo-entertainment-system
 genre:
   - platformer

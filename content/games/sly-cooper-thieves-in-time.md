@@ -1,5 +1,5 @@
 ---
-title: Sly Cooper: Thieves in Time
+title: 'Sly Cooper: Thieves in Time'
 platform: playstation-vita
 genre:
   - platformer

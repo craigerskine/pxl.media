@@ -1,4 +1,5 @@
 ---
+title: 'Final Fantasy IX'
 platform: playstation
 genre:
   - rpg

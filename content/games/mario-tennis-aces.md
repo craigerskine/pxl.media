@@ -1,5 +1,5 @@
 ---
-title: Mario Tennis Aces
+title: 'Mario Tennis Aces'
 platform: switch
 genre:
   - sports

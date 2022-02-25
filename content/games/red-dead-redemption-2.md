@@ -1,5 +1,5 @@
 ---
-title: Red Dead Redemption 2
+title: 'Red Dead Redemption 2'
 platform: playstation-4
 genre:
   - action-adventure

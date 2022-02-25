@@ -1,5 +1,5 @@
 ---
-title: Marvel’s Spider-Man
+title: 'Marvel’s Spider-Man'
 platform: playstation-4
 genre:
   - action-adventure

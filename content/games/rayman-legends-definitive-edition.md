@@ -1,5 +1,5 @@
 ---
-title: Rayman Legends: Definitive Edition
+title: 'Rayman Legends: Definitive Edition'
 platform: switch
 genre:
   - platformer

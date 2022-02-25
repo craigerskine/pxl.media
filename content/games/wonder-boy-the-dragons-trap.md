@@ -1,5 +1,5 @@
 ---
-title: Wonder Boy: The Dragon's Trap
+title: 'Wonder Boy: The Dragon''s Trap'
 platform: switch
 genre:
   - action-adventure

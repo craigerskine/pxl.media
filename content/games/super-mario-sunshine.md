@@ -1,5 +1,5 @@
 ---
-title: Super Mario Sunshine
+title: 'Super Mario Sunshine'
 platform: gamecube
 genre:
   - platformer

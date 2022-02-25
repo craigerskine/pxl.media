@@ -1,5 +1,5 @@
 ---
-title: Tales of Arise [PS5]
+title: 'Tales of Arise [PS5]'
 platform: playstation-5
 genre:
   - rpg

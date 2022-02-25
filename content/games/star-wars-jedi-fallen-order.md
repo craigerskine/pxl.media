@@ -1,5 +1,5 @@
 ---
-title: Star Wars Jedi: Fallen Order
+title: 'Star Wars Jedi: Fallen Order'
 platform: playstation-4
 genre:
   - action-adventure

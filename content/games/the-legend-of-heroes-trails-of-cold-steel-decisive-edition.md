@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails of Cold Steel - Decisive Edition
+title: 'The Legend of Heroes: Trails of Cold Steel - Decisive Edition'
 platform: playstation-4
 genre:
   - rpg

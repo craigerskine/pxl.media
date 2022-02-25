@@ -1,5 +1,5 @@
 ---
-title: Diablo 3 Eternal Collection
+title: 'Diablo 3 Eternal Collection'
 platform: switch
 genre:
   - action-adventure

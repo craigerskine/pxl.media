@@ -1,5 +1,5 @@
 ---
-title: Fable III
+title: 'Fable III'
 platform: xbox-360
 genre:
   - rpg

@@ -1,9 +1,9 @@
 ---
-title: Phantom Breaker Battlegrounds
+title: 'Phantom Breaker Battlegrounds'
 platform: playstation-vita
 genre:
   - brawler
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

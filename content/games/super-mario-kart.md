@@ -1,5 +1,5 @@
 ---
-title: Super Mario Kart
+title: 'Super Mario Kart'
 platform: super-nintendo
 genre:
   - racing

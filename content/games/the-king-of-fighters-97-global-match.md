@@ -1,5 +1,5 @@
 ---
-title: The King of Fighters 97 Global Match
+title: 'The King of Fighters 97 Global Match'
 platform: playstation-4
 genre:
   - fighting

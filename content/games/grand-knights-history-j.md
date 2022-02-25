@@ -1,5 +1,5 @@
 ---
-title: Grand Knights History [J]
+title: 'Grand Knights History [J]'
 platform: playstation-portable
 genre:
   - rpg

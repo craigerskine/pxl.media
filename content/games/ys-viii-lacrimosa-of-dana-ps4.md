@@ -1,5 +1,5 @@
 ---
-title: Ys: VIII Lacrimosa of DANA [PS4]
+title: 'Ys: VIII Lacrimosa of DANA [PS4]'
 platform: playstation-4
 genre:
   - action-adventure

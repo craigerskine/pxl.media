@@ -1,5 +1,5 @@
 ---
-title: Street Fighter X Tekken
+title: 'Street Fighter X Tekken'
 platform: playstation-vita
 genre:
   - fighting

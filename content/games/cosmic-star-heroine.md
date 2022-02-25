@@ -1,9 +1,9 @@
 ---
-title: Cosmic Star Heroine
+title: 'Cosmic Star Heroine'
 platform: playstation-vita
 genre:
   - rpg
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

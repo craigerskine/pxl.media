@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter
+title: 'Monster Hunter'
 platform: playstation-2
 genre:
   - action-adventure

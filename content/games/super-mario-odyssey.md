@@ -1,5 +1,5 @@
 ---
-title: Super Mario Odyssey
+title: 'Super Mario Odyssey'
 platform: switch
 genre:
   - platformer

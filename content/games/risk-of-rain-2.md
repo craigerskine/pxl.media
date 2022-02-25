@@ -1,5 +1,5 @@
 ---
-title: Risk of Rain 2
+title: 'Risk of Rain 2'
 platform: switch
 genre:
   - action-adventure

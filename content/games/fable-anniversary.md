@@ -1,5 +1,5 @@
 ---
-title: Fable Anniversary
+title: 'Fable Anniversary'
 platform: xbox-360
 genre:
   - rpg

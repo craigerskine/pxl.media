@@ -1,5 +1,5 @@
 ---
-title: Grim Grimoire
+title: 'Grim Grimoire'
 platform: playstation-2
 genre:
   - action-adventure

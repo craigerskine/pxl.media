@@ -3,7 +3,7 @@ title: Hellfire
 platform: genesis
 genre:
   - shmup
-note: Collectors Edition (CastleMania Games)
+note: 'Collectors Edition (CastleMania Games)'
 digital: false
 physical: true
 guide: false

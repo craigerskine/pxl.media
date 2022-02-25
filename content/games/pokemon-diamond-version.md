@@ -1,5 +1,5 @@
 ---
-title: Pokémon: Diamond Version
+title: 'Pokémon: Diamond Version'
 platform: ds
 genre:
   - rpg

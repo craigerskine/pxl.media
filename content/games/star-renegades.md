@@ -1,5 +1,5 @@
 ---
-title: Star Renegades
+title: 'Star Renegades'
 platform: switch
 genre:
   - puzzle

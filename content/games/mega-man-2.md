@@ -1,5 +1,5 @@
 ---
-title: Mega Man 2
+title: 'Mega Man 2'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

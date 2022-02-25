@@ -1,5 +1,5 @@
 ---
-title: Kingdom Majestic
+title: 'Kingdom Majestic'
 platform: switch
 genre:
   - action-adventure

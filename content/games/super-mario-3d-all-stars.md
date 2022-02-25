@@ -1,5 +1,5 @@
 ---
-title: Super Mario 3D All-Stars
+title: 'Super Mario 3D All-Stars'
 platform: switch
 genre:
   - compilation

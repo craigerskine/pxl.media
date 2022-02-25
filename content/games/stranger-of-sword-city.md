@@ -1,5 +1,5 @@
 ---
-title: Stranger of Sword City
+title: 'Stranger of Sword City'
 platform: playstation-vita
 genre:
   - rpg

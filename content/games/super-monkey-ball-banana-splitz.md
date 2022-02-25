@@ -1,5 +1,5 @@
 ---
-title: Super Monkey Ball: Banana Splitz
+title: 'Super Monkey Ball: Banana Splitz'
 platform: playstation-vita
 genre:
   - casual

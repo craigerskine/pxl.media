@@ -1,5 +1,5 @@
 ---
-title: Medal of Honor: Multiplayer
+title: 'Medal of Honor: Multiplayer'
 platform: steam
 genre:
   - shooter

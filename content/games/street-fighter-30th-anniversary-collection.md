@@ -1,5 +1,5 @@
 ---
-title: Street Fighter 30th Anniversary Collection
+title: 'Street Fighter 30th Anniversary Collection'
 platform: switch
 genre:
   - compilation

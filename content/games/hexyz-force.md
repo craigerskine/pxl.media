@@ -1,5 +1,5 @@
 ---
-title: Hexyz Force
+title: 'Hexyz Force'
 platform: playstation-portable
 genre:
   - rpg

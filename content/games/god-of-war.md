@@ -1,5 +1,5 @@
 ---
-title: God of War
+title: 'God of War'
 platform: playstation-4
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy Explorers
+title: 'Final Fantasy Explorers'
 platform: 3ds
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: Star Strike
+title: 'Star Strike'
 platform: intellivision
 genre:
   - action-adventure

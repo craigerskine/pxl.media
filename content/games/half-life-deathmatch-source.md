@@ -1,5 +1,5 @@
 ---
-title: Half-Life Deathmatch: Source
+title: 'Half-Life Deathmatch: Source'
 platform: steam
 genre:
   - shooter

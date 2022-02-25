@@ -1,5 +1,5 @@
 ---
-title: Goblin Sword
+title: 'Goblin Sword'
 platform: switch
 genre:
   - action-adventure

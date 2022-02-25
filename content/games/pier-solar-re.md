@@ -1,9 +1,9 @@
 ---
-title: Pier Solar: RE
+title: 'Pier Solar: RE'
 platform: genesis
 genre:
   - rpg
-note: Reprint Edition
+note: 'Reprint Edition'
 digital: false
 physical: true
 guide: true

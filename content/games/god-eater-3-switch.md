@@ -1,5 +1,5 @@
 ---
-title: God Eater 3 [Switch]
+title: 'God Eater 3 [Switch]'
 platform: switch
 genre:
   - action-adventure

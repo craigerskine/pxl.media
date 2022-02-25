@@ -1,9 +1,9 @@
 ---
-title: Shantae and the Pirate's Curse
+title: 'Shantae and the Pirate''s Curse'
 platform: switch
 genre:
   - platformer
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

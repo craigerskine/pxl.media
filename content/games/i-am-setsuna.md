@@ -1,5 +1,5 @@
 ---
-title: I am Setsuna
+title: 'I am Setsuna'
 platform: switch
 genre:
   - rpg

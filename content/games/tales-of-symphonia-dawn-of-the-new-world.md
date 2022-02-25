@@ -1,5 +1,5 @@
 ---
-title: Tales of Symphonia: Dawn of the New World
+title: 'Tales of Symphonia: Dawn of the New World'
 platform: wii
 genre:
   - rpg

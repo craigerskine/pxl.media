@@ -1,5 +1,5 @@
 ---
-title: Yonder The Cloud Catcher Chronicles
+title: 'Yonder The Cloud Catcher Chronicles'
 platform: switch
 genre:
   - casual

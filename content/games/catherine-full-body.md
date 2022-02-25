@@ -1,5 +1,5 @@
 ---
-title: Catherine: Full Body
+title: 'Catherine: Full Body'
 platform: switch
 genre:
   - action-adventure

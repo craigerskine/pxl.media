@@ -1,10 +1,10 @@
 ---
-title: Ys: IX Monstrum Nox
+title: 'Ys: IX Monstrum Nox'
 platform: switch
 genre:
   - action-adventure
   - rpg
-note: Limited Edition
+note: 'Limited Edition'
 digital: false
 physical: true
 guide: false

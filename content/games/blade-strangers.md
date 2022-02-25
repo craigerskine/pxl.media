@@ -1,5 +1,5 @@
 ---
-title: Blade Strangers
+title: 'Blade Strangers'
 platform: switch
 genre:
   - fighting

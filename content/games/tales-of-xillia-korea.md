@@ -1,5 +1,5 @@
 ---
-title: Tales of Xillia [Korea]
+title: 'Tales of Xillia [Korea]'
 platform: playstation-3
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Hot Shots Golf: World Invitational
+title: 'Hot Shots Golf: World Invitational'
 platform: playstation-vita
 genre:
   - sports

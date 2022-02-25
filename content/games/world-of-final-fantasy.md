@@ -1,5 +1,5 @@
 ---
-title: World of Final Fantasy
+title: 'World of Final Fantasy'
 platform: playstation-4
 genre:
   - rpg

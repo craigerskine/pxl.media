@@ -1,5 +1,5 @@
 ---
-title: Mega Man Powered Up
+title: 'Mega Man Powered Up'
 platform: playstation-portable
 genre:
   - action-adventure

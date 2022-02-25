@@ -1,9 +1,9 @@
 ---
-title: The Elder Scrolls V: Skyrim [PS4]
+title: 'The Elder Scrolls V: Skyrim [PS4]'
 platform: playstation-4
 genre:
   - rpg
-note: Special Edition
+note: 'Special Edition'
 digital: false
 physical: true
 guide: false

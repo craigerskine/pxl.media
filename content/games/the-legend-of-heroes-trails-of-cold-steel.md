@@ -1,5 +1,5 @@
 ---
-title: The Legend of Heroes: Trails of Cold Steel
+title: 'The Legend of Heroes: Trails of Cold Steel'
 platform: playstation-vita
 genre:
   - rpg

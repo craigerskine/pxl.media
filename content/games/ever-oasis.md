@@ -1,5 +1,5 @@
 ---
-title: Ever Oasis
+title: 'Ever Oasis'
 platform: 3ds
 genre:
   - rpg

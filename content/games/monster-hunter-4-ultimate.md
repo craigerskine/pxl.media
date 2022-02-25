@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter 4 Ultimate
+title: 'Monster Hunter 4 Ultimate'
 platform: 3ds
 genre:
   - action-adventure

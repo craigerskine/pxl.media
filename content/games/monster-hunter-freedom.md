@@ -1,10 +1,10 @@
 ---
-title: Monster Hunter Freedom
+title: 'Monster Hunter Freedom'
 platform: playstation-portable
 genre:
   - action-adventure
   - rpg
-note: Favorites Edition
+note: 'Favorites Edition'
 digital: false
 physical: true
 guide: false

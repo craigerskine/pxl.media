@@ -1,5 +1,5 @@
 ---
-title: Tron Deadly Discs
+title: 'Tron Deadly Discs'
 platform: intellivision
 genre:
   - action-adventure

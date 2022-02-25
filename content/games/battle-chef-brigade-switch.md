@@ -1,10 +1,10 @@
 ---
-title: Battle Chef Brigade [Switch]
+title: 'Battle Chef Brigade [Switch]'
 platform: switch
 genre:
   - brawler
   - puzzle
-note: Limited Run Games
+note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false

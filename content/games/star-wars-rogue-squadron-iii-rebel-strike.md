@@ -1,5 +1,5 @@
 ---
-title: Star Wars Rogue Squadron III: Rebel Strike
+title: 'Star Wars Rogue Squadron III: Rebel Strike'
 platform: gamecube
 genre:
   - action-adventure

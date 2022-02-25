@@ -1,5 +1,5 @@
 ---
-title: Zoids Wild: Blast Unleashed
+title: 'Zoids Wild: Blast Unleashed'
 platform: switch
 genre:
   - action-adventure

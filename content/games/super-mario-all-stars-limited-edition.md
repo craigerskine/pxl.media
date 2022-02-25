@@ -1,5 +1,5 @@
 ---
-title: Super Mario All-Stars: Limited Edition
+title: 'Super Mario All-Stars: Limited Edition'
 platform: wii
 genre:
   - platformer

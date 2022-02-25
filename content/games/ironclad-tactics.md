@@ -1,5 +1,5 @@
 ---
-title: Ironclad Tactics
+title: 'Ironclad Tactics'
 platform: steam
 genre:
   - rpg

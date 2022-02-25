@@ -1,5 +1,5 @@
 ---
-title: Star Wars: TIE Fighter Special Edition
+title: 'Star Wars: TIE Fighter Special Edition'
 platform: steam
 genre:
   - action-adventure

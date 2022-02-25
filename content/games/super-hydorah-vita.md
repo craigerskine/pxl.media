@@ -1,5 +1,5 @@
 ---
-title: Super Hydorah [Vita]
+title: 'Super Hydorah [Vita]'
 platform: playstation-vita
 genre:
   - shmup

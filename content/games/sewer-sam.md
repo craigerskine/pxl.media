@@ -1,5 +1,5 @@
 ---
-title: Sewer Sam
+title: 'Sewer Sam'
 platform: intellivision
 genre:
   - action-adventure

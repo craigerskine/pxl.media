@@ -1,5 +1,5 @@
 ---
-title: WipEout HD
+title: 'WipEout HD'
 platform: playstation-3
 genre:
   - racing

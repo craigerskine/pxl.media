@@ -1,5 +1,5 @@
 ---
-title: Super Meat Boy
+title: 'Super Meat Boy'
 platform: steam
 genre:
   - platformer

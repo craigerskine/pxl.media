@@ -1,10 +1,10 @@
 ---
-title: Dragon's Crown [Vita]
+title: 'Dragon''s Crown [Vita]'
 platform: playstation-vita
 genre:
   - brawler
   - rpg
-note: Art Book
+note: 'Art Book'
 digital: true
 physical: true
 guide: false

@@ -1,5 +1,5 @@
 ---
-title: Raiden IV x MIKADO Remix
+title: 'Raiden IV x MIKADO Remix'
 platform: switch
 genre:
   - shmup

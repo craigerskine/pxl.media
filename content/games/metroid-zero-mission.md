@@ -1,5 +1,5 @@
 ---
-title: Metroid: Zero Mission
+title: "Metroid: Zero Mission"
 platform: game-boy-advance
 genre:
   - action-adventure

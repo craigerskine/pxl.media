@@ -1,5 +1,5 @@
 ---
-title: Wolf of the Battlefield: Commando 3
+title: 'Wolf of the Battlefield: Commando 3'
 platform: playstation-3
 genre:
   - shmup

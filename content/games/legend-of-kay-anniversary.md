@@ -1,5 +1,5 @@
 ---
-title: Legend of Kay Anniversary
+title: 'Legend of Kay Anniversary'
 platform: switch
 genre:
   - action-adventure

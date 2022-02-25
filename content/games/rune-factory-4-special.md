@@ -1,5 +1,5 @@
 ---
-title: Rune Factory 4 Special
+title: 'Rune Factory 4 Special'
 platform: switch
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: Parodius Da! Famicom
+title: 'Parodius Da! Famicom'
 platform: nintendo-entertainment-system
 genre:
   - shmup

@@ -1,5 +1,5 @@
 ---
-title: Odin Sphere
+title: 'Odin Sphere'
 platform: playstation-2
 genre:
   - action-adventure

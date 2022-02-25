@@ -1,5 +1,5 @@
 ---
-title: Prinny 1-2: Exploded and Reloaded
+title: 'Prinny 1-2: Exploded and Reloaded'
 platform: switch
 genre:
   - action-adventure

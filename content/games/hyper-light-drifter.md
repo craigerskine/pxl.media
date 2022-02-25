@@ -1,5 +1,5 @@
 ---
-title: Hyper Light Drifter
+title: 'Hyper Light Drifter'
 platform: playstation-4
 genre:
   - action-adventure

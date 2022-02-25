@@ -1,5 +1,5 @@
 ---
-title: Valkyria Chronicles
+title: 'Valkyria Chronicles'
 platform: playstation-3
 genre:
   - rpg

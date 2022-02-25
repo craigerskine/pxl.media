@@ -1,5 +1,5 @@
 ---
-title: Ninja Gaiden
+title: 'Ninja Gaiden'
 platform: nintendo-entertainment-system
 genre:
   - action-adventure

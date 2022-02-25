@@ -1,9 +1,9 @@
 ---
-title: Final Fantasy XI
+title: 'Final Fantasy XI'
 platform: playstation-2
 genre:
   - rpg
-note: with HDD
+note: 'with HDD'
 digital: false
 physical: true
 guide: false

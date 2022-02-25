@@ -1,5 +1,5 @@
 ---
-title: God of War HD
+title: 'God of War HD'
 platform: playstation-3
 genre:
   - action-adventure

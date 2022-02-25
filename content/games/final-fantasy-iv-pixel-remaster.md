@@ -1,5 +1,5 @@
 ---
-title: Final Fantasy IV - Pixel Remaster
+title: 'Final Fantasy IV - Pixel Remaster'
 platform: steam
 genre:
   - rpg

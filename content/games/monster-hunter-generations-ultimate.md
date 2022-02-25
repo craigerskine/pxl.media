@@ -1,5 +1,5 @@
 ---
-title: Monster Hunter Generations Ultimate
+title: 'Monster Hunter Generations Ultimate'
 platform: switch
 genre:
   - action-adventure

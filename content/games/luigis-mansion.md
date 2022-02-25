@@ -1,5 +1,5 @@
 ---
-title: Luigi's Mansion
+title: 'Luigi''s Mansion'
 platform: gamecube
 genre:
   - action-adventure

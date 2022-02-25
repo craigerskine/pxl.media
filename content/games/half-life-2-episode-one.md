@@ -1,5 +1,5 @@
 ---
-title: Half-Life 2: Episode One
+title: 'Half-Life 2: Episode One'
 platform: steam
 genre:
   - shooter

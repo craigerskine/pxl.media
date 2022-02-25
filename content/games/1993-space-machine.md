@@ -1,5 +1,5 @@
 ---
-title: 1993 Space Machine
+title: '1993 Space Machine'
 platform: steam
 genre:
   - shmup
