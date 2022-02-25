@@ -1,5 +1,5 @@
 ---
-title: 'Dark Souls III'
+title: Dark Souls III
 platform: playstation-4
 genre:
   - rpg

@@ -1,5 +1,5 @@
 ---
-title: 'Earthworm Jim'
+title: Earthworm Jim
 platform: genesis
 genre:
   - platformer

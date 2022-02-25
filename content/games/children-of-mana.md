@@ -1,5 +1,5 @@
 ---
-title: 'Children of Mana'
+title: Children of Mana
 platform: ds
 genre:
   - rpg

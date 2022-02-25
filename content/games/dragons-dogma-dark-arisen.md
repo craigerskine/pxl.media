@@ -1,5 +1,5 @@
 ---
-title: 'Dragon''s Dogma: Dark Arisen'
+title: Dragon's Dogma: Dark Arisen
 platform: switch
 genre:
   - action-adventure

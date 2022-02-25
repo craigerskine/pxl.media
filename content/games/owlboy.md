@@ -10,6 +10,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2018-05-29'
+posted: 2018-05-29
 slug: owlboy
 ---

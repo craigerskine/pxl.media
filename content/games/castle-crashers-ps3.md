@@ -1,5 +1,5 @@
 ---
-title: 'Castle Crashers [PS3]'
+title: Castle Crashers [PS3]
 platform: playstation-3
 genre:
   - brawler

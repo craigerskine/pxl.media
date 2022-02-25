@@ -1,5 +1,5 @@
 ---
-title: 'Brain Age'
+title: Brain Age
 platform: ds
 genre:
   - casual

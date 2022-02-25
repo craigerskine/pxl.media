@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest Monsters: Joker'
+title: Dragon Quest Monsters: Joker
 platform: ds
 genre:
   - action-adventure

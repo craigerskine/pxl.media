@@ -1,5 +1,5 @@
 ---
-title: 'Beauty & the Beast'
+title: Beauty & the Beast
 platform: intellivision
 genre:
   - action-adventure

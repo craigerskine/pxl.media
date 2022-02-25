@@ -1,9 +1,9 @@
 ---
-title: 'Bloodstained: Curse of the Moon 2'
+title: Bloodstained: Curse of the Moon 2
 platform: switch
 genre:
   - action-adventure
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false

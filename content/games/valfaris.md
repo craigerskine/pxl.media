@@ -9,6 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2019-11-19'
+posted: 2019-11-19
 slug: valfaris
 ---

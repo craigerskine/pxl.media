@@ -1,5 +1,5 @@
 ---
-title: 'Bonk''s Adventure'
+title: Bonk's Adventure
 platform: turbografx-16
 genre:
   - platformer

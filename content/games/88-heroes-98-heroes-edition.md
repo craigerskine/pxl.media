@@ -1,5 +1,5 @@
 ---
-title: '88 Heroes: 98 Heroes Edition'
+title: 88 Heroes: 98 Heroes Edition
 platform: switch
 genre:
   - action-adventure

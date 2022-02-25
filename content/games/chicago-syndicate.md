@@ -1,5 +1,5 @@
 ---
-title: 'Chicago Syndicate'
+title: Chicago Syndicate
 platform: game-gear
 genre:
   - action-adventure

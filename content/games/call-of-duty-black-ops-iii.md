@@ -1,5 +1,5 @@
 ---
-title: 'Call of Duty: Black Ops III'
+title: Call of Duty: Black Ops III
 platform: playstation-4
 genre:
   - shooter

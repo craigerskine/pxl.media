@@ -1,5 +1,5 @@
 ---
-title: 'Cat Quest'
+title: Cat Quest
 platform: switch
 genre:
   - brawler

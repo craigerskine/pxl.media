@@ -1,5 +1,5 @@
 ---
-title: 'Dungeon Travelers 2: The Royal Library & the Monster Seal'
+title: Dungeon Travelers 2: The Royal Library & the Monster Seal
 platform: playstation-vita
 genre:
   - rpg

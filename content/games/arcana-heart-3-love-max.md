@@ -1,5 +1,5 @@
 ---
-title: 'Arcana Heart 3: LOVE MAX!!!!!'
+title: Arcana Heart 3: LOVE MAX!!!!!
 platform: playstation-vita
 genre:
   - fighting

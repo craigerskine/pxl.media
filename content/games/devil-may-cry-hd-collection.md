@@ -1,5 +1,5 @@
 ---
-title: 'Devil May Cry HD Collection'
+title: Devil May Cry HD Collection
 platform: playstation-3
 genre:
   - action-adventure

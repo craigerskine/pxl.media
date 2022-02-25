@@ -1,5 +1,5 @@
 ---
-title: 'Blazing Lazers'
+title: Blazing Lazers
 platform: turbografx-16
 genre:
   - shmup

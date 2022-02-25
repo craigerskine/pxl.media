@@ -1,5 +1,5 @@
 ---
-title: 'Donkey Kong Country: Tropical Freeze'
+title: Donkey Kong Country: Tropical Freeze
 platform: switch
 genre:
   - platformer

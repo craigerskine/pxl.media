@@ -1,5 +1,5 @@
 ---
-title: 'ATV Offroad Fury 2'
+title: ATV Offroad Fury 2
 platform: playstation-2
 genre:
   - racing

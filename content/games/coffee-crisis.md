@@ -1,5 +1,5 @@
 ---
-title: 'Coffee Crisis'
+title: Coffee Crisis
 platform: genesis
 genre:
   - action-adventure

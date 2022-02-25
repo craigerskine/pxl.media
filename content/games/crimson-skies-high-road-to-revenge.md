@@ -1,5 +1,5 @@
 ---
-title: 'Crimson Skies: High Road to Revenge'
+title: Crimson Skies: High Road to Revenge
 platform: xbox
 genre:
   - action-adventure

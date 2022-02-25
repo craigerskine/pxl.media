@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest Heroes II'
+title: Dragon Quest Heroes II
 platform: playstation-4
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: 'Astral Chain'
+title: Astral Chain
 platform: switch
 genre:
   - action-adventure

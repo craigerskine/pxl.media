@@ -1,5 +1,5 @@
 ---
-title: 'BIT.TRIP RUNNER'
+title: BIT.TRIP RUNNER
 platform: steam
 genre:
   - puzzle

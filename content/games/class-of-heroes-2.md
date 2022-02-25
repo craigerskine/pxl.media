@@ -1,5 +1,5 @@
 ---
-title: 'Class of Heroes 2'
+title: Class of Heroes 2
 platform: playstation-portable
 genre:
   - rpg

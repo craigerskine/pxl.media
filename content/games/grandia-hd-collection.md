@@ -1,16 +1,16 @@
 ---
 id: 82c23c34-0eb3-45a5-91d1-dae948274082
 blueprint: games
-title: 'Grandia HD Collection'
+title: Grandia HD Collection
 platform: switch
 genre:
   - compilation
   - rpg
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false
 pending: false
-posted: '2020-12-26'
+posted: 2020-12-26
 slug: grandia-hd-collection
 ---

@@ -9,6 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2018-09-21'
+posted: 2018-09-21
 slug: popolocrois
 ---

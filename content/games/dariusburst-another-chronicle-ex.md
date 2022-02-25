@@ -1,5 +1,5 @@
 ---
-title: 'Dariusburst: Another Chronicle Ex+'
+title: Dariusburst: Another Chronicle Ex+
 platform: switch
 genre:
   - shmup

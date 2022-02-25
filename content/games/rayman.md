@@ -9,6 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2014-02-11'
+posted: 2014-02-11
 slug: rayman
 ---

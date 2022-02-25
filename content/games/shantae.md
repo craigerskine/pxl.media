@@ -5,11 +5,11 @@ title: Shantae
 platform: switch
 genre:
   - platformer
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false
 pending: false
-posted: '2021-04-20'
+posted: 2021-04-20
 slug: shantae
 ---

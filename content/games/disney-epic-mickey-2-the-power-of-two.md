@@ -1,5 +1,5 @@
 ---
-title: 'Disney Epic Mickey 2: The Power of Two'
+title: Disney Epic Mickey 2: The Power of Two
 platform: playstation-3
 genre:
   - platformer

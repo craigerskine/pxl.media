@@ -10,6 +10,6 @@ digital: true
 physical: true
 guide: false
 pending: true
-posted: '2022-11-23'
+posted: 2022-11-23
 slug: infinity
 ---

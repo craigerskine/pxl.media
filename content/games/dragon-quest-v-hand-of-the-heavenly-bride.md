@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest V: Hand of the Heavenly Bride'
+title: Dragon Quest V: Hand of the Heavenly Bride
 platform: ds
 genre:
   - rpg

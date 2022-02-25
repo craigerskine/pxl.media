@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Warrior I & II'
+title: Dragon Warrior I & II
 platform: game-boy-color
 genre:
   - rpg

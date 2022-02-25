@@ -1,5 +1,5 @@
 ---
-title: 'Attack on Titan'
+title: Attack on Titan
 platform: playstation-4
 genre:
   - action-adventure

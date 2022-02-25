@@ -1,5 +1,5 @@
 ---
-title: 'Ace Combat 7: Skies Unknown'
+title: Ace Combat 7: Skies Unknown
 platform: playstation-4
 genre:
   - action-adventure

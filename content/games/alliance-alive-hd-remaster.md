@@ -1,5 +1,5 @@
 ---
-title: 'Alliance Alive HD Remaster'
+title: Alliance Alive HD Remaster
 platform: switch
 genre:
   - rpg

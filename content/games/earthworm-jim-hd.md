@@ -1,5 +1,5 @@
 ---
-title: 'Earthworm Jim HD'
+title: Earthworm Jim HD
 platform: playstation-3
 genre:
   - platformer

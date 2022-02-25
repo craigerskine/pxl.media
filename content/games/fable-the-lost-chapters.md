@@ -1,5 +1,5 @@
 ---
-title: 'Fable: The Lost Chapters'
+title: Fable: The Lost Chapters
 platform: xbox
 genre:
   - rpg

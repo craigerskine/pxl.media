@@ -1,5 +1,5 @@
 ---
-title: 'Cave Story+'
+title: Cave Story+
 platform: switch
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: 'Atelier Lydie & Suelle: The Alchemists and the Mysterious Paintings'
+title: Atelier Lydie & Suelle: The Alchemists and the Mysterious Paintings
 platform: switch
 genre:
   - rpg

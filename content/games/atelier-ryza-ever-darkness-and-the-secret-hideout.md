@@ -1,5 +1,5 @@
 ---
-title: 'Atelier Ryza: Ever Darkness & The Secret Hideout'
+title: Atelier Ryza: Ever Darkness & The Secret Hideout
 platform: switch
 genre:
   - rpg

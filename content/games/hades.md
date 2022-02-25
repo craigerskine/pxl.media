@@ -9,6 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2021-09-29'
+posted: 2021-09-29
 slug: hades
 ---

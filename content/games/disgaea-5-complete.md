@@ -1,5 +1,5 @@
 ---
-title: 'Disgaea 5 Complete'
+title: Disgaea 5 Complete
 platform: switch
 genre:
   - rpg

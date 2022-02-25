@@ -1,5 +1,5 @@
 ---
-title: 'Collection of Mana'
+title: Collection of Mana
 platform: switch
 genre:
   - action-adventure

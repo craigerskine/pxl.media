@@ -1,5 +1,5 @@
 ---
-title: 'Child of Light'
+title: Child of Light
 platform: playstation-vita
 genre:
   - rpg

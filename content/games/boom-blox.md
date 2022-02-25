@@ -1,5 +1,5 @@
 ---
-title: 'Boom Blox'
+title: Boom Blox
 platform: wii
 genre:
   - puzzle

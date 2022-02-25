@@ -1,5 +1,5 @@
 ---
-title: 'Darksiders: Warmastered Edition'
+title: Darksiders: Warmastered Edition
 platform: switch
 genre:
   - action-adventure

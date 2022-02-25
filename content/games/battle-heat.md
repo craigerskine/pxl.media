@@ -1,5 +1,5 @@
 ---
-title: 'Battle Heat'
+title: Battle Heat
 platform: pc-fx
 genre:
   - action-adventure

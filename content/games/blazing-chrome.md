@@ -1,9 +1,9 @@
 ---
-title: 'Blazing Chrome'
+title: Blazing Chrome
 platform: switch
 genre:
   - shmup
-note: 'Contra Inspired'
+note: Contra Inspired
 digital: true
 physical: false
 guide: false

@@ -9,6 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2018-04-16'
+posted: 2018-04-16
 slug: xenogears
 ---

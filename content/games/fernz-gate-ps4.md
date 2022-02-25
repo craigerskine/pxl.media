@@ -1,5 +1,5 @@
 ---
-title: 'Fernz Gate [PS4]'
+title: Fernz Gate [PS4]
 platform: playstation-4
 genre:
   - rpg

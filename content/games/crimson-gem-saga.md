@@ -1,5 +1,5 @@
 ---
-title: 'Crimson Gem Saga'
+title: Crimson Gem Saga
 platform: playstation-portable
 genre:
   - rpg

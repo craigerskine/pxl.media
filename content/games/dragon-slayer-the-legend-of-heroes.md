@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Slayer: The Legend of Heroes'
+title: Dragon Slayer: The Legend of Heroes
 platform: turbografx-cd
 genre:
   - rpg

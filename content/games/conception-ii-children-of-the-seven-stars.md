@@ -1,5 +1,5 @@
 ---
-title: 'Conception II: Children of the Seven Stars'
+title: Conception II: Children of the Seven Stars
 platform: playstation-vita
 genre:
   - rpg

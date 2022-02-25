@@ -1,10 +1,10 @@
 ---
-title: 'Battle Chef Brigade Brigadier Edition [PS4]'
+title: Battle Chef Brigade Brigadier Edition [PS4]
 platform: playstation-4
 genre:
   - brawler
   - puzzle
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false

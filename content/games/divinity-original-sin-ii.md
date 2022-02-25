@@ -1,9 +1,9 @@
 ---
-title: 'Divinity: Original Sin II'
+title: Divinity: Original Sin II
 platform: switch
 genre:
   - rpg
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false

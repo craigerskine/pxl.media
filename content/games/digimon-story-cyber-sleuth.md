@@ -1,5 +1,5 @@
 ---
-title: 'Digimon Story Cyber Sleuth'
+title: Digimon Story Cyber Sleuth
 platform: playstation-vita
 genre:
   - rpg

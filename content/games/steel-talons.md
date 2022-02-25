@@ -1,7 +1,7 @@
 ---
 id: 70567165-020f-495b-857d-ccc0f7bccf84
 blueprint: games
-title: 'Steel Talons'
+title: Steel Talons
 platform: lynx
 genre:
   - action-adventure
@@ -10,6 +10,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2014-02-10'
+posted: 2014-02-10
 slug: steel-talons
 ---

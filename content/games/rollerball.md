@@ -9,6 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2014-02-10'
+posted: 2014-02-10
 slug: rollerball
 ---

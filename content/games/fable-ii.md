@@ -1,9 +1,9 @@
 ---
-title: 'Fable II'
+title: Fable II
 platform: xbox-360
 genre:
   - rpg
-note: 'Knothole Island - Premium; See the Future - Premium'
+note: Knothole Island - Premium; See the Future - Premium
 digital: true
 physical: true
 guide: false

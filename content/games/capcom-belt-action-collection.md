@@ -1,5 +1,5 @@
 ---
-title: 'Capcom Belt Action Collection'
+title: Capcom Belt Action Collection
 platform: switch
 genre:
   - arcade

@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest 1+2+3 Collection'
+title: Dragon Quest 1+2+3 Collection
 platform: switch
 genre:
   - compilation

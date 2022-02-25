@@ -1,5 +1,5 @@
 ---
-title: 'Darksiders II'
+title: Darksiders II
 platform: playstation-3
 genre:
   - action-adventure

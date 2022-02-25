@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest VI: Realms of Revelation'
+title: Dragon Quest VI: Realms of Revelation
 platform: ds
 genre:
   - rpg

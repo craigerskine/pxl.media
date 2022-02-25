@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest VII: Fragments of the Forgotten Past'
+title: Dragon Quest VII: Fragments of the Forgotten Past
 platform: 3ds
 genre:
   - rpg

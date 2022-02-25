@@ -1,7 +1,7 @@
 ---
 id: 5ffd03cc-aa94-4c29-a5d3-108eea4e415a
 blueprint: games
-title: 'Mega Man Legacy Collection 1 + 2'
+title: Mega Man Legacy Collection 1 + 2
 platform: switch
 genre:
   - action-adventure
@@ -11,6 +11,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2018-06-02'
+posted: 2018-06-02
 slug: mega-man-legacy-collection-1-+-2
 ---

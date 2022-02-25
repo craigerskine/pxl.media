@@ -1,5 +1,5 @@
 ---
-title: 'Devil May Cry 5'
+title: Devil May Cry 5
 platform: playstation-4
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: 'Battle Chasers: Nightwar'
+title: Battle Chasers: Nightwar
 platform: switch
 genre:
   - rpg

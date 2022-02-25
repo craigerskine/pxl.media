@@ -1,5 +1,5 @@
 ---
-title: 'Eternal Sonata'
+title: Eternal Sonata
 platform: playstation-3
 genre:
   - rpg

@@ -9,6 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2018-01-26'
+posted: 2018-01-26
 slug: windjammers
 ---

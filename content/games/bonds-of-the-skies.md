@@ -1,9 +1,9 @@
 ---
-title: 'Bonds of the Skies'
+title: Bonds of the Skies
 platform: playstation-4
 genre:
   - rpg
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false

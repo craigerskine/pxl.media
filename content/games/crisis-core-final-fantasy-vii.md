@@ -1,5 +1,5 @@
 ---
-title: 'Crisis Core: Final Fantasy VII'
+title: Crisis Core: Final Fantasy VII
 platform: playstation-portable
 genre:
   - rpg

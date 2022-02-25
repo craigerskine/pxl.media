@@ -9,6 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2021-04-09'
+posted: 2021-04-09
 slug: shienryu
 ---

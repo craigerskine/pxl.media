@@ -1,5 +1,5 @@
 ---
-title: 'Air Conflicts Collection'
+title: Air Conflicts Collection
 platform: switch
 genre:
   - action-adventure

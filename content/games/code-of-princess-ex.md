@@ -1,5 +1,5 @@
 ---
-title: 'Code of Princess EX'
+title: Code of Princess EX
 platform: switch
 genre:
   - brawler

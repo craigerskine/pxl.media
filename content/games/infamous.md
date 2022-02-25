@@ -9,6 +9,6 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2014-02-13'
+posted: 2014-02-13
 slug: infamous
 ---

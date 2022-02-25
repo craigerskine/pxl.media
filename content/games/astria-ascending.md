@@ -1,5 +1,5 @@
 ---
-title: 'Astria Ascending'
+title: Astria Ascending
 platform: switch
 genre:
   - rpg

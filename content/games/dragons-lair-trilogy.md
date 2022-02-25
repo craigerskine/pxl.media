@@ -1,5 +1,5 @@
 ---
-title: 'Dragon''s Lair Trilogy'
+title: Dragon's Lair Trilogy
 platform: switch
 genre:
   - arcade

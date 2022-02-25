@@ -1,5 +1,5 @@
 ---
-title: 'Animal Crossing: New Horizons'
+title: Animal Crossing: New Horizons
 platform: switch
 genre:
   - casual

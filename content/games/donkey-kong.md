@@ -1,5 +1,5 @@
 ---
-title: 'Donkey Kong'
+title: Donkey Kong
 platform: intellivision
 genre:
   - arcade

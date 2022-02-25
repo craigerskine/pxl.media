@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Ball Xenoverse 2 [Switch]'
+title: Dragon Ball Xenoverse 2 [Switch]
 platform: switch
 genre:
   - fighting

@@ -1,5 +1,5 @@
 ---
-title: 'Castlevania: Symphony of the Night'
+title: Castlevania: Symphony of the Night
 platform: playstation
 genre:
   - action-adventure

@@ -1,5 +1,5 @@
 ---
-title: 'Bayonetta 2'
+title: Bayonetta 2
 platform: switch
 genre:
   - action-adventure

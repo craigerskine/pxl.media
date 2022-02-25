@@ -1,5 +1,5 @@
 ---
-title: 'Bump N'' Jump'
+title: Bump N' Jump
 platform: intellivision
 genre:
   - racing

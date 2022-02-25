@@ -1,5 +1,5 @@
 ---
-title: 'Blockade Runner'
+title: Blockade Runner
 platform: intellivision
 genre:
   - action-adventure

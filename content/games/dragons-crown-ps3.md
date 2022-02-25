@@ -1,10 +1,10 @@
 ---
-title: 'Dragon''s Crown [PS3]'
+title: Dragon's Crown [PS3]
 platform: playstation-3
 genre:
   - brawler
   - rpg
-note: 'Art Book'
+note: Art Book
 digital: true
 physical: true
 guide: false

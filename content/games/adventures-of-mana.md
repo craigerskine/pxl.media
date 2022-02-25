@@ -1,5 +1,5 @@
 ---
-title: 'Adventures of Mana'
+title: Adventures of Mana
 platform: playstation-vita
 genre:
   - rpg

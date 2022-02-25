@@ -1,5 +1,5 @@
 ---
-title: 'EverDrive-N8 Pro'
+title: EverDrive-N8 Pro
 platform: nintendo-entertainment-system
 genre:
   - flash-cart

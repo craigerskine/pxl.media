@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest IX: Sentinels of the Starry Skies'
+title: Dragon Quest IX: Sentinels of the Starry Skies
 platform: ds
 genre:
   - rpg

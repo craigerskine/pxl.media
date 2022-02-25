@@ -1,10 +1,10 @@
 ---
-title: 'Darius Cozmic Collection Console'
+title: Darius Cozmic Collection Console
 platform: switch
 genre:
   - compilation
   - shmup
-note: 'Strictly Limited Games'
+note: Strictly Limited Games
 digital: false
 physical: true
 guide: false

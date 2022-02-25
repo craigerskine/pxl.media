@@ -1,5 +1,5 @@
 ---
-title: 'Castle Crashers [360]'
+title: Castle Crashers [360]
 platform: xbox-360
 genre:
   - brawler

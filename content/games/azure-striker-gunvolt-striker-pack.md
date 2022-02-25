@@ -1,5 +1,5 @@
 ---
-title: 'Azure Striker Gunvolt: Striker Pack'
+title: Azure Striker Gunvolt: Striker Pack
 platform: switch
 genre:
   - action-adventure

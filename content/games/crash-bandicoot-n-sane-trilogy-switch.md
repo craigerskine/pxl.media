@@ -1,5 +1,5 @@
 ---
-title: 'Crash Bandicoot N. Sane Trilogy [Switch]'
+title: Crash Bandicoot N. Sane Trilogy [Switch]
 platform: switch
 genre:
   - platformer

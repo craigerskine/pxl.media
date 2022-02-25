@@ -1,5 +1,5 @@
 ---
-title: 'Burnout Paradise: The Ultimate Box'
+title: Burnout Paradise: The Ultimate Box
 platform: steam
 genre:
   - racing

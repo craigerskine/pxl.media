@@ -1,5 +1,5 @@
 ---
-title: 'Dark Souls II: Scholar of the First Sin'
+title: Dark Souls II: Scholar of the First Sin
 platform: playstation-4
 genre:
   - rpg

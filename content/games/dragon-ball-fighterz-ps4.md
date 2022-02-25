@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Ball FighterZ [PS4]'
+title: Dragon Ball FighterZ [PS4]
 platform: playstation-4
 genre:
   - fighting

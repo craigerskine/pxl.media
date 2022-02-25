@@ -1,5 +1,5 @@
 ---
-title: 'Children of Morta'
+title: Children of Morta
 platform: switch
 genre:
   - action-adventure

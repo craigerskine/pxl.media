@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest Heroes: The World Tree''s Woe and the Blight Below'
+title: Dragon Quest Heroes: The World Tree's Woe and the Blight Below
 platform: playstation-4
 genre:
   - rpg

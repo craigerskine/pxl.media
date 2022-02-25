@@ -1,5 +1,5 @@
 ---
-title: 'Darksiders III'
+title: Darksiders III
 platform: playstation-4
 genre:
   - action-adventure

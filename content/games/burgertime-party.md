@@ -1,5 +1,5 @@
 ---
-title: 'BurgerTime Party!'
+title: BurgerTime Party!
 platform: switch
 genre:
   - arcade

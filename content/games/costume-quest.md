@@ -1,5 +1,5 @@
 ---
-title: 'Costume Quest'
+title: Costume Quest
 platform: steam
 genre:
   - rpg

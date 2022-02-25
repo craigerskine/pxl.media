@@ -1,5 +1,5 @@
 ---
-title: 'Drive Girls'
+title: Drive Girls
 platform: playstation-vita
 genre:
   - rpg

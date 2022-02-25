@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest Builders 2'
+title: Dragon Quest Builders 2
 platform: switch
 genre:
   - rpg

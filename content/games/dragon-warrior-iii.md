@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Warrior III'
+title: Dragon Warrior III
 platform: game-boy-color
 genre:
   - rpg

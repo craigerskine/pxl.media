@@ -1,5 +1,5 @@
 ---
-title: 'Earth Defense Force 2: Invaders from Planet Space'
+title: Earth Defense Force 2: Invaders from Planet Space
 platform: playstation-vita
 genre:
   - rpg

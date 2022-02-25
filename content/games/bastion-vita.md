@@ -1,10 +1,10 @@
 ---
-title: 'Bastion [Vita]'
+title: Bastion [Vita]
 platform: playstation-vita
 genre:
   - action-adventure
   - rpg
-note: 'Limited Run Games'
+note: Limited Run Games
 digital: false
 physical: true
 guide: false

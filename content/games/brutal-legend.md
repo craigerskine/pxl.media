@@ -1,5 +1,5 @@
 ---
-title: 'Brütal Legend'
+title: Brütal Legend
 platform: steam
 genre:
   - action-adventure

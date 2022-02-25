@@ -1,5 +1,5 @@
 ---
-title: 'Attack on Titan 2'
+title: Attack on Titan 2
 platform: switch
 genre:
   - action-adventure

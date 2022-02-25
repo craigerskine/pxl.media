@@ -1,5 +1,5 @@
 ---
-title: 'BlazBlue: Central Fiction'
+title: BlazBlue: Central Fiction
 platform: playstation-4
 genre:
   - fighting

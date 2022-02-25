@@ -1,10 +1,10 @@
 ---
-title: 'CrossCode [Switch]'
+title: CrossCode [Switch]
 platform: switch
 genre:
   - action-adventure
   - rpg
-note: 'Steel Case'
+note: Steel Case
 digital: false
 physical: true
 guide: false

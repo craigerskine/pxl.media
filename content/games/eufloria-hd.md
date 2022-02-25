@@ -1,5 +1,5 @@
 ---
-title: 'Eufloria HD'
+title: Eufloria HD
 platform: steam
 genre:
   - rpg

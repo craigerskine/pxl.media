@@ -1,5 +1,5 @@
 ---
-title: 'Eets Munchies'
+title: Eets Munchies
 platform: steam
 genre:
   - puzzle

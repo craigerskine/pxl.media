@@ -1,9 +1,9 @@
 ---
-title: 'Cotton REBOOT!'
+title: Cotton REBOOT!
 platform: switch
 genre:
   - shmup
-note: 'Strictly Limited Games'
+note: Strictly Limited Games
 digital: false
 physical: true
 guide: false

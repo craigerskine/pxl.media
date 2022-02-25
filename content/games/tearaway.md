@@ -9,6 +9,6 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2016-02-04'
+posted: 2016-02-04
 slug: tearaway
 ---

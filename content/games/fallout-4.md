@@ -1,5 +1,5 @@
 ---
-title: 'Fallout 4'
+title: Fallout 4
 platform: playstation-4
 genre:
   - rpg

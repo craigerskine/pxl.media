@@ -1,5 +1,5 @@
 ---
-title: 'Dark Cloud 2'
+title: Dark Cloud 2
 platform: playstation-2
 genre:
   - rpg

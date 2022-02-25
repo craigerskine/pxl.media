@@ -1,5 +1,5 @@
 ---
-title: 'Demon Gaze'
+title: Demon Gaze
 platform: playstation-vita
 genre:
   - rpg

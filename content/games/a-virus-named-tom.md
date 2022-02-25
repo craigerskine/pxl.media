@@ -1,5 +1,5 @@
 ---
-title: 'A Virus Named TOM'
+title: A Virus Named TOM
 platform: steam
 genre:
   - puzzle
