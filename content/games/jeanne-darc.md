@@ -1,5 +1,4 @@
 ---
-id: ba8a8f7e-c769-4d6a-b19a-7448e544cfa0
 title: Jeanne d'Arc
 platform: playstation-portable
 genre:
@@ -9,5 +8,4 @@ physical: false
 guide: false
 pending: false
 posted: 2019-01-29
-slug: jeanne-darc
 ---

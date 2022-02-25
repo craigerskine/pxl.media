@@ -1,5 +1,4 @@
 ---
-id: e755abd6-ee10-48d7-a691-623452ebde4c
 title: Monster Hunter Tri
 platform: wii
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2018-02-27
-slug: monster-hunter-tri
 ---

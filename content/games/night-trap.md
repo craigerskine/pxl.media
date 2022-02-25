@@ -1,5 +1,4 @@
 ---
-id: 8b073794-bf62-4b6c-8212-0d32d79c422c
 title: Night Trap
 platform: switch
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2018-10-05
-slug: night-trap
 ---

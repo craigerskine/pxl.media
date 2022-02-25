@@ -1,5 +1,4 @@
 ---
-id: 4a748889-4400-4819-bec6-da59ced08ac9
 title: Sea of Stars [Switch]
 platform: switch
 genre:
@@ -11,5 +10,4 @@ physical: true
 guide: false
 pending: true
 posted: 2022-01-07
-slug: sea-of-stars-switch
 ---

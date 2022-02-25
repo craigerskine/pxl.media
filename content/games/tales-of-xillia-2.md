@@ -1,5 +1,4 @@
 ---
-id: 53e08396-63a2-4689-9579-a78a0e451734
 title: Tales of Xillia 2
 platform: playstation-3
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: true
 pending: false
 posted: 2014-08-14
-slug: tales-of-xillia-2
 ---

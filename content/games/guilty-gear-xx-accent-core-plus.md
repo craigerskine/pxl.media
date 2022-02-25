@@ -1,5 +1,4 @@
 ---
-id: 1d3be795-afe0-4ba0-a984-362b52f4440c
 title: Guilty Gear XX Accent Core Plus
 platform: playstation-portable
 genre:
@@ -9,5 +8,4 @@ physical: false
 guide: false
 pending: false
 posted: 2015-01-03
-slug: guilty-gear-xx-accent-core-plus
 ---

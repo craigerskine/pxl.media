@@ -1,5 +1,4 @@
 ---
-id: ac57fa3c-0daf-4129-993e-df3ed8f1ff18
 title: Super Meat Boy
 platform: steam
 genre:
@@ -10,5 +9,4 @@ physical: false
 guide: false
 pending: false
 posted: 2000-01-01
-slug: super-meat-boy
 ---

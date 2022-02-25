@@ -1,5 +1,4 @@
 ---
-id: 6816fc08-58f6-45cd-9136-1a7c5f46cab0
 title: Shadowgate
 platform: switch
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2020-08-15
-slug: shadowgate
 ---

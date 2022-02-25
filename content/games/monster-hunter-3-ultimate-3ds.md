@@ -1,5 +1,4 @@
 ---
-id: ebf56569-8881-401f-935d-bdc0e5cd4004
 title: Monster Hunter 3 Ultimate [3DS]
 platform: 3ds
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2018-03-02
-slug: monster-hunter-3-ultimate-3ds
 ---

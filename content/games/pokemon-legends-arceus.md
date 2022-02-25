@@ -1,5 +1,4 @@
 ---
-id: d20cb127-707a-4d5e-aaf4-5f7ac4a74e84
 title: Pokémon Legends: Arceus
 platform: switch
 genre:

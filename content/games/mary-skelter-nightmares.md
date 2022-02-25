@@ -1,5 +1,4 @@
 ---
-id: b136860b-8920-4677-89da-1f0f88665bf6
 title: Mary Skelter: Nightmares
 platform: playstation-vita
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2017-11-06
-slug: mary-skelter-nightmares
 ---

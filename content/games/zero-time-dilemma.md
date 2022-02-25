@@ -1,5 +1,4 @@
 ---
-id: 7131659b-5d32-4e2d-81de-46d777192605
 title: Zero Time Dilemma
 platform: playstation-vita
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2017-03-03
-slug: zero-time-dilemma
 ---

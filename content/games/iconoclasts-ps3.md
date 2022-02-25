@@ -1,5 +1,4 @@
 ---
-id: cb62be69-b2a6-41f1-8be7-39cc61f7033f
 title: Iconoclasts [PS3]
 platform: playstation-3
 genre:
@@ -9,5 +8,4 @@ physical: false
 guide: false
 pending: false
 posted: 2018-01-26
-slug: iconoclasts-ps3
 ---

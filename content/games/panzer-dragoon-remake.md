@@ -1,5 +1,4 @@
 ---
-id: 1676c401-beb4-4eb8-8211-1ab4adf193dc
 title: Panzer Dragoon: Remake
 platform: switch
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2020-11-20
-slug: panzer-dragoon-remake
 ---

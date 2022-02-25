@@ -1,5 +1,4 @@
 ---
-id: c91d0f6c-dac3-4ba2-aab6-1b34a3ff7efa
 title: Monster Hunter Stories 2: Wings of Ruin
 platform: switch
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2021-07-26
-slug: monster-hunter-stories-2-wings-of-ruin
 ---

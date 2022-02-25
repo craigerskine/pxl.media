@@ -1,5 +1,4 @@
 ---
-id: 4615bcfe-3bed-407e-a789-ee6251c97633
 title: Utawarerumono: Mask of Deception
 platform: playstation-vita
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2017-10-07
-slug: utawarerumono-mask-of-deception
 ---

@@ -1,5 +1,4 @@
 ---
-id: 53b1bc6d-8281-48eb-a9fe-6d3bf58006ab
 title: Rabi-Ribi [PS4]
 platform: playstation-4
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2019-02-28
-slug: rabi-ribi-ps4
 ---

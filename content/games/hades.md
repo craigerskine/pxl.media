@@ -1,5 +1,4 @@
 ---
-id: ff1eeb2a-7851-435a-94b5-11d51ecc3921
 title: Hades
 platform: switch
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2021-09-29
-slug: hades
 ---

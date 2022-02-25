@@ -1,5 +1,4 @@
 ---
-id: af93e0cd-ea1b-4526-877a-d6b5d660f482
 title: Madden NFL '94
 platform: genesis
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2014-02-10
-slug: madden-nfl-94
 ---

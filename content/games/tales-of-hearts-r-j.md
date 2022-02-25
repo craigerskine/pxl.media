@@ -1,5 +1,4 @@
 ---
-id: 568c3ec2-577e-4561-b303-ceb590b0bf81
 title: Tales of Hearts R [J]
 platform: playstation-vita
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2014-02-11
-slug: tales-of-hearts-r-j
 ---

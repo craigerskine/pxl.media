@@ -1,5 +1,4 @@
 ---
-id: 6b99307e-ceb1-489d-ac57-9751f05a5ef6
 title: Pier Solar: HD
 platform: dreamcast
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: true
 pending: false
 posted: 2015-11-16
-slug: pier-solar-hd
 ---

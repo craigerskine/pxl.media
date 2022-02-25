@@ -1,5 +1,4 @@
 ---
-id: b068fee5-74b9-4038-a337-37537ac1e83c
 title: London Detective Mysteria
 platform: playstation-vita
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2019-06-10
-slug: london-detective-mysteria
 ---

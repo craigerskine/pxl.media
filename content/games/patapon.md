@@ -1,5 +1,4 @@
 ---
-id: b2e2e261-39ad-4a1f-87fd-8241a03df741
 title: Patapon
 platform: playstation-portable
 genre:
@@ -9,5 +8,4 @@ physical: false
 guide: false
 pending: false
 posted: 2014-02-13
-slug: patapon
 ---

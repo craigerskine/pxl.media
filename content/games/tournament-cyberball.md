@@ -1,5 +1,4 @@
 ---
-id: 39d85966-8c46-4ff2-94eb-db9a518b6541
 title: Tournament Cyberball
 platform: lynx
 genre:
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 posted: 2020-07-30
-slug: tournament-cyberball
 ---

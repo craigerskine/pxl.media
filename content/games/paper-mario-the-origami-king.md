@@ -1,5 +1,4 @@
 ---
-id: 1127e504-37d0-4081-a126-8ebdb6791335
 title: Paper Mario: The Origami King
 platform: switch
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2020-07-22
-slug: paper-mario-the-origami-king
 ---

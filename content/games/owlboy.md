@@ -1,5 +1,4 @@
 ---
-id: 19ffa148-be28-49bf-b9cb-98a16a749012
 title: Owlboy
 platform: switch
 genre:
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 posted: 2018-05-29
-slug: owlboy
 ---
