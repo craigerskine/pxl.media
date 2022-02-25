@@ -18,8 +18,8 @@
               </nuxt-link>
             </li>
             <li class="nav-item" v-for="i in 2">
-              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="" :title="i === 1 ? 'Platform' : 'Genre'">
-                <i :class="['fad fa-fw', i === 1 ? 'fa-layer-group' : 'fa-filter']"></i>
+              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
+                <i :class="['fad fa-fw', i === 1 ? 'fa-layer-group' : 'fa-filter']" :title="i === 1 ? 'Platform' : 'Genre'"></i>
               </nuxt-link>
             </li>
           </ul>
@@ -39,14 +39,17 @@
             <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-2 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
               <div class="min-w-0 flex-1">
                 <b v-text="result.title" class="min-w-0 block truncate" :title="result.title"></b>
-                <small v-if="result.note" v-text="result.note" class="pb-2 italic block leading-none opacity-80"></small>
+                <nuxt-link :to="'/platform/'+ result.platform +'/'" class="mr-2 text(gray-200 opacity-50) inline-block transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+                  <small v-for="item of searchPlatform(result.platform)" :key="item.slug">{{ item.title }}</small>
+                </nuxt-link>
+                <small v-if="result.note" v-text="result.note" class="pb-2 italic inline-block leading-none opacity-80"></small>
               </div>
-              <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+              <!-- <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
                 <svg v-for="item of searchPlatform(result.platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[50px] h-auto fill-current">
                   <title>{{ item.title }}</title>
                   <g v-html="item.logo"></g>
                 </svg>
-              </nuxt-link>
+              </nuxt-link> -->
             </li>
           </ul>
         </transition>
