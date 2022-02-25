@@ -26,19 +26,27 @@
         </nav>
         <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative">
           <label for="site-search" class="sr-only">Search</label>
-          <input v-model="query" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
+          <input v-model="query" @blur="searchReset()" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
           <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
         </fieldset>
         <transition name="page">
-          <ul v-if="searchResults.length" class="px-3 pb-3 w-full max-h-[75vh] bg(gray-800) space-y-2 overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
-            <li class="py-3 px-4 bg(gray-800) flex items-center justify-center sticky top-0 z-10 shadow-xl">
+          <ul v-if="searchResults.length" class="px-3 pb-3 w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
+            <li class="py-3 px-4 bg(gray-800) flex items-center justify-center sticky top-0 z-20 shadow-xl">
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
               <b v-text="searchResults.length +' Games'" class="px-4 uppercase flex-none"></b>
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
             </li>
-            <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-1 px-4 leading-loose flex items-center rounded-md', index % 2 === 0 ? 'bg-white bg-opacity-5' : '']">
-              <b v-text="result.title" class="mr-2 min-w-0 truncate" :title="result.title"></b>
-              <small v-text="result.note" class="ml-auto italic flex-none opacity-80"></small>
+            <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-2 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
+              <div class="min-w-0 flex-1">
+                <b v-text="result.title" class="min-w-0 block truncate" :title="result.title"></b>
+                <small v-if="result.note" v-text="result.note" class="pb-2 italic block leading-none opacity-80"></small>
+              </div>
+              <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+                <svg v-for="item of searchPlatform(result.platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[50px] h-auto fill-current">
+                  <title>{{ item.title }}</title>
+                  <g v-html="item.logo"></g>
+                </svg>
+              </nuxt-link>
             </li>
           </ul>
         </transition>
@@ -70,8 +78,20 @@
     data() {
       return {
         query: '',
-        searchResults: []
+        searchResults: [],
+        resultPlatforms: [],
       }
+    },
+    methods: {
+      searchPlatform: function(platform) {
+        return this.resultPlatforms.filter((item) => item.slug === platform)
+      },
+      searchReset: function() {
+        this.query = ''
+      },
+    },
+    async fetch() {
+      this.resultPlatforms = await this.$content("_platform").fetch();
     },
     watch: {
       async query(query) {
@@ -80,7 +100,6 @@
           return
         }
         this.searchResults = await this.$content('games')
-          .only(['title', 'note', 'slug'])
           .sortBy('title', 'asc')
           .search(query)
           .fetch();
