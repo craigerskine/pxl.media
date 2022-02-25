@@ -39,21 +39,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Variation"
-        name: "variation"
-        required: false
-        widget: "list"
-      - label: "Connection"
-        name: "connection"
-        required: false
-        widget: "list"
-      - label: "Company"
-        name: "company"
-        widget: "select"
-        options: ["8Bitdo", "Bandai", "HORI", "Junkfood Custom Arcades", "Logitech", "Polymega", "Retro-Bit", "Retro Fighters", "Sammy", "Wind Spirit", "Wish Technologies"]
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Variation", name: "variation", required: false, widget: "string"}
+      - {label: "Connection", name: "connection", required: false, widget: "string"}
+      - {label: "Company", name: "company", widget: "select", options: ["8Bitdo", "Bandai", "HORI", "Junkfood Custom Arcades", "Logitech", "Polymega", "Retro-Bit", "Retro Fighters", "Sammy", "Wind Spirit", "Wish Technologies"]}
   - name: "_platforms"
     label: "Platforms"
     label_singular: "Platform"
