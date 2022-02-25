@@ -1,34 +1,45 @@
 <template>
   <div>
-    <div class="mx-auto justify-between lg:(flex space-x-4)">
-      <div class="stat mx-auto px-4 py-1 border-b border-gray-500 border-opacity-30 w-full sm:(max-w-md) lg:(mx-0 my-10)">
+    <ul class="-ml-[50vw] -mr-[50vw] w-screen justify-around relative left-1/2 right-1/2 lg:(flex space-x-4)">
+      <li class="stat mx-auto px-4 py-1 border-b border-gray-500 border-opacity-30 w-full sm:(max-w-md) lg:(mx-0 my-10)">
         <mast
           label="Games"
-          :data_1="indexGamesPhysicalCount.length"
+          :data_1="homeGamesPhysicalCount.length"
           data_1_label="Physical"
-          :data_2="indexGamesDigitalCount.length"
+          :data_2="homeGamesDigitalCount.length"
           data_2_label="Digital"
-          :data_3="indexGamesPendingCount.length"
+          :data_3="homeGamesPendingCount.length"
           data_3_label="Pending"
-          home="true">{{ indexGamesCount.length }}</mast>
-      </div>
-      <div class="stat mx-auto px-4 py-1 border-b border-gray-500 border-opacity-30 w-full sm:(max-w-md) lg:(mx-0 my-10)">
+          home="true">{{ homeGamesCount.length }}</mast>
+      </li>
+      <li class="stat mx-auto px-4 py-1 border-b border-gray-500 border-opacity-30 w-full sm:(max-w-md) lg:(mx-0 my-10)">
         <mast
           url="/systems/"
           label="Systems"
-          :data_1="indexSystemsConsoleCount.length"
+          :data_1="homeSystemsConsoleCount.length"
           data_1_label="Consoles"
-          :data_2="indexSystemsHandheldCount.length"
+          :data_2="homeSystemsHandheldCount.length"
           data_2_label="Handhelds"
-          :data_3="indexSystemsMiniCount.length"
+          :data_3="homeSystemsMiniCount.length"
           data_3_label="Mini/Classic"
-          home="true">{{ indexSystemsCount.length }}</mast>
-      </div>
-    </div>
-
+          home="true">{{ homeSystemsCount.length }}</mast>
+      </li>
+      <li class="stat mx-auto px-4 py-1 border-b border-gray-500 border-opacity-30 w-full sm:(max-w-md) lg:(mx-0 my-10)">
+        <mast
+          url="/controllers/"
+          label="Controllers"
+          :data_1="'###'"
+          data_1_label="Wireless"
+          :data_2="'###'"
+          data_2_label="USB"
+          :data_3="'###'"
+          data_3_label="Adapters"
+          home="true">{{ homeControllersCount.length }}</mast>
+      </li>
+    </ul>
     <heading>Recently Added</heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of indexGamesRecently"
+      <game v-for="game of homeGamesRecently"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"
@@ -42,9 +53,9 @@
         :posted="game.posted"
       />
     </ul>
-    <heading :subtext="indexGamesPending.length"><nuxt-link to="/games/pending/">Pending</nuxt-link></heading>
+    <heading :subtext="homeGamesPending.length"><nuxt-link to="/games/pending/">Pending</nuxt-link></heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of indexGamesPending"
+      <game v-for="game of homeGamesPending"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"
@@ -64,34 +75,36 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const indexGamesCount = await $content("games").only(['title']).fetch();
-    const indexGamesPhysicalCount = await $content("games").only(['title']).where({physical: true,}).fetch();
-    const indexGamesDigitalCount = await $content("games").only(['title']).where({digital: true,}).fetch();
-    const indexGamesPendingCount = await $content("games").only(['title']).where({pending: true,}).fetch();
-    const indexSystemsCount = await $content("systems").only(['title']).fetch();
-    const indexSystemsConsoleCount = await $content("systems").only(['title']).where({system_type: { $in: ['console', 'hybrid']}}).fetch();
-    const indexSystemsHandheldCount = await $content("systems").only(['title']).where({system_type: { $in: ['handheld', 'hybrid']}}).fetch();
-    const indexSystemsMiniCount = await $content("systems").only(['title']).where({system_type: { $eq: 'mini'}}).fetch();
-    const indexGamesPending = await $content("games")
+    const homeGamesCount = await $content("games").only(['title']).fetch();
+    const homeGamesPhysicalCount = await $content("games").only(['title']).where({physical: true,}).fetch();
+    const homeGamesDigitalCount = await $content("games").only(['title']).where({digital: true,}).fetch();
+    const homeGamesPendingCount = await $content("games").only(['title']).where({pending: true,}).fetch();
+    const homeSystemsCount = await $content("systems").only(['title']).fetch();
+    const homeSystemsConsoleCount = await $content("systems").only(['title']).where({system_type: { $in: ['console', 'hybrid']}}).fetch();
+    const homeSystemsHandheldCount = await $content("systems").only(['title']).where({system_type: { $in: ['handheld', 'hybrid']}}).fetch();
+    const homeSystemsMiniCount = await $content("systems").only(['title']).where({system_type: { $eq: 'mini'}}).fetch();
+    const homeControllersCount = await $content("controllers").only(['title']).fetch();
+    const homeGamesPending = await $content("games")
       .where({ pending: { $eq: true } })
       .limit(6)
       .fetch();
-    const indexGamesRecently = await $content("games")
+    const homeGamesRecently = await $content("games")
       .sortBy('posted', 'desc')
       .where({ pending: { $eq: false } })
       .limit(6)
       .fetch();
     return {
-      indexGamesCount,
-      indexGamesPhysicalCount,
-      indexGamesDigitalCount,
-      indexGamesPendingCount,
-      indexSystemsCount,
-      indexSystemsConsoleCount,
-      indexSystemsHandheldCount,
-      indexSystemsMiniCount,
-      indexGamesPending,
-      indexGamesRecently,
+      homeGamesCount,
+      homeGamesPhysicalCount,
+      homeGamesDigitalCount,
+      homeGamesPendingCount,
+      homeSystemsCount,
+      homeSystemsConsoleCount,
+      homeSystemsHandheldCount,
+      homeSystemsMiniCount,
+      homeControllersCount,
+      homeGamesPending,
+      homeGamesRecently,
     };
   },
   head() {

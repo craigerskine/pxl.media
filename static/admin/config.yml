@@ -39,11 +39,11 @@ collections:
       - {label: "Note", name: "note", required: false, widget: "string"}
       - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
       - {label: "Genre", name: "genre", widget: "relation", collection: "_genres", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
-      - {label: "Physical", name: "physical", widget: "boolean"}
-      - {label: "Digital", name: "digital", widget: "boolean"}
-      - {label: "Guide", name: "guide", widget: "boolean"}
-      - {label: "Pending", name: "pending", widget: "boolean"}
-      - {label: "Posted", name: "date", widget: "date"}
+      - {label: "Physical", name: "physical", required: false, widget: "boolean"}
+      - {label: "Digital", name: "digital", required: false, widget: "boolean"}
+      - {label: "Guide", name: "guide", required: false, widget: "boolean"}
+      - {label: "Pending", name: "pending", required: false, widget: "boolean"}
+      - {label: "Posted", name: "posted", widget: "date"}
   - name: "systems"
     label: "Systems"
     label_singular: "System"
@@ -65,5 +65,13 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Variation", name: "variation", required: false, widget: "list"}
       - {label: "Connection", name: "connection", required: false, widget: "list"}
-      - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
-      - {label: "Company", name: "company", widget: "select", options: ["8Bitdo", "Bandai", "HORI", "Junkfood Custom Arcades", "Logitech", "Polymega", "Retro Fighters", "Retro-Bit", "Sammy", "Wind Spirit", "Wish Technologies"]}
+      - {label: "Company", name: "company", widget: "relation", collection: "_controllers-company", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
+  - name: "_controllers-company"
+    label: "Company"
+    label_singular: "Company"
+    folder: "content/_controllers-company"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "text"}
