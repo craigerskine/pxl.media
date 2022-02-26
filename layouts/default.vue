@@ -101,7 +101,7 @@
           .sortBy('title', 'asc')
           .search(query)
           .fetch();
-        this.resultPlatforms = await this.$content("_platform").only('title', 'slug', 'logo').fetch();
+        this.resultPlatforms = await this.$content("_platform").only(['title', 'slug', 'logo']).fetch();
       }
     },
     head() {
