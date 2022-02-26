@@ -41,12 +41,12 @@
                 <b v-text="result.title" class="min-w-0 block truncate" :title="result.title"></b>
                 <small v-if="result.note" v-text="result.note" class="pb-2 italic inline-block leading-none opacity-80"></small>
               </div>
-              <!-- <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+              <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
                 <svg v-for="item of searchPlatform(result.platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[50px] h-auto fill-current">
                   <title>{{ item.title }}</title>
                   <g v-html="item.logo"></g>
                 </svg>
-              </nuxt-link> -->
+              </nuxt-link>
             </li>
           </ul>
         </transition>
@@ -79,19 +79,16 @@
       return {
         query: '',
         searchResults: [],
-        //resultPlatforms: [],
+        resultPlatforms: [],
       }
     },
     methods: {
-      // searchPlatform: function(platform) {
-      //   return this.resultPlatforms.filter((item) => item.slug === platform)
-      // },
+      searchPlatform: function(platform) {
+        return this.resultPlatforms.filter((item) => item.slug === platform)
+      },
       searchReset: function() {
         this.query = ''
       },
-    },
-    async fetch() {
-      //this.resultPlatforms = await this.$content("_platform").fetch();
     },
     watch: {
       async query(query) {
@@ -104,6 +101,7 @@
           .sortBy('title', 'asc')
           .search(query)
           .fetch();
+        this.resultPlatforms = await this.$content("_platform").only('title', 'slug', 'logo').fetch();
       }
     },
     head() {
