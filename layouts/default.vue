@@ -36,10 +36,10 @@
               <b v-text="searchResults.length +' Games'" class="px-4 uppercase flex-none"></b>
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
             </li>
-            <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-2 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
+            <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-3 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
               <div class="min-w-0 flex-1">
-                <b v-text="result.title" class="min-w-0 block truncate" :title="result.title"></b>
-                <small v-if="result.note" v-text="result.note" class="pb-2 italic inline-block leading-none opacity-80"></small>
+                <b v-text="result.title" class="min-w-0 leading-none block truncate" :title="result.title"></b>
+                <small v-if="result.note" v-text="result.note" class="pt-1 italic leading-none block opacity-80"></small>
               </div>
               <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
                 <svg v-for="item of searchPlatform(result.platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[50px] h-auto fill-current">

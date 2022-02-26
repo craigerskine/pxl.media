@@ -1,6 +1,4 @@
 ---
-id: 03605240-9f70-4cba-8f50-50cf26c05674
-blueprint: games
 title: Shatter
 platform: steam
 genre:
@@ -9,6 +7,5 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2000-01-01'
-slug: shatter
+posted: 2000-01-01
 ---

@@ -2,12 +2,11 @@
 title: Elden Ring
 platform: xbox-series-x-s
 genre:
-  - rpg
   - action-adventure
+  - rpg
 physical: false
 digital: true
 guide: false
 pending: false
-posted: '2022-02-24'
-slug: elden-ring
+posted: 2022-02-24
 ---

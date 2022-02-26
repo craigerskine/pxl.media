@@ -1,6 +1,4 @@
 ---
-id: d2d904c0-bcea-414a-b821-906e7d5de4df
-blueprint: games
 title: 'Romancing SaGa 3'
 platform: switch
 genre:
@@ -9,6 +7,5 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2020-03-13'
-slug: romancing-saga-3
+posted: 2020-03-13
 ---

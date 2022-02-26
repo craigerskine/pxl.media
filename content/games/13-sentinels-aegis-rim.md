@@ -1,6 +1,4 @@
 ---
-id: cfcd7531-9b94-40f1-ac49-26682a459590
-blueprint: games
 title: '13 Sentinels: Aegis Rim'
 platform: playstation-4
 genre:
@@ -10,6 +8,5 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2020-09-23'
-slug: 13-sentinels-aegis-rim
+posted: 2020-09-23
 ---

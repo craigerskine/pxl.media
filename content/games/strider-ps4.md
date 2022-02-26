@@ -1,6 +1,4 @@
 ---
-id: 934f3362-d12f-4821-8b21-64041b2eb2ab
-blueprint: games
 title: 'Strider [PS4]'
 platform: playstation-4
 genre:
@@ -9,6 +7,5 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2016-09-04'
-slug: strider-ps4
+posted: 2016-09-04
 ---

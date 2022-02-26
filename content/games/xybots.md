@@ -1,6 +1,4 @@
 ---
-id: 4a7ef8ed-89e4-41b0-a2ae-bcd8543f1462
-blueprint: games
 title: Xybots
 platform: lynx
 genre:
@@ -9,6 +7,5 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2020-07-30'
-slug: xybots
+posted: 2020-07-30
 ---

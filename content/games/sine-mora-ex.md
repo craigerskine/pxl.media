@@ -1,6 +1,4 @@
 ---
-id: c70cce84-f411-4090-a946-5d1cfacd5696
-blueprint: games
 title: 'Sine Mora EX'
 platform: switch
 genre:
@@ -9,6 +7,5 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2017-10-18'
-slug: sine-mora-ex
+posted: 2017-10-18
 ---

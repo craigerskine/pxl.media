@@ -1,6 +1,5 @@
 ---
 title: 3DS
-slug: 3ds
 company: nintendo
 disc: false
 cartridge: true

@@ -1,6 +1,4 @@
 ---
-id: d746cd9a-15a7-4749-9e32-2663a4629e7f
-blueprint: games
 title: 'Half-Life Deathmatch: Source'
 platform: steam
 genre:
@@ -9,6 +7,5 @@ digital: true
 physical: false
 guide: false
 pending: false
-posted: '2000-01-01'
-slug: half-life-deathmatch-source
+posted: 2000-01-01
 ---

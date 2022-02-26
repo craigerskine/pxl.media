@@ -53,6 +53,10 @@ export default {
     fallback: true
   },
 
+  router: {
+    prefetchLinks: false
+  },
+
   content: {
     fullTextSearchFields: ['title', 'note', 'slug'],
     nestedProperties: ['genre.slug'],

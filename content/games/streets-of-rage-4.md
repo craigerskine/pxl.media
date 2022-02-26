@@ -1,6 +1,4 @@
 ---
-id: 49227962-a36e-4c6b-934e-ec6bdf97b3ee
-blueprint: games
 title: 'Streets of Rage 4'
 platform: switch
 genre:
@@ -10,6 +8,5 @@ digital: false
 physical: true
 guide: false
 pending: false
-posted: '2020-06-29'
-slug: streets-of-rage-4
+posted: 2020-06-29
 ---
