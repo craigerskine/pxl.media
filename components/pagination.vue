@@ -5,7 +5,7 @@
       <li v-else-if="prevPage === 1"><nuxt-link :to="pagePath" class="transition hover:(text-white) focus:(text-white)"><span class="sr-only">Previous</span> <i class="fal fa-fw fa-angle-left fa-2x"></i></nuxt-link></li>
       <li v-else class="pointer-events-none opacity-50"><i class="fal fa-fw fa-angle-left fa-2x"></i></li>
       <li class="flex flex-wrap items-center justify-center space-x-3"><b class="text-gray-300">{{ $route.params.page || 1 }}</b> <i class="opacity-50">/</i> <small class="text-xs">{{ totalPages }}</small></li>
-      <li v-if="currentPage !== totalPages"><nuxt-link :to="pagePath +'/page/'+ nextPage +'/'" class="transition hover:(text-white) focus:(text-white)"><span class="sr-only">Next</span> <i class="fal fa-fw fa-angle-right fa-2x"></i></nuxt-link></li>
+      <li v-if="currentPage !== totalPages"><nuxt-link :to="pagePath +'page/'+ nextPage +'/'" class="transition hover:(text-white) focus:(text-white)"><span class="sr-only">Next</span> <i class="fal fa-fw fa-angle-right fa-2x"></i></nuxt-link></li>
       <li v-else class="pointer-events-none opacity-50"><i class="fal fa-fw fa-angle-right fa-2x"></i></li>
     </ul>
   </nav>
