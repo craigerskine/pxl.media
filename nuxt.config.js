@@ -57,6 +57,14 @@ export default {
     prefetchLinks: false
   },
 
+  loading: {
+    height: '2px',
+    color: '#0EA5E9',
+    failedColor: '#EF4444',
+    throttle: 100,
+    continuous: true,
+  },
+
   content: {
     fullTextSearchFields: ['title', 'note', 'slug'],
     nestedProperties: ['genre.slug'],

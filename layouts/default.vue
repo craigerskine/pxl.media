@@ -5,7 +5,7 @@
         <nav>
           <ul class="nav-menu flex items-center">
             <li class="nav-home">
-              <nuxt-link to="/" aria-label="Home" class="p-4 block text-white opacity-30 transition hover:(opacity-100) focus:(opacity-100)" active-class="" exact-active-class="opacity-100">
+              <nuxt-link to="/" aria-label="Home" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="" exact-active-class="opacity-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current">
                   <title>pxl.media</title>
                   <g fill-rule="evenodd">
@@ -18,7 +18,7 @@
               </nuxt-link>
             </li>
             <li class="nav-item" v-for="i in 2">
-              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-50 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
+              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
                 <i :class="['fa-fw', i === 1 ? 'fad fa-layer-group' : 'fas fa-filter']" :title="i === 1 ? 'Platform' : 'Genre'"></i>
               </nuxt-link>
             </li>
@@ -27,10 +27,10 @@
         <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative">
           <label for="site-search" class="sr-only">Search</label>
           <input v-model="query" @blur="searchReset()" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
-          <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-30 transition"></i>
+          <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-40 transition"></i>
         </fieldset>
         <transition name="page">
-          <ul v-if="searchResults.length" class="px-3 pb-3 w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
+          <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
             <li class="py-3 px-4 bg(gray-800) flex items-center justify-center sticky top-0 z-20 shadow-xl">
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
               <b v-text="searchResults.length +' Games'" class="px-4 uppercase flex-none"></b>
@@ -38,7 +38,7 @@
             </li>
             <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-3 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
               <div class="min-w-0 flex-1">
-                <b v-text="result.title" class="min-w-0 leading-none block truncate" :title="result.title"></b>
+                <b v-text="result.title" class="min-w-0 text-gray-300 leading-none block truncate" :title="result.title"></b>
                 <small v-if="result.note" v-text="result.note" class="pt-1 italic leading-none block opacity-80"></small>
               </div>
               <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">

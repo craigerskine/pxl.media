@@ -1,6 +1,6 @@
 <template>
   <div>
-    <heading>Controllers</heading>
+    <heading :subtext="controllersIndex.length">Controllers</heading>
     <ul class="container mx-auto mb-12 px-4 md:(grid(& flow-row cols-2) gap-12)">
       <li v-for="(company, index) in ['8Bitdo', 'Bandai', 'HORI', 'Junkfood Custom Arcades', 'Logitech', 'Polymega', 'Retro-Bit', 'Retro Fighters', 'Sammy', 'Wind Spirit', 'Wish Technologies']" :class="['mb-12 flex(& col) md:(mb-0)', company === '8Bitdo' ? 'col-span-2' : '']">
         <figure class="py-5 border(b dashed gray-500 opacity-30) flex-none">

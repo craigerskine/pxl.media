@@ -1,6 +1,6 @@
 <template>
   <div>
-    <heading>Systems</heading>
+    <heading :subtext="systemIndex.length">Systems</heading>
     <ul class="container mx-auto mb-12 px-4 md:(grid(& flow-row cols-2) gap-12)">
       <li v-for="platform of systemPlatform" class="mb-12 flex(& col) md:(mb-0)">
         <nuxt-link :to="'/platform/'+ platform.slug +'/'" class="group py-5 border(b dashed gray-500 opacity-30) flex-none transition hover:(text-white) focus:(text-white)">
