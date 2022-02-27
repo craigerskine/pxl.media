@@ -25,7 +25,7 @@
         :posted="game.posted"
       />
     </ul>
-    <pagination v-if="platformTotalGames > 24" :pagePath="'/platform/'+ this.$route.params.slug" :pageTotal="platformTotalGames" />
+    <pagination v-if="platformTotalGames > 24" :pagePath="'/platform/'+ this.$route.params.slug +'/'" :pageTotal="platformTotalGames" />
   </div>
 </template>
 
