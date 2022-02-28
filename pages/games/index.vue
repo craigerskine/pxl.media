@@ -16,7 +16,7 @@
         :posted="game.posted"
       />
     </ul>
-    <pagination v-if="gamesAllTotal > 24" pagePath="/games/" :pageTotal="gamesAllTotal" />
+    <pagination v-if="gamesAllTotal > 24" paginateCss="pb-10" paginatePath="/games/" :paginateTotal="gamesAllTotal" />
   </div>
 </template>
 
