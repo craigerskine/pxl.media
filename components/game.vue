@@ -1,19 +1,16 @@
 <template>
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div :class="['box w-full flex flex-wrap relative shadow-xl', { 'ring-2 ring-red-500': pending }]">
-      <nuxt-link v-if="pending" to="/games/pending/" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute -top-1 -right-1 z-20" title="Pending: Pre-Ordered">
-        <i class="ring-2 ring-current absolute inset-0 z-10 animate-ping"></i>
-      </nuxt-link>
       <figure class="cover w-full h-16 bg-black bg-opacity-80 flex relative">
         <figcaption class="border-t border-white border-opacity-30 w-full bg-cover bg-center backdrop-filter backdrop-opacity-50" :style="'background-image: url(\'/assets/img/games/'+ slug +'.jpg\')'"></figcaption>
         <figure class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
-          <nuxt-link :to="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative z-20 transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+          <figcaption class="bg-gradient-to-l from-[#111] via-gray-900 to-transparent block absolute inset-0"></figcaption>
+          <nuxt-link :to="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
             <svg v-for="item of gamePlatform(platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
               <title>{{ item.title }}</title>
               <g v-html="item.logo"></g>
             </svg>
           </nuxt-link>
-          <figcaption class="bg-gradient-to-l from-[#111] via-gray-900 to-transparent block absolute inset-0 z-10"></figcaption>
         </figure>
       </figure>
       <div class="details w-full flex">
@@ -50,6 +47,9 @@
           </ul>
         </div>
       </div>
+      <nuxt-link v-if="pending" to="/games/pending/" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute -top-1 -right-1" title="Pending: Pre-Ordered">
+        <i class="ring-2 ring-current absolute inset-0 z-10 animate-ping"></i>
+      </nuxt-link>
     </div>
   </li>
 </template>
