@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="-ml-[50vw] -mr-[50vw] w-screen justify-center relative left-1/2 right-1/2 lg:(flex space-x-4)">
+    <ul class="-ml-[50vw] -mr-[50vw] w-screen justify-center relative left-1/2 right-1/2 lg:(flex space-x-8)">
       <li class="stat mx-auto px-4 py-1 border(b gray-500 opacity-30) w-full sm:(max-w-sm) lg:(mx-0 my-10)">
         <mast
           url="/games/"
