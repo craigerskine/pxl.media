@@ -49,20 +49,20 @@ export default {
     '@nuxt/content'
   ],
 
+  // allow custom error/404 on netlify
   generate: {
     fallback: true
   },
 
   router: {
-    prefetchLinks: false
+    //prefetchLinks: false
   },
 
   loading: {
     height: '2px',
     color: '#0EA5E9',
     failedColor: '#EF4444',
-    throttle: 100,
-    continuous: true,
+    continuous: true
   },
 
   content: {

@@ -4,6 +4,6 @@ platform: switch
 genre:
   - rpg
 physical: true
-pending: true
-posted: 2022-02-04
+pending: false
+posted: 2022-02-27
 ---
