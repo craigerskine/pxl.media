@@ -32,9 +32,9 @@
         <div v-if="searchResults.length" class="bg(black opacity-75) backdrop-blur-sm fixed inset-0 z-20"></div>
         <transition name="page">
           <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
-            <li class="py-3 px-4 bg(gray-800) flex items-center justify-center sticky top-0 z-20 shadow-xl">
+            <li class="py-1 px-4 bg(gray-800) flex items-center justify-center sticky top-0 z-20 shadow-xl">
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
-              <b v-text="searchResults.length +' Games'" class="px-4 uppercase flex-none"></b>
+              <b v-text="searchResults.length +' Games'" class="px-4 text-xs uppercase flex-none"></b>
               <i class="h-[2px] bg-current w-full opacity-20" aria-hidden="true"></i>
             </li>
             <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-3 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">

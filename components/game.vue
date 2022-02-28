@@ -2,17 +2,18 @@
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div :class="['box w-full flex flex-wrap relative shadow-xl', { 'ring-2 ring-red-500': pending }]">
       <figure class="cover w-full h-16 bg-black bg-opacity-80 flex relative">
-        <figcaption class="border-t border-white border-opacity-30 w-full bg-cover bg-center backdrop-filter backdrop-opacity-50" :style="'background-image: url(\'/assets/img/games/'+ slug +'.jpg\')'"></figcaption>
-        <figure class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
-          <figcaption class="bg-gradient-to-l from-[#111] via-gray-900 to-transparent block absolute inset-0"></figcaption>
+        <figcaption class="w-full bg(cover center) backdrop(filter opacity-50)" :style="'background-image: url(\'/assets/img/games/'+ slug +'.jpg\')'"></figcaption>
+        <figure v-for="item of gamePlatform(platform)" :key="item.slug" class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
+          <figcaption class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90"></figcaption>
           <nuxt-link :to="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
-            <svg v-for="item of gamePlatform(platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
               <title>{{ item.title }}</title>
               <g v-html="item.logo"></g>
             </svg>
           </nuxt-link>
         </figure>
       </figure>
+      <b class="border(1 gray-500 opacity-20) absolute top-0 inset-x-0"></b>
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between transition-all">
           <div class="mast mb-2">
