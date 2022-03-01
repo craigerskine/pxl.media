@@ -2,6 +2,6 @@
 title: 'Core Grafx Mini'
 platform: turbografx-16
 system_type: mini
-variation: ''
+variation: EU
 accessories: ''
 ---

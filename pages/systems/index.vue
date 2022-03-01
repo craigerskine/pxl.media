@@ -9,18 +9,20 @@
             <g v-html="platform.logo"></g>
           </svg>
         </nuxt-link>
-        <ul class="ml-5 py-5 pl-5 border(l dashed gray-500 opacity-30) flex(& 1 col) md:(ml-12 pl-12)">
+        <ul class="ml-5 border(l dashed gray-500 opacity-30) flex(& 1 col) md:(ml-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
-            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 flex(& wrap) items-center">
+            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 pl-5 border(b dashed gray-500 opacity-30) md:(pl-12)">
               <b>{{ system.title }}</b>
-              <div class="ml-auto opacity-75">
-                <small v-text="system.variation"></small>
-                <small v-text="system.accessories"></small>
-                <i v-if="system.system_type === 'mini'" class="fad fa-fw fa-compress-arrows-alt ml-1"></i>
+              <div class="flex justify-between opacity-75">
+                <small>
+                  <span v-text="system.variation"></span>
+                  <span v-text="system.accessories"></span>
+                </small>
+                <i v-if="system.system_type === 'mini'" class="fad fa-fw fa-compress-arrows-alt ml-1" title="Mini/Classic"></i>
               </div>
             </li>
           </template>
-          <li v-else><i class="fad fa-fw fa-frown fa-2x" title="No systems"></i></li>
+          <li v-else class="py-2 pl-5 border(b dashed gray-500 opacity-30) md:(pl-12)"><i class="fat fa-fw fa-ban" title="No systems"></i></li>
         </ul>
       </li>
     </ul>

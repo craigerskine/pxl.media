@@ -2,6 +2,6 @@
 title: DS
 platform: ds
 system_type: handheld
-variation: ''
+variation: Silver
 accessories: ''
 ---

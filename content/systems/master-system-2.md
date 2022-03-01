@@ -2,6 +2,6 @@
 title: 'Master System 2'
 platform: master-system
 system_type: console
-variation: ''
+variation: US
 accessories: ''
 ---

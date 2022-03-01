@@ -2,6 +2,6 @@
 title: 'Core Grafx 2'
 platform: turbografx-16
 system_type: console
-variation: ''
+variation: JP
 accessories: ''
 ---

@@ -2,6 +2,6 @@
 title: 'Mega Sg'
 platform: analogue
 system_type: console
-variation: EUR
+variation: EU
 accessories: ', Cartridge Adapter Set'
 ---

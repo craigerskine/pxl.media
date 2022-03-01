@@ -2,6 +2,6 @@
 title: 'Genesis 3'
 platform: genesis
 system_type: console
-variation: ''
+variation: US
 accessories: ''
 ---

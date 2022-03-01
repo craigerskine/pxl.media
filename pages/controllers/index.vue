@@ -20,9 +20,9 @@
           </svg>
           <figcaption class="sr-only">{{ company }}</figcaption>
         </figure>
-        <ul :class="['ml-5 py-5 pl-5 border(l dashed gray-500 opacity-30) flex(& 1 col) md:(ml-12 pl-12)', company === '8Bitdo' ? 'md:(grid(& flow-row cols-2) gap-x-12)' : '']">
+        <ul :class="['ml-5 border(l dashed gray-500 opacity-30) flex(& 1 col) md:(ml-12)', company === '8Bitdo' ? 'md:(grid(& flow-row cols-2) gap-x-12)' : '']">
           <template v-if="controllersIndexFilter(company).length">
-            <li v-for="controller of controllersIndexFilter(company)" class="py-2 border(b dashed gray-500 opacity-30) items-center">
+            <li v-for="controller of controllersIndexFilter(company)" class="py-2 pl-5 border(b dashed gray-500 opacity-30) md:(pl-12)">
               <b>{{ controller.title }}</b>
               <div class="flex justify-between opacity-75">
                 <small v-text="controller.variation"></small>

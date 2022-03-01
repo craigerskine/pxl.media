@@ -2,6 +2,6 @@
 title: 'Super Nintendo'
 platform: super-nintendo
 system_type: console
-variation: ''
+variation: US
 accessories: ''
 ---

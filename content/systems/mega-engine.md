@@ -2,6 +2,6 @@
 title: 'Mega Engine'
 platform: sega-cd
 system_type: console
-variation: ''
+variation: US
 accessories: ''
 ---

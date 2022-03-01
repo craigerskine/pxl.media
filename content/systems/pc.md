@@ -2,6 +2,6 @@
 title: PC
 platform: steam
 system_type: console
-variation: ''
+variation: ITX
 accessories: ''
 ---

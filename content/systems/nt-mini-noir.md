@@ -2,6 +2,6 @@
 title: 'Nt mini Noir'
 platform: analogue
 system_type: console
-variation: ''
+variation: Gray
 accessories: ''
 ---

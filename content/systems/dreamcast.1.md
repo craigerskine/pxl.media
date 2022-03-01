@@ -2,6 +2,6 @@
 title: Dreamcast
 platform: dreamcast
 system_type: console
-variation: ''
+variation: US
 accessories: '+ Keyboard'
 ---

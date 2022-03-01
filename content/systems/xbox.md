@@ -2,6 +2,6 @@
 title: Xbox
 platform: xbox
 system_type: console
-variation: ''
+variation: Black
 accessories: ''
 ---
