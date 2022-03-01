@@ -11,7 +11,7 @@
         </nuxt-link>
         <ul class="ml-5 border(l dashed gray-500 opacity-30) flex(& 1 col) md:(ml-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
-            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 pl-5 border(b dashed gray-500 opacity-30) md:(pl-12)">
+            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 pl-5 border(b dashed gray-500 opacity-30)">
               <b>{{ system.title }}</b>
               <div class="flex justify-between opacity-75">
                 <small>
