@@ -6,7 +6,7 @@ genre:
 note: 'Greatest Hits + PSN'
 digital: true
 physical: true
-guide: false
+guide: true
 pending: false
 posted: 2014-02-10
 ---
