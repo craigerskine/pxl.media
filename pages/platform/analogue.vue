@@ -23,7 +23,7 @@
   export default {
     async asyncData({ $content }) {
       const platformAnalogueMast = await $content("_platform").where({ slug: { $eq: 'analogue' } }).fetch();
-      const systemsAnaloguePage = await $content("systems").where({ platform: { $eq: 'analogue' } }).fetch();
+      const systemsAnaloguePage = await $content("systems").where({ platform: { $eq: 'analogue' } }).sortBy('title').fetch();
       return {
         platformAnalogueMast,
         systemsAnaloguePage,

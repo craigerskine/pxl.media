@@ -23,7 +23,7 @@
   export default {
     async asyncData({ $content }) {
       const platformOuyaMast = await $content("_platform").where({ slug: { $eq: 'ouya' } }).fetch();
-      const systemsOuyaPage = await $content("systems").where({ platform: { $eq: 'ouya' } }).fetch();
+      const systemsOuyaPage = await $content("systems").where({ platform: { $eq: 'ouya' } }).sortBy('title').fetch();
       return {
         platformOuyaMast,
         systemsOuyaPage,

@@ -1,4 +1,4 @@
 ---
 title: Platformer
-icon: running
+icon: person-running
 ---

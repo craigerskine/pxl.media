@@ -1,4 +1,4 @@
 ---
 title: Casual
-icon: gamepad-alt
+icon: game-board
 ---

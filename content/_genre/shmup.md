@@ -1,4 +1,4 @@
 ---
 title: Shmup
-icon: fighter-jet
+icon: jet-fighter
 ---

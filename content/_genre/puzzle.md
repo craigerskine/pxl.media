@@ -1,4 +1,4 @@
 ---
 title: Puzzle
-icon: puzzle-piece
+icon: puzzle
 ---

@@ -1,4 +1,4 @@
 ---
 title: Arcade
-icon: alien-monster
+icon: alien-8bit
 ---

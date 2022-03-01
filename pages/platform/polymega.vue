@@ -23,7 +23,7 @@
   export default {
     async asyncData({ $content }) {
       const platformPolymegaMast = await $content("_platform").where({ slug: { $eq: 'polymega' } }).fetch();
-      const systemsPolymegaPage = await $content("systems").where({ platform: { $eq: 'polymega' } }).fetch();
+      const systemsPolymegaPage = await $content("systems").where({ platform: { $eq: 'polymega' } }).sortBy('title').fetch();
       return {
         platformPolymegaMast,
         systemsPolymegaPage,

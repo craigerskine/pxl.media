@@ -22,7 +22,7 @@
 <script>
   export default {
     async asyncData({ $content }) {
-      const systemsMinisPage = await $content("systems").where({ system_type: { $eq: 'mini' } }).fetch();
+      const systemsMinisPage = await $content("systems").where({ system_type: { $eq: 'mini' } }).sortBy('title').fetch();
       return {
         systemsMinisPage,
       };
