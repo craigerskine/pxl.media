@@ -1,4 +1,4 @@
 ---
 title: Brawler
-icon: hand-fist
+icon: hand-back-fist
 ---
