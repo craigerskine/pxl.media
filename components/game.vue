@@ -38,7 +38,7 @@
             <li class="ml-auto">
               <ul class="icons flex space-x-2">
                 <li v-for="i in 3" v-if="(i === 1 && physical) || (i === 2 && digital) || (i === 3 && guide)" class="group flex items-center justify-center relative" tabindex="0">
-                  <i :class="['m-auto fa-fw', i === 1 ? 'fas fa-microchip' : (i === 2) ? 'far fa-qrcode' : 'far fa-map']"></i>
+                  <i :class="['fa-fw m-auto opacity-50', i === 1 ? 'fal fa-microchip' : (i === 2) ? 'fal fa-qrcode' : 'fal fa-map']"></i>
                   <b class="p-1 bg-black text-gray-400 text-xs whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] transform translate-y-1 -translate-x-1/2 transition-all group-hover:visible group-hover:opacity-100 group-hover:-translate-y-1 group-focus:visible group-focus:opacity-100 group-focus:-translate-y-1"
                     v-text="i === 1 ? 'Physical' : (i === 2) ? 'Digital' : 'Guide'"
                   ></b>

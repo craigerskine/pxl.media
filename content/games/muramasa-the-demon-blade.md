@@ -6,7 +6,7 @@ genre:
 note: 'x2, 1 Sealed'
 digital: false
 physical: true
-guide: false
+guide: true
 pending: false
 posted: 2014-02-10
 ---
