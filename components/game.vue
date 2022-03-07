@@ -13,7 +13,7 @@
           </nuxt-link>
         </figure>
       </figure>
-      <b class="border(1 gray-500 opacity-20) absolute top-0 inset-x-0"></b>
+      <b class="h-px bg-gradient-to-r from-white to-gray-500 opacity-25 absolute top-0 inset-x-0"></b>
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between transition-all">
           <div class="mast mb-2">
@@ -28,7 +28,7 @@
                 <li v-for="item in genre" :key="item.slug">
                   <nuxt-link v-for="g of gameGenre(item)" :key="g.slug" :to="'/genre/'+ item +'/'" class="group relative transition hover:text-white focus:text-white" :title="g.title">
                     <i :class="['fad fa-fw', 'fa-'+ g.icon]"></i>
-                    <b class="p-1 bg-black text-gray-400 text-xs whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] transform translate-y-1 -translate-x-1/2 transition-all group-hover:visible group-hover:opacity-100 group-hover:-translate-y-1 group-focus:visible group-focus:opacity-100 group-focus:-translate-y-1">
+                    <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
                       {{ g.title }}
                     </b>
                   </nuxt-link>
@@ -39,7 +39,7 @@
               <ul class="icons flex space-x-2">
                 <li v-for="i in 3" v-if="(i === 1 && physical) || (i === 2 && digital) || (i === 3 && guide)" class="group flex items-center justify-center relative" tabindex="0">
                   <i :class="['fa-fw m-auto opacity-50', i === 1 ? 'fal fa-microchip' : (i === 2) ? 'fal fa-qrcode' : 'fal fa-map']"></i>
-                  <b class="p-1 bg-black text-gray-400 text-xs whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] transform translate-y-1 -translate-x-1/2 transition-all group-hover:visible group-hover:opacity-100 group-hover:-translate-y-1 group-focus:visible group-focus:opacity-100 group-focus:-translate-y-1"
+                  <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)"
                     v-text="i === 1 ? 'Physical' : (i === 2) ? 'Digital' : 'Guide'"
                   ></b>
                 </li>
