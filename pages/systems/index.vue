@@ -9,16 +9,19 @@
             <g v-html="platform.logo"></g>
           </svg>
         </nuxt-link>
-        <ul class="ml-5 border(l dashed gray-500 opacity-30) flex(& 1 col) md:(ml-12)">
+        <ul class="ml-5 border(l dashed gray-500 opacity-30) flex(& col) md:(ml-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
-            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 pl-5 border(b dashed gray-500 opacity-30)">
-              <b>{{ system.title }}</b>
-              <div class="flex justify-between opacity-75">
-                <small>
-                  <span v-text="system.variation"></span>
-                  <span v-text="system.accessories"></span>
-                </small>
-                <i v-if="system.system_type === 'mini'" class="fad fa-fw fa-compress-arrows-alt ml-1" title="Mini/Classic"></i>
+            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 border(b dashed gray-500 opacity-30) flex items-center">
+              <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) bg(grid gray-900) flex-none flex rounded-full -translate-x-4"><i class="far fa-fw fa-computer-classic fa-lg m-auto opacity-30"></i></div>
+              <div class="flex-1">
+                <b>{{ system.title }}</b>
+                <div class="flex justify-between opacity-75">
+                  <small>
+                    <span v-text="system.variation"></span>
+                    <span v-text="system.accessories"></span>
+                  </small>
+                  <i v-if="system.system_type === 'mini'" class="fad fa-fw fa-compress-arrows-alt ml-1" title="Mini/Classic"></i>
+                </div>
               </div>
             </li>
           </template>
