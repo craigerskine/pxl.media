@@ -28,7 +28,7 @@
               <ul class="tags flex space-x-4">
                 <li v-for="item in genre" :key="item.slug">
                   <nuxt-link v-for="g of gameGenre(item)" :key="g.slug" :to="'/genre/'+ item +'/'" class="group relative transition hover:text-white focus:text-white" :title="g.title">
-                    <i :class="['fad fa-fw', 'fa-'+ g.icon]"></i>
+                    <i :class="['fal fa-fw', 'fa-'+ g.icon]"></i>
                     <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
                       {{ g.title }}
                     </b>

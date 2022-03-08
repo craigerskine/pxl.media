@@ -27,7 +27,7 @@
         <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative z-30">
           <label for="site-search" class="sr-only">Search</label>
           <input v-model="query" @blur="searchReset()" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
-          <i class="absolute right-0 z-0 far fa-fw fa-lg fa-search opacity-40 transition"></i>
+          <i class="absolute right-0 z-0 fal fa-fw fa-lg fa-search opacity-40 transition"></i>
         </fieldset>
         <div v-if="searchResults.length" class="bg(black opacity-75) backdrop-blur-sm fixed inset-0 z-20"></div>
         <transition name="page">

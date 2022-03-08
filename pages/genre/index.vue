@@ -6,7 +6,7 @@
         :key="genre.slug"
         :title="genre.title"
         :url="genre.slug +'/'"
-        :fg_ico="'text-5xl fad fa-fw fa-'+ genre.icon"
+        :fg_ico="'text-5xl fat fa-fw fa-'+ genre.icon"
         :subtext="genreGamesFilter(genre.slug).length +' <b class=\'font-normal uppercase\'>Games</b>'"
       />
     </ul>
