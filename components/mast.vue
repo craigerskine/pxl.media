@@ -17,8 +17,8 @@
       </b>
     </div>
     <ul class="ml-auto py-1 text(right xs) leading-tight font-bold uppercase">
-      <li v-for="i in 3" v-if="(i === 1 && data_1) || (i === 2 && data_2) || (i === 3 && data_3)" class="py-1">
-        <b class="block text-sm" v-text="i === 1 ? data_1 : (i === 2) ? data_2 : data_3"></b>
+      <li v-for="i in 3" v-if="(i === 1 && data_1) || (i === 2 && data_2) || (i === 3 && data_3)" class="py-2">
+        <b class="block text-sm leading-none" v-text="i === 1 ? data_1 : (i === 2) ? data_2 : data_3"></b>
         <small class="opacity-75" v-text="i === 1 ? data_1_label : (i === 2) ? data_2_label : data_3_label"></small>
       </li>
     </ul>
