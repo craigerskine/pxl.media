@@ -7,7 +7,7 @@
           <g v-html="logo"></g>
         </svg>
         <b class="text-gray-200 font-normal"><slot /></b>
-        <i v-if="ico" :class="['fat fa-fw text-5xl', 'fa-'+ ico]" :title="label"></i>
+        <i v-if="ico" :class="['faithun fa-fw text-5xl', 'fa-'+ ico]" :title="label"></i>
       </span>
       <b v-if="label" :class="[
         'py-1 tracking-normal uppercase opacity-75',

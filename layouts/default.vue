@@ -19,7 +19,7 @@
             </li>
             <li class="nav-item" v-for="i in 2">
               <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
-                <i :class="['fa-fw', i === 1 ? 'fad fa-layer-group' : 'fas fa-filter']"></i>
+                <i :class="['fa-fw', i === 1 ? 'fa-duotone fa-layer-group' : 'fa-duotone fa-bars-filter']"></i>
                 <span class="sr-only" v-text="i === 1 ? 'Platform' : 'Genre'"></span>
               </nuxt-link>
             </li>
@@ -27,14 +27,17 @@
         </nav>
         <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative z-30">
           <label for="site-search" class="sr-only">Search</label>
-          <input v-model="query" @blur="searchReset()" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
-          <i class="absolute right-0 z-0 fal fa-fw fa-lg fa-search opacity-40 transition"></i>
+          <input v-model="query" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
+          <i class="absolute right-0 z-0 fa-light fa-fw fa-lg fa-search opacity-40 transition"></i>
         </fieldset>
-        <div v-if="searchResults.length" class="bg(black opacity-75) backdrop-blur-sm fixed inset-0 z-20"></div>
+        <div v-if="searchResults.length" @click.prevent="searchClose()" class="bg(black opacity-75) backdrop-blur-sm fixed inset-0 z-20"></div>
         <transition name="page">
           <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
-            <li class="py-1 px-4 bg(gray-800) block text(xs right) uppercase sticky top-0 z-20 shadow-xl">
-              <b v-text="searchResults.length"></b> Games
+            <li class="bg(gray-800) text(xs) uppercase flex(& row-reverse) items-center sticky top-0 z-20 shadow-xl">
+              <button @click.prevent="searchClose()" aria-label="Close" class="ml-auto p-2 hover:(text-gray-200) focus:(text-gray-200 outline-none)">
+                <i class="fa-solid fa-fw fa-xmark"></i>
+              </button>
+              <p class="py-1 px-4"><b v-text="searchResults.length"></b> Games</p>
             </li>
             <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-3 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
               <div class="min-w-0 flex-1">
@@ -86,8 +89,8 @@
       searchPlatform: function(platform) {
         return this.resultPlatforms.filter((item) => item.slug === platform)
       },
-      searchReset: function() {
-        this.query = ''
+      searchClose: function() {
+        this.searchResults = [];
       },
     },
     watch: {

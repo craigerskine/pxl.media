@@ -23,7 +23,7 @@ twind.setup({
 twind.tw(() => ({
   '@global': {
     '.input-search:hover + i': { '@apply': 'opacity-100', },
-    '.input-search::-webkit-search-cancel-button': { '@apply': 'cursor-pointer appearance-none w-3 h-3 bg(close no-repeat center)', },
+    '.input-search::-webkit-search-cancel-button': { '@apply': 'hidden', },
     '.box': { 'background-color': 'rgba(255,255,255,.05)', },
     '.page-enter-active,.page-leave-active': { '@apply': 'transition', },
     '.page-enter,.page-leave-to': { '@apply': 'scale-[.98] opacity-0', },

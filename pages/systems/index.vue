@@ -12,20 +12,20 @@
         <ul class="ml-5 border(l dashed gray-500 opacity-30) flex(& col) md:(ml-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
             <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 border(b dashed gray-500 opacity-30) flex items-center">
-              <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) bg(grid gray-900) flex-none flex rounded-full -translate-x-4"><i class="far fa-fw fa-computer-classic fa-lg m-auto opacity-30"></i></div>
+              <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) bg(grid gray-900) flex-none flex rounded-full -translate-x-4"><i class="fa-regular fa-fw fa-computer-classic fa-lg m-auto opacity-30"></i></div>
               <div class="flex-1">
-                <b>{{ system.title }}</b>
+                <b class="text-gray-200">{{ system.title }}</b>
                 <div class="flex justify-between opacity-75">
                   <small>
                     <span v-text="system.variation"></span>
                     <span v-text="system.accessories"></span>
                   </small>
-                  <i v-if="system.system_type === 'mini'" class="fad fa-fw fa-compress-arrows-alt ml-1" title="Mini/Classic"></i>
+                  <i v-if="system.system_type === 'mini'" class="fa-light fa-fw fa-compress-arrows-alt ml-1" title="Mini/Classic"></i>
                 </div>
               </div>
             </li>
           </template>
-          <li v-else class="py-2 pl-5 border(b dashed gray-500 opacity-30) md:(pl-12)"><i class="fat fa-fw fa-ban" title="No systems"></i></li>
+          <li v-else class="py-2 pl-5 border(b dashed gray-500 opacity-30) md:(pl-12)"><i class="fa-thin fa-fw fa-ban" title="No systems"></i></li>
         </ul>
       </li>
     </ul>

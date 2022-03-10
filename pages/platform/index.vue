@@ -11,7 +11,7 @@
       />
       <category
         url="/platform/mini/"
-        fg_ico="fat fa-fw text-5xl fa-compress-arrows-alt"
+        fg_ico="fa-thin fa-fw text-5xl fa-compress-arrows-alt"
         :subtext="platformMinis.length +' <b class=\'font-normal uppercase\'>Systems</b>'"
       />
     </ul>

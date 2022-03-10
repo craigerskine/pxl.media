@@ -23,9 +23,9 @@
         <ul :class="['ml-5 border(l dashed gray-500 opacity-30) flex(& col) md:(ml-12)', company === '8Bitdo' ? 'md:(grid(& flow-row cols-2) gap-x-12)' : '']">
           <template v-if="controllersIndexFilter(company).length">
             <li v-for="controller of controllersIndexFilter(company)" class="py-2 border(b dashed gray-500 opacity-30) flex items-center">
-              <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) bg(grid gray-900) flex-none flex rounded-full -translate-x-4"><i class="far fa-fw fa-gamepad fa-lg m-auto opacity-30"></i></div>
+              <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) bg(grid gray-900) flex-none flex rounded-full -translate-x-4"><i class="fa-regular fa-fw fa-gamepad fa-lg m-auto opacity-30"></i></div>
               <div class="flex-1">
-                <b>{{ controller.title }}</b>
+                <b class="text-gray-200">{{ controller.title }}</b>
                 <div class="flex justify-between opacity-75">
                   <small v-text="controller.variation"></small>
                   <small v-text="controller.connection"></small>
@@ -33,7 +33,7 @@
               </div>
             </li>
           </template>
-          <li v-else><i class="fad fa-fw fa-frown fa-2x" title="No controllers"></i></li>
+          <li v-else><i class="fa-duotone fa-fw fa-frown fa-2x" title="No controllers"></i></li>
         </ul>
       </li>
     </ul>
