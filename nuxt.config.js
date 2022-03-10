@@ -46,7 +46,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    // '~/modules/twind',
   ],
 
   // allow custom error/404 on netlify
@@ -55,7 +56,7 @@ export default {
   },
 
   router: {
-    //prefetchLinks: false
+    // prefetchLinks: false
   },
 
   loading: {
@@ -69,6 +70,14 @@ export default {
     fullTextSearchFields: ['title', 'note', 'slug'],
     nestedProperties: ['genre.slug'],
   },
+
+  // twind: {
+  //   theme: {},
+  //   plugins: {},
+  //   variants: {},
+  //   darkMode: "class",
+  //   ssr: true
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

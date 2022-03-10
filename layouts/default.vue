@@ -73,6 +73,8 @@
 </template>
 
 <script>
+  //import 'twind/shim'
+  
   export default {
     data() {
       return {

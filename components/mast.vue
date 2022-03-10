@@ -6,7 +6,7 @@
           <title>{{ title }}</title>
           <g v-html="logo"></g>
         </svg>
-        <slot />
+        <b class="text-gray-200 font-normal"><slot /></b>
         <i v-if="ico" :class="['fat fa-fw text-5xl', 'fa-'+ ico]" :title="label"></i>
       </span>
       <b v-if="label" :class="[
@@ -18,7 +18,7 @@
     </div>
     <ul class="ml-auto py-1 text(right xs) leading-tight font-bold uppercase">
       <li v-for="i in 3" v-if="(i === 1 && data_1) || (i === 2 && data_2) || (i === 3 && data_3)" class="py-2">
-        <b class="block text-sm leading-none" v-text="i === 1 ? data_1 : (i === 2) ? data_2 : data_3"></b>
+        <b class="block text(sm gray-200) leading-none" v-text="i === 1 ? data_1 : (i === 2) ? data_2 : data_3"></b>
         <small class="opacity-75" v-text="i === 1 ? data_1_label : (i === 2) ? data_2_label : data_3_label"></small>
       </li>
     </ul>
