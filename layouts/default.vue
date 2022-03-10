@@ -19,7 +19,8 @@
             </li>
             <li class="nav-item" v-for="i in 2">
               <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
-                <i :class="['fa-fw', i === 1 ? 'fad fa-layer-group' : 'fas fa-filter']" :title="i === 1 ? 'Platform' : 'Genre'"></i>
+                <i :class="['fa-fw', i === 1 ? 'fad fa-layer-group' : 'fas fa-filter']"></i>
+                <span class="sr-only" v-text="i === 1 ? 'Platform' : 'Genre'"></span>
               </nuxt-link>
             </li>
           </ul>
@@ -73,11 +74,6 @@
 </template>
 
 <script>
-  import { setup } from 'twind/shim'
-  import { tw, theme, silent } from 'twind'
-  import { css, apply } from 'twind/css'
-  import * as colors from 'twind/colors'
-  
   export default {
     data() {
       return {
@@ -107,44 +103,6 @@
           .fetch();
         this.resultPlatforms = await this.$content("_platform").only(['title', 'slug', 'logo']).fetch();
       }
-    },
-    mounted() {
-      // twind
-      setup({
-        mode: "silent",
-        theme: {
-          screens: {
-            'sm': '640px',
-            'md': '768px',
-            'lg': '960px',
-          },
-          extend: {
-            colors: {
-              gray: colors.trueGray,
-              red: colors.red,
-              blue: colors.lightBlue,
-              purple: colors.purple,
-              yellow: colors.amber,
-              green: colors.green,
-            },
-            fontFamily: (theme) => ({ sans: 'Roboto,'+ theme('fontFamily.sans') }),
-          },
-        },
-        plugins: {
-          'backdrop-blur-sm': { 'backdrop-filter': 'blur(4px)' },
-          'bg-grid': { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 4\' width=\'4\' height=\'4\'><rect x=\'0\' y=\'0\' width=\'2\' height=\'2\' fill=\'rgba(5,5,5,.33)\'></rect></svg>")', },
-          'bg-close': { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 10 10\' width=\'10\' height=\'10\'><g fill=\'rgba(255,255,255,.66)\' fill-rule=\'evenodd\'><polygon points=\'8 0 10 2 7 5 10 8 8 10 5 7 2 10 0 8 3 5 0 2 2 0 5 3\'></polygon></g></svg>")', },
-        },
-      })
-      tw(() => ({
-        '@global': {
-          '.input-search:hover + i': { '@apply': 'opacity-100', },
-          '.input-search::-webkit-search-cancel-button': { '@apply': 'cursor-pointer appearance-none w-3 h-3 bg(close no-repeat center)', },
-          '.box': { 'background-color': 'rgba(255,255,255,.05)', },
-          '.page-enter-active,.page-leave-active': { '@apply': 'transition', },
-          '.page-enter,.page-leave-to': { '@apply': 'scale-[.98] opacity-0', },
-        }
-      }))
     },
     head() {
       return {
