@@ -13,8 +13,8 @@
           </nuxt-link>
         </figure>
       </figure>
-      <b class="h-px bg-gradient-to-r from-white to-gray-500 opacity-25 absolute top-0 inset-x-0"></b>
-      <b class="w-px h-16 bg-gradient-to-b from-white to-gray-500 opacity-25 absolute top-0 left-0"></b>
+      <b class="h-px bg-gradient-to-r from-white to-gray-500 opacity-25 absolute top-0 inset-x-0" aria-hidden="true"></b>
+      <b class="w-px h-16 bg-gradient-to-b from-white to-gray-500 opacity-25 absolute top-0 left-0" aria-hidden="true"></b>
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between transition-all">
           <div class="mast mb-2">

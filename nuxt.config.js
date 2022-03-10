@@ -11,7 +11,7 @@ export default {
       class: 'bg-gray-900'
     },
     bodyAttrs: {
-      class: 'text-gray-400 font-sans text-sm'
+      class: 'text(gray-400 sm) font-sans'
     },
     meta: [
       { charset: 'utf-8' },
@@ -47,7 +47,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    // '~/modules/twind',
   ],
 
   // allow custom error/404 on netlify
@@ -70,14 +69,6 @@ export default {
     fullTextSearchFields: ['title', 'note', 'slug'],
     nestedProperties: ['genre.slug'],
   },
-
-  // twind: {
-  //   theme: {},
-  //   plugins: {},
-  //   variants: {},
-  //   darkMode: "class",
-  //   ssr: true
-  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
