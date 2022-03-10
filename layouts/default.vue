@@ -90,6 +90,7 @@
         return this.resultPlatforms.filter((item) => item.slug === platform)
       },
       searchClose: function() {
+        this.query = '';
         this.searchResults = [];
       },
     },
