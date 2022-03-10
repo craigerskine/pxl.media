@@ -12,15 +12,15 @@
           <g v-html="fg_img"></g>
         </svg>
         <i v-if="fg_ico" :class="fg_ico"></i>
-        <b class="h-px bg-gradient-to-r from-white to-transparent opacity-20 absolute top-0 inset-x-0" aria-hidden="true"></b>
-        <b class="w-px bg-gradient-to-b from-white to-transparent opacity-20 absolute inset-y-0 left-0" aria-hidden="true"></b>
-        <i v-if="!bg_img" class="h-0 bg-blue-400 absolute bottom-0 inset-x-0 transition-all group-hover:(h-[2px]) group-focus:(h-[2px])" aria-hidden="true"></i>
+        <b class="h-px bg-gradient-to-r from-white to-transparent opacity-20 absolute top-0 inset-x-0 transition group-hover:(opacity-40) group-focus:(opacity-40)" aria-hidden="true"></b>
+        <b class="w-px bg-gradient-to-b from-white to-transparent opacity-20 absolute inset-y-0 left-0 transition group-hover:(opacity-40) group-focus:(opacity-40)" aria-hidden="true"></b>
+        <i v-if="!bg_img" class="h-0 bg-blue-400 absolute bottom-px inset-x-px transition-all group-hover:(h-[2px]) group-focus:(h-[2px])" aria-hidden="true"></i>
       </div>
       <div class="meta pt-1 flex items-center">
-        <p class="name text(white base) font-bold block truncate" :aria-hidden="title === '' ? 'true' : 'false'">
+        <p class="name text(white base) font-bold leading-none block truncate" :aria-hidden="title ? 'false' : 'true'">
           {{ title }}&nbsp;
         </p>
-        <div v-if="subtext" class="ml-auto">
+        <div v-if="subtext" class="ml-auto leading-none">
           <small class="ml-auto font-bold opacity-80" v-html="subtext"></small>
         </div>
       </div>

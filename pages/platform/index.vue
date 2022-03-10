@@ -7,7 +7,7 @@
         :svg_title="platform.title"
         :url="'/platform/'+ platform.slug +'/'"
         :fg_img="platform.logo"
-        :subtext="platformGamesFilter(platform.slug).length +' <b class=\'font-normal uppercase\'>Games</b> '+ platformSystemsFilter(platform.slug).length +' <b class=\'font-normal uppercase\'>Systems</b>'"
+        :subtext="platformGamesFilter(platform.slug).length +' <b class=\'font-normal uppercase\'>Games</b> <i class=\'fa-solid fa-fw fa-slash-forward text-[8px] inline-block opacity-50\' aria-hidden=\'true\'></i> '+ platformSystemsFilter(platform.slug).length +' <b class=\'font-normal uppercase\'>Systems</b>'"
       />
       <category
         url="/platform/mini/"
