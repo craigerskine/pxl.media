@@ -1,12 +1,12 @@
 <template>
-  <nuxt-link :to="url || '#'" :class="['container mx-auto px-4 flex items-center', url ? '' : 'pointer-events-none']">
+  <nuxt-link :to="url || '#'" :class="['group container mx-auto px-4 flex items-center relative', url ? '' : 'pointer-events-none']">
     <div :class="['py-1 pr-4 text-7xl leading-none tracking-tight flex-1', { 'flex items-center space-x-5': ico}]">
       <span class="flex items-center">
         <svg v-if="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-16 fill-current">
           <title>{{ title }}</title>
           <g v-html="logo"></g>
         </svg>
-        <b class="text-gray-200 font-normal"><slot /></b>
+        <b class="text-gray-200 font-normal transition group-hover:(text-white) group-focus:(text-white)"><slot /></b>
         <i v-if="ico" :class="['fa-thin fa-fw text-5xl', 'fa-'+ ico]" :title="label"></i>
       </span>
       <b v-if="label" :class="[
@@ -22,6 +22,7 @@
         <small class="opacity-75" v-text="i === 1 ? data_1_label : (i === 2) ? data_2_label : data_3_label"></small>
       </li>
     </ul>
+    <b v-if="hr" class="h-px bg-current text-gray-500 opacity-30 absolute bottom-0 inset-x-0 transition-all group-hover:(h-[2px] text-blue-400 opacity-100) group-focus:(h-[2px] text-blue-400 opacity-100)" aria-hidden="true"></b>
   </nuxt-link>
 </template>
 
@@ -40,6 +41,7 @@
       'data_2_label',
       'data_3',
       'data_3_label',
+      'hr',
       'home',
     ]
   }

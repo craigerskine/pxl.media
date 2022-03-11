@@ -27,10 +27,10 @@
         </nav>
         <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative z-30">
           <label for="site-search" class="sr-only">Search</label>
-          <input v-model="query" type="search" id="site-search" name="keywords" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
+          <input v-model="query" type="search" id="site-search" name="keywords" @keyup.esc="searchClose()" placeholder="Search..." class="input-search border(& transparent) p-2 w-8 text-sm bg-transparent text-transparent cursor-pointer outline-none relative appearance-none z-10 opacity-0 transition-all focus:(w-full bg-gray-700 text-white opacity-100)" title="Search" autocomplete="off" />
           <i class="absolute right-0 z-0 fa-light fa-fw fa-lg fa-search opacity-40 transition"></i>
         </fieldset>
-        <div v-if="searchResults.length" @click.prevent="searchClose()" class="bg(black opacity-75) backdrop-blur-sm fixed inset-0 z-20"></div>
+        <div v-if="searchResults.length" @click.prevent="searchClose()" class="bg(gray-900 opacity-60) backdrop-blur-sm fixed inset-0 z-20"></div>
         <transition name="page">
           <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
             <li class="bg(gray-800) text(xs) uppercase flex(& row-reverse) items-center sticky top-0 z-20 shadow-xl">
