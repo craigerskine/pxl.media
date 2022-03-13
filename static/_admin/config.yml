@@ -14,8 +14,8 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Note", name: "note", required: false, widget: "string"}
-      - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"], options_length: 100}
-      - {label: "Genre", name: "genre", widget: "relation", collection: "_genres", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true, options_length: 100}
+      - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"]}
+      - {label: "Genre", name: "genre", widget: "relation", collection: "_genres", value_field: "slug", display_fields: ["title"], search_fields: ["title"], multiple: true}
       - {label: "Physical", name: "physical", required: false, default: false, widget: "boolean"}
       - {label: "Digital", name: "digital", required: false, default: false, widget: "boolean"}
       - {label: "Guide", name: "guide", required: false, default: false, widget: "boolean"}
