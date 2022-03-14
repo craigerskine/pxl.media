@@ -51,6 +51,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Company", name: "company", widget: "string"}
       - {label: "Logo", name: "logo", widget: "text"}
       - {label: "Disc", name: "disc", widget: "boolean"}
@@ -65,4 +66,5 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Icon", name: "icon", widget: "string"}
