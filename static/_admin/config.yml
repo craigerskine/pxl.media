@@ -53,9 +53,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']}
       - {label: "Company", name: "company", widget: "string"}
-      - {label: "Logo", name: "logo", widget: "code", default_language: 'svg', output_code_only: true}
-      - {label: "Disc", name: "disc", widget: "boolean"}
-      - {label: "Cartridge", name: "cartridge", widget: "boolean"}
+      - {label: "Logo", name: "logo", required: false, widget: "code", default_language: 'svg', output_code_only: true}
+      - {label: "Disc", name: "disc", required: false, widget: "boolean"}
+      - {label: "Cartridge", name: "cartridge", required: false, widget: "boolean"}
       - {label: "Color", name: "color", required: false, widget: "string"}
       - {label: "Order", name: "order", required: false, widget: "number"}
   - name: "_genres"
