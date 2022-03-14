@@ -2,7 +2,7 @@
 
 html { font-size: 16px; font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; }
 body { line-height: 1.5; }
-h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,table,hr { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,table,pre,hr { margin-top: 1.5rem; margin-bottom: 1.5rem; }
 h1,h2,h3,h4,h5,h6 { font-weight: 900; }
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2.25rem; }
@@ -15,6 +15,7 @@ blockquote { margin-left: 1.5rem; border-left: 2px solid currentColor; padding: 
 blockquote p:first-child { margin-top: 0; }
 blockquote p:last-child { margin-bottom: 0; }
 img,svg { max-width: 100%; height: auto; vertical-align: middle; }
+pre { padding: .5rem; font-family: 'JetBrains Mono', 'Courier New', Courier, monospace; background: #263238; color: #C3E88D; }
 
 /* scaled fonts */
 @media screen and (min-width: 320px) { html { font-size: calc(16px + 6 * ((100vw - 320px) / 680)); } }
