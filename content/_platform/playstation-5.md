@@ -1,5 +1,6 @@
 ---
 title: 'PlayStation 5'
+slug: playstation-5
 shortname: PS5
 company: sony
 disc: true
