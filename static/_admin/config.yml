@@ -51,7 +51,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']}
       - {label: "Company", name: "company", widget: "string"}
       - {label: "Logo", name: "logo", widget: "code", default_language: 'svg', output_code_only: true}
       - {label: "Disc", name: "disc", widget: "boolean"}
@@ -66,5 +66,5 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']}
       - {label: "Icon", name: "icon", widget: "string"}
