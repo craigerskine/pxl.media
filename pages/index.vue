@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ul class="-ml-[50vw] -mr-[50vw] w-screen justify-center relative left-1/2 right-1/2 lg:(flex space-x-8)">
+    <!--
+      screen width regardless of parent container width
+      -ml-[50vw] -mr-[50vw] w-screen relative left-1/2 right-1/2
+    -->
+    <ul class="lg:(flex justify-center space-x-8)">
       <li class="stat mx-auto px-4 py-1 w-full sm:(max-w-sm) lg:(mx-0 my-10)">
         <mast
           url="/games/"
