@@ -1,11 +1,11 @@
 ---
-title: 'Stranger of Paradise Final Fantasy Origin [Xbox X]'
+title: Stranger of Paradise Final Fantasy Origin [Xbox X]
 platform: xbox-series-x-s
 genre:
   - rpg
-digital: false
 physical: true
+digital: false
 guide: false
 pending: true
-posted: 2022-06-06
+posted: 2022-03-21
 ---
