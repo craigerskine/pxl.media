@@ -3,5 +3,5 @@ title: 'Xbox Series X'
 platform: xbox-series-x-s
 system_type: console
 variation: Dark
-accessories: ''
+accessories: ', 1TB Card'
 ---

@@ -9,10 +9,16 @@
             <g v-html="platform.logo"></g>
           </svg>
         </nuxt-link>
-        <ul class="ml-5 border(l dashed gray-500 opacity-30) flex(& col) md:(ml-12)">
+        <ul class="ml-5 flex(& col) md:(ml-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
-            <li v-for="system of systemIndexFilter(platform.slug)" class="py-2 border(b dashed gray-500 opacity-30) flex items-center">
-              <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) bg(grid gray-900) flex-none flex rounded-full -translate-x-4"><i class="fa-regular fa-fw fa-computer-classic fa-lg m-auto opacity-30"></i></div>
+            <li v-for="system of systemIndexFilter(platform.slug)" class="border(b dashed gray-500 opacity-30) flex items-center">
+              <div class="flex(& none col) justify-center">
+                <b class="h-4 border(l dashed gray-500 opacity-30)"></b>
+                <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) flex-none flex rounded-full -translate-x-4">
+                  <i class="fa-regular fa-fw fa-computer-classic fa-lg m-auto opacity-50"></i>
+                </div>
+                <b class="h-4 border(l dashed gray-500 opacity-30)"></b>
+              </div>
               <div class="flex-1">
                 <b class="text-gray-200">{{ system.title }}</b>
                 <div class="flex justify-between opacity-75">
