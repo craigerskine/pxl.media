@@ -5,7 +5,7 @@ platform: switch
 genre:
   - rpg
 physical: true
-digital: false
+digital: true
 guide: false
 pending: false
 posted: 2022-03-28
