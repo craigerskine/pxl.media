@@ -4,8 +4,8 @@
       screen width regardless of parent container width
       -ml-[50vw] -mr-[50vw] w-screen relative left-1/2 right-1/2
     -->
-    <ul class="lg:(flex justify-center)">
-      <li class="stat mx-auto px-4 py-1 w-full sm:(max-w-sm) lg:(mx-0 my-10)">
+    <ul class="lg:(flex justify-center space-x-8)">
+      <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
         <mast
           url="/games/"
           label="Games"
@@ -18,7 +18,7 @@
           hr="true"
           home="true">{{ homeGamesCount.length }}</mast>
       </li>
-      <li class="stat mx-auto px-4 py-1 w-full sm:(max-w-sm) lg:(mx-0 my-10)">
+      <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
         <mast
           url="/systems/"
           label="Systems"
@@ -31,7 +31,7 @@
           hr="true"
           home="true">{{ homeSystemsCount.length }}</mast>
       </li>
-      <li class="stat mx-auto px-4 py-1 w-full sm:(max-w-sm) lg:(mx-0 my-10)">
+      <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
         <mast
           url="/controllers/"
           label="Controllers"
