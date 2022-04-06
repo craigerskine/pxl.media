@@ -32,26 +32,24 @@
         </fieldset>
         <div v-if="searchResults.length" @click.prevent="searchClose()" class="bg(gray-900 opacity-60) backdrop-blur-sm fixed inset-0 z-20"></div>
         <transition name="page">
-          <ul v-if="searchResults.length" class="w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4 w-1/2)">
-            <li class="bg(gray-800) text(xs) uppercase flex(& row-reverse) items-center sticky top-0 z-20 shadow-xl">
-              <button @click.prevent="searchClose()" aria-label="Close" class="ml-auto p-2 hover:(text-gray-200) focus:(text-gray-200 outline-none)">
-                <i class="fa-solid fa-fw fa-xmark"></i>
-              </button>
-              <p class="py-1 px-4"><b v-text="searchResults.length"></b> Games</p>
-            </li>
-            <li v-for="(result, index) in searchResults" :key="result.slug" :class="['py-3 px-4 leading-loose flex items-center space-x-4', index % 2 === 0 ? 'border(t white opacity-5) bg-white bg-opacity-5' : '']">
-              <div class="min-w-0 flex-1">
-                <b v-text="result.title" class="min-w-0 text-gray-300 leading-none block truncate" :title="result.title"></b>
-                <small v-if="result.note" v-text="result.note" class="pt-1 italic leading-none block opacity-80"></small>
-              </div>
-              <nuxt-link :to="'/platform/'+ result.platform +'/'" class="ml-auto text(gray-200 opacity-50) flex-none transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
-                <svg v-for="item of searchPlatform(result.platform)" :key="item.slug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[50px] h-auto fill-current">
-                  <title>{{ item.title }}</title>
-                  <g v-html="item.logo"></g>
-                </svg>
-              </nuxt-link>
-            </li>
-          </ul>
+          <div v-if="searchResults.length" class="max-w-[40rem] max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4)">
+            <heading :subtext="searchResults.length">Games</heading>
+            <ul class="list-game pb-4 flex(& wrap)">
+              <game v-for="(result, index) in searchResults"
+                :key="result.slug"
+                :title="result.title"
+                :slug="result.slug"
+                :note="result.note"
+                :platform="result.platform"
+                :genre="result.genre"
+                :physical="result.physical"
+                :digital="result.digital"
+                :guide="result.guide"
+                :pending="result.pending"
+                :posted="result.posted"
+              />
+            </ul>
+          </div>
         </transition>
       </div>
     </header>
@@ -86,7 +84,6 @@
       return {
         query: '',
         searchResults: [],
-        resultPlatforms: [],
       }
     },
     methods: {
@@ -105,11 +102,9 @@
           return
         }
         this.searchResults = await this.$content('games')
-          .only(['title', 'slug', 'platform', 'note'])
           .sortBy('title', 'asc')
           .search(query)
           .fetch();
-        this.resultPlatforms = await this.$content("_platform").only(['title', 'slug', 'logo']).fetch();
       }
     },
     head() {
