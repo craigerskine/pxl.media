@@ -32,9 +32,9 @@
         </fieldset>
         <div v-if="searchResults.length" @click.prevent="searchClose()" class="bg(gray-900 opacity-60) backdrop-blur-sm fixed inset-0 z-20"></div>
         <transition name="page">
-          <div v-if="searchResults.length" class="max-w-[40rem] max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4)">
+          <div v-if="searchResults.length" class="w-[40rem] max-w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4)">
             <heading :subtext="searchResults.length">Games</heading>
-            <ul class="list-game pb-4 flex(& wrap)">
+            <ul class="list-game flex(& wrap)">
               <game v-for="(result, index) in searchResults"
                 :key="result.slug"
                 :title="result.title"
@@ -104,6 +104,7 @@
         this.searchResults = await this.$content('games')
           .sortBy('title', 'asc')
           .search(query)
+          .limit(96)
           .fetch();
       }
     },
