@@ -95,3 +95,5 @@ sw.*
 # design
 /_archive
 /_design
+
+package-lock.json
