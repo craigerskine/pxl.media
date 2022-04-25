@@ -17,10 +17,10 @@
                 </svg>
               </nuxt-link>
             </li>
-            <li class="nav-item" v-for="i in 2">
-              <nuxt-link :to="i === 1 ? '/platform/' : '/genre/'" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
-                <i :class="['fa-fw', i === 1 ? 'fa-duotone fa-layer-group' : 'fa-duotone fa-bars-filter']"></i>
-                <span class="sr-only" v-text="i === 1 ? 'Platform' : 'Genre'"></span>
+            <li class="nav-item" v-for="i in ['platform', 'genre']">
+              <nuxt-link :to="'/'+ i +'/'" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
+                <i :class="['fa-fw', i === 'platform' ? 'fa-duotone fa-layer-group' : 'fa-solid fa-hashtag']"></i>
+                <span class="sr-only" v-text="i === 'platform' ? 'Platform' : 'Genre'"></span>
               </nuxt-link>
             </li>
           </ul>
