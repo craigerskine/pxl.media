@@ -5,7 +5,7 @@
         <nav>
           <ul class="nav-menu flex items-center">
             <li class="nav-home">
-              <nuxt-link to="/" aria-label="Home" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="" exact-active-class="opacity-100">
+              <nuxt-link to="/" aria-label="Home" class="p-4 block text-white opacity-40 transition hover:(opacity-100)" active-class="" exact-active-class="opacity-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current">
                   <title>pxl.media</title>
                   <g fill-rule="evenodd">
@@ -18,9 +18,12 @@
               </nuxt-link>
             </li>
             <li class="nav-item" v-for="i in ['platform', 'genre']">
-              <nuxt-link :to="'/'+ i +'/'" class="p-4 block text-white opacity-40 transition hover:(opacity-100) focus:(opacity-100)" active-class="opacity-100" exact-active-class="">
+              <nuxt-link :to="'/'+ i +'/'" class="group p-4 block text-white relative opacity-40 transition hover:(opacity-100)" active-class="active opacity-100" exact-active-class="">
                 <i :class="['fa-fw', i === 'platform' ? 'fa-duotone fa-layer-group' : 'fa-solid fa-hashtag']"></i>
                 <span class="sr-only" v-text="i === 'platform' ? 'Platform' : 'Genre'"></span>
+                <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1">
+                  <b class="w-0 bg-current opacity-0 transition-all group-hover:(w-full opacity-100)"></b>
+                </b>
               </nuxt-link>
             </li>
           </ul>
@@ -60,13 +63,13 @@
     </main>
     <footer class="mt-auto">
       <p class="foot-info m-0 pt-4 pb-8 px-4 font-bold text-center text-xs md:text-sm">
-        &copy;{{new Date().getFullYear()}} <a href="https://qrayg.com/" class="mx-2 text-blue-100 hover:(text-blue-500) focus:(text-blue-500) transition">qrayg</a>
+        &copy;{{new Date().getFullYear()}} <a href="https://qrayg.com/" class="mx-2 text-blue-100 hover:(text-blue-500) transition">qrayg</a>
         - Made with
         <svg xmlns="http://www.w3.org/2000/svg" class="mx-2 text-red-500 inline-block" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="footer-heart"><title id="footer-heart">Love</title><polygon class="fill-current" fill-rule="evenodd" points="8 6 12 2 16 6 8 14 0 6 4 2" /></svg>
         using
-        <a href="https://code.visualstudio.com/" class="mx-2 text-blue-100 transition hover:(text-blue-500) focus:(text-blue-500)">Code</a>
+        <a href="https://code.visualstudio.com/" class="mx-2 text-blue-100 transition hover:(text-blue-500)">Code</a>
         +
-        <a href="https://nuxtjs.org/" class="mx-2 text-blue-100 transition hover:(text-blue-500) focus:(text-blue-500)">Nuxt</a>
+        <a href="https://nuxtjs.org/" class="mx-2 text-blue-100 transition hover:(text-blue-500)">Nuxt</a>
         and is powered by a responsive layout.
       </p>
     </footer>
@@ -139,6 +142,7 @@
     })
     tw(() => ({
       '@global': {
+        '.nav-menu .active b > b': { '@apply': 'w-full opacity-100'},
         '.input-search:hover + i': { '@apply': 'opacity-100', },
         '.input-search::-webkit-search-cancel-button': { '@apply': 'hidden', },
         '.box': { 'background-color': 'rgba(255,255,255,.05)', },
