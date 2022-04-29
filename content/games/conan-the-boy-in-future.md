@@ -1,6 +1,6 @@
 ---
 title: Conan, The Boy in Future
-note: MagicEngine contest
+note: Mirai Shonen, MagicEngine contest
 platform: turbografx-cd
 genre:
   - action-adventure
