@@ -1,6 +1,5 @@
 ---
 title: Max Payne [GBA]
-note: ""
 platform: game-boy-advance
 genre:
   - action-adventure
