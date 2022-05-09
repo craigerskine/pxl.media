@@ -6,6 +6,6 @@ genre:
 physical: true
 digital: false
 guide: false
-pending: true
-posted: 2022-05-20
+pending: false
+posted: 2022-05-08
 ---
