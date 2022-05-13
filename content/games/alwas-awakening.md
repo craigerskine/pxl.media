@@ -1,12 +1,12 @@
 ---
-title: 'Alwa''s Awakening'
+title: Alwa's Awakening
+note: Castlemania Games
 platform: nintendo-entertainment-system
 genre:
   - action-adventure
-note: 'Castlemania Games'
-digital: false
 physical: true
+digital: false
 guide: false
-pending: true
-posted: 2022-03-31
+pending: false
+posted: 2022-05-13
 ---
