@@ -3,5 +3,5 @@ title: Switch
 platform: switch
 system_type: hybrid
 variation: Grey
-accessories: ''
+accessories: '+ Boxy Pixel Metal JoyCons'
 ---

@@ -2,6 +2,6 @@
 title: Nomad
 platform: genesis
 system_type: hybrid
-variation: 'Modded Screen'
+variation: 'LCD mod'
 accessories: ''
 ---
