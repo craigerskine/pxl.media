@@ -11,7 +11,7 @@
         </nuxt-link>
         <ul class="ml-5 flex(& col) md:(ml-12)">
           <template v-if="systemIndexFilter(platform.slug).length">
-            <li v-for="system of systemIndexFilter(platform.slug)" class="border(b dashed gray-500 opacity-30) flex items-center">
+            <li v-for="system of systemIndexFilter(platform.slug)" class="border(b dashed gray-500 opacity-30) flex items-center relative">
               <div class="flex(& none col) justify-center">
                 <b class="h-4 border(l dashed gray-500 opacity-30)"></b>
                 <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) flex-none flex rounded-full -translate-x-4">
@@ -19,14 +19,19 @@
                 </div>
                 <b class="h-4 border(l dashed gray-500 opacity-30)"></b>
               </div>
-              <div class="flex-1">
+              <div class="pl-2 flex-1">
                 <b class="text-gray-200">{{ system.title }}</b>
-                <div class="flex justify-between opacity-75">
-                  <small>
+                <div class="flex justify-between">
+                  <small class="opacity-75">
                     <span v-text="system.variation"></span>
                     <span v-text="system.accessories"></span>
                   </small>
-                  <i v-if="system.system_type === 'mini'" class="fa-light fa-fw fa-compress-arrows-alt ml-1" title="Mini/Classic"></i>
+                  <a v-if="system.system_type === 'mini'" @click.prevent href="#" class="group text-yellow-400 absolute bottom-3 left-2">
+                    <i class="fa-light fa-fw fa-compress-arrows-alt"></i>
+                    <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-0 rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                      Mini/Classic
+                    </b>
+                  </a>
                 </div>
               </div>
             </li>
