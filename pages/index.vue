@@ -16,7 +16,7 @@
           :data_3="homeGamesPendingCount.length"
           data_3_label="Pending"
           hr="true"
-          home="true">{{ homeGamesCount.length.toLocaleString("en-US") }}</mast>
+          home="true">{{ homeGamesCount.length.toLocaleString() }}</mast>
       </li>
       <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
         <mast
@@ -29,7 +29,7 @@
           :data_3="homeSystemsMiniCount.length"
           data_3_label="Mini/Classic"
           hr="true"
-          home="true">{{ homeSystemsCount.length.toLocaleString("en-US") }}</mast>
+          home="true">{{ homeSystemsCount.length.toLocaleString() }}</mast>
       </li>
       <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
         <mast
@@ -42,7 +42,7 @@
           :data_3="homeControllersAdaptersCount.length"
           data_3_label="Adapters"
           hr="true"
-          home="true">{{ homeControllersCount.length.toLocaleString("en-US") }}</mast>
+          home="true">{{ homeControllersCount.length.toLocaleString() }}</mast>
       </li>
     </ul>
     <heading>Recently Added</heading>
