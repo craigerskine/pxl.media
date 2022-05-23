@@ -1,5 +1,5 @@
 ---
-title: "13 Sentinels: Aegis Rim [Switch]"
+title: '13 Sentinels: Aegis Rim [Switch]'
 platform: switch
 genre:
   - action-adventure
