@@ -5,7 +5,7 @@
         <figcaption class="w-full bg(cover center) backdrop(filter opacity-50)" :style="'background-image: url(\'/assets/img/games/'+ slug +'.jpg\')'"></figcaption>
         <figure v-for="item of gamePlatform(platform)" :key="item.slug" class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
           <figcaption class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90"></figcaption>
-          <nuxt-link :to="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative motion-safe:transition-all hover:(text-white opacity-100) focus:(text-white opacity-100)">
+          <nuxt-link :to="'/platform/'+ platform +'/'" class="text(gray-200 opacity-50) block relative motion-safe:transition-all hover:(text-white opacity-100)">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
               <title>{{ item.title }}</title>
               <g v-html="item.logo"></g>
@@ -13,8 +13,7 @@
           </nuxt-link>
         </figure>
       </figure>
-      <b class="h-px bg-white opacity-25 absolute top-0 inset-x-0" aria-hidden="true"></b>
-      <!-- <b class="w-px h-16 bg-gradient-to-b from-white to-gray-500 opacity-25 absolute top-0 left-0" aria-hidden="true"></b> -->
+      <b class="h-px bg-white opacity-10 absolute top-0 inset-x-0" aria-hidden="true"></b>
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
           <div class="mast mb-2">
@@ -27,7 +26,7 @@
             <li class="flex-1">
               <ul class="tags flex space-x-4">
                 <li v-for="item in genre" :key="item.slug">
-                  <nuxt-link v-for="g of gameGenre(item)" :key="g.slug" :to="'/genre/'+ item +'/'" class="group relative motion-safe:transition hover:text-white focus:text-white" :title="g.title">
+                  <nuxt-link v-for="g of gameGenre(item)" :key="g.slug" :to="'/genre/'+ item +'/'" class="group relative motion-safe:transition hover:(text-white)" :title="g.title">
                     <i :class="['fa-light fa-fw', 'fa-'+ g.icon]"></i>
                     <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
                       {{ g.title }}

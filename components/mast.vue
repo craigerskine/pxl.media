@@ -6,7 +6,7 @@
           <title>{{ title }}</title>
           <g v-html="logo"></g>
         </svg>
-        <b class="text-gray-200 font-normal motion-safe:transition group-hover:(text-white) group-focus:(text-white)"><slot /></b>
+        <b class="text-gray-200 font-normal motion-safe:transition group-hover:(text-white)"><slot /></b>
         <i v-if="ico" :class="['fa-thin fa-fw text-5xl', 'fa-'+ ico]" :title="label"></i>
       </span>
       <b v-if="label" :class="[
@@ -22,7 +22,7 @@
         <small class="opacity-75" v-text="i === 1 ? data_1_label : (i === 2) ? data_2_label : data_3_label"></small>
       </li>
     </ul>
-    <b v-if="hr" class="h-px bg-current text-gray-500 opacity-30 absolute bottom-0 inset-x-0 motion-safe:transition-all group-hover:(h-[2px] text-blue-400 opacity-100) group-focus:(h-[2px] text-blue-400 opacity-100)" aria-hidden="true"></b>
+    <b v-if="hr" class="h-px bg-current text-gray-500 opacity-30 absolute bottom-0 inset-x-0 motion-safe:transition-all group-hover:(h-[2px] text-blue-400 opacity-100)" aria-hidden="true"></b>
   </nuxt-link>
 </template>
 
