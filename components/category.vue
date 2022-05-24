@@ -12,7 +12,7 @@
           <g v-html="fg_img"></g>
         </svg>
         <i v-if="fg_ico" :class="fg_ico"></i>
-        <b class="h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-20 absolute top-0 inset-x-0 motion-safe:transition group-hover:(opacity-40) group-focus:(opacity-40)" aria-hidden="true"></b>
+        <b class="h-px bg-white opacity-20 absolute top-0 inset-x-0 motion-safe:transition group-hover:(opacity-40) group-focus:(opacity-40)" aria-hidden="true"></b>
         <!-- <b class="w-px bg-gradient-to-b from-white to-transparent opacity-20 absolute inset-y-0 left-0 motion-safe:transition group-hover:(opacity-40) group-focus:(opacity-40)" aria-hidden="true"></b> -->
         <i v-if="!bg_img" class="h-0 bg-blue-400 absolute bottom-px inset-x-px motion-safe:transition-all group-hover:(h-[2px]) group-focus:(h-[2px])" aria-hidden="true"></i>
       </div>
