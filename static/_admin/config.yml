@@ -32,6 +32,7 @@ collections:
       - {label: "Platform", name: "platform", widget: "relation", collection: "_platforms", value_field: "slug", display_fields: ["title"], search_fields: ["title"], options_length: 100}
       - {label: "System Type", name: "system_type", widget: "select", options: [{label: "Console", value: "console"}, {label: "Handheld", value: "handheld"}, {label: "Hybrid", value: "hybrid"}, {label: "Mini", value: "mini"}]}
       - {label: "Variation", name: "variation", required: false, widget: "string"}
+      - {label: "Accessories", name: "accessories", required: false, widget: "string"}
   - name: "controllers"
     label: "Controllers"
     label_singular: "Controller"
