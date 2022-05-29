@@ -1,12 +1,12 @@
 ---
-title: 'Chrono Cross [Switch]'
+title: Chrono Cross [Switch]
+note: The Radical Dreamers Edition
 platform: switch
 genre:
   - rpg
-digital: false
-note: 'The Radical Dreamers Edition'
 physical: true
+digital: false
 guide: false
-pending: true
-posted: 2022-04-28
+pending: false
+posted: 2022-05-28
 ---
