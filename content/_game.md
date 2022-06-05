@@ -1,5 +1,5 @@
 ---
-title: 'Some Title'
+title: 'Some Game''s Title'
 platform: some-platforms
 genre:
   - some-genre
