@@ -58,7 +58,7 @@
       },
     },
     async asyncData({ $content }) {
-      const controllersIndex = await $content("controllers").sortBy('title').fetch();
+      const controllersIndex = await $content("controllers").sortBy('slug').fetch();
       return {
         controllersIndex,
       };
