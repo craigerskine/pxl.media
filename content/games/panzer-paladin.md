@@ -1,12 +1,11 @@
 ---
-title: Flinthook
+title: 'Panzer Paladin'
 platform: switch
 genre:
   - action-adventure
-note: 'Limited Run Games'
 digital: true
-physical: true
+physical: false
 guide: false
 pending: false
-posted: 2018-08-24
+posted: 2022-06-26
 ---

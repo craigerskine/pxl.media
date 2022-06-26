@@ -1,6 +1,6 @@
 ---
 title: 'Some Game''s Title'
-platform: some-platforms
+platform: some-platform
 genre:
   - some-genre
   - some-genre
