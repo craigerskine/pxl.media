@@ -1,11 +1,11 @@
 ---
-title: 'Eastward'
+title: Eastward
 platform: switch
 genre:
   - rpg
-digital: false
 physical: true
+digital: false
 guide: false
-pending: true
+pending: false
 posted: 2022-06-30
 ---

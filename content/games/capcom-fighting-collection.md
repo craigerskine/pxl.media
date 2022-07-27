@@ -1,12 +1,12 @@
 ---
-title: 'Capcom Fighting Collection'
+title: Capcom Fighting Collection
 platform: switch
 genre:
   - fighting
   - compilation
-digital: false
 physical: true
+digital: false
 guide: false
-pending: true
-posted: 2022-06-30
+pending: false
+posted: 2022-06-27
 ---
