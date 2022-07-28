@@ -1,6 +1,6 @@
 ---
-title: 'SN30 Pro+'
+title: 'SN30 Pro'
 company: 8Bitdo
-variation: 'G Classic'
+variation: 'Xbox Cloud Gaming, w/Clip'
 connection: Bluetooth
 ---
