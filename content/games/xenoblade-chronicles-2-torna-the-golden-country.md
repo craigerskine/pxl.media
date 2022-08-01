@@ -2,6 +2,7 @@
 title: 'Xenoblade Chronicles 2: Torna ~ The Golden Country'
 platform: switch
 genre:
+  - action-adventure
   - rpg
 digital: false
 physical: true

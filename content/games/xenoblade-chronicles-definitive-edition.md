@@ -3,6 +3,7 @@ title: 'Xenoblade Chronicles: Definitive Edition'
 platform: switch
 genre:
   - action-adventure
+  - rpg
 digital: false
 physical: true
 guide: false

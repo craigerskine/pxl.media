@@ -1,12 +1,12 @@
 ---
-title: 'Horizon Zero Dawn'
-platform: playstation-4
+title: 'Xenoblade Chronicles 3'
+platform: switch
 genre:
   - action-adventure
   - rpg
 digital: false
 physical: true
 guide: false
-pending: false
-posted: 2017-06-13
+pending: true
+posted: 2022-08-04
 ---

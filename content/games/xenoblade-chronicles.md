@@ -2,6 +2,7 @@
 title: 'XenoBlade Chronicles'
 platform: wii
 genre:
+  - action-adventure
   - rpg
 digital: false
 physical: true
