@@ -1,12 +1,12 @@
 ---
-title: 'Xenoblade Chronicles 3'
+title: Xenoblade Chronicles 3
 platform: switch
 genre:
   - action-adventure
   - rpg
-digital: false
 physical: true
+digital: false
 guide: false
-pending: true
+pending: false
 posted: 2022-08-04
 ---
