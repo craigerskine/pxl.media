@@ -1,11 +1,11 @@
 ---
-title: 'Pocky & Rocky Reshrined'
+title: Pocky & Rocky Reshrined
 platform: switch
 genre:
   - shmup
-digital: false
 physical: true
+digital: false
 guide: false
-pending: true
+pending: false
 posted: 2022-08-09
 ---
