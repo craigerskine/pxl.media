@@ -92,9 +92,9 @@ export default {
     const homeSystemsHandheldCount = await $content("systems").only(['title']).where({system_type: { $in: ['handheld', 'hybrid']}}).fetch();
     const homeSystemsMiniCount = await $content("systems").only(['title']).where({system_type: { $eq: 'mini'}}).fetch();
     const homeControllersCount = await $content("controllers").only(['title']).fetch();
-    const homeControllersWirelessCount = await $content("controllers").only(['title']).where({connection: { $in: ['2.4Ghz', 'Bluetooth']}}).fetch();
-    const homeControllersUsbCount = await $content("controllers").only(['title']).where({connection: { $in: ['System', 'USB']}}).fetch();
-    const homeControllersAdaptersCount = await $content("controllers").only(['title']).search('title', 'adapter').fetch();
+    const homeControllersWirelessCount = await $content("controllers").only(['title']).where({connection: { $containsAny: ['2.4Ghz', 'Bluetooth']}}).fetch();
+    const homeControllersUsbCount = await $content("controllers").only(['title']).where({connection: { $containsAny: 'USB'}}).fetch();
+    const homeControllersAdaptersCount = await $content("controllers").only(['title']).where({variation: { $containsAny: 'Adapter'}}).fetch();
     const homeGamesPending = await $content("games")
       .sortBy('posted', 'desc')
       .where({ pending: { $eq: true } })

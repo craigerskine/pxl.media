@@ -1,6 +1,6 @@
 ---
 title: 'Wireless Adapter'
 company: 8Bitdo
-variation: 'PlayStation Classic'
+variation: 'PlayStation Classic Adapter'
 connection: 'Bluetooth'
 ---

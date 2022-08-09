@@ -1,6 +1,6 @@
 ---
 title: 'Wireless Adapter'
 company: 8Bitdo
-variation: Brown
+variation: Brown Adapter
 connection: 'Bluetooth'
 ---
