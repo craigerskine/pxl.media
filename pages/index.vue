@@ -61,7 +61,7 @@
         :posted="game.posted"
       />
     </ul>
-    <heading :subtext="homeGamesPending.length"><nuxt-link to="/games/pending/">Pending</nuxt-link></heading>
+    <heading :subtext="homeGamesPending.length"><nuxt-link :to="homeGamesPending.length > 6 ? '/games/pending/' : '/'">Pending</nuxt-link></heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="(game, index) of homeGamesPending" v-if="index <= 5"
         :key="game.slug"
