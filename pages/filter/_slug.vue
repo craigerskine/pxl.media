@@ -30,22 +30,9 @@
         filteredGames
       };
     },
-    // watch: {
-    //   async query(filterQuery) {
-    //     if(!filterQuery) {
-    //       this.filterResults = []
-    //       return
-    //     }
-    //     this.filterResults = await this.$content('games')
-    //       .sortBy('title', 'asc')
-    //       .search(filterQuery)
-    //       .limit(96)
-    //       .fetch();
-    //   }
-    // },
     head() {
       return {
-        title: 'Search',
+        title: 'Filter: '+ this.$route.params.slug.replace('-', ' '),
       };
     },
   }
