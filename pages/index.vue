@@ -88,8 +88,8 @@ export default {
     const homeGamesDigitalCount = await $content("games").only(['title']).where({digital: true,}).fetch();
     const homeGamesPendingCount = await $content("games").only(['title']).where({pending: true,}).fetch();
     const homeSystemsCount = await $content("systems").only(['title']).fetch();
-    const homeSystemsConsoleCount = await $content("systems").only(['title']).where({system_type: { $in: ['console', 'hybrid']}}).fetch();
-    const homeSystemsHandheldCount = await $content("systems").only(['title']).where({system_type: { $in: ['handheld', 'hybrid']}}).fetch();
+    const homeSystemsConsoleCount = await $content("systems").only(['title']).where({system_type: { $containsAny: ['console', 'hybrid']}}).fetch();
+    const homeSystemsHandheldCount = await $content("systems").only(['title']).where({system_type: { $containsAny: ['handheld', 'hybrid']}}).fetch();
     const homeSystemsMiniCount = await $content("systems").only(['title']).where({system_type: { $eq: 'mini'}}).fetch();
     const homeControllersCount = await $content("controllers").only(['title']).fetch();
     const homeControllersWirelessCount = await $content("controllers").only(['title']).where({connection: { $containsAny: ['2.4Ghz', 'Bluetooth']}}).fetch();
