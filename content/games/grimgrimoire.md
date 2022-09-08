@@ -1,8 +1,8 @@
 ---
-title: 'Grim Grimoire'
+title: 'GrimGrimoire'
 platform: playstation-2
 genre:
-  - action-adventure
+  - rpg
 digital: false
 physical: true
 guide: false
