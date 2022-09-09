@@ -4,10 +4,8 @@
       :key="item.slug"
       :ico="item.icon"
       :label="item.title"
-      :data_1="genreTotalGames"
+      :data_1="genreAllGames.length"
       data_1_label="Games"
-      :data_2="genreSlugPlatforms.length"
-      data_2_label="Platforms"
     />
     <heading>Games owned</heading>
     <ul class="list-game pb-4 flex flex-wrap">
@@ -25,7 +23,7 @@
         :posted="game.posted"
       />
     </ul>
-    <pagination v-if="genreTotalGames > 24" paginateCss="pb-10" :paginatePath="'/genre/'+ this.$route.params.slug +'/'" :paginateTotal="genreTotalGames" />
+    <pagination v-if="genreAllGames > 24" paginateCss="pb-10" :paginatePath="'/genre/'+ this.$route.params.slug +'/'" :paginateTotal="genreAllGames.length" />
   </div>
 </template>
 
@@ -46,12 +44,11 @@
       const genrePageCurrent = parseInt(params.page);
       const genrePagePer = 24;
       const genreAllGames = await $content("games").where({ 'genre': { $contains: params.slug } }).only(['title']).fetch();
-      const genreTotalGames = genreAllGames.length;
-      const genreLastPage = Math.ceil(genreTotalGames / genrePagePer);
-      const genreLastPageCount = genreTotalGames % genrePagePer === 0 ? genrePagePer : genreTotalGames % genrePagePer;
+      const genreLastPage = Math.ceil(genreAllGames.length / genrePagePer);
+      const genreLastPageCount = genreAllGames.length % genrePagePer === 0 ? genrePagePer : genreAllGames.length % genrePagePer;
       const genreSkip = () => {
         if (genrePageCurrent === 1) {return 0;}
-        if (genrePageCurrent === genreLastPage) {return genreTotalGames - genreLastPageCount;}
+        if (genrePageCurrent === genreLastPage) {return genreAllGames.length - genreLastPageCount;}
         return (genrePageCurrent - 1) * genrePagePer;
       };
       const genreSlugGames = await $content("games")
@@ -60,15 +57,10 @@
         .limit(genrePagePer)
         .skip(genreSkip())
         .fetch();
-      const genreSlugPlatforms = await $content("_platform")
-        .where({ 'platform': { $eq: params.slug } })
-        .fetch();
       const genreSlugCurrent = await $content("_genre").only(['title','slug','icon']).fetch();
       return {
         genreAllGames,
-        genreTotalGames,
         genreSlugGames,
-        genreSlugPlatforms,
         genreSlugCurrent
       };
     },
