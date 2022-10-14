@@ -7,6 +7,6 @@ note: 'Greenboy Games'
 digital: false
 physical: true
 guide: false
-pending: true
-posted: 2021-12-04
+pending: false
+posted: 2022-10-13
 ---
