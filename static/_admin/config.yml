@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  branch: main
 
 media_folder: "static/assets/img/games"
 public_folder: "/assets/img/games"
