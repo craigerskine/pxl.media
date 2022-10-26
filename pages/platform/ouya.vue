@@ -9,7 +9,7 @@
     />
     <heading>Systems owned</heading>
     <ul class="container mx-auto flex flex-wrap">
-      <category v-for="system of systemsOuyaPage"
+      <category v-for="system in systemsOuyaPage"
         :key="system.slug"
         :bg_img="'/assets/img/systems/ouya-'+ system.slug +'.png'"
         :title="system.title"

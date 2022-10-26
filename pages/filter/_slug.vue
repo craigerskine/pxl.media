@@ -1,8 +1,8 @@
 <template>
   <div>
-    <heading>Filter: <b v-text="this.$route.params.slug.replace('-', ' ')"></b> (<span v-text="filteredGames.length"></span>)</heading>
+    <heading :subtext="filteredGames.length"><b v-text="this.$route.params.slug.replace('-', ' ')"></b> Games</heading>
     <ul class="list-game flex(& wrap)">
-      <game v-for="(filter, index) in filteredGames"
+      <game v-for="filter in filteredGames"
         :key="filter.slug"
         :title="filter.title"
         :slug="filter.slug"

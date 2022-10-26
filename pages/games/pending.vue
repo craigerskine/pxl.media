@@ -2,7 +2,7 @@
   <div>
     <heading :subtext="gamesPending.length">Pending</heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of gamesPending"
+      <game v-for="game in gamesPending"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"

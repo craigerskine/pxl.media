@@ -2,7 +2,7 @@
   <div>
     <heading>Games by genre</heading>
     <ul class="container mx-auto flex flex-wrap justify-center">
-      <category v-for="genre of genreIndex"
+      <category v-for="genre in genreIndex"
         :key="genre.slug"
         :title="genre.title"
         :url="'/genre/'+ genre.slug +'/'"

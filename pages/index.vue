@@ -47,7 +47,7 @@
     </ul>
     <heading>Recently Added</heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of homeGamesRecently"
+      <game v-for="game in homeGamesRecently"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"
@@ -63,19 +63,21 @@
     </ul>
     <heading :subtext="homeGamesPending.length"><nuxt-link :to="homeGamesPending.length > 6 ? '/games/pending/' : '/'">Pending</nuxt-link></heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="(game, index) of homeGamesPending" v-if="index <= 5"
-        :key="game.slug"
-        :title="game.title"
-        :slug="game.slug"
-        :note="game.note"
-        :platform="game.platform"
-        :genre="game.genre"
-        :physical="game.physical"
-        :digital="game.digital"
-        :guide="game.guide"
-        :pending="game.pending"
-        :posted="game.posted"
-      />
+      <template v-for="(game, index) in homeGamesPending">
+        <game v-if="index <= 5"
+          :key="game.slug"
+          :title="game.title"
+          :slug="game.slug"
+          :note="game.note"
+          :platform="game.platform"
+          :genre="game.genre"
+          :physical="game.physical"
+          :digital="game.digital"
+          :guide="game.guide"
+          :pending="game.pending"
+          :posted="game.posted"
+        />
+      </template>
     </ul>
   </div>
 </template>

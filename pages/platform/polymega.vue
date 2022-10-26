@@ -9,7 +9,7 @@
     />
     <heading>Systems owned</heading>
     <ul class="container mx-auto flex flex-wrap">
-      <category v-for="system of systemsPolymegaPage"
+      <category v-for="system in systemsPolymegaPage"
         :key="system.slug"
         :bg_img="'/assets/img/systems/polymega-'+ system.slug +'.png'"
         :title="system.title"

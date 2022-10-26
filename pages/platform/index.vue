@@ -2,7 +2,7 @@
   <div>
     <heading>Games by platform</heading>
     <ul class="container mx-auto flex flex-wrap justify-center">
-      <category v-for="platform of platformIndex"
+      <category v-for="platform in platformIndex"
         :key="platform.slug"
         :svg_title="platform.title"
         :url="'/platform/'+ platform.slug +'/'"

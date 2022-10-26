@@ -17,7 +17,7 @@
                 </svg>
               </nuxt-link>
             </li>
-            <li class="nav-item" v-for="i in ['platform', 'genre']">
+            <li class="nav-item" v-for="i in ['platform', 'genre']" :key="i">
               <nuxt-link :to="'/'+ i +'/'" class="group p-4 block text-white relative opacity-40 motion-safe:transition hover:(opacity-100)" active-class="active opacity-100" exact-active-class="">
                 <i :class="['fa-fw', i === 'platform' ? 'fa-duotone fa-layer-group' : 'fa-solid fa-hashtag']"></i>
                 <span class="sr-only" v-text="i === 'platform' ? 'Platform' : 'Genre'"></span>
@@ -38,7 +38,7 @@
           <div v-if="searchResults.length" class="w-[40rem] max-w-full max-h-[75vh] bg(gray-800) overflow-y-scroll absolute right-0 top-full z-50 ring(1 black opacity-30) shadow-2xl lg:(mx-4)">
             <heading :subtext="searchResults.length">Games</heading>
             <ul class="list-game flex(& wrap)">
-              <game v-for="(result, index) in searchResults"
+              <game v-for="result in searchResults"
                 :key="result.slug"
                 :title="result.title"
                 :slug="result.slug"

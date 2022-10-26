@@ -2,7 +2,7 @@
   <div>
     <heading :subtext="gamesAllTotal">Games</heading>
     <ul class="list-game pb-4 flex flex-wrap">
-      <game v-for="game of gamesAllPaged"
+      <game v-for="game in gamesAllPaged"
         :key="game.slug"
         :title="game.title"
         :slug="game.slug"

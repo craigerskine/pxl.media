@@ -2,7 +2,7 @@
   <div>
     <heading :subtext="controllersIndex.length">Controllers</heading>
     <ul class="container mx-auto mb-12 px-4 md:(grid(& flow-row cols-2) gap-12)">
-      <li v-for="(company, index) in ['8Bitdo', 'Backbone', 'Bandai', 'HORI', 'Junkfood Custom Arcades', 'Logitech', 'Nintendo', 'Old Skool', 'Polymega', 'Retro-Bit', 'Retro Fighters', 'Sammy', 'thnikk', 'Wind Spirit', 'Wish Technologies']" :class="['mb-12 flex(& col) md:(mb-0)', company === '8Bitdo' ? 'col-span-2' : '']">
+      <li v-for="company in ['8Bitdo', 'Backbone', 'Bandai', 'HORI', 'Junkfood Custom Arcades', 'Logitech', 'Nintendo', 'Old Skool', 'Polymega', 'Retro-Bit', 'Retro Fighters', 'Sammy', 'thnikk', 'Wind Spirit', 'Wish Technologies']" :key="company" :class="['mb-12 flex(& col) md:(mb-0)', company === '8Bitdo' ? 'col-span-2' : '']">
         <figure class="py-5 border(b dashed gray-500 opacity-30) flex-none">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current">
             <title>{{ company }}</title>
@@ -26,7 +26,7 @@
         </figure>
         <ul :class="['ml-5 flex(& col) md:(ml-12)', company === '8Bitdo' ? 'md:(grid(& flow-row cols-2) gap-x-12)' : '']">
           <template v-if="controllersIndexFilter(company).length">
-            <li v-for="controller of controllersIndexFilter(company)" class="border(b dashed gray-500 opacity-30) flex items-center">
+            <li v-for="controller in controllersIndexFilter(company)" :key="controller.slug" class="border(b dashed gray-500 opacity-30) flex items-center">
               <div class="flex(& none col) justify-center">
                 <b class="h-4 border(l dashed gray-500 opacity-30)"></b>
                 <div class="w-8 h-8 border(1 dashed gray-500 opacity-30) flex-none flex rounded-full -translate-x-4">

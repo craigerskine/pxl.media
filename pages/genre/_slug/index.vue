@@ -4,10 +4,10 @@
       :key="item.slug"
       :ico="item.icon"
       :label="item.title"
-      :data_1="genreAllGames.length"
-      data_1_label="Games"
     />
-    <heading>Games owned</heading>
+    <heading :subtext="genreAllGames.length">
+      <span v-text="this.$route.params.slug === 'flash-cart' ? 'Carts' : 'Games'"></span> owned
+    </heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="game of genreSlugGames"
         :key="game.slug"
