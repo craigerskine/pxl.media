@@ -37,12 +37,14 @@
             </li>
             <li class="ml-auto">
               <ul class="icons flex space-x-2">
-                <li v-for="i in 3" v-if="(i === 1 && physical) || (i === 2 && digital) || (i === 3 && guide)" class="group flex items-center justify-center relative" tabindex="0">
-                  <i :class="['fa-fw m-auto opacity-50', i === 1 ? 'fa-light fa-microchip' : (i === 2) ? 'fa-light fa-qrcode' : 'fa-light fa-map']"></i>
-                  <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)"
-                    v-text="i === 1 ? 'Physical' : (i === 2) ? 'Digital' : 'Guide'"
-                  ></b>
-                </li>
+                <template v-for="i in 3">
+                  <li v-if="(i === 1 && physical) || (i === 2 && digital) || (i === 3 && guide)" :key="i" class="group flex items-center justify-center relative" tabindex="0">
+                    <i :class="['fa-fw m-auto opacity-50', i === 1 ? 'fa-light fa-microchip' : (i === 2) ? 'fa-light fa-qrcode' : 'fa-light fa-map']"></i>
+                    <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)"
+                      v-text="i === 1 ? 'Physical' : (i === 2) ? 'Digital' : 'Guide'"
+                    ></b>
+                  </li>
+                </template>
               </ul>
             </li>
           </ul>
