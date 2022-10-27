@@ -24,7 +24,7 @@
     async asyncData({ $content, params }) {
       const filteredGames = await $content("games")
         .sortBy('title', 'asc')
-        .search(params.slug.replace('-', ' '))
+        .where({ 'slug': { $contains: params.slug } })
         .fetch();
       return {
         filteredGames
@@ -32,7 +32,9 @@
     },
     head() {
       return {
-        title: 'Filter: '+ this.$route.params.slug.replace('-', ' '),
+        title: this.$route.params.slug.replace('-', ' ').toLowerCase().split(' ').map(function(word) {
+          return (word.charAt(0).toUpperCase() + word.slice(1));
+        }).join(' ') +' Games',
       };
     },
   }
