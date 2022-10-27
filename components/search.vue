@@ -17,7 +17,17 @@
     },
     methods: {
       searchSubmit: function() {
-        this.$router.push({ path: '/games/'+ this.query.toLowerCase().replace(' ', '-') +'/'});
+        this.$router.push({ path: '/games/'+ this.query
+          .toString()
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/\.+/g, '-')
+          .normalize('NFKD')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '') +'/'});
       },
       searchClose: function() {
         this.query = '';

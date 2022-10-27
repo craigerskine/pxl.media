@@ -29,7 +29,8 @@
     async asyncData({ $content, params }) {
       const filteredGames = await $content("games")
         .sortBy('title', 'asc')
-        .where({ 'slug': { $contains: params.slug } })
+        //.where({ 'slug': { $contains: params.slug } })
+        .search(params.slug.replace('-', ' '))
         .fetch();
       return {
         filteredGames
