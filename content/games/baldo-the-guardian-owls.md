@@ -1,13 +1,13 @@
 ---
-title: 'Baldo: The Guardian Owls'
+title: "Baldo: The Guardian Owls"
+note: The Three Fairies Edition
 platform: switch
 genre:
   - action-adventure
   - rpg
-note: 'The Three Fairies Edition'
-digital: false
 physical: true
+digital: false
 guide: false
-pending: true
-posted: 2022-12-01
+pending: false
+posted: 2022-11-02
 ---
