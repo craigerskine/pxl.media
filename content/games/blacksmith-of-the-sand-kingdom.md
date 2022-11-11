@@ -1,6 +1,5 @@
 ---
-title: 'Baldo: The Guardian Owls'
-note: The Three Fairies Edition
+title: 'Blacksmith of the Sand Kingdom'
 platform: switch
 genre:
   - action-adventure
@@ -8,6 +7,6 @@ genre:
 physical: true
 digital: false
 guide: false
-pending: false
-posted: 2022-11-02
+pending: true
+posted: 2022-11-30
 ---
