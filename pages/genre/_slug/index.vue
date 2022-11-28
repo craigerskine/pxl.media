@@ -23,7 +23,7 @@
         :posted="game.posted"
       />
     </ul>
-    <pagination v-if="genreAllGames > 24" paginateCss="pb-10" :paginatePath="'/genre/'+ this.$route.params.slug +'/'" :paginateTotal="genreAllGames.length" />
+    <pagination v-if="genreAllGames.length > 24" paginateCss="pb-10" :paginatePath="'/genre/'+ this.$route.params.slug +'/'" :paginateTotal="genreAllGames.length" />
   </div>
 </template>
 
