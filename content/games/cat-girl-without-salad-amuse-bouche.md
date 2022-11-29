@@ -7,6 +7,6 @@ note: 'Limited Run Games'
 digital: false
 physical: true
 guide: false
-pending: true
-posted: 2022-07-07
+pending: false
+posted: 2022-11-29
 ---
