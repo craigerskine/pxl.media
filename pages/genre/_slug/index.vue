@@ -6,7 +6,7 @@
       :label="item.title"
     />
     <heading :subtext="genreAllGames.length">
-      <span v-text="this.$route.params.slug === 'flash-cart' ? 'Carts' : 'Games'"></span> owned
+      <span v-text="this.$route.params.slug === 'flash-cart' ? 'Carts' : 'Games'"></span>
     </heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="game of genreSlugGames"

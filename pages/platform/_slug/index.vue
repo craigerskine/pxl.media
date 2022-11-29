@@ -4,10 +4,11 @@
       :key="item.slug"
       :title="item.title"
       :logo="item.logo"
-      :data_2="platformSlugSystems.length"
-      data_2_label="Systems"
     />
-    <heading :subtext="platformTotalGames">Games owned</heading>
+    <heading :subtext="platformTotalGames" :subtext_alt="platformSlugSystems.length">
+      Games
+      <template v-slot:alt>Systems</template>
+    </heading>
     <ul class="list-game pb-4 flex flex-wrap">
       <game v-for="game in platformSlugGames"
         :key="game.slug"
