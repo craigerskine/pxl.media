@@ -126,7 +126,6 @@ export default {
   head() {
     return {
       titleTemplate: null,
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     };
   },
 }
