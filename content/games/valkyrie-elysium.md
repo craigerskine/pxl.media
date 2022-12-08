@@ -1,6 +1,6 @@
 ---
 title: 'Valkyrie Elysium'
-platform: ps5
+platform: playstation-5
 genre:
   - rpg
 digital: false

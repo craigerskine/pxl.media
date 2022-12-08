@@ -1,6 +1,6 @@
 ---
 title: 'Star Ocean: The Divine Force'
-platform: ps5
+platform: playstation-5
 genre:
   - rpg
 digital: false

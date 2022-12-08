@@ -1,6 +1,6 @@
 ---
 title: 'Granblue Fantasy: Versus'
-platform: ps4
+platform: playstation-4
 genre:
   - fighting
 digital: false
