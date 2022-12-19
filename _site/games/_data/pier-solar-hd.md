@@ -1,7 +1,6 @@
 ---
 title: 'Pier Solar: HD'
 tags:
-  - game
   - platform_dreamcast
   - genre_rpg
 note: Kickstarter
@@ -10,5 +9,4 @@ physical: true
 guide: true
 pending: false
 date: 2015-11-16
-permalink: false
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'Battle Princess Madelyn'
 tags:
-  - game
   - platform_switch
   - genre_platformer
 note: 'Limited Run Games'
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2020-01-25
-permalink: false
 ---

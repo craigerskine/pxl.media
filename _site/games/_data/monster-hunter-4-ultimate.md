@@ -1,7 +1,6 @@
 ---
 title: 'Monster Hunter 4 Ultimate'
 tags:
-  - game
   - platform_3ds
   - genre_action-adventure
   - genre_rpg
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2018-03-06
-permalink: false
 ---

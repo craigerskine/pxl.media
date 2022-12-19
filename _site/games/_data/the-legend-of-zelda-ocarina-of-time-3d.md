@@ -1,7 +1,6 @@
 ---
 title: 'The Legend of Zelda: Ocarina of Time 3D'
 tags:
-  - game
   - platform_3ds
   - genre_action-adventure
 digital: false
@@ -9,5 +8,4 @@ physical: true
 guide: false
 pending: false
 date: 2014-02-10
-permalink: false
 ---

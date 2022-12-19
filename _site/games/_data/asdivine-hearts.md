@@ -1,7 +1,6 @@
 ---
 title: 'Asdivine Hearts'
 tags:
-  - game
   - platform_playstation-vita
   - genre_rpg
 note: 'Limited Run Games'
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2017-10-14
-permalink: false
 ---

@@ -1,6 +1,6 @@
 {%- macro x(title='&nbsp;',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',svg_title='') %}
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
-    <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category group mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} hover:text-white{% endif %}">
+    <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} group hover:text-white{% endif %}">
       <div
         class="box mb-1 p-4 bg(center cover no-repeat) text-gray-400 flex items-center relative rounded-lg overflow-hidden motion-safe:(transition) group-hover:(text-white)
         {% if bg_img !== '' %} h-32{% endif %}"

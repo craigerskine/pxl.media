@@ -1,7 +1,6 @@
 ---
 title: 'Battle Chef Brigade Brigadier Edition [Switch]'
 tags:
-  - game
   - platform_switch
   - genre_brawler
   - genre_puzzle
@@ -11,5 +10,4 @@ physical: true
 guide: false
 pending: false
 date: 2019-02-28
-permalink: false
 ---

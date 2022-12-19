@@ -1,7 +1,6 @@
 ---
 title: 'Garbage Pail Kids: Mad Mike and the Quest for Stale Gum'
 tags:
-  - game
   - platform_nintendo-entertainment-system
   - genre_platformer
 note: 'iam8bit'
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: true
 date: 2023-04-07
-permalink: false
 ---

@@ -1,7 +1,6 @@
 ---
 title: Blacksmith of the Sand Kingdom
 tags:
-  - game
   - platform_switch
   - genre_action-adventure
   - genre_rpg
@@ -10,5 +9,4 @@ digital: false
 guide: false
 pending: false
 date: 2022-11-19
-permalink: false
 ---

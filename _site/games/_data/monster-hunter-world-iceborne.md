@@ -1,7 +1,6 @@
 ---
 title: 'Monster Hunter World: Iceborne'
 tags:
-  - game
   - platform_playstation-4
   - genre_action-adventure
   - genre_rpg
@@ -11,5 +10,4 @@ physical: true
 guide: false
 pending: false
 date: 2019-09-06
-permalink: false
 ---

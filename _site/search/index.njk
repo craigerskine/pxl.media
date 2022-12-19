@@ -6,7 +6,7 @@ title: Search
 {%- import 'components/heading.njk' as heading %}
 
 <div x-data="appdata">
-  {%- call heading.x(tag='h1',label=title) %} <span x-if="query" x-text="' : '+ query"></span>{%- endcall %}
+  {%- call heading.x(tag='h1',label=title) %} <span x-html="' &quot;'+ query +'&quot;'"></span>{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
     <template x-for="item in getItems" hidden>
     <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative lg:(mx-0)">
@@ -16,41 +16,35 @@ title: Search
         </figure>
         <div class="details w-full flex">
           <div class="meta p-3 w-full min-w-0 flex-(& 1 col) justify-between">
-            <b class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></b>
-            <p class="platform"><i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" :title="item.platform" x-text="item.platform"></i></p>
+            <p class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></p>
+            <ul class="flex items-center gap-1">
+              <li class="platform w-full min-w-0 text-(gray-400 sm) block truncate" :title="item.platform" x-text="item.platform"></li>
+              <li class="note ml-auto w-3/5 min-w-0 text-(gray-500 xs right) block truncate" :title="item.note" x-text="item.note"></li>
+            </ul>
           </div>
         </div>
       </div>
     </li>
     </template>
   </ul>
-  <p x-show="!results">
+  <p x-show="!results" class="m-auto py-8 px-4 text-(gray-500 3xl center) leading-none font-bold md:(py-32)">
     NO RESULTS
+    <small class="pt-5 text-lg block opacity-80 md:(text-2xl)">↑ ↑ ↓ ↓ ← → ← → B A</small>
   </p>
 </div>
 
 <script>
   document.addEventListener('alpine:init', () => {
     Alpine.data('appdata', () => ({
-      query: new URLSearchParams(location.search).get('q').toString()
-          .replace(/\.+/g, '-')
-          .normalize('NFKD')
-          .toLowerCase()
-          .trim()
-          .replace(/\s+/g, '-')
-          .replace(/[^\w\-]+/g, '')
-          .replace(/\-\-+/g, '-'),
+      query: new URLSearchParams(location.search).get('q'),
       results: false,
       get getItems() {
         const filterItems = this.games.filter((item) => {
-          return item.title.toString()
-          .replace(/\.+/g, '-')
-          .normalize('NFKD')
-          .toLowerCase()
-          .trim()
-          .replace(/\s+/g, '-')
-          .replace(/[^\w\-]+/g, '')
-          .replace(/\-\-+/g, '-').includes(this.query)
+          const qy = this.query.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? ''
+          const tl = item.title.toString().normalize('NFKD').toLowerCase().replace(/[^\w\-]+/g, '') ?? ''
+          const nt = item.note.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? ''
+          const arr = [tl, nt]
+          return arr.some(rs => rs.includes(qy))
         })
         if(filterItems.length < this.games.length && filterItems.length > 0) {
           this.results = true
@@ -75,10 +69,11 @@ title: Search
       games: [{%- for item in collections.game | sort(false, false, "data.title") -%}
         {
           title: "{{ item.data.title | safe }}",
+          note: "{{ item.data.note | safe }}",
           platform: "
             {%- for t in item.data.tags -%}
               {%- if t.includes('platform_') -%}
-                {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') }}
+                {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') | replace('Playstation', 'PlayStation') }}
               {%- endif -%}
             {%- endfor -%}
           "

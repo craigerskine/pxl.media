@@ -1,7 +1,6 @@
 ---
 title: 'Monster Hunter 3 Ultimate [Wii-U]'
 tags:
-  - game
   - platform_wii-u
   - genre_action-adventure
   - genre_rpg
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2018-03-02
-permalink: false
 ---

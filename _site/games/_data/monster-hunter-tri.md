@@ -1,7 +1,6 @@
 ---
 title: 'Monster Hunter Tri'
 tags:
-  - game
   - platform_wii
   - genre_action-adventure
   - genre_rpg
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2018-02-27
-permalink: false
 ---

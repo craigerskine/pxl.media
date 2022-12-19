@@ -1,7 +1,6 @@
 ---
 title: 'Star Wars: Squadrons'
 tags:
-  - game
   - platform_xbox-one
   - genre_action-adventure
   - genre_shmup
@@ -10,5 +9,4 @@ physical: false
 guide: false
 pending: false
 date: 2020-11-25
-permalink: false
 ---

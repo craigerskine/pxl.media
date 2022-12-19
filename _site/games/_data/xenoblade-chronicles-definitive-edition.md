@@ -1,7 +1,6 @@
 ---
 title: 'Xenoblade Chronicles: Definitive Edition'
 tags:
-  - game
   - platform_switch
   - genre_action-adventure
   - genre_rpg
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2020-06-06
-permalink: false
 ---

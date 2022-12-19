@@ -1,7 +1,6 @@
 ---
 title: 'Star Ocean: Integrity and Faithlessness'
 tags:
-  - game
   - platform_playstation-4
   - genre_rpg
 note: 'Day One Edition'
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2016-04-04
-permalink: false
 ---

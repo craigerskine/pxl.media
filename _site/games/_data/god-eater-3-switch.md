@@ -1,7 +1,6 @@
 ---
 title: 'God Eater 3 [Switch]'
 tags:
-  - game
   - platform_switch
   - genre_action-adventure
   - genre_rpg
@@ -10,5 +9,4 @@ physical: true
 guide: false
 pending: false
 date: 2019-06-14
-permalink: false
 ---

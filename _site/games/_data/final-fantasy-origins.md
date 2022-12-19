@@ -1,7 +1,6 @@
 ---
 title: 'Final Fantasy Origins'
 tags:
-  - game
   - platform_playstation
   - genre_rpg
 note: 'Final Fantasy I, Final Fantasy II'
@@ -10,5 +9,4 @@ physical: false
 guide: false
 pending: false
 date: 2017-05-01
-permalink: false
 ---
