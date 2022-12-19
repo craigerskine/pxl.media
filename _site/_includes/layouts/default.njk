@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>{%- if title -%}{{ title +' - ' }}{%- endif -%} {{ site.meta.title }}</title>
+    <meta name="description" content="{{ site.meta.description }}" />
+    <meta name="author" content="{{ site.meta.author + ' - '+ site.meta.author_url }}" />
+    <meta name="generator" content="{{ eleventy.generator }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <meta property="og:title" content="{% if title %}{{ title +' - '+ site.meta.title }}{% else %}{{ site.meta.title }}{% endif %}" />
+    <meta property="og:description" content="{{ site.meta.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pxl.media{{ page.url }}" />
+    <meta property="og:image" content="https://pxl.media/_assets/img/pxl-hd.jpg" />
+
+  </head>
+
+  <body class="text-(gray-400 sm) font-sans !block" style="display: none;">
+    <div class="page min-h-screen flex-(& col)">
+      <header>
+        <div class="container mx-auto flex items-center relative">
+          <nav>
+            <ul class="nav-menu flex items-center">
+              <li class="nav-home">
+                <a href="/" class="p-4 block text-white motion-safe:(transition) hover:(opacity-100){%- if page.url === '/' %} opacity-100{% else %} opacity-40{% endif %}" aria-label="Home"
+                  {%- if page.url === '/' %} aria-current="page"{%- endif -%}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current"><title>pxl.media</title> <g fill-rule="evenodd"><rect width="8" height="8" x="8" y="8" opacity=".25"></rect> <rect width="8" height="8" y="8" opacity=".5"></rect> <rect width="8" height="8" x="8" opacity=".75"></rect> <rect width="8" height="8"></rect></g></svg>
+                </a>
+              </li>
+              {%- for item in collections.all | eleventyNavigation %}
+              <li class="nav-item">
+                <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% else %} opacity-40{% endif %}"
+                  {%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}
+                >
+                  <i class="fa-fw {{ item.icon }}"></i>
+                  <span class="sr-only">{{ item.key }}</span>
+                  <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-current opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
+                </a>
+              </li>
+              {%- endfor %}
+            </ul>
+          </nav>
+          <form class="ml-auto flex items-center" action="/search/">
+            <fieldset class="mr-4 ml-auto w-64 flex justify-end items-center relative z-30">
+              <label for="site-search" class="sr-only">Search</label>
+              <input type="search" id="site-search" name="q" placeholder="Search..." title="Search" autocomplete="off" class="border-(& transparent) p-2 w-8 bg-transparent text-(sm transparent) cursor-pointer outline-none appearance-none relative z-10 opacity-0 motion-safe:(transition-all) focus:(w-full bg-gray-700 text-white opacity-100)" />
+              <i class="fa-light fa-fw fa-lg fa-search absolute right-0 z-0 opacity-40 motion-safe:(transition)"></i>
+            </fieldset>
+          </form>
+        </div>
+      </header>
+      <main class="pt-8 flex-1">
+        <section class="container mx-auto">
+          {{ content | safe }}
+        </section>
+      </main>
+      <footer class="mt-auto">
+        <p class="foot-info m-0 pt-4 pb-8 px-4 font-semibold text-xs flex-(& wrap) items-center justify-center gap-2 md:(text-sm)">
+          <span>&copy;</span>
+          {%- for item in site.footer %}
+          <a href="{{ item.url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ item.title }}</a>
+          {%- if loop.index === 1 %}
+          <i class="fa-duotone fa-fw fa-angles-right"></i> <span>Made with</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-red-500 inline-block" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="footer-heart"><title id="footer-heart">Love</title><polygon class="fill-current" fill-rule="evenodd" points="8 6 12 2 16 6 8 14 0 6 4 2"></polygon></svg>
+          <span>using</span>
+          {%- elseif loop.index === 2 %}
+          <span>+</span>
+          {%- else %}
+          {%- endif %}
+          {%- endfor %}
+        </p>
+      </footer>
+      <div class="bg-grid fixed inset-0 z-[-1]"></div>
+    </div>
+    <script src="/_assets/js/alpine.js"></script>
+    <script src="/_assets/js/twind.js"></script>
+    <script src="https://kit.fontawesome.com/a2bf4ed495.js"></script>
+  </body>
+
+</html>

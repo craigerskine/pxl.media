@@ -1,0 +1,14 @@
+---
+title: 'Mega EverDrive'
+tags:
+  - game
+  - platform_genesis
+  - genre_flash-cart
+note: X5
+digital: false
+physical: true
+guide: false
+pending: false
+date: 2018-10-27
+permalink: false
+---

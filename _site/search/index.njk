@@ -1,0 +1,89 @@
+---
+layout: 'layouts/default.njk'
+title: Search
+---
+
+{%- import 'components/heading.njk' as heading %}
+
+<div x-data="appdata">
+  {%- call heading.x(tag='h1',label=title) %} <span x-if="query" x-text="' : '+ query"></span>{%- endcall %}
+  <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
+    <template x-for="item in getItems" hidden>
+    <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative lg:(mx-0)">
+      <div class="box w-full flex-(& wrap) relative rounded-lg shadow-xl">
+        <figure class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
+          <figcaption class="flex w-full bg-(center cover) rounded-t-lg" :style="'background-image: url(/_assets/img/games/'+ slugify(item.title) +'.jpg)'"><div class="w-full backdrop-brightness-75 rounded-t-lg"></div></figcaption>
+        </figure>
+        <div class="details w-full flex">
+          <div class="meta p-3 w-full min-w-0 flex-(& 1 col) justify-between">
+            <b class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></b>
+            <p class="platform"><i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" :title="item.platform" x-text="item.platform"></i></p>
+          </div>
+        </div>
+      </div>
+    </li>
+    </template>
+  </ul>
+  <p x-show="!results">
+    NO RESULTS
+  </p>
+</div>
+
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('appdata', () => ({
+      query: new URLSearchParams(location.search).get('q').toString()
+          .replace(/\.+/g, '-')
+          .normalize('NFKD')
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-'),
+      results: false,
+      get getItems() {
+        const filterItems = this.games.filter((item) => {
+          return item.title.toString()
+          .replace(/\.+/g, '-')
+          .normalize('NFKD')
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-').includes(this.query)
+        })
+        if(filterItems.length < this.games.length && filterItems.length > 0) {
+          this.results = true
+          return filterItems
+        } else {
+          this.results = false
+        }
+      },
+      slugify(text) {
+        return text.toString()
+          .toLowerCase()
+          .trim()
+          .replace(/\.+/g, '-')
+          .replace(/\s+/g, '-')
+          .replace('&', '-and-')
+          .normalize('NFKD')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '')
+      },
+      games: [{%- for item in collections.game | sort(false, false, "data.title") -%}
+        {
+          title: "{{ item.data.title | safe }}",
+          platform: "
+            {%- for t in item.data.tags -%}
+              {%- if t.includes('platform_') -%}
+                {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') }}
+              {%- endif -%}
+            {%- endfor -%}
+          "
+        },
+      {%- endfor -%}],
+    }));
+  })
+</script>

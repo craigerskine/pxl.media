@@ -1,0 +1,52 @@
+{%- macro x(title='',label='',logo='',ico='',url='',data_1='',data_1_label='',data_2='',data_2_label='',data_3='',data_3_label='',hr=false,home=false) %}
+<{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="group container mx-auto px-4 flex items-center relative">
+  <div class="py-1 pr-4 text-7xl leading-none tracking-tight flex-1">
+    <h1{% if ico !== '' %} class="flex items-center space-x-5"{% endif %}>
+      <span class="flex items-center">
+        {%- if logo !== '' %}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-16 fill-current">
+          <title>{{ title }}</title>
+          <g>{{ logo | safe }}</g>
+        </svg>
+        {%- endif %}
+        <b class="text-gray-200 font-normal motion-safe:transition group-hover:(text-white)">
+          {{ caller() }}
+        </b>
+        {%- if logo === '' %}<i class="fa-thin fa-fw text-5xl fa-{{ ico }}" title="{{ label }}"></i>{% endif %}
+      </span>
+      {%- if label !== '' %}
+      <b class="py-1 tracking-normal uppercase opacity-75{% if home %} text-sm block md:(text-xl){% else %} text-xl hidden sm:(block){% endif %}">
+        {{ label }}
+      </b>
+      {%- endif %}
+    </h1>
+  </div>
+  <ul class="ml-auto py-1 text(right xs) leading-tight font-bold uppercase">
+  {% for i in range(0, 3) -%}
+  {%- if (i === 0 and data_1) or (i === 1 and data_2) or (i === 2 and data_3) %}
+    <li class="py-2">
+      <b class="block text(sm gray-200) leading-none">
+        {%- if i === 0 %}
+        {{ data_1 }}
+        {%- elseif i === 1 %}
+        {{ data_2 }}
+        {%- else %}
+        {{ data_3 }}
+        {%- endif %}
+      </b>
+      <small class="opacity-75">
+        {%- if i === 0 %}
+        {{ data_1_label }}
+        {%- elseif i === 1 %}
+        {{ data_2_label }}
+        {%- else %}
+        {{ data_3_label }}
+        {%- endif %}
+      </small>
+    </li>
+  {%- endif %}
+  {%- endfor %}
+  </ul>
+  {%- if hr %}<b class="h-px bg-current text-gray-500 opacity-30 absolute bottom-0 inset-x-0 motion-safe:transition-all group-hover:(h-[2px] text-blue-400 opacity-100)" aria-hidden="true"></b>{%- endif %}
+</{% if url !== '' %}a{% else %}div{% endif %}>
+{%- endmacro %}

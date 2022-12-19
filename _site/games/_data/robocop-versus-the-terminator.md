@@ -1,0 +1,13 @@
+---
+title: 'RoboCop versus The Terminator'
+tags:
+  - game
+  - platform_game-gear
+  - genre_action-adventure
+digital: false
+physical: true
+guide: false
+pending: false
+date: 2014-02-10
+permalink: false
+---

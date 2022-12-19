@@ -1,0 +1,13 @@
+---
+title: 'The Legend of Zelda: Phantom Hourglass'
+tags:
+  - game
+  - platform_ds
+  - genre_action-adventure
+digital: false
+physical: true
+guide: false
+pending: false
+date: 2014-02-10
+permalink: false
+---

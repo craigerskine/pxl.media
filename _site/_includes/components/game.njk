@@ -1,0 +1,90 @@
+{%- macro x(games=[],platforms=[],genres=[]) %}
+<ul class="list-game pb-4 flex flex-wrap">
+{%- for item in games | sort(false, false, "data.title") %}
+  <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
+    <div class="box w-full flex flex-wrap relative rounded-lg shadow-xl{% if item.data.pending %} ring-2 ring-red-500{%- endif %}">
+      <figure class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
+        <figcaption class="w-full bg-(cover center) flex rounded-t-lg" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')"><div class="w-full backdrop-brightness-50 rounded-t-lg"></div></figcaption>
+        <figure class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
+          <figcaption class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90 rounded-t-lg"></figcaption>
+          {%- for t in item.data.tags %}
+          {%- for p in platforms %}
+          {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
+          <a href="/platform/{{ p.data.page.fileSlug }}/" class="text-gray-200/50 block relative motion-safe:transition-all hover:(text-white opacity-100)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
+              <title>{{ p.data.title }}</title>
+              <g>{{ p.data.logo | safe }}</g>
+            </svg>
+          </a>
+          {%- endif %}
+          {%- endfor %}
+          {%- endfor %}
+        </figure>
+      </figure>
+      <div class="details w-full flex">
+        <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
+          <div class="mast mb-2">
+            <b class="name text(white base) font-black block truncate" title="title">{{ item.data.title }}</b>
+            <p>
+              <i class="w-full min-w-0 text-gray-400 text-xs block truncate flex-1" :title="note">{{ item.data.note }}&nbsp;</i>
+            </p>
+          </div>
+          <ul class="py-2 border-(t dashed gray-500 opacity-30) w-full text-base flex items-center">
+            <li class="flex-1">
+              <ul class="tags flex space-x-4">
+                {%- for t in item.data.tags %}
+                {%- for g in genres %}
+                {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
+                <li>
+                  <a href="/genre/{{ g.data.page.fileSlug }}/" class="group relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
+                    <i class="fa-light fa-fw fa-{{ g.data.icon }}"></i>
+                    <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                      {{ g.data.title }}
+                    </b>
+                  </a>
+                </li>
+                {%- endif %}
+                {%- endfor %}
+                {%- endfor %}
+              </ul>
+            </li>
+            <li class="ml-auto">
+              <ul class="icons flex space-x-2">
+              {% for i in range(0, 3) -%}
+              {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
+                <li class="group flex items-center justify-center relative" tabindex="0">
+                  <i class="fa-fw m-auto opacity-50{% if i === 0 %} fa-light fa-microchip{% endif %}{% if i === 1 %} fa-light fa-qrcode{% endif %}{% if i === 2 %} fa-light fa-map{% endif %}"></i>
+                  <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                    {%- if i === 0 %}Physical{%- endif %}
+                    {%- if i === 1 %}Digital{%- endif %}
+                    {%- if i === 2 %}Guide{%- endif %}
+                  </b>
+                </li>
+              {%- endif %}
+              {%- endfor %}
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {%- if item.data.pending %}
+      <a href="/games/pending/" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute top-2 right-2 rounded-full" title="Pending: Pre-Ordered">
+        <i class="ring-2 ring-current absolute inset-0 z-10 rounded-full animate-ping"></i>
+      </a>
+      {%- endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
+
+{# title='',
+slug='',
+note='',
+platform='',
+genre='',
+physical='',
+digital='',
+guide='',
+pending='',
+posted='', #}

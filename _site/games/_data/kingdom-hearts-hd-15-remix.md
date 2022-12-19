@@ -1,0 +1,13 @@
+---
+title: 'Kingdom Hearts - HD 1.5 Remix'
+tags:
+  - game
+  - platform_playstation-3
+  - genre_action-adventure
+digital: false
+physical: true
+guide: false
+pending: false
+date: 2014-02-11
+permalink: false
+---

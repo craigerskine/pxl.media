@@ -1,16 +1,7 @@
-node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
-.env
-dist
-
-# extras
 .DS_Store
 *.code-workspace
-_dropbox_node_prep.scpt
-package-lock.json
+/node_modules
+/package-lock.json
+/public
 /_archive
 /_design

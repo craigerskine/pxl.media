@@ -1,0 +1,51 @@
+---
+layout: 'layouts/default.njk'
+title: Systems
+---
+
+{%- set systems = collections.system -%}
+{%- set platforms = collections.platform -%}
+
+{%- import 'components/heading.njk' as heading %}
+{%- call heading.x(tag='h1',label=title,sub=systems.length) %}{%- endcall %}
+
+<ul class="container mx-auto mb-12 px-4 md:(grid-(& flow-row cols-2) gap-12)">
+{%- for p in platforms | sort(false, false, "data.order") %}
+  <li class="mb-12 flex-(& col) md:(mb-0)">
+    <a href="/platform/{{ p.data.page.fileSlug }}/" class="group py-5 border-(b dashed gray-500 opacity-30) flex-none motion-safe:(transition) hover:(text-white)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current opacity-50 motion-safe:transition group-hover:opacity-100 group-focus:opacity-100">
+        <title>{{ p.data.title }}</title>
+        <g>
+          {{ p.data.logo | safe }}
+        </g>
+      </svg>
+    </a>
+    <ul class="ml-5 flex-(& col) md:(ml-12)">
+    {%- for platform, items in collections.system | sort(false, false, "data.title") | groupby("data.platform") %}
+    {%- if platform === p.data.page.fileSlug %}
+    {%- for item in items | sort(false, false, "data.title") %}
+      <li class="border-(b dashed gray-500 opacity-30) flex items-center relative">
+        <div class="flex-(& none col) justify-center">
+          <b class="h-4 border-(l dashed gray-500 opacity-30)"></b>
+          <div class="w-8 h-8 border-(1 dashed gray-500 opacity-30) flex-(& none) rounded-full -translate-x-4">
+            <i class="fa-regular fa-fw fa-computer-classic fa-lg m-auto opacity-50"></i>
+          </div>
+          <b class="h-4 border-(l dashed gray-500 opacity-30)"></b>
+        </div>
+        <div class="pl-2 flex-1">
+          <b class="text-gray-200">{{ item.data.title }}</b>
+          <div class="flex justify-between">
+            <small class="opacity-75">
+              <span>{{ item.data.variation }}</span>
+              <span>{{ item.data.accessories }}</span>
+            </small>
+          </div>
+        </div>
+      </li>
+    {%- endfor %}
+    {%- endif %}
+    {%- endfor %}
+    </ul>
+  </li>
+{%- endfor %}
+</ul>

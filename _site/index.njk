@@ -1,0 +1,135 @@
+---
+layout: 'layouts/default.njk'
+---
+
+{# var physical #}
+{%- set gamesPhysicalAll = [] -%}
+{%- for g in collections.game -%}
+  {%- if g.data.physical -%}
+    {%- set gamesPhysicalAll = (gamesPhysicalAll.push(g), gamesPhysicalAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var digital #}
+{%- set gamesDigitalAll = [] -%}
+{%- for g in collections.game -%}
+  {%- if g.data.digital -%}
+    {%- set gamesDigitalAll = (gamesDigitalAll.push(g), gamesDigitalAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var console #}
+{%- set systemsConsolesAll = [] -%}
+{%- for g in collections.system -%}
+  {%- if g.data.system_type === 'console' -%}
+    {%- set systemsConsolesAll = (systemsConsolesAll.push(g), systemsConsolesAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var handheld #}
+{%- set systemsHandheldsAll = [] -%}
+{%- for g in collections.system -%}
+  {%- if g.data.system_type === 'handheld' -%}
+    {%- set systemsHandheldsAll = (systemsHandheldsAll.push(g), systemsHandheldsAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var hybrid #}
+{%- set systemsHybridsAll = [] -%}
+{%- for g in collections.system -%}
+  {%- if g.data.system_type === 'hybrid' -%}
+    {%- set systemsHybridsAll = (systemsHybridsAll.push(g), systemsHybridsAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var mini #}
+{%- set systemsMinisAll = [] -%}
+{%- for g in collections.system -%}
+  {%- if g.data.system_type === 'mini' -%}
+    {%- set systemsMinisAll = (systemsMinisAll.push(g), systemsMinisAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var wireless 2.4Ghz + Bluetooth #}
+{%- set controllersWireless = [] -%}
+{%- for c in collections.controller -%}
+  {%- for x in c.data.connection -%}
+    {%- if x === 'Bluetooth' or x === '2.4Ghz' -%}
+      {%- set controllersWireless = (controllersWireless.push(x), controllersWireless) -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{# var usb #}
+{%- set controllersUsb = [] -%}
+{%- for c in collections.controller -%}
+  {%- for x in c.data.connection -%}
+    {%- if x === 'USB' -%}
+      {%- set controllersUsb = (controllersUsb.push(x), controllersUsb) -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{# var adapters #}
+{%- set controllersAdapters = [] -%}
+{%- for c in collections.controller -%}
+  {%- if c.data.variation.includes('Adapter') -%}
+    {%- set controllersAdapters = (controllersAdapters.push(c), controllersAdapters) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var recent #}
+{%- set gamesRecentAll = [] -%}
+{%- for g in collections.game -%}
+  {%- if not g.data.pending -%}
+    {%- set gamesRecentAll = (gamesRecentAll.push(g), gamesRecentAll) -%}
+  {% endif -%}
+{%- endfor -%}
+{%- set gamesRecent = [] -%}
+{%- for g in gamesRecentAll | reverse -%}
+  {%- if loop.index < 7 -%}
+    {%- set gamesRecent = (gamesRecent.push(g), gamesRecent) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# var pending #}
+{%- set gamesPendingAll = [] -%}
+{%- for g in collections.game -%}
+  {%- if g.data.pending -%}
+    {%- set gamesPendingAll = (gamesPendingAll.push(g), gamesPendingAll) -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- set gamesPending = [] -%}
+{%- for g in gamesPendingAll -%}
+  {%- if loop.index < 7 -%}
+    {%- set gamesPending = (gamesPending.push(g), gamesPending) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- import 'components/mast.njk' as mast %}
+{%- import 'components/heading.njk' as heading %}
+{%- import 'components/game.njk' as game %}
+
+<ul class="px-4 lg:(flex justify-center space-x-8)">
+  <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
+    {%- call mast.x(url='/games/',label='Games',data_1=gamesPhysicalAll.length,data_1_label='Physical',data_2=gamesDigitalAll.length,data_2_label='Digital',data_3=gamesPendingAll.length,data_3_label='Pending',hr=true,home=true) %}
+      {{ collections.game | length }}
+    {%- endcall %}
+  </li>
+  <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
+    {%- call mast.x(url='/systems/',label='Systems',data_1=systemsConsolesAll.length+systemsHybridsAll.length,data_1_label='Consoles',data_2=systemsHandheldsAll.length+systemsHybridsAll.length,data_2_label='Handhelds',data_3=systemsMinisAll.length,data_3_label='Mini/Classic',hr=true,home=true) %}
+      {{ collections.system | length }}
+    {%- endcall %}
+  </li>
+  <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
+    {%- call mast.x(url='/controllers/',label='Controllers',data_1=controllersWireless.length,data_1_label='Wireless',data_2=controllersUsb.length,data_2_label='USB',data_3=controllersAdapters.length,data_3_label='Adapters',hr=true,home=true) %}
+      {{ collections.controller | length }}
+    {%- endcall %}
+  </li>
+</ul>
+
+{%- call heading.x(tag='h2',label='Recently added') %}{%- endcall %}
+{{ game.x(games=gamesRecent,platforms=collections.platform,genres=collections.genre) }}
+
+{%- call heading.x(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/') %}{%- endcall %}
+{{ game.x(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}

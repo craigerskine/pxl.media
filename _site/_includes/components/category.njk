@@ -1,0 +1,34 @@
+{%- macro x(title='&nbsp;',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',svg_title='') %}
+  <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
+    <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category group mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} hover:text-white{% endif %}">
+      <div
+        class="box mb-1 p-4 bg(center cover no-repeat) text-gray-400 flex items-center relative rounded-lg overflow-hidden motion-safe:(transition) group-hover:(text-white)
+        {% if bg_img !== '' %} h-32{% endif %}"
+        {% if bg_img !== '' %}style="background-image: url('{{ bg_img }}');"{% endif %}
+      >
+        <b class="ui-hover h-px bg-white opacity-10 absolute top-0 inset-x-0 motion-safe:(transition-all) group-hover:(h-full bg-blue-500 opacity-100)" aria-hidden="true"></b>
+        {%- if fg_img !== '' %}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current relative">
+          <title>{{ title }} {{ svg_title }}</title>
+          <g>{{ fg_img | safe }}</g>
+        </svg>
+        {%- endif %}
+        {%- if fg_ico !== '' %}
+        <i class="text-5xl relative fa-thin fa-fw fa-{{ fg_ico }}"></i>
+        {%- endif %}
+        {%- if bg_img === '' %}
+        {%- endif %}
+      </div>
+      <div class="meta pt-1 flex items-center">
+        <p class="name text(white base) font-bold leading-none block truncate" :aria-hidden="title ? 'false' : 'true'">
+          {{ title | safe }}
+        </p>
+        {%- if subtext !== '' %}
+        <div class="ml-auto leading-none">
+          <small class="ml-auto font-bold opacity-80">{{ subtext | safe }}</small>
+        </div>
+        {%- endif %}
+      </div>
+    </{% if url !== '' %}a{% else %}div{% endif %}>
+  </li>
+{%- endmacro %}

@@ -1,0 +1,47 @@
+---
+layout: 'layouts/default.njk'
+title: Platforms
+eleventyNavigation:
+  key: Platform
+  title: Platform
+  icon: fa-duotone fa-layer-group
+  order: 1
+permalink: /platform/
+---
+
+{%- import 'components/heading.njk' as heading %}
+{%- import 'components/category.njk' as category %}
+
+{%- call heading.x(tag='h1',label='Games by platform') %}{%- endcall %}
+<ul class="container mx-auto flex-(& wrap) justify-center">
+{%- for item in collections.platform %}
+  {%- set sub %}
+    {% set totalGames = [] %}
+    {% for g in collections.game %}
+      {% for t in g.data.tags %}
+        {% if t === 'platform_'+ item.data.page.fileSlug %}
+          {% set totalGames = (totalGames.push({title: g.data.title}), totalGames) %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {%- if totalGames.length %}  
+      {{ totalGames | length }}
+      <b class="font-normal uppercase">Games</b>
+    {%- endif %}
+    {% set totalSystems = [] %}
+    {% for s in collections.system %}
+      {% if s.data.platform === item.data.page.fileSlug %}
+        {% set totalSystems = (totalSystems.push({title: s.data.title}), totalSystems) %}
+      {% endif %}
+    {% endfor %}
+    {%- if totalGames.length and totalSystems.length %}
+    <i class="fa-solid fa-fw fa-slash-forward text-[8px] inline-block opacity-50"></i>
+    {%- endif %}
+    {%- if totalSystems.length %}  
+      {{ totalSystems | length }}
+      <b class="font-normal uppercase">Systems</b>
+    {%- endif %}
+  {%- endset %}
+  {{ category.x(svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) }}
+{%- endfor %}
+</ul>

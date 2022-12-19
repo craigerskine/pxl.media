@@ -1,0 +1,13 @@
+---
+title: "Metroid: Samus Returns"
+tags:
+  - game
+  - platform_3ds
+  - genre_action-adventure
+digital: false
+physical: true
+guide: false
+pending: false
+date: 2017-09-15
+permalink: false
+---

@@ -1,0 +1,12 @@
+{%- import 'components/heading.njk' as heading %}
+{%- import 'components/category.njk' as category %}
+
+{%- call heading.x(tag='h2',label='Systems owned') %}{%- endcall %}
+<ul class="container mx-auto flex-(& wrap) justify-center">
+{%- for item in collections.system %}
+  {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
+  {%- if item.data.platform === company %}
+  {{ category.x(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ company +'-'+ item.data.page.fileSlug +'.png') }}
+  {%- endif %}
+{%- endfor %}
+</ul>

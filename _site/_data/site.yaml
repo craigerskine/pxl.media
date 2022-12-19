@@ -1,0 +1,19 @@
+---
+meta:
+  title: 'pxl.media : qrayg''s game room'
+  description: 'qrayg''s game room'
+  author: 'Craig Erskine'
+  author_url: 'https://craigerskine.com/'
+pagination:
+  size: 24
+footer:
+  - title: qrayg
+    url: https://qrayg.com/
+  - title: Code
+    url: https://code.visualstudio.com/
+  - title: 11ty
+    url: https://11ty.dev/
+analytics: |-
+  // google analytics
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-6318307-6', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')

@@ -1,0 +1,17 @@
+---
+layout: 'layouts/default.njk'
+title: 'Pending Games'
+---
+
+{% set gamesPending = [] -%}
+{%- for g in collections.game -%}
+  {%- if g.data.pending -%}
+    {%- set gamesPending = (gamesPending.push(g), gamesPending) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- import 'components/heading.njk' as heading %}
+{%- import 'components/game.njk' as game %}
+
+{%- call heading.x(label=title) %}{%- endcall %}
+{{ game.x(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}
