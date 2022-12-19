@@ -1,17 +1,17 @@
 ---
 layout: 'layouts/default.njk'
 title: 'Games'
-pagination:
+---
+{# pagination:
   data: collections.game
   alias: games
-  size: 24
----
+  size: 24 #}
 
 {%- import 'components/heading.njk' as heading %}
 {%- import 'components/game.njk' as game %}
 
 {%- call heading.x(label=title) %}{%- endcall %}
-{{ game.x(games=games,platforms=collections.platform,genres=collections.genre) }}
+{{ game.x(games=collections.game,platforms=collections.platform,genres=collections.genre) }}
 
 <nav class="pb-10" aria-labelledby="games-nav">
   <p id="games-nav" class="sr-only">Games navigation</p>
