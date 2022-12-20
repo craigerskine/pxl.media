@@ -3,6 +3,7 @@ title: 'Lynx GameDrive'
 tags:
   - platform_lynx
   - genre_flash-cart
+note: GD
 digital: false
 physical: true
 guide: false

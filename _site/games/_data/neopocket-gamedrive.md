@@ -3,6 +3,7 @@ title: 'NeoPocket GameDrive'
 tags:
   - platform_neo-geo-pocket-color
   - genre_flash-cart
+note: GD
 digital: false
 physical: true
 guide: false
