@@ -18,7 +18,7 @@ class PageTrans extends Highway.Transition {
   }
 
   out({ from, done }) {
-    Tween.fromTo(from, .11,
+    Tween.fromTo(from, .33,
       {
         opacity: 1,
         transform: 'translateY(0)'

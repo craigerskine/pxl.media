@@ -1,3 +1,5 @@
+import 'instant.page';
+
 import Highway from '@dogstudio/highway';
 import PageTrans from './_transition';
 
