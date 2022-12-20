@@ -1,31 +1,36 @@
 import Highway from '@dogstudio/highway';
-import Tween from 'gsap';
+import Timeline from 'gsap';
 
 class PageTrans extends Highway.Transition {
   in({ from, to, done }) {
+    window.scrollTo(0, 0);
     from.remove();
-    Tween.fromTo(to, 0.33,
+    Timeline.fromTo(to, 0.33,
       { 
         opacity: 0,
-        transform: 'translateY(-2rem)'
+        transform: 'translateY(-2rem)',
+        ease: 'back'
       },
       {
         opacity: 1,
         transform: 'translateY(0)',
+        ease: 'back',
         onComplete: done
       }
     );
   }
 
   out({ from, done }) {
-    Tween.fromTo(from, .33,
+    Timeline.fromTo(from, .33,
       {
         opacity: 1,
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
+        ease: 'back'
       },
       {
         opacity: 0,
         transform: 'translateY(-2rem)',
+        ease: 'back',
         onComplete: done
       }
     );

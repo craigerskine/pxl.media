@@ -58,7 +58,7 @@
         </div>
       </header>
       <main class="pt-8 flex-1" data-router-wrapper>
-        <section class="container mx-auto" data-router-view="{{ page.url | slugify }}">
+        <section class="container mx-auto relative" data-router-view="{{ page.url | slugify }}">
           {{ content | safe }}
         </section>
       </main>

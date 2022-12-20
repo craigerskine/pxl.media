@@ -9,7 +9,7 @@ const H = new Highway.Core({
   }
 });
 
-// nav - seriously highway?
+// highway
 const links = document.querySelectorAll('header .nav-item a');
 H.on('NAVIGATE_IN', ({ to, location }) => {
   for (let i = 0; i < links.length; i++) {
@@ -22,6 +22,13 @@ H.on('NAVIGATE_IN', ({ to, location }) => {
     }
   }
 });
+
+// pageloading
+// const pageloading = document.querySelector('.loading');
+// H.on('NAVIGATE_OUT', () => {
+//   pageloading.classList.remove(['hidden']);
+//   pageloading.classList.add(['absolute', 'opacity-100']);
+// });
 
 import { install, injectGlobal } from '@twind/core';
 import presetAutoprefix from '@twind/preset-autoprefix';
