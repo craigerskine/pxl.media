@@ -1,15 +1,13 @@
 ---
 title: 'Some Game''s Title'
 tags:
-  - game
   - platform_some-platform
   - genre_some-genre
   - genre_some-genre
 note: 'Some note'
-digital: true
 physical: true
+digital: false
 guide: false
 pending: false
 posted: YYYY-MM-DD
-permalink: false
 ---
