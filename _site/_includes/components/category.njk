@@ -20,7 +20,7 @@
         {%- endif %}
       </div>
       <div class="meta pt-1 flex items-center">
-        <p class="name text(white base) font-bold leading-none block truncate" :aria-hidden="title ? 'false' : 'true'">
+        <p class="name text(white base) font-bold leading-none block truncate" aria-hidden="{% if title === '' %}true{% else %}false{% endif %}">
           {{ title | safe }}
         </p>
         {%- if subtext !== '' %}

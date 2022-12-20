@@ -12,11 +12,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@dogstudio/highway": "^2.2.1",
     "@twind/core": "^1.0.3",
     "@twind/preset-autoprefix": "^1.0.3",
     "@twind/preset-tailwind": "^1.0.3",
     "alpinejs": "^3.10.5",
     "esbuild": "^0.16.4",
+    "gsap": "^3.11.3",
     "js-yaml": "^4.1.0",
     "markdown-it-attrs": "^4.1.6"
   }

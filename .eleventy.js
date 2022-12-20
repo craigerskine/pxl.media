@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
   // esbuild
   eleventyConfig.on('eleventy.before', async () => {
     await esbuild.build({
-      entryPoints: ['_js/alpine.js', '_js/twind.js'],
+      entryPoints: ['_js/app.js'],
       outdir: 'public/_assets/js',
       bundle: true,
       minify: true,

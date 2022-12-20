@@ -31,15 +31,13 @@
           <nav>
             <ul class="nav-menu flex items-center">
               <li class="nav-home">
-                <a href="/" class="p-4 block text-white motion-safe:(transition) hover:(opacity-100){%- if page.url === '/' %} opacity-100{% else %} opacity-40{% endif %}" aria-label="Home"
-                  {%- if page.url === '/' %} aria-current="page"{%- endif -%}
-                >
+                <a href="/" class="p-4 block text-white motion-safe:(transition) hover:(opacity-100)" aria-label="Home">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current"><title>pxl.media</title> <g fill-rule="evenodd"><rect width="8" height="8" x="8" y="8" opacity=".25"></rect> <rect width="8" height="8" y="8" opacity=".5"></rect> <rect width="8" height="8" x="8" opacity=".75"></rect> <rect width="8" height="8"></rect></g></svg>
                 </a>
               </li>
               {%- for item in collections.all | eleventyNavigation %}
               <li class="nav-item">
-                <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% else %} opacity-40{% endif %}"
+                <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"
                   {%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}
                 >
                   <i class="fa-fw {{ item.icon }}"></i>
@@ -59,8 +57,8 @@
           </form>
         </div>
       </header>
-      <main class="pt-8 flex-1">
-        <section class="container mx-auto">
+      <main class="pt-8 flex-1" data-router-wrapper>
+        <section class="container mx-auto" data-router-view="{{ page.url | slugify }}">
           {{ content | safe }}
         </section>
       </main>
@@ -82,9 +80,8 @@
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]"></div>
     </div>
-    <script src="/_assets/js/twind.js"></script>
     <script src="/_assets/js/instant.js"></script>
-    <script src="/_assets/js/alpine.js"></script>
+    <script src="/_assets/js/app.js"></script>
     <script src="https://kit.fontawesome.com/a2bf4ed495.js"></script>
   </body>
 
