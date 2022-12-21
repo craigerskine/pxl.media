@@ -62,21 +62,26 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto">
-        <p class="foot-info m-0 pt-4 pb-8 px-4 font-semibold text-xs flex-(& wrap) items-center justify-center gap-2 md:(text-sm)">
-          <span>&copy;</span>
-          {%- for item in site.footer %}
-          <a href="{{ item.url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ item.title }}</a>
-          {%- if loop.index === 1 %}
-          <i class="fa-duotone fa-fw fa-angles-right"></i> <span>Made with</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="text-red-500 inline-block" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="footer-heart"><title id="footer-heart">Love</title><polygon class="fill-current" fill-rule="evenodd" points="8 6 12 2 16 6 8 14 0 6 4 2"></polygon></svg>
-          <span>using</span>
-          {%- elseif loop.index === 2 %}
-          <span>+</span>
-          {%- else %}
-          {%- endif %}
-          {%- endfor %}
-        </p>
+      <footer class="mt-auto pt-8">
+        <div class="container mx-auto md:(flex items-center justify-between)">
+          <p class="foot-info m-0 p-4 font-semibold text-(sm center) md:(text-left)">
+            <span>&copy;</span>
+            <a href="{{ site.meta.nick_url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a>
+            <small class="pt-1 text-xs block">Design / Development</small>
+          </p>
+          <ul class="p-4 flex items-center justify-center gap-x-4">
+            {%- for item in site.footer %}
+            <li>
+              <a href="{{ item.url }}" class="motion-safe:(transition) hover:(text-blue-500)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30" role="img" class="w-6 fill-current">
+                  <title>{{ item.title }}</title>
+                  {{ item.ico | safe }}
+                </svg>
+              </a>
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]"></div>
     </div>
