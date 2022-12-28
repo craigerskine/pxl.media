@@ -3,7 +3,7 @@ layout: 'layouts/default.njk'
 title: 'Games'
 pagination:
   data: collections.game
-  before: function(paginationData, fullData) { return paginationData.sort((a, b) => a.data.title.localeCompare(b.data.title)); }
+  before: function(paginationData, fullData) {return [...paginationData].sort((a, b) => a.data.title.localeCompare(b.data.title));}
   alias: games
   size: 24
 ---
