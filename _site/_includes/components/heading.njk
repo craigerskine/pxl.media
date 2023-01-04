@@ -7,7 +7,7 @@
         {{ caller() }}
         {%- if alt_sub !== '' %}<b class="ml-4 mr-2 text-xs opacity-75">{{ sub_alt }}</b>{%- endif %}
         {{ alt }}
-        {%- if url !== '' %}<a href="{{ url }}" class="absolute inset-0"></a>{%- endif %}
+        {%- if url !== '' %}<a href="{{ url }}" class="absolute inset-0"><span class="sr-only">{{ label }}</span></a>{%- endif %}
       </{{ tag }}>
     </div>
     <b class="py-px w-full max-w-xs bg-current opacity-60" aria-hidden="true"></b>

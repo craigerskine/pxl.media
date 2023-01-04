@@ -49,6 +49,12 @@ module.exports = function (eleventyConfig) {
     return [...map.values()]
   });
 
+  eleventyConfig.addCollection('gamesAll', function(collectionApi) {
+    return collectionApi.getFilteredByTag('game').sort(function(a, b) {
+      return a.title - b.title;
+    });
+  });
+
   // esbuild
   eleventyConfig.on('eleventy.before', async () => {
     await esbuild.build({
