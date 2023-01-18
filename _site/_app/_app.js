@@ -1,7 +1,7 @@
 import 'instant.page';
 
 import Highway from '@dogstudio/highway';
-import PageTrans from './_transition';
+import PageTrans from './transition';
 
 const H = new Highway.Core({
   transitions: {

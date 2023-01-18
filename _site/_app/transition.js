@@ -5,10 +5,10 @@ class PageTrans extends Highway.Transition {
   in({ from, to, done }) {
     window.scrollTo(0, 0);
     from.remove();
-    Timeline.fromTo(to, 0.33,
+    Timeline.fromTo(to, 0.3,
       { 
         opacity: 0,
-        transform: 'translateY(-2rem)',
+        transform: 'translateY(-1.5rem)',
         ease: 'back'
       },
       {
@@ -21,7 +21,7 @@ class PageTrans extends Highway.Transition {
   }
 
   out({ from, done }) {
-    Timeline.fromTo(from, .33,
+    Timeline.fromTo(from, .3,
       {
         opacity: 1,
         transform: 'translateY(0)',
@@ -29,7 +29,7 @@ class PageTrans extends Highway.Transition {
       },
       {
         opacity: 0,
-        transform: 'translateY(-2rem)',
+        transform: 'translateY(-1.5rem)',
         ease: 'back',
         onComplete: done
       }
