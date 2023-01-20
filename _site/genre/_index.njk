@@ -16,14 +16,14 @@ permalink: /genre/
 <ul class="container mx-auto flex-(& wrap) justify-center">
 {%- for item in collections.genre %}
   {%- set total %}
-    {% set totalItems = [] %}
-      {% for g in collections.game %}
-        {% for t in g.data.tags %}
-          {% if t === 'genre_'+ item.data.page.fileSlug %}
-            {% set totalItems = (totalItems.push({title: g.data.title}), totalItems) %}
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
+    {%- set totalItems = [] %}
+      {%- for g in collections.game %}
+        {%- for t in g.data.tags %}
+          {%- if t === 'genre_'+ item.data.page.fileSlug %}
+            {%- set totalItems = (totalItems.push({title: g.data.title}), totalItems) %}
+          {%- endif %}
+        {%- endfor %}
+      {%- endfor %}
     {{ totalItems | length }}
     <b class="font-normal uppercase">Games</b>
   {%- endset %}

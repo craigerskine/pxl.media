@@ -45,12 +45,12 @@ install({
       'lg': '960px',
     },
     extend: {
-      colors: {
-        gray: presetTailwind().theme.colors.neutral,
-      },
-      fontFamily: {
-        sans: 'Roboto,'+ presetTailwind().theme.fontFamily.sans,
-      },
+      colors: ({ theme }) => ({
+        gray: theme('colors.neutral'),
+      }),
+      fontFamily: ({ theme }) => ({
+        sans: 'Roboto,'+ theme('fontFamily.sans'),
+      }),
     },
   },
   rules: [

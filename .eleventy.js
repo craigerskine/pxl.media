@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
 
   // shortcodes
-  eleventyConfig.addShortcode('version', () => `${String(Date.now())}`);
+  eleventyConfig.addShortcode('bust', () => `${new Date().getFullYear()}${new Date().getMonth()}${new Date().getDate()}${new Date().getHours()}`);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // | randomLimit(6, page.url)

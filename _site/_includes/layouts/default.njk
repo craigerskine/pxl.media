@@ -65,7 +65,7 @@
       <footer class="mt-auto pt-8">
         <div class="container mx-auto md:(flex items-center justify-between)">
           <p class="foot-info m-0 p-4 font-semibold text-(xs center) md:(text-left)">
-            <span class="mb-1 block">&copy; Copyright</span>
+            <span class="mb-1 block">&copy; Copyright {% year %}</span>
             <a href="{{ site.meta.nick_url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a>
              = UX Design + Dev
           </p>
@@ -85,7 +85,7 @@
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]"></div>
     </div>
-    <script src="/_assets/js/_app.js"></script>
+    <script src="/_assets/js/_app.js?v={% bust %}"></script>
     <script src="https://kit.fontawesome.com/a2bf4ed495.js"></script>
   </body>
 
