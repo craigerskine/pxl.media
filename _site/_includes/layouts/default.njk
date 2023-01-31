@@ -69,15 +69,22 @@
             <a href="{{ site.meta.nick_url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a>
              = UX Design + Dev
           </p>
-          <ul class="p-4 flex items-center justify-center gap-x-4">
+          <ul class="p-4 flex-(& wrap) justify-center gap-4 md:(justify-start)">
             {%- for item in site.footer %}
-            <li>
-              <a href="{{ item.url }}" class="motion-safe:(transition) hover:(text-blue-500)">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30" role="img" class="w-6 fill-current">
-                  <title>{{ item.title }}</title>
-                  {{ item.ico | safe }}
-                </svg>
-              </a>
+            <li class="text-center md:(text-left)">
+              <p class="pb-1 text-xs font-bold uppercase opacity-80">{{ item.type }}</p>
+              <ul class="flex items-center justify-center gap-x-4">
+                {%- for nav in item.nav %}
+                <li>
+                  <a href="{{ nav.url }}" class="motion-safe:(transition) hover:(text-blue-500)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30" role="img" class="w-6 fill-current">
+                      <title>{{ nav.title }}</title>
+                      {{ nav.ico | safe }}
+                    </svg>
+                  </a>
+                </li>
+                {%- endfor %}
+              </ul>
             </li>
             {%- endfor %}
           </ul>
