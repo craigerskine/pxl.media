@@ -62,19 +62,20 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto pt-8">
-        <div class="container mx-auto md:(flex items-center justify-between)">
-          <p class="foot-info m-0 p-4 font-semibold text-(xs center) md:(text-left)">
-            <span class="mb-1 block">&copy; Copyright {% year %}</span>
-            <a href="{{ site.meta.nick_url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a>
-             = UX Design + Dev
-          </p>
-          <ul class="p-4 flex-(& wrap) justify-center gap-4 md:(justify-start)">
-            {%- for item in site.footer %}
-            <li class="text-center md:(text-left)">
-              <p class="pb-1 text-xs font-bold uppercase opacity-80">{{ item.type }}</p>
-              <ul class="flex items-center justify-center gap-x-4">
-                {%- for nav in item.nav %}
+      <footer class="mt-auto pt-8 text-xs">
+        <div class="container mx-auto px-4">
+          <ul class="border-(x t dashed gray-500 opacity-30) grid-(& cols-1) divide-(y dashed gray-500 opacity-30) md:(divide-(x y-0) grid-cols-2)">
+            <li class="foot-info flex-(& col) md:(divide-(y dashed gray-500 opacity-30))">
+              <strong class="p-3 pb-2 tracking-wide uppercase md:(pb-3)">Credits</strong>
+              <p class="p-3 pt-0 md:(pt-3)">
+                <a href="{{ site.meta.nick_url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a>
+                :: UX Design + Engineering
+              </p>
+            </li>
+            <li class="foot-tech flex-(& col) md:(divide-(y dashed gray-500 opacity-30))">
+              <strong class="p-3 pb-2 tracking-wide uppercase md:(pb-3 text-right)">Tech Stack</strong>
+              <ul class="p-3 pt-0 flex items-center gap-x-4 md:(pt-3 justify-end)">
+                {%- for nav in site.footer.nav %}
                 <li>
                   <a href="{{ nav.url }}" class="motion-safe:(transition) hover:(text-blue-500)">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30" role="img" class="w-6 fill-current">
@@ -86,7 +87,6 @@
                 {%- endfor %}
               </ul>
             </li>
-            {%- endfor %}
           </ul>
         </div>
       </footer>
