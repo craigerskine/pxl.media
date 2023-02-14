@@ -6,11 +6,8 @@ const markdownItAttrs = require("markdown-it-attrs");
 const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('_site/_redirects');
-  eleventyConfig.addPassthroughCopy('_site/_assets');
-  eleventyConfig.addPassthroughCopy('_site/*.ico');
-  eleventyConfig.addPassthroughCopy('_site/*.png');
-  eleventyConfig.addPassthroughCopy('_site/*.txt');
+  eleventyConfig.addPassthroughCopy('_site/_assets/img');
+  eleventyConfig.addPassthroughCopy({'_site/_assets/root': './'});
   
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
