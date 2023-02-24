@@ -2,7 +2,7 @@
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
     <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} group hover:text-white{% endif %}">
       <div
-        class="box mb-1 p-4 bg(center cover no-repeat) text-gray-400 flex items-center relative rounded-lg overflow-hidden motion-safe:(transition) group-hover:(text-white)
+        class="box mb-1 p-4 bg-(center cover no-repeat) text-gray-400 flex items-center relative rounded-lg overflow-hidden motion-safe:(transition) group-hover:(text-white)
         {% if bg_img !== '' %} h-32{% endif %}"
         {% if bg_img !== '' %}style="background-image: url('{{ bg_img }}');"{% endif %}
       >
@@ -20,7 +20,7 @@
         {%- endif %}
       </div>
       <div class="meta pt-1 flex items-center">
-        <p class="name text(white base) font-bold leading-none block truncate" aria-hidden="{% if title === '' %}true{% else %}false{% endif %}">
+        <p class="name text-(white base) font-bold leading-none block truncate" aria-hidden="{% if title === '' %}true{% else %}false{% endif %}">
           {{ title | safe }}
         </p>
         {%- if subtext !== '' %}

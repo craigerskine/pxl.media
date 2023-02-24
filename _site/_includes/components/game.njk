@@ -24,12 +24,12 @@
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
           <div class="mast mb-2">
-            <b class="name text(white base) font-black block truncate" title="{{ item.data.title }}">{{ item.data.title }}</b>
+            <b class="name text-(white base) font-black block truncate" title="{{ item.data.title }}">{{ item.data.title }}</b>
             <p class="note">
               <i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" title="{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
             </p>
           </div>
-          <ul class="py-2 border-(t dashed gray-500 opacity-30) w-full text-base flex items-center">
+          <ul class="py-2 border-(t dashed gray-500/30) w-full text-base flex items-center">
             <li class="flex-1">
               <ul class="tags flex space-x-4">
                 {%- for t in item.data.tags %}
@@ -38,7 +38,7 @@
                 <li>
                   <a href="/genre/{{ g.data.page.fileSlug }}/" class="group relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
                     <i class="fa-light fa-fw fa-{{ g.data.icon }}"></i>
-                    <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                    <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
                       {{ g.data.title }}
                     </b>
                   </a>
@@ -54,7 +54,7 @@
               {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
                 <li class="group flex items-center justify-center relative" tabindex="0">
                   <i class="fa-fw m-auto opacity-50{% if i === 0 %} fa-light fa-microchip{% endif %}{% if i === 1 %} fa-light fa-qrcode{% endif %}{% if i === 2 %} fa-light fa-map{% endif %}"></i>
-                  <b class="py-1 px-2 bg-black text(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                  <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
                     {%- if i === 0 %}Physical{%- endif %}
                     {%- if i === 1 %}Digital{%- endif %}
                     {%- if i === 2 %}Guide{%- endif %}

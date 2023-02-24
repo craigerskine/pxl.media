@@ -21,11 +21,11 @@
       {%- endif %}
     </h1>
   </div>
-  <ul class="ml-auto py-1 text(right xs) leading-tight font-bold uppercase">
+  <ul class="ml-auto py-1 text-(right xs) leading-tight font-bold uppercase">
   {% for i in range(0, 3) -%}
   {%- if (i === 0 and data_1) or (i === 1 and data_2) or (i === 2 and data_3) %}
     <li class="py-2">
-      <b class="block text(sm gray-200) leading-none">
+      <b class="block text-(sm gray-200) leading-none">
         {%- if i === 0 %}
         {{ data_1 }}
         {%- elseif i === 1 %}
