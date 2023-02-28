@@ -1,12 +1,12 @@
 ---
 layout: 'layouts/default.njk'
-title: Search
+title: Search results
 ---
 
 {%- import 'components/heading.njk' as heading %}
 
 <div x-data="appdata">
-  {%- call heading.x(tag='h1',label=title) %} <span x-html="' &quot;'+ query +'&quot;'"></span>{%- endcall %}
+  {%- call heading.x(tag='h1') %}<span x-html="' &quot;'+ query +'&quot;'"></span> {{ title }}{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
     <template x-for="item in getItems" hidden>
     <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative lg:(mx-0)">
