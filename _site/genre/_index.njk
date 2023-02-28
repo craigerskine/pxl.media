@@ -13,7 +13,7 @@ permalink: /genre/
 {%- import 'components/category.njk' as category %}
 
 {%- call heading.x(tag='h1',label='Games by genre') %}{%- endcall %}
-<ul class="container mx-auto flex-(& wrap) justify-center">
+<ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.genre %}
   {%- set total %}
     {%- set totalItems = [] %}

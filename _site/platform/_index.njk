@@ -13,7 +13,7 @@ permalink: /platform/
 {%- import 'components/category.njk' as category %}
 
 {%- call heading.x(tag='h1',label='Games by platform') %}{%- endcall %}
-<ul class="container mx-auto flex-(& wrap) justify-center">
+<ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.platform %}
   {%- set sub %}
     {% set totalGames = [] %}
