@@ -27,8 +27,12 @@ title: Systems
       <li class="border-(b dashed gray-500 opacity-30) flex items-center relative">
         <div class="flex-(& none col) justify-center">
           <b class="h-4 border-(l dashed gray-500 opacity-30)"></b>
-          <div class="w-8 h-8 border-(1 dashed gray-500 opacity-30) flex-(& none) rounded-full -translate-x-4">
+          <div class="w-8 h-8 border-(1 dashed gray-500 opacity-30) flex-(& none) relative rounded-full transform -translate-x-4">
+            {%- if item.data.system_type == 'mini' %}
+            <i class="fa-solid fa-fw fa-minimize fa-lg m-auto opacity-50" title="Mini / Classic"></i>
+            {%- else %}
             <i class="fa-regular fa-fw fa-computer-classic fa-lg m-auto opacity-50"></i>
+            {%- endif %}
           </div>
           <b class="h-4 border-(l dashed gray-500 opacity-30)"></b>
         </div>
