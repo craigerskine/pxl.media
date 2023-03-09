@@ -87,11 +87,14 @@
               <ul class="flex items-center justify-center gap-x-4 md:(justify-end)">
                 {%- for nav in site.footer.nav %}
                 <li>
-                  <a href="{{ nav.url }}" class="motion-safe:(transition) hover:(text-blue-500)">
+                  <a href="{{ nav.url }}" class="group relative motion-safe:(transition) hover:(text-blue-500)">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" class="w-6 fill-current">
                       <title>{{ nav.title }}</title>
                       {{ nav.ico | safe }}
                     </svg>
+                    <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                      {{ nav.title }}
+                    </b>
                   </a>
                 </li>
                 {%- endfor %}
