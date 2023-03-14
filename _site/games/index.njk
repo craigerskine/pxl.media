@@ -11,7 +11,8 @@ pagination:
 {%- import 'components/heading.njk' as heading %}
 {%- import 'components/game.njk' as game %}
 
-{%- call heading.x(label=title,sub=collections.gamesAll.length) %}{%- endcall %}
+<div class="flex">
+  <div class="flex-1">{%- call heading.x(label=title,sub=collections.gamesAll.length) %}{%- endcall %}</div>
+  <div class="mt-8 mr-4 mb-6 pb-2 flex-none">{%- include 'components/pagination.njk' %}</div>
+</div>
 {{ game.x(games=games,platforms=collections.platform,genres=collections.genre) }}
-
-{%- include 'components/pagination.njk' %}
