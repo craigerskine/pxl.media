@@ -2,7 +2,7 @@
 layout: 'layouts/default.njk'
 title: 'Games'
 pagination:
-  data: collections.game
+  data: collections.gamesAll
   before: function(paginationData, fullData) { return paginationData.sort(function(a, b){return a.data.title - b.data.title}); }
   alias: games
   size: 24
@@ -11,7 +11,7 @@ pagination:
 {%- import 'components/heading.njk' as heading %}
 {%- import 'components/game.njk' as game %}
 
-{%- call heading.x(label=title,sub=collections.game.length) %}{%- endcall %}
+{%- call heading.x(label=title,sub=collections.gamesAll.length) %}{%- endcall %}
 {{ game.x(games=games,platforms=collections.platform,genres=collections.genre) }}
 
 {%- include 'components/pagination.njk' %}

@@ -58,9 +58,13 @@ module.exports = function (eleventyConfig) {
     return [...map.values()]
   });
 
-  eleventyConfig.addCollection('gamesAll', function(collectionApi) {
-    return collectionApi.getFilteredByTag('game').sort(function(a, b) {
-      return a.title - b.title;
+  eleventyConfig.addCollection('gamesAll', function(collection) {
+    return collection.getFilteredByGlob('_site/games/_data/*.md').sort(function(a, b) {
+      let nameA = a.data.title.toUpperCase();
+      let nameB = b.data.title.toUpperCase();
+      if (nameA < nameB) return -1;
+      else if (nameA > nameB) return 1;
+      else return 0;
     });
   });
 

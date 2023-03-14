@@ -1,6 +1,6 @@
-{%- macro x(games=[],platforms=[],genres=[]) %}
+{%- macro x(games=[],platforms=[],genres=[],sort='data.title') %}
 <ul class="list-game pb-4 flex flex-wrap">
-{%- for item in games | sort(false, false, "data.title") %}
+{%- for item in games | sort(false, false, sort) %}
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div class="box w-full flex flex-wrap relative rounded-lg shadow-xl{% if item.data.pending %} ring-2 ring-red-500{%- endif %}">
       <figure class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
