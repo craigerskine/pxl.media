@@ -1,5 +1,4 @@
-<nav class="" aria-labelledby="games-nav">
-  <p id="games-nav" class="sr-only">Games navigation</p>
+<nav aria-label="Games navigation">
   <ol class="flex items-center justify-center gap-x-3 sm:(gap-x-5)">
     <li{% if pagination.href.previous %}{% else %} class="pointer-events-none opacity-50"{% endif %}><a href="{{ pagination.href.previous }}" title="Previous page"><i class="fa-light fa-fw fa-angle-left"></i></a></li>
     <li class="text-xs flex flex-wrap items-center justify-center">
