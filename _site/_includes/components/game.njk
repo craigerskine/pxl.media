@@ -1,6 +1,8 @@
-{%- macro x(games=[],platforms=[],genres=[],sort='data.title') %}
+{%- import 'components/tooltip.njk' as tooltip -%}
+
+{%- macro x(games=[],platforms=[],genres=[],by='data.title') %}
 <ul class="list-game pb-4 flex flex-wrap">
-{%- for item in games | sort(false, false, sort) %}
+{%- for item in games | sort(false, false, by) %}
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div class="box w-full flex flex-wrap relative rounded-lg shadow-xl{% if item.data.pending %} ring-2 ring-red-500{%- endif %}">
       <figure class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
@@ -38,9 +40,7 @@
                 <li>
                   <a href="/genre/{{ g.data.page.fileSlug }}/" class="group relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
                     <i class="fa-light fa-fw fa-{{ g.data.icon }}"></i>
-                    <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
-                      {{ g.data.title }}
-                    </b>
+                    {{ tooltip.x(tip=g.data.title) }}
                   </a>
                 </li>
                 {%- endif %}
@@ -54,11 +54,12 @@
               {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
                 <li class="group flex items-center justify-center relative" tabindex="0">
                   <i class="fa-fw m-auto opacity-50{% if i === 0 %} fa-light fa-microchip{% endif %}{% if i === 1 %} fa-light fa-qrcode{% endif %}{% if i === 2 %} fa-light fa-map{% endif %}"></i>
-                  <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
+                  {%- set tip %}
                     {%- if i === 0 %}Physical{%- endif %}
                     {%- if i === 1 %}Digital{%- endif %}
                     {%- if i === 2 %}Guide{%- endif %}
-                  </b>
+                  {%- endset %}
+                  {{ tooltip.x(tip=tip) }}
                 </li>
               {%- endif %}
               {%- endfor %}

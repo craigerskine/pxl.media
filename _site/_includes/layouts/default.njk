@@ -1,3 +1,5 @@
+{%- import 'components/tooltip.njk' as tooltip -%}
+
 <!doctype html>
 <html lang="en">
 
@@ -64,13 +66,13 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto py-8 text-xs">
+      <footer class="mt-auto py-8 bg-gray-400/5 text-xs md:(py-16)">
         <div class="container mx-auto px-4">
           <ul class="text-center grid-(& cols-1) gap-y-5 md:(text-start grid-cols-2 gap-y-0)">
             <li class="foot-info flex-(& col)">
               <strong class="pb-2 tracking-wide uppercase">Credits</strong>
               <div class="flex items-center justify-center gap-x-4 md:(justify-start)">
-                <a href="{{ site.meta.nick_url }}" class="text-gray-200 motion-safe:(transition) hover:(text-blue-400)">
+                <a href="{{ site.meta.nick_url }}" class="group text-gray-200 relative motion-safe:(transition) hover:(text-blue-400)">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" class="w-6 fill-current">
                     <title>{{ site.meta.nick }}</title>
                     <g fill-rule="evenodd">
@@ -78,6 +80,7 @@
                       <path d="M36.4675663,31.3530908 C38.6952853,28.1279333 40,24.2163329 40,20 C40,8.954305 31.045695,0 20,0 C8.954305,0 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 C24.2163329,40 28.1279333,38.6952853 31.3530908,36.4675663 C30.0165717,35.9897103 29.0086055,34.8208673 28.759531,33.3913763 C26.2430757,35.0407833 23.2335564,36 20,36 C11.163444,36 4,28.836556 4,20 C4,11.163444 11.163444,4 20,4 C28.836556,4 36,11.163444 36,20 C36,23.2335564 35.0407833,26.2430757 33.391374,28.7595341 C34.8208673,29.0086055 35.9897103,30.0165717 36.4675663,31.3530908 Z" />
                     </g>
                   </svg>
+                  {{ tooltip.x(tip=site.meta.nick) }}
                 </a>
                 <span>UX / Design / Engineering</span>
               </div>
@@ -92,9 +95,7 @@
                       <title>{{ nav.title }}</title>
                       {{ nav.ico | safe }}
                     </svg>
-                    <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:transition-all group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)">
-                      {{ nav.title }}
-                    </b>
+                    {{ tooltip.x(tip=nav.title) }}
                   </a>
                 </li>
                 {%- endfor %}

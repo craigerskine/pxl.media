@@ -129,7 +129,7 @@ layout: 'layouts/default.njk'
 </ul>
 
 {%- call heading.x(tag='h2',label='Recently added') %}{%- endcall %}
-{{ game.x(games=gamesRecent,platforms=collections.platform,genres=collections.genre,sort='data.date') }}
+{{ game.x(games=gamesRecent,platforms=collections.platform,genres=collections.genre,by='data.date') }}
 
 {%- call heading.x(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/') %}{%- endcall %}
 {{ game.x(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}

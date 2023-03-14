@@ -2,7 +2,7 @@
 {%- import 'components/category.njk' as category %}
 
 {%- call heading.x(tag='h2',label='Systems owned') %}{%- endcall %}
-<ul class="container mx-auto flex-(& wrap) justify-center">
+<ul class="container mx-auto flex-(& wrap)">
 {%- for item in collections.system %}
   {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
   {%- if item.data.platform === company %}
