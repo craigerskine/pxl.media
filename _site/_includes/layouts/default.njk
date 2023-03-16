@@ -36,14 +36,20 @@
             <ul class="nav-menu flex items-center">
               <li class="nav-home">
                 <a href="/" class="p-4 block text-white motion-safe:(transition) hover:(opacity-100)" aria-label="Home">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" role="img" class="block fill-current"><title>pxl.media</title> <g fill-rule="evenodd"><rect width="8" height="8" x="8" y="8" opacity=".25"></rect> <rect width="8" height="8" y="8" opacity=".5"></rect> <rect width="8" height="8" x="8" opacity=".75"></rect> <rect width="8" height="8"></rect></g></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" role="img" class="block fill-current">
+                    <title>{{ site.meta.name }}</title>
+                    <g fill-rule="evenodd">
+                      <rect width="10" height="10" />
+                      <rect width="10" height="10" x="10" opacity=".75" />
+                      <rect width="10" height="10" y="10" opacity=".5" />
+                      <rect width="10" height="10" x="10" y="10" opacity=".25" />
+                    </g>
+                  </svg>
                 </a>
               </li>
               {%- for item in collections.all | eleventyNavigation %}
               <li class="nav-item">
-                <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"
-                  {%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}
-                >
+                <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
                   <i class="iconify text-2xl leading-none" data-icon="{{ item.icon }}"></i>
                   <span class="sr-only">{{ item.key }}</span>
                   <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-current opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
