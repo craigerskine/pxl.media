@@ -4,7 +4,7 @@ title: Genres
 eleventyNavigation:
   key: Genre
   title: Genre
-  icon: fa-solid fa-hashtag
+  icon: mdi:pound
   order: 2
 permalink: /genre/
 ---
@@ -27,6 +27,6 @@ permalink: /genre/
     {{ totalItems | length }}
     <b class="font-normal uppercase">Games</b>
   {%- endset %}
-  {{ category.x(title=item.data.title,subtext=total,url='/genre/'+ item.data.page.fileSlug +'/',fg_ico=item.data.icon) }}
+  {{ category.x(title=item.data.title,subtext=total,url='/genre/'+ item.data.page.fileSlug +'/',fg_ico=item.data.ico) }}
 {%- endfor %}
 </ul>

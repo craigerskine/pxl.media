@@ -44,7 +44,7 @@
                 <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"
                   {%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}
                 >
-                  <i class="fa-fw {{ item.icon }}"></i>
+                  <i class="iconify-inline text-xl leading-none" data-icon="{{ item.icon }}"></i>
                   <span class="sr-only">{{ item.key }}</span>
                   <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-current opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
                 </a>
@@ -56,7 +56,7 @@
             <fieldset class="mr-4 ml-auto max-w-64 flex justify-end items-center relative z-30">
               <label for="site-search" class="sr-only">Search</label>
               <input type="search" id="site-search" name="q" placeholder="Search..." title="Search" autocomplete="off" class="border-(& transparent) p-2 w-8 bg-transparent text-(sm transparent) cursor-pointer outline-none appearance-none relative z-10 opacity-0 motion-safe:(transition-all) focus:(w-full bg-gray-700 text-white opacity-100)" />
-              <i class="fa-light fa-fw fa-lg fa-search absolute right-0 z-0 opacity-40 motion-safe:(transition)"></i>
+              <i class="iconify-inline text-2xl absolute right-0 z-0 opacity-40 motion-safe:(transition)" data-icon="mdi:magnify"></i>
             </fieldset>
           </form>
         </div>
@@ -107,7 +107,6 @@
       <div class="bg-grid fixed inset-0 z-[-1]"></div>
     </div>
     <script src="/_assets/js/_app.js?v={% bust %}"></script>
-    <script src="https://kit.fontawesome.com/a2bf4ed495.js"></script>
   </body>
 
 </html>

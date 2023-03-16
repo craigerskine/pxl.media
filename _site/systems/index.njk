@@ -7,6 +7,8 @@ title: Systems
 {%- set platforms = collections.platform -%}
 
 {%- import 'components/heading.njk' as heading %}
+{%- import 'components/tooltip.njk' as tooltip %}
+
 {%- call heading.x(tag='h1',label=title,sub=systems.length) %}{%- endcall %}
 
 <ul class="container mx-auto mb-12 px-4 md:(grid-(& flow-row cols-2) gap-12)">
@@ -27,11 +29,12 @@ title: Systems
       <li class="border-(b dashed gray-500 opacity-30) flex items-center relative">
         <div class="flex-(& none col) justify-center">
           <b class="h-4 border-(l dashed gray-500 opacity-30)"></b>
-          <div class="w-8 h-8 border-(1 dashed gray-500 opacity-30) flex-(& none) relative rounded-full transform -translate-x-4">
+          <div class="group w-8 h-8 border-(1 dashed gray-500 opacity-30) flex-(& none) relative rounded-full transform -translate-x-4">
             {%- if item.data.system_type == 'mini' %}
-            <i class="fa-solid fa-fw fa-minimize fa-lg m-auto opacity-50" title="Mini / Classic"></i>
+            <i class="iconify-inline m-auto text-2xl opacity-50" data-icon="mdi:fullscreen-exit"></i>
+            {{ tooltip.x(tip='Mini / Classic') }}
             {%- else %}
-            <i class="fa-regular fa-fw fa-computer-classic fa-lg m-auto opacity-50"></i>
+            <i class="iconify-inline m-auto text-2xl opacity-50" data-icon="mdi:desktop-tower"></i>
             {%- endif %}
           </div>
           <b class="h-4 border-(l dashed gray-500 opacity-30)"></b>

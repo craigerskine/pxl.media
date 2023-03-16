@@ -4,7 +4,7 @@ title: Platforms
 eleventyNavigation:
   key: Platform
   title: Platform
-  icon: fa-duotone fa-layer-group
+  icon: mdi:layers-outline
   order: 1
 permalink: /platform/
 ---
@@ -35,7 +35,7 @@ permalink: /platform/
       {% endif %}
     {% endfor %}
     {%- if totalGames.length and totalSystems.length %}
-    <i class="fa-solid fa-fw fa-slash-forward text-[8px] inline-block opacity-50"></i>
+    <b class="mx-1 opacity-50">/</b>
     {%- endif %}
     {%- if totalSystems.length %}  
       {{ totalSystems | length }}

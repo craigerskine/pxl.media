@@ -1,4 +1,4 @@
-{%- macro x(title='&nbsp;',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',svg_title='') %}
+{%- macro x(title='&nbsp;',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',ico='',svg_title='') %}
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
     <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} group hover:text-white{% endif %}">
       <div
@@ -14,7 +14,7 @@
         </svg>
         {%- endif %}
         {%- if fg_ico !== '' %}
-        <i class="text-5xl relative fa-thin fa-fw fa-{{ fg_ico }}"></i>
+        <i class="iconify-inline text-6xl relative" data-icon="{{ fg_ico }}"></i>
         {%- endif %}
         {%- if bg_img === '' %}
         {%- endif %}
