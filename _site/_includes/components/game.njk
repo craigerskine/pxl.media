@@ -39,7 +39,7 @@
                 {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
                 <li>
                   <a href="/genre/{{ g.data.page.fileSlug }}/" class="group relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
-                    <i class="iconify-inline text-xl" data-icon="{{ g.data.ico }}"></i>
+                    <i class="iconify text-xl" data-icon="{{ g.data.ico }}"></i>
                     {{ tooltip.x(tip=g.data.title) }}
                   </a>
                 </li>
@@ -53,7 +53,7 @@
               {% for i in range(0, 3) -%}
               {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
                 <li class="group flex items-center justify-center relative" tabindex="0">
-                  <i class="iconify-inline m-auto text-xl opacity-50" data-icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}"></i>
+                  <i class="iconify m-auto text-xl opacity-50" data-icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}"></i>
                   {%- set tip %}
                     {%- if i === 0 %}Physical{%- endif %}
                     {%- if i === 1 %}Digital{%- endif %}
