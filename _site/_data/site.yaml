@@ -17,10 +17,10 @@ footer:
         ico: akar-icons:vscode-fill
       - title: 'CSS: Twind'
         url: 'https://twind.style/'
-        ico: vscode-icons:file-type-eleventy
+        ico: simple-icons:eleventy
       - title: 'SSG: 11ty'
         url: https://11ty.dev/
-        ico: mdi:tailwind
+        ico: simple-icons:tailwindcss
       - title: 'Source: GitHub'
         url: https://github.com/craigerskine/pxl.media
         ico: mdi:source-repository

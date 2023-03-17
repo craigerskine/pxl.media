@@ -94,10 +94,10 @@
             <li class="foot-tech flex-(& col)">
               <hr class="mb-4 border-white/10 md:(hidden)" />
               <strong class="pb-2 tracking-wide uppercase md:(text-end)">Tech Stack</strong>
-              <ul class="text-2xl flex items-center justify-center gap-x-8 md:(justify-end)">
+              <ul class="text-2xl flex items-center justify-center gap-4 md:(justify-end)">
                 {%- for nav in site.footer.nav %}
                 <li>
-                  <a href="{{ nav.url }}" class="group relative motion-safe:(transition) hover:(text-blue-500)">
+                  <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-blue-500)">
                     <i class="iconify" data-icon="{{ nav.ico }}"></i>
                     {{ tooltip.x(tip=nav.title) }}
                   </a>
