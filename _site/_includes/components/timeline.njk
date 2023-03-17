@@ -1,0 +1,38 @@
+{%- macro timeline() %}
+<ul class="container mx-auto px-4 mb-12 md:(gap-12 grid-(& cols-2)">
+  {{ caller() }}
+</ul>
+{%- endmacro %}
+
+{%- macro group(title='Title',logo='',url='#',colspan='') %}
+<li class="mb-12 flex-(& col){% if colspan %} col-span-2{% endif %} md:(mb-0)">
+  <a href="{{ url }}" class="group py-5 border-(b dashed gray-500/30) flex-none{% if url == '#' %} pointer-events-none{% endif %} motion-safe:(transition) hover:(text-white)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current opacity-50 motion-safe:(transition) group-hover:(opacity-100)">
+      <title>{{ title }}</title>
+      {{ logo | safe }}
+    </svg>
+  </a>
+  <ul class="ml-5 grid-(& cols-1) md:(ml-12{% if colspan %} grid-cols-2 gap-x-12{% endif %})">
+    {{ caller() }}
+  </ul>
+</li>
+{%- endmacro %}
+
+{%- macro point(title='Title',sub='Sub',meta='Meta',ico='mdi:desktop-tower') %}
+<li class="border-(b dashed gray-500/30) flex items-center relative">
+  <div class="flex-(& col none) justify-center">
+    <b class="h-4 border-(l dashed gray-500/30)"></b>
+    <div class="group w-8 h-8 flex-(& none) border-(1 dashed gray-500/30) relative rounded-full transform -translate-x-4">
+      <i class="iconify m-auto text-2xl opacity-50" data-icon="{{ ico }}"></i>
+    </div>
+    <b class="border-(l dashed gray-500/30) h-4"></b>
+  </div>
+  <div class="pl-2 flex-1">
+    <b class="text-gray-200">{{ title }}</b>
+    <div class="flex justify-between opacity-75">
+      <small>{{ sub }}</small>
+      <small>{{ meta }}</small>
+    </div>
+  </div>
+</li>
+{%- endmacro %}
