@@ -33,16 +33,16 @@
       <header>
         <div class="container mx-auto flex items-center relative">
           <nav aria-label="Main navigation">
-            <ul class="nav-menu flex items-center">
+            <ul class="nav-menu text-xl flex items-center">
               <li class="nav-home">
                 <a href="/" class="p-4 block text-white motion-safe:(transition) hover:(opacity-100)" aria-label="Home">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" role="img" class="block fill-current">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current">
                     <title>{{ site.meta.name }}</title>
                     <g fill-rule="evenodd">
-                      <rect width="10" height="10" />
-                      <rect width="10" height="10" x="10" opacity=".75" />
-                      <rect width="10" height="10" y="10" opacity=".5" />
-                      <rect width="10" height="10" x="10" y="10" opacity=".25" />
+                      <rect width="8" height="8" />
+                      <rect width="8" height="8" x="8" opacity=".75" />
+                      <rect width="8" height="8" y="8" opacity=".5" />
+                      <rect width="8" height="8" x="8" y="8" opacity=".25" />
                     </g>
                   </svg>
                 </a>
@@ -50,7 +50,7 @@
               {%- for item in collections.all | eleventyNavigation %}
               <li class="nav-item">
                 <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
-                  <i class="iconify text-2xl leading-none" data-icon="{{ item.icon }}"></i>
+                  <i class="iconify leading-none" data-icon="{{ item.icon }}"></i>
                   <span class="sr-only">{{ item.key }}</span>
                   <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-current opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
                 </a>
@@ -62,7 +62,7 @@
             <fieldset class="mr-4 ml-auto max-w-64 flex justify-end items-center relative z-30">
               <label for="site-search" class="sr-only">Search</label>
               <input type="search" id="site-search" name="q" placeholder="Search..." title="Search" autocomplete="off" class="border-(& transparent) p-2 w-8 bg-transparent text-(sm transparent) cursor-pointer outline-none appearance-none relative z-10 opacity-0 motion-safe:(transition-all) focus:(w-full bg-gray-700 text-white opacity-100)" />
-              <i class="iconify text-2xl absolute right-0 z-0 opacity-40 motion-safe:(transition)" data-icon="mdi:magnify-expand"></i>
+              <i class="iconify text-xl absolute right-0 z-0 opacity-40 motion-safe:(transition)" data-icon="mdi:magnify-expand"></i>
             </fieldset>
           </form>
         </div>
@@ -94,14 +94,11 @@
             <li class="foot-tech flex-(& col)">
               <hr class="mb-4 border-white/10 md:(hidden)" />
               <strong class="pb-2 tracking-wide uppercase md:(text-end)">Tech Stack</strong>
-              <ul class="flex items-center justify-center gap-x-8 md:(justify-end)">
+              <ul class="text-2xl flex items-center justify-center gap-x-8 md:(justify-end)">
                 {%- for nav in site.footer.nav %}
                 <li>
                   <a href="{{ nav.url }}" class="group relative motion-safe:(transition) hover:(text-blue-500)">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" class="w-6 fill-current">
-                      <title>{{ nav.title }}</title>
-                      {{ nav.ico | safe }}
-                    </svg>
+                    <i class="iconify" data-icon="{{ nav.ico }}"></i>
                     {{ tooltip.x(tip=nav.title) }}
                   </a>
                 </li>
