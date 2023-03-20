@@ -1,6 +1,6 @@
 <nav aria-label="Games navigation">
   <ol class="flex items-center justify-center gap-x-3 sm:(gap-x-5)">
-    <li{% if pagination.href.previous %}{% else %} class="pointer-events-none opacity-50"{% endif %}><a href="{{ pagination.href.previous }}" title="Previous page"><i class="iconify text-xl" data-icon="mdi:chevron-left"></i></a></li>
+    <li{% if pagination.href.previous %}{% else %} class="pointer-events-none opacity-50"{% endif %}><a href="{{ pagination.href.previous }}" title="Previous page"><iconify-icon icon="mdi:chevron-left" inline="false" class="text-xl"></iconify-icon></a></li>
     <li class="text-xs flex flex-wrap items-center justify-center">
       {%- if pagination.pageNumber %}
       <b class="text-gray-300 font-black">{{ pagination.pageNumber }}</b>
@@ -12,6 +12,6 @@
       <small class="mx-3 text-sm hidden opacity-70 sm:(block)">pages</small>
       {%- endif %}
     </li>
-    <li{% if pagination.href.next %}{% else %} class="pointer-events-none opacity-50"{% endif %}><a href="{{ pagination.href.next }}" title="Next page"><i class="iconify text-xl" data-icon="mdi:chevron-right"></i></a></li>
+    <li{% if pagination.href.next %}{% else %} class="pointer-events-none opacity-50"{% endif %}><a href="{{ pagination.href.next }}" title="Next page"><iconify-icon icon="mdi:chevron-right" inline="false" class="text-xl"></iconify-icon></a></li>
   </ol>
 </nav>

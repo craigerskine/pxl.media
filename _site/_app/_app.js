@@ -1,6 +1,6 @@
 import 'instant.page';
 
-import Iconify from '@iconify/iconify';
+import 'iconify-icon';
 
 import Highway from '@dogstudio/highway';
 import PageTrans from './transition';

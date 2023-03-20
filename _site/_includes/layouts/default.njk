@@ -50,7 +50,7 @@
               {%- for item in collections.all | eleventyNavigation %}
               <li class="nav-item">
                 <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
-                  <i class="iconify leading-none" data-icon="{{ item.icon }}"></i>
+                  <iconify-icon icon="{{ item.icon }}" inline="false" class="leading-none"></iconify-icon>
                   <span class="sr-only">{{ item.key }}</span>
                   <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-current opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
                 </a>
@@ -62,7 +62,7 @@
             <fieldset class="mr-4 ml-auto max-w-64 flex justify-end items-center relative z-30">
               <label for="site-search" class="sr-only">Search</label>
               <input type="search" id="site-search" name="q" placeholder="Search..." title="Search" autocomplete="off" class="border-(& transparent) p-2 w-8 bg-transparent text-(sm transparent) cursor-pointer outline-none appearance-none relative z-10 opacity-0 motion-safe:(transition-all) focus:(w-full bg-gray-700 text-white opacity-100)" />
-              <i class="iconify text-xl absolute right-0 z-0 opacity-40 motion-safe:(transition)" data-icon="mdi:magnify-expand"></i>
+              <iconify-icon icon="mdi:magnify-expand" inline="false" class="text-xl absolute right-0 z-0 opacity-40 motion-safe:(transition)"></iconify-icon>
             </fieldset>
           </form>
         </div>
@@ -98,7 +98,7 @@
                 {%- for nav in site.footer.nav %}
                 <li>
                   <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-blue-500)">
-                    <i class="iconify" data-icon="{{ nav.ico }}"></i>
+                    <iconify-icon icon="{{ nav.ico }}" inline="false"></iconify-icon>
                     {{ tooltip.x(tip=nav.title) }}
                   </a>
                 </li>
