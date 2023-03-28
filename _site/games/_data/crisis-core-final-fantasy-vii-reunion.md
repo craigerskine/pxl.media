@@ -7,5 +7,5 @@ physical: true
 digital: false
 guide: false
 pending: false
-posted: 2022-12-30
+date: 2022-12-30
 ---

@@ -9,5 +9,5 @@ physical: true
 digital: false
 guide: false
 pending: false
-posted: YYYY-MM-DD
+date: YYYY-MM-DD
 ---
