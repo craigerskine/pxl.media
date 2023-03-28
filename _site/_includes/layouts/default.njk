@@ -65,26 +65,28 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto pt-8 text-xs md:(text-sm)">
-        <div class="container mx-auto border-(t gray-400/30) pt-8 px-4 flex-(& col) items-center gap-6 md:(flex-row justify-between)">
-          <div class="flex-(& none) items-center gap-4">
-            <a href="/" class="flex-none">{{ logo.pxl(title=site.meta.name,size='32') }}</a>
-            <p class="max-w-[240px]">{{ site.meta.description }}</p>
+      <footer class="mt-auto pt-8 text-(xs gray-500) md:(text-sm)">
+        <div class="container mx-auto px-4">
+          <div class="py-8 border-(t gray-400/30) flex-(& col) items-center gap-6 md:(flex-row justify-between)">
+            <div class="flex-(& none) items-center gap-4">
+              <a href="/" class="flex-none transform motion-safe:(transition) hover:(-rotate-12 text-gray-200)">{{ logo.pxl(title=site.meta.name,size='32') }}</a>
+              <p class="max-w-[240px]">{{ site.meta.description }}</p>
+            </div>
+            <ul class="text-2xl flex items-center justify-center gap-4 md:(justify-end gap-6)">
+              {%- for nav in site.footer.nav %}
+              <li>
+                <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-gray-200)">
+                  <iconify-icon icon="{{ nav.ico }}" inline="false"></iconify-icon>
+                  {{ tooltip.x(tip=nav.title) }}
+                </a>
+              </li>
+              {%- endfor %}
+            </ul>
           </div>
-          <ul class="text-2xl flex items-center justify-center gap-4 md:(justify-end gap-6)">
-            {%- for nav in site.footer.nav %}
-            <li>
-              <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-red-500)">
-                <iconify-icon icon="{{ nav.ico }}" inline="false"></iconify-icon>
-                {{ tooltip.x(tip=nav.title) }}
-              </a>
-            </li>
-            {%- endfor %}
-          </ul>
         </div>
-        <p class="py-8 text-(gray-400/50 center) font-semibold">
+        <p class="pb-8 text-center font-semibold">
           Designed and engineered with
-          <svg xmlns="http://www.w3.org/2000/svg" class="-mt-1 mx-1 text-red-500 inline-block fill-current" width="16" height="12" viewBox="0 0 16 12" role="img" aria-labelledby="footer-heart">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-1 text-red-500 inline-block fill-current" width="16" height="12" viewBox="0 0 16 12" role="img" aria-labelledby="footer-heart">
             <title id="footer-heart">Love</title>
             <polygon points="8 4 12 0 16 4 8 12 0 4 4 0"></polygon>
           </svg>

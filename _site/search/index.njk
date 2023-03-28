@@ -7,26 +7,21 @@ title: Search results
 
 <div x-data="appdata">
   {%- call heading.x(tag='h1') %}<span x-html="' &quot;'+ query +'&quot;'"></span> {{ title }}{%- endcall %}
-  <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
+  <ul x-show="results" class="px-4 divide-(y gray-400/30)">
     <template x-for="item in getItems" hidden>
-    <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative lg:(mx-0)">
-      <div class="box w-full flex relative rounded-lg shadow-xl">
-        <figure class="w-full flex-(& col) relative rounded-t-lg">
-          <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title +' cover'" class="cover w-full h-16 object-(cover center) opacity-75 rounded-t-lg" />
-          <figcaption class="w-full flex">
-            <div class="details w-full flex">
-              <div class="meta p-3 w-full min-w-0 flex-(& 1 col) justify-between">
-                <p class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></p>
-                <ul class="flex items-center gap-1">
-                  <li class="platform w-full min-w-0 text-(gray-400 sm) block truncate" :title="item.platform" x-text="item.platform"></li>
-                  <li class="note ml-auto w-3/5 min-w-0 text-(gray-500 xs right) block truncate" :title="item.note" x-text="item.note"></li>
-                </ul>
-              </div>
-            </div>
-          </figcaption>
+      <li class="game py-6 flex-(& col) items-center gap-4 md:(flex-row gap-10)">
+        <figure class="flex-none">
+          <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title +' cover'" class="cover w-24 h-auto rounded shadow-lg" />
+          <figcaption class="sr-only" x-text="item.title"></figcaption>
         </figure>
-      </div>
-    </li>
+        <div class="text-center md:(text-start)">
+          <p class="mb-3 text-(base gray-100) font-semibold md:(text-2xl)" x-text="item.title"></p>
+          <ul class="text-sm space-y-3">
+            <li class="platform" x-text="item.platform"></li>
+            <li class="note" x-text="item.note"></li>
+          </ul>
+        </div>
+      </li>
     </template>
   </ul>
   <h2 x-show="!results" class="m-auto py-8 px-4 text-(gray-500 3xl center) leading-none font-bold md:(py-32)">
