@@ -1,4 +1,4 @@
-{%- macro x(title='&nbsp;',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',ico='',svg_title='') %}
+{%- macro x(title='',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',ico='',svg_title='') %}
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
     <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} group hover:text-white{% endif %}">
       <div
@@ -21,7 +21,7 @@
       </div>
       <div class="meta pt-1 flex items-center">
         <p class="name text-(white base) font-bold leading-none block truncate" aria-hidden="{% if title === '' %}true{% else %}false{% endif %}">
-          {{ title | safe }}
+          {% if title !== '' %}{{ title }}{% else %}&nbsp;{% endif %}
         </p>
         {%- if subtext !== '' %}
         <div class="ml-auto leading-none">
