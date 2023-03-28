@@ -2,7 +2,7 @@
 meta:
   name: pxl.media
   title: 'pxl.media : qrayg''s game room'
-  description: 'qrayg''s video games, video game systems, and controllers collections'
+  description: qrayg's games, game systems, and game controllers collections
   url: 'https://pxl.media'
   author: 'Craig Erskine'
   author_url: https://craigerskine.com/
@@ -14,7 +14,7 @@ footer:
     nav:
       - title: 'Editor: VS Code'
         url: https://code.visualstudio.com/
-        ico: akar-icons:vscode-fill
+        ico: simple-icons:visualstudiocode
       - title: 'CSS: Twind'
         url: 'https://twind.style/'
         ico: simple-icons:tailwindcss
@@ -23,10 +23,10 @@ footer:
         ico: simple-icons:eleventy
       - title: 'Source: GitHub'
         url: https://github.com/craigerskine/pxl.media
-        ico: mdi:source-repository
+        ico: simple-icons:git
       - title: 'Host: Netlify'
         url: https://netlify.com/
-        ico: bxl:netlify
+        ico: simple-icons:netlify
 analytics: |-
   // google analytics
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

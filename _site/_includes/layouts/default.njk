@@ -74,7 +74,7 @@
           <ul class="text-2xl flex items-center justify-center gap-4 md:(justify-end gap-6)">
             {%- for nav in site.footer.nav %}
             <li>
-              <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-blue-400)">
+              <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-red-500)">
                 <iconify-icon icon="{{ nav.ico }}" inline="false"></iconify-icon>
                 {{ tooltip.x(tip=nav.title) }}
               </a>
@@ -82,7 +82,15 @@
             {%- endfor %}
           </ul>
         </div>
-        <p class="py-8 text-(gray-400/50 center) font-semibold">Designed, developed, and engineered by <a href="{{ site.meta.nick_url }}" class="text-gray-400/70 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a></p>
+        <p class="py-8 text-(gray-400/50 center) font-semibold">
+          Designed and engineered with
+          <svg xmlns="http://www.w3.org/2000/svg" class="-mt-1 mx-1 text-red-500 inline-block fill-current" width="16" height="12" viewBox="0 0 16 12" role="img" aria-labelledby="footer-heart">
+            <title id="footer-heart">Love</title>
+            <polygon points="8 4 12 0 16 4 8 12 0 4 4 0"></polygon>
+          </svg>
+          by
+          <a href="{{ site.meta.nick_url }}" class="text-gray-400/70 motion-safe:(transition) hover:(text-red-500)">{{ site.meta.nick }}</a>
+        </p>
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]"></div>
     </div>
