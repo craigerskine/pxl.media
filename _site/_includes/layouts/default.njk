@@ -1,3 +1,4 @@
+{%- import 'components/logo.njk' as logo -%}
 {%- import 'components/tooltip.njk' as tooltip -%}
 
 <!doctype html>
@@ -36,15 +37,7 @@
             <ul class="nav-menu text-xl flex items-center">
               <li class="nav-home">
                 <a href="/" class="p-4 block text-white motion-safe:(transition) hover:(opacity-100)" aria-label="Home">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" class="block fill-current">
-                    <title>{{ site.meta.name }}</title>
-                    <g fill-rule="evenodd">
-                      <rect width="8" height="8" />
-                      <rect width="8" height="8" x="8" opacity=".75" />
-                      <rect width="8" height="8" y="8" opacity=".5" />
-                      <rect width="8" height="8" x="8" y="8" opacity=".25" />
-                    </g>
-                  </svg>
+                  {{ logo.pxl(title='Home') }}
                 </a>
               </li>
               {%- for item in collections.all | eleventyNavigation %}
@@ -72,41 +65,24 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto pt-8 text-xs">
-        <div class="container mx-auto p-4">
-          <ul class="border-(t white/10) p-4 bg-white/5 text-center grid-(& cols-1) gap-y-5 rounded-lg md:(text-start grid-cols-2 gap-y-0)">
-            <li class="foot-info flex-(& col)">
-              <strong class="pb-2 tracking-wide uppercase">Credits</strong>
-              <div class="flex items-center justify-center gap-x-4 md:(justify-start)">
-                <a href="{{ site.meta.nick_url }}" class="group text-gray-200 relative motion-safe:(transition) hover:(text-blue-400)">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" class="w-6 fill-current">
-                    <title>{{ site.meta.nick }}</title>
-                    <g fill-rule="evenodd">
-                      <circle r="2" cx="32.7" cy="32.7" opacity="0.25" />
-                      <path d="M36.4675663,31.3530908 C38.6952853,28.1279333 40,24.2163329 40,20 C40,8.954305 31.045695,0 20,0 C8.954305,0 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 C24.2163329,40 28.1279333,38.6952853 31.3530908,36.4675663 C30.0165717,35.9897103 29.0086055,34.8208673 28.759531,33.3913763 C26.2430757,35.0407833 23.2335564,36 20,36 C11.163444,36 4,28.836556 4,20 C4,11.163444 11.163444,4 20,4 C28.836556,4 36,11.163444 36,20 C36,23.2335564 35.0407833,26.2430757 33.391374,28.7595341 C34.8208673,29.0086055 35.9897103,30.0165717 36.4675663,31.3530908 Z" />
-                    </g>
-                  </svg>
-                  {{ tooltip.x(tip=site.meta.nick) }}
-                </a>
-                <span>UX / Design / Engineering</span>
-              </div>
+      <footer class="mt-auto pt-8 text-xs md:(text-sm)">
+        <div class="container mx-auto border-(t gray-400/30) pt-8 px-4 flex-(& col) items-center gap-6 md:(flex-row justify-between)">
+          <div class="flex-(& none) items-center gap-4">
+            <a href="/" class="flex-none">{{ logo.pxl(title=site.meta.name,size='32') }}</a>
+            <p class="max-w-[240px]">{{ site.meta.description }}</p>
+          </div>
+          <ul class="text-2xl flex items-center justify-center gap-4 md:(justify-end gap-6)">
+            {%- for nav in site.footer.nav %}
+            <li>
+              <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-blue-400)">
+                <iconify-icon icon="{{ nav.ico }}" inline="false"></iconify-icon>
+                {{ tooltip.x(tip=nav.title) }}
+              </a>
             </li>
-            <li class="foot-tech flex-(& col)">
-              <hr class="mb-4 border-white/10 md:(hidden)" />
-              <strong class="pb-2 tracking-wide uppercase md:(text-end)">Tech Stack</strong>
-              <ul class="text-2xl flex items-center justify-center gap-4 md:(justify-end)">
-                {%- for nav in site.footer.nav %}
-                <li>
-                  <a href="{{ nav.url }}" class="group m-auto relative motion-safe:(transition) hover:(text-blue-500)">
-                    <iconify-icon icon="{{ nav.ico }}" inline="false"></iconify-icon>
-                    {{ tooltip.x(tip=nav.title) }}
-                  </a>
-                </li>
-                {%- endfor %}
-              </ul>
-            </li>
+            {%- endfor %}
           </ul>
         </div>
+        <p class="py-8 text-(gray-400/50 center) font-semibold">Designed, developed, and engineered by <a href="{{ site.meta.nick_url }}" class="text-gray-400/70 motion-safe:(transition) hover:(text-blue-400)">{{ site.meta.nick }}</a></p>
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]"></div>
     </div>
