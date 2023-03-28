@@ -26,11 +26,16 @@ H.on('NAVIGATE_IN', ({ to, location }) => {
 });
 
 // pageloading
-// const pageloading = document.querySelector('.loading');
-// H.on('NAVIGATE_OUT', () => {
-//   pageloading.classList.remove(['hidden']);
-//   pageloading.classList.add(['absolute', 'opacity-100']);
-// });
+const pageloading = document.querySelector('.loading');
+const pageloadingprogress = document.querySelector('.loading-progress');
+H.on('NAVIGATE_OUT', () => {
+  pageloading.classList.remove(['opacity-0']);
+  pageloadingprogress.classList.add(['motion-safe:animate-progress']);
+});
+H.on('NAVIGATE_END', () => {
+  pageloading.classList.add(['opacity-0']);
+  pageloadingprogress.classList.remove(['motion-safe:animate-progress']);
+});
 
 import { install, injectGlobal } from '@twind/core';
 import presetAutoprefix from '@twind/preset-autoprefix';
@@ -53,6 +58,18 @@ install({
       fontFamily: ({ theme }) => ({
         sans: 'Roboto,'+ theme('fontFamily.sans'),
       }),
+      keyframes: {
+        progress: {
+          '0%': { width: '1%', },
+          '25%': { width: '25%', },
+          '50%': { width: '75%', },
+          '75%': { width: '100%', },
+          '100%': { width: '100%', },
+        },
+      },
+      animation: {
+        progress: 'progress 1s ease-in-out infinite',
+      },
     },
   },
   rules: [
