@@ -1,8 +1,8 @@
 {%- import 'components/tooltip.njk' as tooltip -%}
 
-{%- macro x(games=[],platforms=[],genres=[],by='data.title') %}
+{%- macro x(games=[],platforms=[],genres=[],by='data.title',reverse=false) %}
 <ul class="list-game pb-4 flex flex-wrap">
-{%- for item in games | sort(false, false, by) %}
+{%- for item in games | sort(reverse, false, by) %}
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div class="box w-full flex flex-wrap relative rounded-lg shadow-xl{% if item.data.pending %} ring-2 ring-red-500{%- endif %}">
       <figure class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
@@ -78,14 +78,3 @@
 {%- endfor %}
 </ul>
 {%- endmacro %}
-
-{# title='',
-slug='',
-note='',
-platform='',
-genre='',
-physical='',
-digital='',
-guide='',
-pending='',
-date='', #}
