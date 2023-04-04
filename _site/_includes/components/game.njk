@@ -33,13 +33,13 @@
           </div>
           <ul class="py-2 border-(t dashed gray-500/30) w-full text-base flex items-center">
             <li class="flex-1">
-              <ul class="tags flex space-x-4">
+              <ul class="tags flex items-center space-x-4">
                 {%- for t in item.data.tags %}
                 {%- for g in genres %}
                 {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
                 <li>
-                  <a href="/genre/{{ g.data.page.fileSlug }}/" class="group relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
-                    <iconify-icon icon="{{ g.data.ico }}" inline="false" class="text-xl"></iconify-icon>
+                  <a href="/genre/{{ g.data.page.fileSlug }}/" class="group flex relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
+                    <iconify-icon icon="{{ g.data.ico }}" inline="false" class="m-auto text-xl"></iconify-icon>
                     {{ tooltip.x(tip=g.data.title) }}
                   </a>
                 </li>
@@ -49,10 +49,10 @@
               </ul>
             </li>
             <li class="ml-auto">
-              <ul class="icons flex space-x-2">
+              <ul class="icons flex items-center space-x-2">
               {% for i in range(0, 3) -%}
               {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
-                <li class="group flex items-center justify-center relative" tabindex="0">
+                <li class="group flex relative" tabindex="0">
                   <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" inline="false" class="m-auto text-xl opacity-50"></iconify-icon>
                   {%- set tip %}
                     {%- if i === 0 %}Physical{%- endif %}
