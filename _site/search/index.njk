@@ -15,10 +15,23 @@ title: Search results
           <figcaption class="sr-only" x-text="item.title"></figcaption>
         </figure>
         <div class="text-center md:(text-start)">
-          <p class="mb-3 text-(base gray-100) font-semibold md:(text-2xl)" x-text="item.title"></p>
+          <p class="text-(base gray-100) font-bold md:(text-2xl)" x-text="item.title"></p>
           <ul class="text-sm space-y-3">
-            <li class="platform" x-text="item.platform"></li>
-            <li class="note" x-text="item.note"></li>
+            <li class="platform text-base" x-text="item.platform"></li>
+            <li class="genre flex-(& wrap) gap-3">
+              <template x-for="(g, index) in item.genre" hidden>
+                <span>
+                  <span class="genre" x-text="g"></span>
+                  <span x-text="((index + 1) < item.genre.length) ? ',' : ''"></span>
+                </span>
+              </template>
+            </li>
+            <template x-if="item.note" hidden>
+              <li class="note text-xs inline-flex items-center gap-1">
+                <iconify-icon icon="mdi:note" width="1em" height="1em" inline="false" class="iconify text-lg opacity-50"></iconify-icon>
+                <i x-text="item.note"></i>
+              </li>
+            </template>
           </ul>
         </div>
       </li>
@@ -66,6 +79,13 @@ title: Search results
         {
           title: "{{ item.data.title | safe }}",
           note: "{{ item.data.note | safe }}",
+          genre: [
+            {%- for g in item.data.tags -%}
+              {%- if g.includes('genre_') -%}
+                "{{ g | replace('genre_', '') | replace('-', ' ') | title | replace('Rpg', 'RPG') | replace('Playstation', 'PlayStation') }}",
+              {%- endif -%}
+            {%- endfor -%}
+          ],
           platform: "
             {%- for t in item.data.tags -%}
               {%- if t.includes('platform_') -%}

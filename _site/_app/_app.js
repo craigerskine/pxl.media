@@ -81,7 +81,7 @@ install({
 injectGlobal({
   // global
   'html': { '@apply': 'bg-gray-900' },
-  'body': { '@apply': 'text-(gray-400 sm) font-sans !block' },
+  'body': { '@apply': '!block' },
   '.nav-menu a': { '@apply': 'opacity-40' },
   '.nav-menu .active': { '@apply': 'opacity-100' },
   '.nav-menu .active b > b': { '@apply': 'w-full opacity-100' },
