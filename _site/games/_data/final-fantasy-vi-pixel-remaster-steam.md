@@ -1,5 +1,5 @@
 ---
-title: 'Final Fantasy III - Pixel Remaster'
+title: 'Final Fantasy VI - Pixel Remaster [Steam]'
 tags:
   - platform_steam
   - genre_rpg

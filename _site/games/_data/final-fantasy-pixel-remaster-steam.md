@@ -1,5 +1,5 @@
 ---
-title: 'Final Fantasy IV - Pixel Remaster'
+title: 'Final Fantasy - Pixel Remaster [Steam]'
 tags:
   - platform_steam
   - genre_rpg
