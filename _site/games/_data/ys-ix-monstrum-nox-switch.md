@@ -1,5 +1,5 @@
 ---
-title: 'Ys: IX Monstrum Nox'
+title: 'Ys: IX Monstrum Nox [Switch]'
 tags:
   - platform_switch
   - genre_action-adventure
