@@ -7,6 +7,6 @@ note: Incube8 Games
 physical: true
 digital: true
 guide: false
-pending: true
-date: 2023-04-05
+pending: false
+date: 2023-04-17
 ---
