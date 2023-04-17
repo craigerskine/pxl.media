@@ -6,9 +6,8 @@
       <b class="text-gray-300 font-black">{{ pagination.pageNumber }}</b>
       <small class="mx-3 text-sm opacity-70">of</small>
       {%- endif %}
-      <small class="text-xs">{{ pagination.pages.length }}</small>
-      {%- if pagination.pageNumber %}
-      {%- else %}
+      <small class="text-xs">{{ pagination.pages.length - 1 }}</small>
+      {%- if not pagination.pageNumber %}
       <small class="mx-3 text-sm hidden opacity-70 sm:(block)">pages</small>
       {%- endif %}
     </li>
