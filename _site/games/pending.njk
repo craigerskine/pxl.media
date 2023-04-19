@@ -13,5 +13,5 @@ title: 'Pending Games'
 {%- import 'components/heading.njk' as heading %}
 {%- import 'components/game.njk' as game %}
 
-{%- call heading.x(label=title) %}{%- endcall %}
+{%- call heading.x(label=title,sub=gamesPending.length) %}{%- endcall %}
 {{ game.x(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}

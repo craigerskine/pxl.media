@@ -112,23 +112,23 @@ layout: 'layouts/default.njk'
 
 <ul class="px-4 lg:(flex justify-center space-x-8)">
   <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast.x(url='/games/',label='Games',data_1=gamesPhysicalAll.length,data_1_label='Physical',data_2=gamesDigitalAll.length,data_2_label='Digital',data_3=gamesPendingAll.length,data_3_label='Pending',hr=true,home=true) %}
-      {{ collections.game | length }}
+    {%- call mast.x(url='/games/',label='Games',data_1=gamesPhysicalAll.length.toLocaleString(),data_1_label='Physical',data_2=gamesDigitalAll.length.toLocaleString(),data_2_label='Digital',data_3=gamesPendingAll.length.toLocaleString(),data_3_label='Pending',hr=true,home=true) %}
+      {{ collections.game.length.toLocaleString() }}
     {%- endcall %}
   </li>
   <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast.x(url='/systems/',label='Systems',data_1=systemsConsolesAll.length+systemsHybridsAll.length,data_1_label='Consoles',data_2=systemsHandheldsAll.length+systemsHybridsAll.length,data_2_label='Handhelds',data_3=systemsMinisAll.length,data_3_label='Mini/Classic',hr=true,home=true) %}
-      {{ collections.system | length }}
+    {%- call mast.x(url='/systems/',label='Systems',data_1=systemsConsolesAll.length.toLocaleString()+systemsHybridsAll.length.toLocaleString(),data_1_label='Consoles',data_2=systemsHandheldsAll.length.toLocaleString()+systemsHybridsAll.length.toLocaleString(),data_2_label='Handhelds',data_3=systemsMinisAll.length.toLocaleString(),data_3_label='Mini/Classic',hr=true,home=true) %}
+      {{ collections.system.length.toLocaleString() }}
     {%- endcall %}
   </li>
   <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast.x(url='/controllers/',label='Controllers',data_1=controllersWireless.length,data_1_label='Wireless',data_2=controllersUsb.length,data_2_label='USB',data_3=controllersAdapters.length,data_3_label='Adapters',hr=true,home=true) %}
-      {{ collections.controller | length }}
+    {%- call mast.x(url='/controllers/',label='Controllers',data_1=controllersWireless.length.toLocaleString(),data_1_label='Wireless',data_2=controllersUsb.length.toLocaleString(),data_2_label='USB',data_3=controllersAdapters.length.toLocaleString(),data_3_label='Adapters',hr=true,home=true) %}
+      {{ collections.controller.length.toLocaleString() }}
     {%- endcall %}
   </li>
 </ul>
 
-{%- call heading.x(tag='h2',label='Recently added') %}{%- endcall %}
+{%- call heading.x(tag='h2',label='Recently added',sub=6) %}{%- endcall %}
 {{ game.x(games=gamesRecent,platforms=collections.platform,genres=collections.genre,by='data.date',reverse=true) }}
 
 {%- call heading.x(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/') %}{%- endcall %}
