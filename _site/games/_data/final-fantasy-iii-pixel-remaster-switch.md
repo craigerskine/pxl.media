@@ -6,6 +6,6 @@ tags:
 digital: true
 physical: false
 guide: false
-pending: true
+pending: false
 date: 2023-04-19
 ---
