@@ -15,7 +15,7 @@
     "Twind"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@dogstudio/highway": "^2.2.1",
     "@twind/core": "^1.1.3",
