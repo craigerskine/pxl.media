@@ -78,16 +78,17 @@ install({
   ],
 });
 
-injectGlobal({
-  // global
-  'html': { '@apply': 'bg-gray-900' },
-  'body': { '@apply': '!block' },
-  '.nav-menu a': { '@apply': 'opacity-40' },
-  '.nav-menu .active': { '@apply': 'opacity-100' },
-  '.nav-menu .active b > b': { '@apply': 'w-full opacity-100' },
-  '.input-search:hover + i': { '@apply': 'opacity-100', },
-  '.input-search::-webkit-search-cancel-button': { '@apply': 'hidden', },
-});
+injectGlobal`
+  @layer base {
+    html { @apply bg-gray-900; }
+    body { @apply !block; }
+    .nav-menu a { @apply opacity-40; }
+    .nav-menu .active { @apply opacity-100; }
+    .nav-menu .active b > b { @apply w-full opacity-100; }
+    .input-search:hover + i { @apply opacity-100; }
+    .input-search::-webkit-search-cancel-button { @apply hidden; }
+  }
+`
 
 import Alpine from 'alpinejs';
 window.Alpine = Alpine;
