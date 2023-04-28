@@ -1,5 +1,5 @@
 ---
-title: 'Neo Geo Pocket Color Selection Vol.1'
+title: 'NeoGeo Pocket Color Selection Vol.1'
 tags:
   - platform_switch
   - genre_compilation
