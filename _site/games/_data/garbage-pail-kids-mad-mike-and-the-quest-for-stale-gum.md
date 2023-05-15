@@ -7,6 +7,6 @@ note: 'iam8bit'
 digital: false
 physical: true
 guide: false
-pending: true
-date: 2023-04-07
+pending: false
+date: 2023-05-15
 ---
