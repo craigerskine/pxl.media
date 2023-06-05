@@ -3,8 +3,8 @@ title: 'Mega Man Legacy Collection'
 tags:
   - platform_playstation-4
   - genre_action-adventure
-  - genre_compilation
   - genre_platformer
+  - genre_compilation
 digital: true
 physical: false
 guide: false

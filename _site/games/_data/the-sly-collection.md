@@ -2,8 +2,8 @@
 title: 'The Sly Collection'
 tags:
   - platform_playstation-vita
-  - genre_compilation
   - genre_platformer
+  - genre_compilation
 digital: false
 physical: true
 guide: false

@@ -2,8 +2,8 @@
 title: 'Ratchet & Clank Collection'
 tags:
   - platform_playstation-3
-  - genre_compilation
   - genre_platformer
+  - genre_compilation
 digital: false
 physical: true
 guide: false

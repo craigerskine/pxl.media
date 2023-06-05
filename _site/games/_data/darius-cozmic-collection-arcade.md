@@ -2,8 +2,8 @@
 title: 'Darius Cozmic Collection Arcade'
 tags:
   - platform_switch
-  - genre_compilation
   - genre_shmup
+  - genre_compilation
 note: 'Strictly Limited Games'
 digital: false
 physical: true

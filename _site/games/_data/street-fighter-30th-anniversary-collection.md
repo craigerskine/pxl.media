@@ -2,8 +2,8 @@
 title: 'Street Fighter 30th Anniversary Collection'
 tags:
   - platform_switch
-  - genre_compilation
   - genre_fighting
+  - genre_compilation
 digital: false
 physical: true
 guide: false

@@ -3,8 +3,8 @@ title: 'Mega Man X Legacy Collection 1 + 2'
 tags:
   - platform_switch
   - genre_action-adventure
-  - genre_compilation
   - genre_platformer
+  - genre_compilation
 digital: false
 physical: true
 guide: false

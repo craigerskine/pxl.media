@@ -2,8 +2,8 @@
 title: 'Phantasy Star Collection'
 tags:
   - platform_game-boy-advance
-  - genre_compilation
   - genre_rpg
+  - genre_compilation
 digital: false
 physical: true
 guide: false
