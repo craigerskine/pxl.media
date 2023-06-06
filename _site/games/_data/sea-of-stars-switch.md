@@ -5,9 +5,9 @@ tags:
   - genre_action-adventure
   - genre_rpg
 note: Kickstarter
-digital: false
+digital: true
 physical: true
 guide: false
 pending: true
-date: 2022-01-07
+date: 2023-06-24
 ---
