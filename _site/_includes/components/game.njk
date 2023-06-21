@@ -5,10 +5,10 @@
 {%- for item in games | sort(reverse, false, by) %}
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
     <div class="box w-full flex flex-wrap relative rounded-lg shadow-xl{% if item.data.pending %} ring-2 ring-red-500{%- endif %}">
-      <figure class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
-        <figcaption class="w-full bg-(cover center) flex rounded-t-lg" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')"><div class="w-full backdrop-brightness-50 rounded-t-lg"></div></figcaption>
-        <figure class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
-          <figcaption class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90 rounded-t-lg"></figcaption>
+      <div class="cover w-full h-16 bg-black/80 flex relative rounded-t-lg">
+        <div class="w-full bg-(cover center) flex rounded-t-lg" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')"><div class="w-full backdrop-brightness-50 rounded-t-lg"></div></div>
+        <div class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
+          <div class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90 rounded-t-lg"></div>
           {%- for t in item.data.tags %}
           {%- for p in platforms %}
           {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
@@ -21,8 +21,8 @@
           {%- endif %}
           {%- endfor %}
           {%- endfor %}
-        </figure>
-      </figure>
+        </div>
+      </div>
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
           <div class="mast mb-2">

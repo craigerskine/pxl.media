@@ -10,10 +10,10 @@ title: Search results
   <ul x-show="results" class="px-4 divide-(y gray-400/30)">
     <template x-for="item in getItems" hidden>
       <li class="game py-6 flex-(& col) items-center gap-4 md:(flex-row gap-10)">
-        <figure class="flex-none">
+        <div class="flex-none">
           <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title +' cover'" class="cover w-24 h-auto rounded shadow-lg" />
-          <figcaption class="sr-only" x-text="item.title"></figcaption>
-        </figure>
+          <div class="sr-only" x-text="item.title"></div>
+        </div>
         <div class="text-center md:(text-start)">
           <p class="text-(base gray-100) font-bold md:(text-2xl)" x-text="item.title"></p>
           <ul class="text-sm space-y-3">
