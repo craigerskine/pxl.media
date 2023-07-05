@@ -2,6 +2,6 @@
 title: Raspberry Pi 4
 platform: retro-emu
 system_type: console
-variation: 2GB
-accessories: ' + Argon ONE M.2'
+variation: 8GB
+accessories: ' + Argon ONE V2'
 ---
