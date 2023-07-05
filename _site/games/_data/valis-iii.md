@@ -7,6 +7,6 @@ note: 'Limited Run Games: Valis Collection'
 digital: false
 physical: true
 guide: false
-pending: true
-date: 2023-02-22
+pending: false
+date: 2023-07-05
 ---
