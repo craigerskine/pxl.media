@@ -13,7 +13,7 @@ title: Search results
 
         <div class="box w-full flex relative overflow-hidden rounded-lg shadow-xl">
           <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title" class="w-24 h-full" />
-          <div class="details w-full flex">
+          <div class="details w-full min-w-0 flex">
             <div class="meta px-5 pt-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
               <div class="mast mb-2">
                 <b class="name text-white truncate block text-base font-black" :title="item.title" x-text="item.title"></b>
