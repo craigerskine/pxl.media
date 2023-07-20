@@ -7,32 +7,43 @@ title: Search results
 
 <div x-data="appdata">
   {%- call heading.x(tag='h1') %}<span x-html="' &quot;'+ query +'&quot;'"></span> {{ title }}{%- endcall %}
-  <ul x-show="results" class="px-4 divide-(y gray-400/30)">
+  <ul x-show="results" class="px-4">
     <template x-for="item in getItems" hidden>
       <li class="game py-6 flex-(& col) items-center gap-4 md:(flex-row gap-10)">
-        <div class="flex-none">
-          <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title +' cover'" class="cover w-24 h-auto rounded shadow-lg" />
-          <div class="sr-only" x-text="item.title"></div>
-        </div>
-        <div class="text-center md:(text-start)">
-          <p class="text-(base gray-100) font-bold md:(text-2xl)" x-text="item.title"></p>
-          <ul class="text-sm space-y-3">
-            <li class="platform text-base" x-text="item.platform"></li>
-            <li class="genre flex-(& wrap) gap-3">
-              <template x-for="(g, index) in item.genre" hidden>
-                <span>
-                  <span class="genre" x-text="g"></span>
-                  <span x-text="((index + 1) < item.genre.length) ? ',' : ''"></span>
-                </span>
-              </template>
-            </li>
-            <template x-if="item.note" hidden>
-              <li class="note text-xs inline-flex items-center gap-1">
-                <iconify-icon icon="mdi:note" width="1em" height="1em" inline="false" class="iconify text-lg opacity-50"></iconify-icon>
-                <i x-text="item.note"></i>
-              </li>
-            </template>
-          </ul>
+
+        <div class="box w-full flex relative overflow-hidden rounded-lg shadow-xl">
+          <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title" class="w-24 h-full" />
+          <div class="details w-full flex">
+            <div class="meta px-5 pt-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
+              <div class="mast mb-2">
+                <b class="name text-white truncate block text-base font-black" :title="item.title" x-text="item.title"></b>
+                <template x-if="item.note" hidden>
+                  <p class="note text-sm inline-flex items-center gap-1">
+                    <i x-text="item.note"></i>
+                  </p>
+                </template>
+              </div>
+              <ul class="flex w-full border-gray-500/30 py-2 text-base border-dashed items-center border-t">
+                <li class="flex-1">
+                  <ul class="flex items-center space-x-4">
+                    <li x-text="item.platform" class="text-sm"></li>
+                  </ul>
+                </li>
+                <li class="ml-auto">
+                  <ul class="flex items-center space-x-2">
+                    <li class="genre text-sm flex-(& wrap) gap-1">
+                      <template x-for="(g, index) in item.genre" hidden>
+                        <span>
+                          <span class="genre" x-text="g"></span>
+                          <span x-text="((index + 1) < item.genre.length) ? ',' : ''"></span>
+                        </span>
+                      </template>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </li>
     </template>
