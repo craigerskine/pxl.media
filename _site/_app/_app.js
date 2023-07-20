@@ -80,13 +80,11 @@ install({
 
 injectGlobal`
   @layer base {
-    html { @apply bg-gray-900; }
-    body { @apply !block; }
     .nav-menu a { @apply opacity-40; }
     .nav-menu .active { @apply opacity-100; }
     .nav-menu .active b > b { @apply w-full opacity-100; }
     .input-search:hover + i { @apply opacity-100; }
-    .input-search::-webkit-search-cancel-button { @apply hidden; }
+    input[type="search" i]::-webkit-search-cancel-button { @apply w-2 h-2 appearance-none bg-current block opacity-50 rounded-sm; }
   }
 `
 
