@@ -1,17 +1,17 @@
+// instant page
 import 'instant.page';
 
+// icons
 import 'iconify-icon';
 
+// highway - animations
 import Highway from '@dogstudio/highway';
 import PageTrans from './transition';
-
 const H = new Highway.Core({
   transitions: {
     default: PageTrans
   }
 });
-
-// highway
 const links = document.querySelectorAll('header .nav-item a');
 H.on('NAVIGATE_IN', ({ to, location }) => {
   for (let i = 0; i < links.length; i++) {
@@ -24,7 +24,6 @@ H.on('NAVIGATE_IN', ({ to, location }) => {
     }
   }
 });
-
 // pageloading
 const pageloading = document.querySelector('.loading');
 const pageloadingprogress = document.querySelector('.loading-progress');
@@ -37,10 +36,10 @@ H.on('NAVIGATE_END', () => {
   pageloadingprogress.classList.remove(['motion-safe:animate-progress']);
 });
 
+// twind
 import { install, injectGlobal } from '@twind/core';
 import presetAutoprefix from '@twind/preset-autoprefix';
 import presetTailwind from '@twind/preset-tailwind';
-
 install({
   presets: [presetAutoprefix(), presetTailwind()],
   darkMode: 'class',
@@ -77,7 +76,6 @@ install({
     [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 4\' width=\'4\' height=\'4\'><rect x=\'0\' y=\'0\' width=\'2\' height=\'2\' fill=\'rgba(5,5,5,.33)\'></rect></svg>")', } ],
   ],
 });
-
 injectGlobal`
   @layer base {
     .nav-menu a { @apply opacity-40; }
@@ -88,7 +86,7 @@ injectGlobal`
   }
 `
 
+// alpine
 import Alpine from 'alpinejs';
 window.Alpine = Alpine;
-
 Alpine.start();

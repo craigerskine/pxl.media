@@ -6,6 +6,10 @@ const markdownItAttrs = require("markdown-it-attrs");
 const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   eleventyConfig.setDataFileBaseName('_data');
 
   eleventyConfig.addPassthroughCopy({
@@ -14,9 +18,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addWatchTarget('./_site/_app/_app.js');
-  
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   //{% renderTemplate "md" %}
   //# Blah{.text-center}
