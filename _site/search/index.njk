@@ -13,24 +13,28 @@ title: Search results
         <div class="box w-full flex relative overflow-hidden rounded-lg shadow-xl">
           <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title" class="w-24 h-full opacity-50" />
           <div class="details w-full min-w-0 flex">
-            <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
-              <div class="mast mb-2">
+            <div class="meta p-3 pb-0 w-full min-w-0 flex-(& 1 col) justify-between motion-safe:(transition-all)">
+              <div class="mast mb-2 flex-1">
                 <b class="name text-white truncate block text-base font-black" :title="item.title" x-text="item.title"></b>
                 <template x-if="item.note" hidden>
-                  <p class="note text-sm inline-flex items-center gap-1">
+                  <p class="note text-xs inline-flex items-center gap-1">
                     <i x-text="item.note"></i>
                   </p>
                 </template>
               </div>
-              <ul class="flex w-full border-gray-500/30 py-2 text-sm border-dashed items-center border-t">
-                <li class="flex-1" x-text="item.platform"></li>
-                <li class="ml-auto">
+              <ul class="pb-2 w-full text-sm flex items-center divide-(x dashed gray-500/30)">
+                <li  class="pr-2" x-text="item.platform"></li>
+                <li class="pl-2">
                   <ul class="genre flex-(& wrap) space-x-1">
                     <template x-for="(g, index) in item.genre" hidden>
                       <li x-text="g +((index + 1) < item.genre.length ? ', ' : '')"></li>
                     </template>
                   </ul>
                 </li>
+              </ul>
+              <ul class="border-(t dashed gray-500/30) py-2 flex items-center justify-end gap-x-1">
+                <li x-show="item.physical"><iconify-icon icon="mdi:chip" inline="false" class="text-xl opacity-50" title="Physical"></iconify-icon></li>
+                <li x-show="item.digital"><iconify-icon icon="mdi:qrcode" inline="false" class="text-xl opacity-50" title="Digital"></iconify-icon></li>
               </ul>
             </div>
           </div>
@@ -80,6 +84,8 @@ title: Search results
         {
           title: "{{ item.data.title | safe }}",
           note: "{{ item.data.note | safe }}",
+          physical: {{ item.data.physical | safe }},
+          digital: {{ item.data.digital | safe }},
           genre: [
             {%- for g in item.data.tags -%}
               {%- if g.includes('genre_') -%}
