@@ -7,6 +7,6 @@ note: 'Multi-Language'
 physical: true
 digital: false
 guide: false
-pending: true
-date: 2023-08-21
+pending: false
+date: 2023-08-18
 ---
