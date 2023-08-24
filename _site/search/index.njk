@@ -96,7 +96,7 @@ title: Search results
           platform: "
             {%- for t in item.data.tags -%}
               {%- if t.includes('platform_') -%}
-                {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') | replace('Playstation', 'PlayStation') }}
+                {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') | replace('Playstation', 'PlayStation') | replace('grafx', 'Grafx') | replace(' Cd', ' CD') }}
               {%- endif -%}
             {%- endfor -%}
           "
