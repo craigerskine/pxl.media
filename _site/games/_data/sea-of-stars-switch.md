@@ -1,5 +1,5 @@
 ---
-title: 'Sea of Stars [Switch]'
+title: Sea of Stars [Switch]
 tags:
   - platform_switch
   - genre_action-adventure
@@ -8,6 +8,6 @@ note: Kickstarter
 digital: true
 physical: true
 guide: false
-pending: true
-date: 2023-06-24
+pending: false
+date: 2023-08-29
 ---
