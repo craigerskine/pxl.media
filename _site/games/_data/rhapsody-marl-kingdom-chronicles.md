@@ -7,6 +7,6 @@ note: Deluxe Edition
 physical: true
 digital: false
 guide: false
-pending: true
+pending: false
 date: 2023-09-11
 ---
