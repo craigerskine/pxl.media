@@ -23,6 +23,12 @@ title: Systems
           {%- endfor %}
         {%- endif %}
       {%- endfor %}
+{# NONE - THERE HAS TO A BETTER WAY #}
+      {%- if p.data.page.fileSlug == 'wii-u' %}
+        {%- set ico %}mdi:close{%- endset %}
+        {{ timeline.point(title='None',sub='',meta='',ico=ico) }}
+      {%- endif %}
+{# /NONE #}
     {%- endcall %}
   {%- endfor %}
 {%- endcall %}
