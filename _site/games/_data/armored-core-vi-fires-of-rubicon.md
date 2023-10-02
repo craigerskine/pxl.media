@@ -1,7 +1,7 @@
 ---
 title: Armored Core VI Fires of Rubicon
 tags:
-  - platform_playstation5
+  - platform_playstation-5
   - genre_action-adventure
 physical: true
 digital: false
