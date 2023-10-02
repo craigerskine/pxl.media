@@ -55,7 +55,7 @@ install({
         gray: theme('colors.neutral'),
       }),
       fontFamily: ({ theme }) => ({
-        sans: 'Roboto,'+ theme('fontFamily.sans'),
+        sans: ['Roboto', ...theme('fontFamily.sans')],
       }),
       keyframes: {
         progress: {
