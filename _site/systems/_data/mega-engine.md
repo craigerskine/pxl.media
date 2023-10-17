@@ -1,7 +1,7 @@
 ---
-title: 'Mega Engine'
-platform: sega-cd
+title: Mega Engine
+platform: retro-emu
 system_type: console
-variation: US
+variation: US - PCE CD + SegaCD
 accessories: ''
 ---
