@@ -52,6 +52,7 @@ install({
     },
     extend: {
       colors: ({ theme }) => ({
+        brand: theme('colors.rose'),
         gray: theme('colors.neutral'),
       }),
       fontFamily: ({ theme }) => ({

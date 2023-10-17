@@ -45,7 +45,7 @@
                 <a href="{{ item.url }}" class="group p-4 text-white block relative motion-safe:(transition) hover:(opacity-100){% if item.url == page.url or item.url in page.url %} active{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
                   <iconify-icon icon="{{ item.icon }}" inline="false" class="leading-none"></iconify-icon>
                   <span class="sr-only">{{ item.key }}</span>
-                  <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-current opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
+                  <b class="px-1 w-full h-px flex justify-center absolute inset-x-0 bottom-1"><b class="w-0 bg-brand-400 opacity-0 motion-safe:(transition-all) group-hover:(w-full opacity-100)"></b></b>
                 </a>
               </li>
               {%- endfor %}
@@ -96,7 +96,7 @@
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]" aria-hidden="true"></div>
     </div>
-    <div class="loading h-1 flex fixed inset-x-0 top-0 opacity-0 motion-safe:(transition)" aria-hidden="true"><div class="loading-progress bg-blue-400"></div><span class="sr-only">Loading...</span></div>
+    <div class="loading h-1 flex fixed inset-x-0 top-0 opacity-0 motion-safe:(transition)" aria-hidden="true"><div class="loading-progress bg-brand-400"></div><span class="sr-only">Loading...</span></div>
     <script src="/_assets/js/_app.js?v={% bust %}"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEH0BK4CVD"></script>
     <script>
