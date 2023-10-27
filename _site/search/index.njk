@@ -42,9 +42,13 @@ title: Search results
       </li>
     </template>
   </ul>
-  <h2 x-show="!results" class="m-auto py-8 px-4 text-(gray-500 3xl center) leading-none font-bold md:(py-32)">
+  <h2 x-show="!results && !loading" class="m-auto py-8 px-4 text-(gray-500 3xl center) leading-none font-bold md:(py-32)">
     NO RESULTS
     <small class="pt-5 text-lg block opacity-80 md:(text-2xl)">↑ ↑ ↓ ↓ ← → ← → B A</small>
+  </h2>
+  <h2 x-show="loading" class="m-auto py-8 px-4 text-(gray-500 3xl) leading-none font-bold flex items-center justify-center gap-4 md:(py-32)">
+    LOADING
+    <iconify-icon icon="mdi:loading" inline class="iconify text-4xl motion-safe:(animate-spin)"></iconify-icon>
   </h2>
 </div>
 
@@ -53,6 +57,7 @@ title: Search results
     Alpine.data('appdata', () => ({
       query: new URLSearchParams(location.search).get('q'),
       games: null,
+      loading: true,
       results: false,
       total: 0,
       async gamesFiltered() {
@@ -76,9 +81,11 @@ title: Search results
           if (filterItems.length < this.games.length && filterItems.length > 0) {
             this.total = filterItems.length;
             this.results = true;
+            this.loading = false;
             return filterItems;
           } else {
             this.results = false;
+            this.loading = false;
           }
         }
         return null;
