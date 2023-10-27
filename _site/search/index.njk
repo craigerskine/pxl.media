@@ -5,10 +5,10 @@ title: Search results
 
 {%- import 'components/heading.njk' as heading %}
 
-<div x-data="appdata">
-  {%- call heading.x(tag='h1') %}<b x-text="getItems.length" class="mr-2 text-xs opacity-75"></b> <span x-html="' &quot;'+ query +'&quot;'"></span> {{ title }}{%- endcall %}
+<div x-data="appdata" x-init="gamesFiltered">
+  {%- call heading.x(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-html="' &quot;'+ query +'&quot;'"></span> {{ title }}{%- endcall %}
   <ul x-show="results" class="px-4 grid-(& cols-1) lg:(grid-cols-2 gap-x-12)">
-    <template x-for="item in getItems" hidden>
+    <template x-for="item in gamesFiltered" hidden>
       <li class="game py-6 flex-(& col) items-center gap-4 md:(flex-row gap-10)">
         <div class="box w-full flex relative overflow-hidden rounded-lg shadow-xl">
           <img :src="'/_assets/img/games/'+ slugify(item.title) +'.jpg'" :alt="item.title" class="w-24 h-full opacity-50" />
@@ -52,21 +52,36 @@ title: Search results
   document.addEventListener('alpine:init', () => {
     Alpine.data('appdata', () => ({
       query: new URLSearchParams(location.search).get('q'),
+      games: null,
       results: false,
-      get getItems() {
-        const filterItems = this.games.filter((item) => {
-          const qy = this.query.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? ''
-          const tl = item.title.toString().normalize('NFKD').toLowerCase().replace(/[^\w\-]+/g, '') ?? ''
-          const nt = item.note.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? ''
-          const arr = [tl, nt]
-          return arr.some(rs => rs.includes(qy))
-        })
-        if(filterItems.length < this.games.length && filterItems.length > 0) {
-          this.results = true
-          return filterItems
-        } else {
-          this.results = false
+      total: 0,
+      async gamesFiltered() {
+        if (this.games === null) {
+          try {
+            const response = await fetch('/search/data.json');
+            const data = await response.json();
+            this.games = data;
+          } catch (error) {
+            console.error('Error loading JSON data:', error);
+          }
         }
+        if (this.games) {
+          const filterItems = this.games.filter((item) => {
+            const qy = this.query.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? '';
+            const tl = item.title.toString().normalize('NFKD').toLowerCase().replace(/[^\w\-]+/g, '') ?? '';
+            const nt = item.note.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? '';
+            const arr = [tl, nt];
+            return arr.some(rs => rs.includes(qy));
+          });
+          if (filterItems.length < this.games.length && filterItems.length > 0) {
+            this.total = filterItems.length;
+            this.results = true;
+            return filterItems;
+          } else {
+            this.results = false;
+          }
+        }
+        return null;
       },
       slugify(text) {
         return text.toString()
@@ -78,30 +93,8 @@ title: Search results
           .replace(/[^\w\-]+/g, '')
           .replace(/\-\-+/g, '-')
           .replace(/^-+/, '')
-          .replace(/-+$/, '')
+          .replace(/-+$/, '');
       },
-      games: [{%- for item in collections.game | sort(false, false, "data.title") -%}
-        {
-          title: "{{ item.data.title | safe }}",
-          note: "{{ item.data.note | safe }}",
-          physical: {{ item.data.physical | safe }},
-          digital: {{ item.data.digital | safe }},
-          genre: [
-            {%- for g in item.data.tags -%}
-              {%- if g.includes('genre_') -%}
-                "{{ g | replace('genre_', '') | replace('-', ' ') | title | replace('Rpg', 'RPG') | replace('Playstation', 'PlayStation') }}",
-              {%- endif -%}
-            {%- endfor -%}
-          ],
-          platform: "
-            {%- for t in item.data.tags -%}
-              {%- if t.includes('platform_') -%}
-                {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') | replace('Playstation', 'PlayStation') | replace('grafx', 'Grafx') | replace(' Cd', ' CD') }}
-              {%- endif -%}
-            {%- endfor -%}
-          "
-        },
-      {%- endfor -%}],
     }));
-  })
+  });
 </script>

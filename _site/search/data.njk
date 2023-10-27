@@ -1,0 +1,27 @@
+---
+permalink: '/search/data.json'
+---
+[
+{%- for item in collections.game | sort(false, false, "data.title") %}
+  {
+    "title": "{{ item.data.title | safe }}",
+    "note": "{{ item.data.note | safe }}",
+    "physical": {{ item.data.physical | safe }},
+    "digital": {{ item.data.digital | safe }},
+    "genre": [
+      {%- for g in item.data.tags -%}
+        {%- if g.includes('genre_') -%}
+          "{{ g | replace('genre_', '') | replace('-', ' ') | title | replace('Rpg', 'RPG') | replace('Playstation', 'PlayStation') }}"{% if not loop.last %},{% endif %}
+        {%- endif -%}
+      {%- endfor -%}
+    ],
+    "platform": "
+      {%- for t in item.data.tags -%}
+        {%- if t.includes('platform_') -%}
+          {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') | replace('Playstation', 'PlayStation') | replace('grafx', 'Grafx') | replace(' Cd', ' CD') }}
+        {%- endif -%}
+      {%- endfor -%}
+    "
+  }{% if not loop.last %},{% endif %}
+{%- endfor %}
+]
