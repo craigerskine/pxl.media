@@ -1,9 +1,10 @@
 ---
-permalink: '/search/data.json'
+permalink: '{{ page.filePathStem }}.json'
 ---
 [
 {%- for item in collections.game | sort(false, false, "data.title") %}
   {
+    "id": "{{ item.data.title | slugify }}",
     "title": "{{ item.data.title | safe }}",
     "note": "{{ item.data.note | safe }}",
     "physical": {{ item.data.physical | safe }},
