@@ -3,7 +3,7 @@ title: 'Turbo EverDrive'
 tags:
   - platform_turbografx-16
   - genre_flash-cart
-note: v2
+note: v2 + Bitbox
 digital: false
 physical: true
 guide: false

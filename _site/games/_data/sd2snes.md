@@ -3,7 +3,7 @@ title: SD2SNES
 tags:
   - platform_super-nintendo
   - genre_flash-cart
-note: OG
+note: OG + Bitbox
 digital: false
 physical: true
 guide: false

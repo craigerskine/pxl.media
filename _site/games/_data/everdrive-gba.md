@@ -3,7 +3,7 @@ title: EverDrive-GBA
 tags:
   - platform_game-boy-advance
   - genre_flash-cart
-note: X5
+note: X5 + Bitbox
 digital: false
 physical: true
 guide: false

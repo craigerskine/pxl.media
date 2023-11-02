@@ -3,7 +3,7 @@ title: EverDrive-N8
 tags:
   - platform_nintendo-entertainment-system
   - genre_flash-cart
-note: OG
+note: OG + Bitbox
 digital: false
 physical: true
 guide: false

@@ -3,7 +3,7 @@ title: 'EverDrive-N8 Pro'
 tags:
   - platform_nintendo-entertainment-system
   - genre_flash-cart
-note: Pro
+note: Pro + Bitbox
 digital: false
 physical: true
 guide: false
