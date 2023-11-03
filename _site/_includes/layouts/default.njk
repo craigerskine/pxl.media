@@ -2,7 +2,7 @@
 {%- import 'components/tooltip.njk' as tooltip -%}
 
 <!doctype html>
-<html lang="en" class="bg-transparent antialiased">
+<html lang="en" class="bg-transparent antialiased" x-data="app" x-init="searchData()">
 
   <head>
     <meta charset="utf-8" />
@@ -32,7 +32,7 @@
   <body class="bg-gray-900 text-(gray-400 sm) !block" style="display: none;" data-instant-intensity="mousedown">
     <div class="page min-h-screen flex-(& col)">
       <header>
-        <div class="container mx-auto flex items-center relative">
+        <div class="container mx-auto">
           <nav aria-label="Main navigation">
             <ul class="nav-menu text-xl flex items-center">
               <li class="nav-home">
@@ -49,15 +49,70 @@
                 </a>
               </li>
               {%- endfor %}
+              <li class="ml-auto">
+                <button type="button" class="p-4" @click="searchOpen()"><iconify-icon icon="mdi:magnify-expand" inline="false" class="text-xl"></iconify-icon></button>
+              </li>
             </ul>
           </nav>
-          <form class="ml-auto flex items-center" action="/search/">
+          
+          <section
+            class="search-panel min-h-screen bg-gray-900/50 backdrop-blur-xl flex-(& col) fixed inset-0 z-50 motion-safe:(duration-300 ease-in-out transition)"
+            style="display: none"
+            role="dialog"
+            aria-modal="true"
+            @keydown.escape.prevent.stop="searchClose()"
+            x-show="searching"
+            x-transition:enter-start="opacity-0 scale-95 blur-lg"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95 blur-lg"
+          >
+            <div class="bg-black/20 absolute inset-0" aria-hidden="true"></div>
+            <div
+              class="p-4 w-full flex-auto relative overflow-y-auto md:(p-12)"
+              role="document"
+              x-on:click.stop
+              x-trap.noreturn.noscroll.inert="searching"
+            >
+              <div class="mx-auto w-full max-w-3xl">
+                <label><span class="sr-only">Search</span><input x-model="query" @input="search()" type="search" placeholder="Search video games: pokemon, monster hunter, final fantasy, etc." class="mb-12 py-2 px-4 border-(1 gray-500/20) w-full bg-gray-500/20 block rounded-full" /></label>
+                <template x-if="results.length" hidden>
+                  <section class="search-results-panel">
+                    <div class="pb-1 border-(b gray-500/20) text-(sm gray-500) flex items-center justify-between">
+                      <h2 class="font-semibold uppercase">Results</h2>
+                      <small x-text="results.length" class="italic"></small>
+                    </div>
+                    <ul class="divide-(y gray-500/20)">
+                      <template x-for="result in results" hidden>
+                        <li class="py-4 flex-(& col)">
+                          <h3 x-text="result.title" class="text-lg font-bold"></h3>
+                          <p x-text="result.platform" class="text-sm"></p>
+                          <template x-if="result.note" hidden>
+                            <small x-html="'~ '+ result.note" class="text-(xs end wrap-balance) italic opacity-70 md:(ml-auto w-1/2)"></small>
+                          </template>
+                        </li>
+                      </template>
+                    </ul>
+                  </section>
+                </template>
+                <template x-if="query.length > 0 && !results.length">
+                  <section class="no-search-results-panel flex-(& col) items-center gap-4">
+                    <iconify-icon icon="mdi:emoticon-sad" inline class="iconify text-5xl opacity-20"></iconify-icon>
+                    <p class="text-gray-500 font-semibold uppercase">No results...</p>
+                  </section>
+                </template>
+              </div>
+              <button @click="searchClose()" type="button" class="fixed top-3 right-3"><iconify-icon icon="mdi:close" inline class="iconify text-xl"></iconify-icon><span class="sr-only">Close</span></button>
+            </div>
+          </section>
+          
+          {# <form class="ml-auto flex items-center" action="/search/">
             <fieldset class="mr-4 ml-auto max-w-64 flex justify-end items-center relative z-30">
               <label for="site-search" class="sr-only">Search</label>
               <input type="search" id="site-search" name="q" placeholder="Search..." title="Search" autocomplete="off" class="border-(& transparent) p-2 w-8 bg-transparent text-(sm transparent) cursor-pointer outline-none appearance-none relative z-10 opacity-0 motion-safe:(transition-all) focus:(w-full bg-gray-700 text-white opacity-100)" />
               <iconify-icon icon="mdi:magnify-expand" inline="false" class="text-xl absolute right-0 z-0 opacity-40 motion-safe:(transition)"></iconify-icon>
             </fieldset>
-          </form>
+          </form> #}
         </div>
       </header>
       <main class="pt-8 flex-1" data-router-wrapper>
@@ -97,15 +152,54 @@
       <div class="bg-grid fixed inset-0 z-[-1]" aria-hidden="true"></div>
     </div>
     <div class="loading h-1 flex fixed inset-x-0 top-0 opacity-0 motion-safe:(transition)" aria-hidden="true"><div class="loading-progress bg-brand-400"></div><span class="sr-only">Loading...</span></div>
-    <script src="/_assets/js/_app.js?v={% bust %}"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEH0BK4CVD"></script>
+    <script src="/_assets/js/search.js"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NEH0BK4CVD');
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('app', () => ({
+          searching: false,
+          query: '',
+          results: [],
+          data: [],
+          index: null,
+          searchData() {
+            fetch('/search/data.json')
+              .then((response) => response.json())
+              .then((data) => {
+                this.data = data;
+                this.index = elasticlunr(function() {
+                  this.addField('id');
+                  this.addField('title');
+                  this.addField('note');
+                  this.setRef('id');
+                  this.saveDocument(false);
+                });
+                data.forEach((item) => {
+                  this.index.addDoc(item);
+                });
+              });
+          },
+          search() {
+            if (this.index) {
+              this.results = this.index
+                .search(this.query, {
+                  expand: true,
+                  bool: 'AND',
+                })
+                .map((result) => this.data.find((item) => item.id === result.ref));
+            }
+          },
+          searchOpen() {
+            this.searching = true;
+          },
+          searchClose() {
+            this.query = '';
+            this.results = [];
+            this.searching = false;
+          },
+        }));
+      });
     </script>
+    <script src="/_assets/js/_app.js?v={% bust %}"></script>
   </body>
 
 </html>
