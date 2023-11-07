@@ -50,7 +50,7 @@
               </li>
               {%- endfor %}
               <li class="ml-auto">
-                <button type="button" class="p-4" @click="searchOpen()"><iconify-icon icon="mdi:magnify-expand" inline="false" class="text-xl"></iconify-icon></button>
+                <button type="button" class="p-4" @click="searchOpen()" aria-labelledby="search-panel-label"><iconify-icon icon="mdi:magnify-expand" inline="false" class="text-xl"></iconify-icon></button>
               </li>
             </ul>
           </nav>
@@ -69,13 +69,14 @@
           >
             <div class="bg-black/20 absolute inset-0" aria-hidden="true"></div>
             <div
-              class="p-4 w-full flex-auto relative overflow-y-auto md:(p-12)"
+              class="py-4 px-12 w-full flex-auto relative overflow-y-auto md:(p-12)"
               role="document"
+              :tabindex="searching ? '0' : '-1'"
               x-on:click.stop
               x-trap.noreturn.noscroll.inert="searching"
             >
               <div class="mx-auto w-full max-w-3xl">
-                <label><span class="sr-only">Search</span><input x-model="query" @input="search()" type="search" placeholder="Search video games: pokemon, monster hunter, final fantasy, etc." class="mb-12 py-2 px-4 border-(1 gray-500/20) w-full bg-gray-500/20 block rounded-full" /></label>
+                <label><span id="search-panel-label" class="sr-only">Search</span><input x-model="query" @input="search()" type="search" placeholder="Search video games: pokemon, monster hunter, final fantasy, etc." class="mb-12 py-2 px-4 border-(1 gray-500/20) w-full bg-gray-500/20 block rounded-full" /></label>
                 <template x-if="results.length" hidden>
                   <section class="search-results-panel">
                     <div class="pb-1 border-(b gray-500/20) text-(sm gray-500) flex items-center justify-between">
@@ -102,7 +103,7 @@
                   </section>
                 </template>
               </div>
-              <button @click="searchClose()" type="button" class="fixed top-3 right-3"><iconify-icon icon="mdi:close" inline class="iconify text-xl"></iconify-icon><span class="sr-only">Close</span></button>
+              <button @click="searchClose()" type="button" class="fixed top-3 right-3"><iconify-icon icon="mdi:close" inline class="iconify text-2xl"></iconify-icon><span class="sr-only">Close</span></button>
             </div>
           </section>
           
