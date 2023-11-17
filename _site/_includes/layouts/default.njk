@@ -86,8 +86,8 @@
                     <ul class="flex-(& wrap)">
                       <template x-for="result in results" hidden>
                         <li class="mx-auto p-4 w-full max-w-xs flex lg:(mx-0)">
-                          <div class="p-4 w-full bg-white/5 flex-(& col) rounded-lg">
-                            <h3 x-text="result.title" class="text-lg font-bold"></h3>
+                          <div class="p-4 w-full bg-white/5 flex-(& col) gap-2 rounded-lg">
+                            <h3 x-text="result.title" class="text-lg leading-5 font-bold line-clamp-2"></h3>
                             <p x-text="result.platform" class="text-sm"></p>
                             <template x-if="result.note" hidden>
                               <small x-html="'~ '+ result.note" class="text-(xs end wrap-balance) italic opacity-70 md:(ml-auto w-1/2)"></small>
@@ -105,7 +105,7 @@
                   </section>
                 </template>
               </div>
-              <button @click="searchClose()" type="button" class="fixed top-3 right-3"><iconify-icon icon="mdi:close" inline class="iconify text-2xl"></iconify-icon><span class="sr-only">Close</span></button>
+              <button @click="searchClose()" type="button" class="absolute top-3 right-3"><iconify-icon icon="mdi:close" inline class="iconify text-2xl"></iconify-icon><span class="sr-only">Close</span></button>
             </div>
           </section>
           
