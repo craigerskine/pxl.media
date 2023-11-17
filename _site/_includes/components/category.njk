@@ -17,13 +17,13 @@
         {%- if bg_img === '' %}
         {%- endif %}
       </div>
-      <div class="meta pt-1 flex items-center">
+      <div class="meta pt-1 grid-(& cols-2) items-center">
         <p class="name text-(white base) font-bold leading-none block truncate" aria-hidden="{% if title === '' %}true{% else %}false{% endif %}">
           {% if title !== '' %}{{ title }}{% else %}&nbsp;{% endif %}
         </p>
         {%- if subtext !== '' %}
         <div class="ml-auto leading-none">
-          <small class="ml-auto font-bold opacity-80">{{ subtext | safe }}</small>
+          <small class="ml-auto font-bold line-clamp-1 opacity-80" title="{{ subtext | striptags(false) | escape }}">{{ subtext | safe }}</small>
         </div>
         {%- endif %}
       </div>
