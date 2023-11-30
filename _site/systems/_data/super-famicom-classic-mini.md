@@ -1,5 +1,5 @@
 ---
-title: 'Super Famicom Classic Mini'
+title: Super Famicom Classic Mini
 platform: super-nintendo
 system_type: mini
 variation: EU

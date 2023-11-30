@@ -1,7 +1,7 @@
 ---
-title: 'Anbernic RG Nano'
+title: Anbernic RG Nano
 platform: retro-emu
 system_type: handheld
-variation: 'Red'
+variation: Red
 accessories: ''
 ---

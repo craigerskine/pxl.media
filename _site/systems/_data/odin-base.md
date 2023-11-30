@@ -1,7 +1,7 @@
 ---
-title: 'Odin Base'
+title: Odin Base
 platform: retro-emu
 system_type: hybrid
-variation: 'Transparent Black'
-accessories: ' + Dock'
+variation: Transparent Black
+accessories: + Dock
 ---

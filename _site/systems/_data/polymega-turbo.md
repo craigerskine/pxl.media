@@ -1,7 +1,7 @@
 ---
-title: 'Polymega Turbo'
+title: Polymega Turbo
 platform: polymega
 system_type: console
-variation: 'TG-16'
-accessories: ' Controller'
+variation: TG-16
+accessories: Controller
 ---

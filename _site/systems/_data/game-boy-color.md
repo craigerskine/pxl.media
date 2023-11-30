@@ -1,7 +1,7 @@
 ---
-title: 'Game Boy Color'
+title: Game Boy Color
 platform: game-boy-color
 system_type: handheld
-variation: 'Atomic Purple'
+variation: Atomic Purple
 accessories: ''
 ---

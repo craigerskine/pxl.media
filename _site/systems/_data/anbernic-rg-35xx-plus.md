@@ -1,7 +1,7 @@
 ---
-title: GKD Mini Plus
+title: Anbernic RG 35XX Plus
 platform: retro-emu
 system_type: handheld
-variation: White
+variation: Gray
 accessories: ''
 ---

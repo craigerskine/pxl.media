@@ -1,5 +1,5 @@
 ---
-title: 'Lynx 2'
+title: Lynx 2
 platform: lynx
 system_type: handheld
 variation: US

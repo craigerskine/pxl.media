@@ -1,5 +1,5 @@
 ---
-title: 'Game Boy Player'
+title: Game Boy Player
 platform: game-boy-advance
 system_type: console
 variation: Black

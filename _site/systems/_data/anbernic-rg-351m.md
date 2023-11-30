@@ -1,7 +1,7 @@
 ---
-title: 'Anbernic RG 351M'
+title: Anbernic RG 351M
 platform: retro-emu
 system_type: handheld
-variation: 'Metal'
+variation: Metal
 accessories: ''
 ---

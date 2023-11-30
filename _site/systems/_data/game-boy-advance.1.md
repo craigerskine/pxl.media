@@ -1,7 +1,7 @@
 ---
-title: 'Game Boy Advance'
+title: Game Boy Advance
 platform: game-boy-advance
 system_type: handheld
-variation: 'Glacier w/LCD mod'
+variation: Glacier w/LCD mod
 accessories: ''
 ---
