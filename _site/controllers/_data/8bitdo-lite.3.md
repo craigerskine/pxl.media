@@ -1,7 +1,7 @@
 ---
 title: Lite
 company: 8Bitdo
-variation: Yellow
+variation: Turquoise
 connection:
   - Bluetooth
 ---
