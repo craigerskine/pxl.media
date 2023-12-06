@@ -2,6 +2,6 @@
 title: GameCube
 platform: gamecube
 system_type: console
-variation: Platinum
-accessories: + Component Cable
+variation: Indigo
+accessories: Broadband + Component
 ---
