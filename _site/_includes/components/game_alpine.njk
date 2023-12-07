@@ -2,9 +2,8 @@
   <div class="box w-full flex-(& col) relative rounded-lg shadow-xl">
     <div class="cover w-full h-16 bg-black/80 flex-(& none) relative rounded-t-lg">
       <div class="flex w-full bg-center bg-cover rounded-t-lg" :style="'background-image: url(/_assets/img/games/'+ item.id +'.jpg)'"><div class="w-full backdrop-brightness-75 rounded-t-lg"></div></div>
-      <div class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
-        <div class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90 rounded-t-lg"></div>
-        <a :href="'/platform/'+ slugify(item.platform) +'/'" class="text-gray-200/75 font-semibold truncate block relative motion-safe:(transition) hover:(text-white/100)" :title="item.platform" x-text="item.platform"></a>
+      <div class="group w-2/3 flex items-end justify-end absolute inset-y-0 right-0">
+        <a :href="'/platform/'+ slugify(item.platform) +'/'" class="py-1.5 px-2 bg-black/75 text-gray-200/75 leading-none font-semibold truncate block relative rounded-tl motion-safe:(transition) hover:(text-white/100)" :title="item.platform" x-text="item.platform"></a>
       </div>
     </div>
     <div class="details w-full flex-(& auto)">
