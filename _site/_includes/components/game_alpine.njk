@@ -1,0 +1,53 @@
+<li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) lg:(mx-0)">
+  <div class="box w-full flex-(& col) relative rounded-lg shadow-xl">
+    <div class="cover w-full h-16 bg-black/80 flex-(& none) relative rounded-t-lg">
+      <div class="flex w-full bg-center bg-cover rounded-t-lg" :style="'background-image: url(/_assets/img/games/'+ item.id +'.jpg)'"><div class="w-full backdrop-brightness-75 rounded-t-lg"></div></div>
+      <div class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
+        <div class="bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90 rounded-t-lg"></div>
+        <a :href="'/platform/'+ slugify(item.platform) +'/'" class="text-gray-200/75 font-semibold truncate block relative motion-safe:(transition) hover:(text-white/100)" :title="item.platform" x-text="item.platform"></a>
+      </div>
+    </div>
+    <div class="details w-full flex-(& auto)">
+      <div class="meta p-3 pb-0 w-full min-w-0 flex-(& 1 col) justify-between">
+        <div class="mast mb-2">
+          <b class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></b>
+          <p class="note">
+            <i class="w-full min-w-0 text-(gray-400 xs) truncate block flex-1" :title="item.note" x-html="item.note ? item.note : '&nbsp;'"></i>
+          </p>
+        </div>
+        <ul class="py-2 border-(t dashed gray-500/30) w-full text-base flex items-center">
+          <li class="flex-1">
+            <ul class="tags flex items-center space-x-4">
+              <li>
+                <a href="#" @click.prvent class="group flex relative motion-safe:(transition) hover:(text-white)">
+                  <iconify-icon icon="mdi:pound" inline class="m-auto text-xl"></iconify-icon>
+                  <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:(transition-all) group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)" x-text="csv(item.genre)"></b>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="ml-auto">
+            <ul class="icons flex items-center space-x-2">
+              <template x-for="i in 3">
+                <template x-if="(i === 1 && item.physical) || (i === 2 && item.digital) || (i === 3 && item.guide)">
+                  <li class="group flex relative [&_.iconify]:(m-auto text-xl opacity-50)" tabindex="0">
+                    <template x-if="i === 1">
+                      <iconify-icon icon="mdi:chip" inline class="iconify"></iconify-icon>
+                    </template>
+                    <template x-if="i === 2">
+                      <iconify-icon icon="mdi:qrcode" inline class="iconify"></iconify-icon>
+                    </template>
+                    <template x-if="i === 3">
+                      <iconify-icon icon="mdi:notebook" inline class="iconify"></iconify-icon>
+                    </template>
+                    <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:(transition-all) group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)" x-text="i === 1 ? 'Physical' : i === 2 ? 'Digital' : i === 3 ? 'Guide' : ''"></b>
+                  </li>
+                </template>
+              </template>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</li>

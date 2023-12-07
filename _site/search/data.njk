@@ -4,11 +4,12 @@ permalink: '{{ page.filePathStem }}.json'
 [
 {%- for item in collections.game | sort(false, false, "data.title") %}
   {
-    "id": "{{ item.data.title | slugify }}",
+    "id": "{{ item.data.page.fileSlug }}",
     "title": "{{ item.data.title | safe }}",
     "note": "{{ item.data.note | safe }}",
     "physical": {{ item.data.physical | safe }},
     "digital": {{ item.data.digital | safe }},
+    "guide": {{ item.data.guide | safe if item.data.guide else 'false' }},
     "genre": [
       {%- for g in item.data.tags -%}
         {%- if g.includes('genre_') -%}
