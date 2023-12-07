@@ -6,7 +6,7 @@ title: Search results
 {%- import 'components/heading.njk' as heading %}
 
 <div x-data="app" x-init="gamesFiltered">
-  {%- call heading.x(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-text="total > 1 ? 'results' : 'result'"></span> for: <i x-text="query" class="ml-1 font-normal"></i>{%- endcall %}
+  {%- call heading.x(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-text="total > 1 ? 'results' : 'result'"></span> for: <i x-text="query" class="ml-1 text-gray-500 font-normal"></i>{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
     <template x-for="item in gamesFiltered">
       {% include 'components/game_alpine.njk' %}
