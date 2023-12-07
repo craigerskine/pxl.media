@@ -1,8 +1,8 @@
-{%- macro x(tag='h1',label='',sub='',alt='',alt_sub='',url='',search=false) %}
+{%- macro x(tag='h1',label='',sub='',alt='',alt_sub='',url='') %}
   <div class="h-hr mt-8 mb-6 pb-2 px-4 text-(gray-400 sm center) font-bold uppercase flex-(& col) relative md:(text-left items-start)">
     <div class="pb-2 w-full flex-(& wrap) items-center">
       <{{ tag }} class="relative">
-        {%- if sub !== '' %}<b class="mr-2 text-xs opacity-75"{{ ' x-text="'+ sub +'"' if search }}>{{ sub }}</b>{%- endif %}
+        {%- if sub !== '' %}<b class="mr-2 text-xs opacity-75">{{ sub }}</b>{%- endif %}
         {{ label }}
         {{ caller() }}
         {%- if alt_sub !== '' %}<b class="ml-4 mr-2 text-xs opacity-75">{{ alt_sub }}</b>{%- endif %}

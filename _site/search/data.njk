@@ -9,11 +9,11 @@ permalink: '{{ page.filePathStem }}.json'
     "note": "{{ item.data.note | safe }}",
     "physical": {{ item.data.physical | safe }},
     "digital": {{ item.data.digital | safe }},
-    "guide": {{ item.data.guide | safe if item.data.guide else 'false' }},
+    "guide": {{ item.data.guide | safe }},
     "genre": [
       {%- for g in item.data.tags -%}
         {%- if g.includes('genre_') -%}
-          "{{ g | replace('genre_', '') | replace('-', ' ') | title | replace('Rpg', 'RPG') | replace('Playstation', 'PlayStation') }}"{% if not loop.last %},{% endif %}
+          "{{ g | replace('genre_', '') | replace('-', ' ') | title | replace('Rpg', 'RPG') }}"{% if not loop.last %},{% endif %}
         {%- endif -%}
       {%- endfor -%}
     ],

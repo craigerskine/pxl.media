@@ -2,12 +2,12 @@
   <div class="box w-full flex-(& col) relative rounded-lg shadow-xl">
     <div class="cover w-full h-16 bg-black/80 flex-(& none) relative rounded-t-lg">
       <div class="flex w-full bg-center bg-cover rounded-t-lg" :style="'background-image: url(/_assets/img/games/'+ item.id +'.jpg)'"><div class="w-full backdrop-brightness-75 rounded-t-lg"></div></div>
-      <div class="group w-2/3 flex items-end justify-end absolute inset-y-0 right-0">
-        <a :href="'/platform/'+ slugify(item.platform) +'/'" class="py-1.5 px-2 bg-black/75 text-gray-200/75 leading-none font-semibold truncate block relative rounded-tl motion-safe:(transition) hover:(text-white/100)" :title="item.platform" x-text="item.platform"></a>
+      <div class="group p-1 w-2/3 flex items-end justify-end absolute inset-y-0 right-0">
+        <a :href="'/platform/'+ slugify(item.platform) +'/'" class="py-1 px-2 bg-black/75 text-(gray-200/75 xs) leading-none font-semibold truncate block relative rounded-full motion-safe:(transition) hover:(text-white/100)" :title="item.platform" x-text="item.platform"></a>
       </div>
     </div>
     <div class="details w-full flex-(& auto)">
-      <div class="meta p-3 pb-0 w-full min-w-0 flex-(& 1 col) justify-between">
+      <div class="meta p-3 pb-0 w-full min-w-0 flex-(& auto col) justify-between">
         <div class="mast mb-2">
           <b class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></b>
           <p class="note">
