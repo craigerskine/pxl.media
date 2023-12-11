@@ -74,18 +74,13 @@ install({
     },
   },
   rules: [
-    ['text-wrap-(unset|wrap|nowrap|balance)', 'textWrap'],
+    [ 'text-wrap-(unset|wrap|nowrap|balance)', 'textWrap' ],
     [ 'box', 'bg-(white opacity-[.05])' ],
     [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 4\' width=\'4\' height=\'4\'><rect x=\'0\' y=\'0\' width=\'2\' height=\'2\' fill=\'rgba(5,5,5,.33)\'></rect></svg>")', } ],
   ],
 });
 injectGlobal`
   @layer base {
-    .nav-menu a { @apply opacity-40; }
-    .nav-menu .active { @apply opacity-100; }
-    .nav-menu .active b > b { @apply w-full opacity-100; }
-    .input-search:hover + i { @apply opacity-100; }
-    input[type="search"]::-webkit-search-cancel-button { @apply w-3 h-1 appearance-none bg-current block opacity-50 rounded-full; }
   }
 `
 

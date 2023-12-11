@@ -2,6 +2,6 @@
 title: Pocket
 platform: analogue
 system_type: handheld
-variation: Black, Orange Spice
+variation: Black
 accessories: + Dock + Cartridge Adapter Set
 ---
