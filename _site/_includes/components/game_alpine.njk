@@ -3,7 +3,7 @@
     <div class="cover w-full h-16 bg-black/80 flex-(& none) relative rounded-t-lg">
       <div class="flex w-full bg-center bg-cover rounded-t-lg" :style="'background-image: url(/_assets/img/games/'+ item.id +'.jpg)'"><div class="w-full backdrop-brightness-75 rounded-t-lg"></div></div>
       <div class="group p-1 w-2/3 flex items-end justify-end absolute inset-y-0 right-0">
-        <a :href="'/platform/'+ slugify(item.platform) +'/'" class="py-1 px-2 bg-black/75 text-(gray-200/75 xs) leading-none font-semibold truncate block relative rounded-full motion-safe:(transition) hover:(text-white/100)" :title="item.platform" x-text="item.platform"></a>
+        <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="py-1 px-2 bg-black/75 text-(gray-200/75 xs) leading-none font-semibold truncate block relative rounded-full motion-safe:(transition) hover:(text-white/100)" :title="item.platform.title" x-text="item.platform.title"></a>
       </div>
     </div>
     <div class="details w-full flex-(& auto)">
@@ -17,12 +17,14 @@
         <ul class="py-2 border-(t dashed gray-500/30) w-full text-base flex items-center">
           <li class="flex-1">
             <ul class="tags flex items-center space-x-4">
-              <li>
-                <a href="#" @click.prvent class="group flex relative motion-safe:(transition) hover:(text-white)">
-                  <iconify-icon icon="mdi:pound" inline class="m-auto text-xl"></iconify-icon>
-                  <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:(transition-all) group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)" x-text="csv(item.genre)"></b>
-                </a>
-              </li>
+              <template x-for="g in item.genre" hidden>
+                <li>
+                  <a :href="'/genre/'+ slugify(g.title) +'/'" class="group flex relative motion-safe:(transition) hover:(text-white)">
+                    <iconify-icon :icon="g.ico" inline class="m-auto text-xl"></iconify-icon>
+                    <b class="py-1 px-2 bg-black text-(gray-400 xs) whitespace-nowrap absolute bottom-full left-1/2 invisible opacity-[.0001] rounded transform translate-y-1 -translate-x-1/2 shadow-lg motion-safe:(transition-all) group-hover:(visible opacity-100 -translate-y-1) group-focus:(visible opacity-100 -translate-y-1)" x-text="g.title"></b>
+                  </a>
+                </li>
+              </template>
             </ul>
           </li>
           <li class="ml-auto">

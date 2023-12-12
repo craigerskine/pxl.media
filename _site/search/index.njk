@@ -64,10 +64,9 @@ title: Search results
         return text?.toString()
           .toLowerCase()
           .normalize('NFKD')
-          .replace(/[\u0300-\u036f]/g, '')
           .trim()
           .toLowerCase()
-          .replace(/[^a-z0-9 -]/g, '')
+          .replace(/[^\w\-]+/g, '-')
           .replace(/\s+/g, '-')
           .replace(/-+/g, '-')
       },

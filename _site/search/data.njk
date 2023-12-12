@@ -11,19 +11,33 @@ permalink: '{{ page.filePathStem }}.json'
     "digital": {{ item.data.digital | safe }},
     "guide": {{ item.data.guide | safe }},
     "genre": [
-      {%- for g in item.data.tags -%}
-        {%- if g.includes('genre_') -%}
-          "{{ g | replace('genre_', '') | replace('-', ' ') | title | replace('Rpg', 'RPG') }}"{% if not loop.last %},{% endif %}
-        {%- endif -%}
+      {%- set thisGenres = [] -%}
+      {%- for t in item.data.tags -%}
+        {%- for g in collections.genre -%}
+          {%- if g.data.page.fileSlug === t.replace('genre_', '') -%}
+            {%- set thisGenres = (thisGenres.push(g), thisGenres) -%}
+          {%- endif -%}
+        {%- endfor -%}
       {%- endfor -%}
+      {%- for genre in thisGenres %}
+      { "title": "{{ genre.data.title }}", "ico": "{{ genre.data.ico}}" }{% if not loop.last %},{% endif %}
+      {%- endfor %}
     ],
-    "platform": "
+    "platform": {
+      {%- set thisPlatforms = [] -%}
       {%- for t in item.data.tags -%}
         {%- if t.includes('platform_') -%}
-          {{ t | replace('platform_', '') | replace('-', ' ') | title | replace('ds', 'DS') | replace('Ds', 'DS') | replace('Playstation', 'PlayStation') | replace('grafx', 'Grafx') | replace(' Cd', ' CD') }}
+          {%- for p in collections.platform -%}
+            {%- if p.data.page.fileSlug === t.replace('platform_', '') -%}
+              {%- set thisPlatforms = (thisPlatforms.push(p), thisPlatforms) -%}
+            {%- endif -%}
+          {%- endfor %}
         {%- endif -%}
       {%- endfor -%}
-    "
+      {%- for platform in thisPlatforms %}
+        "title": "{{ platform.data.title }}"
+      {%- endfor %}
+    }
   }{% if not loop.last %},{% endif %}
 {%- endfor %}
 ]
