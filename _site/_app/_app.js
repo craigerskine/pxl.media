@@ -75,13 +75,13 @@ install({
   },
   rules: [
     [ 'text-wrap-(unset|wrap|nowrap|balance)', 'textWrap' ],
-    [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 4\' width=\'4\' height=\'4\'><rect x=\'0\' y=\'0\' width=\'2\' height=\'2\' fill=\'rgba(5,5,5,.33)\'></rect></svg>")', } ],
+    [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 4\' width=\'4\' height=\'4\' fill=\'rgba(128,128,128,.2)\'><path d=\'m0 0h1v1h-1z\' /><path d=\'m2 2h1v1h-1z\' /></svg>")', } ],
   ],
 });
 injectGlobal`
   @layer base {
     .box { @apply bg-white/5 rounded-lg shadow-xl; }
-    .box > .cover { @apply rounded-t-lg; }
+    .box .box-cover { @apply rounded-t-lg; }
   }
 `
 
