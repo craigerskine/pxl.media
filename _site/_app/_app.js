@@ -80,8 +80,9 @@ install({
 });
 injectGlobal`
   @layer base {
-    .box { @apply bg-white/5 rounded-lg shadow-xl; }
+    .box { @apply bg-white/5 rounded-lg ring-(inset 1 white/5) shadow-lg; }
     .box .box-cover { @apply rounded-t-lg; }
+    .box .box-cover-img { @apply ring-(inset 1 white/10); }
   }
 `
 

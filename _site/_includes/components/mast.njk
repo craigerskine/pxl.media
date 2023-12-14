@@ -47,6 +47,6 @@
   {%- endif %}
   {%- endfor %}
   </ul>
-  {%- if hr %}<b class="h-px bg-current text-gray-500 opacity-30 absolute bottom-0 inset-x-0 motion-safe:transition-all group-hover:(h-[2px] text-brand-400 opacity-100)" aria-hidden="true"></b>{%- endif %}
+  {%- if hr %}<b class="border-(b dashed current) text-gray-400 opacity-30 absolute bottom-0 inset-x-0 motion-safe:transition-all group-hover:(h-[2px] text-brand-400 opacity-100)" aria-hidden="true"></b>{%- endif %}
 </{% if url !== '' %}a{% else %}div{% endif %}>
 {%- endmacro %}
