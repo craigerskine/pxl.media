@@ -7,6 +7,6 @@ note: Limited Run Games
 physical: true
 digital: false
 guide: false
-pending: true
-date: 2023-09-09
+pending: false
+date: 2023-12-23
 ---
