@@ -4,7 +4,8 @@
 <ul class="list-game pb-4 flex flex-wrap">
 {%- for item in games | sort(reverse, false, by) %}
   <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
-    <div class="box w-full flex flex-wrap relative{% if item.data.pending %} ring-2 ring-red-500{%- endif %}">
+    {% if item.data.pending %}<div class="absolute inset-x-4 inset-y-0 z-[-1] ring-(2 red-500/100) rounded-lg"></div>{%- endif %}
+    <div class="box w-full flex flex-wrap relative">
       <div class="box-cover w-full h-16 bg-black/80 flex overflow-hidden relative">
         <div class="box-cover-img w-full bg-(cover center) flex" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')">
           <div class="w-full backdrop-brightness-75"></div>
