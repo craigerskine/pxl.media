@@ -33,7 +33,7 @@
               <i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" title="{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
             </p>
           </div>
-          <ul class="py-2 border-(t dashed gray-500/30) w-full text-base flex items-center">
+          <ul class="py-2 border-(t dotted gray-500/30) w-full text-base flex items-center">
             <li class="flex-1">
               <ul class="tags flex items-center space-x-4">
                 {%- for t in item.data.tags %}
