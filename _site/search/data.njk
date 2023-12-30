@@ -10,6 +10,7 @@ permalink: '{{ page.filePathStem }}.json'
     "physical": {{ item.data.physical | safe }},
     "digital": {{ item.data.digital | safe }},
     "guide": {{ item.data.guide | safe }},
+    "pending": {{ item.data.pending | safe }},
     "genre": [
       {%- set thisGenres = [] -%}
       {%- for t in item.data.tags -%}
