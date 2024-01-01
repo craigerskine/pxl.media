@@ -5,14 +5,14 @@
 {%- endmacro %}
 
 {%- macro group(title='Title',logo='',url='#',colspan='') %}
-<li class="mb-12 flex-(& col){% if colspan %} col-span-2{% endif %} md:(mb-0)">
+<li class="mb-12 flex-(& col) items-start{% if colspan %} col-span-2{% endif %} md:(mb-0)">
   <a href="{{ url }}" class="group py-5 border-(b dotted gray-500/30) flex-none{% if url == '#' %} pointer-events-none{% endif %} hover:(text-white)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current opacity-50 motion-safe:(transition) group-hover:(opacity-100)">
       <title>{{ title }}</title>
       {{ logo | safe }}
     </svg>
   </a>
-  <ul class="ml-5 grid-(& cols-1) md:(ml-12{% if colspan %} grid-cols-2 gap-x-12{% endif %})">
+  <ul class="pl-5 w-full grid-(& cols-1) md:(pl-12{% if colspan %} grid-cols-2 gap-x-12{% endif %})">
     {{ caller() }}
   </ul>
 </li>
