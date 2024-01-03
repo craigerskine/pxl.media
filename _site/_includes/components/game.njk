@@ -29,9 +29,9 @@
       <div class="details w-full flex">
         <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
           <div class="mast mb-2">
-            <b class="name text-(white base) font-black block truncate" title="{{ item.data.title }}">{{ item.data.title }}</b>
+            <b class="name text-(white base) font-black block truncate" title="...{{ item.data.title }}">{{ item.data.title }}</b>
             <p class="note">
-              <i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" title="{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
+              <i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" title="...{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
             </p>
           </div>
           <ul class="py-2 border-(t dotted gray-500/30) w-full text-base flex items-center">

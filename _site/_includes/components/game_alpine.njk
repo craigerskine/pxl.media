@@ -12,9 +12,9 @@
     <div class="details w-full flex-(& auto)">
       <div class="meta p-3 pb-0 w-full min-w-0 flex-(& auto col) justify-between">
         <div class="mast mb-2">
-          <b class="name text-(white base) font-black truncate block" :title="item.title" x-text="item.title"></b>
+          <b class="name text-(white base) font-black truncate block" :title="'...'+ item.title" x-text="item.title"></b>
           <p class="note">
-            <i class="w-full min-w-0 text-(gray-400 xs) truncate block flex-1" :title="item.note" x-html="item.note ? item.note : '&nbsp;'"></i>
+            <i class="w-full min-w-0 text-(gray-400 xs) truncate block flex-1" :title="'...'+ item.note" x-html="item.note ? item.note : '&nbsp;'"></i>
           </p>
         </div>
         <ul class="py-2 border-(t dotted gray-500/30) w-full text-base flex items-center">
