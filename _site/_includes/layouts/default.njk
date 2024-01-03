@@ -32,6 +32,9 @@
 
   <body class="bg-gray-900 text-(gray-400 sm) !block" style="display: none;" data-instant-intensity="mousedown">
     <div class="page min-h-screen flex-(& col)">
+      <a href="#content-main" class="p-3 m-3 bg-brand-700 text-(brand-50 xs) leading-none font-bold absolute top-0 left-0 z-50 -translate-y-16 rounded-md motion-safe:(transition) focus:(translate-y-0)">
+        Skip Navigation
+      </a>
       <header>
         <div class="container mx-auto">
           <nav aria-label="Main navigation">
@@ -63,7 +66,7 @@
           </nav>
         </div>
       </header>
-      <main class="pt-8 flex-1" data-router-wrapper>
+      <main id="content-main" class="pt-8 flex-1" data-router-wrapper>
         <section class="container mx-auto relative" data-router-view="{{ page.url | slugify }}">
           {{ content | safe }}
         </section>
