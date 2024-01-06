@@ -1,6 +1,6 @@
 {%- import 'components/tooltip.njk' as tooltip -%}
 
-<li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) lg:(mx-0)">
+<li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)">
   <template x-if="item.pending">
     <div class="absolute inset-x-4 inset-y-0 z-[-1] ring-(2 red-500/100) rounded-lg"></div>
   </template>

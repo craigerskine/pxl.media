@@ -3,7 +3,7 @@
 {%- macro x(games=[],platforms=[],genres=[],by='data.title',reverse=false) %}
 <ul class="list-game pb-4 flex flex-wrap">
 {%- for item in games | sort(reverse, false, by) %}
-  <li class="game mx-auto lg:mx-0 mb-8 px-4 w-full max-w-xs flex relative hover:z-20">
+  <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)">
     {% if item.data.pending %}<div class="absolute inset-x-4 inset-y-0 z-[-1] ring-(2 red-500/100) rounded-lg"></div>{%- endif %}
     <div class="box w-full flex flex-wrap relative">
       <div class="box-cover w-full h-16 bg-black/80 flex overflow-hidden relative">
