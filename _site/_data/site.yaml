@@ -22,7 +22,7 @@ footer:
         url: https://11ty.dev/
         ico: simple-icons:eleventy
       - title: 'Source: GitHub'
-        url: https://github.com/craigerskine/pxl.media
+        url: /changes/
         ico: simple-icons:git
       - title: 'Host: Netlify'
         url: https://netlify.com/

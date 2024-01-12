@@ -1,0 +1,29 @@
+---
+layout: 'layouts/default.njk'
+title: Change Log
+---
+
+{%- import 'components/heading.njk' as heading %}
+
+{%- call heading.x(tag='h1',label=title) %}{%- endcall %}
+
+<ol role="list" class="px-4">
+  {%- for commit in collections.recentChanges %}
+  <li class="flex gap-x-10">
+    <div class="flex-(& col shrink-0) items-center">
+      <b class="w-3 h-3 border-(1 dotted gray-500/30) bg-gray-500/10 text-xs flex-(& shrink-0) items-center justify-center rounded-full"></b>
+      {%- if not loop.last %}  
+      <i class="w-px border-(l dotted gray-500/30) flex-1"></i>
+      {%- endif %}
+    </div>
+    <article class="pb-10 w-full">
+      <p class="text-xs opacity-70">{{ commit.authorName }}</p>
+      <h2 class="mt-1 text-base">{{ commit.subject }}</h2>
+    </article>
+    <aside class="pb-10 text-end flex-none">
+      <a href="https://github.com/craigerskine/pxl.media/commit/{{ commit.hash }}" class="mb-1 text-xs leading-6 motion-safe:(transition) hover:(text-white underline)"><time>{{ commit.authorDate | dateOnly }}</time></a>
+      <p class="text-xs opacity-70">#{{ commit.abbrevHash }}</p>
+    </aside>
+  </li>
+  {%- endfor %}
+</ol>
