@@ -1,32 +1,35 @@
 ---
 meta:
   name: pxl.media
-  title: 'pxl.media : qrayg''s game room'
+  title: "pxl.media : qrayg's game room"
   description: qrayg's games, game systems, and game controllers collections
-  url: 'https://pxl.media'
-  author: 'Craig Erskine'
+  url: "https://pxl.media"
+  author: "Craig Erskine"
   author_url: https://craigerskine.com/
   nick: qrayg
   nick_url: https://qrayg.com/
 pagination:
   size: 24
 footer:
-    nav:
-      - title: 'Editor: VS Code'
-        url: https://code.visualstudio.com/
-        ico: simple-icons:visualstudiocode
-      - title: 'CSS: Twind'
-        url: 'https://twind.style/'
-        ico: simple-icons:tailwindcss
-      - title: 'SSG: 11ty'
-        url: https://11ty.dev/
-        ico: simple-icons:eleventy
-      - title: 'Source: GitHub'
-        url: /changes/
-        ico: simple-icons:git
-      - title: 'Host: Netlify'
-        url: https://netlify.com/
-        ico: simple-icons:netlify
+  nav:
+    - title: "Editor: VS Code"
+      url: https://code.visualstudio.com/
+      ico: simple-icons:visualstudiocode
+    - title: "CSS: Twind"
+      url: https://twind.style/
+      ico: simple-icons:tailwindcss
+    - title: "SSG: 11ty"
+      url: https://11ty.dev/
+      ico: simple-icons:eleventy
+    - title: "Source: GitHub"
+      url: https://github.com/craigerskine/pxl.media/
+      ico: simple-icons:git
+    - title: "Host: Netlify"
+      url: https://netlify.com/
+      ico: simple-icons:netlify
+    - title: "Change: Log"
+      url: /changes/
+      ico: mdi:list-status
 analytics: |-
   // google analytics
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
