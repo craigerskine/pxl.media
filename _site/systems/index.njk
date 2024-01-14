@@ -18,7 +18,7 @@ title: Systems
       {%- for platform, items in collections.system | sort(false, false, "data.title") | groupby("data.platform") %}
         {%- if platform === p.data.page.fileSlug %}
           {%- for item in items | sort(false, false, "data.title") %}
-            {%- set ico %}{%- if item.data.system_type == 'mini' %}mdi:fullscreen-exit{%- else %}mdi:desktop-tower{%- endif %}{%- endset %}
+            {%- set ico %}{%- if item.data.system_type == 'mini' %}mdi:fullscreen-exit{% elseif item.data.system_type === 'handheld' %}mdi:nintendo-game-boy{%- else %}mdi:controller{%- endif %}{%- endset %}
             {{ timeline.point(title=item.data.title,sub=item.data.variation,meta=item.data.accessories,ico=ico) }}
           {%- endfor %}
         {%- endif %}
