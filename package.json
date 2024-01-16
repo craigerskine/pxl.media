@@ -28,7 +28,7 @@
     "esbuild": "^0.19.9",
     "gsap": "^3.11.4",
     "iconify-icon": "^1.0.7",
-    "instant.page": "^5.1.1",
+    "instant.page": "^5.2.0",
     "js-yaml": "^4.1.0",
     "markdown-it-attrs": "^4.1.6"
   }
