@@ -4,37 +4,37 @@ import 'instant.page';
 // icons
 import 'iconify-icon';
 
-// highway - animations
-import Highway from '@dogstudio/highway';
-import PageTrans from './transition';
-const H = new Highway.Core({
-  transitions: {
-    default: PageTrans
-  }
-});
-const links = document.querySelectorAll('header .nav-item a');
-H.on('NAVIGATE_IN', ({ to, location }) => {
-  for (let i = 0; i < links.length; i++) {
-    const link = links[i];
-    link.classList.remove('active');
-    link.removeAttribute('aria-current');
-    if (location.href.includes(link.href)) {
-      link.classList.add('active');
-      link.setAttribute('aria-current', 'page');
-    }
-  }
-});
-// pageloading
-const pageloading = document.querySelector('.loading');
-const pageloadingprogress = document.querySelector('.loading-progress');
-H.on('NAVIGATE_OUT', () => {
-  pageloading.classList.remove(['opacity-0']);
-  pageloadingprogress.classList.add(['motion-safe:animate-progress']);
-});
-H.on('NAVIGATE_END', () => {
-  pageloading.classList.add(['opacity-0']);
-  pageloadingprogress.classList.remove(['motion-safe:animate-progress']);
-});
+// // highway - animations
+// import Highway from '@dogstudio/highway';
+// import PageTrans from './transition';
+// const H = new Highway.Core({
+//   transitions: {
+//     default: PageTrans
+//   }
+// });
+// const links = document.querySelectorAll('header .nav-item a');
+// H.on('NAVIGATE_IN', ({ to, location }) => {
+//   for (let i = 0; i < links.length; i++) {
+//     const link = links[i];
+//     link.classList.remove('active');
+//     link.removeAttribute('aria-current');
+//     if (location.href.includes(link.href)) {
+//       link.classList.add('active');
+//       link.setAttribute('aria-current', 'page');
+//     }
+//   }
+// });
+// // pageloading
+// const pageloading = document.querySelector('.loading');
+// const pageloadingprogress = document.querySelector('.loading-progress');
+// H.on('NAVIGATE_OUT', () => {
+//   pageloading.classList.remove(['opacity-0']);
+//   pageloadingprogress.classList.add(['motion-safe:animate-progress']);
+// });
+// H.on('NAVIGATE_END', () => {
+//   pageloading.classList.add(['opacity-0']);
+//   pageloadingprogress.classList.remove(['motion-safe:animate-progress']);
+// });
 
 // twind
 import { install, injectGlobal } from '@twind/core';
