@@ -75,7 +75,7 @@ install({
   },
   rules: [
     [ 'text-wrap-(unset|wrap|nowrap|balance)', 'textWrap' ],
-    [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 4\' width=\'4\' height=\'4\' fill=\'rgba(128,128,128,.2)\'><path d=\'m0 0h1v1h-1z\' /><path d=\'m2 2h1v1h-1z\' /></svg>")', } ],
+    [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\' viewBox=\'0 0 8 8\'><g fill=\'rgba(128,128,128,.05)\'><polygon points=\'0 0 2 0 2 2 0 2\' /><polygon points=\'4 4 6 4 6 6 4 6\' /></g></svg>")', } ],
   ],
 });
 injectGlobal`
