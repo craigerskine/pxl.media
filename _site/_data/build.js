@@ -13,7 +13,7 @@ module.exports = () => {
   return {
     time: {
       raw: now.toISOString(),
-      formatted: `${buildDate} @${buildTime}`,
+      formatted: `${buildDate}`,
     },
   };
 };

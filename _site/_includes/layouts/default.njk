@@ -97,7 +97,9 @@
             <polygon points="8 4 12 0 16 4 8 12 0 4 4 0"></polygon>
           </svg>
           by
-          <a href="{{ site.meta.nick_url }}" class="text-brand-400 font-bold motion-safe:(transition) hover:(text-brand-500 underline)">{{ site.meta.nick }}</a>
+          <a href="{{ site.meta.nick_url }}" class="footer-link">{{ site.meta.nick }}</a>
+          &bull; updated:
+          <a href="/changes/" class="footer-link"><time datetime="{{ build.time.raw }}">{{ build.time.formatted }}</time></a>
         </p>
       </footer>
       <div class="bg-grid fixed inset-0 z-[-1]" aria-hidden="true"></div>
