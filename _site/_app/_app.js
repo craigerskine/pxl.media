@@ -83,7 +83,6 @@ injectGlobal`
     .box { @apply bg-white/5 rounded-lg ring-(inset 1 white/5) shadow-lg; }
     .box .box-cover { @apply rounded-t-lg; }
     .box .box-cover-img { @apply ring-(inset 1 white/10); }
-    .footer-link { @apply text-brand-400 font-bold motion-safe:(transition) hover:(text-brand-500 underline); }
   }
 `
 
