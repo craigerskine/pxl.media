@@ -9,5 +9,6 @@ physical: true
 digital: false
 guide: false
 pending: false
-date: YYYY-MM-DD
+date: 2024-12-31
+eleventyExcludeFromCollections: true
 ---
