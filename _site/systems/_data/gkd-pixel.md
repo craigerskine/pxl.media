@@ -2,6 +2,6 @@
 title: GKD Pixel
 platform: retro-emu
 system_type: handheld
-variation: Black
+variation: Red
 accessories: + Case
 ---
