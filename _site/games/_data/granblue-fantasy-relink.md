@@ -3,10 +3,10 @@ title: 'Granblue Fantasy: Relink'
 tags:
   - platform_playstation-5
   - genre_rpg
-note: Standard
+note: Standard + Special Edition
 physical: true
-digital: false
+digital: true
 guide: false
-pending: true
+pending: false
 date: 2024-02-01
 ---
