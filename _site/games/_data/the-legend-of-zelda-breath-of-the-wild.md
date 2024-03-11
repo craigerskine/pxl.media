@@ -6,7 +6,7 @@ tags:
 note: 'Expansion Pass'
 digital: true
 physical: true
-guide: false
+guide: true
 pending: false
 date: 2017-03-03
 ---

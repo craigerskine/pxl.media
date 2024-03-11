@@ -5,7 +5,7 @@ tags:
   - genre_action-adventure
 physical: true
 digital: true
-guide: false
+guide: true
 pending: false
 date: 2023-05-26
 ---
