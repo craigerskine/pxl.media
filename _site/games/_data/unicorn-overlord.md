@@ -7,6 +7,6 @@ note: Collector''s Edition
 physical: true
 digital: false
 guide: false
-pending: true
+pending: false
 date: 2024-03-08
 ---
