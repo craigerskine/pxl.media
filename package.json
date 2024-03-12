@@ -27,7 +27,7 @@
     "eleventy-plugin-recent-changes": "^1.0.1",
     "esbuild": "^0.19.9",
     "gsap": "^3.11.4",
-    "iconify-icon": "^1.0.7",
+    "iconify-icon": "^2.0.0",
     "instant.page": "^5.2.0",
     "js-yaml": "^4.1.0",
     "markdown-it-attrs": "^4.1.6"
