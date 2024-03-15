@@ -1,0 +1,12 @@
+---
+title: The Legend of Legacy HD Remastered
+tags:
+  - platform_switch
+  - genre_rpg
+note: Deluxe Edition
+digital: false
+physical: true
+guide: false
+pending: true
+date: 2024-03-22
+---

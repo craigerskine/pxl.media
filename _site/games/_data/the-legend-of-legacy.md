@@ -1,5 +1,5 @@
 ---
-title: 'The Legend of Legacy'
+title: The Legend of Legacy
 tags:
   - platform_3ds
   - genre_rpg
