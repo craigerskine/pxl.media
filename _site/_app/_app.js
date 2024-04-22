@@ -75,7 +75,8 @@ install({
   },
   rules: [
     [ 'text-wrap-(unset|wrap|nowrap|balance)', 'textWrap' ],
-    [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'4\' viewBox=\'0 0 4 4\'><g fill=\'rgba(128,128,128,.05)\'><polygon points=\'4 0 4 4 3 4 3 1 0 1 0 0\' /></g></svg>")', } ],
+    [ 'bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'4\' viewBox=\'0 0 4 4\'><g fill=\'rgb(128 128 128 / .05)\'><polygon points=\'4 0 4 4 3 4 3 1 0 1 0 0\' /></g></svg>")', } ],
+    [ 'bg-line', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'4\' viewBox=\'0 0 4 4\' fill=\'rgb(51 51 51 / .66)\'><rect x=\'0\' y=\'1\' width=\'4\' height=\'1\' /><rect x=\'0\' y=\'3\' width=\'4\' height=\'1\' /></svg>")', } ],
   ],
 });
 injectGlobal`
