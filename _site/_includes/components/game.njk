@@ -1,10 +1,7 @@
-{%- import 'components/tooltip.njk' as tooltip -%}
-
 {%- macro x(games=[],platforms=[],genres=[],by='data.title',reverse=false) %}
 <ul class="list-game pb-4 flex flex-wrap">
 {%- for item in games | sort(reverse, false, by) %}
   <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)">
-    {% if item.data.pending %}<div class="absolute inset-x-4 inset-y-0 z-[-1] ring-(2 red-500/100) rounded-lg"></div>{%- endif %}
     <div class="box w-full flex flex-wrap relative">
       <div class="box-cover w-full h-16 bg-black/80 flex overflow-hidden relative">
         <div class="box-cover-img w-full bg-(cover center) flex" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')">
@@ -41,9 +38,8 @@
                 {%- for g in genres %}
                 {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
                 <li>
-                  <a href="/genre/{{ g.data.page.fileSlug }}/" class="group flex relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
+                  <a href="/genre/{{ g.data.page.fileSlug }}/" x-tooltip="{{ g.data.title }}" class="flex relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
                     <iconify-icon icon="{{ g.data.ico }}" inline="false" class="m-auto text-xl"></iconify-icon>
-                    {{ tooltip.x(tip=g.data.title) }}
                   </a>
                 </li>
                 {%- endif %}
@@ -54,15 +50,14 @@
             <li class="ml-auto">
               <ul class="icons flex items-center space-x-2">
               {% for i in range(0, 3) -%}
+              {%- set tip %}
+                {%- if i === 0 %}Physical{%- endif %}
+                {%- if i === 1 %}Digital{%- endif %}
+                {%- if i === 2 %}Guide{%- endif %}
+              {%- endset %}
               {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
-                <li class="group flex relative" tabindex="0">
+                <li x-tooltip="{{ tip }}" class="flex relative" tabindex="0">
                   <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" inline="false" class="m-auto text-xl opacity-50"></iconify-icon>
-                  {%- set tip %}
-                    {%- if i === 0 %}Physical{%- endif %}
-                    {%- if i === 1 %}Digital{%- endif %}
-                    {%- if i === 2 %}Guide{%- endif %}
-                  {%- endset %}
-                  {{ tooltip.x(tip=tip) }}
                 </li>
               {%- endif %}
               {%- endfor %}
@@ -72,9 +67,8 @@
         </div>
       </div>
       {%- if item.data.pending %}
-      <a href="/games/pending/" class="group w-2 h-2 text-red-500 bg-current cursor-pointer absolute top-2 right-2 rounded-full">
-        <i class="ring-2 ring-current absolute inset-0 z-10 rounded-full animate-ping" aria-hidden="true"></i>
-        {{ tooltip.x(tip='Pending / Preordered') }}
+      <a href="/games/pending/" x-tooltip="Pending / Preordered" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute top-2 right-2 rounded-full">
+        <i class="ring-(2 current) absolute inset-0 z-10 rounded-full animate-ping" aria-hidden="true"></i>
       </a>
       {%- endif %}
     </div>
