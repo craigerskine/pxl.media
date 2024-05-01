@@ -1,7 +1,7 @@
 ---
 title: BattlerGC Pro
 company: Retro Fighters
-variation: Crystal
+variation: Purple
 connection:
   - System
 ---
