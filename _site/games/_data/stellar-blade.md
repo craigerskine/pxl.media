@@ -4,7 +4,7 @@ tags:
   - platform_playstation-5
   - genre_rpg
   - genre_action-adventure
-physical: false
+physical: true
 digital: true
 guide: false
 pending: false
