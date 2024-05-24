@@ -53,9 +53,9 @@ injectGlobal`
     .box { @apply bg-white/5 rounded-lg ring-(inset 1 white/5) shadow-lg; }
     .box .box-cover { @apply rounded-t-lg; }
     .box .box-cover-img { @apply ring-(inset 1 white/10); }
-    .tippy-box[data-state="hidden"] { @apply opacity-0 translate-y-2; }
+    .tippy-box[data-state="hidden"] { @apply opacity-0 translate-y-1; }
     [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
-    .tippy-box { @apply bg-black text-(gray-400 xs) font-semibold relative outline-0 opacity-100 rounded translate-y-0 motion-safe:(transition); }
+    .tippy-box { @apply bg-black text-(gray-400 xs) font-semibold relative outline-0 opacity-100 rounded translate-y-0 motion-safe:(transition duration-75); }
     .tippy-box[data-placement^="top"] > .tippy-arrow { @apply bottom-0 before:(bottom-[-7px] left-0 border-(t-[8px] r-[8px] b-0 l-[8px] t-[initial])) origin-top; }
     .tippy-box[data-placement^="bottom"] > .tippy-arrow { @apply top-0 before:(top-[-7px] left-0 border-(t-0 r-[8px] b-[8px] l-[8px] b-[initial])) origin-bottom; }
     .tippy-box[data-placement^="left"] > .tippy-arrow {@apply right-0 before:(right-[-7px] border-(t-[8px] r-0 b-[8px] l-[8px] l-[initial])) origin-left; }
