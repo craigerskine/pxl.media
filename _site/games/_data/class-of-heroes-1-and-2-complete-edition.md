@@ -3,7 +3,7 @@ title: Class of Heroes 1 & 2 Complete Edition
 tags:
   - platform_switch
   - genre_rpg
-digital: flase
+digital: false
 physical: true
 guide: false
 pending: false
