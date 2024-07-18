@@ -1,11 +1,12 @@
 ---
 layout: 'layouts/default.njk'
 title: Systems
-eleventyNavigation:
-  key: Systems
-  title: Systems
-  icon: mdi:television-classic
-  order: 3
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    title: "{{ title }}"
+    icon: mdi:television-classic
+    order: 3
 ---
 
 {%- set systems = collections.system -%}

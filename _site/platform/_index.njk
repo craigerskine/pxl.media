@@ -1,11 +1,12 @@
 ---
 layout: 'layouts/default.njk'
 title: Platforms
-eleventyNavigation:
-  key: Platform
-  title: Platform
-  icon: mdi:cube
-  order: 1
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    title: "{{ title }}"
+    icon: mdi:cube
+    order: 1
 permalink: /platform/
 ---
 

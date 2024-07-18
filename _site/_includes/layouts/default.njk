@@ -84,13 +84,20 @@
                 >
                   {%- for item in collections.all | eleventyNavigation %}
                   <li class="nav-item text-xs font-semibold">
-                    <a href="{{ item.url }}" class="py-1.5 px-3 text-white flex items-center gap-2 relative opacity-60 rounded-2xl motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
+                    <a href="{{ item.url }}" class="h-10 px-3 text-white flex items-center gap-2 relative opacity-60 rounded-full motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
                       {%- if item.url === '/' -%}
                         <span class="w-6 h-6 flex-(& shrink-0) items-center justify-center">{{ logo.pxl(title='Home',size='20') }}</span>
                       {%- else -%}
                         <iconify-icon icon="{{ item.icon }}" width="24px" height="24px" class="flex-shrink-0 opacity-60"></iconify-icon>
                       {%- endif -%}
-                      <span class="flex-1">{{ item.key }}</span>
+                      <span class="flex-(& col 1)">
+                        {%- if item.key | slugify === 'platforms' or item.key | slugify === 'genres' %}
+                          <small class="mb-px leading-none opacity-60">games by:</small>
+                          <span>{{ item.key.substring(0, item.key.length - 1) }}</span>
+                        {%- else %}
+                          <span>{{ item.key }}</span>
+                        {%- endif %}
+                      </span>
                     </a>
                   </li>
                   {%- endfor %}

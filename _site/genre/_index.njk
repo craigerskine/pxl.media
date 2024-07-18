@@ -1,11 +1,12 @@
 ---
 layout: 'layouts/default.njk'
 title: Genres
-eleventyNavigation:
-  key: Genre
-  title: Genre
-  icon: mdi:pound
-  order: 2
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    title: "{{ title }}"
+    icon: mdi:pound
+    order: 2
 permalink: /genre/
 ---
 
