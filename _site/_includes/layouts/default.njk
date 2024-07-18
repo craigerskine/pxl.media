@@ -56,19 +56,23 @@
               x-id="['dropdown-button']"
               @keydown.escape.prevent.stop="close($refs.button)"
               @focusin.window="!$refs.panel.contains($event.target) && close()"
-              class="nav-menu py-1 text-xl flex gap-1 md:(gap-3)"
+              class="nav-menu py-1 text-xl flex items-center justify-between gap-1"
             >
-              <li class="nav-home relative">
+              <li class="nav-home">
+                <a href="/" class="w-11 h-11 text-white flex items-center justify-center opacity-40 motion-safe:(transition) hover:(opacity-100 -rotate-12)">{{ logo.pxl(title=site.meta.name,size='20') }}</a>
+              </li>
+              <li class="nav-menu relative">
                 <button
                   x-ref="button"
                   @click="toggle()"
                   :aria-expanded="open"
                   :aria-controls="$id('dropdown-button')"
                   :class="open || 'opacity-40'"
-                  class="w-11 h-11 text-white flex items-center justify-center motion-safe:(transition) hover:(opacity-100) [&_svg]:(my-1.5 mx-0.5)"
+                  class="w-11 h-11 text-white flex items-center justify-center motion-safe:(transition) hover:(opacity-100)"
                   aria-label="Home"
                 >
-                  <iconify-icon icon="mdi:menu" width="24px" height="24px" class="iconify"></iconify-icon>
+                  <span class="flex items-center justify-center" x-show="!open" x-cloak><iconify-icon icon="mdi:menu" width="24px" height="24px" class="iconify"></iconify-icon></span>
+                  <span class="flex items-center justify-center" x-show="open" x-cloak><iconify-icon icon="mdi:menu-open" width="24px" height="24px" class="iconify"></iconify-icon></span>
                 </button>
                 <ul
                   x-ref="panel"
@@ -79,17 +83,13 @@
                   x-transition:leave-end="opacity-0 blur-md -translate-y-2"
                   @click.outside="close($refs.button)"
                   :id="$id('dropdown-button')"
-                  class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-1 absolute top-full left-0 z-50 rounded-3xl shadow-lg motion-safe:(transition)"
+                  class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-1 absolute top-full right-0 z-50 rounded-3xl shadow-lg motion-safe:(transition)"
                   x-cloak
                 >
                   {%- for item in collections.all | eleventyNavigation %}
                   <li class="nav-item text-xs font-semibold">
                     <a href="{{ item.url }}" class="h-10 px-3 text-white flex items-center gap-2 relative opacity-60 rounded-full motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
-                      {%- if item.url === '/' -%}
-                        <span class="w-6 h-6 flex-(& shrink-0) items-center justify-center">{{ logo.pxl(title='Home',size='20') }}</span>
-                      {%- else -%}
-                        <iconify-icon icon="{{ item.icon }}" width="24px" height="24px" class="flex-shrink-0 opacity-60"></iconify-icon>
-                      {%- endif -%}
+                      <iconify-icon icon="{{ item.icon }}" width="24px" height="24px" class="flex-shrink-0 opacity-60"></iconify-icon>
                       <span class="flex-(& col 1)">
                         {%- if item.key | slugify === 'platforms' or item.key | slugify === 'genres' %}
                           <small class="mb-px leading-none opacity-60">games by:</small>
@@ -101,26 +101,22 @@
                     </a>
                   </li>
                   {%- endfor %}
+                  <li class="nav-search">
+                    <form action="/search/">
+                      <label for="site-search" class="sr-only">Search</label>
+                      <input
+                        type="search"
+                        id="site-search"
+                        name="q"
+                        placeholder="Search..."
+                        title="Search"
+                        autocomplete="off"
+                        class="px-3 w-full h-10 bg-white/5 text-sm font-semibold rounded-full focus:(outline-none ring-(inset 2 white/50)) focus-visible:(outline-none) placeholder:(font-normal text-white/25) [&::-webkit-search-cancel-button]:(ml-2 w-3 h-6 appearance-none bg-(close center no-repeat) block opacity-50 cursor-pointer)"
+                        x-on:keydown.window.prevent.meta.k="open = true; $nextTick(() => $el.focus())"
+                      />
+                    </form>
+                  </li>
                 </ul>
-              </li>
-              <li class="ml-auto flex">
-                <form class="group ml-auto flex items-center" action="/search/">
-                  <div class="max-w-64 flex justify-end items-center relative z-30">
-                    <label for="site-search" class="sr-only">Search</label>
-                    <input
-                      type="search"
-                      id="site-search"
-                      name="q"
-                      placeholder="Search..."
-                      title="Search"
-                      autocomplete="off"
-                      class="peer border-(& transparent) p-2 pl-4 w-11 h-11 bg-transparent text-(sm transparent) cursor-pointer outline-none appearance-none relative z-10 opacity-0 rounded-full motion-safe:(transition-all) focus:(mr-4 w-full bg-gray-700 text-white opacity-100) [&::-webkit-search-cancel-button]:(ml-2 w-3 h-6 bg-(close center no-repeat) appearance-none block cursor-pointer opacity-50)"
-                      x-on:keydown.window.prevent.meta.k="$refs.siteSearch.focus()"
-                      x-ref="siteSearch"
-                    />
-                    <iconify-icon icon="mdi:magnify-expand" inline class="iconify text-xl absolute right-4 z-0 opacity-40 motion-safe:(transition) group-hover:(opacity-100) peer-focus:(hidden)"></iconify-icon>
-                  </div>
-                </form>
               </li>
             </ul>
           </nav>
