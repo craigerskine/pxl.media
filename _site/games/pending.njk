@@ -3,6 +3,9 @@ layout: 'layouts/default.njk'
 title: 'Pending Games'
 ---
 
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/game.njk' import game -%}
+
 {% set gamesPending = [] -%}
 {%- for g in collections.game -%}
   {%- if g.data.pending -%}
@@ -10,8 +13,5 @@ title: 'Pending Games'
   {%- endif -%}
 {%- endfor -%}
 
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/game.njk' as game %}
-
-{%- call heading.x(label=title,sub=gamesPending.length) %}{%- endcall %}
-{{ game.x(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}
+{%- call heading(label=title,sub=gamesPending.length) %}{%- endcall %}
+{{ game(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}

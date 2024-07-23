@@ -1,7 +1,7 @@
-{%- import 'components/mast.njk' as mast %}
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/game.njk' as game %}
+{%- from 'components/mast.njk' import mast -%}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/game.njk' import game -%}
 
-{%- call mast.x(title=title,logo=logo) %}{%- endcall %}
-{%- call heading.x(tag='h2',label='Games owned',sub=collections['platform_'+ page.fileSlug +''].length) %}{%- endcall %}
-{{ game.x(games=collections['platform_'+ page.fileSlug],platforms=collections.platform,genres=collections.genre) }}
+{%- call mast(title=title,logo=logo) %}{%- endcall %}
+{%- call heading(tag='h2',label='Games owned',sub=collections['platform_'+ page.fileSlug +''].length) %}{%- endcall %}
+{{ game(games=collections['platform_'+ page.fileSlug],platforms=collections.platform,genres=collections.genre) }}

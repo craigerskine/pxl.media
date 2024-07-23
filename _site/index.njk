@@ -2,6 +2,10 @@
 layout: 'layouts/default.njk'
 ---
 
+{%- from 'components/mast.njk' import mast -%}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/game.njk' import game -%}
+
 {# var physical #}
 {%- set gamesPhysicalAll = [] -%}
 {%- for g in collections.game -%}
@@ -106,30 +110,26 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{%- import 'components/mast.njk' as mast %}
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/game.njk' as game %}
-
 <ul class="px-4 lg:(flex justify-center space-x-8)">
   <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast.x(url='/games/',label='Games',data_1=gamesPhysicalAll.length.toLocaleString(),data_1_label='Physical',data_2=gamesDigitalAll.length.toLocaleString(),data_2_label='Digital',data_3=gamesPendingAll.length.toLocaleString(),data_3_label='Pending',hr=true,home=true) %}
+    {%- call mast(url='/games/',label='Games',data_1=gamesPhysicalAll.length.toLocaleString(),data_1_label='Physical',data_2=gamesDigitalAll.length.toLocaleString(),data_2_label='Digital',data_3=gamesPendingAll.length.toLocaleString(),data_3_label='Pending',hr=true,home=true) %}
       {{ collections.game.length.toLocaleString() }}
     {%- endcall %}
   </li>
   <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast.x(url='/systems/',label='Systems',data_1=(systemsConsolesAll.length+systemsHybridsAll.length).toLocaleString(),data_1_label='Consoles',data_2=(systemsHandheldsAll.length+systemsHybridsAll.length).toLocaleString(),data_2_label='Handhelds',data_3=systemsMinisAll.length.toLocaleString(),data_3_label='Mini/Classic',hr=true,home=true) %}
+    {%- call mast(url='/systems/',label='Systems',data_1=(systemsConsolesAll.length+systemsHybridsAll.length).toLocaleString(),data_1_label='Consoles',data_2=(systemsHandheldsAll.length+systemsHybridsAll.length).toLocaleString(),data_2_label='Handhelds',data_3=systemsMinisAll.length.toLocaleString(),data_3_label='Mini/Classic',hr=true,home=true) %}
       {{ collections.system.length.toLocaleString() }}
     {%- endcall %}
   </li>
   <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast.x(url='/controllers/',label='Controllers',data_1=controllersWireless.length.toLocaleString(),data_1_label='Wireless',data_2=controllersUsb.length.toLocaleString(),data_2_label='USB',data_3=controllersAdapters.length.toLocaleString(),data_3_label='Adapters',hr=true,home=true) %}
+    {%- call mast(url='/controllers/',label='Controllers',data_1=controllersWireless.length.toLocaleString(),data_1_label='Wireless',data_2=controllersUsb.length.toLocaleString(),data_2_label='USB',data_3=controllersAdapters.length.toLocaleString(),data_3_label='Adapters',hr=true,home=true) %}
       {{ collections.controller.length.toLocaleString() }}
     {%- endcall %}
   </li>
 </ul>
 
-{%- call heading.x(tag='h2',label='Recently added',sub=6) %}{%- endcall %}
-{{ game.x(games=gamesRecent,platforms=collections.platform,genres=collections.genre,by='data.date',reverse=true) }}
+{%- call heading(tag='h2',label='Recently added',sub=6) %}{%- endcall %}
+{{ game(games=gamesRecent,platforms=collections.platform,genres=collections.genre,by='data.date',reverse=true) }}
 
-{%- call heading.x(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/') %}{%- endcall %}
-{{ game.x(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}
+{%- call heading(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/') %}{%- endcall %}
+{{ game(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}

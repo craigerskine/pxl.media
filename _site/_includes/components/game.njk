@@ -1,4 +1,4 @@
-{%- macro x(games=[],platforms=[],genres=[],by='data.title',reverse=false) %}
+{%- macro game(games=[],platforms=[],genres=[],by='data.title',reverse=false) %}
 <ul class="list-game pb-4 flex flex-wrap">
 {%- for item in games | sort(reverse, false, by) %}
   <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)">

@@ -10,10 +10,10 @@ eleventyComputed:
 permalink: /genre/
 ---
 
-{%- import 'components/heading.njk' as heading -%}
-{%- import 'components/category.njk' as category -%}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/category.njk' import category -%}
 
-{%- call heading.x(tag='h1',label='Games by genre') -%}{%- endcall -%}
+{%- call heading(tag='h1',label='Games by genre') -%}{%- endcall -%}
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.genre -%}
   {%- set total -%}
@@ -28,6 +28,6 @@ permalink: /genre/
     {{ totalItems | length }}
     <b class="font-normal uppercase">Games</b>
   {%- endset -%}
-  {{ category.x(title=item.data.title,subtext=total,url='/genre/'+ item.data.page.fileSlug +'/',fg_ico=item.data.ico) }}
+  {{ category(title=item.data.title,subtext=total,url='/genre/'+ item.data.page.fileSlug +'/',fg_ico=item.data.ico) }}
 {%- endfor -%}
 </ul>

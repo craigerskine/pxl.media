@@ -12,26 +12,26 @@ eleventyComputed:
 {%- set systems = collections.system -%}
 {%- set platforms = collections.platform -%}
 
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/timeline.njk' as timeline %}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/timeline.njk' import timeline, group, point -%}
 
-{%- call heading.x(tag='h1',label=title,sub=systems.length) %}{%- endcall %}
+{%- call heading(tag='h1',label=title,sub=systems.length) %}{%- endcall %}
 
-{%- call timeline.timeline() %}
+{%- call timeline() %}
   {%- for p in platforms | sort(false, false, "data.order") %}
-    {%- call timeline.group(title=p.data.title,logo=p.data.logo,url='/platform/' + p.data.page.fileSlug + '/') %}
+    {%- call group(title=p.data.title,logo=p.data.logo,url='/platform/' + p.data.page.fileSlug + '/') %}
       {%- for platform, items in collections.system | sort(false, false, "data.title") | groupby("data.platform") %}
         {%- if platform === p.data.page.fileSlug %}
           {%- for item in items | sort(false, false, "data.title") %}
             {%- set ico %}{%- if item.data.system_type == 'mini' %}mdi:fullscreen-exit{% elseif item.data.system_type === 'handheld' %}mdi:nintendo-game-boy{%- else %}mdi:controller{%- endif %}{%- endset %}
-            {{ timeline.point(title=item.data.title,sub=item.data.variation,meta=item.data.accessories,ico=ico) }}
+            {{ point(title=item.data.title,sub=item.data.variation,meta=item.data.accessories,ico=ico) }}
           {%- endfor %}
         {%- endif %}
       {%- endfor %}
 {# NONE - THERE HAS TO A BETTER WAY #}
       {%- if p.data.page.fileSlug == 'wii-u' %}
         {%- set ico %}mdi:close{%- endset %}
-        {{ timeline.point(title='None',sub='',meta='',ico=ico) }}
+        {{ point(title='None',sub='',meta='',ico=ico) }}
       {%- endif %}
 {# /NONE #}
     {%- endcall %}

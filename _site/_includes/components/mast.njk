@@ -1,4 +1,4 @@
-{%- macro x(title='',label='',logo='',ico='',url='',data_1='',data_1_label='',data_2='',data_2_label='',data_3='',data_3_label='',hr=false,home=false) %}
+{%- macro mast(title='',label='',logo='',ico='',url='',data_1='',data_1_label='',data_2='',data_2_label='',data_3='',data_3_label='',hr=false,home=false) %}
 <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="group container mx-auto px-4 flex items-center relative">
   <div class="py-1 pr-4 text-7xl leading-none flex-1">
     <h1{% if ico !== '' %} class="flex items-center space-x-5"{% endif %}>

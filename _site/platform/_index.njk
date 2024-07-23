@@ -10,10 +10,10 @@ eleventyComputed:
 permalink: /platform/
 ---
 
-{%- import 'components/heading.njk' as heading -%}
-{%- import 'components/category.njk' as category -%}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/category.njk' import category -%}
 
-{%- call heading.x(tag='h1',label='Games by platform') -%}{%- endcall -%}
+{%- call heading(tag='h1',label='Games by platform') -%}{%- endcall -%}
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.platform -%}
   {%- set sub -%}
@@ -43,6 +43,6 @@ permalink: /platform/
       <b class="font-normal uppercase">Systems</b>
     {%- endif -%}
   {%- endset -%}
-  {{ category.x(svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) }}
+  {{ category(svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) }}
 {%- endfor -%}
 </ul>

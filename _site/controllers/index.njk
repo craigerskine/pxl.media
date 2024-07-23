@@ -9,12 +9,12 @@ eleventyComputed:
     order: 4
 ---
 
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/timeline.njk' as timeline %}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/timeline.njk' import timeline, group, point -%}
 
-{%- call heading.x(tag='h1',label=title,sub=collections.controller.length) %}{%- endcall %}
+{%- call heading(tag='h1',label=title,sub=collections.controller.length) %}{%- endcall %}
 
-{%- call timeline.timeline() %}  
+{%- call timeline() %}  
   {%- for company, items in collections.controller | sort(false, false, "data.company") | groupby("data.company") %}
     {%- set colspan %}{% if company === '8Bitdo' %}true{% endif %}{%- endset %}
     {%- set url %}
@@ -34,12 +34,12 @@ eleventyComputed:
       {%- if company === 'Wind Spirit' %}#{%- endif %}
       {%- if company === 'Wish Technologies' %}#{%- endif %}
     {%- endset %}
-    {%- call timeline.group(title=company,logo=company,svg_file='controllers',url=url,colspan=colspan) %}
+    {%- call group(title=company,logo=company,svg_file='controllers',url=url,colspan=colspan) %}
       {%- for item in items | sort(false, false, "data.title") %}
         {%- set meta %}
           {% for c in item.data.connection %}{{ c }}{% if loop.last %}{% else %}, {% endif %}{% endfor %}
         {%- endset %}
-        {{ timeline.point(title=item.data.title,sub=item.data.variation,meta=meta,ico='mdi:gamepad-square') }}
+        {{ point(title=item.data.title,sub=item.data.variation,meta=meta,ico='mdi:gamepad-square') }}
       {%- endfor %}
     {%- endcall %}
   {%- endfor %}

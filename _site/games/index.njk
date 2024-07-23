@@ -7,14 +7,14 @@ pagination:
   size: 24
 ---
 
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/game.njk' as game %}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/game.njk' import game -%}
 
 <div class="flex">
-  <div class="flex-1">{%- call heading.x(label=title,sub=collections.gamesAll.length.toLocaleString()) %}{%- endcall %}</div>
+  <div class="flex-1">{%- call heading(label=title,sub=collections.gamesAll.length.toLocaleString()) %}{%- endcall %}</div>
   <div class="mt-8 mr-4 mb-6 pb-2 flex-none">{%- include 'components/pagination.njk' %}</div>
 </div>
-{{ game.x(games=games,platforms=collections.platform,genres=collections.genre) }}
+{{ game(games=games,platforms=collections.platform,genres=collections.genre) }}
 <div class="flex justify-end">
   <div class="mt-8 mr-4 mb-6 pb-2">{%- include 'components/pagination.njk' %}</div>
 </div>

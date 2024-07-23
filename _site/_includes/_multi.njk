@@ -1,14 +1,14 @@
-{%- import 'components/mast.njk' as mast %}
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/category.njk' as category %}
+{%- from 'components/mast.njk' import mast -%}
+{%- from 'components/heading.njk' import heading -%}
+{%- from 'components/category.njk' import category -%}
 
-{%- call mast.x(title=title,logo=logo) %}{%- endcall %}
-{%- call heading.x(tag='h2',label='Systems owned') %}{%- endcall %}
+{%- call mast(title=title,logo=logo) %}{%- endcall %}
+{%- call heading(tag='h2',label='Systems owned') %}{%- endcall %}
 <ul class="container mx-auto flex-(& wrap)">
 {%- for item in collections.system %}
   {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
   {%- if item.data.platform === company %}
-  {{ category.x(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ company +'-'+ item.data.page.fileSlug +'.png') }}
+  {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ company +'-'+ item.data.page.fileSlug +'.png') }}
   {%- endif %}
 {%- endfor %}
 </ul>

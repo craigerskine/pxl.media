@@ -3,9 +3,9 @@ layout: 'layouts/default.njk'
 title: Change Log
 ---
 
-{%- import 'components/heading.njk' as heading %}
+{%- from 'components/heading.njk' import heading -%}
 
-{%- call heading.x(tag='h1',label=title) %}{%- endcall %}
+{%- call heading(tag='h1',label=title) %}{%- endcall %}
 
 <ol role="list" class="mx-auto px-4 w-full max-w-md">
   {%- for commit in collections.recentChanges %}
