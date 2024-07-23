@@ -4,9 +4,9 @@
     <h1{% if ico !== '' %} class="flex items-center space-x-5"{% endif %}>
       <span class="flex items-center">
         {%- if logo !== '' %}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-16 fill-current">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-auto h-16 fill-current">
           <title>{{ title }}</title>
-          <g>{{ logo | safe }}</g>
+          <use href="/_assets/platforms.svg#logo-{{ title | slugify }}" />
         </svg>
         {%- endif %}
         <b class="text-gray-200 tracking-tighter motion-safe:transition group-hover:(text-white)">

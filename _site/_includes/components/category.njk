@@ -2,17 +2,17 @@
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
     <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category mb-12 px-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} group hover:text-white{% endif %}">
       <div class="box mb-1 p-4 bg-(center cover no-repeat) text-gray-400 flex items-center relative overflow-hidden motion-safe:(transition) group-hover:(text-white){% if bg_img !== '' %} h-32{% endif %}"
-        {% if bg_img !== '' %} style="background-image: url('{{ bg_img }}');"{% endif %}>
+        {%- if bg_img !== '' %} style="background-image: url('{{ bg_img }}');"{%- endif %}>
         <b class="absolute inset-0 opacity-0 rounded-lg transform scale-50 motion-safe:(transition) group-hover:(bg-brand-500 opacity-100 scale-100)" aria-hidden="true"></b>
         <b class="ui-hover h-px bg-white opacity-10 absolute top-0 inset-x-0" aria-hidden="true"></b>
         {%- if fg_img !== '' %}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current relative">
           <title>{{ title }} {{ svg_title }}</title>
-          <g>{{ fg_img | safe }}</g>
+           <use href="/_assets/platforms.svg#logo-{{ svg_title | slugify }}" />
         </svg>
         {%- endif %}
         {%- if fg_ico !== '' %}
-        <iconify-icon icon="{{ fg_ico }}" inline="false" class="text-6xl relative"></iconify-icon>
+        <iconify-icon icon="{{ fg_ico }}" class="text-6xl relative"></iconify-icon>
         {%- endif %}
         {%- if bg_img === '' %}
         {%- endif %}

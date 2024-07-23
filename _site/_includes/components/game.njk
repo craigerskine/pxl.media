@@ -13,9 +13,9 @@
           {%- for p in platforms %}
           {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
           <a href="/platform/{{ p.data.page.fileSlug }}/" class="text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-[80px] h-auto fill-current">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-[80px] h-auto fill-current">
               <title>{{ p.data.title }}</title>
-              <g>{{ p.data.logo | safe }}</g>
+              <use href="/_assets/platforms.svg#logo-{{ p.data.title | slugify }}" />
             </svg>
           </a>
           {%- endif %}

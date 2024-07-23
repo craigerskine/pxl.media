@@ -3,7 +3,13 @@
     <div class="box-cover w-full h-16 bg-black/80 flex-(& none) relative">
       <div class="box-cover-img flex w-full bg-center bg-cover rounded-t-lg" :style="'background-image: url(/_assets/img/games/'+ item.id +'.jpg)'"><div class="w-full backdrop-brightness-75 rounded-t-lg"></div></div>
       <div class="group p-1 w-2/3 flex items-end justify-end absolute inset-y-0 right-0">
-        <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="py-1 px-2 bg-black/75 text-(gray-200/75 xs) leading-none font-semibold truncate block relative rounded-full motion-safe:(transition) hover:(text-white/100)" x-text="item.platform.title"></a>
+        <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-[80px] h-auto fill-current">
+            <title>{{ p.data.title }}</title>
+            <use :href="'/_assets/platforms.svg#logo-'+ slugify(item.platform.title)" />
+          </svg>
+        </a>
+        {# <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="py-1 px-2 bg-black/75 text-(gray-200/75 xs) leading-none font-semibold truncate block relative rounded-full motion-safe:(transition) hover:(text-white/100)" x-text="item.platform.title"></a> #}
       </div>
     </div>
     <div class="details w-full flex-(& auto)">

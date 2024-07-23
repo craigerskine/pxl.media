@@ -10,24 +10,24 @@ eleventyComputed:
 permalink: /genre/
 ---
 
-{%- import 'components/heading.njk' as heading %}
-{%- import 'components/category.njk' as category %}
+{%- import 'components/heading.njk' as heading -%}
+{%- import 'components/category.njk' as category -%}
 
-{%- call heading.x(tag='h1',label='Games by genre') %}{%- endcall %}
+{%- call heading.x(tag='h1',label='Games by genre') -%}{%- endcall -%}
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
-{%- for item in collections.genre %}
-  {%- set total %}
-    {%- set totalItems = [] %}
-      {%- for g in collections.game %}
-        {%- for t in g.data.tags %}
-          {%- if t === 'genre_'+ item.data.page.fileSlug %}
-            {%- set totalItems = (totalItems.push({title: g.data.title}), totalItems) %}
-          {%- endif %}
-        {%- endfor %}
-      {%- endfor %}
+{%- for item in collections.genre -%}
+  {%- set total -%}
+    {%- set totalItems = [] -%}
+      {%- for g in collections.game -%}
+        {%- for t in g.data.tags -%}
+          {%- if t === 'genre_'+ item.data.page.fileSlug -%}
+            {%- set totalItems = (totalItems.push({title: g.data.title}), totalItems) -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
     {{ totalItems | length }}
     <b class="font-normal uppercase">Games</b>
-  {%- endset %}
+  {%- endset -%}
   {{ category.x(title=item.data.title,subtext=total,url='/genre/'+ item.data.page.fileSlug +'/',fg_ico=item.data.ico) }}
-{%- endfor %}
+{%- endfor -%}
 </ul>

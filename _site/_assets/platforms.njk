@@ -1,0 +1,8 @@
+---
+permalink: _assets/platforms.svg
+---
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+{%- for item in collections.platform %}
+  <symbol viewBox="0 0 200 60" id="logo-{{ item.data.title | slugify }}">{{ item.data.logo | trim | safe }}</symbol>
+{%- endfor %}
+</svg>
