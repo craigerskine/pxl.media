@@ -10,7 +10,7 @@
         </svg>
         {%- endif %}
         <b class="text-gray-200 tracking-tighter motion-safe:transition group-hover:(text-white)">
-          {{ caller() }}
+          {{ caller() if caller }}
         </b>
         {%- if logo === '' %}<iconify-icon icon="{{ ico }}" inline="false" class="text-6xl"></iconify-icon>{% endif %}
       </span>

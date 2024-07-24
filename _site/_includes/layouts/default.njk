@@ -83,7 +83,7 @@
                   x-transition:leave-end="opacity-0 blur-md -translate-y-2"
                   @click.outside="close($refs.button)"
                   :id="$id('dropdown-button')"
-                  class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-1 absolute top-full right-0 z-50 rounded-3xl shadow-lg motion-safe:(transition)"
+                  class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-2 absolute top-full right-0 z-50 rounded-3xl shadow-lg motion-safe:(transition)"
                   x-cloak
                 >
                   {%- for item in collections.all | eleventyNavigation %}
@@ -91,8 +91,8 @@
                     <a href="{{ item.url }}" class="h-10 px-3 text-white flex items-center gap-2 relative opacity-60 rounded-full motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url == page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
                       <iconify-icon icon="{{ item.icon }}" width="24px" height="24px" class="flex-shrink-0 opacity-60"></iconify-icon>
                       <span class="flex-(& col 1)">
+                        <small class="mb-px text-[11px] leading-none opacity-60">{{ item.title }}</small>
                         {%- if item.key | slugify === 'platforms' or item.key | slugify === 'genres' %}
-                          <small class="mb-px leading-none opacity-60">games by:</small>
                           <span>{{ item.key.substring(0, item.key.length - 1) }}</span>
                         {%- else %}
                           <span>{{ item.key }}</span>
@@ -111,7 +111,7 @@
                         placeholder="Search..."
                         title="Search"
                         autocomplete="off"
-                        class="px-3 w-full h-10 bg-white/5 text-sm font-semibold rounded-full focus:(outline-none ring-(inset 2 white/50)) focus-visible:(outline-none) placeholder:(font-normal text-white/25) [&::-webkit-search-cancel-button]:(ml-2 w-3 h-6 appearance-none bg-(close center no-repeat) block opacity-50 cursor-pointer)"
+                        class="px-3 w-full h-10 bg-black/50 text-sm font-semibold rounded-full ring-(inset 2 transparent) motion-safe:(transition) focus:(outline-none ring-white/50) focus-visible:(outline-none) placeholder:(font-normal text-white/25) [&::-webkit-search-cancel-button]:(ml-2 w-3 h-6 appearance-none bg-(close center no-repeat) block opacity-50 cursor-pointer)"
                         x-on:keydown.window.prevent.meta.k="open = true; $nextTick(() => $el.focus())"
                       />
                     </form>
@@ -129,7 +129,7 @@
       </main>
       <footer class="mt-auto pt-8 text-xs md:(text-sm)">
         {%- macro footerLink(url) %}
-        <a href="{{ url }}" class="text-brand-400 font-bold motion-safe:(transition) hover:(text-brand-500 underline)">{{ caller() }}</a>
+        <a href="{{ url }}" class="text-brand-400 font-bold motion-safe:(transition) hover:(text-brand-500 underline)">{{ caller() if caller }}</a>
         {%- endmacro %}
         <div class="container mx-auto px-4">
           <div class="py-8 border-(t dotted gray-400/30) flex-(& col) items-center gap-6 md:(flex-row justify-between)">

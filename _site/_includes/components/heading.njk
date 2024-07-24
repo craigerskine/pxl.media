@@ -4,7 +4,7 @@
       <{{ tag }} class="relative">
         {%- if sub !== '' %}<b class="mr-2 text-xs opacity-75">{{ sub }}</b>{%- endif %}
         {{ label }}
-        {{ caller() }}
+        {{ caller() if caller }}
         {%- if alt_sub !== '' %}<b class="ml-4 mr-2 text-xs opacity-75">{{ alt_sub }}</b>{%- endif %}
         {{ alt }}
         {%- if url !== '' %}<a href="{{ url }}" class="absolute inset-0"><span class="sr-only">{{ label }}</span></a>{%- endif %}
