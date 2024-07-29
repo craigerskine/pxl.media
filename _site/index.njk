@@ -6,7 +6,7 @@ layout: 'layouts/default.njk'
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/game.njk' import game -%}
 
-{# var physical #}
+{#- physical -#}
 {%- set gamesPhysicalAll = [] -%}
 {%- for g in collections.game -%}
   {%- if g.data.physical -%}
@@ -14,7 +14,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var digital #}
+{#- digital -#}
 {%- set gamesDigitalAll = [] -%}
 {%- for g in collections.game -%}
   {%- if g.data.digital -%}
@@ -22,7 +22,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var console #}
+{#- console -#}
 {%- set systemsConsolesAll = [] -%}
 {%- for g in collections.system -%}
   {%- if g.data.system_type === 'console' -%}
@@ -30,7 +30,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var handheld #}
+{#- handheld -#}
 {%- set systemsHandheldsAll = [] -%}
 {%- for g in collections.system -%}
   {%- if g.data.system_type === 'handheld' -%}
@@ -38,7 +38,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var hybrid #}
+{#- hybrid -#}
 {%- set systemsHybridsAll = [] -%}
 {%- for g in collections.system -%}
   {%- if g.data.system_type === 'hybrid' -%}
@@ -46,7 +46,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var mini #}
+{#- mini -#}
 {%- set systemsMinisAll = [] -%}
 {%- for g in collections.system -%}
   {%- if g.data.system_type === 'mini' -%}
@@ -54,7 +54,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var wireless 2.4Ghz + Bluetooth #}
+{#- wireless 2.4Ghz + Bluetooth -#}
 {%- set controllersWireless = [] -%}
 {%- for c in collections.controller -%}
   {%- for x in c.data.connection -%}
@@ -64,7 +64,7 @@ layout: 'layouts/default.njk'
   {%- endfor -%}
 {%- endfor -%}
 
-{# var usb #}
+{#- usb -#}
 {%- set controllersUsb = [] -%}
 {%- for c in collections.controller -%}
   {%- for x in c.data.connection -%}
@@ -74,7 +74,7 @@ layout: 'layouts/default.njk'
   {%- endfor -%}
 {%- endfor -%}
 
-{# var adapters #}
+{#- adapters -#}
 {%- set controllersAdapters = [] -%}
 {%- for c in collections.controller -%}
   {%- if c.data.variation.includes('Adapter') -%}
@@ -82,7 +82,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var recent #}
+{#- recent -#}
 {%- set gamesRecentAll = [] -%}
 {%- for g in collections.game -%}
   {%- if not g.data.pending -%}
@@ -96,7 +96,7 @@ layout: 'layouts/default.njk'
   {%- endif -%}
 {%- endfor -%}
 
-{# var pending #}
+{#- pending -#}
 {%- set gamesPendingAll = [] -%}
 {%- for g in collections.game -%}
   {%- if g.data.pending -%}
