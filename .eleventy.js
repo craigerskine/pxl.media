@@ -1,10 +1,10 @@
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const esbuild = require("esbuild");
-const markdownIt = require("markdown-it");
-const markdownItAttrs = require("markdown-it-attrs");
+const { EleventyRenderPlugin } = require('@11ty/eleventy');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const esbuild = require('esbuild');
+const markdownIt = require('markdown-it');
+const markdownItAttrs = require('markdown-it-attrs');
 const recentChanges = require('eleventy-plugin-recent-changes');
-const yaml = require("js-yaml");
+const yaml = require('js-yaml');
 
 module.exports = function (eleventyConfig) {
 
@@ -23,15 +23,14 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     '_site/_assets/img': '_assets/img',
-    '_site/_assets/js': '_assets/js',
     '_site/_assets/_root': './',
   });
 
   eleventyConfig.addWatchTarget('./_site/_app/_app.js');
 
-  //{% renderTemplate "md" %}
-  //# Blah{.text-center}
-  //{% endrenderTemplate %}
+  // {% renderTemplate 'md' %}
+  // # Blah{.text-center}
+  // {% endrenderTemplate %}
   let markdownLibrary = markdownIt().use(markdownItAttrs);
   eleventyConfig.setLibrary('md', markdownLibrary);
 
