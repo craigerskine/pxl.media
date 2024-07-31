@@ -1,6 +1,6 @@
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite');
+const esbuild = require('esbuild');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
 const recentChanges = require('eleventy-plugin-recent-changes');
@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(EleventyVitePlugin);
   eleventyConfig.addPlugin(recentChanges, {
     commits: 10, // max
     //filter: 'news', // includes
@@ -24,7 +23,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     '_site/_assets/img': '_assets/img',
-    '_site/_app/': '_assets/js',
     '_site/_assets/_root': './',
   });
 
@@ -91,6 +89,17 @@ module.exports = function (eleventyConfig) {
       if (nameA < nameB) return -1;
       else if (nameA > nameB) return 1;
       else return 0;
+    });
+  });
+
+  // esbuild
+  eleventyConfig.on('eleventy.before', async () => {
+    await esbuild.build({
+      entryPoints: ['_site/_app/_app.js'],
+      outfile: 'public/_assets/js/_app.js',
+      bundle: true,
+      minify: true,
+      sourcemap: false,
     });
   });
 
