@@ -3,6 +3,7 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const esbuild = require('esbuild');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
+const prettier = require('prettier');
 const recentChanges = require('eleventy-plugin-recent-changes');
 const yaml = require('js-yaml');
 
@@ -93,8 +94,8 @@ module.exports = function (eleventyConfig) {
   });
 
   // esbuild
-  eleventyConfig.on('eleventy.before', async () => {
-    await esbuild.build({
+  eleventyConfig.on('eleventy.after', async ({ dir, results, runMode, outputMode }) => {
+    return esbuild.build({
       entryPoints: ['_site/_app/_app.js'],
       outfile: 'public/_assets/js/_app.js',
       bundle: true,
@@ -102,6 +103,22 @@ module.exports = function (eleventyConfig) {
       sourcemap: false,
     });
   });
+
+  // prettier
+  // eleventyConfig.addTransform('prettier', function(content, outputPath) {
+  //   if (outputPath && outputPath.endsWith('.html')) {
+  //     return prettier.format(content, {
+  //       parser: 'html',
+  //       printWidth: 9999,
+  //       tabWidth: 2,
+  //       singleQuote: false,
+  //       bracketSpacing: false,
+  //       htmlWhitespaceSensitivity: 'css',
+  //       singleAttributePerLine: false
+  //     });
+  //   }
+  //   return content;
+  // });
 
   return {
     jsDataFileSuffix: '.data',
