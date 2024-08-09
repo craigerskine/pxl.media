@@ -1,6 +1,7 @@
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const esbuild = require('esbuild');
+const htmlmin = require('html-minifier-terser');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
 const prettier = require('prettier');
@@ -102,6 +103,18 @@ module.exports = function (eleventyConfig) {
       minify: true,
       sourcemap: false,
     });
+  });
+
+  eleventyConfig.addTransform('htmlmin', function (content) {
+    if ((this.page.outputPath || '').endsWith('.html')) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+    return content;
   });
 
   // prettier
