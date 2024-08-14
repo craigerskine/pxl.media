@@ -105,17 +105,17 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  eleventyConfig.addTransform('htmlmin', function (content) {
-    if ((this.page.outputPath || '').endsWith('.html')) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      });
-      return minified;
-    }
-    return content;
-  });
+  // eleventyConfig.addTransform('htmlmin', function (content) {
+  //   if ((this.page.outputPath || '').endsWith('.html')) {
+  //     let minified = htmlmin.minify(content, {
+  //       useShortDoctype: true,
+  //       removeComments: true,
+  //       collapseWhitespace: true,
+  //     });
+  //     return minified;
+  //   }
+  //   return content;
+  // });
 
   // prettier
   // eleventyConfig.addTransform('prettier', function(content, outputPath) {
