@@ -1,9 +1,9 @@
 ---
-title: 'The Legend of Zelda Link''s Awakening'
+title: The Legend of Zelda Link's Awakening
 tags:
   - platform_switch
   - genre_action-adventure
-digital: false
+digital: true
 physical: true
 guide: false
 pending: false

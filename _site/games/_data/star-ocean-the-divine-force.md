@@ -3,7 +3,8 @@ title: 'Star Ocean: The Divine Force'
 tags:
   - platform_playstation-5
   - genre_rpg
-digital: false
+note: Digital Deluxe Edition
+digital: true
 physical: true
 guide: false
 pending: false
