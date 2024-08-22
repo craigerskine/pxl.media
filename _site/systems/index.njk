@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/default.njk'
+layout: layouts/default.njk
 title: Systems
 eleventyComputed:
   eleventyNavigation:
@@ -28,12 +28,12 @@ eleventyComputed:
           {%- endfor %}
         {%- endif %}
       {%- endfor %}
-{# NONE - THERE HAS TO A BETTER WAY #}
-      {%- if p.data.page.fileSlug === 'wii-u' %}
+      {#- NONE -#}
+      {%- if p.data.systems === false %}
         {%- set ico %}mdi:close{%- endset %}
         {{ point(title='None',sub='',meta='',ico=ico) }}
       {%- endif %}
-{# /NONE #}
+      {#- /NONE -#}
     {%- endcall %}
   {%- endfor %}
 {%- endcall %}

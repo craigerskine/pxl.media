@@ -50,9 +50,6 @@ install({
 });
 injectGlobal`
   @layer base {
-    .box { @apply bg-white/5 rounded-lg ring-(inset 1 white/5) shadow-lg; }
-    .box .box-cover { @apply rounded-t-lg; }
-    .box .box-cover-img { @apply ring-(inset 1 white/10); }
     .tippy-box[data-state="hidden"] { @apply opacity-0 translate-y-1; }
     [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
     .tippy-box { @apply bg-black text-(gray-400 xs) font-semibold relative outline-0 opacity-100 rounded translate-y-0 motion-safe:(transition duration-75); }
@@ -72,18 +69,14 @@ import tippy from 'tippy.js';
 
 document.addEventListener('alpine:init', () => {
   // tooltip
-  // magic: $tooltip
+  // magic: @focus="$tooltip('some tooltip')"
   Alpine.magic('tooltip', el => message => {
-    let instance = tippy(el, { content: message, trigger: 'manual' })
+    let instance = tippy(el, { content: message })
     instance.show()
-    setTimeout(() => {
-      instance.hide()
-      setTimeout(() => instance.destroy(), 150)
-    }, 2000)
   });
-  // directive: x-tooltip
-  Alpine.directive('tooltip', (el, { expression }) => {
-    tippy(el, { content: expression })
+  // directive: x-tooltip="'some tooltip'"
+  Alpine.directive('tooltip', (el, { expression }, { evaluate }) => {
+    tippy(el, { content: evaluate(expression) })
   });
 });
 
