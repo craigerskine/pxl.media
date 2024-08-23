@@ -1,0 +1,20 @@
+---
+layout: layouts/default.njk
+title: Books
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    title: Guide
+    icon: mdi:book-open-page-variant-outline
+    order: 5
+---
+
+{%- set books = collections.book -%}
+
+{%- from 'components/heading.njk' import heading -%}
+
+{%- call heading(tag='h1',label=title,sub=books.length) %}{%- endcall %}
+
+<h2 class="m-auto py-8 px-4 text-gray-500 text-[calc(2vw+2vh)] leading-none font-bold text-center md:(py-32)">
+  Soon...
+</h2>

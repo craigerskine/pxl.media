@@ -2,85 +2,36 @@
 layout: layouts/default.njk
 ---
 
-{%- from 'components/mast.njk' import mast -%}
+{%- from 'components/stats.njk' import stats, stat -%}
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/game.njk' import game -%}
 
 {#- physical -#}
-{%- set gamesPhysicalAll = [] -%}
-{%- for g in collections.game -%}
-  {%- if g.data.physical -%}
-    {%- set gamesPhysicalAll = (gamesPhysicalAll.push(g), gamesPhysicalAll) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set gamesPhysicalAll = [] -%}{%- for g in collections.game -%}{%- if g.data.physical -%}{%- set gamesPhysicalAll = (gamesPhysicalAll.push(g), gamesPhysicalAll) -%}{%- endif -%}{%- endfor -%}
 
 {#- digital -#}
-{%- set gamesDigitalAll = [] -%}
-{%- for g in collections.game -%}
-  {%- if g.data.digital -%}
-    {%- set gamesDigitalAll = (gamesDigitalAll.push(g), gamesDigitalAll) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set gamesDigitalAll = [] -%}{%- for g in collections.game -%}{%- if g.data.digital -%}{%- set gamesDigitalAll = (gamesDigitalAll.push(g), gamesDigitalAll) -%}{%- endif -%}{%- endfor -%}
 
 {#- console -#}
-{%- set systemsConsolesAll = [] -%}
-{%- for g in collections.system -%}
-  {%- if g.data.system_type === 'console' -%}
-    {%- set systemsConsolesAll = (systemsConsolesAll.push(g), systemsConsolesAll) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set systemsConsolesAll = [] -%}{%- for g in collections.system -%}{%- if g.data.system_type === 'console' -%}{%- set systemsConsolesAll = (systemsConsolesAll.push(g), systemsConsolesAll) -%}{%- endif -%}{%- endfor -%}
 
 {#- handheld -#}
-{%- set systemsHandheldsAll = [] -%}
-{%- for g in collections.system -%}
-  {%- if g.data.system_type === 'handheld' -%}
-    {%- set systemsHandheldsAll = (systemsHandheldsAll.push(g), systemsHandheldsAll) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set systemsHandheldsAll = [] -%}{%- for g in collections.system -%}{%- if g.data.system_type === 'handheld' -%}{%- set systemsHandheldsAll = (systemsHandheldsAll.push(g), systemsHandheldsAll) -%}{%- endif -%}{%- endfor -%}
 
 {#- hybrid -#}
-{%- set systemsHybridsAll = [] -%}
-{%- for g in collections.system -%}
-  {%- if g.data.system_type === 'hybrid' -%}
-    {%- set systemsHybridsAll = (systemsHybridsAll.push(g), systemsHybridsAll) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set systemsHybridsAll = [] -%}{%- for g in collections.system -%}{%- if g.data.system_type === 'hybrid' -%}{%- set systemsHybridsAll = (systemsHybridsAll.push(g), systemsHybridsAll) -%}{%- endif -%}{%- endfor -%}
 
 {#- mini -#}
-{%- set systemsMinisAll = [] -%}
-{%- for g in collections.system -%}
-  {%- if g.data.system_type === 'mini' -%}
-    {%- set systemsMinisAll = (systemsMinisAll.push(g), systemsMinisAll) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set systemsMinisAll = [] -%}{%- for g in collections.system -%}{%- if g.data.system_type === 'mini' -%}{%- set systemsMinisAll = (systemsMinisAll.push(g), systemsMinisAll) -%}{%- endif -%}{%- endfor -%}
 
 {#- wireless 2.4Ghz + Bluetooth -#}
-{%- set controllersWireless = [] -%}
-{%- for c in collections.controller -%}
-  {%- for x in c.data.connection -%}
-    {%- if x === 'Bluetooth' or x === '2.4Ghz' -%}
-      {%- set controllersWireless = (controllersWireless.push(x), controllersWireless) -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endfor -%}
+{%- set controllersWireless = [] -%}{%- for c in collections.controller -%}{%- for x in c.data.connection -%}{%- if x === 'Bluetooth' or x === '2.4Ghz' -%}{%- set controllersWireless = (controllersWireless.push(x), controllersWireless) -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
 
 {#- usb -#}
-{%- set controllersUsb = [] -%}
-{%- for c in collections.controller -%}
-  {%- for x in c.data.connection -%}
-    {%- if x === 'USB' -%}
-      {%- set controllersUsb = (controllersUsb.push(x), controllersUsb) -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endfor -%}
+{%- set controllersUsb = [] -%}{%- for c in collections.controller -%}{%- for x in c.data.connection -%}{%- if x === 'USB' -%}{%- set controllersUsb = (controllersUsb.push(x), controllersUsb) -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
 
 {#- adapters -#}
-{%- set controllersAdapters = [] -%}
-{%- for c in collections.controller -%}
-  {%- if c.data.variation.includes('Adapter') -%}
-    {%- set controllersAdapters = (controllersAdapters.push(c), controllersAdapters) -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- set controllersAdapters = [] -%}{%- for c in collections.controller -%}{%- if c.data.variation.includes('Adapter') -%}{%- set controllersAdapters = (controllersAdapters.push(c), controllersAdapters) -%}{%- endif -%}{%- endfor -%}
 
 {#- recent -#}
 {%- set gamesRecentAll = [] -%}
@@ -110,23 +61,84 @@ layout: layouts/default.njk
   {%- endif -%}
 {%- endfor -%}
 
-<ul class="px-4 lg:(flex justify-center space-x-8)">
-  <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast(url='/games/',label='Games',data_1=gamesPhysicalAll.length.toLocaleString(),data_1_label='Physical',data_2=gamesDigitalAll.length.toLocaleString(),data_2_label='Digital',data_3=gamesPendingAll.length.toLocaleString(),data_3_label='Pending',hr=true,home=true) %}
-      {{ collections.game.length.toLocaleString() }}
-    {%- endcall %}
-  </li>
-  <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast(url='/systems/',label='Systems',data_1=(systemsConsolesAll.length+systemsHybridsAll.length).toLocaleString(),data_1_label='Consoles',data_2=(systemsHandheldsAll.length+systemsHybridsAll.length).toLocaleString(),data_2_label='Handhelds',data_3=systemsMinisAll.length.toLocaleString(),data_3_label='Mini/Classic',hr=true,home=true) %}
-      {{ collections.system.length.toLocaleString() }}
-    {%- endcall %}
-  </li>
-  <li class="stat mx-auto py-1 w-full max-w-sm lg:(my-10 max-w-none)">
-    {%- call mast(url='/controllers/',label='Controllers',data_1=controllersWireless.length.toLocaleString(),data_1_label='Wireless',data_2=controllersUsb.length.toLocaleString(),data_2_label='USB',data_3=controllersAdapters.length.toLocaleString(),data_3_label='Adapters',hr=true,home=true) %}
-      {{ collections.controller.length.toLocaleString() }}
-    {%- endcall %}
-  </li>
-</ul>
+<div class="px-4 grid-(& cols-1) gap-4 md:(py-6 grid-cols-2) lg:(py-12 grid-cols-4)">
+  {%- call stats({ cols: 1 }) %}
+    {{ stat({
+      tag: 'h1',
+      ico: 'mdi:cube',
+      value: collections.game.length.toLocaleString(),
+      title: 'Games',
+      url: '/games/',
+      sub: [
+        {
+          title: 'Physical',
+          value: gamesPhysicalAll.length.toLocaleString()
+        },
+        {
+          title: 'Digital',
+          value: gamesDigitalAll.length.toLocaleString()
+        }
+      ]
+    }) }}
+  {%- endcall %}
+  {%- call stats({ cols: 1 }) %}
+    {{ stat({
+      tag: 'h1',
+      ico: 'mdi:television-classic',
+      value: collections.system.length.toLocaleString(),
+      title: 'Systems',
+      url: '/systems/',
+      sub: [
+        {
+          title: 'Consoles',
+          value: (systemsConsolesAll.length+systemsHybridsAll.length).toLocaleString()
+        },
+        {
+          title: 'Handhelds',
+          value: (systemsHandheldsAll.length+systemsHybridsAll.length).toLocaleString()
+        }
+      ]
+    }) }}
+  {%- endcall %}
+  {%- call stats({ cols: 1 }) %}
+    {{ stat({
+      tag: 'h1',
+      ico: 'mdi:controller-classic',
+      value: collections.controller.length.toLocaleString(),
+      title: 'Controllers',
+      url: '/controllers/',
+      sub: [
+        {
+          title: 'Wireless',
+          value: controllersWireless.length.toLocaleString()
+        },
+        {
+          title: 'USB',
+          value: controllersUsb.length.toLocaleString()
+        }
+      ]
+    }) }}
+  {%- endcall %}
+  {%- call stats({ cols: 1 }) %}
+    {{ stat({
+      tag: 'h1',
+      ico: 'mdi:book-open-page-variant-outline',
+      value: '__',
+      title: 'Books',
+      url: '/books/',
+      sub: [
+        {
+          title: 'En',
+          value: '__'
+        },
+        {
+          title: 'Jp',
+          value: '__'
+        }
+      ]
+    }) }}
+  {%- endcall %}
+</div>
 
 {%- call heading(tag='h2',label='Recently added',sub=6) %}{%- endcall %}
 {{ game(games=gamesRecent,platforms=collections.platform,genres=collections.genre,by='data.date',reverse=true) }}
