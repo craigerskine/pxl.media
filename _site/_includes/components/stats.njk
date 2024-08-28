@@ -5,7 +5,7 @@
 {%- macro stats(param) -%}
 {%- set classes -%}
   {%- if param.bordered !== false -%}
-    border-(& dotted white/10) bg-white/[.033] shadow-lg
+    border-(& dotted white/20)
   {%- endif -%}
 {%- endset -%}
 <div class="stats {{ classes }} mx-auto w-full max-w-xs grid-(& cols-1) divide-(y x-0 dotted white/10) overflow-hidden rounded-lg lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }} divide-(y-0 x))">

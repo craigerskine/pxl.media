@@ -61,7 +61,7 @@ layout: layouts/default.njk
   {%- endif -%}
 {%- endfor -%}
 
-<div class="px-4 grid-(& cols-1) gap-4 md:(py-6 grid-cols-2) lg:(py-12 grid-cols-4)">
+<div class="px-4 grid-(& cols-1) gap-4 md:(py-6 grid-cols-2) lg:(py-12 grid-cols-3)">
   {%- call stats({ cols: 1 }) %}
     {{ stat({
       tag: 'h1',
@@ -119,6 +119,7 @@ layout: layouts/default.njk
       ]
     }) }}
   {%- endcall %}
+  {#-
   {%- call stats({ cols: 1 }) %}
     {{ stat({
       tag: 'h1',
@@ -138,6 +139,26 @@ layout: layouts/default.njk
       ]
     }) }}
   {%- endcall %}
+  {%- call stats({ cols: 1 }) %}
+    {{ stat({
+      tag: 'h1',
+      ico: 'mdi:music-box-outline',
+      value: '__',
+      title: 'Music',
+      url: '/music/',
+      sub: [
+        {
+          title: 'En',
+          value: '__'
+        },
+        {
+          title: 'Jp',
+          value: '__'
+        }
+      ]
+    }) }}
+  {%- endcall %}
+  -#}
 </div>
 
 {%- call heading(tag='h2',label='Recently added',sub=6) %}{%- endcall %}

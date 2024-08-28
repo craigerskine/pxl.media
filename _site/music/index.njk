@@ -1,19 +1,19 @@
 ---
 layout: layouts/default.njk
-title: Books
+title: Music
 #eleventyComputed:
   #eleventyNavigation:
     #key: "{{ title }}"
-    #title: Guide
-    #icon: mdi:book-open-page-variant-outline
-    #order: 5
+    #title: OST
+    #icon: mdi:music-box-outline
+    #order: 6
 ---
 
-{%- set books = collections.book -%}
+{%- set music = collections.music -%}
 
 {%- from 'components/heading.njk' import heading -%}
 
-{%- call heading(tag='h1',label=title,sub=books.length) %}{%- endcall %}
+{%- call heading(tag='h1',label=title,sub=music.length) %}{%- endcall %}
 
 <h2 class="m-auto py-8 px-4 text-gray-500 text-[calc(2vw+2vh)] leading-none font-bold text-center md:(py-32)">
   Soon...
