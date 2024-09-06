@@ -1,10 +1,8 @@
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const esbuild = require('esbuild');
-const htmlmin = require('html-minifier-terser');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
-const prettier = require('prettier');
 const recentChanges = require('eleventy-plugin-recent-changes');
 const yaml = require('js-yaml');
 
@@ -104,34 +102,6 @@ module.exports = function (eleventyConfig) {
       sourcemap: false,
     });
   });
-
-  // eleventyConfig.addTransform('htmlmin', function (content) {
-  //   if ((this.page.outputPath || '').endsWith('.html')) {
-  //     let minified = htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true,
-  //     });
-  //     return minified;
-  //   }
-  //   return content;
-  // });
-
-  // prettier
-  // eleventyConfig.addTransform('prettier', function(content, outputPath) {
-  //   if (outputPath && outputPath.endsWith('.html')) {
-  //     return prettier.format(content, {
-  //       parser: 'html',
-  //       printWidth: 9999,
-  //       tabWidth: 2,
-  //       singleQuote: false,
-  //       bracketSpacing: false,
-  //       htmlWhitespaceSensitivity: 'css',
-  //       singleAttributePerLine: false
-  //     });
-  //   }
-  //   return content;
-  // });
 
   return {
     jsDataFileSuffix: '.data',
