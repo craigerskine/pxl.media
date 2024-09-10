@@ -1,14 +1,8 @@
 {#-
   cols: int
-  bordered: true
 -#}
 {%- macro stats(param) -%}
-{%- set classes -%}
-  {%- if param.bordered !== false -%}
-    border-(& dotted white/20)
-  {%- endif -%}
-{%- endset -%}
-<div class="stats {{ classes }} mx-auto w-full max-w-xs grid-(& cols-1) divide-(y x-0 dotted white/10) overflow-hidden rounded-lg lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }} divide-(y-0 x))">
+<div class="stats mx-auto w-full max-w-xs bg-gradient-to-t from-white/5 grid-(& cols-1) overflow-hidden rounded-lg lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }})">
 {{ caller() if caller }}
 </div>
 {%- endmacro -%}
@@ -30,15 +24,17 @@
   <div class="stat-figure w-12 h-12 col-start-2 row-start-1 row-span-1 opacity-50">
     <iconify-icon icon="{{ param.ico }}" width="48px" height="48px" class="iconify"></iconify-icon>
   </div>
-  <hgroup class="flex-(& col) gap-2">
+  <hgroup class="space-y-2">
     <{{ heading }} class="stat-value text-(gray-200 4xl) leading-[48px] tracking-tighter font-black">{{ param.value }}</{{ heading }}>
-    <a href="{{ param.url if param.url else '#' }}" class="stat-title group text-base leading-none font-semibold uppercase motion-safe:(transition) hover:(text-white)">
-      {{ param.title }}
-      <span class="bg-brand-500/20 absolute inset-0 z-10 opacity-0 motion-safe:(transition) group-hover:(opacity-100)"></span>
-    </a>
+    <p>
+      <a href="{{ param.url if param.url else '#' }}" class="stat-title group text-base leading-none font-semibold uppercase motion-safe:(transition) hover:(text-white)">
+        {{ param.title }}
+        <span class="absolute inset-0 z-10 after:(content-[''] h-0 bg-brand-500/20 absolute inset-x-0 bottom-0 opacity-0 motion-safe:(transition-all)) group-hover:(after:(h-full opacity-100))"></span>
+      </a>
+    </p>
   </hgroup>
   <ul class="stat-desc font-semibold uppercase col-span-2 flex items-center gap-3">
-    {%- for item in param.sub -%}  
+    {%- for item in param.sub -%}
       <li class="text-xs">
         <strong class="sub-title mr-px text-(gray-200 sm) leading-none">{{ item.value }}</strong>
         <small class="sub-title opacity-70">{{ item.title }}</small>
