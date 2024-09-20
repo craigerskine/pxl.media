@@ -15,8 +15,8 @@
         focusAfter && focusAfter.focus();
       }
     }"
-    x-id="['dropdown-button']"
-    @keydown.escape.prevent.stop="close($refs.button)"
+    x-id="['nav-dropdown']"
+    @keydown.escape.prevent="close($refs.button)"
     @focusin.window="!$refs.panel.contains($event.target) && close()"
     class="nav-menu p-1.5 text-xl flex items-center justify-between gap-1"
   >
@@ -27,14 +27,17 @@
       <button
         x-ref="button"
         @click="toggle()"
+        :aria-pressed="open"
         :aria-expanded="open"
-        :aria-controls="$id('dropdown-button')"
-        :class="open || 'opacity-40'"
-        class="w-11 h-11 text-white flex items-center justify-center motion-safe:(transition) hover:(opacity-100)"
-        aria-label="Home"
+        :aria-controls="$id('nav-dropdown')"
+        class="group w-10 h-10 inline-flex items-center justify-center rounded-full motion-safe:(transition) hover:(bg-gray-500/20) focus-visible:(shadow-none outline-(& 2 current offset-0))"
       >
-        <span class="flex items-center justify-center" x-show="!open" x-cloak><iconify-icon icon="mdi:menu" width="24px" height="24px" class="iconify"></iconify-icon></span>
-        <span class="flex items-center justify-center" x-show="open" x-cloak><iconify-icon icon="mdi:menu-open" width="24px" height="24px" class="iconify"></iconify-icon></span>
+        <span class="sr-only">Menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-4 h-4 fill-current pointer-events-none">
+          <rect width="9" height="2" y="7" rx="1" class="origin-center -translate-y-[5px] translate-x-[7px] group-[[aria-pressed=true]]:(translate-x-0 translate-y-0 rotate-[315deg]) motion-safe:(transition-all duration-300)" />
+          <rect width="16" height="2" y="7" rx="1" class="origin-center group-[[aria-pressed=true]]:(rotate-45) motion-safe:(transition-all duration-300)" />
+          <rect width="9" height="2" y="7" rx="1" class="origin-center translate-y-[5px] group-[[aria-pressed=true]]:(translate-y-0 rotate-[135deg]) motion-safe:(transition-all duration-300)" />
+        </svg>
       </button>
       <ul
         x-ref="panel"
@@ -44,7 +47,7 @@
         x-transition:leave-start="opacity-100 blur-0 translate-y-0"
         x-transition:leave-end="opacity-0 blur-md -translate-y-2"
         @click.outside="close($refs.button)"
-        :id="$id('dropdown-button')"
+        :id="$id('nav-dropdown')"
         class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-2 absolute top-full right-0 z-50 rounded-3xl shadow-lg motion-safe:(transition)"
         x-cloak
       >
