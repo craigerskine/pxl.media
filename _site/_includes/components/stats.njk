@@ -25,11 +25,11 @@
     <iconify-icon icon="{{ param.ico }}" width="48px" height="48px" class="iconify"></iconify-icon>
   </div>
   <hgroup class="space-y-2">
-    <{{ heading }} class="stat-value text-(gray-200 4xl) leading-[48px] tracking-tighter font-black">{{ param.value }}</{{ heading }}>
+    <{{ heading }} class="stat-value text-(gray-200 5xl) leading-[48px] tracking-tighter font-semibold">{{ param.value }}</{{ heading }}>
     <p>
       <a href="{{ param.url if param.url else '#' }}" class="stat-title group text-base leading-none font-semibold uppercase motion-safe:(transition) hover:(text-white)">
         {{ param.title }}
-        <span class="absolute inset-0 z-10 after:(content-[''] h-0 bg-brand-500/20 absolute inset-x-0 bottom-0 opacity-0 motion-safe:(transition-all)) group-hover:(after:(h-full opacity-100))"></span>
+        <span class="absolute inset-0 z-10 after:(content-[''] bg-brand-500/20 absolute inset-0 opacity-0 scale-75 motion-safe:(transition-all)) group-hover:(after:(h-full opacity-100 scale-100))"></span>
       </a>
     </p>
   </hgroup>
