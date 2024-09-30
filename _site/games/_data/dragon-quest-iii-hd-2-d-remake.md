@@ -4,7 +4,7 @@ tags:
   - platform_switch
   - genre_rpg
 physical: true
-digital: false
+digital: true
 guide: false
 pending: true
 date: 2024-11-31
