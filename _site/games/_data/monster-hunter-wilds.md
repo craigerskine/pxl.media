@@ -7,7 +7,7 @@ tags:
 note: Premium Deluxe Edition
 physical: false
 digital: true
-guide: true
+guide: false
 pending: true
 date: 2025-02-28
 ---
