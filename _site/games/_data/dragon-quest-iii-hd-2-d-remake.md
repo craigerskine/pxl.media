@@ -5,7 +5,7 @@ tags:
   - genre_rpg
 physical: true
 digital: true
-guide: false
+guide: true
 pending: true
 date: 2024-11-31
 ---
