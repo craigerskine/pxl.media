@@ -1,8 +1,9 @@
 ---
-title: 'Mario & Luigi Superstar Saga'
+title: 'Mario & Luigi: Superstar Saga'
 tags:
   - platform_game-boy-advance
   - genre_action-adventure
+  - genre_rpg
 digital: false
 physical: true
 guide: false
