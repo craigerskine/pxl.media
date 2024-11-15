@@ -6,6 +6,6 @@ tags:
 physical: true
 digital: true
 guide: true
-pending: true
-date: 2024-11-31
+pending: false
+date: 2024-11-14
 ---
