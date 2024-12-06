@@ -26,7 +26,7 @@ permalink: /platform/
           {%- endif -%}
         {%- endfor -%}
       {%- endfor -%}
-      {%- if totalGames.length -%}  
+      {%- if totalGames.length -%}
         {{ totalGames | length }}
         <b class="font-normal uppercase">Games</b>
       {%- endif -%}
@@ -39,12 +39,12 @@ permalink: /platform/
       {%- if totalGames.length and totalSystems.length -%}
       <b class="mx-1 opacity-50">/</b>
       {%- endif -%}
-      {%- if totalSystems.length -%}  
+      {%- if totalSystems.length -%}
         {{ totalSystems | length }}
         <b class="font-normal uppercase">Systems</b>
       {%- endif -%}
     {%- endset -%}
-    {{- category(svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) -}}
+    {{- category(title=item.data.title,svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) -}}
   {%- endif -%}
 {%- endfor -%}
 </ul>
