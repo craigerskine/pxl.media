@@ -27,6 +27,7 @@
     "instant.page": "^5.2.0",
     "js-yaml": "^4.1.0",
     "markdown-it-attrs": "^4.1.6",
+    "netlify-plugin-cache": "^1.0.3",
     "tippy.js": "^6.3.7"
   }
 }
