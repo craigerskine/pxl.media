@@ -7,6 +7,6 @@ note: ModRetro
 physical: true
 digital: false
 guide: false
-pending: true
-date: 2024-12-31
+pending: false
+date: 2024-12-17
 ---
