@@ -8,6 +8,6 @@ note: Premium Digital Deluxe Edition + Steelbook
 physical: true
 digital: true
 guide: false
-pending: true
+pending: false
 date: 2025-02-28
 ---
