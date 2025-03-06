@@ -4,8 +4,8 @@ tags:
   - platform_playstation-5
   - genre_action-adventure
   - genre_rpg
-note: Premium Deluxe Edition
-physical: false
+note: Premium Digital Deluxe Edition + Steelbook
+physical: true
 digital: true
 guide: false
 pending: true
