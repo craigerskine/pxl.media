@@ -1,9 +1,9 @@
 ---
-title: 'Astria Ascending'
+title: Astria Ascending
 tags:
   - platform_switch
   - genre_rpg
-digital: false
+digital: true
 physical: true
 guide: false
 pending: false
