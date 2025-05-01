@@ -3,7 +3,6 @@ title: Sword of the Vagrant
 tags:
   - platform_switch
   - genre_action-adventure
-note: 'Some note'
 physical: true
 digital: false
 guide: false
