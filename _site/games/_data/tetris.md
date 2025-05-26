@@ -1,7 +1,7 @@
 ---
 title: Tetris
 tags:
-  - platform_gameboy
+  - platform_game-boy
   - genre_puzzle
 physical: true
 digital: false
