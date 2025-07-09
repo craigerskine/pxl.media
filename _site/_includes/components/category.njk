@@ -7,7 +7,7 @@
         {%- if fg_img !== '' %}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current relative">
           <title>{{ title }} {{ svg_title }}</title>
-           <use href="/_assets/platforms.svg#logo-{{ svg_title | slugify }}" />
+           <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ svg_title | slugify }}" />
         </svg>
         {%- endif %}
         {%- if fg_ico !== '' %}

@@ -6,7 +6,7 @@
         {%- if logo !== '' %}
         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-auto h-16 fill-current">
           <title>{{ title }}</title>
-          <use href="/_assets/platforms.svg#logo-{{ title | slugify }}" />
+          <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ title | slugify }}" />
         </svg>
         {%- endif %}
         <b class="text-gray-200 tracking-tighter motion-safe:transition group-hover:(text-white)">

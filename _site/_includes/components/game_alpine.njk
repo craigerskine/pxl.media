@@ -7,7 +7,7 @@
         <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)">
           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-[80px] h-auto fill-current">
             <title x-text="item.platform.title"></title>
-            <use :href="'/_assets/platforms.svg#logo-'+ slugify(item.platform.title)" />
+            <use :href="'/_assets/platforms.svg?v={% bust %}#logo-'+ slugify(item.platform.title)" />
           </svg>
         </a>
       </div>

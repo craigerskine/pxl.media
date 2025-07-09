@@ -9,7 +9,7 @@
   <a href="{{ url }}" class="group p-5 border-(& dotted gray-500/30) bg-gray-400/5 flex-none rounded-lg{% if url === '#' %} pointer-events-none{% endif %} hover:(text-white)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current opacity-50 motion-safe:(transition) group-hover:(opacity-100)">
       <title>{{ title }}</title>
-      <use href="/_assets/{{ svg_file }}.svg#logo-{{ title | slugify }}" />
+      <use href="/_assets/{{ svg_file }}.svg?v={% bust %}#logo-{{ title | slugify }}" />
     </svg>
   </a>
   <ul class="pl-5 w-full grid-(& cols-1) md:(pl-12{% if colspan %} grid-cols-2 gap-x-12{% endif %})">

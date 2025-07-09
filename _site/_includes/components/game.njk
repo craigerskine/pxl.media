@@ -15,7 +15,7 @@
           <a href="/platform/{{ p.data.page.fileSlug }}/" class="text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-[80px] h-auto fill-current">
               <title>{{ p.data.title }}</title>
-              <use href="/_assets/platforms.svg#logo-{{ p.data.title | slugify }}" />
+              <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ p.data.title | slugify }}" />
             </svg>
           </a>
           {%- endif %}
