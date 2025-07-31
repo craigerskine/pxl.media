@@ -39,7 +39,7 @@
                 {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
                 <li>
                   <a href="/genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title }}'" class="flex relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
-                    <iconify-icon icon="{{ g.data.ico }}" inline="false" class="m-auto text-xl"></iconify-icon>
+                    <iconify-icon icon="{{ g.data.ico }}" inline="false" class="m-auto text-xl" noobserver></iconify-icon>
                   </a>
                 </li>
                 {%- endif %}
@@ -57,7 +57,7 @@
               {%- endset %}
               {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
                 <li x-tooltip="'{{ tip }}'" class="flex relative" tabindex="0">
-                  <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" inline="false" class="m-auto text-xl opacity-50"></iconify-icon>
+                  <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" inline="false" class="m-auto text-xl opacity-50" noobserver></iconify-icon>
                 </li>
               {%- endif %}
               {%- endfor %}

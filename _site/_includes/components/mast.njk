@@ -12,7 +12,7 @@
         <b class="text-gray-200 tracking-tighter motion-safe:transition group-hover:(text-white)">
           {{ caller() if caller }}
         </b>
-        {%- if logo === '' %}<iconify-icon icon="{{ ico }}" inline="false" class="text-6xl"></iconify-icon>{% endif %}
+        {%- if logo === '' %}<iconify-icon icon="{{ ico }}" inline="false" class="text-6xl" noobserver></iconify-icon>{% endif %}
       </span>
       {%- if label !== '' %}
       <b class="py-1 tracking-normal uppercase opacity-75{% if home %} text-sm block md:(text-xl){% else %} text-xl hidden sm:(block){% endif %}">

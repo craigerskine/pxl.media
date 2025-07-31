@@ -2,7 +2,7 @@
 
 <nav aria-label="Games navigation">
   <ol class="flex items-center justify-center gap-x-3 sm:(gap-x-5)">
-    <li {{ disable | safe if not pagination.href.previous }}><a href="{{ pagination.href.previous }}" title="Previous page"><iconify-icon icon="mdi:chevron-left" inline class="text-xl"></iconify-icon></a></li>
+    <li {{ disable | safe if not pagination.href.previous }}><a href="{{ pagination.href.previous }}" title="Previous page"><iconify-icon icon="mdi:chevron-left" inline class="text-xl" noobserver></iconify-icon></a></li>
     <li class="text-xs flex flex-wrap items-center justify-center">
       {%- if pagination.pageNumber %}
       <b class="text-gray-300 font-black">{{ pagination.pageNumber }}</b>
@@ -13,6 +13,6 @@
       <small class="mx-3 text-sm hidden opacity-70 sm:(block)">pages</small>
       {%- endif %}
     </li>
-    <li {{ disable | safe if not pagination.href.next }}><a href="{{ pagination.href.next }}" title="Next page"><iconify-icon icon="mdi:chevron-right" inline class="text-xl"></iconify-icon></a></li>
+    <li {{ disable | safe if not pagination.href.next }}><a href="{{ pagination.href.next }}" title="Next page"><iconify-icon icon="mdi:chevron-right" inline class="text-xl" noobserver></iconify-icon></a></li>
   </ol>
 </nav>

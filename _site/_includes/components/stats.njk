@@ -22,7 +22,7 @@
 {%- set heading -%}{{ param.tag if param.tag else 'h2' }}{%- endset -%}
 <div class="stat p-4 grid [grid-template-columns:repeat(1,1fr)] gap-4 relative">
   <div class="stat-figure w-12 h-12 col-start-2 row-start-1 row-span-1 opacity-50">
-    <iconify-icon icon="{{ param.ico }}" width="48px" height="48px" class="iconify"></iconify-icon>
+    <iconify-icon icon="{{ param.ico }}" width="48px" height="48px" class="iconify" noobserver></iconify-icon>
   </div>
   <hgroup class="space-y-2">
     <{{ heading }} class="stat-value text-(gray-200 5xl) leading-[48px] tracking-tighter font-semibold">{{ param.value }}</{{ heading }}>

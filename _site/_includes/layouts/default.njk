@@ -58,7 +58,7 @@
               {%- for nav in site.footer.nav %}
               <li>
                 <a href="{{ nav.url }}" x-tooltip="'{{ nav.title }}'" class="w-11 h-11 flex items-center justify-center rounded-full motion-safe:(transition) hover:(bg-gray-500/20 text-gray-200)" aria-label="{{ nav.title }}">
-                  <iconify-icon icon="{{ nav.ico }}"></iconify-icon>
+                  <iconify-icon icon="{{ nav.ico }}" noobserver></iconify-icon>
                 </a>
               </li>
               {%- endfor %}
