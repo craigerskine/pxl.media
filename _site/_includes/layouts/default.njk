@@ -76,7 +76,7 @@
           {%- endcall %}
           &bull; updated:
           {%- call footerLink('/changes/') -%}
-            <time datetime="{{ build.time.raw }}">{{ build.time.formatted }}</time>
+            <time datetime="{% build 'raw' %}">{% build %}</time>
           {%- endcall %}
         </p>
       </footer>
