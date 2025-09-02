@@ -3,5 +3,5 @@ title: GameCube
 platform: gamecube
 system_type: console
 variation: Indigo
-accessories: BBA + HDMI + BT + Serial SD + [Flippy Drive]
+accessories: BBA + Carby HDMI + Serial SD + Flippy Drive
 ---
