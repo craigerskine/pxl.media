@@ -24,25 +24,16 @@ install({
         brand: theme('colors.rose'),
         gray: theme('colors.neutral'),
       }),
+      fontSize: {
+        80: ['80%', { lineHeight: 1 }],
+      },
       fontFamily: ({ theme }) => ({
         sans: ['Roboto', ...theme('fontFamily.sans')],
       }),
-      keyframes: {
-        progress: {
-          '0%': { width: '1%', },
-          '25%': { width: '25%', },
-          '50%': { width: '75%', },
-          '75%': { width: '100%', },
-          '100%': { width: '100%', },
-        },
-      },
-      animation: {
-        progress: 'progress 1s ease-in-out infinite',
-      },
     },
   },
   rules: [
-    [ 'text-wrap-(unset|wrap|nowrap|balance)', 'textWrap' ],
+    ['text-wrap-(unset|wrap|nowrap|balance)', 'textWrap'],
     ['bg-gradient-radial', 'bg-[radial-gradient(closest-side,var(--tw-gradient-stops))]'],
     ['bg-gradient-conic', 'bg-[conic-gradient(from_180deg,var(--tw-gradient-stops))]'],
     ['container-', ({ $$ }) => `mx-auto w-full max-w-${$$}`],

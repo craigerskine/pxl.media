@@ -3,5 +3,5 @@ title: Nintendo 64
 platform: nintendo-64
 system_type: console
 variation: Ice
-accessories: Memory + Transfer Pak
+accessories: + Memory + Transfer Pak
 ---
