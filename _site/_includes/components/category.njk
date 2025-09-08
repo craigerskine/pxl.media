@@ -24,7 +24,7 @@
         {% endif %}
         {%- if subtext !== '' %}
         <div class="leading-none">
-          <small class="ml-auto font-bold line-clamp-1 opacity-80">{{ subtext | safe }}</small>
+          <small class="ml-auto font-bold line-clamp-1 opacity-80" title="{{ subtext | safe }}">{{ subtext | safe }}</small>
         </div>
         {%- endif %}
       </div>

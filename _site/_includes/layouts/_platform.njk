@@ -1,0 +1,78 @@
+---
+layout: layouts/default.njk
+---
+
+{%- from 'components/mast.njk' import mast -%}
+{%- from 'components/game.njk' import game -%}
+{%- from 'components/category.njk' import category -%}
+
+{%- set games = collections['platform_'+ title | slugify +''] -%}
+{%- set systems = [] -%}{%- for s in collections.system -%}{%- if s.data.platform === title | slugify -%}{%- set systems = (systems.push(s), systems) -%}{%- endif -%}{%- endfor -%}
+{%- set nav = [] -%}{%- if games | length -%}{%- set nav = (nav.push('Games'), nav) -%}{%- endif -%}{%- if systems | length -%}{%- set nav = (nav.push('Systems'), nav) -%}{%- endif -%}
+
+{%- call mast(title=title,logo=logo) %}{%- endcall %}
+
+<article x-data='{ active: 0, nav: {{ nav | dump | safe }} }' x-id="['tab']">
+  <nav class="py-8 px-4">
+    <ul
+      x-ref="tablist"
+      @keydown.right.prevent.stop="$focus.wrap().next()"
+      @keydown.home.prevent.stop="$focus.first()"
+      @keydown.page-up.prevent.stop="$focus.first()"
+      @keydown.left.prevent.stop="$focus.wrap().prev()"
+      @keydown.end.prevent.stop="$focus.last()"
+      @keydown.page-down.prevent.stop="$focus.last()"
+      role="tablist"
+      aria-label="Platform sections"
+      class="tabs border-(b dotted gray-500/50) flex items-end after:(content-[''] h-0.5 bg-brand-500 absolute left-[anchor(left)] right-[anchor(right)] bottom-[anchor(bottom)] [position-anchor:--tab-active] transition-[left,right])"
+    >
+      <template x-for="(item, index) in nav" hidden>
+        <li>
+          <button
+            @mousedown.prevent
+            @click="active = index"
+            @focus="active = index"
+            :id="'tab-'+ index"
+            :tabindex="index === active ? 0 : -1"
+            :aria-controls="'panel-'+ index"
+            :aria-selected="index === active"
+            :class="index === active && 'tab-active'"
+            class="tab py-0 pl-5 pr-3 h-11 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition [&.tab-active]:(text-white [anchor-name:--tab-active])"
+            role="tab"
+          >
+            <span x-text="item"></span>
+            <sup class="badge text-(gray-500 xs) flex items-center justify-center">
+              <span x-show="index === 0">{{ games | length }}</span>
+              <span x-show="index === 1">{{ systems | length }}</span>
+            </sup>
+          </button>
+        </li>
+      </template>
+    </ul>
+  </nav>
+
+  {{ content | safe }}
+
+  {%- for panel in nav %}
+    <div x-show="active === {{ loop.index0 }}" x-transition:enter.opacity.duration.500ms x-transition:leave.opacity.duration.0ms id="panel-{{ loop.index0 }}" role="tabpanel" aria-labelledby="tab-{{ loop.index0 }}">
+
+      {#- GAMES -#}
+      {%- if panel === 'Games' %}
+        {{ game(games=collections['platform_'+ title | slugify],platforms=collections.platform,genres=collections.genre) }}
+      {%- endif %}
+
+      {#- SYSTEMS -#}
+      {%- if panel === 'Systems' %}
+        <ul class="container mx-auto flex-(& wrap)">
+          {%- for item in systems %}
+            {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
+            {{ category(title=item.data.title,subtext=sub,bg_img='https://placehold.net/default.svg') }}
+            {#- {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ company +'-'+ item.title | slugify +'.jpg') }} -#}
+          {%- endfor %}
+        </ul>
+      {%- endif %}
+
+    </div>
+  {%- endfor %}
+
+</article>
