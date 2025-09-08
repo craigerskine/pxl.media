@@ -11,4 +11,5 @@ tags:
 date: 0029-00-00
 ---
 
-{%- include '_platform.njk' %}
+{%- set name = title | slugify -%}
+{%- include '_platform.njk' -%}
