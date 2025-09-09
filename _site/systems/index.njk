@@ -9,12 +9,6 @@ eleventyComputed:
     order: 3
 ---
 
-<!--
-{%- for item in collections.system %}
-{{ item.data.title | slugify +'-'+ item.data.variation | slugify }}
-{%- endfor %}
--->
-
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/timeline.njk' import timeline, group, point -%}
 

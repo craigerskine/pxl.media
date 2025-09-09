@@ -9,9 +9,9 @@ title: Books
     #order: 5
 ---
 
-{%- set books = collections.book -%}
-
 {%- from 'components/heading.njk' import heading -%}
+
+{%- set books = collections.book -%}
 
 {%- call heading(tag='h1',label=title,sub=books.length) %}{%- endcall %}
 

@@ -8,7 +8,7 @@
 {%- for item in collections.system %}
   {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
   {%- if item.data.platform === company %}
-  {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ item.data.page.fileSlug +'.png') }}
+  {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ item.data.page.fileSlug +'.jpg') }}
   {%- endif %}
 {%- endfor %}
 </ul>

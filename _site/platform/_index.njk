@@ -14,6 +14,7 @@ permalink: /platform/
 {%- from 'components/category.njk' import category -%}
 
 {%- call heading(tag='h1',label=title) -%}{%- endcall -%}
+
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.platform -%}
   {%- if item.data.games !== false -%}
@@ -47,4 +48,24 @@ permalink: /platform/
     {{- category(title=item.data.title,svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) -}}
   {%- endif -%}
 {%- endfor -%}
+</ul>
+
+{%- call heading(tag='h2',label='Misc') -%}{%- endcall -%}
+
+<ul class="container flex-(& wrap) justify-center md:(justify-start)">
+  {%- for item in collections.platform -%}
+    {%- if item.data.games == false -%}
+      {%- set sub -%}
+        {%- set totalSystems = [] -%}
+        {%- for s in collections.system -%}
+          {%- if s.data.platform === item.data.page.fileSlug -%}
+            {%- set totalSystems = (totalSystems.push(s), totalSystems) -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {{ totalSystems | length }}
+        <b class="font-normal uppercase">Systems</b>
+      {%- endset -%}
+      {{- category(title=item.data.title,svg_title=item.data.title,subtext=sub,url='/platform/'+ item.data.page.fileSlug +'/',fg_img=item.data.logo) -}}
+    {%- endif %}
+  {%- endfor %}
 </ul>

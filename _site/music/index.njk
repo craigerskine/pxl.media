@@ -9,9 +9,9 @@ title: Music
     #order: 6
 ---
 
-{%- set music = collections.music -%}
-
 {%- from 'components/heading.njk' import heading -%}
+
+{%- set music = collections.music -%}
 
 {%- call heading(tag='h1',label=title,sub=music.length) %}{%- endcall %}
 

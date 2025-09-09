@@ -101,8 +101,7 @@ layout: layouts/default.njk
         <ul class="container mx-auto flex-(& wrap)">
           {%- for item in systems %}
             {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
-            {{ category(title=item.data.title,subtext=sub,bg_img='https://placehold.net/default.svg') }}
-            {#- {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ item.data.title | slugify +'-'+ item.data.variation | slugify +'.jpg') }} -#}
+            {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ item.data.page.fileSlug +'.jpg') }}
           {%- endfor %}
         </ul>
       {%- endif %}
