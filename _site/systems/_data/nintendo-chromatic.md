@@ -1,7 +1,7 @@
 ---
 title: Chromatic
-platform: retro-emu
+platform: game-boy-color
 system_type: handheld
 variation: Midnight / JP
-accessories: + Tetris + Rechargeable Power Core
+accessories: + Rechargeable Power Core
 ---

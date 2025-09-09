@@ -1,5 +1,5 @@
 ---
-title: New-Style Super NES
+title: Super Nintendo
 platform: super-nintendo
 system_type: console
 variation: 101

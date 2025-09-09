@@ -12,8 +12,42 @@ layout: layouts/default.njk
 
 {%- call mast(title=title,logo=logo) %}{%- endcall %}
 
-<article x-data='{ active: 0, nav: {{ nav | dump | safe }} }' x-id="['tab']">
-  <nav class="py-8 px-4 flex">
+<article
+  x-data='{
+    nav: {{ nav | dump | safe }},
+    param: "view",
+    active: 0,
+    slugs: [],
+    init() {
+      this.slugs = this.nav.map(this.slug);
+      this.initFromQuery();
+      this.$watch("active", i => this.updateQuery(this.slugs[i] ?? String(i)));
+    },
+    slug(label) {
+      return String(label).toLowerCase().normalize("NFKD").trim().toLowerCase().replace(/[^\w\-]+/g, "-").replace(/\s+/g, "-").replace(/-+/g, "-");
+    },
+    initFromQuery() {
+      const url = new URL(window.location);
+      const val = url.searchParams.get(this.param);
+      if (!val) return;
+      let idx = -1;
+      if (/^\d+$/.test(val)) {
+        idx = Math.max(0, Math.min(parseInt(val, 10), this.nav.length - 1));
+      } else {
+        idx = this.slugs.indexOf(val.toLowerCase());
+      }
+      if (idx >= 0) this.active = idx;
+    },
+    setActive(i) { this.active = i; },
+    updateQuery(val) {
+      const url = new URL(window.location);
+      url.searchParams.set(this.param, val);
+      history.replaceState({}, "", url);
+    },
+  }'
+  x-id="['tab']"
+>
+  <nav class="py-8 px-4 flex items-end justify-center gap-2 lg:(w-1/2 justify-start)">
     <ul
       x-ref="tablist"
       @keydown.right.prevent.stop="$focus.wrap().next()"
@@ -24,20 +58,20 @@ layout: layouts/default.njk
       @keydown.page-down.prevent.stop="$focus.last()"
       role="tablist"
       aria-label="Platform sections"
-      class="tabs p-1.5 bg-black/25 flex items-end border-(1 dotted gray-500/50) rounded-lg after:(content-[''] bg-gray-500/20 absolute left-[anchor(left)] top-[anchor(top)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none rounded transition-[left,right])"
+      class="tabs p-1.5 bg-black/25 shrink-0 flex items-end border-(1 dotted gray-500/50) rounded-lg before:(content-[''] bg-gray-500/20 absolute left-[anchor(left)] top-[anchor(top)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none rounded transition-[left,right])"
     >
       <template x-for="(item, index) in nav" hidden>
         <li>
           <button
             @mousedown.prevent
-            @click="active = index"
-            @focus="active = index"
+            @click="setActive(index)"
+            @focus="setActive(index)"
             :id="'tab-'+ index"
             :tabindex="index === active ? 0 : -1"
             :aria-controls="'panel-'+ index"
             :aria-selected="index === active"
             :class="index === active && 'tab-active'"
-            class="tab py-0 pl-5 pr-3 h-9 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition hover:text-white [&.tab-active]:(text-white bg-gray-500/20 ring-(1 inset white/10) rounded [anchor-name:--tab-active])"
+            class="tab py-0 pl-5 pr-3 border-(t transparent) h-9 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition hover:text-white [&.tab-active]:(border-gray-500/50 bg-gray-500/20 text-white rounded [anchor-name:--tab-active])"
             role="tab"
           >
             <span x-text="item"></span>
@@ -49,6 +83,7 @@ layout: layouts/default.njk
         </li>
       </template>
     </ul>
+    <div class="border-(t r dotted gray-500/50) h-6 w-full max-w-[1.5rem] rounded-tr-lg lg:(max-w-none grow)" aria-hidden="true"></div>
   </nav>
 
   {{ content | safe }}

@@ -1,7 +1,7 @@
 ---
-title: New-Style NES
+title: Nintendo Entertainment System
 platform: nintendo-entertainment-system
 system_type: console
-variation: Top Loader 101
+variation: US
 accessories: ''
 ---

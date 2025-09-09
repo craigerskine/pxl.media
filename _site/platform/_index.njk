@@ -4,7 +4,7 @@ title: Platforms
 eleventyComputed:
   eleventyNavigation:
     key: "{{ title }}"
-    title: Games by
+    title: Filtered by
     icon: mdi:cube
     order: 1
 permalink: /platform/
@@ -13,7 +13,7 @@ permalink: /platform/
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/category.njk' import category -%}
 
-{%- call heading(tag='h1',label='Games by platform') -%}{%- endcall -%}
+{%- call heading(tag='h1',label=title) -%}{%- endcall -%}
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.platform -%}
   {%- if item.data.games !== false -%}

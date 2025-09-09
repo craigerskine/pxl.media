@@ -2,10 +2,10 @@
 {%- set slot = caller() -%}
 <div class="group container mx-auto px-4 flex items-center relative">
   <div class="py-1 pr-4 text-7xl leading-none flex-1">
-    <h1{% if ico %} class="flex items-center space-x-5"{% endif %}>
+    <h1{% if ico %} class="flex items-center justify-center space-x-5 lg:justify-start"{% endif %}>
       <span class="flex items-center">
         {%- if logo %}
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-auto h-16 fill-current">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="mx-auto w-auto h-16 fill-current lg:mx-0">
           <title>{{ title }}</title>
           <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ title | slugify }}" />
         </svg>

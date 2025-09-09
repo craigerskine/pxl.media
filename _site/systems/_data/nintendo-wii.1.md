@@ -2,6 +2,6 @@
 title: Wii
 platform: wii
 system_type: console
-variation: Mario Kart Black
-accessories: ''
+variation: Black
+accessories: + Mario Kart Bundle
 ---

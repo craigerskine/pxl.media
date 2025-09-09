@@ -1,5 +1,5 @@
 ---
-title: PlayStation 5 Digital
+title: PlayStation 5
 platform: playstation-5
 system_type: console
 variation: Digital

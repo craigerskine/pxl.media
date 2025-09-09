@@ -1,5 +1,5 @@
 ---
-title: Polymega Turbo
+title: Turbo
 platform: polymega
 system_type: console
 variation: TG-16

@@ -3,5 +3,5 @@
 {%- from 'components/game.njk' import game -%}
 
 {%- call mast(title='',label=title,ico=ico) %}{%- endcall %}
-{%- call heading(tag='h2',label='Games owned',sub=collections['genre_'+ page.fileSlug +''].length) %}{%- endcall %}
+{%- call heading(tag='h2',label='Games',sub=collections['genre_'+ page.fileSlug +''].length) %}{%- endcall %}
 {{ game(games=collections['genre_'+ page.fileSlug],platforms=collections.platform,genres=collections.genre) }}

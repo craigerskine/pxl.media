@@ -4,7 +4,7 @@ title: Genres
 eleventyComputed:
   eleventyNavigation:
     key: "{{ title }}"
-    title: Games by
+    title: Filtered by
     icon: mdi:pound
     order: 2
 permalink: /genre/
@@ -13,7 +13,7 @@ permalink: /genre/
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/category.njk' import category -%}
 
-{%- call heading(tag='h1',label='Games by genre') -%}{%- endcall -%}
+{%- call heading(tag='h1',label=title) -%}{%- endcall -%}
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.genre -%}
   {%- set total -%}

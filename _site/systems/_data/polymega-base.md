@@ -1,5 +1,5 @@
 ---
-title: Polymega
+title: Base
 platform: polymega
 system_type: console
 variation: Base
