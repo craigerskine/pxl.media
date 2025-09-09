@@ -13,7 +13,7 @@ layout: layouts/default.njk
 {%- call mast(title=title,logo=logo) %}{%- endcall %}
 
 <article x-data='{ active: 0, nav: {{ nav | dump | safe }} }' x-id="['tab']">
-  <nav class="py-8 px-4">
+  <nav class="py-8 px-4 flex">
     <ul
       x-ref="tablist"
       @keydown.right.prevent.stop="$focus.wrap().next()"
@@ -24,7 +24,7 @@ layout: layouts/default.njk
       @keydown.page-down.prevent.stop="$focus.last()"
       role="tablist"
       aria-label="Platform sections"
-      class="tabs border-(b dotted gray-500/50) flex items-end after:(content-[''] h-0.5 bg-brand-500 absolute left-[anchor(left)] right-[anchor(right)] bottom-[anchor(bottom)] [position-anchor:--tab-active] transition-[left,right])"
+      class="tabs p-1.5 bg-black/25 flex items-end border-(1 dotted gray-500/50) rounded-lg after:(content-[''] bg-gray-500/20 absolute left-[anchor(left)] top-[anchor(top)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none rounded transition-[left,right])"
     >
       <template x-for="(item, index) in nav" hidden>
         <li>
@@ -37,11 +37,11 @@ layout: layouts/default.njk
             :aria-controls="'panel-'+ index"
             :aria-selected="index === active"
             :class="index === active && 'tab-active'"
-            class="tab py-0 pl-5 pr-3 h-11 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition [&.tab-active]:(text-white [anchor-name:--tab-active])"
+            class="tab py-0 pl-5 pr-3 h-9 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition hover:text-white [&.tab-active]:(text-white bg-gray-500/20 ring-(1 inset white/10) rounded [anchor-name:--tab-active])"
             role="tab"
           >
             <span x-text="item"></span>
-            <sup class="badge text-(gray-500 xs) flex items-center justify-center">
+            <sup class="badge text-xs flex items-center justify-center opacity-60">
               <span x-show="index === 0">{{ games | length }}</span>
               <span x-show="index === 1">{{ systems | length }}</span>
             </sup>
@@ -67,7 +67,7 @@ layout: layouts/default.njk
           {%- for item in systems %}
             {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
             {{ category(title=item.data.title,subtext=sub,bg_img='https://placehold.net/default.svg') }}
-            {#- {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ company +'-'+ item.title | slugify +'.jpg') }} -#}
+            {#- {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ item.data.title | slugify +'-'+ item.data.variation | slugify +'.jpg') }} -#}
           {%- endfor %}
         </ul>
       {%- endif %}
