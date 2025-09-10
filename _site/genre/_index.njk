@@ -13,7 +13,7 @@ permalink: /genre/
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/category.njk' import category -%}
 
-{%- call heading(tag='h1',label=title) -%}{%- endcall -%}
+{%- call heading(tag='h1',label=title,sub=collections.genre.length) -%}{%- endcall -%}
 <ul class="container flex-(& wrap) justify-center md:(justify-start)">
 {%- for item in collections.genre -%}
   {%- set total -%}

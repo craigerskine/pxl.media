@@ -85,13 +85,13 @@ layout: layouts/default.njk
     {{ stat({
       tag: 'h1',
       ico: 'mdi:television-classic',
-      value: collections.system.length.toLocaleString(),
-      title: 'Systems',
-      url: '/systems/',
+      value: collections.platform.length.toLocaleString(),
+      title: 'Platforms',
+      url: '/platform/',
       sub: [
         {
-          title: 'Consoles',
-          value: (systemsConsolesAll.length+systemsHybridsAll.length).toLocaleString()
+          title: 'Systems',
+          value: collections.system.length.toLocaleString()
         },
         {
           title: 'Handhelds',

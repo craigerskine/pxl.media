@@ -1,16 +1,14 @@
 {%- macro heading(tag='h1',label='',sub='',alt='',alt_sub='',url='') %}
-  <div class="h-hr mt-8 mb-6 pb-2 px-4 text-(gray-400 sm center) font-bold uppercase flex-(& col) relative md:(text-left items-start)">
+  <div class="h-hr mt-8 mb-6 pb-2 px-4 text-(gray-400 sm center) font-bold uppercase flex-(& col) relative before:(border-(b dotted gray-500/50) w-full block order-last) after:(border-(b dotted gray-500/50) w-full max-w-[300px] block) md:(text-left items-start)">
     <div class="pb-2 w-full flex-(& wrap) items-center">
-      <{{ tag }} class="relative">
-        {%- if sub !== '' %}<b class="mr-2 text-xs opacity-75">{{ sub }}</b>{%- endif %}
+      <{{ tag }} class="flex items-center gap-1.5 relative">
         {{ label }}
         {{ caller() if caller }}
         {%- if alt_sub !== '' %}<b class="ml-4 mr-2 text-xs opacity-75">{{ alt_sub }}</b>{%- endif %}
         {{ alt }}
+        {%- if sub !== '' %}<sup class="text-xs opacity-75">{{ sub }}</sup>{%- endif %}
         {%- if url !== '' %}<a href="{{ url }}" class="absolute inset-0"><span class="sr-only">{{ label }}</span></a>{%- endif %}
       </{{ tag }}>
     </div>
-    <b class="border-(b dotted current) w-full max-w-[300px] opacity-60" aria-hidden="true"></b>
-    <b class="border-(b dotted current) w-full opacity-30" aria-hidden="true"></b>
   </div>
 {%- endmacro %}
