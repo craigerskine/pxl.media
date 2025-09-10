@@ -55,7 +55,7 @@ layout: layouts/default.njk
   }'
   x-id="['tab']"
 >
-  <nav class="py-8 px-4">
+  <nav class="mt-8 mb-6 px-4 pb-4">
     <ul
       x-ref="tablist"
       @keydown.right.prevent.stop="$focus.wrap().next()"
@@ -90,6 +90,7 @@ layout: layouts/default.njk
           </button>
         </li>
       </template>
+      <li class="ml-auto self-center"><a href="../" class="w-9 h-9 flex items-center justify-center rounded-full transition hover:bg-white/10" aria-label="Back to platforms" x-tooltip="'Back to platforms'"><iconify-icon icon="mdi:arrow-left-top" width="1.5rem" height="1.5rem" class="iconify" noobserver></iconify-icon></a></li>
     </ul>
   </nav>
 
