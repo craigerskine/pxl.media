@@ -41,7 +41,15 @@ layout: layouts/default.njk
     setActive(i) { this.active = i; },
     updateQuery(val) {
       const url = new URL(window.location);
-      url.searchParams.set(this.param, val);
+      if (this.active === 0) {
+        url.searchParams.delete(this.param);
+        if ([...url.searchParams].length === 0) {
+          history.replaceState({}, "", url.pathname + url.hash);
+          return;
+        }
+      } else {
+        url.searchParams.set(this.param, val);
+      }
       history.replaceState({}, "", url);
     },
   }'
