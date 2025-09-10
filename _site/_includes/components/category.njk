@@ -1,7 +1,7 @@
 {%- macro category(title='',subtext='',url='',bg_color='',bg_img='',fg_img='',fg_ico='',ico='',svg_title='') %}
   <li class="mx-auto lg:mx-0 w-full max-w-xs flex">
     <{% if url !== '' %}a href="{{ url }}"{% else %}div{% endif %} class="category mb-12 mx-4 pb-1 w-full flex flex-col relative motion-safe:transition{% if url !== '' %} group hover:text-white{% endif %}">
-      <div class="mb-1 p-4 bg-(white/5 center cover no-repeat) text-gray-400 flex items-center relative overflow-hidden rounded-lg before:(content-[''] h-px bg-white/10 absolute top-0 inset-x-0) motion-safe:(transition) group-hover:(text-white){% if bg_img !== '' %} h-32{% endif %}"
+      <div class="mb-1 p-4 bg-(white/5 center contain no-repeat) text-gray-400 flex items-center relative overflow-hidden rounded-lg before:(content-[''] h-px bg-white/10 absolute top-0 inset-x-0) motion-safe:(transition) group-hover:(text-white){% if bg_img !== '' %} h-32{% endif %}"
         {%- if bg_img !== '' %} style="background-image: url('{{ bg_img }}');"{%- endif %}>
         <b class="ui-hover absolute inset-0 opacity-0 rounded-lg transform scale-50 motion-safe:(transition) group-hover:(bg-brand-500/20 opacity-100 scale-100)" aria-hidden="true"></b>
         {%- if fg_img !== '' %}
