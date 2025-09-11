@@ -38,7 +38,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
 
   // shortcodes
-  eleventyConfig.addShortcode('bust', () => `${new Date().getFullYear()}${new Date().getMonth()}${new Date().getDate()}${new Date().getHours()}`);
+  eleventyConfig.addShortcode('bust', () => `${new Date().getFullYear()}${new Date().getMonth()}${new Date().getDate()}${new Date().getMinutes()}`);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode('build', (part = 'formatted') => {
     const now = new Date();

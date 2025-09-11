@@ -6,7 +6,7 @@
         <b class="ui-hover absolute inset-0 opacity-0 rounded-lg transform scale-50 motion-safe:(transition) group-hover:(bg-brand-500/20 opacity-100 scale-100)" aria-hidden="true"></b>
         {%- if fg_img !== '' %}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current relative">
-          <title>{{ title }} {{ svg_title }}</title>
+          <title>{{ title }}{{ (' '+ svg_title) if not title }}</title>
            <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ svg_title | slugify }}" />
         </svg>
         {%- endif %}
