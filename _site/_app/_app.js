@@ -34,7 +34,7 @@ install({
   },
   rules: [
     ['text-wrap-(unset|wrap|nowrap|balance)', 'textWrap'],
-    ['bg-gradient-radial', 'bg-[radial-gradient(closest-side,var(--tw-gradient-stops))]'],
+    ['bg-gradient-radial', 'bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))]'],
     ['bg-gradient-conic', 'bg-[conic-gradient(from_180deg,var(--tw-gradient-stops))]'],
     ['container-', ({ $$ }) => `mx-auto w-full max-w-${$$}`],
     ['bg-grid', { 'background-image': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'4\' viewBox=\'0 0 4 4\'><g fill=\'rgb(128 128 128 / .05)\'><polygon points=\'4 0 4 4 3 4 3 1 0 1 0 0\' /></g></svg>")', }],
