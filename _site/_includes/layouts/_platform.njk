@@ -79,7 +79,7 @@ layout: layouts/default.njk
             :aria-controls="'panel-'+ index"
             :aria-selected="index === active"
             :class="index === active && 'tab-active'"
-            class="tab py-0 pl-5 pr-3 border-(t transparent) h-11 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition duration-300 hover:text-white [&.tab-active]:(text-white shadow-[inset_0_-4px_theme(colors.brand.500)] [anchor-name:--tab-active])"
+            class="tab py-0 pl-5 pr-3 border-(t transparent) h-11 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition duration-500 hover:text-white [&.tab-active]:(text-white shadow-[inset_0_-4px_theme(colors.brand.500)] [anchor-name:--tab-active])"
             role="tab"
           >
             <span x-text="item"></span>
