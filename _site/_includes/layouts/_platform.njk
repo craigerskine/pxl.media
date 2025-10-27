@@ -66,7 +66,7 @@ layout: layouts/default.njk
       @keydown.page-down.prevent.stop="$focus.last()"
       role="tablist"
       aria-label="Platform sections"
-      class="tabs border-(b dotted gray-500/50) flex items-end before:(content-[''] h-1 bg-brand-500 absolute left-[anchor(left)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none transition-[left,right])"
+      class="tabs border-(b dotted gray-500/50) flex items-end before:(content-[''] h-1 bg-brand-500 absolute left-[anchor(left)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none transition-[left,right] ease-in-out)"
     >
       <template x-for="(item, index) in nav" hidden>
         <li>
@@ -78,8 +78,8 @@ layout: layouts/default.njk
             :tabindex="index === active ? 0 : -1"
             :aria-controls="'panel-'+ index"
             :aria-selected="index === active"
-            :class="index === active && 'tab-active'"
-            class="tab py-0 pl-5 pr-3 border-(t transparent) h-11 font-semibold uppercase flex items-center gap-1.5 cursor-pointer transition duration-500 hover:text-white [&.tab-active]:(text-white shadow-[inset_0_-4px_theme(colors.brand.500)] [anchor-name:--tab-active])"
+            :class="index === active ? 'tab-active transition' : 'transition-none'"
+            class="tab py-0 pl-5 pr-3 border-(t transparent) h-11 font-semibold uppercase flex items-center gap-1.5 cursor-pointer delay-200 duration-500 hover:text-white [&.tab-active]:(text-white shadow-[inset_0_-4px_theme(colors.brand.500)] [anchor-name:--tab-active])"
             role="tab"
           >
             <span x-text="item"></span>
