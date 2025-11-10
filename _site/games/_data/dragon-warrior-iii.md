@@ -3,6 +3,7 @@ title: 'Dragon Warrior III'
 tags:
   - platform_game-boy-color
   - genre_rpg
+note: Dragon Quest
 digital: false
 physical: true
 guide: false
