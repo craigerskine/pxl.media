@@ -18,9 +18,9 @@ gh:
       <p class="text-xs opacity-70">#{{ commit.abbrevHash }}</p>
     </aside>
     <div class="flex-(& col) items-center shrink-0 pointer-events-none" aria-hidden="true">
-      <b class="w-4 h-4 border-(1 gray-500/50) flex items-center justify-center rounded-full"></b>
+      <b class="w-4 h-4 bg-green-500/30 text-(green-500 xs) flex items-center justify-center rounded-full outline-(& 1 current offset-1)"><iconify-icon icon="mdi:check" class="iconify" noobserver></iconify-icon></b>
       {%- if not loop.last %}
-        <i class="w-px border-(l gray-500/50) flex-1"></i>
+        <i class="my-1 w-px border-(l dotted gray-500/50) flex-1"></i>
       {%- endif %}
     </div>
     <article class="pb-10 grow">
