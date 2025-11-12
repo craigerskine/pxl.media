@@ -3,15 +3,15 @@ contains both the default AND alpine
 components with shared classes
 -#}
 
-{%- set cls_game_list = 'pb-4 flex flex-wrap' -%}
+{%- set cls_game_list = 'pb-4 flex-(& wrap)' -%}
 {%- set cls_game = 'mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)' -%}
-{%- set cls_box = 'w-full bg-white/5 flex flex-wrap relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 dotted gray-500/50 offset-2)' -%}
+{%- set cls_box = 'w-full bg-white/5 flex-(& wrap) relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 gray-950/50) transition-all' -%}
 {%- set cls_box_cover = 'w-full h-16 bg-black/80 flex relative overflow-hidden rounded-t-lg' -%}
-{%- set cls_box_cover_img = 'w-full bg-(cover center) ring-(inset 1 white/30) relative rounded-t-lg after:(w-full absolute inset-0 backdrop-brightness-75)' -%}
-{%- set cls_box_logo = 'group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0 before:(bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90)' -%}
+{%- set cls_box_cover_img = 'w-full bg-(cover center) relative rounded-t-lg after:(w-full absolute inset-0 backdrop-brightness-75)' -%}
+{%- set cls_box_logo = 'group w-full p-2 flex items-end justify-end absolute inset-y-0 right-0 before:(w-1/2 bg-gradient-to-l from-gray-950/90 via-gray-950/90 block absolute inset-y-0 right-0 rounded-tr-lg) after:(pointer-events-none ring-(inset 1 white/20) absolute inset-0 rounded-t-lg)' -%}
 {%- set cls_box_logo_link = 'text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)' -%}
 {%- set cls_box_logo_img = 'w-[80px] h-auto fill-current' -%}
-{%- set cls_details = 'w-full flex' -%}
+{%- set cls_details = 'border-(t gray-950/50) w-full flex' -%}
 {%- set cls_meta = 'p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all' -%}
 {%- set cls_mast = 'mb-2' -%}
 {%- set cls_name = 'text-(white base) font-black block truncate' -%}
@@ -75,14 +75,12 @@ components with shared classes
                 <li>
                   <ul class="tags {{ cls_tags }}">
                   {%- for i in range(0, 3) -%}
-                    {%- set tip -%}
-                      {%- if i === 0 %}Physical{%- endif %}
-                      {%- if i === 1 %}Digital{%- endif %}
-                      {%- if i === 2 %}Guide{%- endif %}
-                    {%- endset -%}
+                    {%- set labels = ['Physical', 'Digital', 'Guide'] -%}
+                    {%- set tip = labels[i] -%}
+                    {%- set icons = ['mdi:chip', 'mdi:qrcode', 'mdi:notebook'] -%}
                     {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
                       <li x-tooltip="'{{ tip }}'" class="tag {{ cls_tag }}" tabindex="0">
-                        <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" noobserver></iconify-icon>
+                        <iconify-icon icon="{{ icons[i] }}" noobserver></iconify-icon>
                       </li>
                     {%- endif %}
                   {%- endfor %}
