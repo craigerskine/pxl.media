@@ -63,6 +63,24 @@ import focus from '@alpinejs/focus';
 import tippy from 'tippy.js';
 
 document.addEventListener('alpine:init', () => {
+  Alpine.data('app', () => ({
+    query: new URLSearchParams(location.search).get('q'),
+    slugify(text) {
+      return text?.toString()
+        .toLowerCase()
+        .normalize('NFKD')
+        .trim()
+        .toLowerCase()
+        .replace(/[^\w\-]+/g, '-')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+    },
+    csv(text) {
+      return text?.toString().replace(',', ', ')
+    },
+  }));
+
+
   // tooltip
   // magic: @focus="$tooltip('some tooltip')"
   Alpine.magic('tooltip', el => message => {

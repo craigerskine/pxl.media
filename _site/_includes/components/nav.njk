@@ -77,7 +77,8 @@
               title="Search"
               autocomplete="off"
               class="px-3 w-full h-10 bg-black/50 text-sm font-semibold rounded-full ring-(inset 2 transparent) motion-safe:(transition) placeholder:(font-normal text-white/25) [&::-webkit-search-cancel-button]:(ml-2 w-3 h-6 appearance-none bg-(close center no-repeat) block opacity-50 cursor-pointer)"
-              x-on:keydown.window.prevent.meta.k="open = true; $nextTick(() => $el.focus())"
+              x-model="query"
+              @keydown.window.prevent.meta.k="open = true; $nextTick(() => $el.focus())"
             />
           </form>
         </li>

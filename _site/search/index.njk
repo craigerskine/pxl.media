@@ -6,7 +6,7 @@ title: Search results
 {%- from 'components/heading.njk' import heading -%}
 {%- from 'components/game.njk' import game_alpine -%}
 
-<div x-data="app" x-init="gamesFiltered">
+<div x-data="search" x-init="gamesFiltered">
   {%- call heading(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-text="total > 1 ? 'results' : 'result'"></span> for: <i x-text="query" class="ml-1 text-gray-400 font-normal"></i>{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
     <template x-for="item in gamesFiltered" :key="item.id" hidden>
@@ -25,8 +25,7 @@ title: Search results
 
 <script>
   document.addEventListener('alpine:init', () => {
-    Alpine.data('app', () => ({
-      query: new URLSearchParams(location.search).get('q'),
+    Alpine.data('search', () => ({
       games: null,
       loading: true,
       results: false,
@@ -60,19 +59,6 @@ title: Search results
           }
         }
         return null;
-      },
-      slugify(text) {
-        return text?.toString()
-          .toLowerCase()
-          .normalize('NFKD')
-          .trim()
-          .toLowerCase()
-          .replace(/[^\w\-]+/g, '-')
-          .replace(/\s+/g, '-')
-          .replace(/-+/g, '-')
-      },
-      csv(text) {
-        return text?.toString().replace(',', ', ')
       },
     }));
   });
