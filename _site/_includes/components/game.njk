@@ -4,24 +4,24 @@ components with shared classes
 -#}
 
 {%- set cls_game_list = 'pb-4 flex-(& wrap)' -%}
-{%- set cls_game = 'mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)' -%}
-{%- set cls_box = 'w-full bg-white/5 flex-(& wrap) relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 gray-950/50) transition-all' -%}
-{%- set cls_box_cover = 'w-full h-16 bg-black/80 flex relative overflow-hidden rounded-t-lg' -%}
+{%- set cls_game = 'mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:z-20 focus-within:z-20 lg:mx-0' -%}
+{%- set cls_box = 'group w-full bg-white/5 flex-(& wrap) relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 gray-950/50)' -%}
+{%- set cls_box_cover = 'w-full h-16 bg-gray-950/90 flex relative overflow-hidden rounded-t-lg' -%}
 {%- set cls_box_cover_img = 'w-full bg-(cover center) relative rounded-t-lg after:(w-full absolute inset-0 backdrop-brightness-75)' -%}
-{%- set cls_box_logo = 'group w-full p-2 flex items-end justify-end absolute inset-y-0 right-0 before:(w-1/2 bg-gradient-to-l from-gray-950/90 via-gray-950/90 block absolute inset-y-0 right-0 rounded-tr-lg) after:(pointer-events-none ring-(inset 1 white/20) absolute inset-0 rounded-t-lg)' -%}
-{%- set cls_box_logo_link = 'text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)' -%}
+{%- set cls_box_logo = 'w-full p-2 flex items-end justify-end absolute inset-y-0 right-0 before:(w-1/2 bg-gradient-to-l from-gray-950/90 via-gray-950/90 block absolute inset-y-0 right-0 rounded-tr-lg) after:(pointer-events-none ring-(inset 1 white/20) absolute inset-0 rounded-t-lg)' -%}
+{%- set cls_box_logo_link = 'text-gray-200/75 block relative transition hover:text-gray-50' -%}
 {%- set cls_box_logo_img = 'w-[80px] h-auto fill-current' -%}
-{%- set cls_details = 'border-(t gray-950/50) w-full flex' -%}
-{%- set cls_meta = 'p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all' -%}
-{%- set cls_mast = 'mb-2' -%}
-{%- set cls_name = 'text-(white base) font-black block truncate' -%}
-{%- set cls_note = 'w-full min-w-0 text-(gray-400 xs) block truncate flex-1' -%}
-{%- set cls_footer = 'py-2 border-(t dotted gray-500/50) w-full text-base flex items-center justify-between' -%}
-{%- set cls_genres = 'flex items-center space-x-4' -%}
-{%- set cls_genres_link = 'text-xl flex items-center justify-center relative transition hover:text-white' -%}
-{%- set cls_tags = 'flex items-center space-x-2' -%}
+{%- set cls_details = 'pb-1.5 border-(t gray-950/50) w-full flex' -%}
+{%- set cls_meta = 'p-1.5 pt-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between' -%}
+{%- set cls_mast = 'mb-3' -%}
+{%- set cls_name = 'px-1.5 text-(white base) font-black block truncate' -%}
+{%- set cls_note = 'px-1.5 w-full min-w-0 text-(gray-400 xs) block truncate flex-1' -%}
+{%- set cls_footer = 'p-1.5 w-full text-base flex items-center justify-between ring-(inset 1 gray-500/20) rounded-md transition group-hover:bg-gray-400/10' -%}
+{%- set cls_genres = 'flex items-center gap-3' -%}
+{%- set cls_genres_link = 'text-lg flex items-center justify-center relative transition hover:text-gray-50' -%}
+{%- set cls_tags = 'flex items-center gap-3' -%}
 {%- set cls_tag = 'text-lg flex items-center justify-center relative opacity-50' -%}
-{%- set cls_pending = 'w-2 h-2 text-red-500 bg-current cursor-pointer absolute top-2 right-2 rounded-full after:(ring-(2 current) absolute inset-0 z-10 rounded-full animate-ping)' -%}
+{%- set cls_pending = 'w-2 h-2 text-brand-500 bg-current bg-gradient-to-b from-white/75 via-transparent cursor-pointer absolute top-2 right-2 rounded-full after:(ring-(2 current) absolute inset-0 z-10 rounded-full animate-ping)' -%}
 
 {#-
 *** DEFAULT ***
@@ -51,9 +51,9 @@ components with shared classes
           <div class="details {{ cls_details }}">
             <div class="meta {{ cls_meta }}">
               <div class="mast {{ cls_mast }}">
-                <b class="name {{ cls_name }}" title="...{{ item.data.title }}">{{ item.data.title }}</b>
+                <b class="name {{ cls_name }}" title="{{ item.data.title }}">{{ item.data.title }}</b>
                 <p class="note">
-                  <i class="{{ cls_note }}" title="...{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
+                  <i class="{{ cls_note }}" title="{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
                 </p>
               </div>
               <ul class="footer {{ cls_footer }}">
@@ -120,9 +120,9 @@ components with shared classes
       <div class="details {{ cls_details }}">
         <div class="meta {{ cls_meta }}">
           <div class="mast {{ cls_mast }}">
-            <b class="name {{ cls_name }}" :title="'...'+ item.title" x-text="item.title"></b>
+            <b class="name {{ cls_name }}" :title="''+ item.title" x-text="item.title"></b>
             <p class="note">
-              <i class="{{ cls_note }}" :title="'...'+ item.note" x-html="item.note ? item.note : '&nbsp;'"></i>
+              <i class="{{ cls_note }}" :title="''+ item.note" x-html="item.note ? item.note : '&nbsp;'"></i>
             </p>
           </div>
           <ul class="footer {{ cls_footer }}">
