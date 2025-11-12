@@ -2,7 +2,7 @@
 <ul class="list-game pb-4 flex flex-wrap">
 {%- for item in games | sort(reverse, false, by) %}
   <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)">
-    <div class="box w-full bg-white/5 flex flex-wrap relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 gray-500/50 dotted offset-2)">
+    <div class="box w-full bg-white/5 flex flex-wrap relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 dotted gray-500/50 offset-2)">
       <div class="box-cover w-full h-16 bg-black/80 flex relative overflow-hidden rounded-t-lg">
         <div class="box-cover-img w-full bg-(cover center) flex ring-(inset 1 white/10)" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')">
           <div class="w-full backdrop-brightness-75"></div>

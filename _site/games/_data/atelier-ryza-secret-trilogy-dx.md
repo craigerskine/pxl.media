@@ -7,6 +7,6 @@ note: 'Physical: Asia'
 physical: true
 digital: false
 guide: false
-pending: true
-date: 2025-12-31
+pending: false
+date: 2025-11-12
 ---
