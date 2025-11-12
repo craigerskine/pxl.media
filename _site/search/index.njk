@@ -4,12 +4,13 @@ title: Search results
 ---
 
 {%- from 'components/heading.njk' import heading -%}
+{%- from 'components/game.njk' import game_alpine -%}
 
 <div x-data="app" x-init="gamesFiltered">
   {%- call heading(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-text="total > 1 ? 'results' : 'result'"></span> for: <i x-text="query" class="ml-1 text-gray-400 font-normal"></i>{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
     <template x-for="item in gamesFiltered">
-      {% include 'components/game_alpine.njk' %}
+      {{ game_alpine() }}
     </template>
   </ul>
   <h2 x-show="!results && !loading" class="m-auto py-8 px-4 text-(gray-500 3xl center) leading-none font-bold md:(py-32)">

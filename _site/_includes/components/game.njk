@@ -1,78 +1,174 @@
-{%- macro game(games=[],platforms=[],genres=[],by='data.title',reverse=false) %}
-<ul class="list-game pb-4 flex flex-wrap">
-{%- for item in games | sort(reverse, false, by) %}
-  <li class="game mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)">
-    <div class="box w-full bg-white/5 flex flex-wrap relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 dotted gray-500/50 offset-2)">
-      <div class="box-cover w-full h-16 bg-black/80 flex relative overflow-hidden rounded-t-lg">
-        <div class="box-cover-img w-full bg-(cover center) flex ring-(inset 1 white/10)" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')">
-          <div class="w-full backdrop-brightness-75"></div>
-        </div>
-        <div class="group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0">
-          <div class="box-backdrop bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90"></div>
-          {%- for t in item.data.tags %}
-          {%- for p in platforms %}
-          {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
-          <a href="/platform/{{ p.data.page.fileSlug }}/" class="text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="w-[80px] h-auto fill-current">
-              <title>{{ p.data.title }}</title>
-              <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ p.data.title | slugify }}" />
-            </svg>
-          </a>
-          {%- endif %}
-          {%- endfor %}
-          {%- endfor %}
-        </div>
-      </div>
-      <div class="details w-full flex">
-        <div class="meta p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all">
-          <div class="mast mb-2">
-            <b class="name text-(white base) font-black block truncate" title="...{{ item.data.title }}">{{ item.data.title }}</b>
-            <p class="note">
-              <i class="w-full min-w-0 text-(gray-400 xs) block truncate flex-1" title="...{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
-            </p>
-          </div>
-          <ul class="py-2 border-(t dotted gray-500/50) w-full text-base flex items-center">
-            <li class="flex-1">
-              <ul class="tags flex items-center space-x-4">
-                {%- for t in item.data.tags %}
-                {%- for g in genres %}
-                {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
-                <li>
-                  <a href="/genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title }}'" class="flex relative motion-safe:transition hover:(text-white)" title="{{ g.data.title }}">
-                    <iconify-icon icon="{{ g.data.ico }}" inline="false" class="m-auto text-xl" noobserver></iconify-icon>
-                  </a>
-                </li>
-                {%- endif %}
-                {%- endfor %}
-                {%- endfor %}
-              </ul>
-            </li>
-            <li class="ml-auto">
-              <ul class="icons flex items-center space-x-2">
-              {% for i in range(0, 3) -%}
-              {%- set tip %}
-                {%- if i === 0 %}Physical{%- endif %}
-                {%- if i === 1 %}Digital{%- endif %}
-                {%- if i === 2 %}Guide{%- endif %}
-              {%- endset %}
-              {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
-                <li x-tooltip="'{{ tip }}'" class="flex relative" tabindex="0">
-                  <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" inline="false" class="m-auto text-xl opacity-50" noobserver></iconify-icon>
-                </li>
+{#-
+contains both the default AND alpine
+components with shared classes
+-#}
+
+{%- set cls_game_list = 'pb-4 flex flex-wrap' -%}
+{%- set cls_game = 'mx-auto mb-8 px-4 w-full max-w-xs flex relative hover:(z-20) focus-within:(z-20) lg:(mx-0)' -%}
+{%- set cls_box = 'w-full bg-white/5 flex flex-wrap relative rounded-lg ring-(inset 1 white/5) shadow-lg outline-(& 1 dotted gray-500/50 offset-2)' -%}
+{%- set cls_box_cover = 'w-full h-16 bg-black/80 flex relative overflow-hidden rounded-t-lg' -%}
+{%- set cls_box_cover_img = 'w-full bg-(cover center) ring-(inset 1 white/30) relative rounded-t-lg after:(w-full absolute inset-0 backdrop-brightness-75)' -%}
+{%- set cls_box_logo = 'group w-1/2 p-2 flex items-end justify-end absolute inset-y-0 right-0' -%}
+{%- set cls_box_logo_backdrop = 'bg-gradient-to-l from-[#111] via-[#111] to-transparent block absolute inset-0 opacity-90' -%}
+{%- set cls_box_logo_link = 'text-gray-200/75 block relative motion-safe:transition hover:(text-white/100)' -%}
+{%- set cls_box_logo_img = 'w-[80px] h-auto fill-current' -%}
+{%- set cls_details = 'w-full flex' -%}
+{%- set cls_meta = 'p-3 pb-0 w-full min-w-0 flex-1 flex flex-col justify-between motion-safe:transition-all' -%}
+{%- set cls_mast = 'mb-2' -%}
+{%- set cls_name = 'text-(white base) font-black block truncate' -%}
+{%- set cls_note = 'w-full min-w-0 text-(gray-400 xs) block truncate flex-1' -%}
+{%- set cls_footer = 'py-2 border-(t dotted gray-500/50) w-full text-base flex items-center justify-between' -%}
+{%- set cls_genres = 'flex items-center space-x-4' -%}
+{%- set cls_genres_link = 'text-xl flex items-center justify-center relative transition hover:text-white' -%}
+{%- set cls_tags = 'flex items-center space-x-2' -%}
+{%- set cls_tag = 'text-lg flex items-center justify-center relative opacity-50' -%}
+{%- set cls_pending = 'w-2 h-2 text-red-500 bg-current cursor-pointer absolute top-2 right-2 rounded-full after:(ring-(2 current) absolute inset-0 z-10 rounded-full animate-ping)' -%}
+
+{#-
+*** DEFAULT ***
+-#}
+{%- macro game(games=[],platforms=[],genres=[],by='data.title',reverse=false) -%}
+  <ul class="game-list {{ cls_game_list }}">
+    {%- for item in games | sort(reverse, false, by) %}
+      <li class="game {{ cls_game }}">
+        <div class="box {{ cls_box }}">
+          <div class="box-cover {{ cls_box_cover}}">
+            <div class="box-cover-img {{ cls_box_cover_img }}" style="background-image: url('/_assets/img/games/{{ item.data.page.fileSlug }}.jpg')"></div>
+            <div class="box-logo {{ cls_box_logo }}">
+              <div class="box-logo-backdrop {{ cls_box_logo_backdrop }}"></div>
+              {%- for t in item.data.tags %}
+              {%- for p in platforms %}
+              {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
+              <a href="/platform/{{ p.data.page.fileSlug }}/" class="box-logo-link {{ cls_box_logo_link }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ cls_box_logo_img }}">
+                  <title>{{ p.data.title }}</title>
+                  <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ p.data.title | slugify }}" />
+                </svg>
+              </a>
               {%- endif %}
               {%- endfor %}
+              {%- endfor %}
+            </div>
+          </div>
+          <div class="details {{ cls_details }}">
+            <div class="meta {{ cls_meta }}">
+              <div class="mast {{ cls_mast }}">
+                <b class="name {{ cls_name }}" title="...{{ item.data.title }}">{{ item.data.title }}</b>
+                <p class="note">
+                  <i class="{{ cls_note }}" title="...{{ item.data.note }}">{{ item.data.note | default('&nbsp;') | safe }}</i>
+                </p>
+              </div>
+              <ul class="footer {{ cls_footer }}">
+                <li>
+                  <ul class="genres {{ cls_genres }}">
+                    {%- for t in item.data.tags %}
+                    {%- for g in genres %}
+                    {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
+                    <li>
+                      <a href="/genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title }}'" class="genres-link {{ cls_genres_link }}" title="{{ g.data.title }}">
+                        <iconify-icon icon="{{ g.data.ico }}" noobserver></iconify-icon>
+                      </a>
+                    </li>
+                    {%- endif %}
+                    {%- endfor %}
+                    {%- endfor %}
+                  </ul>
+                </li>
+                <li>
+                  <ul class="tags {{ cls_tags }}">
+                  {%- for i in range(0, 3) -%}
+                    {%- set tip -%}
+                      {%- if i === 0 %}Physical{%- endif %}
+                      {%- if i === 1 %}Digital{%- endif %}
+                      {%- if i === 2 %}Guide{%- endif %}
+                    {%- endset -%}
+                    {%- if (i === 0 and item.data.physical) or (i === 1 and item.data.digital) or (i === 2 and item.data.guide) %}
+                      <li x-tooltip="'{{ tip }}'" class="tag {{ cls_tag }}" tabindex="0">
+                        <iconify-icon icon="{% if i === 0 %}mdi:chip{% endif %}{% if i === 1 %}mdi:qrcode{% endif %}{% if i === 2 %}mdi:notebook{% endif %}" noobserver></iconify-icon>
+                      </li>
+                    {%- endif %}
+                  {%- endfor %}
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {%- if item.data.pending %}
+          <a href="/games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
+            <span class="sr-only">Pending / Preordered</span>
+          </a>
+          {%- endif %}
+        </div>
+      </li>
+    {%- endfor %}
+  </ul>
+{%- endmacro -%}
+
+{#-
+*** ALPINE ***
+-#}
+{%- macro game_alpine() -%}
+  <li class="game {{ cls_game }}">
+    <div class="box {{ cls_box }}">
+      <div class="box-cover {{ cls_box_cover }}">
+        <div class="box-cover-img {{ cls_box_cover_img }}" :style="'background-image: url(/_assets/img/games/'+ item.id +'.jpg)'"></div>
+        <div class="box-logo {{ cls_box_logo }}">
+          <div class="box-logo-backdrop {{ cls_box_logo_backdrop }}"></div>
+          <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="box-logo-link {{ cls_box_logo_link }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ cls_box_logo_img }}">
+              <title x-text="item.platform.title"></title>
+              <use :href="'/_assets/platforms.svg?v={% bust %}#logo-'+ slugify(item.platform.title)" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="details {{ cls_details }}">
+        <div class="meta {{ cls_meta }}">
+          <div class="mast {{ cls_mast }}">
+            <b class="name {{ cls_name }}" :title="'...'+ item.title" x-text="item.title"></b>
+            <p class="note">
+              <i class="{{ cls_note }}" :title="'...'+ item.note" x-html="item.note ? item.note : '&nbsp;'"></i>
+            </p>
+          </div>
+          <ul class="footer {{ cls_footer }}">
+            <li>
+              <ul class="genres {{ cls_genres }}">
+                <template x-for="g in item.genre" hidden>
+                  <li>
+                    <a :href="'/genre/'+ slugify(g.title) +'/'" class="tag {{ cls_genres_link }}" x-tooltip="g.title">
+                      <iconify-icon :icon="g.ico" noobserver></iconify-icon>
+                    </a>
+                  </li>
+                </template>
+              </ul>
+            </li>
+            <li>
+              <ul class="tags {{ cls_tags }}">
+                <template x-for="i in 3">
+                  <template x-if="(i === 1 && item.physical) || (i === 2 && item.digital) || (i === 3 && item.guide)">
+                    <li class="tag {{ cls_tag }}" tabindex="0" x-tooltip="i === 1 ? 'Physical' : i === 2 ? 'Digital' : i === 3 ? 'Guide' : ''">
+                      <template x-if="i === 1">
+                        <iconify-icon icon="mdi:chip" noobserver></iconify-icon>
+                      </template>
+                      <template x-if="i === 2">
+                        <iconify-icon icon="mdi:qrcode" noobserver></iconify-icon>
+                      </template>
+                      <template x-if="i === 3">
+                        <iconify-icon icon="mdi:notebook" noobserver></iconify-icon>
+                      </template>
+                    </li>
+                  </template>
+                </template>
               </ul>
             </li>
           </ul>
         </div>
       </div>
-      {%- if item.data.pending %}
-      <a href="/games/pending/" x-tooltip="'Pending / Preordered'" class="w-2 h-2 text-red-500 bg-current cursor-pointer absolute top-2 right-2 rounded-full" aria-label="Pending / Preordered">
-        <i class="ring-(2 current) absolute inset-0 z-10 rounded-full animate-ping" aria-hidden="true"></i>
-      </a>
-      {%- endif %}
+      <template x-if="item.pending">
+        <a href="/games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
+          <span class="sr-only">Pending / Preordered</span>
+        </a>
+      </template>
     </div>
   </li>
-{%- endfor %}
-</ul>
-{%- endmacro %}
+{%- endmacro -%}
