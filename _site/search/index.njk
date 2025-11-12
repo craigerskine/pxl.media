@@ -9,7 +9,7 @@ title: Search results
 <div x-data="app" x-init="gamesFiltered">
   {%- call heading(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-text="total > 1 ? 'results' : 'result'"></span> for: <i x-text="query" class="ml-1 text-gray-400 font-normal"></i>{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
-    <template x-for="item in gamesFiltered">
+    <template x-for="item in gamesFiltered" :key="item.id" hidden>
       {{ game_alpine() }}
     </template>
   </ul>
@@ -34,7 +34,7 @@ title: Search results
       async gamesFiltered() {
         if (this.games === null) {
           try {
-            const response = await fetch('/search/data.json');
+            const response = await fetch('/search/data.json?v={% bust %}');
             const data = await response.json();
             this.games = data;
           } catch (error) {

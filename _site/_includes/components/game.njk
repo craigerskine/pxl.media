@@ -133,7 +133,7 @@ components with shared classes
           <ul class="footer {{ cls_footer }}">
             <li>
               <ul class="genres {{ cls_genres }}">
-                <template x-for="g in item.genre" hidden>
+                <template x-for="g in item.genre" :key="slugify(g)" hidden>
                   <li>
                     <a :href="'/genre/'+ slugify(g.title) +'/'" class="tag {{ cls_genres_link }}" x-tooltip="g.title">
                       <iconify-icon :icon="g.ico" noobserver></iconify-icon>
@@ -144,16 +144,16 @@ components with shared classes
             </li>
             <li>
               <ul class="tags {{ cls_tags }}">
-                <template x-for="i in 3">
-                  <template x-if="(i === 1 && item.physical) || (i === 2 && item.digital) || (i === 3 && item.guide)">
+                <template x-for="i in 3" :key="i" hidden>
+                  <template x-if="(i === 1 && item.physical) || (i === 2 && item.digital) || (i === 3 && item.guide)" hidden>
                     <li class="tag {{ cls_tag }}" tabindex="0" x-tooltip="i === 1 ? 'Physical' : i === 2 ? 'Digital' : i === 3 ? 'Guide' : ''">
-                      <template x-if="i === 1">
+                      <template x-if="i === 1" hidden>
                         <iconify-icon icon="mdi:chip" noobserver></iconify-icon>
                       </template>
-                      <template x-if="i === 2">
+                      <template x-if="i === 2" hidden>
                         <iconify-icon icon="mdi:qrcode" noobserver></iconify-icon>
                       </template>
-                      <template x-if="i === 3">
+                      <template x-if="i === 3" hidden>
                         <iconify-icon icon="mdi:notebook" noobserver></iconify-icon>
                       </template>
                     </li>
@@ -164,7 +164,7 @@ components with shared classes
           </ul>
         </div>
       </div>
-      <template x-if="item.pending">
+      <template x-if="item.pending" hidden>
         <a href="/games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
           <span class="sr-only">Pending / Preordered</span>
         </a>

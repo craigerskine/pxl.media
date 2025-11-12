@@ -1,7 +1,7 @@
 ---
 title: 'Dragon Quest VII: Reimagined'
 tags:
-  - platform_switch
+  - platform_switch-2
   - genre_rpg
 note: Digital Deluxe Edition
 physical: false
