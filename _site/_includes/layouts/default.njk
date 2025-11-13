@@ -44,17 +44,14 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto pt-8 text-xs md:(text-sm)">
-        {%- macro footerLink(url) %}
-        <a href="{{ url }}" class="text-brand-400 font-bold motion-safe:(transition) hover:(text-brand-500 underline)">{{ caller() if caller }}</a>
-        {%- endmacro %}
+      <footer class="mt-auto pt-8 text-sm">
         <div class="container mx-auto px-4">
           <div class="py-8 border-(t dotted gray-500/50) flex-(& col) items-center gap-6 md:(flex-row justify-between)">
-            <div class="flex-(& none) items-center gap-4">
-              <a href="/" class="flex-none transform motion-safe:(transition) hover:(-rotate-12 text-gray-200)">{{ logo(title=site.meta.name,size='32') }}</a>
-              <p class="max-w-[240px]">{{ site.meta.description }}</p>
+            <div class="shrink-0 flex items-center justify-center gap-4">
+              <a href="/" class="shrink-0 motion-safe:(transition) hover:(-rotate-12 text-gray-200)">{{ logo(title=site.meta.name,size='24') }}</a>
+              <p class="max-w-[200px] text-wrap-balance grow">{{ site.meta.description }}</p>
             </div>
-            <ul class="text-base flex items-center justify-center gap-2 md:(justify-end)">
+            <ul class="text-base shrink-0 flex items-center justify-center gap-2 md:(justify-end)">
               {%- for nav in site.footer.nav %}
               <li>
                 <a href="{{ nav.url }}" x-tooltip="'{{ nav.title }}'" class="w-11 h-11 flex items-center justify-center rounded-full motion-safe:(transition) hover:(bg-gray-500/20 text-gray-200)" aria-label="{{ nav.title }}">
@@ -65,24 +62,22 @@
             </ul>
           </div>
         </div>
-        <p class="pb-8 text-center font-normal">
+        <p class="px-4 pb-8 text-center font-normal [&_.footer-link]:(text-brand-400 font-bold transition hover:(text-brand-500 underline))">
           Designed and engineered with
           <svg xmlns="http://www.w3.org/2000/svg" class="mx-1 text-brand-400 inline-block fill-current" width="16" height="12" viewBox="0 0 16 12" role="img" x-tooltip="'Love'" aria-label="Love">
             <polygon points="8 4 12 0 16 4 8 12 0 4 4 0" />
           </svg>
           by
-          {%- call footerLink(site.meta.nick_url) -%}
-            {{ site.meta.nick }}
-          {%- endcall %}
-          &bull; updated:
-          {%- call footerLink('/changes/') -%}
+          <a href="site.meta.nick_url" class="footer-link">{{ site.meta.nick }}</a>
+          &hybull; updated:
+          <a href="/changes/" class="footer-link">
             <time datetime="{% build 'raw' %}">{% build %}</time>
-          {%- endcall %}
+          </a>
         </p>
       </footer>
       <div class="bg-gray-900 fixed inset-0 z-[-1]" aria-hidden="true">
         <div class="bg-gray-800/80 absolute inset-1 overflow-hidden rounded-xl md:(rounded-[2.5rem])" aria-hidden="true">
-          <svg aria-hidden="true" class="h-full w-full text-gray-900/50 fill-current pointer-events-none absolute inset-0">
+          <svg aria-hidden="true" class="h-full w-full text-gray-950/30 fill-current pointer-events-none absolute inset-0">
             <defs>
               <pattern
                 id="pattern_grid"
