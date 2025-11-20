@@ -33,7 +33,7 @@ components with shared classes
       <li class="game {{ cls_game }}">
         <figure class="box {{ cls_box }}">
           <div class="box-cover {{ cls_box_cover}}">
-            <img src="/_assets/img/games/{{ item.data.page.fileSlug }}.jpg" alt="{{ item.data.title }} cover" class="box-cover-img {{ cls_box_cover_img }}" />
+            <img src="/_assets/img/games/{{ item.data.page.fileSlug }}.jpg" alt="Game box artwork for {{ item.data.title }}" class="box-cover-img {{ cls_box_cover_img }}" />
             <div class="box-logo {{ cls_box_logo }}">
               {%- for t in item.data.tags %}
               {%- for p in platforms %}

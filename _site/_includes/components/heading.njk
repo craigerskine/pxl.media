@@ -1,14 +1,19 @@
-{%- macro heading(tag='h1',label='',sub='',alt='',alt_sub='',url='') %}
+{%- macro heading(tag='h1',label='',sub='',alt='',alt_sub='',url='',back='') %}
   <div class="h-hr mt-8 mb-6 pb-2 px-4 text-(gray-400 sm center) font-bold uppercase flex-(& col) relative before:(border-(b dotted gray-500/50) w-full block order-last) after:(border-(b dotted gray-500/50) w-full max-w-[300px] block) md:(text-left items-start)">
-    <div class="pb-2 w-full flex-(& wrap) items-center">
-      <{{ tag }} class="flex items-center gap-1.5 relative">
-        {{ label }}
-        {{ caller() if caller }}
-        {%- if alt_sub !== '' %}<b class="ml-4 mr-2 text-xs opacity-75">{{ alt_sub }}</b>{%- endif %}
-        {{ alt }}
-        {%- if sub !== '' %}<sup class="text-xs opacity-75">{{ sub }}</sup>{%- endif %}
-        {%- if url !== '' %}<a href="{{ url }}" class="absolute inset-0"><span class="sr-only">{{ label }}</span></a>{%- endif %}
-      </{{ tag }}>
+    <div class="w-full flex items-end gap-4">
+      <div class="pb-2 flex-(& wrap) items-center">
+        <{{ tag }} class="flex items-center gap-1.5 relative">
+          {{ label }}
+          {{ caller() if caller }}
+          {%- if alt_sub !== '' %}<b class="ml-4 mr-2 text-xs opacity-75">{{ alt_sub }}</b>{%- endif %}
+          {{ alt }}
+          {%- if sub !== '' %}<sup class="text-xs opacity-75">{{ sub }}</sup>{%- endif %}
+          {%- if url !== '' %}<a href="{{ url }}" class="absolute inset-0"><span class="sr-only">{{ label }}</span></a>{%- endif %}
+        </{{ tag }}>
+      </div>
+      {%- if back %}
+        <p class="ml-auto pb-1 self-center"><a href="../" class="w-9 h-9 flex items-center justify-center rounded-full transition hover:bg-gray-500/20" aria-label="Back to platforms" x-tooltip="'Back to {{ back }}'"><iconify-icon icon="mdi:arrow-left-top" width="1.25rem" height="1.25rem" class="iconify" noobserver></iconify-icon></a></p>
+      {%- endif %}
     </div>
   </div>
 {%- endmacro %}
