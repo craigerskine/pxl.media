@@ -109,7 +109,7 @@ components with shared classes
   <li class="game {{ cls_game }}">
     <figure class="box {{ cls_box }}">
       <div class="box-cover {{ cls_box_cover }}">
-        <img :src="'/_assets/img/games/'+ item.id +'.jpg'" :alt="item.title +' cover'" class="box-cover-img {{ cls_box_cover_img }}" />
+        <img :src="'/_assets/img/games/'+ item.id +'.jpg'" :alt="'Game box artwork for '+ item.title" class="box-cover-img {{ cls_box_cover_img }}" />
         <div class="box-logo {{ cls_box_logo }}">
           <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="box-logo-link {{ cls_box_logo_link }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ cls_box_logo_img }}">
