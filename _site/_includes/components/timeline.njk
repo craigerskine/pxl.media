@@ -6,8 +6,8 @@
 
 {%- macro group(title='Title',logo='',svg_file='platforms',url='#',colspan='') %}
 <li class="mb-12 flex-(& col) items-start{% if colspan %} col-span-2{% endif %} md:(mb-0)">
-  <a href="{{ url }}" class="group p-5 border-(& dotted gray-500/50) bg-gray-400/5 flex-none rounded-lg{% if url === '#' %} pointer-events-none{% endif %} hover:(text-white)">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current opacity-50 motion-safe:(transition) group-hover:(opacity-100)">
+  <a href="{{ url }}" class="group p-5 border-(b-2 dashed current) text-gray-500 flex-none transition hover:(text-white){% if url === '#' %} pointer-events-none{% endif %}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current">
       <title>{{ title }}</title>
       <use href="/_assets/{{ svg_file }}.svg?v={% bust %}#logo-{{ title | slugify }}" />
     </svg>
