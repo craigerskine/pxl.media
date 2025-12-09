@@ -3,6 +3,7 @@ title: 'Metroid Prime Trilogy Collector''s Edition'
 tags:
   - platform_wii
   - genre_action-adventure
+  - genre_shooter
   - genre_compilation
 note: Sealed
 digital: false

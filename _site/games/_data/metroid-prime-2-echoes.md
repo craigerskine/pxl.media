@@ -3,6 +3,7 @@ title: 'Metroid Prime 2: Echoes'
 tags:
   - platform_gamecube
   - genre_action-adventure
+  - genre_shooter
 digital: false
 physical: true
 guide: false
