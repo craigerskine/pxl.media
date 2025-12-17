@@ -6,20 +6,22 @@
 
 {%- macro group(title='Title',logo='',svg_file='platforms',url='#',colspan='') %}
 <li class="mb-12 flex-(& col) items-start{% if colspan %} col-span-2{% endif %} md:(mb-0)">
-  <a href="{{ url }}" class="group p-5 border-(b-2 dashed current) text-gray-500 flex-none transition hover:(text-white){% if url === '#' %} pointer-events-none{% endif %}">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current">
-      <title>{{ title }}</title>
-      <use href="/_assets/{{ svg_file }}.svg?v={% bust %}#logo-{{ title | slugify }}" />
-    </svg>
-  </a>
-  <ul class="pl-5 w-full grid-(& cols-1) md:(pl-12{% if colspan %} grid-cols-2 gap-x-12{% endif %})">
+  <div class="w-full border-(b dotted gray-500/50)">
+    <a href="{{ url }}" class="group p-5 text-gray-500 inline-flex transition hover:(text-white){% if url === '#' %} pointer-events-none{% endif %}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current">
+        <title>{{ title }}</title>
+        <use href="/_assets/{{ svg_file }}.svg?v={% bust %}#logo-{{ title | slugify }}" />
+      </svg>
+    </a>
+  </div>
+  <ul class="w-full grid-(& cols-1) md:({% if colspan %} grid-cols-2 gap-x-12{% endif %})">
     {{ caller() if caller }}
   </ul>
 </li>
 {%- endmacro %}
 
 {%- macro point(title='Title',sub='Sub',meta='Meta',ico='mdi:desktop-tower') %}
-<li class="border-(b dotted gray-500/50) flex items-center relative">
+<li class="ml-5 border-(b dotted gray-500/50) flex items-center relative">
   <div class="flex-(& col none) justify-center">
     <b class="h-4 border-(l dotted gray-500/50)"></b>
     <div class="group w-8 h-8 flex-(& none) border-(1 dotted gray-500/50) relative rounded-full transform -translate-x-4">
