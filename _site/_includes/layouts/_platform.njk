@@ -15,42 +15,60 @@ layout: layouts/default.njk
 <article
   x-data='{
     nav: {{ nav | dump | safe }},
-    param: "view",
     active: 0,
     slugs: [],
     init() {
       this.slugs = this.nav.map(this.slug);
-      this.initFromQuery();
-      this.$watch("active", i => this.updateQuery(this.slugs[i] ?? String(i)));
+      this.initFromHash();
+      this.$watch("active", i => this.updateHash(i));
+      window.addEventListener("hashchange", () => this.initFromHash());
     },
     slug(label) {
-      return String(label).toLowerCase().normalize("NFKD").trim().toLowerCase().replace(/[^\w\-]+/g, "-").replace(/\s+/g, "-").replace(/-+/g, "-");
+      return String(label).toLowerCase()
+        .normalize("NFKD")
+        .trim()
+        .replace(/[^\w\-]+/g, "-")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-");
     },
-    initFromQuery() {
-      const url = new URL(window.location);
-      const val = url.searchParams.get(this.param);
-      if (!val) return;
-      let idx = -1;
-      if (/^\d+$/.test(val)) {
-        idx = Math.max(0, Math.min(parseInt(val, 10), this.nav.length - 1));
-      } else {
-        idx = this.slugs.indexOf(val.toLowerCase());
+    initFromHash() {
+      let hash = window.location.hash;
+      if (!hash) {
+        this.active = 0;
+        return;
       }
-      if (idx >= 0) this.active = idx;
+
+      const val = hash.substring(1).toLowerCase().trim();
+      if (!val) {
+        this.active = 0;
+        return;
+      }
+
+      let idx = this.slugs.indexOf(val);
+      if (idx === -1 && /^\d+$/.test(val)) {
+        idx = Math.max(0, Math.min(parseInt(val, 10) - 1, this.nav.length - 1));
+      }
+
+      this.active = (idx >= 0) ? idx : 0;
     },
-    setActive(i) { this.active = i; },
-    updateQuery(val) {
+    setActive(i) {
+      this.active = i;
+    },
+    updateHash(index) {
       const url = new URL(window.location);
-      if (this.active === 0) {
-        url.searchParams.delete(this.param);
-        if ([...url.searchParams].length === 0) {
-          history.replaceState({}, "", url.pathname + url.hash);
-          return;
+      const slug = this.slugs[index] || "";
+
+      if (index === 0 || !slug) {
+        if (url.hash) {
+          url.hash = "";
+          history.replaceState({}, "", url.pathname + url.search);
         }
       } else {
-        url.searchParams.set(this.param, val);
+        const newHash = "#" + slug;
+        if (url.hash !== newHash) {
+          history.replaceState({}, "", url.pathname + url.search + newHash);
+        }
       }
-      history.replaceState({}, "", url);
     },
   }'
   x-id="['tab']"
@@ -109,7 +127,7 @@ layout: layouts/default.njk
         <ul class="container mx-auto flex-(& wrap)">
           {%- for item in systems %}
             {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
-            {{ category(title=item.data.title,subtext=sub,bg_img='/_assets/img/systems/'+ item.data.page.fileSlug +'.png') }}
+            {{ category(title=item.data.title,subtext=sub,bg_color='black/50',bg_img='/_assets/img/systems/'+ item.data.page.fileSlug +'.png') }}
           {%- endfor %}
         </ul>
       {%- endif %}
