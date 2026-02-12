@@ -1,4 +1,3 @@
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import { EleventyRenderPlugin } from '@11ty/eleventy';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import esbuild from 'esbuild';
@@ -13,14 +12,6 @@ export default function (eleventyConfig) {
     domdiff: false,
   });
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ['auto'],
-    imgAttributes: {
-			alt : '',
-			loading: 'lazy',
-			decoding: 'async',
-		},
-  });
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(recentChanges, {
