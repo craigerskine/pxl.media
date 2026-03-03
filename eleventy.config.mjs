@@ -22,11 +22,11 @@ export default function (eleventyConfig) {
   eleventyConfig.setDataFileBaseName('_data');
 
   eleventyConfig.addPassthroughCopy({
-    '_site/_assets/img': '_assets/img',
-    '_site/_assets/_root': './',
+    '_src/_assets/img': '_assets/img',
+    '_src/_assets/_root': './',
   });
 
-  eleventyConfig.addWatchTarget('./_site/_app/_app.js');
+  eleventyConfig.addWatchTarget('./_src/_app/_app.js');
 
   // {% renderTemplate 'md' %}
   // # Blah{.text-center}
@@ -99,7 +99,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection('gamesAll', function(collection) {
-    return collection.getFilteredByGlob('_site/games/_data/*.md').sort(function(a, b) {
+    return collection.getFilteredByGlob('_src/games/_data/*.md').sort(function(a, b) {
       let nameA = a.data.title.toUpperCase();
       let nameB = b.data.title.toUpperCase();
       if (nameA < nameB) return -1;
@@ -111,7 +111,7 @@ export default function (eleventyConfig) {
   // esbuild
   eleventyConfig.on('eleventy.after', async ({ dir, results, runMode, outputMode }) => {
     return esbuild.build({
-      entryPoints: ['_site/_app/_app.js'],
+      entryPoints: ['_src/_app/_app.js'],
       outfile: 'public/_assets/js/_app.js',
       bundle: true,
       minify: true,
@@ -124,7 +124,7 @@ export default function (eleventyConfig) {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dir: {
-      input: '_site',
+      input: '_src',
       output: 'public',
     },
   };
