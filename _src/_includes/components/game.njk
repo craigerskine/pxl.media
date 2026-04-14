@@ -1,6 +1,6 @@
 {#-
-contains both the default AND alpine
-components with shared classes
+  contains both the default AND alpine
+  components with shared classes
 -#}
 
 {%- set cls_game_list = 'pb-4 flex-(& wrap)' -%}
@@ -25,7 +25,7 @@ components with shared classes
 {%- set cls_pending = 'w-2 h-2 text-brand-500 bg-current bg-gradient-to-b from-white/75 via-transparent cursor-pointer absolute top-2 right-2 z-10 rounded-full after:(ring-(2 current) absolute inset-0 z-10 rounded-full animate-ping)' -%}
 
 {#-
-*** DEFAULT ***
+  *** DEFAULT ***
 -#}
 {%- macro game(games=[],platforms=[],genres=[],by='data.title',reverse=false) -%}
   <ul class="game-list {{ cls_game_list }}">
@@ -103,7 +103,7 @@ components with shared classes
 {%- endmacro -%}
 
 {#-
-*** ALPINE ***
+  *** ALPINE ***
 -#}
 {%- macro game_alpine() -%}
   <li class="game {{ cls_game }}">
