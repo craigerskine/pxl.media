@@ -33,7 +33,7 @@ title: Search results
       async gamesFiltered() {
         if (this.games === null) {
           try {
-            const response = await fetch('/search/data.json?v={% bust %}');
+            const response = await fetch('{{ '/' | url }}search/data.json?v={% bust %}');
             const data = await response.json();
             this.games = data;
           } catch (error) {
