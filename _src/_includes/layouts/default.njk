@@ -68,7 +68,7 @@
             <polygon points="8 4 12 0 16 4 8 12 0 4 4 0" />
           </svg>
           by
-          <a href="site.meta.nick_url" class="footer-link">{{ site.meta.nick }}</a>
+          <a href="{{ site.meta.nick_url | url }}" class="footer-link">{{ site.meta.nick }}</a>
           &hybull; updated:
           <a href="{{ '/' | url }}changes/" class="footer-link">
             <time datetime="{% build 'raw' %}">{% build %}</time>
