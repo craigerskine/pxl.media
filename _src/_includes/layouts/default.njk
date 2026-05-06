@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link onload="this.onload=null;this.rel='stylesheet'" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/' | url }}apple-touch-icon.png" />
 
     <meta property="og:title" content="{% if title %}{{ title +' - '+ site.meta.title }}{% else %}{{ site.meta.title }}{% endif %}" />
     <meta property="og:description" content="{{ site.meta.description }}" />
@@ -48,7 +48,7 @@
         <div class="container mx-auto px-4">
           <div class="py-8 border-(t dotted gray-500/50) flex-(& col) items-center gap-6 md:(flex-row justify-between)">
             <div class="shrink-0 flex items-center justify-center gap-4">
-              <a href="/" class="shrink-0 motion-safe:(transition) hover:(-rotate-12 text-gray-200)">{{ logo(title=site.meta.name,size='24') }}</a>
+              <a href="{{ '/' | url }}" class="shrink-0 motion-safe:(transition) hover:(-rotate-12 text-gray-200)">{{ logo(title=site.meta.name,size='24') }}</a>
               <p class="max-w-[200px] text-wrap-balance grow">{{ site.meta.description }}</p>
             </div>
             <ul class="text-base shrink-0 flex items-center justify-center gap-2 md:(justify-end)">
@@ -70,7 +70,7 @@
           by
           <a href="site.meta.nick_url" class="footer-link">{{ site.meta.nick }}</a>
           &hybull; updated:
-          <a href="/changes/" class="footer-link">
+          <a href="{{ '/' | url }}changes/" class="footer-link">
             <time datetime="{% build 'raw' %}">{% build %}</time>
           </a>
         </p>
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-    <script src="/_assets/js/_app.js?v={% bust %}"></script>
+    <script src="{{ '/' | url }}_assets/js/_app.js?v={% bust %}"></script>
   </body>
 
 </html>

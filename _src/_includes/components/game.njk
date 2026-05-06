@@ -33,15 +33,15 @@
       <li class="game {{ cls_game }}">
         <figure class="box {{ cls_box }}">
           <div class="box-cover {{ cls_box_cover}}">
-            <img src="/_assets/img/games/{{ item.data.page.fileSlug }}.jpg" alt="Game box artwork for {{ item.data.title }}" class="box-cover-img {{ cls_box_cover_img }}" />
+            <img src="{{ '/' | url }}_assets/img/games/{{ item.data.page.fileSlug }}.jpg" alt="Game box artwork for {{ item.data.title }}" class="box-cover-img {{ cls_box_cover_img }}" />
             <div class="box-logo {{ cls_box_logo }}">
               {%- for t in item.data.tags %}
               {%- for p in platforms %}
               {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
-              <a href="/platform/{{ p.data.page.fileSlug }}/" class="box-logo-link {{ cls_box_logo_link }}">
+              <a href="{{ '/' | url }}platform/{{ p.data.page.fileSlug }}/" class="box-logo-link {{ cls_box_logo_link }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ cls_box_logo_img }}">
                   <title>{{ p.data.title }}</title>
-                  <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ p.data.title | slugify }}" />
+                  <use href="{{ '/' | url }}_assets/platforms.svg?v={% bust %}#logo-{{ p.data.title | slugify }}" />
                 </svg>
               </a>
               {%- endif %}
@@ -64,7 +64,7 @@
                     {%- for g in genres %}
                     {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
                     <li>
-                      <a href="/genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title }}'" class="genres-link {{ cls_genres_link }}" title="{{ g.data.title }}">
+                      <a href="{{ '/' | url }}genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title }}'" class="genres-link {{ cls_genres_link }}" title="{{ g.data.title }}">
                         <iconify-icon icon="{{ g.data.ico }}" noobserver></iconify-icon>
                       </a>
                     </li>
@@ -91,7 +91,7 @@
               </ul>
             </div>
             {%- if item.data.pending %}
-              <a href="/games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
+              <a href="{{ '/' | url }}games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
                 <span class="sr-only">Pending / Preordered</span>
               </a>
             {%- endif %}
@@ -109,12 +109,12 @@
   <li class="game {{ cls_game }}">
     <figure class="box {{ cls_box }}">
       <div class="box-cover {{ cls_box_cover }}">
-        <img :src="'/_assets/img/games/'+ item.id +'.jpg'" :alt="'Game box artwork for '+ item.title" class="box-cover-img {{ cls_box_cover_img }}" />
+        <img :src="'{{ '/' | url }}_assets/img/games/'+ item.id +'.jpg'" :alt="'Game box artwork for '+ item.title" class="box-cover-img {{ cls_box_cover_img }}" />
         <div class="box-logo {{ cls_box_logo }}">
           <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="box-logo-link {{ cls_box_logo_link }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ cls_box_logo_img }}">
               <title x-text="item.platform.title"></title>
-              <use :href="'/_assets/platforms.svg?v={% bust %}#logo-'+ slugify(item.platform.title)" />
+              <use :href="'{{ '/' | url }}_assets/platforms.svg?v={% bust %}#logo-'+ slugify(item.platform.title)" />
             </svg>
           </a>
         </div>
@@ -162,7 +162,7 @@
           </ul>
         </div>
         <template x-if="item.pending" hidden>
-          <a href="/games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
+          <a href="{{ '/' | url }}games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ cls_pending }}">
             <span class="sr-only">Pending / Preordered</span>
           </a>
         </template>

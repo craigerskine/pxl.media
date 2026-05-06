@@ -127,7 +127,7 @@ layout: layouts/default.njk
         <ul class="container mx-auto flex-(& wrap)">
           {%- for item in systems %}
             {%- set sub %}{{ item.data.variation }} {{ item.data.accessories }}{%- endset %}
-            {{ category(title=item.data.title,subtext=sub,bg_color='black/50',bg_img='/_assets/img/systems/'+ item.data.page.fileSlug +'.png') }}
+            {{ category(title=item.data.title,subtext=sub,bg_color='black/50',bg_img='/' | url +'_assets/img/systems/'+ item.data.page.fileSlug +'.png') }}
           {%- endfor %}
         </ul>
       {%- endif %}

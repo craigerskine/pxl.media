@@ -21,7 +21,7 @@
     class="nav-menu p-1.5 text-xl flex items-center justify-between gap-1"
   >
     <li class="nav-home">
-      <a href="/" class="w-11 h-11 text-white flex items-center justify-center rounded-full opacity-40 motion-safe:(transition) hover:(opacity-100 -rotate-12)">{{ logo(title=site.meta.name,size='20') }}</a>
+      <a href="{{ '/' | url }}" class="w-11 h-11 text-white flex items-center justify-center rounded-full opacity-40 motion-safe:(transition) hover:(opacity-100 -rotate-12)">{{ logo(title=site.meta.name,size='20') }}</a>
     </li>
     <li class="nav-menu relative">
       <button
@@ -53,7 +53,7 @@
       >
         {%- for item in collections.all | eleventyNavigation %}
         <li class="nav-item text-xs font-semibold">
-          <a href="{{ item.url }}" class="h-10 px-3 text-white flex items-center gap-2 relative opacity-60 rounded-full motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url === page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
+          <a href="{{ item.url | url }}" class="h-10 px-3 text-white flex items-center gap-2 relative opacity-60 rounded-full motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url === page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
             <iconify-icon icon="{{ item.icon }}" width="24px" height="24px" class="flex-shrink-0 opacity-60" noobserver></iconify-icon>
             <span class="flex-(& col 1)">
               <small class="mb-px text-[11px] leading-none opacity-60">{{ item.title }}</small>
@@ -67,7 +67,7 @@
         </li>
         {%- endfor %}
         <li class="nav-search">
-          <form action="/search/">
+          <form action="{{ '/' | url }}search/">
             <label for="site-search" class="sr-only">Search</label>
             <input
               type="search"

@@ -7,7 +7,7 @@
         {%- if logo %}
         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="mx-auto w-auto h-16 fill-current lg:mx-0">
           <title>{{ title }}</title>
-          <use href="/_assets/platforms.svg?v={% bust %}#logo-{{ title | slugify }}" />
+          <use href="{{ '/' | url }}_assets/platforms.svg?v={% bust %}#logo-{{ title | slugify }}" />
         </svg>
         {%- endif %}
         {%- if slot | trim != '' %}
