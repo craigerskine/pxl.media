@@ -3,11 +3,12 @@ meta:
   name: pxl.media
   title: "pxl.media : qrayg's game room"
   description: qrayg's video games, systems, and controllers collection
-  url: "https://pxl.media"
+  url: https://pxl.media
   author: "Craig Erskine"
   author_url: https://craigerskine.com/
   nick: qrayg
   nick_url: https://qrayg.com/
+  separator: ' ⇢ '
 pagination:
   size: 24
 footer:

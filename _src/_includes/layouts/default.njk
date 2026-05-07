@@ -1,3 +1,5 @@
+{%- set pageTitle -%}{%- if title -%}{{ title }}{{ site.meta.separator }}{%- endif -%} {{ site.meta.title }}{%- endset -%}
+
 {%- from 'components/logo.njk' import logo -%}
 {%- from 'components/heading.njk' import heading -%}
 
@@ -7,7 +9,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{%- if title -%}{{ title +' - ' }}{%- endif -%} {{ site.meta.title }}</title>
+    <title>{{ pageTitle | safe }}</title>
     <meta name="description" content="{{ site.meta.description }}" />
     <meta name="author" content="{{ site.meta.author + ' - '+ site.meta.author_url }}" />
     <meta name="generator" content="{{ eleventy.generator }}" />
@@ -19,13 +21,17 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/' | url }}apple-touch-icon.png" />
 
-    <meta property="og:title" content="{% if title %}{{ title +' - '+ site.meta.title }}{% else %}{{ site.meta.title }}{% endif %}" />
-    <meta property="og:description" content="{{ site.meta.description }}" />
+    <meta name="title" content="{{ pageTitle | safe }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.meta.url }}{{ page.url }}" />
-    <meta property="og:image" content="{{ site.meta.url }}/pxl-hd.png" />
-    <meta property="og:image:width" content="512" />
-    <meta property="og:image:height" content="512" />
+    <meta property="og:url" content="{{ site.meta.url }}{{ page.url | url }}" />
+    <meta property="og:title" content="{{ pageTitle | safe }}" />
+    <meta property="og:description" content="{{ site.meta.description }}" />
+    <meta property="og:image" content="{{ site.meta.url }}{{ '/' | url }}og-image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ site.meta.url }}{{ page.url | url }}" />
+    <meta property="twitter:title" content="{{ pageTitle | safe }}" />
+    <meta property="twitter:description" content="{{ site.meta.description }}" />
+    <meta property="twitter:image" content="{{ site.meta.url }}{{ '/' | url }}og-image.png" />
 
   </head>
 
