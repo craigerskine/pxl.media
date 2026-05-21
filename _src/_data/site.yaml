@@ -1,4 +1,3 @@
----
 meta:
   title: pxl.media
   description: qrayg's video games, systems, and controllers collection
@@ -8,8 +7,10 @@ meta:
   nick: qrayg
   nick_url: https://qrayg.com/
   separator: ' ⇢ '
+
 pagination:
   size: 24
+
 footer:
   nav:
     - title: 'Editor: VS Code'
@@ -27,7 +28,3 @@ footer:
     - title: 'Host: Netlify'
       url: https://netlify.com/
       ico: simple-icons:netlify
-analytics: |-
-  // google analytics
-  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-  ga('create', 'UA-6318307-6', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
