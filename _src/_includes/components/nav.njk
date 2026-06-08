@@ -18,10 +18,28 @@
     x-id="['nav-dropdown']"
     @keydown.escape.prevent="close($refs.button)"
     @focusin.window="!$refs.panel.contains($event.target) && close()"
-    class="nav-menu p-1.5 text-xl flex items-center justify-between gap-1"
+    class="nav-menu p-1.5 text-xl flex items-center gap-1"
   >
     <li class="nav-home">
       <a href="{{ '/' | url }}" class="w-11 h-11 text-white flex items-center justify-center rounded-full opacity-40 motion-safe:(transition) hover:(opacity-100 -rotate-12)">{{ logo(title=site.meta.title,size='20') }}</a>
+    </li>
+    <li class="nav-search ml-auto flex justify-end">
+      <form action="{{ '/' | url }}search/">
+        <label for="site-search" class="w-11 h-11 bg-transparent flex items-center rounded-full overflow-hidden transition-all focus-within:(px-4 w-52 bg-black/50 outline-(& gray-500/20 offset-[-3px]))">
+          <input
+            type="search"
+            id="site-search"
+            name="q"
+            :placeholder="query ? query : 'Search...'"
+            title="Search"
+            autocomplete="off"
+            class="peer appearance-none m-0 border-0 p-0 border-none w-0 bg-transparent text-sm font-semibold grow placeholder:(text-white/40 italic font-normal) focus:(w-full outline-none shadow-none)"
+            @keydown.window.prevent.meta.k="$el.focus()"
+            @keydown.window.prevent.escape="$el.blur()"
+          />
+          <span class="w-full h-11 flex items-center justify-center cursor-pointer transition peer-focus:hidden hover:(bg-gray-500/20)"><iconify-icon icon="mdi:magnify-expand" noobserver></iconify-icon></span>
+        </label>
+      </form>
     </li>
     <li class="nav-menu relative">
       <button
@@ -30,7 +48,7 @@
         :aria-pressed="open"
         :aria-expanded="open"
         :aria-controls="$id('nav-dropdown')"
-        class="group w-11 h-11 inline-flex items-center justify-center rounded-full motion-safe:(transition) [&:hover,&[aria-pressed=true]]:(bg-gray-500/20)"
+        class="group w-11 h-11 inline-flex items-center justify-center rounded-full transition [&:hover,&[aria-pressed=true]]:(bg-gray-500/20)"
       >
         <span class="sr-only">Menu</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-4 h-4 fill-current pointer-events-none">
@@ -66,21 +84,6 @@
           </a>
         </li>
         {%- endfor %}
-        <li class="nav-search">
-          <form action="{{ '/' | url }}search/">
-            <label for="site-search" class="sr-only">Search</label>
-            <input
-              type="search"
-              id="site-search"
-              name="q"
-              :placeholder="query ? query : 'Search...'"
-              title="Search"
-              autocomplete="off"
-              class="px-3 w-full h-10 bg-black/50 text-sm font-semibold rounded-full ring-(inset 2 transparent) motion-safe:(transition) placeholder:(italic font-normal text-white/25) [&::-webkit-search-cancel-button]:(ml-2 w-4 h-4 appearance-none bg-(close center no-repeat) block opacity-50 cursor-pointer)"
-              @keydown.window.prevent.meta.k="open = true; $nextTick(() => $el.focus())"
-            />
-          </form>
-        </li>
       </ul>
     </li>
   </ul>
