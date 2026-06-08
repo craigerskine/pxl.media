@@ -4,8 +4,8 @@ tags:
   - platform_playstation-vita
   - genre_action-adventure
 note: '+ Genroku Legends - Fishy Tales of the Nekomata, + A Cause To Daikon For, + A Spirited Seven Nights’ Haunting, + Hell’s Where the Heart Is'
-digital: true
 physical: true
+digital: true
 guide: true
 pending: false
 date: 2014-02-11

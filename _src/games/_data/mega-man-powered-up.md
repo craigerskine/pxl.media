@@ -4,8 +4,8 @@ tags:
   - platform_playstation-portable
   - genre_action-adventure
   - genre_platformer
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2014-02-11

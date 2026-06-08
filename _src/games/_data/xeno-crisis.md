@@ -5,8 +5,8 @@ tags:
   - genre_action-adventure
   - genre_shmup
 note: 'Digital = ROM'
-digital: true
 physical: true
+digital: true
 guide: false
 pending: false
 date: 2020-02-28

@@ -5,8 +5,8 @@ tags:
   - genre_action-adventure
   - genre_rpg
 note: 'JP: Episode 4'
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2016-05-05

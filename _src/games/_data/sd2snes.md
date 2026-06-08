@@ -4,8 +4,8 @@ tags:
   - platform_super-nintendo
   - genre_flash-cart
 note: OG + Bitbox
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2018-06-18

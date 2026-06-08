@@ -4,8 +4,8 @@ tags:
   - platform_playstation-vita
   - genre_casual
   - genre_platformer
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2016-02-08

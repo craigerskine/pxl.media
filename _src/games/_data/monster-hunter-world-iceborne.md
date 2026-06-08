@@ -5,8 +5,8 @@ tags:
   - genre_action-adventure
   - genre_rpg
 note: 'Deluxe Edition'
-digital: true
 physical: true
+digital: true
 guide: false
 pending: false
 date: 2019-09-06

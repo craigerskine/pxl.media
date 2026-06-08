@@ -3,8 +3,8 @@ title: Rollerball
 tags:
   - platform_nintendo-entertainment-system
   - genre_arcade
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2014-02-10

@@ -3,8 +3,8 @@ title: 'Breath of Fire IV'
 tags:
   - platform_playstation
   - genre_rpg
-digital: true
 physical: false
+digital: true
 guide: false
 pending: false
 date: 2018-03-09

@@ -3,8 +3,8 @@ title: 'Nintendo Switch Sports'
 tags:
   - platform_switch
   - genre_sports
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2022-05-23

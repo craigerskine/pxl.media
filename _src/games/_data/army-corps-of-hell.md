@@ -3,8 +3,8 @@ title: 'Army Corps of Hell'
 tags:
   - platform_playstation-vita
   - genre_action-adventure
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2016-02-08

@@ -4,8 +4,8 @@ tags:
   - platform_wii
   - genre_sports
 note: 'Pack-in'
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2006-04-25

@@ -5,8 +5,8 @@ tags:
   - genre_shmup
   - genre_compilation
 note: Limited Run Games
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2023-12-30

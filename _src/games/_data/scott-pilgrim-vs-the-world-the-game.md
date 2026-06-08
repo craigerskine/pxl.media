@@ -5,8 +5,8 @@ tags:
   - genre_action-adventure
   - genre_brawler
 note: 'Limited Run Games'
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2021-04-21

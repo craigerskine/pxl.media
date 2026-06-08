@@ -4,8 +4,8 @@ tags:
   - platform_playstation-portable
   - genre_rpg
 note: Sealed
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2014-03-18

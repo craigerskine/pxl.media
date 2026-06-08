@@ -5,8 +5,8 @@ tags:
   - genre_action-adventure
   - genre_platformer
   - genre_compilation
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2018-06-02

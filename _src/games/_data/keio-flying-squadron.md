@@ -4,8 +4,8 @@ tags:
   - platform_sega-cd
   - genre_shmup
 note: PCEWorks
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2021-08-10

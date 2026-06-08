@@ -3,8 +3,8 @@ title: 'Castlevania III: Dracula''s Curse'
 tags:
   - platform_nintendo-entertainment-system
   - genre_action-adventure
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2014-02-10

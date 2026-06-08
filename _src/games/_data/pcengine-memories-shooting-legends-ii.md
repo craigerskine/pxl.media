@@ -5,8 +5,8 @@ tags:
   - genre_shmup
   - genre_compilation
 note: PCEWorks
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2018-11-14

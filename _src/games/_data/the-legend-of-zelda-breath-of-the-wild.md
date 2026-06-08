@@ -4,8 +4,8 @@ tags:
   - platform_switch
   - genre_action-adventure
 note: 'Expansion Pass'
-digital: true
 physical: true
+digital: true
 guide: true
 pending: false
 date: 2017-03-03

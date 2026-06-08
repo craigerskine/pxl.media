@@ -4,8 +4,8 @@ tags:
   - platform_playstation-4
   - genre_rpg
 note: 'Collector''s Edition'
-digital: false
 physical: true
+digital: false
 guide: true
 pending: false
 date: 2015-10-20

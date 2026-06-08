@@ -4,8 +4,8 @@ tags:
   - platform_switch
   - genre_rpg
 note: 'Prince''s Edition'
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2021-11-13

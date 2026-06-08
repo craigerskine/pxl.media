@@ -5,8 +5,8 @@ tags:
   - genre_action-adventure
   - genre_rpg
 note: 'Favorites Edition'
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2018-02-27

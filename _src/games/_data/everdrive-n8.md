@@ -4,8 +4,8 @@ tags:
   - platform_nintendo-entertainment-system
   - genre_flash-cart
 note: OG + Bitbox
-digital: false
 physical: true
+digital: false
 guide: false
 pending: false
 date: 2015-09-27
