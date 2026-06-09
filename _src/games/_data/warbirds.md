@@ -2,7 +2,7 @@
 title: Warbirds
 tags:
   - platform_lynx
-  - genre_arcade
+  - genre_simulator
 note: From Darin
 physical: true
 digital: false

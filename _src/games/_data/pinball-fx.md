@@ -3,6 +3,7 @@ title: 'Pinball FX'
 tags:
   - platform_xbox-360
   - genre_arcade
+  - genre_simulator
 physical: false
 digital: true
 guide: false
