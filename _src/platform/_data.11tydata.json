@@ -1,3 +1,4 @@
 {
-  "layout": "layouts/_platform.njk"
+  "layout": "layouts/_platform.njk",
+  "tags": "platform"
 }

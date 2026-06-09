@@ -50,12 +50,12 @@
           {{ content | safe }}
         </section>
       </main>
-      <footer class="mt-auto pt-8 text-sm">
+      <footer class="mt-auto pt-8 text-xs">
         <div class="container mx-auto px-4">
           <div class="py-8 border-(t dotted gray-500/50) flex-(& col) items-center gap-6 md:(flex-row justify-between)">
             <div class="shrink-0 flex items-center justify-center gap-4">
               <a href="{{ '/' | url }}" class="shrink-0 motion-safe:(transition) hover:(-rotate-12 text-gray-200)">{{ logo(title=site.meta.title,size='24') }}</a>
-              <p class="max-w-[200px] text-wrap-balance grow">{{ site.meta.description }}</p>
+              <p class="max-w-[200px] text-(gray-500 wrap-balance) font-semibold grow">{{ site.meta.description }}</p>
             </div>
             <ul class="text-base shrink-0 flex items-center justify-center gap-2 md:(justify-end)">
               {%- for nav in site.footer.nav %}

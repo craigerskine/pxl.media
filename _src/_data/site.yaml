@@ -13,9 +13,6 @@ pagination:
 
 footer:
   nav:
-    - title: 'Editor: VS Code'
-      url: https://code.visualstudio.com/
-      ico: simple-icons:visualstudiocode
     - title: 'CSS: Twind'
       url: https://twind.style/
       ico: simple-icons:tailwindcss
@@ -24,7 +21,7 @@ footer:
       ico: simple-icons:eleventy
     - title: 'Source: GitHub'
       url: https://github.com/craigerskine/pxl.media/
-      ico: simple-icons:git
+      ico: simple-icons:github
     - title: 'Host: Netlify'
       url: https://netlify.com/
       ico: simple-icons:netlify

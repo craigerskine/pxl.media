@@ -2,7 +2,8 @@
 title: 'Ace Combat 7: Skies Unknown'
 tags:
   - platform_playstation-4
-  - genre_action-adventure
+  - genre_shmup
+  - genre_simulator
 physical: true
 digital: false
 guide: false

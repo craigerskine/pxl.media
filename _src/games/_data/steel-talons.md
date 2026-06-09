@@ -2,7 +2,7 @@
 title: Steel Talons
 tags:
   - platform_lynx
-  - genre_arcade
+  - genre_simulator
 note: x2 - 1 Sealed; 1 From Darin
 physical: true
 digital: false
