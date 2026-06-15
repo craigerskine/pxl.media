@@ -33,7 +33,7 @@
             :placeholder="query ? query : 'Search...'"
             title="Search"
             autocomplete="off"
-            class="peer appearance-none m-0 border-0 p-0 border-none w-0 bg-transparent text-sm font-semibold grow placeholder:(text-white/40 italic font-normal) focus:(w-full outline-none shadow-none)"
+            class="peer appearance-none m-0 border-0 p-0 border-none w-0 bg-transparent text-sm font-semibold grow placeholder:(text-white/40 italic font-normal) focus:(w-full outline-none shadow-none) [&::-webkit-search-cancel-button]:(appearance-none w-3 h-3 bg-close bg-cover block cursor-pointer)"
             @keydown.window.prevent.meta.k="$el.focus()"
             @keydown.window.prevent.escape="$el.blur()"
           />
