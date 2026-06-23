@@ -9,6 +9,6 @@ physical: true
 digital: false
 guide: false
 pending: false
-date: 2025-12-31
+date: 2099-01-31
 eleventyExcludeFromCollections: true
 ---
