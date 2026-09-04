@@ -17,7 +17,7 @@
 {%- set __name = 'px-1.5 text-(white base) font-black block truncate' -%}
 {%- set __note = 'px-1.5 w-full min-w-0 text-(gray-400 xs) block truncate flex-1' -%}
 {%- set __footer = 'p-1.5 w-full text-base flex items-center justify-between gap-3' -%}
-{%- set __footer_line = 'border-(y dotted current) h-2 grow flex-(& col) justify-center opacity-25 after:(border-(b dotted current) w-full h-0)' -%}
+{%- set __footer_line = '[--line-bg:rgb(255_255_255_/_.1)] [--line-shadow:0_-1px_0_rgb(0_0_0_/_.3)] h-px [background-color:var(--line-bg)] grow relative opacity-75 shadow-[var(--line-shadow)] [&:before,&:after]:(h-px [background-color:var(--line-bg)] absolute inset-x-0 -top-1 shadow-[var(--line-shadow)] content-[\'\']) [&:after]:top-1' -%}
 {%- set __genres = 'flex items-center gap-3' -%}
 {%- set __genres_link = 'text-lg flex items-center justify-center relative transition hover:text-gray-50' -%}
 {%- set __tags = 'flex items-center gap-3' -%}

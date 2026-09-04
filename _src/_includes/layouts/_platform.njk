@@ -135,4 +135,29 @@ layout: layouts/default.njk
     </div>
   {%- endfor %}
 
+  <p class="text-center">
+    <a
+      href="{{ '/' | url }}systems/"
+      class="
+        border
+        [border-color:color-mix(in_oklab,currentColor_20%,transparent)]
+        px-3
+        h-9
+        text-xs
+        font-bold
+        uppercase
+        inline-flex
+        items-center
+        justify-center
+        gap-2
+        rounded-full
+        transition
+        hover:(bg-gray-500/20 text-gray-300 shadow)
+      "
+    >
+      <iconify-icon icon="mdi:cube-outline" class="iconify text-lg block opacity-60" noobserver></iconify-icon>
+      All Systems
+    </a>
+  </p>
+
 </article>

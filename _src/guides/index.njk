@@ -1,19 +1,18 @@
 ---
 layout: layouts/default.njk
-title: Music
+title: Guides
+sub: Printable
 eleventyComputed:
   eleventyNavigation:
     key: "{{ title }}"
-    title: OST
-    icon: mdi:music
-    order: 5
+    title: "{{ sub }}"
+    icon: mdi:library-books
+    order: 4
 ---
 
 {%- from 'components/heading.njk' import heading -%}
 
-{%- set music = collections.music -%}
-
-{%- call heading(tag='h1',label=title,sub=music.length) %}{%- endcall %}
+{%- call heading(tag='h1',label=title,sub=guides.length) %}{%- endcall %}
 
 <p class="py-8 px-4 text-(4xl center) font-black motion-safe:animate-pulse">
   Soon...
