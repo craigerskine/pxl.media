@@ -1,4 +1,4 @@
-{%- macro mast(title='',label='',logo='',ico='') %}
+{%- macro mast(title,label,logo,ico) %}
 {%- set slot = caller() -%}
 <header class="group container mx-auto py-1 px-4 text-7xl leading-none flex items-center relative">
   <h1 {{- ' class="grow flex items-center justify-center space-x-5 lg:justify-start"' | safe if ico }}>
