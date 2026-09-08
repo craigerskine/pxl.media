@@ -2,7 +2,7 @@
   cols: int
 -#}
 {%- macro stats(param) -%}
-<div class="stats mx-auto w-full max-w-xs bg-gradient-to-br from-white/5 grid-(& cols-1) overflow-hidden rounded-lg shadow-lg lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }})">
+<div class="stats mx-auto w-full max-w-xs bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden rounded-lg shadow-lg after:(content-[''] h-px bg-gradient-to-r from-transparent via-white/10 to-transparent absolute top-0 inset-x-0) lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }})">
 {{ caller() if caller }}
 </div>
 {%- endmacro -%}
