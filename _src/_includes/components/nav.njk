@@ -21,11 +21,11 @@
     class="nav-menu p-1.5 text-xl flex items-center gap-1"
   >
     <li class="nav-home">
-      <a href="{{ '/' | url }}" class="w-11 h-11 text-white flex items-center justify-center rounded-full opacity-40 motion-safe:(transition) hover:(opacity-100 -rotate-12)">{{ logo(title=site.meta.title,size='20') }}</a>
+      <a href="{{ '/' | url }}" class="w-11 h-11 text-white flex items-center justify-center opacity-40 motion-safe:(transition) hover:(opacity-100 -rotate-12)">{{ logo(title=site.meta.title,size='20') }}</a>
     </li>
     <li class="nav-search ml-auto flex justify-end">
       <form action="{{ '/' | url }}search/">
-        <label for="site-search" class="w-11 h-11 bg-transparent flex items-center rounded-full overflow-hidden outline-transparent motion-safe:transition-all focus-within:(px-4 w-52 bg-black/50 outline-(& gray-500/20 offset-[-3px]))">
+        <label for="site-search" class="w-11 h-11 bg-transparent flex items-center overflow-hidden outline-transparent motion-safe:transition-all focus-within:(px-4 w-52 bg-black/50 outline-(& gray-500/20 offset-[-3px]))">
           <input
             type="search"
             id="site-search"
@@ -48,13 +48,13 @@
         :aria-pressed="open"
         :aria-expanded="open"
         :aria-controls="$id('nav-dropdown')"
-        class="group w-11 h-11 inline-flex items-center justify-center rounded-full transition [&:hover,&[aria-pressed=true]]:(bg-gray-500/20)"
+        class="group w-11 h-11 inline-flex items-center justify-center transition [&:hover,&[aria-pressed=true]]:(bg-gray-500/20)"
       >
         <span class="sr-only">Menu</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-4 h-4 fill-current pointer-events-none">
-          <rect width="9" height="2" y="7" rx="1" class="origin-center -translate-y-[5px] translate-x-[7px] group-[[aria-pressed=true]]:(translate-x-0 translate-y-0 rotate-[315deg]) motion-safe:(transition-all)" />
-          <rect width="16" height="2" y="7" rx="1" class="origin-center group-[[aria-pressed=true]]:(rotate-45) motion-safe:(transition-all)" />
-          <rect width="9" height="2" y="7" rx="1" class="origin-center translate-y-[5px] group-[[aria-pressed=true]]:(translate-y-0 rotate-[135deg]) motion-safe:(transition-all)" />
+          <rect width="9" height="2" y="7" class="origin-center -translate-y-[5px] translate-x-[7px] group-[[aria-pressed=true]]:(translate-x-0 translate-y-0 rotate-[315deg]) motion-safe:(transition-all)" />
+          <rect width="16" height="2" y="7" class="origin-center group-[[aria-pressed=true]]:(rotate-45) motion-safe:(transition-all)" />
+          <rect width="9" height="2" y="7" class="origin-center translate-y-[5px] group-[[aria-pressed=true]]:(translate-y-0 rotate-[135deg]) motion-safe:(transition-all)" />
         </svg>
       </button>
       <ul
@@ -66,7 +66,7 @@
         x-transition:leave-end="opacity-0 blur-md -translate-y-2"
         @click.outside="close($refs.button)"
         :id="$id('nav-dropdown')"
-        class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-2 absolute top-full right-0 z-50 rounded-3xl shadow-lg motion-safe:(transition)"
+        class="p-1.5 w-40 bg-[#111111] flex-(& col) gap-2 absolute top-full right-0 z-50 shadow-lg motion-safe:(transition)"
         x-cloak
       >
         {%- for item in collections.all | eleventyNavigation %}
@@ -74,7 +74,7 @@
         <li class="-mx-1.5 h-px bg-current opacity-10"></li>
         {%- endif %}
         <li class="nav-item text-xs font-semibold">
-          <a href="{{ item.url | url }}" class="h-10 px-3 text-white flex items-center gap-3 relative opacity-60 rounded-full motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url === page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
+          <a href="{{ item.url | url }}" class="h-10 px-3 text-white flex items-center gap-3 relative opacity-60 motion-safe:(transition) hover:(bg-white/5 opacity-100) [&.active]:(bg-white/5 opacity-100) [&.active_b>b]:(w-full opacity-100){% if item.url !== '/' %}{% if item.url === page.url or item.url in page.url %} active{% endif %}{% endif %}"{%- if item.url === page.url or item.url in page.url %} aria-current="page"{%- endif -%}>
             <iconify-icon icon="{{ item.icon }}" width="24px" height="24px" class="flex-shrink-0 opacity-60" noobserver></iconify-icon>
             <span class="flex-(& col 1)">
               <small class="mb-px text-[11px] leading-none opacity-60">{{ item.title }}</small>

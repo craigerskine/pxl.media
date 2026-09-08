@@ -37,7 +37,7 @@
 
   <body class="bg-gray-900 text-(gray-400 sm) !block" style="display: none;" data-instant-intensity="mousedown">
     <div class="page min-h-screen flex-(& col)">
-      <a href="#content-main" class="p-3 m-3 bg-brand-700 text-(brand-50 xs) leading-none font-bold absolute top-0 left-0 z-50 -translate-y-16 rounded-md motion-safe:(transition) focus-visible:(translate-y-0)">
+      <a href="#content-main" class="p-3 m-3 bg-brand-700 text-(brand-50 xs) leading-none font-bold absolute top-0 left-0 z-50 -translate-y-16 motion-safe:(transition) focus-visible:(translate-y-0)">
         Skip Navigation
       </a>
       <header>
@@ -60,7 +60,7 @@
             <ul class="text-base shrink-0 flex items-center justify-center gap-2 md:(justify-end)">
               {%- for nav in site.footer.nav %}
               <li>
-                <a href="{{ nav.url }}" x-tooltip="'{{ nav.title }}'" class="w-11 h-11 flex items-center justify-center rounded-full motion-safe:(transition) hover:(bg-gray-500/20 text-gray-200)" aria-label="{{ nav.title }}">
+                <a href="{{ nav.url }}" x-tooltip="'{{ nav.title }}'" class="w-11 h-11 flex items-center justify-center motion-safe:(transition) hover:(bg-gray-500/20 text-gray-200)" aria-label="{{ nav.title }}">
                   <iconify-icon icon="{{ nav.ico }}" noobserver></iconify-icon>
                 </a>
               </li>
@@ -82,7 +82,7 @@
         </p>
       </footer>
       <div class="bg-gray-900 fixed inset-0 z-[-1]" aria-hidden="true">
-        <div class="bg-gray-800/70 absolute inset-1 overflow-hidden rounded-xl md:(rounded-[2.5rem])" aria-hidden="true">
+        <div class="bg-gray-800/70 absolute inset-1 overflow-hidden" aria-hidden="true">
           <svg aria-hidden="true" class="h-full w-full text-gray-950/30 fill-current pointer-events-none absolute inset-0">
             <defs>
               <pattern
