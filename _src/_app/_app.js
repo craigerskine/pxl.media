@@ -49,7 +49,7 @@ install({
 });
 injectGlobal`
   @layer base {
-    :focus-visible { @apply outline-(& 2 current offset-1); }
+    :focus-visible { @apply outline-(& 2 current offset-1) rounded-sm; }
     .tippy-box[data-state="hidden"] { @apply opacity-0 scale-90; }
     [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
     .tippy-box { @apply bg-gray-950 text-(gray-400 xs) font-semibold relative outline-(& 1 gray-950/75 offset-2) opacity-100 rounded scale-100 motion-safe:(transition); }
