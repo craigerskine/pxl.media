@@ -2,8 +2,10 @@
   cols: int
 -#}
 {%- macro stats(param) -%}
-<div class="stats mx-auto w-full max-w-xs bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-lg before:(content-[''] w-px bg-gradient-to-b from-white/10 absolute left-0 inset-y-0) after:(content-[''] h-px bg-gradient-to-r from-white/10 absolute top-0 inset-x-0) lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }})">
-{{ caller() if caller }}
+<div class="mx-auto px-4 w-full max-w-xs lg:mx-0">
+  <div class="stats bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-lg before:(content-[''] w-px bg-gradient-to-b from-white/10 absolute left-0 inset-y-0) after:(content-[''] h-px bg-gradient-to-r from-white/10 absolute top-0 inset-x-0) lg:(grid-cols-{{ param.cols if param.cols else '4' }})">
+  {{ caller() if caller }}
+  </div>
 </div>
 {%- endmacro -%}
 
