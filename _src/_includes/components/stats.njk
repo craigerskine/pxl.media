@@ -2,7 +2,7 @@
   cols: int
 -#}
 {%- macro stats(param) -%}
-<div class="stats mx-auto w-full max-w-xs bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-lg after:(content-[''] h-px bg-gradient-to-r from-transparent via-white/10 to-transparent absolute top-0 inset-x-0) lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }})">
+<div class="stats mx-auto w-full max-w-xs bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-lg before:(content-[''] w-px bg-gradient-to-b from-white/10 absolute left-0 inset-y-0) after:(content-[''] h-px bg-gradient-to-r from-white/10 absolute top-0 inset-x-0) lg:(max-w-none grid-cols-{{ param.cols if param.cols else '4' }})">
 {{ caller() if caller }}
 </div>
 {%- endmacro -%}
@@ -20,7 +20,7 @@
 -#}
 {%- macro stat(param) -%}
 {%- set heading -%}{{ param.tag if param.tag else 'h2' }}{%- endset -%}
-<div class="stat p-4 grid [grid-template-columns:repeat(1,1fr)] gap-4 relative">
+<div class="stat p-4 border-(b r black/50) grid [grid-template-columns:repeat(1,1fr)] gap-4 relative">
   <div class="stat-figure w-12 h-12 col-start-2 row-start-1 row-span-1 opacity-50">
     <iconify-icon icon="{{ param.ico }}" width="48px" height="48px" class="iconify" noobserver></iconify-icon>
   </div>
