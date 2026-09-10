@@ -22,13 +22,13 @@ install({
     extend: {
       colors: ({ theme }) => ({
         brand: theme('colors.rose'),
-        slate: { 950: '#020617' },
-        zinc: { 950: '#09090B' },
-        neutral: { 950: '#0A0A0A' },
-        stone: { 950: '#0C0A09' },
+        // slate: { 950: '#020617' },
+        // zinc: { 950: '#09090B' },
+        // neutral: { 950: '#0A0A0A' },
+        // stone: { 950: '#0C0A09' },
         gray: {
-          ...theme('colors.neutral'),
-          950: '#0A0A0A',
+          ...theme('colors.zinc'),
+          950: '#09090B',
         },
       }),
       fontSize: {

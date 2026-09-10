@@ -8,30 +8,29 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=overlays-content" />
     <title>{{ pageTitle | safe }}</title>
     <meta name="description" content="{{ site.meta.description }}" />
     <meta name="author" content="{{ site.meta.author + ' - '+ site.meta.author_url }}" />
     <meta name="generator" content="{{ eleventy.generator }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=overlays-content" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link onload="this.onload=null;this.rel='stylesheet'" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" />
+    <link onload="this.onload=null;this.rel='stylesheet'" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/' | url }}apple-touch-icon.png" />
 
     <meta name="title" content="{{ pageTitle | safe }}" />
+    <meta property="og:title" content="{{ pageTitle | safe }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.meta.url }}{{ page.url | url }}" />
-    <meta property="og:title" content="{{ pageTitle | safe }}" />
-    <meta property="og:description" content="{{ site.meta.description }}" />
     <meta property="og:image" content="{{ site.meta.url }}{{ '/' | url }}og-image.png" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="{{ site.meta.url }}{{ page.url | url }}" />
+    <meta property="og:description" content="{{ site.meta.description }}" />
     <meta property="twitter:title" content="{{ pageTitle | safe }}" />
-    <meta property="twitter:description" content="{{ site.meta.description }}" />
+    <meta property="twitter:url" content="{{ site.meta.url }}{{ page.url | url }}" />
     <meta property="twitter:image" content="{{ site.meta.url }}{{ '/' | url }}og-image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:description" content="{{ site.meta.description }}" />
 
   </head>
 
@@ -82,7 +81,7 @@
         </p>
       </footer>
       <div class="bg-gray-900 fixed inset-0 z-[-1]" aria-hidden="true">
-        <div class="bg-gray-800/70 absolute inset-1 overflow-hidden" aria-hidden="true">
+        <div class="bg-gray-800/25 absolute inset-1 overflow-hidden" aria-hidden="true">
           <svg aria-hidden="true" class="h-full w-full text-gray-950/30 fill-current pointer-events-none absolute inset-0">
             <defs>
               <pattern
