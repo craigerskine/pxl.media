@@ -1,5 +1,5 @@
 ---
-title: 'The Legend of Zelda: Ocarina of Time GCN'
+title: 'The Legend of Zelda: Ocarina of Time [GCN]'
 tags:
   - platform_gamecube
   - genre_action-adventure
