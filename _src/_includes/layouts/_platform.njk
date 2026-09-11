@@ -136,24 +136,7 @@ layout: layouts/default.njk
   {%- endfor %}
 
   <p class="text-center">
-    <a
-      href="{{ '/' | url }}systems/"
-      class="
-        border
-        [border-color:color-mix(in_oklab,currentColor_20%,transparent)]
-        px-3
-        h-9
-        text-xs
-        font-bold
-        uppercase
-        inline-flex
-        items-center
-        justify-center
-        gap-2
-        transition
-        hover:(bg-gray-500/20 text-gray-300 shadow-solid)
-      "
-    >
+    <a href="{{ '/' | url }}systems/" class="btn">
       <iconify-icon icon="mdi:desktop-tower" class="iconify text-lg block opacity-60" noobserver></iconify-icon>
       All Systems
     </a>

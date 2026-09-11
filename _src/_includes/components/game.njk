@@ -90,12 +90,12 @@
                 </li>
               </ul>
             </div>
-            {%- if item.data.pending %}
-              <a href="{{ '/' | url }}games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ __pending }}">
-                <span class="sr-only">Pending / Preordered</span>
-              </a>
-            {%- endif %}
           </figcaption>
+          {%- if item.data.pending %}
+            <a href="{{ '/' | url }}games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ __pending }}">
+              <span class="sr-only">Pending / Preordered</span>
+            </a>
+          {%- endif %}
         </figure>
       </li>
     {%- endfor %}
@@ -161,12 +161,12 @@
             </li>
           </ul>
         </div>
-        <template x-if="item.pending" hidden>
-          <a href="{{ '/' | url }}games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ __pending }}">
-            <span class="sr-only">Pending / Preordered</span>
-          </a>
-        </template>
       </figcaption>
+      <template x-if="item.pending" hidden>
+        <a href="{{ '/' | url }}games/pending/" x-tooltip="'Pending / Preordered'" class="pending {{ __pending }}">
+          <span class="sr-only">Pending / Preordered</span>
+        </a>
+      </template>
     </figure>
   </li>
 {%- endmacro -%}

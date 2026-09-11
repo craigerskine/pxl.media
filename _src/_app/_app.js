@@ -55,6 +55,25 @@ injectGlobal`
     :focus-visible { @apply outline-(& 2 current offset-1); }
     .tippy-box[data-state="hidden"] { @apply opacity-0 scale-90; }
     [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
+    .btn {
+      @apply
+        border
+        [border-color:color-mix(in_oklab,currentColor_20%,transparent)]
+        px-3
+        h-11
+        text-xs
+        font-bold
+        uppercase
+        inline-flex
+        items-center
+        justify-center
+        gap-2
+        transition
+        hover:(bg-gray-500/20 text-gray-300 shadow-solid);
+        &:where(.btn-square) {
+          @apply p-0 aspect-square;
+        }
+    }
     .tippy-box { @apply bg-gray-950 text-(gray-400 xs) font-semibold relative outline-(& 1 gray-950/75 offset-2) opacity-100 scale-100 motion-safe:(transition); }
     .tippy-box[data-placement^="top"] > .tippy-arrow { @apply bottom-0 before:(bottom-[-7px] left-0 border-(t-[8px] r-[8px] b-0 l-[8px] t-[initial])) origin-top; }
     .tippy-box[data-placement^="bottom"] > .tippy-arrow { @apply top-0 before:(top-[-7px] left-0 border-(t-0 r-[8px] b-[8px] l-[8px] b-[initial])) origin-bottom; }
