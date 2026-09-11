@@ -84,7 +84,7 @@ layout: layouts/default.njk
       @keydown.page-down.prevent.stop="$focus.last()"
       role="tablist"
       aria-label="Platform sections"
-      class="tabs border-(b dotted gray-500/50) flex items-end before:(content-[''] h-1 bg-brand-500 absolute left-[anchor(left)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none transition-[left,right] ease-in-out)"
+      class="tabs border-(b dotted gray-500/50) flex items-end before:(h-1 bg-brand-500 absolute left-[anchor(left)] bottom-[anchor(bottom)] right-[anchor(right)] [position-anchor:--tab-active] pointer-events-none transition-[left,right] ease-in-out)"
     >
       <template x-for="(item, index) in nav" hidden>
         <li>
@@ -151,7 +151,7 @@ layout: layouts/default.njk
         justify-center
         gap-2
         transition
-        hover:(bg-gray-500/20 text-gray-300 shadow)
+        hover:(bg-gray-500/20 text-gray-300 shadow-solid)
       "
     >
       <iconify-icon icon="mdi:desktop-tower" class="iconify text-lg block opacity-60" noobserver></iconify-icon>

@@ -85,17 +85,16 @@
           <svg aria-hidden="true" class="h-full w-full text-gray-950/25 fill-current pointer-events-none absolute inset-0 [&>rect]:(w-full h-full)">
             <defs>
               <pattern
-                id="scanlines"
-                width="4"
+                id="bg-scanlines"
+                width="2"
                 height="4"
                 x="0"
                 y="0"
                 patternUnits="userSpaceOnUse"
-                patternContentUnits="userSpaceOnUse"
               >
-                <rect width="4" height="2" />
+                <rect width="2" height="2" />
               </pattern>
-              <filter id="noise">
+              <filter id="bg-noise">
                 <feTurbulence 
                   type="fractalNoise"
                   stitchTiles="stitch"
@@ -104,8 +103,8 @@
                 />
               </filter>
             </defs>
-            <rect filter="url(#noise)" opacity=".1" />
-            <rect fill="url(#scanlines)" />
+            <rect filter="url(#bg-noise)" opacity=".1" />
+            <rect fill="url(#bg-scanlines)" />
           </svg>
         </div>
       </div>

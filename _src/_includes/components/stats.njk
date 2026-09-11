@@ -3,7 +3,7 @@
 -#}
 {%- macro stats(param) -%}
 <div class="mx-auto px-4 w-full max-w-xs lg:mx-0">
-  <div class="stats bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-lg before:(content-[''] w-px bg-gradient-to-b from-white/10 absolute left-0 inset-y-0) after:(content-[''] h-px bg-gradient-to-r from-white/10 absolute top-0 inset-x-0) lg:(grid-cols-{{ param.cols if param.cols else '4' }})">
+  <div class="stats bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-solid before:(w-px bg-gradient-to-b from-white/20 absolute left-0 inset-y-0) after:(h-px bg-gradient-to-r from-white/20 absolute top-0 inset-x-0) lg:(grid-cols-{{ param.cols if param.cols else '4' }})">
   {{ caller() if caller }}
   </div>
 </div>
@@ -31,7 +31,7 @@
     <p>
       <a href="{{ (param.url | url) if param.url else '#' }}" class="stat-title group text-base leading-none font-semibold uppercase motion-safe:(transition) hover:(text-white)">
         {{ param.title }}
-        <span class="absolute inset-0 z-10 after:(content-[''] w-16 h-16 bg-brand-500/20 absolute top-2 right-2 opacity-75 motion-safe:(transition-all)) motion-safe:(transition) group-hover:(after:(opacity-100 scale-[1000%]))"></span>
+        <span class="absolute inset-0 z-10 after:(w-16 h-16 bg-brand-500/20 absolute top-2 right-2 opacity-75 motion-safe:(transition-all)) motion-safe:(transition) group-hover:(after:(opacity-100 scale-[1000%]))"></span>
       </a>
     </p>
   </hgroup>

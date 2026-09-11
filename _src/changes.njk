@@ -14,7 +14,7 @@ gh:
   {%- for commit in collections.recentChanges %}
   <li class="flex gap-x-10 relative">
     <aside class="pb-10 text-end shrink-0 pointer-events-none -translate-y-0.5">
-      <time class="mt-0.5 font-bold block relative after:(ml-2 w-6 border-(t dotted gray-500/50) block absolute top-2 left-full content-[''])">{{ commit.authorDate | dateOnly }}</time>
+      <time class="mt-0.5 font-bold block relative after:(ml-2 w-6 border-(t dotted gray-500/50) block absolute top-2 left-full)">{{ commit.authorDate | dateOnly }}</time>
       {#- <p class="opacity-70">#{{ commit.abbrevHash }}</p> -#}
     </aside>
     <div class="flex-(& col) items-center shrink-0 pointer-events-none" aria-hidden="true">
@@ -24,9 +24,9 @@ gh:
       {%- endif %}
     </div>
     <article class="pb-10 grow">
-      <p class="pt-px font-bold opacity-70 pointer-events-none relative before:(mr-2 w-6 border-(t dotted gray-500/50) block absolute top-2 right-full content-[''])">{{ commit.authorName }}</p>
+      <p class="pt-px font-bold opacity-70 pointer-events-none relative before:(mr-2 w-6 border-(t dotted gray-500/50) block absolute top-2 right-full)">{{ commit.authorName }}</p>
       <h2 class="mt-1 text-sm line-clamp-1">
-        <a href="{{ gh.base }}{{ gh.repo }}/commit/{{ commit.hash }}" class="after:(content-[''] block absolute -top-4 bottom-4 -inset-x-4 z-10 scale-90 transition) transition focus-visible:(outline-(& 1 offset-[-1px])) hover:(text-white underline after:(bg-gray-500/10 scale-100))">{{ commit.subject }}</a>
+        <a href="{{ gh.base }}{{ gh.repo }}/commit/{{ commit.hash }}" class="after:(block absolute -top-4 bottom-4 -inset-x-4 z-10 scale-90 transition) transition focus-visible:(outline-(& 1 offset-[-1px])) hover:(text-white underline after:(bg-gray-500/10 scale-100))">{{ commit.subject }}</a>
       </h2>
     </article>
   </li>

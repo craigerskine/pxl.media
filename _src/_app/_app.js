@@ -37,6 +37,9 @@ install({
       fontFamily: ({ theme }) => ({
         sans: ['Roboto', ...theme('fontFamily.sans')],
       }),
+      boxShadow: {
+        solid: '4px 4px 0 0 rgba(0, 0, 0, 0.2)',
+      },
     },
   },
   rules: [
