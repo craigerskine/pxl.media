@@ -25,7 +25,7 @@
     </li>
     <li class="nav-search ml-auto flex justify-end">
       <form action="{{ '/' | url }}search/">
-        <label for="site-search" class="w-11 h-11 bg-transparent flex items-center overflow-hidden outline-transparent motion-safe:transition-all focus-within:(px-4 w-52 bg-black/50 outline-(& gray-500/20 offset-[-3px]))">
+        <label for="site-search" class="w-11 h-11 bg-transparent flex items-center overflow-hidden outline-transparent motion-safe:transition-all focus-within:(px-4 w-52 bg-black/50 outline-(& gray-500/20 offset-[-3px])) [&:has(.btn:hover)]:shadow-solid">
           <input
             type="search"
             id="site-search"
@@ -37,7 +37,7 @@
             @keydown.window.prevent.meta.k="$el.focus()"
             @keydown.window.prevent.escape="$el.blur()"
           />
-          <span class="w-full h-11 flex items-center justify-center cursor-pointer transition peer-focus:hidden hover:(bg-gray-500/20)"><iconify-icon icon="mdi:magnify-expand" noobserver></iconify-icon></span>
+          <span class="btn btn-ghost btn-square peer-focus:hidden"><iconify-icon icon="mdi:magnify-expand" noobserver></iconify-icon></span>
         </label>
       </form>
     </li>
@@ -48,7 +48,7 @@
         :aria-pressed="open"
         :aria-expanded="open"
         :aria-controls="$id('nav-dropdown')"
-        class="group w-11 h-11 inline-flex items-center justify-center transition [&:hover,&[aria-pressed=true]]:(bg-gray-500/20)"
+        class="btn btn-ghost btn-square group"
       >
         <span class="sr-only">Menu</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-4 h-4 fill-current pointer-events-none">

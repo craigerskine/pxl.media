@@ -68,10 +68,18 @@ injectGlobal`
         items-center
         justify-center
         gap-2
+        cursor-pointer
         transition
-        hover:(bg-gray-500/20 text-gray-300 shadow-solid);
+        [&:hover,&[aria-pressed=true]]:(bg-gray-500/20 text-gray-300 shadow-solid);
+        &:where(.btn-ghost) {
+          @apply
+            border-transparent;
+        }
         &:where(.btn-square) {
           @apply p-0 aspect-square;
+          & iconify-icon {
+            @apply text-xl;
+          }
         }
     }
     .tippy-box { @apply bg-gray-950 text-(gray-400 xs) font-semibold relative outline-(& 1 gray-950/75 offset-2) opacity-100 scale-100 motion-safe:(transition); }
