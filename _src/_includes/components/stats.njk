@@ -3,7 +3,7 @@
 -#}
 {%- macro stats(param) -%}
 <div class="mx-auto px-4 w-full max-w-xs lg:mx-0">
-  <div class="stats bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-solid before:(w-px bg-gradient-to-b from-white/20 absolute left-0 inset-y-0) after:(h-px bg-gradient-to-r from-white/20 absolute top-0 inset-x-0) lg:(grid-cols-{{ param.cols if param.cols else '4' }})">
+  <div class="stats bg-gray-500/5 bg-gradient-to-br from-white/5 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-solid before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) lg:(grid-cols-{{ param.cols if param.cols else '4' }})">
   {{ caller() if caller }}
   </div>
 </div>
@@ -22,16 +22,16 @@
 -#}
 {%- macro stat(param) -%}
 {%- set heading -%}{{ param.tag if param.tag else 'h2' }}{%- endset -%}
-<div class="stat p-4 border-(b r black/50) grid [grid-template-columns:repeat(1,1fr)] gap-4 relative">
+<div class="stat p-4 border-(1 gray-900) grid [grid-template-columns:repeat(1,1fr)] gap-4 relative">
   <div class="stat-figure w-12 h-12 col-start-2 row-start-1 row-span-1 opacity-50">
-    <iconify-icon icon="{{ param.ico }}" width="48px" height="48px" class="iconify" noobserver></iconify-icon>
+    <iconify-icon icon="{{ param.ico }}" class="text-5xl iconify" noobserver></iconify-icon>
   </div>
   <hgroup class="space-y-2">
     <{{ heading }} class="stat-value text-(gray-200 5xl) leading-[48px] tracking-tighter font-semibold">{{ param.value }}</{{ heading }}>
     <p>
       <a href="{{ (param.url | url) if param.url else '#' }}" class="stat-title group text-base leading-none font-semibold uppercase motion-safe:(transition) hover:(text-white)">
         {{ param.title }}
-        <span class="absolute inset-0 z-10 after:(w-16 h-16 bg-brand-500/20 absolute top-2 right-2 opacity-75 motion-safe:(transition-all)) motion-safe:(transition) group-hover:(after:(opacity-100 scale-[1000%]))"></span>
+        <span class="absolute inset-0 z-10 after:(w-16 h-16 bg-brand-500/20 absolute top-2 right-2 opacity-75 motion-safe:(transition-all ease-in-out)) motion-safe:transition group-hover:(after:(w-full h-full top-0 right-0 opacity-100))"></span>
       </a>
     </p>
   </hgroup>
