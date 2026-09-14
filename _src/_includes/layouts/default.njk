@@ -82,7 +82,31 @@
       </footer>
       <div class="bg-gray-950 fixed inset-0 z-[-1]" aria-hidden="true">
         <div class="bg-(gray-800/75 gradient-to-r) from-gray-950/50 via-transparent to-gray-950/50 absolute inset-1 overflow-hidden" aria-hidden="true">
-          <svg aria-hidden="true" class="h-full w-full text-gray-950/25 fill-current pointer-events-none absolute inset-0 [&>rect]:(w-full h-full)">
+          <svg
+            x-data="{
+              seed: 1,
+              raf: null,
+              fps: 10,
+              init() {
+                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+                const step = 1000 / this.fps
+                let last = 0
+                const loop = (t) => {
+                  this.raf = requestAnimationFrame(loop)
+                  if (t - last < step) return
+                  last = t
+                  this.seed = this.seed >= 200 ? 1 : this.seed + 1
+                  this.$refs.turb.seed.baseVal = this.seed
+                }
+                this.raf = requestAnimationFrame(loop)
+              },
+              destroy() {
+                if (this.raf) cancelAnimationFrame(this.raf)
+              }
+            }"
+            class="h-full w-full text-gray-950/25 fill-current pointer-events-none absolute inset-0 [&>rect]:(w-full h-full)"
+            aria-hidden="true"
+          >
             <defs>
               <pattern
                 id="bg-scanlines"
@@ -95,15 +119,17 @@
                 <rect width="2" height="2" />
               </pattern>
               <filter id="bg-noise">
-                <feTurbulence 
+                <feTurbulence
+                  x-ref="turb"
                   type="fractalNoise"
                   stitchTiles="stitch"
                   baseFrequency=".65"
                   numOctaves="3"
+                  seed="1"
                 />
               </filter>
             </defs>
-            <rect filter="url(#bg-noise)" opacity=".1" />
+            <rect filter="url(#bg-noise)" opacity=".15" />
             <rect fill="url(#bg-scanlines)" />
           </svg>
         </div>
