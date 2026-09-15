@@ -37,7 +37,7 @@
             <div class="box-logo {{ __box_logo }}">
               {%- for t in item.data.tags %}
               {%- for p in platforms %}
-              {%- if p.data.page.fileSlug === t.replace('platform_', '') %}
+              {%- if p.data.page.fileSlug === t %}
               <a href="{{ '/' | url }}platform/{{ p.data.page.fileSlug }}/" class="box-logo-link {{ __box_logo_link }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ __box_logo_img }}">
                   <title>{{ p.data.title }}</title>
@@ -109,7 +109,7 @@
   <li class="game {{ __game }}">
     <figure class="box {{ __box }}">
       <div class="box-cover {{ __box_cover }}">
-        <img :src="'{{ '/' | url }}_assets/img/games/'+ item.id +'.jpg'" :alt="'Game box artwork for '+ item.title" class="box-cover-img {{ __box_cover_img }}" />
+        <img :src="'{{ '/' | url }}_assets/img/games/'+ item.slug +'.jpg'" :alt="'Game box artwork for '+ item.title" class="box-cover-img {{ __box_cover_img }}" />
         <div class="box-logo {{ __box_logo }}">
           <a :href="'/platform/'+ slugify(item.platform.title) +'/'" class="box-logo-link {{ __box_logo_link }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" role="img" class="box-logo-img {{ __box_logo_img }}">

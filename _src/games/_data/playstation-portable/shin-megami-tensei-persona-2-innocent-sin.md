@@ -1,0 +1,10 @@
+---
+title: 'Shin Megami Tensei: Persona 2: Innocent Sin'
+tags:
+  - genre_rpg
+physical: false
+digital: true
+guide: false
+pending: false
+date: 2020-07-31
+---

@@ -1,0 +1,10 @@
+---
+title: 'Shantae: Half-Genie Hero - Ultimate Day One Edition'
+tags:
+  - genre_platformer
+physical: true
+digital: false
+guide: false
+pending: false
+date: 2018-05-21
+---

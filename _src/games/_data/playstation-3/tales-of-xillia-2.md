@@ -1,0 +1,11 @@
+---
+title: Tales of Xillia 2
+tags:
+  - genre_rpg
+note: 'Collector''s Edition'
+physical: true
+digital: true
+guide: true
+pending: false
+date: 2014-08-14
+---

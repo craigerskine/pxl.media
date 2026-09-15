@@ -99,7 +99,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection('gamesAll', function(collection) {
-    return collection.getFilteredByGlob('_src/games/_data/*.md').sort(function(a, b) {
+    return collection.getFilteredByGlob('_src/games/_data/*/*.md').sort(function(a, b) {
       let nameA = a.data.title.toUpperCase();
       let nameB = b.data.title.toUpperCase();
       if (nameA < nameB) return -1;

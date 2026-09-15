@@ -4,7 +4,7 @@ permalink: '{{ page.filePathStem }}.json'
 [
 {%- for item in collections.game | sort(false, false, "data.title") %}
   {
-    "id": "{{ item.data.page.fileSlug }}",
+    "slug": "{{ item.page.fileSlug }}",
     "title": "{{ item.data.title | safe }}",
     "note": "{{ item.data.note | safe }}",
     "physical": {{ item.data.physical | safe }},
@@ -27,9 +27,9 @@ permalink: '{{ page.filePathStem }}.json'
     "platform": {
       {%- set thisPlatforms = [] -%}
       {%- for t in item.data.tags -%}
-        {%- if t.includes('platform_') -%}
+        {%- if not t.includes('genre_') -%}
           {%- for p in collections.platform -%}
-            {%- if p.data.page.fileSlug === t.replace('platform_', '') -%}
+            {%- if p.data.page.fileSlug === t -%}
               {%- set thisPlatforms = (thisPlatforms.push(p), thisPlatforms) -%}
             {%- endif -%}
           {%- endfor %}

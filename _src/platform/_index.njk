@@ -23,7 +23,7 @@ permalink: /platform/
       {%- set totalGames = [] -%}
       {%- for g in collections.game -%}
         {%- for t in g.data.tags -%}
-          {%- if t === 'platform_'+ item.data.page.fileSlug -%}
+          {%- if t === item.data.page.fileSlug -%}
             {%- set totalGames = (totalGames.push({title: g.data.title}), totalGames) -%}
           {%- endif -%}
         {%- endfor -%}

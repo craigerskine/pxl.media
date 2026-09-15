@@ -9,7 +9,7 @@ title: Search results
 <div x-data="search" x-init="gamesFiltered">
   {%- call heading(tag='h1') %}<b x-show="results" x-text="total" class="mr-2 text-xs opacity-75"></b> <span x-text="total > 1 ? 'results' : 'result'"></span> for: <i x-text="query" class="ml-1 text-gray-400 font-normal"></i>{%- endcall %}
   <ul x-show="results" class="list-game pb-4 flex-(& wrap)">
-    <template x-for="item in gamesFiltered" :key="item.id" hidden>
+    <template x-for="(item, index) in gamesFiltered" :key="item.id +'-'+ index" hidden>
       {{ game_alpine() }}
     </template>
   </ul>
@@ -44,8 +44,9 @@ title: Search results
           const filterItems = this.games.filter((item) => {
             const qy = this.query.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? '';
             const tl = item.title.toString().normalize('NFKD').toLowerCase().replace(/[^\w\-]+/g, '') ?? '';
+            const sl = item.slug.toString();
             const nt = item.note.toString().toLowerCase().replace(/[^\w\-]+/g, '') ?? '';
-            const arr = [tl, nt];
+            const arr = [tl, sl, nt];
             return arr.some(rs => rs.includes(qy));
           });
           if (filterItems.length < this.games.length && filterItems.length > 0) {

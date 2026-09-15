@@ -1,0 +1,11 @@
+---
+title: 'The Legend of Zelda: Skyward Sword'
+tags:
+  - genre_action-adventure
+note: 'Music CD'
+physical: true
+digital: false
+guide: false
+pending: false
+date: 2014-02-10
+---

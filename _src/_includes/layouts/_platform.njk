@@ -6,7 +6,7 @@ layout: layouts/default.njk
 {%- from 'components/game.njk' import game -%}
 {%- from 'components/category.njk' import category -%}
 
-{%- set games = collections['platform_'+ title | slugify +''] -%}
+{%- set games = collections[title | slugify] -%}
 {%- set systems = [] -%}{%- for s in collections.system -%}{%- if s.data.platform === title | slugify -%}{%- set systems = (systems.push(s), systems) -%}{%- endif -%}{%- endfor -%}
 {%- set nav = [] -%}{%- if games | length -%}{%- set nav = (nav.push('Games'), nav) -%}{%- endif -%}{%- if systems | length -%}{%- set nav = (nav.push('Systems'), nav) -%}{%- endif -%}
 
@@ -119,7 +119,7 @@ layout: layouts/default.njk
 
       {#- GAMES -#}
       {%- if panel === 'Games' %}
-        {{ game(games=collections['platform_'+ title | slugify],platforms=collections.platform,genres=collections.genre) }}
+        {{ game(games=collections[title | slugify],platforms=collections.platform,genres=collections.genre) }}
       {%- endif %}
 
       {#- SYSTEMS -#}

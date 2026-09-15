@@ -1,0 +1,11 @@
+---
+title: 'The Legend of Heroes: Trails in the Sky'
+tags:
+  - genre_rpg
+note: 'Limited Edition'
+physical: true
+digital: true
+guide: false
+pending: false
+date: 2014-02-11
+---
