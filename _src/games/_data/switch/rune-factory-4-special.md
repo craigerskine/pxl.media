@@ -1,5 +1,5 @@
 ---
-title: 'Rune Factory 4 Special'
+title: Rune Factory 4 Special
 tags:
   - genre_rpg
 physical: true

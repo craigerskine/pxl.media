@@ -1,5 +1,5 @@
 ---
-title: 'Super Mario Maker 2'
+title: Super Mario Maker 2
 tags:
   - genre_platformer
 physical: true

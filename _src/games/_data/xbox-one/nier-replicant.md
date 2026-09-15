@@ -1,5 +1,5 @@
 ---
-title: 'NieR Replicant'
+title: NieR Replicant
 tags:
   - genre_action-adventure
 physical: true

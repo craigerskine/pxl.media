@@ -1,5 +1,5 @@
 ---
-title: 'Danmaku Unlimited 3'
+title: Danmaku Unlimited 3
 tags:
   - genre_shmup
 note: 'Limited Run Games'

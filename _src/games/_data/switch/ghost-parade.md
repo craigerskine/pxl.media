@@ -1,5 +1,5 @@
 ---
-title: 'Ghost Parade'
+title: Ghost Parade
 tags:
   - genre_action-adventure
   - genre_platformer

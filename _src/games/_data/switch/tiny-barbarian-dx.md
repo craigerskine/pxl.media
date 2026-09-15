@@ -1,5 +1,5 @@
 ---
-title: 'Tiny Barbarian Dx'
+title: Tiny Barbarian Dx
 tags:
   - genre_platformer
 physical: true

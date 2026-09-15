@@ -1,5 +1,5 @@
 ---
-title: 'I am Setsuna'
+title: I am Setsuna
 tags:
   - genre_rpg
 physical: false

@@ -1,5 +1,5 @@
 ---
-title: 'Mario Tennis Aces'
+title: Mario Tennis Aces
 tags:
   - genre_sports
 physical: true

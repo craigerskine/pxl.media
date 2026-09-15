@@ -1,5 +1,5 @@
 ---
-title: 'Phantasy Star Universe'
+title: Phantasy Star Universe
 tags:
   - genre_rpg
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Mighty Switch Force! Collection'
+title: Mighty Switch Force! Collection
 tags:
   - genre_action-adventure
   - genre_compilation

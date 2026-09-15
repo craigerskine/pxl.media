@@ -1,5 +1,5 @@
 ---
-title: 'Super Smash Bros. Ultimate'
+title: Super Smash Bros. Ultimate
 tags:
   - genre_fighting
 physical: true

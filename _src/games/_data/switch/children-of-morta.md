@@ -1,5 +1,5 @@
 ---
-title: 'Children of Morta'
+title: Children of Morta
 tags:
   - genre_action-adventure
 physical: true

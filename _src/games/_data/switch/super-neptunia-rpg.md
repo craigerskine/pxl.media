@@ -1,5 +1,5 @@
 ---
-title: 'Super Neptunia RPG'
+title: Super Neptunia RPG
 tags:
   - genre_rpg
 physical: true

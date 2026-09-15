@@ -1,5 +1,5 @@
 ---
-title: 'Ori and the Blind Forest'
+title: Ori and the Blind Forest
 tags:
   - genre_action-adventure
 note: 'Definitive Edition'

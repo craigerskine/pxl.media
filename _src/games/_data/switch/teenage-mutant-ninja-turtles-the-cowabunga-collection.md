@@ -1,5 +1,5 @@
 ---
-title: "Teenage Mutant Ninja Turtles: The Cowabunga Collection"
+title: 'Teenage Mutant Ninja Turtles: The Cowabunga Collection'
 tags:
   - genre_brawler
   - genre_compilation

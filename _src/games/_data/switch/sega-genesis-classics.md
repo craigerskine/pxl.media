@@ -1,5 +1,5 @@
 ---
-title: 'Sega Genesis Classics'
+title: Sega Genesis Classics
 tags:
   - genre_compilation
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Mighty Gunvolt Burst'
+title: Mighty Gunvolt Burst
 tags:
   - genre_action-adventure
 physical: false

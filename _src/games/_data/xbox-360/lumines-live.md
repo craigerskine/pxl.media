@@ -1,5 +1,5 @@
 ---
-title: 'Lumines Live'
+title: Lumines Live
 tags:
   - genre_puzzle
 physical: false

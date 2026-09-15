@@ -1,5 +1,5 @@
 ---
-title: 'Streets of Rage 4'
+title: Streets of Rage 4
 tags:
   - genre_brawler
 note: 'Limited Run Games'

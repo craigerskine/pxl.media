@@ -1,5 +1,5 @@
 ---
-title: 'Astral Chain'
+title: Astral Chain
 tags:
   - genre_action-adventure
 physical: true

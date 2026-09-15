@@ -1,5 +1,5 @@
 ---
-title: 'Fable Anniversary'
+title: Fable Anniversary
 tags:
   - genre_rpg
 physical: true

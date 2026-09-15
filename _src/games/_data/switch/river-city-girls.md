@@ -1,5 +1,5 @@
 ---
-title: 'River City Girls'
+title: River City Girls
 tags:
   - genre_brawler
 physical: false

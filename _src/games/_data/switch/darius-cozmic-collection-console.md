@@ -1,5 +1,5 @@
 ---
-title: 'Darius Cozmic Collection Console'
+title: Darius Cozmic Collection Console
 tags:
   - genre_shmup
   - genre_compilation

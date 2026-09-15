@@ -1,5 +1,5 @@
 ---
-title: 'NeoGeo Pocket Color Selection Vol.1'
+title: NeoGeo Pocket Color Selection Vol.1
 tags:
   - genre_compilation
 note: 'Limited Run Games'

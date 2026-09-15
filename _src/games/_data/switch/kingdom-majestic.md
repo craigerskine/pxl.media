@@ -1,5 +1,5 @@
 ---
-title: 'Kingdom Majestic'
+title: Kingdom Majestic
 tags:
   - genre_action-adventure
 physical: true

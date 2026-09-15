@@ -1,5 +1,5 @@
 ---
-title: 'Monster Hunter Generations Ultimate'
+title: Monster Hunter Generations Ultimate
 tags:
   - genre_action-adventure
   - genre_rpg

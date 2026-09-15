@@ -1,5 +1,5 @@
 ---
-title: 'Super Star Soldier'
+title: Super Star Soldier
 tags:
   - genre_shmup
 note: 'Signed by Chris Bucci - Broken?'

@@ -1,5 +1,5 @@
 ---
-title: 'Crystal Crisis'
+title: Crystal Crisis
 tags:
   - genre_puzzle
 physical: true

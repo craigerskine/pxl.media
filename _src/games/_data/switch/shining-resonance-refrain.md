@@ -1,5 +1,5 @@
 ---
-title: 'Shining Resonance Refrain'
+title: Shining Resonance Refrain
 tags:
   - genre_rpg
 note: 'Draconic Launch Edition'

@@ -1,5 +1,5 @@
 ---
-title: 'Super Mario Odyssey'
+title: Super Mario Odyssey
 tags:
   - genre_platformer
 physical: true

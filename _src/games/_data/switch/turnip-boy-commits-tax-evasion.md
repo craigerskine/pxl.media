@@ -1,5 +1,5 @@
 ---
-title: 'Turnip Boy Commits Tax Evasion'
+title: Turnip Boy Commits Tax Evasion
 tags:
   - genre_casual
   - genre_rpg

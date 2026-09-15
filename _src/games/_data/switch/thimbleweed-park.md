@@ -1,5 +1,5 @@
 ---
-title: 'Thimbleweed Park'
+title: Thimbleweed Park
 tags:
   - genre_action-adventure
 note: 'Limited Run Games'

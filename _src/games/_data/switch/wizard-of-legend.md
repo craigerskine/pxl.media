@@ -1,5 +1,5 @@
 ---
-title: 'Wizard of Legend'
+title: Wizard of Legend
 tags:
   - genre_action-adventure
   - genre_rpg

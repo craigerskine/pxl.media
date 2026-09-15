@@ -1,5 +1,5 @@
 ---
-title: 'Starlink Battle for Atlas'
+title: Starlink Battle for Atlas
 tags:
   - genre_action-adventure
 note: 'Starter Edition'

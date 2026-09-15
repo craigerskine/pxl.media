@@ -1,5 +1,5 @@
 ---
-title: 'Panzer Paladin'
+title: Panzer Paladin
 tags:
   - genre_action-adventure
 physical: false

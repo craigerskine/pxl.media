@@ -1,5 +1,5 @@
 ---
-title: "Shin Megami Tensei: IV"
+title: 'Shin Megami Tensei: IV'
 tags:
   - genre_rpg
 physical: true

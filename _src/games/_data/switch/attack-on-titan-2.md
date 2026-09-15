@@ -1,5 +1,5 @@
 ---
-title: 'Attack on Titan 2'
+title: Attack on Titan 2
 tags:
   - genre_action-adventure
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'BurgerTime Party!'
+title: BurgerTime Party!
 tags:
   - genre_arcade
 physical: true

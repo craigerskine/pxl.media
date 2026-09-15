@@ -1,5 +1,5 @@
 ---
-title: "Shin Megami Tensei: V"
+title: 'Shin Megami Tensei: V'
 note: Standard Edition
 tags:
   - genre_rpg

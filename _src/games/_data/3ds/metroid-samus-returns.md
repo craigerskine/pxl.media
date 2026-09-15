@@ -1,5 +1,5 @@
 ---
-title: "Metroid: Samus Returns"
+title: 'Metroid: Samus Returns'
 tags:
   - genre_action-adventure
 physical: true

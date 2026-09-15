@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest Treasures'
+title: Dragon Quest Treasures
 tags:
   - genre_action-adventure
   - genre_rpg

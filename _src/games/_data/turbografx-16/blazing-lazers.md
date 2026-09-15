@@ -1,5 +1,5 @@
 ---
-title: 'Blazing Lazers'
+title: Blazing Lazers
 tags:
   - genre_shmup
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Wii Sports'
+title: Wii Sports
 tags:
   - genre_sports
 note: 'Pack-in'

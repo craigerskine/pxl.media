@@ -1,5 +1,5 @@
 ---
-title: "Metroid: Zero Mission"
+title: 'Metroid: Zero Mission'
 tags:
   - genre_action-adventure
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Persona 5 Strikers'
+title: Persona 5 Strikers
 tags:
   - genre_action-adventure
 physical: true

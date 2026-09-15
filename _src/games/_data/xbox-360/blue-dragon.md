@@ -1,5 +1,5 @@
 ---
-title: 'Blue Dragon'
+title: Blue Dragon
 tags:
   - genre_rpg
 physical: true

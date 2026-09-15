@@ -1,5 +1,5 @@
 ---
-title: 'Mario Kart 8 Deluxe'
+title: Mario Kart 8 Deluxe
 tags:
   - genre_racing
 physical: true

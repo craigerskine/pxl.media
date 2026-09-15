@@ -1,5 +1,5 @@
 ---
-title: 'Grandia HD Collection'
+title: Grandia HD Collection
 tags:
   - genre_rpg
   - genre_compilation

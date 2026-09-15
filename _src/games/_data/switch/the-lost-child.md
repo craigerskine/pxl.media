@@ -1,5 +1,5 @@
 ---
-title: 'The Lost Child'
+title: The Lost Child
 tags:
   - genre_rpg
 physical: true

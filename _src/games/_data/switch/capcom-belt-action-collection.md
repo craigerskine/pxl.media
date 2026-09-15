@@ -1,5 +1,5 @@
 ---
-title: 'Capcom Belt Action Collection'
+title: Capcom Belt Action Collection
 tags:
   - genre_arcade
   - genre_brawler

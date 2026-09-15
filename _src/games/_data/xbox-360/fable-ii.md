@@ -1,5 +1,5 @@
 ---
-title: 'Fable II'
+title: Fable II
 tags:
   - genre_rpg
 note: 'Knothole Island - Premium; See the Future - Premium'

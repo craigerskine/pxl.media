@@ -1,5 +1,5 @@
 ---
-title: 'Monster Boy'
+title: Monster Boy
 tags:
   - genre_action-adventure
   - genre_platformer

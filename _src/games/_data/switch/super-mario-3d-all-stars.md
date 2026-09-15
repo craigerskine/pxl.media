@@ -1,5 +1,5 @@
 ---
-title: 'Super Mario 3D All-Stars'
+title: Super Mario 3D All-Stars
 tags:
   - genre_platformer
   - genre_compilation

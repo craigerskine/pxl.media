@@ -1,5 +1,5 @@
 ---
-title: 'PCEngine Memories - Shooting Legends II'
+title: PCEngine Memories - Shooting Legends II
 tags:
   - genre_shmup
   - genre_compilation

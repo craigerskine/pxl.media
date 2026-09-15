@@ -1,5 +1,5 @@
 ---
-title: 'Blazing Chrome'
+title: Blazing Chrome
 tags:
   - genre_shmup
 note: 'Contra Inspired'

@@ -1,5 +1,5 @@
 ---
-title: 'Tales of Vesperia'
+title: Tales of Vesperia
 tags:
   - genre_rpg
 physical: true

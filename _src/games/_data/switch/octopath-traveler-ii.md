@@ -1,5 +1,5 @@
 ---
-title: 'Octopath Traveler II'
+title: Octopath Traveler II
 tags:
   - genre_rpg
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Fable III'
+title: Fable III
 tags:
   - genre_rpg
 physical: true

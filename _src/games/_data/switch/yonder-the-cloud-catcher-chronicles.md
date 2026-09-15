@@ -1,5 +1,5 @@
 ---
-title: 'Yonder The Cloud Catcher Chronicles'
+title: Yonder The Cloud Catcher Chronicles
 tags:
   - genre_casual
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Gate of Thunder'
+title: Gate of Thunder
 tags:
   - genre_shmup
 physical: false

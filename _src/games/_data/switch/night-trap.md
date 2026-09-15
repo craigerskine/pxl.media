@@ -1,5 +1,5 @@
 ---
-title: 'Night Trap'
+title: Night Trap
 tags:
   - genre_casual
 note: 'Limited Run Games'

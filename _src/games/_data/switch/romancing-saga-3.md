@@ -1,5 +1,5 @@
 ---
-title: 'Romancing SaGa 3'
+title: Romancing SaGa 3
 tags:
   - genre_rpg
 physical: true

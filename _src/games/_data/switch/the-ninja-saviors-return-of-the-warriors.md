@@ -1,5 +1,5 @@
 ---
-title: 'The Ninja Saviors - Return of The Warriors'
+title: The Ninja Saviors - Return of The Warriors
 tags:
   - genre_brawler
 physical: true

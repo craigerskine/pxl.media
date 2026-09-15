@@ -1,5 +1,5 @@
 ---
-title: 'Mega Man Zero/ZX Legacy Collection'
+title: Mega Man Zero/ZX Legacy Collection
 tags:
   - genre_action-adventure
   - genre_platformer

@@ -1,5 +1,5 @@
 ---
-title: 'Umihara Kawase Fresh!'
+title: Umihara Kawase Fresh!
 tags:
   - genre_action-adventure
   - genre_platformer

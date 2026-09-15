@@ -1,5 +1,5 @@
 ---
-title: 'Valkyria Chronicles 4'
+title: Valkyria Chronicles 4
 tags:
   - genre_rpg
 physical: true

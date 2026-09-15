@@ -1,5 +1,5 @@
 ---
-title: 'Blade Strangers'
+title: Blade Strangers
 tags:
   - genre_fighting
 physical: true

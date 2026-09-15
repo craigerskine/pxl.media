@@ -1,5 +1,5 @@
 ---
-title: 'Scarlet Nexus'
+title: Scarlet Nexus
 tags:
   - genre_action-adventure
   - genre_rpg

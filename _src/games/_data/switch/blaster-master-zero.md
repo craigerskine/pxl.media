@@ -1,5 +1,5 @@
 ---
-title: 'Blaster Master Zero'
+title: Blaster Master Zero
 tags:
   - genre_action-adventure
 physical: true

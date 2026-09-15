@@ -1,5 +1,5 @@
 ---
-title: 'Stardew Valley'
+title: Stardew Valley
 tags:
   - genre_action-adventure
   - genre_casual

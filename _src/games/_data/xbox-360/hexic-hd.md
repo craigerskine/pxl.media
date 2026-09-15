@@ -1,5 +1,5 @@
 ---
-title: 'Hexic HD'
+title: Hexic HD
 tags:
   - genre_puzzle
 physical: false

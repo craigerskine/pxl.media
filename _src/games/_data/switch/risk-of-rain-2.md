@@ -1,5 +1,5 @@
 ---
-title: 'Risk of Rain 2'
+title: Risk of Rain 2
 tags:
   - genre_action-adventure
 physical: true

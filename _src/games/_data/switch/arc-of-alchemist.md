@@ -1,5 +1,5 @@
 ---
-title: 'Arc of Alchemist'
+title: Arc of Alchemist
 tags:
   - genre_action-adventure
   - genre_rpg

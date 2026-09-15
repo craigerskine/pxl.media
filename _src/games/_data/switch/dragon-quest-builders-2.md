@@ -1,5 +1,5 @@
 ---
-title: 'Dragon Quest Builders 2'
+title: Dragon Quest Builders 2
 tags:
   - genre_rpg
 physical: true

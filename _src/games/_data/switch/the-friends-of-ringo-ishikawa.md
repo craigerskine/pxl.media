@@ -1,5 +1,5 @@
 ---
-title: 'The Friends of Ringo Ishikawa'
+title: The Friends of Ringo Ishikawa
 tags:
   - genre_brawler
 note: 'Limited Run Games'

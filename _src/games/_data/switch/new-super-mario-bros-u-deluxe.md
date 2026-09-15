@@ -1,5 +1,5 @@
 ---
-title: 'New Super Mario Bros. U Deluxe'
+title: New Super Mario Bros. U Deluxe
 tags:
   - genre_platformer
 physical: true

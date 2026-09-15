@@ -1,5 +1,5 @@
 ---
-title: 'Tales of Arise'
+title: Tales of Arise
 tags:
   - genre_rpg
 physical: false

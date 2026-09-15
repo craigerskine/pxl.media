@@ -1,5 +1,5 @@
 ---
-title: 'Xenoblade Chronicles 2'
+title: Xenoblade Chronicles 2
 tags:
   - genre_action-adventure
   - genre_rpg

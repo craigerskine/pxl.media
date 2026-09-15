@@ -1,5 +1,5 @@
 ---
-title: 'Darius Cozmic Collection Arcade'
+title: Darius Cozmic Collection Arcade
 tags:
   - genre_shmup
   - genre_compilation

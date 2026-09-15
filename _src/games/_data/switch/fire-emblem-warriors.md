@@ -1,5 +1,5 @@
 ---
-title: 'Fire Emblem Warriors'
+title: Fire Emblem Warriors
 tags:
   - genre_action-adventure
 physical: true

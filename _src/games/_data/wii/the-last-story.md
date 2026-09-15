@@ -1,5 +1,5 @@
 ---
-title: 'The Last Story'
+title: The Last Story
 tags:
   - genre_rpg
 physical: true

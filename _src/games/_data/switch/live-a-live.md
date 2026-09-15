@@ -1,5 +1,5 @@
 ---
-title: 'Live A Live'
+title: Live A Live
 tags:
   - genre_rpg
 physical: true

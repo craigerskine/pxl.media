@@ -1,5 +1,5 @@
 ---
-title: 'Final Fantasy VII HD'
+title: Final Fantasy VII HD
 tags:
   - genre_rpg
 physical: false

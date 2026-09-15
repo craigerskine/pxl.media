@@ -1,5 +1,5 @@
 ---
-title: 'Chained Echoes'
+title: Chained Echoes
 tags:
   - genre_rpg
 note: 'Physical: First Press Games - Regular Edition'

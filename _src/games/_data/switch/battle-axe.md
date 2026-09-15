@@ -1,5 +1,5 @@
 ---
-title: 'Battle Axe'
+title: Battle Axe
 tags:
   - genre_brawler
 physical: true

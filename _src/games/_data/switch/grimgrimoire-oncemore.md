@@ -1,5 +1,5 @@
 ---
-title: 'GrimGrimoire OnceMore'
+title: GrimGrimoire OnceMore
 tags:
   - genre_rpg
 note: 'Limited Edition'

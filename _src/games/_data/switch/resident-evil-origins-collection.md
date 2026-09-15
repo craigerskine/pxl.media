@@ -1,5 +1,5 @@
 ---
-title: 'Resident Evil Origins Collection'
+title: Resident Evil Origins Collection
 tags:
   - genre_action-adventure
   - genre_compilation

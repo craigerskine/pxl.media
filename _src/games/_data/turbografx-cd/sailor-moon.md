@@ -1,5 +1,5 @@
 ---
-title: 'Sailor Moon'
+title: Sailor Moon
 tags:
   - genre_casual
 note: PCEWorks

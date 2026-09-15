@@ -1,5 +1,5 @@
 ---
-title: 'Star Renegades'
+title: Star Renegades
 tags:
   - genre_puzzle
   - genre_rpg

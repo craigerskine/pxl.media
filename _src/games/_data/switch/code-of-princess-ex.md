@@ -1,5 +1,5 @@
 ---
-title: 'Code of Princess EX'
+title: Code of Princess EX
 tags:
   - genre_brawler
   - genre_rpg

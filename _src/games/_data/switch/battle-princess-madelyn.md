@@ -1,5 +1,5 @@
 ---
-title: 'Battle Princess Madelyn'
+title: Battle Princess Madelyn
 tags:
   - genre_platformer
 note: 'Limited Run Games'

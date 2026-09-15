@@ -1,5 +1,5 @@
 ---
-title: 'Sine Mora EX'
+title: Sine Mora EX
 tags:
   - genre_shmup
 physical: true

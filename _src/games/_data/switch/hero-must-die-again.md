@@ -1,5 +1,5 @@
 ---
-title: 'Hero Must Die. Again.'
+title: Hero Must Die. Again.
 tags:
   - genre_rpg
 physical: true

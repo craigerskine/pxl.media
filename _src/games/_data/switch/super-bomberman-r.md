@@ -1,5 +1,5 @@
 ---
-title: 'Super Bomberman R'
+title: Super Bomberman R
 tags:
   - genre_action-adventure
 physical: true

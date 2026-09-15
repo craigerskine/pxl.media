@@ -1,5 +1,5 @@
 ---
-title: 'Boom Blox'
+title: Boom Blox
 tags:
   - genre_puzzle
 physical: true

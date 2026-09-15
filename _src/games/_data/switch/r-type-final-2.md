@@ -1,5 +1,5 @@
 ---
-title: 'R-Type Final 2'
+title: R-Type Final 2
 tags:
   - genre_shmup
 physical: true

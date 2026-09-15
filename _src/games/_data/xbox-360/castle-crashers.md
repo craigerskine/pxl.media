@@ -1,5 +1,5 @@
 ---
-title: 'Castle Crashers'
+title: Castle Crashers
 tags:
   - genre_brawler
 physical: false

@@ -1,5 +1,5 @@
 ---
-title: "Crash Bandicoot 4: It's About Time"
+title: 'Crash Bandicoot 4: It's About Time'
 tags:
   - genre_platformer
 physical: true

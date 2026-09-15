@@ -1,5 +1,5 @@
 ---
-title: 'Turbo EverDrive'
+title: Turbo EverDrive
 tags:
   - genre_flash-cart
 note: v2 + Bitbox

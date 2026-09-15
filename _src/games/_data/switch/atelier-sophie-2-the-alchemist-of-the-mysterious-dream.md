@@ -1,5 +1,5 @@
 ---
-title: "Atelier Sophie 2: The Alchemist of the Mysterious Dream"
+title: 'Atelier Sophie 2: The Alchemist of the Mysterious Dream'
 tags:
   - genre_rpg
 physical: true

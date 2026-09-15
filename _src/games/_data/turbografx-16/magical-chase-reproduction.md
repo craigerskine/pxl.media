@@ -1,5 +1,5 @@
 ---
-title: 'Magical Chase (Reproduction)'
+title: Magical Chase (Reproduction)
 tags:
   - genre_shmup
 physical: true

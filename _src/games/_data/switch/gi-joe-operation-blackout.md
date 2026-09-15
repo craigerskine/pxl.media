@@ -1,5 +1,5 @@
 ---
-title: 'GI Joe Operation Blackout'
+title: GI Joe Operation Blackout
 tags:
   - genre_shooter
 physical: true

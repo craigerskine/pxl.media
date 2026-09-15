@@ -1,5 +1,5 @@
 ---
-title: 'Soldier Blade'
+title: Soldier Blade
 tags:
   - genre_shmup
 physical: false

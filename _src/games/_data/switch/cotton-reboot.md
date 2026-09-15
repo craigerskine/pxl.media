@@ -1,5 +1,5 @@
 ---
-title: 'Cotton REBOOT!'
+title: Cotton REBOOT!
 tags:
   - genre_shmup
 note: 'Strictly Limited Games'

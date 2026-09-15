@@ -1,5 +1,5 @@
 ---
-title: 'Mega Man 11'
+title: Mega Man 11
 tags:
   - genre_action-adventure
   - genre_platformer

@@ -1,5 +1,5 @@
 ---
-title: 'Monster Hunter Rise'
+title: Monster Hunter Rise
 tags:
   - genre_action-adventure
   - genre_rpg

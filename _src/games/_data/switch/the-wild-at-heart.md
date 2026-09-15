@@ -1,5 +1,5 @@
 ---
-title: 'The Wild at Heart'
+title: The Wild at Heart
 tags:
   - genre_action-adventure
 physical: true

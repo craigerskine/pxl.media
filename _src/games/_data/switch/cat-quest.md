@@ -1,5 +1,5 @@
 ---
-title: 'Cat Quest'
+title: Cat Quest
 tags:
   - genre_brawler
   - genre_rpg

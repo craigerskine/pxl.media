@@ -1,5 +1,5 @@
 ---
-title: 'XenoBlade Chronicles'
+title: XenoBlade Chronicles
 tags:
   - genre_action-adventure
   - genre_rpg

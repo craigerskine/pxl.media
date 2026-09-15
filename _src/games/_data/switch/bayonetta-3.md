@@ -1,5 +1,5 @@
 ---
-title: 'Bayonetta 3'
+title: Bayonetta 3
 tags:
   - genre_action-adventure
 physical: true

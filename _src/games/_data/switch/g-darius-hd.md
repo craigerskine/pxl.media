@@ -1,5 +1,5 @@
 ---
-title: 'G-Darius HD'
+title: G-Darius HD
 tags:
   - genre_shmup
 physical: true

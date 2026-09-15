@@ -1,5 +1,5 @@
 ---
-title: 'Cave Story+'
+title: Cave Story+
 tags:
   - genre_action-adventure
 physical: true

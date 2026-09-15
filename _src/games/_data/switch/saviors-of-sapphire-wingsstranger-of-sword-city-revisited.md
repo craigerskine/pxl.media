@@ -1,5 +1,5 @@
 ---
-title: 'Saviors of Sapphire Wings/Stranger of Sword City Revisited'
+title: Saviors of Sapphire Wings/Stranger of Sword City Revisited
 tags:
   - genre_rpg
 physical: true

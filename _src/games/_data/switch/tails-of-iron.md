@@ -1,5 +1,5 @@
 ---
-title: 'Tails of Iron'
+title: Tails of Iron
 tags:
   - genre_action-adventure
   - genre_rpg

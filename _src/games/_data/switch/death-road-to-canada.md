@@ -1,5 +1,5 @@
 ---
-title: 'Death Road to Canada'
+title: Death Road to Canada
 tags:
   - genre_action-adventure
 physical: false

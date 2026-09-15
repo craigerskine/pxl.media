@@ -1,5 +1,5 @@
 ---
-title: 'Mercenaries Saga Chronicles'
+title: Mercenaries Saga Chronicles
 tags:
   - genre_rpg
 physical: true

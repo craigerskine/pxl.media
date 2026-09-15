@@ -1,5 +1,5 @@
 ---
-title: 'Megadimension Neptunia VII'
+title: Megadimension Neptunia VII
 tags:
   - genre_rpg
 physical: true

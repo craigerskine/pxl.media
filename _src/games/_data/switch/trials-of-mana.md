@@ -1,5 +1,5 @@
 ---
-title: 'Trials of Mana'
+title: Trials of Mana
 tags:
   - genre_action-adventure
   - genre_rpg

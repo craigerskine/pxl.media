@@ -1,5 +1,5 @@
 ---
-title: 'Kaze and the Wild Masks'
+title: Kaze and the Wild Masks
 tags:
   - genre_platformer
 physical: true

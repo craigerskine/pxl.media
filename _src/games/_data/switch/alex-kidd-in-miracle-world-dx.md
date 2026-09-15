@@ -1,5 +1,5 @@
 ---
-title: 'Alex Kidd In Miracle World DX'
+title: Alex Kidd In Miracle World DX
 tags:
   - genre_action-adventure
 physical: true

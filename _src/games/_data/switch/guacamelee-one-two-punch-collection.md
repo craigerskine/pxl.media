@@ -1,5 +1,5 @@
 ---
-title: 'Guacamelee! One-Two Punch Collection'
+title: Guacamelee! One-Two Punch Collection
 tags:
   - genre_action-adventure
   - genre_compilation

@@ -1,5 +1,5 @@
 ---
-title: 'Saturday Morning RPG'
+title: Saturday Morning RPG
 tags:
   - genre_rpg
 note: 'Limited Run Games'

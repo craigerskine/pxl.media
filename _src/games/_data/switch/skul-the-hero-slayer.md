@@ -1,5 +1,5 @@
 ---
-title: "Skul: The Hero Slayer"
+title: 'Skul: The Hero Slayer'
 tags:
   - genre_action-adventure
   - genre_platformer

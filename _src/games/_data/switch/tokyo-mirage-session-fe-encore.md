@@ -1,5 +1,5 @@
 ---
-title: 'Tokyo Mirage Session #FE Encore'
+title: Tokyo Mirage Session #FE Encore
 tags:
   - genre_rpg
 physical: true

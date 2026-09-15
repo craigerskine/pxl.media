@@ -1,5 +1,5 @@
 ---
-title: 'Streets of Red'
+title: Streets of Red
 tags:
   - genre_brawler
 physical: false

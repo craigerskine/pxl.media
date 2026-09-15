@@ -1,5 +1,5 @@
 ---
-title: 'Star Ocean First Departure R'
+title: Star Ocean First Departure R
 tags:
   - genre_rpg
 physical: false

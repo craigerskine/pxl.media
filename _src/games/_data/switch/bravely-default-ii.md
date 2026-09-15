@@ -1,5 +1,5 @@
 ---
-title: 'Bravely Default II'
+title: Bravely Default II
 tags:
   - genre_rpg
 physical: true

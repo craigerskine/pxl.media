@@ -1,5 +1,5 @@
 ---
-title: 'Axiom Verge'
+title: Axiom Verge
 tags:
   - genre_action-adventure
 physical: true

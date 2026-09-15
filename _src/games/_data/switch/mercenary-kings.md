@@ -1,5 +1,5 @@
 ---
-title: 'Mercenary Kings'
+title: Mercenary Kings
 tags:
   - genre_shmup
 note: 'Limited Run Games'

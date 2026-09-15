@@ -1,5 +1,5 @@
 ---
-title: 'Triangle Strategy'
+title: Triangle Strategy
 tags:
   - genre_rpg
 physical: true

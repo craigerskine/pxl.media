@@ -1,5 +1,5 @@
 ---
-title: 'Puyo Puyo Tetris'
+title: Puyo Puyo Tetris
 tags:
   - genre_puzzle
 physical: true

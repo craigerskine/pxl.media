@@ -1,5 +1,5 @@
 ---
-title: 'Turbo EverDrive PRO'
+title: Turbo EverDrive PRO
 tags:
   - genre_flash-cart
 note: White + Faceplate

@@ -1,5 +1,5 @@
 ---
-title: 'Tales of Symphonia Remastered'
+title: Tales of Symphonia Remastered
 tags:
   - genre_rpg
 physical: true

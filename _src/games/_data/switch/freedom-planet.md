@@ -1,5 +1,5 @@
 ---
-title: 'Freedom Planet'
+title: Freedom Planet
 tags:
   - genre_platformer
 note: 'Limited Run Games'

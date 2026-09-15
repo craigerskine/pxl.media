@@ -1,5 +1,5 @@
 ---
-title: 'Splatoon 2'
+title: Splatoon 2
 tags:
   - genre_shooter
 physical: true

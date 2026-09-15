@@ -1,5 +1,5 @@
 ---
-title: 'Sonic Mania Plus'
+title: Sonic Mania Plus
 tags:
   - genre_platformer
 physical: true

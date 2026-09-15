@@ -1,5 +1,5 @@
 ---
-title: 'Pinball FX'
+title: Pinball FX
 tags:
   - genre_arcade
   - genre_simulator

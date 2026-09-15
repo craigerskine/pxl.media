@@ -1,5 +1,5 @@
 ---
-title: 'NBA 2K Playgrounds 2'
+title: NBA 2K Playgrounds 2
 tags:
   - genre_sports
 physical: true

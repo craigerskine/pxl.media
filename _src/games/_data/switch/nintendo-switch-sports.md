@@ -1,5 +1,5 @@
 ---
-title: 'Nintendo Switch Sports'
+title: Nintendo Switch Sports
 tags:
   - genre_sports
 physical: true

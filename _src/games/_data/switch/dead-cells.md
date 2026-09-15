@@ -1,5 +1,5 @@
 ---
-title: 'Dead Cells'
+title: Dead Cells
 tags:
   - genre_action-adventure
 physical: true

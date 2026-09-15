@@ -1,5 +1,5 @@
 ---
-title: 'Goblin Sword'
+title: Goblin Sword
 tags:
   - genre_action-adventure
   - genre_platformer

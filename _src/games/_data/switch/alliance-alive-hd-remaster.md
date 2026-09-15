@@ -1,5 +1,5 @@
 ---
-title: 'Alliance Alive HD Remaster'
+title: Alliance Alive HD Remaster
 tags:
   - genre_rpg
 physical: true

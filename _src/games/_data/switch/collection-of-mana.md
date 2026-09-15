@@ -1,5 +1,5 @@
 ---
-title: 'Collection of Mana'
+title: Collection of Mana
 tags:
   - genre_action-adventure
   - genre_rpg

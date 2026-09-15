@@ -1,5 +1,5 @@
 ---
-title: 'Blaster Master Zero 3'
+title: Blaster Master Zero 3
 tags:
   - genre_action-adventure
 note: 'Limited Run Games'

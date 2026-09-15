@@ -1,5 +1,5 @@
 ---
-title: 'Star Wars Knights of the Old Republic'
+title: Star Wars Knights of the Old Republic
 tags:
   - genre_rpg
 physical: true

@@ -1,5 +1,5 @@
 ---
-title: 'Monster Hunter Tri'
+title: Monster Hunter Tri
 tags:
   - genre_action-adventure
   - genre_rpg

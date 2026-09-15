@@ -1,5 +1,5 @@
 ---
-title: 'Metroid Dread'
+title: Metroid Dread
 tags:
   - genre_action-adventure
 physical: true
