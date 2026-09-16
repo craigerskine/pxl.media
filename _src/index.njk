@@ -164,5 +164,5 @@ layout: layouts/default.njk
 {%- call heading(tag='h2',label='Recently added',sub=6) %}{%- endcall %}
 {{ game(games=gamesRecent,platforms=collections.platform,genres=collections.genre,by='data.date',reverse=true) }}
 
-{%- call heading(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/') %}{%- endcall %}
+{%- call heading(tag='h2',label='Pending',sub=gamesPendingAll.length,url='/games/pending/' | url) %}{%- endcall %}
 {{ game(games=gamesPending,platforms=collections.platform,genres=collections.genre) }}

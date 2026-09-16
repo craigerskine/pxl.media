@@ -1,7 +1,7 @@
 {%- macro heading(tag='h1',label,sub,alt,alt_sub,url,back) %}
-  <hgroup class="my-8 mx-4 border-(b dotted gray-500/30) text-(gray-400 sm center) font-bold uppercase flex items-end relative after:(border-(b dotted gray-500/30) w-[290px] absolute left-0 bottom-0)">
+  <hgroup class="my-8 mx-4 border-(b gray-500/30) text-(gray-400 sm center) font-bold uppercase flex items-end relative after:(border-(b gray-500/30) w-[290px] absolute left-0 bottom-0)">
     <{{ tag }} class="pb-2 flex-(& wrap) items-center">
-      <span class="grow flex items-center gap-1.5 relative">
+      <span class="grow flex items-center gap-1.5 relative transition [&:has(a:hover)]:text-gray-50">
         {{ label }}
         {{ caller() if caller }}
         {%- if alt_sub %}<b class="ml-4 mr-2 text-xs opacity-75">{{ alt_sub }}</b>{%- endif %}
