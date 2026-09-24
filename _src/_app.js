@@ -60,8 +60,7 @@ injectGlobal`
     [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
     .btn {
       @apply
-        border
-        [border-color:color-mix(in_oklab,currentColor_20%,transparent)]
+        border-0
         px-3
         h-11
         text-xs
@@ -74,10 +73,6 @@ injectGlobal`
         cursor-pointer
         transition
         [&:hover,&[aria-pressed=true]]:(bg-gray-500/20 text-gray-300 shadow-solid);
-        &:where(.btn-ghost) {
-          @apply
-            border-transparent;
-        }
         &:where(.btn-square) {
           @apply p-0 aspect-square;
           & iconify-icon {
