@@ -72,7 +72,8 @@ injectGlobal`
         gap-2
         cursor-pointer
         transition
-        [&:hover,&[aria-pressed=true]]:(bg-gray-500/20 text-gray-300 shadow-solid);
+        [&:hover,&[aria-pressed=true]]:(bg-gray-500/20 text-gray-300 shadow-solid)
+        [&:active]:[translate:.5px_.5px];
         &:where(.btn-square) {
           @apply p-0 aspect-square;
           & iconify-icon {
