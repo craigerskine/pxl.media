@@ -130,16 +130,16 @@ layout: layouts/default.njk
             {{ category(title=item.data.title,subtext=sub,bg_color='black/50',bg_img='/' | url +'_assets/img/systems/'+ item.data.page.fileSlug +'.png') }}
           {%- endfor %}
         </ul>
+
+        <p class="text-center">
+          <a href="{{ '/' | url }}systems/" class="btn">
+            <iconify-icon icon="mdi:desktop-tower" class="iconify text-lg block opacity-60" noobserver></iconify-icon>
+            All Systems
+          </a>
+        </p>
       {%- endif %}
 
     </div>
   {%- endfor %}
-
-  <p class="text-center">
-    <a href="{{ '/' | url }}systems/" class="btn">
-      <iconify-icon icon="mdi:desktop-tower" class="iconify text-lg block opacity-60" noobserver></iconify-icon>
-      All Systems
-    </a>
-  </p>
 
 </article>
