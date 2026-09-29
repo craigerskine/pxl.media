@@ -13,7 +13,8 @@ title: Systems
 
 {%- call timeline() %}
   {%- for p in platforms | sort(false, false, "data.order") %}
-    {%- call group(title=p.data.title,logo=p.data.logo,url='/platform/' + p.data.page.fileSlug + '/') %}
+    {%- set colspan %}{% if p.data.page.fileSlug === 'emu' %}true{% endif %}{%- endset %}
+    {%- call group(title=p.data.title,logo=p.data.logo,url='/platform/' + p.data.page.fileSlug + '/',colspan=colspan) %}
       {%- for platform, items in collections.system | sort(false, false, "data.title") | groupby("data.platform") %}
         {%- if platform === p.data.page.fileSlug %}
           {%- for item in items | sort(false, false, "data.title") %}
