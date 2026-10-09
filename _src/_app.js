@@ -40,6 +40,15 @@ install({
       boxShadow: {
         solid: 'inset 1px 1px 0 rgba(255, 255, 255, .1), 4px 4px 0 rgba(0, 0, 0, 0.2)',
       },
+      keyframes: {
+        'sway': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        'sway': 'sway 1.5s steps(6) infinite alternate',
+      },
     },
   },
   rules: [
