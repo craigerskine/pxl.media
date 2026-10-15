@@ -30,6 +30,7 @@ install({
           ...theme('colors.zinc'),
           950: '#09090B',
         },
+        surface: theme('colors.zinc.900'),
       }),
       fontSize: {
         80: ['80%', { lineHeight: 1 }],
@@ -38,7 +39,7 @@ install({
         sans: ['Roboto', ...theme('fontFamily.sans')],
       }),
       boxShadow: {
-        solid: 'inset 1px 1px 0 rgba(255, 255, 255, .1), 4px 4px 0 rgba(0, 0, 0, 0.2)',
+        solid: '4px 4px 0 rgba(0, 0, 0, 0.4)',
       },
       keyframes: {
         'sway': {
