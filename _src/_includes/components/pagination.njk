@@ -5,7 +5,7 @@
     <li {{ disable | safe if not pagination.href.previous }}><a href="{{ pagination.href.previous | url }}" class="btn btn-square" title="Previous page"><iconify-icon icon="mdi:chevron-left" inline class="text-xl block" noobserver></iconify-icon></a></li>
     <li class="text-xs flex flex-wrap items-center justify-center">
       {%- if pagination.pageNumber %}
-      <b class="text-gray-300 font-black">{{ pagination.pageNumber }}</b>
+      <b class="text-base-300 font-black">{{ pagination.pageNumber }}</b>
       <small class="mx-3 text-sm opacity-70">of</small>
       {%- endif %}
       <small class="text-xs">{{ pagination.pages.length - 1 }}</small>

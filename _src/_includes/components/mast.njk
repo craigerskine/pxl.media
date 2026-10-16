@@ -10,7 +10,7 @@
       </svg>
       {%- endif %}
       {%- if slot | trim != '' %}
-        <b class="text-gray-200 tracking-tighter motion-safe:transition group-hover:(text-white)">{{ slot }}</b>
+        <b class="text-base-200 tracking-tighter motion-safe:transition group-hover:(text-white)">{{ slot }}</b>
       {%- endif %}
       {%- if not logo and ico %}
         <iconify-icon icon="{{ ico }}" inline="false" class="text-6xl" noobserver></iconify-icon>

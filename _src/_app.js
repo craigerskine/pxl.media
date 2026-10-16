@@ -20,18 +20,23 @@ install({
       'lg': '960px',
     },
     extend: {
-      colors: ({ theme }) => ({
-        brand: theme('colors.rose'),
+      colors: ({ theme }) => {
+        // gray: { 950: '#030712' },
         // slate: { 950: '#020617' },
         // zinc: { 950: '#09090B' },
         // neutral: { 950: '#0A0A0A' },
         // stone: { 950: '#0C0A09' },
-        gray: {
+        const base = {
           ...theme('colors.zinc'),
           950: '#09090B',
-        },
-        surface: theme('colors.zinc.900'),
-      }),
+        }
+
+        return {
+          brand: theme('colors.red'),
+          base,
+          surface: base[900],
+        }
+      },
       fontSize: {
         80: ['80%', { lineHeight: 1 }],
       },
@@ -82,7 +87,7 @@ injectGlobal`
         gap-2
         cursor-pointer
         transition
-        [&:hover,&[aria-pressed=true]]:(bg-gray-500/20 text-gray-300 shadow-solid)
+        [&:hover,&[aria-pressed=true]]:(bg-base-500/20 text-base-300 shadow-solid)
         [&:active]:[translate:.5px_.5px];
         &:where(.btn-square) {
           @apply p-0 aspect-square;
@@ -91,12 +96,12 @@ injectGlobal`
           }
         }
     }
-    .tippy-box { @apply bg-gray-950 text-(gray-400 xs) font-semibold relative outline-(& 1 gray-950/75 offset-2) opacity-100 scale-100 motion-safe:(transition); }
+    .tippy-box { @apply bg-base-950 text-(base-400 xs) font-semibold relative outline-(& 1 base-950/75 offset-2) opacity-100 scale-100 motion-safe:(transition); }
     .tippy-box[data-placement^="top"] > .tippy-arrow { @apply bottom-0 before:(bottom-[-7px] left-0 border-(t-[8px] r-[8px] b-0 l-[8px] t-[initial])) origin-top; }
     .tippy-box[data-placement^="bottom"] > .tippy-arrow { @apply top-0 before:(top-[-7px] left-0 border-(t-0 r-[8px] b-[8px] l-[8px] b-[initial])) origin-bottom; }
     .tippy-box[data-placement^="left"] > .tippy-arrow {@apply right-0 before:(right-[-7px] border-(t-[8px] r-0 b-[8px] l-[8px] l-[initial])) origin-left; }
     .tippy-box[data-placement^="right"] > .tippy-arrow { @apply left-0 before:(left-[-7px] border-(t-[8px] r-[8px] b-[8px] l-0 r-[initial]) origin-right); }
-    .tippy-arrow { @apply w-4 h-4 text-gray-950 absolute before:(content-[''] absolute border-(transparent solid)); }
+    .tippy-arrow { @apply w-4 h-4 text-base-950 absolute before:(content-[''] absolute border-(transparent solid)); }
     .tippy-content { @apply py-1 px-2 relative z-[1]; }
   }
 `

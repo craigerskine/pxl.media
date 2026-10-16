@@ -27,7 +27,7 @@
     <iconify-icon icon="{{ param.ico }}" class="text-5xl iconify" noobserver></iconify-icon>
   </div>
   <hgroup class="space-y-2">
-    <{{ heading }} class="stat-value text-(gray-200 5xl) leading-[48px] tracking-tighter font-semibold">{{ param.value }}</{{ heading }}>
+    <{{ heading }} class="stat-value text-(base-200 5xl) leading-[48px] tracking-tighter font-semibold">{{ param.value }}</{{ heading }}>
     <p>
       <a href="{{ (param.url | url) if param.url else '#' }}" class="stat-title group text-base leading-none font-semibold uppercase motion-safe:(transition) hover:(text-white)">
         {{ param.title }}
@@ -38,7 +38,7 @@
   <ul class="stat-desc font-semibold uppercase col-span-2 flex items-center gap-3">
     {%- for item in param.sub -%}
       <li class="text-xs">
-        <strong class="sub-title mr-px text-(gray-200 sm) leading-none">{{ item.value }}</strong>
+        <strong class="sub-title mr-px text-(base-200 sm) leading-none">{{ item.value }}</strong>
         <small class="sub-title opacity-70">{{ item.title }}</small>
       </li>
     {%- endfor -%}

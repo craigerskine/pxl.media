@@ -6,8 +6,8 @@
 
 {%- macro group(title='Title',logo,svg_file='platforms',url='#',colspan) %}
 <li class="mb-12 flex-(& col) items-start{% if colspan %} col-span-2{% endif %} md:(mb-0)">
-  <div class="w-full border-(b dotted gray-500/50)">
-    <a href="{{ url | url }}" class="group p-5 bg-surface/30 text-gray-500 inline-flex relative before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) transition hover:(text-white){% if url === '#' %} pointer-events-none{% endif %}">
+  <div class="w-full border-(b dotted base-500/50)">
+    <a href="{{ url | url }}" class="group p-5 bg-surface/30 text-base-500 inline-flex relative before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) transition hover:(text-white){% if url === '#' %} pointer-events-none{% endif %}">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current">
         <title>{{ title }}</title>
         <use href="{{ '/' | url }}_assets/{{ svg_file }}.svg?v={% bust %}#logo-{{ title | slugify }}" />
@@ -21,16 +21,16 @@
 {%- endmacro %}
 
 {%- macro point(title='Title',sub='Sub',meta='Meta',ico='mdi:desktop-tower') %}
-<li class="ml-5 border-(b dotted gray-500/50) flex items-center relative">
+<li class="ml-5 border-(b dotted base-500/50) flex items-center relative">
   <div class="flex-(& col none) justify-center">
-    <b class="h-4 border-(l dotted gray-500/50)"></b>
-    <div class="group w-8 h-8 flex-(& none) border-(1 dotted gray-500/50) relative -translate-x-4">
+    <b class="h-4 border-(l dotted base-500/50)"></b>
+    <div class="group w-8 h-8 flex-(& none) border-(1 dotted base-500/50) relative -translate-x-4">
       <iconify-icon icon="{{ ico }}" inline="false" class="m-auto text-2xl opacity-50" noobserver></iconify-icon>
     </div>
-    <b class="border-(l dotted gray-500/50) h-4"></b>
+    <b class="border-(l dotted base-500/50) h-4"></b>
   </div>
   <div class="pl-2 min-w-0 flex-(& col 1) gap-1">
-    <b class="text-gray-200">{{ title }}</b>
+    <b class="text-base-200">{{ title }}</b>
     <div class="leading-tight flex justify-between gap-4 opacity-75">
       <span class="text-80 shrink-0">{{ sub }}</span>
       <small class="text-80 truncate" title="{{ meta }}">{{ meta }}</small>
