@@ -26,7 +26,7 @@ gh:
     <article class="pb-10 grow">
       <p class="pt-px font-bold opacity-70 pointer-events-none relative before:(mr-2 w-6 border-(t dotted base-500/50) block absolute top-2 right-full)">{{ commit.authorName }}</p>
       <h2 class="mt-1 text-sm line-clamp-1">
-        <a href="{{ gh.base }}{{ gh.repo }}/commit/{{ commit.hash }}" class="after:(block absolute -top-4 bottom-4 -inset-x-4 z-10 scale-90 transition) transition focus-visible:(outline-(& 1 offset-[-1px])) hover:(text-white underline after:(bg-surface/30 scale-100))">{{ commit.subject }}</a>
+        <a href="{{ gh.base }}{{ gh.repo }}/commit/{{ commit.hash }}" class="after:(block absolute -top-4 bottom-4 -inset-x-4 z-10 scale-90 transition) transition focus-visible:(outline-(& 1 offset-[-1px])) hover:(text-base-50 underline after:(bg-surface/30 scale-100))">{{ commit.subject }}</a>
       </h2>
     </article>
   </li>
