@@ -1,7 +1,7 @@
 ---
 title: Castle Crashers
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 physical: false
 digital: true
 guide: false

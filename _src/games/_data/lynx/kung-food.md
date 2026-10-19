@@ -1,7 +1,7 @@
 ---
 title: Kung Food
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 note: x2 - 1 From Darin
 physical: true
 digital: false

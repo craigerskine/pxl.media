@@ -1,7 +1,7 @@
 ---
 title: Dragon's Crown
 tags:
-  - genre_brawler
+  - genre_beat-em-up
   - genre_rpg
 note: 'Art Book'
 physical: true

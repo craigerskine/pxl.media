@@ -1,7 +1,7 @@
 ---
 title: Dragon's Crown Pro
 tags:
-  - genre_brawler
+  - genre_beat-em-up
   - genre_rpg
 note: 'Royal Package Edition, Battle-Hardened Edition'
 physical: true

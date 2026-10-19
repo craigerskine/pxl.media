@@ -1,7 +1,7 @@
 ---
 title: 'Double Dragon Gaiden: Rise of the Dragons'
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 physical: true
 digital: false
 guide: false

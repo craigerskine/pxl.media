@@ -1,7 +1,7 @@
 ---
 title: Streets of Rage 4
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 note: 'Limited Run Games'
 physical: true
 digital: false

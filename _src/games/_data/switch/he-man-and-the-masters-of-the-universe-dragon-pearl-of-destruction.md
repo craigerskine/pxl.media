@@ -1,7 +1,7 @@
 ---
 title: 'He-Man and the Masters of the Universe: Dragon Pearl of Destruction'
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 note: Limited Run Games
 physical: true
 digital: false

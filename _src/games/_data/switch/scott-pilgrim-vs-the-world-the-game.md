@@ -2,7 +2,7 @@
 title: 'Scott Pilgrim Vs. The World: The Game'
 tags:
   - genre_action-adventure
-  - genre_brawler
+  - genre_beat-em-up
 note: 'Limited Run Games'
 physical: true
 digital: false

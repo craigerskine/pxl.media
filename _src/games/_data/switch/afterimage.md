@@ -1,7 +1,7 @@
 ---
 title: Afterimage
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 note: Deluxe Edition
 physical: true
 digital: false

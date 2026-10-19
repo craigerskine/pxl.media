@@ -1,7 +1,7 @@
 ---
 title: River City Girls
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 physical: false
 digital: true
 guide: false

@@ -1,7 +1,7 @@
 ---
 title: Phantom Breaker Battlegrounds
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 note: 'Limited Run Games'
 physical: true
 digital: false

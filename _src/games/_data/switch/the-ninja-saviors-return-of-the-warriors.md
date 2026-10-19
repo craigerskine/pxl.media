@@ -1,7 +1,7 @@
 ---
 title: The Ninja Saviors - Return of The Warriors
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 physical: true
 digital: false
 guide: false

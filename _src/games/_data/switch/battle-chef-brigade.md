@@ -1,7 +1,7 @@
 ---
 title: Battle Chef Brigade
 tags:
-  - genre_brawler
+  - genre_beat-em-up
   - genre_puzzle
 note: 'Limited Run Games'
 physical: true

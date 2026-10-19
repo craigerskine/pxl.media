@@ -2,7 +2,7 @@
 title: Double Dragon & Kunio-Kun Retro Brawler Bundle
 note: Limited Run Games
 tags:
-  - genre_brawler
+  - genre_beat-em-up
   - genre_compilation
 physical: true
 digital: false

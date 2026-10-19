@@ -1,7 +1,7 @@
 ---
 title: Shadow of the Ninja - Reborn
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 physical: true
 digital: false
 guide: false

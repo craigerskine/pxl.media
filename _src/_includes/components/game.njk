@@ -63,7 +63,7 @@
                     {%- for g in genres %}
                     {%- if g.data.page.fileSlug === t.replace('genre_', '') %}
                     <li>
-                      <a href="{{ '/' | url }}genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title }}'" class="genres-link {{ __genres_link }}" title="{{ g.data.title }}">
+                      <a href="{{ '/' | url }}genre/{{ g.data.page.fileSlug }}/" x-tooltip="'{{ g.data.title | replace("'", "’") }}'" class="genres-link {{ __genres_link }}" title="{{ g.data.title }}">
                         <iconify-icon icon="{{ g.data.ico }}" noobserver></iconify-icon>
                       </a>
                     </li>

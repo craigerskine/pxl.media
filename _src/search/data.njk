@@ -21,7 +21,7 @@ permalink: '{{ page.filePathStem }}.json'
         {%- endfor -%}
       {%- endfor -%}
       {%- for genre in thisGenres %}
-      { "title": "{{ genre.data.title }}", "ico": "{{ genre.data.ico}}" }{% if not loop.last %},{% endif %}
+      { "title": "{{ genre.data.title | replace("'", "’") }}", "ico": "{{ genre.data.ico }}" }{% if not loop.last %},{% endif %}
       {%- endfor %}
     ],
     "platform": {

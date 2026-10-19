@@ -1,7 +1,7 @@
 ---
 title: Cat Quest
 tags:
-  - genre_brawler
+  - genre_beat-em-up
   - genre_rpg
 physical: true
 digital: false

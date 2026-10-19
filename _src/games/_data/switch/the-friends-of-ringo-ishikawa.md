@@ -1,7 +1,7 @@
 ---
 title: The Friends of Ringo Ishikawa
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 note: 'Limited Run Games'
 physical: true
 digital: false

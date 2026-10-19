@@ -1,7 +1,7 @@
 ---
 title: 'Teenage Mutant Ninja Turtles: Shredder''s Revenge'
 tags:
-  - genre_brawler
+  - genre_beat-em-up
 physical: true
 digital: true
 guide: false

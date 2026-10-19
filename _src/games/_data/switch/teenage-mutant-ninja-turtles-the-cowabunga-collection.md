@@ -1,7 +1,7 @@
 ---
 title: 'Teenage Mutant Ninja Turtles: The Cowabunga Collection'
 tags:
-  - genre_brawler
+  - genre_beat-em-up
   - genre_compilation
 physical: true
 digital: false
