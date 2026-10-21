@@ -7,7 +7,7 @@
 {%- macro group(title='Title',logo,svg_file='platforms',url='#',colspan) %}
 <li class="mb-12 flex-(& col) items-start{% if colspan %} col-span-2{% endif %} md:(mb-0)">
   <div class="w-full">
-    <a href="{{ url | url }}" class="group border-(& black/40) p-5 bg-surface/30 text-base-500 inline-flex relative before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) transition hover:(text-white){% if url === '#' %} pointer-events-none{% endif %}">
+    <a href="{{ url | url }}" class="group border-(& black/40) p-5 bg-surface/30 text-base-500 inline-flex relative shadow-solid before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) transition hover:(text-white translate-y-0.5 translate-x-0.5 shadow-[1px_1px_0_rgba(0,0,0,.5),2px_2px_0_rgba(255,255,255,.1)]){% if url === '#' %} pointer-events-none{% endif %}">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" class="w-auto h-12 max-w-full fill-current">
         <title>{{ title }}</title>
         <use href="{{ '/' | url }}_assets/{{ svg_file }}.svg?v={% bust %}#logo-{{ title | slugify }}" />

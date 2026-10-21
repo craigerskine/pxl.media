@@ -3,7 +3,7 @@
 -#}
 {%- macro stats(param) -%}
 <div class="mx-auto px-4 w-full max-w-xs lg:mx-0">
-  <div class="stats bg-surface/30 backdrop-blur-[1px] grid-(& cols-1) relative overflow-hidden shadow-solid before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) lg:(grid-cols-{{ param.cols if param.cols else '4' }}) transition [&:has(a:hover)]:(translate-y-0.5 translate-x-0.5 shadow-[1px_1px_0_rgba(0,0,0,.5),2px_2px_0_rgba(255,255,255,.1)])">
+  <div class="stats bg-surface/30 grid-(& cols-1) relative overflow-hidden shadow-solid before:(w-px bg-gradient-to-b from-white/20 absolute left-px inset-y-px) after:(h-px bg-gradient-to-r from-white/20 absolute top-px inset-x-px) lg:(grid-cols-{{ param.cols if param.cols else '4' }}) transition [&:has(a:hover)]:(translate-y-0.5 translate-x-0.5 shadow-[1px_1px_0_rgba(0,0,0,.5),2px_2px_0_rgba(255,255,255,.1)])">
   {{ caller() if caller }}
   </div>
 </div>
